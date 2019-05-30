@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Colors Tutorial. Учебник цветов в HTML. W3schools на русском. HTML5. Уроки для начинающих</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="HTML,CSS,уроки,для начинающих,html5,w3schools,на русском,языке,учебник,цвета,color" />
+    <meta name="description" content="HTML5. Учебник цветов. Цвет в HTML. Полный справочник. Какие цвета используют при создании веб-страниц? W3Schools на русском - учебник для начинающих" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/ws.css" />
+    <link rel="stylesheet" href="../styles/handheld.css" />
+    <link rel="canonical" href="https://html5beginners.github.io/" />
+    <meta property="og:title" content="Colors Tutorial. Учебник цветов в HTML. W3schools на русском. HTML5. Уроки для начинающих" />
+    <meta property="og:type" content="веб-сайт" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://html5beginners.github.io/" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="HTML5. Учебник цветов. Цвет в HTML. Полный справочник. Какие цвета используют при создании веб-страниц? W3Schools на русском - учебник для начинающих" />
+    <meta property="og:locale" content="ru" /> <!--мова сайту-->
+    <meta property="og:site_name" content="HTML5Beginners - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
+    <script src="../js/topnav.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" class="frame-header"></iframe>
+<main>
+    <div class="left-sidebar">
+        <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>HTML5. Учебник цветов</h1>
+        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="../index.html" title="Попередня сторінка" rel="prev">❮ Home</a>
+            <a class="w3-right w3-btn" href="colors_names.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr>
+
+        <div class="w3-panel w3-info intro">
+            <p>Цвета отображаются, сочетая <span style="color:red">КРАСНЫЙ (RED)</span>, <span style="color:green">ЗЕЛЁНЫЙ (GREEN)</span> и <span style="color:blue">СИНИЙ (BLUE)</span> свет.</p>
+        </div>
+        <hr>
+        <h2>Названия цветов</h2>
+        <p>В каскадной таблице стилей CSS цвета можно установить с помощью названий цветов:</p>
+        <div class="w3-example">
+            <h3>Пример:</h3>
+            <div class="notranslate">
+                <div class="w3-responsive">
+                    <table class="w3-table-all notranslate">
+                        <tbody><tr>
+                            <th style="width:50%">Цвет</th>
+                            <th>Название</th>
+                        </tr>
+                        <tr><td style="background-color:red">&nbsp;</td><td>Red (красный)</td></tr>
+                        <tr><td style="background-color:yellow">&nbsp;</td><td>Yellow (жёлтый)</td></tr>
+                        <tr><td style="background-color:cyan">&nbsp;</td><td>Cyan (бирюзовый)</td></tr>
+                        <tr><td style="background-color:blue">&nbsp;</td><td>Blue (синий)</td></tr>
+                        <tr><td style="background-color:magenta">&nbsp;</td><td>Magenta (пурпурный)</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/colors/tryit.asp?filename=trycolors_colornames" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <hr>
+        <h2>CSS значения цветов</h2>
+        <p>С помощью CSS цвета могут быть указаны разными способами:</p>
+        <ul>
+            <li>По названию цветов</li>
+            <li>Как RGB значение</li>
+            <li>Как шестнадцятеричные значения (HEX)</li>
+            <li>Как HSL значение (CSS3)</li>
+            <li>Как HWB значение (CSS4)</li>
+        </ul>
+        <hr>
+        <h2>RGB Цвета</h2>
+        <p>RGB значения цветов поддерживаются во всех браузерах.</p>
+        <p><b>Значение цвета RGB задаётся с помощью: rgb (<span style="color:red">RED</span>, <span style="color:green">GREEN</span>, <span style="color:blue">BLUE</span>).</b></p>
+        <p>Каждый параметр определяет интенсивность цвета как целое число от 0 до 255.</p>
+        <p>Например, rgb (0,0,255) отображается как синий, потому что синий параметр установлен на его самое высокое значение (255), а другие - на 0.</p>
+        <div class="w3-example">
+            <h3>Пример:</h3>
+            <div class="w3-code">
+                <div class="w3-responsive">
+                    <table class="w3-table-all">
+                        <tbody><tr>
+                            <th style="width:25%">Цвет</th>
+                            <th style="width:25%">RGB</th>
+                            <th>Цвет</th>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#FF0000">&nbsp;</td>
+                            <td>rgb(255,0,0)</td>
+                            <td>Красный</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#00FF00">&nbsp;</td>
+                            <td>rgb(0,255,0)</td>
+                            <td>Зелёний</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#0000FF">&nbsp;</td>
+                            <td>rgb(0,0,255)</td>
+                            <td>Синий</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/colors/tryit.asp?filename=trycolors_rgbvalues" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <p>Оттенки серого наиболее часто определяются с использованием равных значений для всех трёх источников света:</p>
+        <div class="w3-example">
+            <h3>Пример:</h3>
+            <div class="w3-code">
+                <div class="w3-responsive">
+                    <table class="w3-table-all notranslate">
+                        <tbody><tr>
+                            <th style="width:25%">Цвет</th>
+                            <th style="width:25%">RGB</th>
+                            <th>Цвет</th>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#000000">&nbsp;</td>
+                            <td>rgb(0,0,0)</td>
+                            <td>Чёрный</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#808080">&nbsp;</td>
+                            <td>rgb(128,128,128)</td>
+                            <td>Серый</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#FFFFFF">&nbsp;</td>
+                            <td>rgb(255,255,255)</td>
+                            <td>Белый</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/colors/tryit.asp?filename=trycolors_rgbgray" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <hr>
+        <h2>Шестнадцатеричные цвета (HEX)</h2>
+        <p>Шестнадцатеричные значения цветов также поддерживаются во всех браузерах.</p>
+        <p><b>Шестнадцатеричный цвет задаётся с помощью:
+            #<span style="color:#ff0000">RR</span><span style="color:green">GG</span><span style="color:#0000ff">BB</span></b>.</p>
+        <p>RR (красный), GG (зелёний) и BB (синий) это шестнадцатеричные целые числа между 00 и FF, что определяют интенсивность цвета.</p>
+        <p>Например, #0000FF отображается в виде синего цвета, потому что синий компонент установлен на его самое высокое значение (FF), а другие - на 00.</p>
+        <div class="w3-example">
+            <h3>Пример:</h3>
+            <div class="w3-code">
+                <div class="w3-responsive">
+                    <table class="w3-table-all notranslate">
+                        <tbody><tr>
+                            <th style="width:25%">Цвет</th>
+                            <th style="width:25%">HEX</th>
+                            <th style="width:25%">RGB</th>
+                            <th>Цвет</th>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#FF0000">&nbsp;</td>
+                            <td>#FF0000</td>
+                            <td>rgb(255,0,0)</td>
+                            <td>Красный</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#00FF00">&nbsp;</td>
+                            <td>#00FF00</td>
+                            <td>rgb(0,255,0)</td>
+                            <td>Зелёний</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#0000FF">&nbsp;</td>
+                            <td>#0000FF</td>
+                            <td>rgb(0,0,255)</td>
+                            <td>Синий</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/colors/tryit.asp?filename=trycolors_hexvalues" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <p>Оттенки серого часто определяются с использованием равных значений для всех трёх источников света:</p>
+        <div class="w3-example">
+            <h3>Пример:</h3>
+            <div class="w3-code">
+                <div class="w3-responsive">
+                    <table class="w3-table-all">
+                        <tbody><tr>
+                            <th style="width:25%">Цвет</th>
+                            <th style="width:25%">HEX</th>
+                            <th style="width:25%">RGB</th>
+                            <th>Цвет</th>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#000000">&nbsp;</td>
+                            <td>#000000</td>
+                            <td>rgb(0,0,0)</td>
+                            <td>Чёрный</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#808080">&nbsp;</td>
+                            <td>#808080</td>
+                            <td>rgb(128,128,128)</td>
+                            <td>Серый</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#FFFFFF">&nbsp;</td>
+                            <td>#FFFFFF</td>
+                            <td>rgb(255,255,255)</td>
+                            <td>Белый</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/colors/tryit.asp?filename=trycolors_hexgray" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <hr>
+        <h2>Верхний или нижний регистр?</h2>
+        <p>Для задания шестнадцатеричных значений (HEX) можно использовать буквы как верхнего регистра, так и буквы нижнего регистра.</p>
+        <div class="w3-panel w3-note">
+            <p>Нижний регистр легче писать. Верхний регистр легче читать.</p>
+        </div>
+        <!-- standard for navigering bunn -->
+        <hr>
+        <h2>Названия цветов</h2>
+        <p>CSS поддерживает <a href="colors_names.html"><strong>140 стандартных названия цветов</strong></a>.</p>
+        <p>В следующем разделе вы найдёте полный алфавитный список названий цветов с шестнадцатеричнымы значениями:</p>
+
+        <div class="w3-responsive">
+            <table class="w3-table-all">
+                <tbody><tr>
+                    <th style="width:25%">Название цвета</th>
+                    <th style="width:25%">Hex</th>
+                    <th>Цвет</th>
+                </tr>
+
+                <tr>
+                    <td>AliceBlue</td>
+                    <td>#F0F8FF</td>
+                    <td style="background: #F0F8FF;">&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td>AntiqueWhite</td>
+                    <td>#FAEBD7</td>
+                    <td style="background: #FAEBD7;">&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td>Aqua</td>
+                    <td>#00FFFF</td>
+                    <td style="background: #00FFFF;">&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td>Aquamarine</td>
+                    <td>#7FFFD4</td>
+                    <td style="background: #7FFFD4;">&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td>Azure</td>
+                    <td>#F0FFFF</td>
+                    <td style="background: #F0FFFF;">&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td>Beige</td>
+                    <td>#F5F5DC</td>
+                    <td style="background: #F5F5DC;">&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td>Bisque</td>
+                    <td>#FFE4C4</td>
+                    <td style="background: #FFE4C4;">&nbsp;</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="../index.html" title="Попередня сторінка" rel="prev">❮ Home</a>
+            <a class="w3-right w3-btn" href="colors_names.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr class="hr-bottom">
+        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
+        <!-- Комментарии от Disqus -->
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_config = function () {
+        this.page.url = html5beginners.github.io;  // канонический URL страницы
+        this.page.identifier = html5beginners.github.io/colors/colors_tutorial.html; // уникальный идентификатор страницы
+        };
+        (function() { // Не редактировать ниже этой линии
+        var d = document, s = d.createElement('script');
+        s.src = 'https://html5beginners.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+        <!--  / Комментарии от Disqus -->
+    </div>
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>
