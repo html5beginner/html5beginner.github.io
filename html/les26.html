@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>HTML. Макети - Layouts. Урок №26. Курсы W3schools на русском. Уроки для начинающих</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="HTML,CSS,уроки,для начинающих,html5,css3,макеты,layouts,справочник,теги,шаблоны,веб,страница,w3schools,на русском,языке" />
+    <meta name="description" content="Урок 26. HTML. CSS. Макеты веб-страниц. Какие бывают макеты web сайтов? Как их создавать? W3Schools на русском языке. Учебник для начинающих" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/ws.css" />
+    <link rel="stylesheet" href="../styles/handheld.css" />
+    <link rel="canonical" href="https://html5beginners.github.io/" />
+    <meta property="og:title" content="HTML. Макети - Layouts. Урок №26. Курсы W3schools на русском. Уроки для начинающих" />
+    <meta property="og:type" content="веб-сайт" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://html5beginners.github.io/" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="Урок 26. HTML. CSS. Макеты веб-страниц. Какие бывают макеты web сайтов? Как их создавать? W3Schools на русском языке. Учебник для начинающих" />
+    <meta property="og:locale" content="ru" /> <!--мова сайту-->
+    <meta property="og:site_name" content="HTML5Beginners - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
+    <script src="../js/topnav.js"></script>
+
+    <style>
+        * {box-sizing: border-box;}
+        body {font-family: Arial, Helvetica, sans-serif;}
+        /* Style the header */
+        header {background-color: #666;padding: 30px;text-align: center;font-size: 35px;color: white;}
+        /* Create two columns/boxes that floats next to each other */
+        nav {float: left; width: 30%; height: 300px; /* only for demonstration, should be removed */background: #ccc; padding: 20px;}
+        /* Style the list inside the menu */
+        nav ul {list-style-type: none;padding: 0;}
+        article {float: left; padding: 20px; width: 70%; background-color: #f1f1f1; height: 300px; /* only for demonstration, should be removed */}
+        /* Clear floats after the columns */
+        section:after {content: "";display: table; clear: both;}
+        /* Style the footer */
+        footer {background-color: #777; padding: 10px; text-align: center; color: white;}
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {nav, article {width: 100%; height: auto;}}
+    </style>
+
+</head>
+<body>
+<iframe src="../pages/header.html" class="frame-header"></iframe>
+<main>
+    <div class="left-sidebar">
+        <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>Урок №26. HTML. Макеты веб-страниц</h1>
+        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
+        <!-- buttons prev - next -->
+        <hr>
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les25.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="les27.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <hr>
+        <!-- / buttons prev - next -->
+        <div class="w3-example">
+            <h3>Пример HTML макета</h3>
+            <div class="w3-white w3-padding" style="font-family: Arial, Helvetica, sans-serif;">
+                <header class="header">
+                    <h2>Cities</h2>
+                </header>
+                <section class="section">
+                    <nav class="nav" style="visibility: visible;">
+                        <ul>
+                            <li><a href="#">London</a></li>
+                            <li><a href="#">Paris</a></li>
+                            <li><a href="#">Tokyo</a></li>
+                        </ul>
+                    </nav>
+                    <article class="article">
+                        <h2>London</h2>
+                        <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                        <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+                    </article>
+                </section>
+                <footer class="footer">
+                    <p>Footer</p>
+                </footer>
+            </div>
+            <a class="w3-btn w3-margin-top w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_layout_float" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <hr>
+        <h2>Элементы HTML макета</h2>
+        <p>Веб-сайты часто отображают содержание в нескольких столбцах (например, журнал или газета). <strong>HTML5</strong> предлагает новые семантические элементы, которые определяют разные части веб-страницы:</p>
+        <table style="width:100%;">
+            <tbody><tr>
+                <td style="width:225px;vertical-align:top">
+                    <img alt="Семантические элементы в HTML5" src="../img/img_sem_elements.gif"  width="219" height="258">
+                </td>
+                <td style="vertical-align:top">
+                    <ul>
+                        <li>&lt;header&gt; - Определяет заголовок для документа или раздела
+                        <li>&lt;nav&gt; - Определяет контейнер для навигационных ссылок
+                        <li>&lt;section&gt; - Определяет раздел (секцию) в документе
+                        <li>&lt;article&gt; - Определяет независимую автономную статью
+                        <li>&lt;aside&gt; - Определяет содержание, кроме основного содержания (например, боковую вставку)
+                        <li>&lt;footer&gt; - Определяет нижний колонтитул (футер) для документа или раздела
+                        <li>&lt;details&gt; - Определяет дополнительные детали
+                        <li>&lt;summary&gt; - Определяет заголовок для элемента &lt;details&gt;
+                    </ul>
+                </td>
+            </tr>
+            </tbody></table>
+        <hr>
+        <h2>Методика HTML разметки</h2>
+        <p>Существует пять разных способов создания многоколоновых макетов. Каждый способ имеет свои плюсы и минусы:</p>
+        <ul>
+            <li>HTML tables (табличный - не рекомендуется)
+            <li>CSS float (обтекание)
+            <li>CSS flexbox (гибкая коробка)
+            <li>CSS framework (фреймворк)
+            <li>CSS grid (сетка)
+        </ul>
+        <hr>
+        <h2>Какой способ вёрстки выбрать?</h2>
+        <h3>HTML таблицы</h3>
+        <p>Элемент &lt;table&gt; не был разработан как инструмент компоновки веб-страниц! Целью элемента &lt;table&gt; является отображение табличных данных. Значит, не используйте таблицы для макета страницы! Они принесут беспорядок в ваш код. И представьте, как тяжело будет сделать редизайн вашего сайта (т.е. изменить дизайн) через пару месяцев, т.к. придётся практически полностью переписывать <strong>HTML</strong> код.</p>
+        <div class="w3-panel w3-note">
+            <p><strong>Совет:</strong> НЕ используйте таблицы для создания макета веб-страницы!</p>
+        </div>
+        <hr>
+        <h2>CSS фреймворки (frameworks)</h2>
+        <p>Если вы хотите быстро создать макет, вы можете использовать фреймворк, например <a href="../w3css/w3css_tutorial.html" target="_blank">W3.CSS</a> или <a href="../bootstrap/bootstrap_tutorial.html" target="_blank">Bootstrap</a>.</p>
+        <hr>
+        <h2>CSS Float (обтекание)</h2>
+        <p>Это обычное использование целых веб-макетов с помощью свойства <strong>CSS float</strong>. Float легко выучить - необходимо просто запомнить, как работают float и чистые свойства. Недостатки: плавающие элементы привязаны к потоку документов, что может мешать гибкости. Подробнее о float можно узнать в разделе <a href="../css/css_float.html" target="_blank">CSS Float и Clear</a>.</p>
+        <!-- Стиль для float
+        <style>
+            * {box-sizing: border-box;}
+            body {font-family: Arial, Helvetica, sans-serif;}
+            /* Style the header */
+            header {background-color: #666;padding: 30px;text-align: center;font-size: 35px;color: white;}
+            /* Create two columns/boxes that floats next to each other */
+            nav {float: left;width: 30%;height: 300px; /* only for demonstration, should be removed */background: #ccc;padding: 20px;}
+            /* Style the list inside the menu */
+            nav ul {list-style-type: none;padding: 0;}
+            article {float: left;padding: 20px;width: 70%;background-color: #f1f1f1;height: 300px; /* only for demonstration, should be removed */}
+            /* Clear floats after the columns */
+            section:after {content: "";display: table;clear: both;}
+            /* Style the footer */
+            footer {background-color: #777;padding: 10px;text-align: center;color: white;}
+            /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+            @media (max-width: 600px) {nav, article {width: 100%;height: auto;}}
+        </style>
+        -->
+        <div class="w3-example">
+            <h3>Пример float макета</h3>
+            <p>В этом примере мы создали заголовок, две колонки / поля и нижний колонтитул. На небольших экранах столбики будут располагаться друг над другом.</p>
+            <p>Измените размер окна веб-браузера, чтобы увидеть эффект реагирования (об этом вы узнаете в следующим разделе -
+                <a href="les27.html">HTML Адаптивность</a>.)</p>
+            <div class="w3-white w3-padding" style="font-family: Arial, Helvetica, sans-serif;">
+                <header>
+                    <h2>Cities</h2>
+                </header>
+                <section>
+                    <nav>
+                        <ul>
+                            <li><a href="#">London</a></li>
+                            <li><a href="#">Paris</a></li>
+                            <li><a href="#">Tokyo</a></li>
+                        </ul>
+                    </nav>
+                    <article>
+                        <h2>London</h2>
+                        <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                        <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+                    </article>
+                </section>
+                <footer>
+                    <p>Footer</p>
+                </footer>
+            </div>
+            <a class="w3-btn w3-margin-top w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_layout_float" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+    <hr>
+        <h2>CSS Flexbox (гибкая коробка)</h2>
+        <p><strong>Flexbox</strong> - это новый режим компоновки в <strong>CSS3</strong>. Использование flexbox гарантирует, что элементы будут вести себя предвидено, когда макет страницы должен соответствовать разным размерам экрана и разным устройствам отображения. Недостатки: не работает в браузере Internet Explorer 10 и более ранних версиях.</p>
+        <p>Узнать больше про flexbox можно в разделе <a href="../css/css3_flexbox.html" target="_blank">CSS Flexbox</a>.</p>
+        <!-- Стиль для Flexbox
+        <style>
+            * {box-sizing: border-box;}
+            body {font-family: Arial, Helvetica, sans-serif;}
+            /* Style the header */
+            header {background-color: #666;padding: 30px;text-align: center;font-size: 35px;color: white;}
+            /* Container for flexboxes */
+            section {display: -webkit-flex;display: flex;}
+            /* Style the navigation menu */
+            nav {-webkit-flex: 1;-ms-flex: 1;flex: 1;background: #ccc;padding: 20px;}
+            /* Style the list inside the menu */
+            nav ul {list-style-type: none;padding: 0;}
+            /* Style the content */
+            article {-webkit-flex: 3;-ms-flex: 3;flex: 3;background-color: #f1f1f1;padding: 10px;}
+            /* Style the footer */
+            footer {background-color: #777;padding: 10px;text-align: center;color: white;}
+            /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+            @media (max-width: 600px) {section {-webkit-flex-direction: column;flex-direction: column;}}
+        </style>
+        -->
+        <div class="w3-example">
+            <h3>Пример flexbox макета</h3>
+            <p></p>
+            <div class="w3-white w3-padding" style="font-family: Arial, Helvetica, sans-serif;">
+                <p>В этом примере мы создали заголовок, две колонки / поля и нижний колонтитул. На небольших экранах столбики будут располагаться друг над другом.</p>
+                <p>Измените размер окна браузера, чтобы увидеть эффект адаптивности.</p>
+                <p><strong>Примечание:</strong> Flexbox не поддерживается в Internet Explorer 10 и более ранних версиях.</p>
+                <header>
+                    <h2>Cities</h2>
+                </header>
+                <section>
+                    <nav>
+                        <ul>
+                            <li><a href="#">London</a></li>
+                            <li><a href="#">Paris</a></li>
+                            <li><a href="#">Tokyo</a></li>
+                        </ul>
+                    </nav>
+                    <article>
+                        <h2>London</h2>
+                        <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                        <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+                    </article>
+                </section>
+                <footer>
+                    <p>Footer</p>
+                </footer>
+            </div>
+            <a class="w3-btn w3-margin-top w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_layout_flexbox" target="_blank" rel="nofollow">Попробуйте сами! »</a>
+        </div>
+        <hr>
+        <h2>CSS Grid (сетка)</h2>
+        <p>Модуль <strong>CSS Grid Layout</strong> предлагает систему компоновки на основе сетки, со строками и столбцами, что облегчает разработку веб-страниц без использования float и позиционирования.</p>
+        <p>Недостатки: не работает ни в Internet Explorer, ни в Edge 15, ни в более ранних версиях.</p>
+        <p>Подробнее про <strong>CSS grid</strong> смотрите в разделе <a href="../css/css_rwd_grid.html" target="_blank">CSS Grid</a>.</p>
+        <hr>
+        <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> Для получения полного списка всех доступных <strong>HTML</strong> тегов, посетите <a href="../tags/element_reference.html">Справочник <strong>HTML</strong> тегов</a>.</p>
+        </div>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les25.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="les27.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr class="hr-bottom">
+        <!-- Коментарі від Disqus -->
+        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
+        <!-- Комментарии от Disqus -->
+  <div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+this.page.url = html5beginners.github.io;  // канонический URL страницы
+this.page.identifier = html5beginners.github.io/html/les26.html; // уникальный идентификатор страницы
+};
+(function() { // Не редактировать ниже этой линии
+var d = document, s = d.createElement('script');
+s.src = 'https://html5beginners.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+<!--  / Комментарии от Disqus -->
+    </div>
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>

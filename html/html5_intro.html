@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>HTML5. Введение. Урок №38. W3Schools на русском. Уроки для начинающих</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="HTML,CSS,уроки,для начинающих,html5,элементы,введение,w3schools,на русском,языке" />
+    <meta name="description" content="Урок 38. HTML5. Введение. Что такое технология HTML5? Какие бывают спецификации HTML? История создания и развития. W3Schools на русском языке. Учебник для начинающих" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/ws.css" />
+    <link rel="stylesheet" href="../styles/handheld.css" />
+    <link rel="canonical" href="https://html5beginners.github.io/" />
+    <meta property="og:title" content="HTML5. Введение. Урок №38. W3Schools на русском. Уроки для начинающих" />
+    <meta property="og:type" content="веб-сайт" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://html5beginners.github.io/" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="Урок 38. HTML5. Введение. Что такое технология HTML5? Какие бывают спецификации HTML? История создания и развития. W3Schools на русском языке. Учебник для начинающих" />
+    <meta property="og:locale" content="ru" /> <!--мова сайту-->
+    <meta property="og:site_name" content="HTML5Beginners - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
+    <script src="../js/topnav.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" class="frame-header"></iframe>
+<main>
+    <div class="left-sidebar">
+        <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>HTML5. Введение</h1>
+        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html_form_attributes.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html5_browsers.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr>
+        <h2>Что такое HTML5?</h2>
+        <p><strong>HTML5</strong> - действующая версия языка <strong>HTML</strong>. В состав рабочей группы по <strong>HTML5</strong> вошли AOL, Apple, Google, IBM, Microsoft, Mozilla, Nokia, Opera и ещё несколько сотен других производителей. </p>
+        <p>Существует некоторая путаница о версиях, поскольку существуют две независимые группы разработчиков - WHATWG и W3C.</p>
+        <p>В WHATWG отказались от принципа «версийности» в пользу «вечной разработки» при принятии <strong>HTML</strong> спецификации. Такое решение было вызвано попыткой ускорить воплощение стандарта в жизнь, то есть разработчикам веб браузеров не нужно ждать, пока выйдет официально утверждённая версия спецификации (то есть, спецификация перейдет в состояние recomendation), они могут воплощать определённые части спецификации уже сейчас. Поэтому по версии WHATWG существует только одна спецификация, которая постоянно развивается - <strong>HTML</strong>.</p>
+        <p>Эти две группы работали в тандеме, в WHATWG писали спецификации в режиме «живого стандарта» ( «Living Standard»), а в W3C принимали эти спецификации как «снимки», и внедряли их в чёткие версии своей спецификации. Группа W3C работала значительно медленнее, потому что необходимо было обеспечивать требования большего спектра пользователей, а не только веб-браузеров.</p>
+        <p>28 октября 2014 года Консорциум Всемирной Паутины (W3C) объявил о предоставлении набору спецификаций <strong>HTML5</strong> статус рекомендованного стандарта. Интересно, что в этом виде спецификации <strong>HTML 5.0</strong> были сформированы ещё два года до того, после чего работа была сосредоточена на проведении тестирования и оценки совместимости доступных реализаций. На время стандартизации <strong>HTML5</strong> уже давно стал стандартом де-факто и активно использовался в веб-приложениях. Фактическое утверждение стандарта лишь формально поставило точку в продвижении <strong>HTML5</strong> и подтвердило вездесущность и корректность его реализации.</p>
+        <p>Спецификация <strong>HTML5</strong> не ограничивается только разметкой и включает в себя ряд веб-технологий, которые в совокупности формируют открытую Веб-платформу - программное окружение для работы кросс-платформенных приложений, способных взаимодействовать с оборудованием, и которые поддерживают средства для работы с видео, графикой и анимацией, что даёт расширенные сетевые возможности.</p>
+        <hr>
+        <h2>Что нового в HTML5?</h2>
+        <p>Объявление <strong>DOCTYPE</strong> для <strong>HTML5</strong> очень простое:</p>
+        <div class="w3-example">
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+        </div>
+        <p>Объявление кодировки символов (charset) также очень простое:</p>
+        <div class="w3-example">
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red"> charset<span class="attributevaluecolor" style="color:mediumblue">="UTF-8"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+        </div>
+        <div class="w3-example">
+            <h3>HTML5 пример:</h3>
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red"> charset<span class="attributevaluecolor" style="color:mediumblue">="UTF-8"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>title<span class="tagcolor" style="color:mediumblue">&gt;</span></span><em>Title of the document</em><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/title<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <em>Content of the document......</em><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_intro">Попробуйте сами »</a>
+        </div>
+        <div class="w3-panel w3-note">
+            <p>Кодировка символов по умолчанию в <strong>HTML5</strong> - это <strong>UTF-8</strong>.</p>
+        </div>
+        <hr>
+        <h2>Новые элементы в HTML5</h2>
+        <p>Наиболее интересными являются новые <strong>HTML5</strong> элементы:&nbsp;</p>
+        <p>Новые <strong>семантические элементы</strong>, такие как <code class="w3-codespan">&lt;header&gt;</code>, <code class="w3-codespan">&lt;footer&gt;</code>, <code class="w3-codespan">&lt;article&gt;</code> и <code class="w3-codespan">&lt;section&gt;</code>.</p>
+        <p>Новые <strong>атрибуты элементов формы</strong>, такие как number, date, time, calendar и range.</p>
+        <p>Новые <strong>графические элементы</strong>: <code class="w3-codespan">&lt;svg&gt;</code> и <code class="w3-codespan">&lt;canvas&gt;</code>.</p>
+        <p>Новые <strong>мультимедиа элементы</strong>: <code class="w3-codespan">&lt;audio&gt;</code> и <code class="w3-codespan">&lt;video&gt;</code>.</p><p>
+    </p><div class="w3-panel w3-note">
+        <p>В следующем разделе <a href="html5_browsers.html">HTML5 Поддержка браузерами</a> вы узнаете, "как научить" старые браузеры обрабатывать "неизвестные" для них (новые) HTML элементы.</p>
+    </div>
+        <hr>
+        <h2>Новые HTML5 API (интерфейсы прикладного программирования)</h2>
+        <p>Наиболее интересными являются новые API в <strong>HTML5</strong>:</p>
+        <ul>
+            <li>HTML Геолокация
+            <li>HTML Drag and Drop
+            <li>HTML Локальное хранилище
+            <li>HTML Кеш приложения
+            <li>HTML Веб-работники
+            <li>HTML SSE
+        </ul>
+        <div class="w3-panel w3-note">
+            <p><strong>Совет:</strong> Локальное хранилище является мощной заменой для файлов cookie.</p>
+        </div>
+        <hr>
+        <h2>Удалённые элементы в HTML5</h2>
+        <p>В <strong>HTML5</strong> удалены такие элементы <strong>HTML4</strong>:</p>
+        <table class="w3-table-all">
+            <tbody><tr>
+                <th>Удалено элемент</th>
+                <th>Используют вместо этого</th>
+            </tr>
+            <tr>
+                <td>&lt;acronym&gt;</td>
+                <td>&lt;abbr&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;applet&gt;</td>
+                <td>&lt;object&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;basefont&gt;</td>
+                <td>CSS</td>
+            </tr>
+            <tr>
+                <td>&lt;big&gt;</td>
+                <td>CSS</td>
+            </tr>
+            <tr>
+                <td>&lt;center&gt;</td>
+                <td>CSS</td>
+            </tr>
+            <tr>
+                <td>&lt;dir&gt;</td>
+                <td>&lt;ul&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;font&gt;</td>
+                <td>CSS</td>
+            </tr>
+            <tr>
+                <td>&lt;frame&gt;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&lt;frameset&gt;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&lt;noframes&gt;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&lt;strike&gt;</td>
+                <td>CSS, &lt;s&gt; або &lt;del&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;tt&gt;</td>
+                <td>CSS</td>
+            </tr>
+            </tbody></table>
+        <div class="w3-panel w3-note">
+            <p>В разделе <a href="html5_migration.html">HTML5 Миграция с HTML4</a> вы узнаете, как легко перейти с <strong>HTML4</strong> на <strong>HTML5</strong>.
+            </p>
+        </div>
+        <hr>
+        <h2>HTML История. Как это было?</h2>
+        <p>С первых дней существования Всемирной паутины существует много версий <strong>HTML</strong>:</p>
+        <table class="w3-table-all">
+            <tbody><tr>
+                <th>Год</th>
+                <th>Версия</th>
+            </tr>
+            <tr>
+                <td>1989</td>
+                <td>Tim Berners-Lee изобрёл www</td>
+            </tr>
+            <tr>
+                <td>1991</td>
+                <td>Tim Berners-Lee изобрёл HTML</td>
+            </tr>
+            <tr>
+                <td>1993</td>
+                <td>Dave Raggett разработал HTML+</td>
+            </tr>
+            <tr>
+                <td>1995</td>
+                <td>Рабочая группа HTML разработала HTML 2.0</td>
+            </tr>
+            <tr>
+                <td>1997</td>
+                <td>W3C Рекомендация: HTML 3.2</td>
+            </tr>
+            <tr>
+                <td>1999</td>
+                <td>W3C Рекомендация: HTML 4.01</td>
+            </tr>
+            <tr>
+                <td>2000</td>
+                <td>W3C Рекомендация: XHTML 1.0</td>
+            </tr>
+            <tr>
+                <td>2008</td>
+                <td>WHATWG HTML5 Первый публичный проект</td>
+            </tr>
+            <tr>
+                <td>2012</td>
+                <td>WHATWG HTML5 Living Standard (Живой стандарт)</td>
+            </tr>
+            <tr>
+                <td>2014</td>
+                <td>W3C Рекомендация: HTML5</td>
+            </tr>
+            <tr>
+                <td>2016</td>
+                <td>W3C Кандидат рекомендации: HTML 5.1</td>
+            </tr>
+            <tr>
+                <td>2017</td>
+                <td>W3C Рекомендация: HTML5.1 2nd Edition</td>
+            </tr>
+            <tr>
+                <td>2017</td>
+                <td>W3C Рекомендация: HTML5.2</td>
+            </tr>
+            </tbody>
+        </table>
+        <p>С 1991 по 1999 год HTML разрабатывался с версии 1 до версии 4.&nbsp; </p>
+        <p>В 2000 году Консорциум Всемирной паутины - World Wide Web (<strong>W3C</strong>) - рекомендовал XHTML 1.0. Синтаксис XHTML был строгим, и разработчики были вынуждены писать валидный и "хорошо сформированный" код.</p>
+        <p>В 2004 году группа W3C решила закрыть разработку HTML в пользу XHTML.</p>
+        <p>В 2004 году была сформирована <strong>WHATWG</strong> (Web Hypertext Application Technology Working Group - Рабочая группа веб-технологий по использованию гипертекста). WHATWG хотела разработать HTML, согласованный с тем, как использовался веб-сайт, когда он был совместим со старыми версиями HTML.</p>
+        <p>В 2004 - 2006 годах компания WHATWG получила поддержку от основных производителей браузеров.</p>
+        <p>В 2006 году группа W3C объявила про поддержку WHATWG.</p>
+        <p>В 2008 году был выпущен первый публичный проект <strong>HTML5</strong>.</p>
+        <p>В 2012 году WHATWG и W3C приняли решение о разделении:</p>
+        <p><strong>Группа WHATWG хотела разработать HTML как "Living Standard" ("Живий Стандарт")</strong>. "Living Standard" всегда обновляется и усовершенствуется. Можно добавить новые функции, но старую функциональность нельзя удалить.</p>
+        <p><a href="http://whatwg.org/html/" target="_blank" rel="nofollow">WHATWG HTML5 Living Standard</a> был опубликован в 2012 году и постоянно обновляется.</p>
+        <p><strong>Группа W3C хотела разработать окончательный стандарт HTML5 и XHTML.</strong></p>
+        <p><a href="http://www.w3.org/TR/html5/" target="_blank" rel="nofollow">W3C HTML5</a> Рекомендацию было выпущено 28 октября 2014 года.</p>
+        <p><a href="http://www.w3.org/TR/html51/" target="_blank" rel="nofollow">W3C HTML5.1 2nd Edition</a> Рекомендацию было выпущено 3 октября 2017 года.</p>
+        <p><a href="http://www.w3.org/TR/html52/" target="_blank" rel="nofollow">W3C HTML5.2</a> Рекомендацию было выпущено 14 декабря 2017 года.</p>
+        <hr>
+        <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> Получить актуальную и более полную информацию о "Living Standard" WHATWG и действующие Рекомендации W3C вы всегда можете на официальных сайтах <a href="https://whatwg.org/" target="_blank" rel="nofollow">WHATWG</a> и <a href="https://www.w3.org/" target="_blank" rel="nofollow">W3C</a>.</p>
+        </div>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html_form_attributes.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html5_browsers.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr class="hr-bottom">
+        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
+        <!-- Комментарии от Disqus -->
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_config = function () {
+        this.page.url = html5beginners.github.io;  // канонический URL страницы
+        this.page.identifier = html5beginners.github.io/html/html5_intro.html; // уникальный идентификатор страницы
+        };
+        (function() { // Не редактировать ниже этой линии
+        var d = document, s = d.createElement('script');
+        s.src = 'https://html5beginners.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+        <!--  / Комментарии от Disqus -->
+    </div>
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>

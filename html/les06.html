@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>HTML. Атрибуты. Урок №6. Курсы W3schools на русском. Уроки для начинающих</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="HTML,CSS,уроки,для начинающих,html5,css3,атрибуты,коды,теги,w3schools,на русском" />
+    <meta name="description" content="Урок 6. HTML. Атрибуты тегов в html-элементах. Что такое атрибуты? W3schools на русском языке. Учебник для начинающих" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/ws.css" />
+    <link rel="stylesheet" href="../styles/handheld.css" />
+    <link rel="canonical" href="https://html5beginners.github.io/" />
+    <meta property="og:title" content="HTML. Атрибуты. Урок №6. Курсы W3schools на русском. Уроки для начинающих" />
+    <meta property="og:type" content="веб-сайт" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://html5beginners.github.io/" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="Урок 6. HTML. Атрибуты тегов в html-элементах. Что такое атрибуты? W3schools на русском языке. Учебник для начинающих. Уроки для чайников" />
+    <meta property="og:locale" content="ru" /> <!--мова сайту-->
+    <meta property="og:site_name" content="HTML5Beginners - Основы HTML, CSS, JavaScript, PHP для начинающих" />
+    <script src="../js/topnav.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" class="frame-header"></iframe>
+<main>
+    <div class="left-sidebar">
+        <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>Урок №6. HTML. Атрибуты</h1>
+        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
+        <!-- buttons prev - next -->
+        <hr>
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les05.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="les07.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <hr>
+        <!-- / buttons prev - next -->
+        <p>Атрибуты предоставляют дополнительную информацию об элементах <strong>HTML</strong>.</p>
+        <h2>Атрибуты HTML. Для чего необходимы атрибуты?</h2>
+        <ul>
+            <li>Все элементы HTML могут иметь атрибуты
+            <li>Атрибуты предоставляют дополнительную информацию про элемент
+            <li>Атрибуты всегда задаются в начальном теге
+            <li>Атрибуты обычно входят в пару имя атрибута/значение, например: name="value" (имя атрибута="значение")
+        </ul>
+        <hr>
+        <h2>Атрибут href</h2>
+        <p><strong>HTML</strong> ссылки определяются тегом <code>&lt;a&gt;</code>. Адрес ссылки указан в атрибуте <code>href</code>:</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="https://www.w3schools.com"</span></span><span style="color:mediumblue">&gt;</span></span>This is a link<span style="color:brown"><span style="color:mediumblue">&lt;</span>/a<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_link" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <p>Подробнее о ссылках и теге <code>&lt;a&gt;</code> можно узнать в следующих разделах этого учебника.</p>
+        <hr>
+        <h2>Атрибут src</h2>
+        <p>Изображения в <strong>HTML</strong> определяются тегом <code>&lt;img&gt;</code>.</p>
+        <p>Название файла источника изображения указывается в атрибуте <code>src</code>:</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="img_girl.jpg"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_img_src" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <hr>
+        <h2>Атрибуты width (ширина) и height (высота)</h2>
+        <p>Изображения в <strong>HTML</strong> имеют набор атрибутов размера, который определяет ширину и высоту изображения:</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="img_girl.jpg"</span> width<span style="color:mediumblue">="500"</span> height<span style="color:mediumblue">="600"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_img" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <p>Размер изображения задаётся в пикселях: width = "500" означает ширину 500 пикселей.</p>
+        <p>Вы узнаете больше об изображениях в разделе <a href="les16.html">Изображения в HTML</a>.</p>
+        <hr>
+        <h2>Атрибут alt</h2>
+        <p>Атрибут <code>alt</code> указывает альтернативный текст для использования, когда изображение не может быть отображено. Значение атрибута можно прочитать считывателями экрана (скринридерами). Таким образом, кто-то "слушает" веб-страницу, например, человек с нарушениями зрения может "услышать" элемент.</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="img_girl.jpg"</span> alt<span style="color:mediumblue">="Girl
+  with a jacket"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_alt" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <p>Атрибут <code>alt</code> также полезен, если изображение не существует. Посмотрите, что случится, если мы попробуем отобразить изображение, которое не существует:</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="img_typo.jpg"</span> alt<span style="color:mediumblue">="Girl
+  with a jacket"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_alt_error" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <h2>Атрибут style</h2>
+        <p>Атрибут <code>style</code> используется для определения стиля элемента, например цвета, шрифта, размера и т.д.</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:red"> style<span style="color:mediumblue">="color:red"</span></span><span style="color:mediumblue">&gt;</span></span>I am a paragraph<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_style" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> Вы узнаете больше про стилизацию в <a href="https://www.w3schools.com/css/css_tutorial.html" target="_blank">учебнике по CSS</a>.</p>
+        </div>
+        <hr>
+        <h2>Атрибут lang</h2>
+        <p>Язык веб-страницы можно объвить в теге <code>&lt;html&gt;</code>. Язык объявляется атрибутом <code>lang</code>. Объявление языка имеет важное значение для приложений доступности (программы для чтения с экрана) и поисковых систем:</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:red"> lang<span style="color:mediumblue">="en-US"</span></span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br>
+                ... Content<br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+            </div>
+        </div>
+        <p>Первые две буквы определяют язык (например, en - английский). Если есть диалект, то используют ещё две буквы (US - США). Для русского языка используют буквы ru.</p>
+        <hr>
+        <h2>Атрибут title</h2>
+        <p>Здесь атрибут <code>title</code> добавляется к элементу <code>&lt;p&gt;</code>. Значение атрибута заголовка будет отображаться как всплывающая подсказка, когда вы передвигаете курсор мыши над параграфом:</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:red"> title<span style="color:mediumblue">="I'm a tooltip"</span></span><span style="color:mediumblue">&gt;</span></span><br>This is a paragraph.<br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_title" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <h2>Используйте атрибуты нижнего регистра</h2>
+        <p>Стандарт <strong>HTML5</strong> не требует имён атрибутов в нижнем регистре. Атрибут <code>title</code> может быть записан в верхнем или нижнем регистре – <strong>title</strong> или <strong>TITLE</strong>.</p>
+        <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> W3C рекомендует нижний регистр в <strong>HTML</strong> и требует нижний регистр для более строгих типов документов, таких как <strong>XHTML</strong>.</p>
+        </div>
+        <hr>
+        <h2>Значения атрибутов в кавычках</h2>
+        <p>Стандарт <strong>HTML5</strong> не требует кавычек вокруг значений атрибутов. Атрибут <code>href</code>, показаный выше, может быть написан без кавычек:</p>
+        <div class="w3-example">
+            <p>Пример <b>(Плохо)</b>:</p>
+            <div class="w3-border-red w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red">
+href<span style="color:mediumblue">=https://www.w3schools.com</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_noquotes" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <div class="w3-example">
+            <p>Пример <b>(Хорошо)</b>:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="https://www.w3schools.com"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_withquotes" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <p><strong>W3C</strong> рекомендует кавычки в <strong>HTML</strong> и требует кавычки для более строгих типов документов, таких как <strong>XHTML</strong>. Иногда просто необходимо использовать кавычки. Этот пример не будет отображать правильно атрибут <code>title</code>, поскольку он содержит пробел:</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:red">
+ title<span style="color:mediumblue">=About </span>W3Schools</span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_error" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> Наиболее распространённым написанием <strong>HTML-кода</strong> является с использованием кавычек. Опускание кавычек может привести к ошибкам. В <strong>W3Schools</strong> всегда используют кавычки вокруг значений атрибутов.</p>
+        </div>
+        <hr>
+        <h2>Одинарные или двойные кавычки?</h2>
+        <p>Двойные кавычки вокруг значений атрибутов более распространены в <strong>HTML</strong>, но также можно использовать и одинарные кавычки. В некоторых ситуациях, когда значение атрибута само по собе содержит двойные кавычки, необходимо использовать одинарные кавычки:</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:red"> title<span style="color:mediumblue">='John "ShotGun" Nelson'</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+        </div>
+        <p>Или наоборот:</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:red"> title<span style="color:mediumblue">="John 'ShotGun' Nelson"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_single_double" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <h3>Резюме раздела</h3>
+        <ul>
+            <li>Все элементы <strong>HTML</strong> могут иметь <strong>атрибуты</strong>
+            <li>Атрибут <code>title</code> предоставляет дополнительную информацию в виде "подсказки"
+            <li>Атрибут <code>href</code> содержит информацию об адресе для ссылок
+            <li>Атрибуты <code>width</code> (ширины) и <code>height</code> (высоты) предоставляют информацию о размере изображений
+            <li>Атрибут <code>alt</code> предоставляет альтернативный текст для скринридеров (считывателей экрана)
+            <li>В <strong>W3Schools</strong> всегда используют имена атрибутов <strong>нижнего регистра</strong>
+            <li>В <strong>W3Schools</strong> всегда пишут значения атрибутов с <strong>двойными кавычками</strong>
+        </ul><hr>
+        <div class="w3-container w3-dark-grey w3-padding">
+            <h2 style="text-shadow: 1px 1px 1px #000, 1px 1px 1px #000;">Проверьте себя упражнениями</h2>
+            <div class='w3-bar w3-margin-bottom'>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_attributes1" target="_blank" rel="nofollow">Exercise 1 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_attributes2" target="_blank" rel="nofollow">Exercise 2 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_attributes3" target="_blank" rel="nofollow">Exercise 3 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_attributes4" target="_blank" rel="nofollow">Exercise 4 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_attributes5" target="_blank" rel="nofollow">Exercise 5 »</a>
+            </div>
+        </div>
+        <hr>
+        <h2>HTML Атрибуты</h2>
+        <p>Ниже приведён алфавитный список некоторых атрибутов, которые часто используются в <strong>HTML</strong>, о которых вы узнаете больше в этом учебнике:</p>
+        <table class="w3-table-all">
+            <tbody><tr>
+                <th>Атрибут</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>alt</td>
+                <td>Определяет альтернативный текст для изображения, когда изображение не может быть отображено</td>
+            </tr>
+            <tr>
+                <td>disabled</td>
+                <td>Указывает, что входной элемент должен быть отключен</td>
+            </tr>
+            <tr>
+                <td>href</td>
+                <td>Указывает URL-адрес (веб-адрес) для ссылки</td>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>Указывает уникальный идентификатор элемента</td>
+            </tr>
+            <tr>
+                <td>src</td>
+                <td>Указывает URL-адрес (веб-адрес) изображения</td>
+            </tr>
+            <tr>
+                <td>style</td>
+                <td>Определяет встроенный CSS стиль для элемента</td>
+            </tr>
+            <tr>
+                <td>title</td>
+                <td>Определяет дополнительную информацию про элемент (отображается как всплывающая подсказка)</td>
+            </tr>
+            </tbody>
+        </table>
+        <hr>
+        <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> Полный список всех атрибутов для каждого <strong>HTML</strong> элемента приведён в <a href="https://www.w3schools.com/tags/ref_attributes.asp" target="_blank" rel="nofollow">справочнику HTML атрибутов</a>.</p>
+        </div>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les05.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="les07.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr class="hr-bottom">
+        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
+        <!-- Комментарии от Disqus -->
+  <div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+this.page.url = html5beginners.github.io;  // канонический URL страницы
+this.page.identifier = html5beginners.github.io/html/les06.html; // уникальный идентификатор страницы
+};
+(function() { // Не редактировать ниже этой линии
+var d = document, s = d.createElement('script');
+s.src = 'https://html5beginners.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленых Disqus.</a></noscript>
+<!--  / Комментарии от Disqus -->
+    </div>
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>

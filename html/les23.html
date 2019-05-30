@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>HTML. JavaScript. Урок №23. W3schools на русском. Уроки для начинающих</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="HTML,CSS,уроки,для начинающих,html5,css3,javascript,джава,скрипт,web,js,справочник,веб,страница,w3schools,на русском,языке" />
+    <meta name="description" content="Урок 23. HTML. CSS. JavaScript на веб-страницах. Как используют джава-скрипты на веб-странице? Интерактивные веб-сайты. W3Schools на русском языке. Учебник для начинающих" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/ws.css" />
+    <link rel="stylesheet" href="../styles/handheld.css" />
+    <link rel="canonical" href="https://html5beginners.github.io/" />
+    <meta property="og:title" content="HTML. JavaScript. Урок №23. W3schools на русском. Уроки для начинающих" />
+    <meta property="og:type" content="веб-сайт" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://html5beginners.github.io/" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="Урок 23. HTML. CSS. JavaScript на веб-страницах. Как используют джава-скрипты на веб-странице? Интерактивные веб-сайты. W3Schools на русском языке. Учебник для начинающих" />
+    <meta property="og:locale" content="ru" /> <!--мова сайту-->
+    <meta property="og:site_name" content="HTML5Beginners - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
+    <script src="../js/topnav.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" class="frame-header"></iframe>
+<main>
+    <div class="left-sidebar">
+        <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>Урок №23. HTML. JavaScript</h1>
+        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
+        <!-- buttons prev - next -->
+        <hr>
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les22.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="les24.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <hr>
+        <!-- / buttons prev - next -->
+        <h2>HTML/CSS. Как добавить JavaScript в HTML-код на веб-странице? Использование скриптов</h2>
+        <p><strong>JavaScript</strong> делает <strong>HTML</strong> страницы более динамичными и интерактивными.</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <h2>Мой первый JavaScript</h2>
+                <button type="button" onclick="document.getElementById('demo').innerHTML=Date()">
+                    Нажмите на меня, чтобы отобразить дату и время</button>
+                <p id="demo"></p>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_scripts_intro" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <h2>HTML тег &lt;script&gt;</h2>
+        <p>Тег <code>&lt;script&gt;</code> используется для определения скрипта на стороне клиента (<strong>JavaScript</strong>). Элемент <code>&lt;script&gt;</code> или содержит операторы сценариев, или указывает на внешний файл скрипта через атрибут <code>src</code>. Обычно <strong>JavaScript</strong> используется для манипуляции изображениями, проверки форм и динамичных изменений содержания. Чтобы выбрать <strong>HTML</strong> элемент, <strong>JavaScript</strong> очень часто использует метод <code>document.getElementById ()</code>.</p>
+        <p>Этот пример <strong>JavaScript</strong> пишет "Hello JavaScript!" в <strong>HTML</strong> элементе с id="demo":</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>script<span style="color:mediumblue">&gt;</span></span><span style="color:black"><br><span style="color:red"></span> document.<span style="color:black">getElementById</span>(<span style="color:brown">"demo"</span>).<span style="color:black">innerHTML</span> = <span style="color:brown">"Hello JavaScript!"</span>;<br></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/script<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_script" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> Вы можете узнать больше о <strong>JavaScript</strong> в <a href="../js/javascript_tutorial.html" target="_blank">Учебнику по JavaScript</a>.</p>
+        </div><hr>
+        <h2>Наслаждайтесь JavaScript!</h2>
+        <p>Вот несколько примеров того, что <strong>JavaScript</strong> может сделать:</p>
+        <div class="w3-example">
+            <p><strong>JavaScript</strong> может менять содержание <strong>HTML</strong>:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:black"><span style="color:red"></span> document.<span style="color:black">getElementById</span>(<span style="color:brown">"demo"</span>).<span style="color:black">innerHTML</span> = <span style="color:brown">"Hello JavaScript!"</span>;<span style="color:red"></span> </span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_script_html" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <div class="w3-example">
+            <p><strong>JavaScript</strong> может менять <strong>HTML</strong> стили:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:black"> document.<span style="color:black">getElementById</span>(<span style="color:brown">"demo"</span>).<span style="color:black">style</span>.<span style="color:black">fontSize</span> = <span style="color:brown">"25px"</span>;<br>document.<span style="color:black">getElementById</span>(<span style="color:brown">"demo"</span>).<span style="color:black">style</span>.<span style="color:black">color</span> = <span style="color:brown">"red"</span>;<br>document.<span style="color:black">getElementById</span>(<span style="color:brown">"demo"</span>).<span style="color:black">style</span>.<span style="color:black">backgroundColor</span> = <span style="color:brown">"yellow"</span>; </span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_script_styles" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <div class="w3-example">
+            <p><strong>JavaScript</strong> может менять атрибуты <strong>HTML</strong>:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:black"><span style="color:red"></span> document.<span style="color:black">getElementById</span>(<span style="color:brown">"image"</span>).<span style="color:black">src</span> = <span style="color:brown">"picture.gif"</span>;<span style="color:red"></span> </span>
+            </div>
+            <p>Результат:</p>
+            <script>
+                function light(sw) {
+                    var pic;
+                    if (sw == 0) {
+                        pic = "../img/pic_bulboff.gif"
+                    } else {
+                        pic = "../img/pic_bulbon.gif"
+                    }
+                    document.getElementById('myImage').src = pic;
+                }
+            </script>
+            <img id="myImage" src="../img/pic_bulboff.gif" width="50" height="90" alt="Лампочка">
+            <p>
+                <button type="button" onclick="light(1)">Свет включить</button>
+                <button type="button" onclick="light(0)">Свет выключить</button>
+            </p>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_script_attribute" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <h2>HTML тег &lt;noscript&gt;</h2>
+        <p>Тег <code>&lt;noscript&gt;</code> используется для предоставления альтернативного содержания для пользователей, которые выключили скрипты в своём веб-браузере или имеют веб-браузер, который не поддерживает скрипты на стороне клиента:</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>script<span style="color:mediumblue">&gt;</span></span><span style="color:black"><br><span style="color:red"></span> document.<span style="color:black">getElementById</span>(<span style="color:brown">"demo"</span>).<span style="color:black">innerHTML</span> = <span style="color:brown">"Hello JavaScript!"</span>;<br></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/script<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>noscript<span style="color:mediumblue">&gt;</span></span>Sorry, your browser does not support JavaScript!<span style="color:brown"><span style="color:mediumblue">&lt;</span>/noscript<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_noscript" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <div class="w3-container w3-dark-grey w3-padding">
+            <h2 style="text-shadow: 1px 1px 1px #000, 1px 1px 1px #000;">Проверьте себя упражнениями!</h2>
+            <div class="w3-bar w3-margin-bottom">
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_scripts1" target="_blank" rel="nofollow">Exercise 1 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_scripts2" target="_blank" rel="nofollow">Exercise 2 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_scripts3" target="_blank" rel="nofollow">Exercise 3 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_scripts4" target="_blank" rel="nofollow">Exercise 4 »</a>
+            </div>
+        </div>
+        <hr>
+        <h2>HTML теги сценария</h2>
+        <table class="w3-table-all">
+            <tbody><tr>
+                <th>Тег</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td><a href="../tags/tag_script.html" target="_blank">&lt;script&gt;</a></td>
+                <td>Определяет скрипт на стороне клиента</td>
+            </tr>
+            <tr>
+                <td><a href="../tags/tag_noscript.html" target="_blank">&lt;noscript&gt;</a></td>
+                <td>Определяет альтернативное содержание для пользователей, которые не поддерживают скрипты на стороне клиента</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> Для получения полного списка всех доступных <strong>HTML</strong> тегов, посетите <a href="../tags/element_reference.html">Справочник <strong>HTML</strong> тегов</a>.</p>
+        </div>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les22.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="les24.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr class="hr-bottom">
+        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
+        <!-- Комментарии от Disqus -->
+  <div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+this.page.url = html5beginners.github.io;  // канонический URL страницы
+this.page.identifier = html5beginners.github.io/html/les23.html; // уникальный идентификатор страницы
+};
+(function() { // Не редактировать ниже этой линии
+var d = document, s = d.createElement('script');
+s.src = 'https://html5beginners.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленых Disqus.</a></noscript>
+<!--  / Комментарии от Disqus -->
+    </div>
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>HTML. Атрибут идентификатора - Id. Урок №21. W3schools на русском. Уроки для начинающих</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="HTML,CSS,уроки,для начинающих,html5,css3,атрибут,идентификатора,id,web,веб,страница,w3schools,на русском" />
+    <meta name="description" content="Урок 21. HTML. CSS. Атрибут идентификатора - id на веб-страницах. Как используют атрибуты на веб-страницах? W3Schools на русском. Учебник для начинающих" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/ws.css" />
+    <link rel="stylesheet" href="../styles/handheld.css" />
+    <link rel="canonical" href="https://html5beginners.github.io/" />
+    <meta property="og:title" content="HTML. Атрибут идентификатора - Id. Урок №21. W3schools на русском. Уроки для начинающих" />
+    <meta property="og:type" content="веб-сайт" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://html5beginners.github.io/" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="Урок 21. HTML. CSS. Атрибут идентификатора - id на веб-страницах. Как используют атрибуты на веб-страницах? W3Schools на русском. Учебник для начинающих" />
+    <meta property="og:locale" content="ru" /> <!--мова сайту-->
+    <meta property="og:site_name" content="HTML5Beginners - Основи HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
+    <script src="../js/topnav.js"></script>
+    <style>
+    #myHeader {background-color: lightblue;padding: 40px;text-align: center;}
+    </style>
+</head>
+<body>
+<iframe src="../pages/header.html" class="frame-header"></iframe>
+<main>
+    <div class="left-sidebar">
+        <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>Урок №21. HTML. Идентификаторы. Атрибут Id</h1>
+        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
+        <!-- buttons prev - next -->
+        <hr>
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les20.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="les22.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <hr>
+        <!-- / buttons prev - next -->
+        <h2>HTML/CSS. Для чего необходим атрибут идентификатора - Id в HTML-коде на веб-странице? Использование атрибута Id</h2>
+        <p>Атрибут <code>id</code> указывает уникальный идентификатор для HTML элемента (значение должно быть уникальным в HTML документе). Значение <em>id</em> может использоваться <strong>CSS</strong> и <strong>JavaScript</strong> для выполнения определённых задач для уникального элемента с заданным значением <em>id</em>. В <strong>CSS</strong>, чтобы выбрать элемент с определённым идентификатором, напишите символ hash (#) (решётка), а потом идентификатор элемента:</p>
+
+        <div class="w3-example">
+            <p>Пример:</p>
+            <p>Используйте <strong>CSS</strong> для стилизации элемента с идентификатором "myHeader":</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>style<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><br> <strong>#myHeader</strong> <span style="color:black">{</span><span style="color:red"><br>&nbsp; background-color<span style="color:mediumblue"><span style="color:black">:</span> lightblue<span style="color:black">;</span></span><br>&nbsp;&nbsp;color<span style="color:mediumblue"><span style="color:black">:</span> black<span style="color:black">;</span></span><br>&nbsp;&nbsp;padding<span style="color:mediumblue"><span style="color:black">:</span> 40px<span style="color:black">;</span></span><br>&nbsp;&nbsp;text-align<span style="color:mediumblue"><span style="color:black">:</span> center<span style="color:black">;</span></span><br></span><span style="color:black">}</span> <br></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/style<span style="color:mediumblue">&gt;</span></span><br> <br><span style="color:brown"><span style="color:mediumblue">&lt;</span>h2<span style="color:red"> id<span style="color:mediumblue">="myHeader"</span></span><span style="color:mediumblue">&gt;</span></span>My Header<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h2<span style="color:mediumblue">&gt;</span></span><br>
+            </div>
+            <p>Результат:</p>
+            <h2 id="myHeader">My Header</h2>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_id_css" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <div class="w3-panel w3-note">
+            <p><strong>Совет:</strong> Атрибут <code>id</code> можно использовать на любом <strong>HTML</strong> элементе.</p>
+            <p><strong>Примечание:</strong> Значение <strong>id</strong> является чувствительным к регистру.</p>
+            <p><strong>Примечание:</strong> Значение <strong>id</strong> должно содержать хотя бы один символ и не должно содержать пустого места (пробелы, вкладки).</p>
+        </div>
+        <hr>
+        <h2>Разница между классом (class) и идентификатором (id)</h2>
+        <p><strong>HTML</strong> элемент может иметь только один уникальный идентификатор, который принадлежит этому отдельному элементу, а имя класса может использоваться несколькими элементами:</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>style<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><br><span style="color:green">/* Style the element with the id "myHeader" */</span><br> <strong>#myHeader</strong> <span style="color:black">{</span><span style="color:red"><br>&nbsp; background-color<span style="color:mediumblue"><span style="color:black">:</span> lightblue<span style="color:black">;</span></span><br>&nbsp; color<span style="color:mediumblue"><span style="color:black">:</span> black<span style="color:black">;</span></span><br>&nbsp;&nbsp;padding<span style="color:mediumblue"><span style="color:black">:</span> 40px<span style="color:black">;</span></span><br>&nbsp;&nbsp;text-align<span style="color:mediumblue"><span style="color:black">:</span> center<span style="color:black">;</span></span><br></span><span style="color:black">}</span><br><br><span style="color:green">/* Style all elements with the class name "city" */</span><br><strong>.city  </strong><span style="color:black">{</span><span style="color:red"><br>&nbsp; background-color<span style="color:mediumblue"><span style="color:black">:</span> tomato<span style="color:black">;</span></span><br>&nbsp;&nbsp;color<span style="color:mediumblue"><span style="color:black">:</span> white<span style="color:black">;</span></span><br>&nbsp;&nbsp;padding<span style="color:mediumblue"><span style="color:black">:</span> 10px<span style="color:black">;</span></span><br></span><span style="color:black">}</span> <br></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/style<span style="color:mediumblue">&gt;</span></span><br> <br><span style="color:green">&lt;!-- A unique element --&gt;</span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:red"> id<span style="color:mediumblue">="myHeader"</span></span><span style="color:mediumblue">&gt;</span></span>My Cities<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:green">&lt;!-- Multiple similar elements --&gt;</span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>h2<span style="color:red"> class<span style="color:mediumblue">="city"</span></span><span style="color:mediumblue">&gt;</span></span>London<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h2<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>London is the capital of England.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br><br> <span style="color:brown"><span style="color:mediumblue">&lt;</span>h2<span style="color:red"> class<span style="color:mediumblue">="city"</span></span><span style="color:mediumblue">&gt;</span></span>Paris<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h2<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>Paris is the capital of France.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br><br> <span style="color:brown"><span style="color:mediumblue">&lt;</span>h2<span style="color:red"> class<span style="color:mediumblue">="city"</span></span><span style="color:mediumblue">&gt;</span></span>Tokyo<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h2<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>Tokyo is the capital of Japan.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_id_class" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> Вы можете узнать больше о <strong>CSS</strong> в <a href="../css/css_tutorial.html" target="_blank">Учебнике по CSS</a>.</p>
+        </div>
+        <hr>
+        <h2>HTML закладки с идентификатором (id) и ссылкой</h2>
+        <p><strong>HTML</strong> закладки используются для того, чтобы читатели могли переходить к необходимым частям веб-страницы. Закладки могут быть полезными, если ваша веб-страница очень длинная (прокручивается намного вниз). Чтобы создать закладку, сначала необходимо создать саму закладку, а потом добавить ссылку на неё. Когда ссылка будет нажата, страница прокрутится к месту размещения с помощью закладки.</p>
+        <h3>Пример:</h3>
+        <p>Сначала создайте закладку с атрибутом <code>id</code>:</p>
+        <div class="w3-example">
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>h2<span style="color:red"> id<span style="color:mediumblue">="C4"</span></span><span style="color:mediumblue">&gt;</span></span>Глава 4<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h2<span style="color:mediumblue">&gt;</span></span>
+            </div>
+        </div>
+        <p>Потом добавьте ссылку на закладку ("Перейти к главе 4") с одной страницы:</p>
+        <div class="w3-example">
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="#C4"</span></span><span style="color:mediumblue">&gt;</span></span>Перейти к главе 4<span style="color:brown"><span style="color:mediumblue">&lt;</span>/a<span style="color:mediumblue">&gt;</span></span>
+            </div>
+        </div>
+        <p>Или добавьте ссылку на закладку ("Перейти к главе 4") с другой страницы:</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="html_demo.html#C4"</span></span><span style="color:mediumblue">&gt;</span></span>Перейти до глави 4<span style="color:brown"><span style="color:mediumblue">&lt;</span>/a<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_bookmark" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <h2>Использование атрибута id в JavaScript</h2>
+        <p><strong>JavaScript</strong> может получить доступ к элементу с указанныи идентификатором, используя метод <code>getElementById ()</code>:</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <p>Используйте атрибут <code>id</code> для управления текстом с помощью <strong>JavaScript</strong>:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>script<span style="color:mediumblue">&gt;</span></span><span style="color:black"><br><span style="color:mediumblue">function</span> displayResult() {<br>&nbsp;&nbsp;document.<span style="color:black">getElementById</span>(<span style="color:brown">"myHeader"</span>).<span style="color:black">innerHTML</span> = <span style="color:brown">"Have a nice day!"</span>;<br>}<br><span style="color:red"></span>  </span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/script<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_id_js" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> Узнать больше про JavaScript можно в разделе <a href="../html/les23.html">HTML JavaScript</a> или в <a href="../js/javascript_tutorial.html" target="_blank">Учебнике по JavaScript</a>.</p>
+        </div><hr>
+        <div class="w3-container w3-dark-grey w3-padding">
+            <h2 style="text-shadow: 1px 1px 1px #000, 1px 1px 1px #000;">Проверьте себя упражнениями!</h2>
+            <div class="w3-bar w3-margin-bottom">
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_id1" target="_blank" rel="nofollow">Exercise 1 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_id2" target="_blank" rel="nofollow">Exercise 2 »</a>
+            </div>
+        </div>
+        <hr>
+        <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> Для получения полного списка всех доступных <strong>HTML</strong> тегов, посетите <a href="../tags/element_reference.html">Справочник <strong>HTML</strong> тегов</a>.</p>
+        </div>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les20.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="les22.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr class="hr-bottom">
+        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
+        <!-- Комментарии от Disqus -->
+  <div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+this.page.url = html5beginners.github.io;  // канонический URL страницы
+this.page.identifier = html5beginners.github.io/html/les21.html; // уникальный идентификатор страницы
+};
+(function() { // Не редактировать ниже этой линии
+var d = document, s = d.createElement('script');
+s.src = 'https://html5beginners.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленых Disqus.</a></noscript>
+<!--  / Комментарии от Disqus -->
+    </div>
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>

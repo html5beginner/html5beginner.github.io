@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>HTML. Plug-ins. Плагины / Дополнительные модули. W3schools на русском. Уроки для начинающих</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="HTML,CSS,уроки,для начинающих,html5,plug-ins,плагины,дополнения,приложения,модули,элементы,теги,w3schools,на русском,языке" />
+    <meta name="description" content="Урок 49. HTML5. Плагины (дополнительные модули) на сайте. Что такое плагыны? Для чего нужны и как используются дополнительные модули на сайте? W3Schools на русском языке. Учебник для начинающих" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/ws.css" />
+    <link rel="stylesheet" href="../styles/handheld.css" />
+    <link rel="canonical" href="https://html5beginners.github.io/" />
+    <meta property="og:title" content="HTML. Plug-ins. Плагины / Дополнительные модули. W3schools на русском. Уроки для начинающих" />
+    <meta property="og:type" content="веб-сайт" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://html5beginners.github.io/" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="Урок 49. HTML5. Плагины (дополнительные модули) на сайте. Что такое плагыны? Для чего нужны и как используются дополнительные модули на сайте? W3Schools на русском языке. Учебник для начинающих" />
+    <meta property="og:locale" content="ru" /> <!--мова сайту-->
+    <meta property="og:site_name" content="HTML5Beginners - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
+    <script src="../js/topnav.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" class="frame-header"></iframe>
+<main>
+    <div class="left-sidebar">
+        <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>HTML5. Plug-ins. Плагины (дополнительные модули)</h1>
+        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html5_audio.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html_youtube.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr>
+        <h2>Для чего нужны плагины?</h2>
+        <p class="intro">Задача плагина - это расширение функциональности веб-браузера.</p>
+        <hr>
+        <h2>HTML Помощники (плагины)</h2>
+        <p>Вспомогательные программы (плагины) - это компьютерные программы, которые расширяют стандартную функциональность веб-браузера.</p>
+        <p>Примерами известных плагинов являются Java-апплеты.</p>
+        <p>Плагины можно добавлять к веб-страницам с помощью тега <code class="w3-codespan">&lt;object&gt;</code> или тега <code class="w3-codespan">&lt;embed&gt;</code>.</p>
+        <p>Плагины можно использовать для многих целей: отображения карт, поиска вирусов, проверки вашего банковского идентификатора и т.д.</p>
+        <div class="w3-panel w3-note">
+            <p>Чтобы отобразить видео и аудио: используйте <code class="w3-codespan">&lt;video&gt;</code> и <code class="w3-codespan">&lt;audio&gt;</code> теги.</p>
+        </div>
+        <hr>
+        <h2>Элемент &lt;object&gt; (объект)</h2>
+        <p>Элемент <code class="w3-codespan">&lt;object&gt;</code> поддерживается всеми браузерами.</p>
+        <p>Элемент <code class="w3-codespan">&lt;object&gt;</code> определяет встроенный объект в документе HTML.</p>
+        <p>Он используется для встраивания плагинов (например, Java-апплетов, PDF-ридеров, Flash-плееров) в веб-страницы.</p>
+        <div class="w3-example">
+            <h3>Пример:</h3>
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>object<span class="attributecolor" style="color:red"> width<span class="attributevaluecolor" style="color:mediumblue">="400"</span> height<span class="attributevaluecolor" style="color:mediumblue">="50"</span> data<span class="attributevaluecolor" style="color:mediumblue">="bookmark.swf"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/object<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_object_plugin" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <p>Элемент <code class="w3-codespan">&lt;object&gt;</code> также можно использовать для включения HTML в HTML:</p>
+        <div class="w3-example">
+            <h3>Пример:</h3>
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>object<span class="attributecolor" style="color:red"> width<span class="attributevaluecolor" style="color:mediumblue">="100%"</span> height<span class="attributevaluecolor" style="color:mediumblue">="500px"</span> data<span class="attributevaluecolor" style="color:mediumblue">="snippet.html"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/object<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_object_html" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <p>Или изображение, если хотите:</p>
+        <div class="w3-example">
+            <h3>Пример:</h3>
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>object<span class="attributecolor" style="color:red"> data<span class="attributevaluecolor" style="color:mediumblue">="audi.jpeg"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/object<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_object_image" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <hr>
+        <h2>Элемент &lt;embed&gt;</h2>
+        <p>Элемент <code class="w3-codespan">&lt;embed&gt;</code> поддерживается во всех основных браузерах.</p>
+        <p>Элемент <code class="w3-codespan">&lt;embed&gt;</code> также определяет встроенный объект в HTML документе.</p>
+        <p>Веб-браузеры поддерживали элемент &lt;embed&gt; длительное время. Хотя он не был частью спецификации HTML до спецификации HTML5.</p>
+        <div class="w3-example">
+            <h3>Пример:</h3>
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>embed<span class="attributecolor" style="color:red"> width<span class="attributevaluecolor" style="color:mediumblue">="400"</span> height<span class="attributevaluecolor" style="color:mediumblue">="50"</span> src<span class="attributevaluecolor" style="color:mediumblue">="bookmark.swf"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_embed_plugin" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <div class="w3-panel w3-note">
+            <p>Обратите внимание, что элемент &lt;embed&gt; не имеет закрывающего тега. Он не может содержать альтернативного текста.</p>
+        </div>
+        <p>Элемент <code class="w3-codespan">&lt;embed&gt;</code> также можно использовать для включения HTML в HTML:</p>
+        <div class="w3-example">
+            <h3>Пример:</h3>
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>embed<span class="attributecolor" style="color:red"> width<span class="attributevaluecolor" style="color:mediumblue">="100%"</span> height<span class="attributevaluecolor" style="color:mediumblue">="500px"</span> src<span class="attributevaluecolor" style="color:mediumblue">="snippet.html"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_embed_html" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <p>Или изображение, если хотите:</p>
+        <div class="w3-example">
+            <h3>Пример:</h3>
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>embed<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="audi.jpeg"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_embed_image" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html5_audio.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html_youtube.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr class="hr-bottom">
+        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
+        <!-- Комментарии от Disqus -->
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_config = function () {
+        this.page.url = html5beginners.github.io;  // канонический URL страницы
+        this.page.identifier = html5beginners.github.io/html/html_object.html; // уникальный идентификатор страницы
+        };
+        (function() { // Не редактировать ниже этой линии
+        var d = document, s = d.createElement('script');
+        s.src = 'https://html5beginners.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+        <!--  / Комментарии от Disqus -->
+    </div>
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>HTML. Пути к файлам. Урок №24. Курсы W3schools на русском. Уроки для начинающих</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="HTML,CSS,уроки,для начинающих,html5,css3,javascript,пути,к файлам,web,paths,справочник,веб,странице,w3schools,на русском" />
+    <meta name="description" content="Урок 24. HTML. CSS. Пути к файлам на веб-страницах. Как связывать файлы друг с другом на веб-сайте? W3Schools на русском языке. Учебник для начинающих" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/ws.css" />
+    <link rel="stylesheet" href="../styles/handheld.css" />
+    <link rel="canonical" href="https://html5beginners.github.io/" />
+    <meta property="og:title" content="HTML. Пути к файлам. Урок №24. Курсы W3schools на русском. Уроки для начинающих" />
+    <meta property="og:type" content="веб-сайт" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://html5beginners.github.io/" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="Урок 24. HTML. CSS. Пути к файлам на веб-страницах. Как связывать файлы друг с другом на веб-сайте? W3Schools на русском языке. Учебник для начинающих" />
+    <meta property="og:locale" content="ru" /> <!--мова сайту-->
+    <meta property="og:site_name" content="HTML5Beginners - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
+    <script src="../js/topnav.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" style="" class="frame-header"></iframe>
+<main>
+    <div class="left-sidebar">
+        <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>Урок №24. HTML. Пути к файлам</h1>
+        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
+        <!-- buttons prev - next -->
+        <hr>
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les23.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="les25.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <hr>
+        <!-- / buttons prev - next -->
+        <h2>HTML/CSS. Как установить пути к файлам на веб-сайте?</h2>
+        <table class="w3-table-all">
+            <tbody><tr>
+                <th>Путь</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>&lt;img src="picture.jpg"&gt;</td>
+                <td>picture.jpg находится в той же папке, что и текущая страница</td>
+            </tr>
+            <tr>
+                <td>&lt;img src="images/picture.jpg"&gt;</td>
+                <td>picture.jpg находится в папке images в текущей папке</td>
+            </tr>
+            <tr>
+                <td>&lt;img src="/images/picture.jpg"&gt;</td>
+                <td>picture.jpg находится в папке images в корне текущего сайта</td>
+            </tr>
+            <tr>
+                <td>&lt;img src="../picture.jpg"&gt;</td>
+                <td>picture.jpg находится в папке на один уровень выше текущей папки</td>
+            </tr>
+            </tbody>
+        </table>
+        <h2>Путь к HTML файлу</h2>
+        <p>Путь к файлу описывает размещение файла в структуре папок веб-сайта.</p>
+        <p>Пути к файлам используются при ссылке на внешние файлы, такие как:</p>
+        <ul>
+            <li>Веб-страницы
+            <li>Изображения
+            <li>Таблицы стилей
+            <li>JavaScript
+        </ul>
+        <hr>
+        <h2>Абсолютные пути к файлам</h2>
+        <p>Абсолютный путь к файлу - это полный URL-адрес к файлу на просторах Интернета:</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="https://www.w3schools.com/images/picture.jpg"</span>
+  alt<span style="color:mediumblue">="Mountain"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_files_absoulute" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> Тег <code>&lt;img&gt;</code> и атрибуты <code>src</code> и <code>alt</code> объясняются в разделе <a href="les16.html">HTML изображения</a>.</p>
+        </div>
+        <h2>Относительные пути к файлам</h2>
+        <p>Относительный путь к файлу указывает на файл относительно текущей страницы.</p>
+        <p>В этом примере путь к файлу указывает на файл в папке images, расположенную в корне текущего веб-сайта:</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="/images/picture.jpg"</span> alt<span style="color:mediumblue">="Mountain"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_files_relative" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <p>В этом примере путь к файлу указывается на файл в папке images, который находится в текущей папке:</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="images/picture.jpg"</span>
+alt<span style="color:mediumblue">="Mountain"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_files_relative_1" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <p>В этом примере путь к файлу указывается на файл в папке images, расположенную в папке на один уровень выше над текущей папкой:</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="../images/picture.jpg"</span>
+alt<span style="color:mediumblue">="Mountain"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_files_relative_2" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <h2>Наилучшая практика</h2>
+        <p>Лучше всего на практике использовать относительные пути к файлам (если возможно). При использовании относительных путей к файлам ваши веб-страницы не будут связаны с текущим базовым URL-адресом. Все ссылки будут работать на вашем собственном компьютере (на localhost), а также на вашем текущем публичном домене и ваших будущих публичных доменах.</p>
+        <hr>
+        <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> Для получения полного списка всех доступных <strong>HTML</strong> тегов, посетите <a href="../tags/element_reference.html">Справочник <strong>HTML</strong> тегов</a>.</p>
+        </div>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les23.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="les25.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr class="hr-bottom">
+        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
+        <!-- Комментарии от Disqus -->
+  <div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+this.page.url = html5beginners.github.io;  // канонический URL страницы
+this.page.identifier = html5beginners.github.io/html/les24.html; // уникальный идентификатор страницы
+};
+(function() { // Не редактировать ниже этой линии
+var d = document, s = d.createElement('script');
+s.src = 'https://html5beginners.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленых Disqus.</a></noscript>
+<!--  / Комментарии от Disqus -->
+    </div>
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>

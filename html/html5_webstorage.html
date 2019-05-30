@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>HTML5. Web Storage. Веб-хранилище. W3schools на русском. Уроки для начинающих</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="HTML,CSS,уроки,для начинающих,html5,web storage,веб,хранилище,элемент,теги,w3schools,на русском" />
+    <meta name="description" content="Урок 53. HTML5. Web Storage. Веб-хранилище. Что такое web-хранилище? Для чего нужно web storage? Лучше чем печеньки. W3Schools на русском. Учебник для начинающих" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/ws.css" />
+    <link rel="stylesheet" href="../styles/handheld.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/browserref.css">
+    <link rel="canonical" href="https://html5beginners.github.io/" />
+    <meta property="og:title" content="HTML5. Web Storage. Веб-хранилище. W3schools на русском. Уроки для начинающих" />
+    <meta property="og:type" content="веб-сайт" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://html5beginners.github.io/" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="Урок 53. HTML5. Web Storage. Веб-хранилище. Что такое web-хранилище? Для чего нужно web storage? Лучше чем печеньки. W3Schools на русском. Учебник для начинающих" />
+    <meta property="og:locale" content="ru" /> <!--мова сайту-->
+    <meta property="og:site_name" content="HTML5Beginners - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
+    <script src="../js/topnav.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" class="frame-header"></iframe>
+<main>
+    <div class="left-sidebar">
+        <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>HTML5. Web Storage - Веб-хранилище</h1>
+        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html5_draganddrop.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html5_webworkers.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr>
+
+        <p class="intro">HTML веб-хранилище; лучше чем cookies.</p>
+        <hr>
+        <h2>Что такое HTML веб-хранилище?</h2>
+        <p>С помощью веб-хранилища веб-программы могут сохранять данные локально в браузере пользователя.</p>
+        <p>До появления спецификации HTML5, данные приложений должны были сохраняться в куках (cookies), включенных в каждом запросе сервера. Веб-хранилище является более безопасным, и большие объёмы данных могут сохраняться локально, не влияя на работу веб-сайта.</p>
+        <p>В отличие от файлов cookie, лимит хранилища намного больший (по крайней мере 5 МБ), и информация никогда не передаётся на сервер.</p>
+        <p>Веб-хранилище - для каждого источника (для домена и протокола). Все страницы с одного источника (одинакового происхождения) могут сохранять и получать доступ к этим самым данным.</p>
+        <hr>
+        <h2>Поддержка браузерами</h2>
+        <p>Цифры в таблице определяют первую версию браузера, которая полностью поддерживает веб-хранилище.</p>
+        <table class="browserref notranslate">
+            <tbody><tr>
+                <th style="width:20%;font-size:16px;text-align:left;">API</th>
+                <th style="width:16%;" class="bsChrome" title="Chrome"></th>
+                <th style="width:16%;" class="bsEdge" title="Internet Explorer / Edge"></th>
+                <th style="width:16%;" class="bsFirefox" title="Firefox"></th>
+                <th style="width:16%;" class="bsSafari" title="Safari"></th>
+                <th style="width:16%;" class="bsOpera" title="Opera"></th>
+            </tr>
+            <tr>
+                <td style="text-align:left;">Веб-хранилище</td>
+                <td>4.0</td>
+                <td>8.0</td>
+                <td>3.5</td>
+                <td>4.0</td>
+                <td>11.5</td>
+            </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h2>HTML Объекты веб-хранилища</h2>
+        <p>Веб-хранилище HTML обеспечивает два объекта для хранения данных на стороне клиента:</p>
+        <ul>
+            <li><code class="w3-codespan">window.localStorage</code> - сохраняет данные без даты окончания строка действия;</li>
+            <li><code class="w3-codespan">window.sessionStorage</code> - сохраняет данные для одного сеанса (данные теряются при закрытии вкладки веб-браузера).</li>
+        </ul>
+        <p>Перед использованием веб-хранилища проверьте поддержку браузера localStorage и sessionStorage:</p>
+        <div class="w3-code w3-border notranslate jsHigh"><span class="jscolor" style="color:black">
+<span class="jskeywordcolor" style="color:mediumblue">if</span> (<span class="jskeywordcolor" style="color:mediumblue">typeof</span>(Storage) !== <span class="jsstringcolor" style="color:brown">"undefined"</span>) {<br><span class="jsnumbercolor" style="color:red">
+</span>  &nbsp; <span class="commentcolor" style="color:green">// <i>Код для localStorage/sessionStorage.</i><br></span><span class="jsnumbercolor" style="color:red">
+</span> }<span class="jsnumbercolor" style="color:red">
+</span> <span class="jskeywordcolor" style="color:mediumblue">else</span> {<br><span class="jsnumbercolor" style="color:red">
+</span>  &nbsp; <span class="commentcolor" style="color:green">// Извините! Поддержка веб-хранилища отсутствует.<br></span><span class="jsnumbercolor" style="color:red">
+</span> }</span>
+        </div>
+        <hr>
+        <h2>Объект localStorage</h2>
+        <p>Объект localStorage сохраняет данные без даты окончания срока действия. Данные не будут удалены во время закрытия браузера и будут доступны на следующий день, неделю или год.</p>
+        <div class="w3-example">
+            <h3>Пример:</h3>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+</span> <span class="commentcolor" style="color:green">// Сохраняем<br></span>localStorage.<span class="jspropertycolor" style="color:black">setItem</span>(<span class="jsstringcolor" style="color:brown">"lastname"</span>, <span class="jsstringcolor" style="color:brown">"Smith"</span>);<br><br><span class="commentcolor" style="color:green">// Получаем<br></span><span class="jsnumbercolor" style="color:red">
+</span> document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"result"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> = localStorage.<span class="jspropertycolor" style="color:black">getItem</span>(<span class="jsstringcolor" style="color:brown">"lastname"</span>);<span class="jsnumbercolor" style="color:red">
+</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_webstorage_local" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <p>Объяснение примера:</p>
+        <ul>
+            <li>Создаём пару localStorage name/value (имя/значение) с name="lastname" и value="Smith";</li>
+            <li>Получаем значение "lastname" и вставляем его в элемент с id="result" (результат).</li>
+        </ul>
+        <p>Приведённый выше пример также может быть написан таким образом:</p>
+        <div class="w3-code w3-border notranslate jsHigh"><span class="jscolor" style="color:black">
+ <span class="commentcolor" style="color:green">// Сохраняем<br></span>localStorage.<span class="jspropertycolor" style="color:black">lastname</span> = <span class="jsstringcolor" style="color:brown">"Smith"</span>;<br><span class="commentcolor" style="color:green">// Получаем<br></span><span class="jsnumbercolor" style="color:red">
+</span> document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"result"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> = localStorage.<span class="jspropertycolor" style="color:black">lastname</span>; </span></div>
+        <p>Синтаксис для удаления элемента "lastname" localStorage является следующим:</p>
+        <div class="w3-code w3-border notranslate jsHigh"><span class="jscolor" style="color:black">
+ localStorage.<span class="jspropertycolor" style="color:black">removeItem</span>(<span class="jsstringcolor" style="color:brown">"lastname"</span>); </span></div>
+        <p><strong>Примечание:</strong> Пары name/value всегда сохраняются как строки. Не забывайте конвертировать их в другой формат, когда это необходимо!</p>
+        <p>Следующий пример подсчитывает количество нажатий пользователем кнопки. В этом коде строка значений преобразуется в число, чтобы иметь возможность увеличить счетчик:</p>
+        <div class="w3-example">
+            <h3>Пример:</h3>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+</span> <span class="jskeywordcolor" style="color:mediumblue">if</span> (localStorage.<span class="jspropertycolor" style="color:black">clickcount</span>) {<br>&nbsp; localStorage.<span class="jspropertycolor" style="color:black">clickcount</span> = Number(localStorage.<span class="jspropertycolor" style="color:black">clickcount</span>) + <span class="jsnumbercolor" style="color:red">1</span>;<br><span class="jsnumbercolor" style="color:red">
+</span> } <span class="jskeywordcolor" style="color:mediumblue">else</span> {<br>&nbsp; localStorage.<span class="jspropertycolor" style="color:black">clickcount</span> = <span class="jsnumbercolor" style="color:red">1</span>;<br>}<br><span class="jsnumbercolor" style="color:red">
+</span> document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"result"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> = <span class="jsstringcolor" style="color:brown">"Вы нажали кнопку "</span> +<br>
+localStorage.<span class="jspropertycolor" style="color:black">clickcount</span> + <span class="jsstringcolor" style="color:brown">" раз."</span>; </span></div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_webstorage_local_clickcount" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <hr>
+        <h2>Объект sessionStorage</h2>
+        <p>Объект <code class="w3-codespan">sessionStorage</code> соответсвует объекту localStorage, <strong>кроме того</strong>, что он сохраняет данные лишь для одного сеанса. Данные удаляются, когда пользователь закрывает определённую вкладку веб-браузера.</p>
+        <p>В следующем примере подсчитывается количество раз, когда пользователь нажал кнопку в текущей сесии:</p>
+        <div class="w3-example">
+            <h3>Пример:</h3>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+<span class="jskeywordcolor" style="color:mediumblue">if</span> (sessionStorage.<span class="jspropertycolor" style="color:black">clickcount</span>) {<br>&nbsp; sessionStorage.<span class="jspropertycolor" style="color:black">clickcount</span> = Number(sessionStorage.<span class="jspropertycolor" style="color:black">clickcount</span>) + <span class="jsnumbercolor" style="color:red">1</span>;<br>}
+<span class="jskeywordcolor" style="color:mediumblue">else</span> {<br>&nbsp; sessionStorage.<span class="jspropertycolor" style="color:black">clickcount</span> = <span class="jsnumbercolor" style="color:red">1</span>;<br>}<br>
+document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"result"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> = <span class="jsstringcolor" style="color:brown">"Вы нажали кнопку "</span> +<br>
+sessionStorage.<span class="jspropertycolor" style="color:black">clickcount</span> + <span class="jsstringcolor" style="color:brown">" раз в этой сесии."</span>;<span class="jsnumbercolor" style="color:red">
+</span> </span></div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_webstorage_session" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html5_draganddrop.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html5_webworkers.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr class="hr-bottom">
+        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
+        <!-- Комментарии от Disqus -->
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_config = function () {
+        this.page.url = html5beginners.github.io;  // канонический URL страницы
+        this.page.identifier = html5beginners.github.io/html/html5_webstorage.html; // уникальный идентификатор страницы
+        };
+        (function() { // Не редактировать ниже этой линии
+        var d = document, s = d.createElement('script');
+        s.src = 'https://html5beginners.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+        <!--  / Комментарии от Disqus -->
+    </div>
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>

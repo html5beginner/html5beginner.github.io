@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>HTML. CSS. Каскадные таблицы стилей. Урок №14. W3schools на русском. Уроки для начинающих</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="HTML,CSS,уроки,для начинающих,html5,css3,стили,каскадные,таблицы,стилей,подключить,веб,страница" />
+    <meta name="description" content="Урок 14. HTML. CSS. Каскадные таблицы стилей на веб-страницах. Как подключить каскадную таблицу стилей? W3Schools на русском языке. Учебник для начинающих" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/ws.css" />
+    <link rel="stylesheet" href="../styles/handheld.css" />
+    <link rel="canonical" href="https://html5beginners.github.io/" />
+    <meta property="og:title" content="HTML. CSS. Каскадные таблицы стилей. Урок №14. W3schools на русском. Уроки для начинающих" />
+    <meta property="og:type" content="веб-сайт" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://html5beginners.github.io/" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="Урок 14. HTML. CSS. Каскадные таблицы стилей на веб-страницах. Как подключить каскадную таблицу стилей? W3Schools на русском языке. Учебник для начинающих" />
+    <meta property="og:locale" content="ru" /> <!--мова сайту-->
+    <meta property="og:site_name" content="HTML5Beginners - Основы HTML, CSS, JavaScript, PHP для начинающих" />
+    <script src="../js/topnav.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" class="frame-header"></iframe>
+<main>
+    <div class="left-sidebar">
+        <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>Урок №14. HTML. CSS - Каскадные таблицы стилей</h1>
+        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
+        <!-- buttons prev - next -->
+        <hr>
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les13.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="les15.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <hr>
+        <!-- / buttons prev - next -->
+        <h2>HTML/CSS. Как подключить каскадную таблицу стилей (CSS) к веб-странице?</h2>
+        <h3>Стилизация HTML с помощью CSS</h3>
+        <p><strong>CSS</strong> означает каскадные таблицы стилей. <strong>CSS</strong> описывает, как элементы <strong>HTML</strong> должны отображаться на экране, бумаге или на других носителях. <strong>CSS</strong> экономит много работы. Таблица стилей может управлять размещением нескольких веб-страниц одновременно.</p>
+        <p><strong>CSS</strong> можно добавить к <strong>HTML</strong> элементам тремя способами:</p>
+        <ul class="list-disc">
+            <li>Inline (встроенный) - с помощью атрибута <em><code>style</code></em> в <strong>HTML</strong>-элементах
+            <li>Internal (внутренний) - с помощью элемента <code>&lt;style&gt;</code> в разделе <code>&lt;head&gt;</code>
+            <li>External (внешний) - с помощью внешнего файла <strong>CSS</strong>
+        </ul>
+        <p>Наиболее распространённым способом добавления <strong>CSS</strong> является сохранение стилей в отдельных файлах <strong>CSS</strong>. Однако здесь мы будем использовать встроенный и внутренний стиль, потому что это проще продемонстрировать, и проще попробовать его самостоятельно.</p>
+        <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> Вы можете узнать больше о <strong>CSS</strong> в <a href="../css/css_tutorial.html" target="_blank">Учебнике по CSS</a> на нашем сайте на русском языке или на сайте <a href="https://www.w3schools.com/css/default.asp" target="_blank" rel="nofollow">W3schools</a> в оригинале.</p>
+        </div><hr>
+        <h2>Встроенный (inline) CSS</h2>
+        <p>Встроенный <strong>CSS</strong> используется для применения уникального стиля к одному элементу HTML. Встроенный <strong>CSS</strong> использует атрибут <em>style</em> элемента <strong>HTML</strong>.</p>
+        <p>Этот пример задаёт цвет тексту элемента <code>&lt;h1&gt;</code> синим цветом:</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:red"> style<span style="color:mediumblue">="color:blue;"</span></span><span style="color:mediumblue">&gt;</span></span>This is a Blue Heading<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_inline" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <h2>Внутренний (internal) CSS</h2>
+        <p>Внутренний <strong>CSS</strong> используется для определения стиля одной страницы <strong>HTML</strong>.</p>
+        <p>Внутренний <strong>CSS</strong> определяется в разделе <code>&lt;head&gt;</code> <strong>HTML</strong> страницы в элементе <code>&lt;style&gt;</code>:</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>head<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>style<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><br>
+ body <span style="color:black">{</span><span style="color:red">background-color<span style="color:mediumblue"><span style="color:black">:</span> powderblue<span style="color:black">;</span></span></span><span style="color:black">}</span><br>h1&nbsp;&nbsp; <span style="color:black">{</span><span style="color:red">color<span style="color:mediumblue"><span style="color:black">:</span> blue<span style="color:black">;</span></span></span><span style="color:black">}</span><br>p&nbsp;&nbsp;&nbsp; <span style="color:black">{</span><span style="color:red">color<span style="color:mediumblue"><span style="color:black">:</span> red<span style="color:black">;</span></span></span><span style="color:black">}</span><br>
+</span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/style<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/head<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:mediumblue">&gt;</span></span>This is a
+                heading<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>This is a paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_internal" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <h2>Внешний (external) CSS</h2>
+        <p>Для определения стиля для многих <strong>HTML</strong> страниц используется внешняя таблица стилей. С помощью внешней таблицы стилей вы можете изменить вид всего веб-сайта, изменив лишь один <strong>CSS</strong> файл!</p>
+        <p>Чтобы использовать внешнюю таблицу стилей, добавьте ссылку на <strong>CSS</strong> файл в разделе <code>&lt;head&gt;</code> <strong>HTML</strong> страницы:</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>head<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>link<span style="color:red"> rel<span style="color:mediumblue">="stylesheet"</span> href<span style="color:mediumblue">="styles.css"</span></span><span style="color:mediumblue">&gt;</span></span><br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>/head<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:mediumblue">&gt;</span></span>This is a heading<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>This is a paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_external" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><br>
+        <p>В любом текстовом редакторе можно написать внешнюю таблицу стилей. Файл не должен содержать никакого <strong>HTML</strong>-кода и должен быть сохранён с расширением <strong>.css</strong>.</p>
+        <p>Вот как выглядит файл "styles.css":</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown">
+ body <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;background-color<span style="color:mediumblue"><span style="color:black">:</span> powderblue<span style="color:black">;</span></span><br></span><span style="color:black">}</span><br>h1 <span style="color:black">{</span><span style="color:red"><br>&nbsp; color<span style="color:mediumblue"><span style="color:black">:</span> blue<span style="color:black">;</span></span><br></span><span style="color:black">}</span><br>p <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;color<span style="color:mediumblue"><span style="color:black">:</span> red<span style="color:black">;</span></span><br></span><span style="color:black">}</span> </span>
+            </div>
+        </div><hr>
+        <h2>CSS Fonts (шрифты)</h2>
+        <p>Свойство <strong>CSS</strong> <code>color</code> определяет цвет текста, который будет использоваться.</p>
+        <p>Свойство <strong>CSS</strong> <code>font-family</code> определяет используемый шрифт (семейство шрифтов).</p>
+        <p>Свойство <strong>CSS</strong> <code>font-size</code> определяет размер текста, который будет использоваться.</p><br>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>head<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>style<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><br>h1 <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;color<span style="color:mediumblue"><span style="color:black">:</span> blue<span style="color:black">;</span></span><br>&nbsp;&nbsp;font-family<span style="color:mediumblue"><span style="color:black">:</span> verdana<span style="color:black">;</span></span><br>&nbsp;&nbsp;font-size<span style="color:mediumblue"><span style="color:black">:</span> 300%<span style="color:black">;</span></span><br></span><span style="color:black">}</span><br>p&nbsp; <span style="color:black">{</span><span style="color:red"><br>
+  &nbsp; color<span style="color:mediumblue"><span style="color:black">:</span> red<span style="color:black">;</span></span><br>&nbsp;
+ font-family<span style="color:mediumblue"><span style="color:black">:</span> courier<span style="color:black">;</span></span><br>&nbsp; font-size<span style="color:mediumblue"><span style="color:black">:</span> 160%<span style="color:black">;</span></span><br></span><span style="color:black">}</span><br></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/style<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/head<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:mediumblue">&gt;</span></span>This is a heading<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>This is a paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_fonts" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <h2>CSS Border (граница)</h2>
+        <p>Свойство <strong>CSS</strong> <code>border</code> определяет границу вокруг <strong>HTML</strong> элемента:</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"> p <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;border<span style="color:mediumblue"><span style="color:black">:</span> 1px
+solid powderblue<span style="color:black">;</span></span><br></span><span style="color:black">}</span><br></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_borders" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <h2>CSS Padding (внутренний отступ)</h2>
+        <p>Свойство <strong>CSS</strong> <code>padding</code> определяет добавление пространства (пробела) между текстом и границей <strong>border</strong> (внутренний отступ):</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"> p <span style="color:black">{</span><span style="color:red"><br>&nbsp; border<span style="color:mediumblue"><span style="color:black">:</span> 1px
+solid powderblue<span style="color:black">;</span></span><br>&nbsp; padding<span style="color:mediumblue"><span style="color:black">:</span> 30px<span style="color:black">;</span></span><br></span><span style="color:black">}</span> </span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_padding" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <h2>CSS Margin (внешний отступ)</h2>
+        <p><strong>CSS</strong> свойство <code>margin</code> определяет пространство (пробел) за пределами границы <strong>border</strong> (внешний отступ):</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown">
+ p <span style="color:black">{</span><span style="color:red"><br>&nbsp; border<span style="color:mediumblue"><span style="color:black">:</span> 1px
+solid powderblue<span style="color:black">;</span></span><br>&nbsp;&nbsp;margin<span style="color:mediumblue"><span style="color:black">:</span> 50px<span style="color:black">;</span></span><br>
+ </span><span style="color:black">}</span> </span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_margin" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <h2>Атрибут Id (идентификатора)</h2>
+        <p>Чтобы определить определённый стиль для одного специального элемента, добавьте к этому элементу атрибут <code>id</code>:</p>
+        <div class="w3-example">
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:red"> id<span style="color:mediumblue">="p01"</span></span><span style="color:mediumblue">&gt;</span></span>I am different<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span>
+            </div>
+        </div>
+        <p>потом определите стиль для элемента с определённым идентификатором:</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown">
+ #p01 <span style="color:black">{</span><span style="color:red"><br>&nbsp; color<span style="color:mediumblue"><span style="color:black">:</span> blue<span style="color:black">;</span></span><br></span><span style="color:black">}</span> </span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_id" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> Идентификатор элемента должен быть уникальным в пределах страницы, поэтому селектор идентификаторов <strong>Id</strong> используется для выбора одного уникального элемента!</p>
+        </div>
+        <h2>Атрибут Class (класс)</h2>
+        <p>Чтобы определить стиль для множества специальных типов элементов, добавьте к элементу атрибут <code>class</code>:</p>
+        <div class="w3-example">
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:red"> class<span style="color:mediumblue">="error"</span></span><span style="color:mediumblue">&gt;</span></span>I am different<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span>
+            </div>
+        </div>
+        <p>потом определите стиль для элементов с определённым классом:</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown">
+p.error <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;color<span style="color:mediumblue"><span style="color:black">:</span> red<span style="color:black">;</span></span><br></span><span style="color:black">}</span> </span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_class" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <h2>Внешние ссылки на таблицы стилей</h2>
+        <p>На внешние таблицы стилей можно ссылаться с полным URL-адресом или путем, связанным с текущей веб-страницей.</p>
+        <p>Этот пример использует полный URL-адрес для ссылки на таблицу стилей:</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>link<span style="color:red"> rel<span style="color:mediumblue">="stylesheet"</span> href<span style="color:mediumblue">="https://www.w3schools.com/html/styles.css"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_external_url" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <p>Этот пример ссылается на таблицу стилей, расположенную в папке <strong>html</strong> на текущем веб-сайте:</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>link<span style="color:red"> rel<span style="color:mediumblue">="stylesheet"</span> href<span style="color:mediumblue">="/html/styles.css"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_external_relative" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <p>Этот пример ссылается на таблицу стилей, расположенную в той же папке, что и текущая страница:</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>link<span style="color:red"> rel<span style="color:mediumblue">="stylesheet"</span> href<span style="color:mediumblue">="styles.css"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_external" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> Подробнее про пути к файлам вы можете прочитать в разделе <a href="../html/les24.html">HTML. Пути к файлам</a>.</p>
+        </div><hr>
+        <h3>Резюме раздела</h3>
+        <ul class="list-disc">
+            <li>Используйте HTML атрибут <code>style</code> для встроенного стиля
+            <li>Используйте HTML элемент <code>&lt;style&gt;</code> для определения внутренних <strong>CSS</strong>
+            <li>Используйте HTML элемент <code>&lt;link&gt;</code>, стобы ссылаться на внешний <strong>CSS</strong> файл
+            <li>Используйте HTML элемент <code>&lt;head&gt;</code> для сохранения элементов &lt;style&gt; и &lt;link&gt;
+            <li>Используйте CSS свойство <code>color</code> для задания цвета тексту
+            <li>Используйте CSS свойство <code>font-family</code> для задания тексту семейства шрифтов
+            <li>Используйте CSS свойство <code>font-size</code> для задания размеров тексту
+            <li>Используйте CSS свойство <code>border</code> для задания границы элементу
+            <li>Используйте CSS свойство <code>padding</code> для задания внутреннего отступа
+            <li>Используйте CSS свойство <code>margin</code> для задання внешнего отступа (за пределами border)
+        </ul>
+        <hr>
+            <div class="w3-container w3-dark-grey w3-padding">
+            <h2 style="text-shadow: 1px 1px 1px #000, 1px 1px 1px #000;">Проверьте себя упражнениями!</h2>
+            <div class="w3-bar w3-margin-bottom">
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_css1" target="_blank" rel="nofollow">Exercise 1 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_css2" target="_blank" rel="nofollow">Exercise 2 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_css3" target="_blank" rel="nofollow">Exercise 3 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_css4" target="_blank" rel="nofollow">Exercise 4 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_css5" target="_blank" rel="nofollow">Exercise 5 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_css6" target="_blank" rel="nofollow">Exercise 6 »</a>
+            </div>
+        </div>
+        <h2>HTML теги стиля</h2>
+        <table class="w3-table-all">
+            <tbody><tr>
+                <th>Тег</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_style.asp" target="_blank" rel="nofollow">&lt;style&gt;</a></td>
+                <td>Определяет информацию про стиль для HTML-документа</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_link.asp" target="_blank" rel="nofollow">&lt;link&gt;</a></td>
+                <td>Определяет связь между документом и внешним ресурсом</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> Для получения полного списка всех доступных <strong>HTML</strong> тегов, посетите <a
+                    href="../tags/element_reference.html" target="_blank">Справочник <strong>HTML</strong> тегов</a>.</p>
+        </div>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les13.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="les15.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr class="hr-bottom">
+        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
+        <!-- Комментарии от Disqus -->
+  <div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+this.page.url = html5beginners.github.io;  // канонический URL страницы
+this.page.identifier = html5beginners.github.io/html/les14.html; // уникальный идентификатор страницы
+};
+(function() { // Не редактировать ниже этой линии
+var d = document, s = d.createElement('script');
+s.src = 'https://html5beginners.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленых Disqus.</a></noscript>
+<!--  / Комментарии от Disqus -->
+    </div>
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>

@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>HTML. Типы ввода. Input type. Урок №36. W3schools. Основы HTML5 на русском</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="HTML,CSS,уроки,для начинающих,html5,типы,ввода,input,w3schools,на русском,языке" />
+    <meta name="description" content="Урок 35. Основы HTML. Типы ввода. Input type. Какие существуют типы ввода? W3Schools на русском языке. Учебник для начинающих" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/ws.css" />
+    <link rel="stylesheet" href="../styles/handheld.css" />
+    <link rel="canonical" href="https://html5beginners.github.io/" />
+    <meta property="og:title" content="HTML. Типы ввода. Input type. Урок №36. W3schools. Основы HTML5 на русском" />
+    <meta property="og:type" content="веб-сайт" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://html5beginners.github.io/" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="Урок 35. Основы HTML. Типы ввода. Input type. Какие существуют типы ввода? W3Schools на русском языке. Учебник для начинающих" />
+    <meta property="og:locale" content="ru" /> <!--мова сайту-->
+    <meta property="og:site_name" content="HTML5Beginners - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
+    <script src="../js/topnav.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" class="frame-header"></iframe>
+<main>
+    <div class="left-sidebar">
+        <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>Урок. HTML. Типы ввода. Input type</h1>
+        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html_form_elements.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html_form_attributes.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr>
+        <h2>HTML/CSS. HTML. Типы ввода</h2>
+        <p>Этот раздел описывает разные типы ввода для элемента &lt;input&gt;.</p>
+        <hr>
+        <h2>HTML Input Types</h2>
+        <p>Это разные типы ввода, которые можно использовать в <strong>HTML</strong>:</p>
+        <ul>
+            <li><code>&lt;input type="button"&gt;</code>
+            <li><code>&lt;input type="checkbox"&gt;</code>
+            <li><code>&lt;input type="color"&gt;</code>
+            <li><code>&lt;input type="date"&gt;</code>
+            <li><code>&lt;input type="datetime-local"&gt;</code>
+            <li><code>&lt;input type="email"&gt;</code>
+            <li><code>&lt;input type="file"&gt;</code>
+            <li><code>&lt;input type="hidden"&gt;</code>
+            <li><code>&lt;input type="image"&gt;</code>
+            <li><code>&lt;input type="month"&gt;</code>
+            <li><code>&lt;input type="password"&gt;</code>
+            <li><code>&lt;input type="radio"&gt;</code>
+            <li><code>&lt;input type="range"&gt;</code>
+            <li><code>&lt;input type="reset"&gt;</code>
+            <li><code>&lt;input type="search"&gt;</code>
+            <li><code>&lt;input type="submit"&gt;</code>
+            <li><code>&lt;input type="tel"&gt;</code>
+            <li><code>&lt;input type="text"&gt;</code>
+            <li><code>&lt;input type="time"&gt;</code>
+            <li><code>&lt;input type="url"&gt;</code>
+            <li><code>&lt;input type="week"&gt;</code>
+        </ul>
+        <hr>
+        <h2>Тип  Text (текст)</h2>
+        <p><code>&lt;input type="text"&gt;</code> определяет однострочное поле ввода текста:</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>form<span style="color:mediumblue">&gt;</span></span><br> &nbsp; First name:<span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="text"</span> name<span style="color:mediumblue">="firstname"</span></span><span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br> &nbsp; Last name:<span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="text"</span> name<span style="color:mediumblue">="lastname"</span></span><span style="color:mediumblue">&gt;</span></span><br> <span style="color:brown"><span style="color:mediumblue">&lt;</span>/form<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_text" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><br>
+        <p>Так HTML-код будет отображаться в браузере:</p>
+        First name:<br>
+        <input type="text"><br>
+        Last name:<br>
+        <input type="text">
+        <hr>
+        <h2>Тип ввода Password (пароль)</h2>
+        <p><code>&lt;input type="password"&gt;</code> определяет <strong>поле ввода пароля</strong>:</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>form<span style="color:mediumblue">&gt;</span></span><br> &nbsp; User name:<span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="text"</span> name<span style="color:mediumblue">="username"</span></span><span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br> &nbsp; User password:<span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="password"</span> name<span style="color:mediumblue">="psw"</span></span><span style="color:mediumblue">&gt;</span></span><br> <span style="color:brown"><span style="color:mediumblue">&lt;</span>/form<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_password" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><br>
+        <p>Так HTML-код будет отображаться в браузере:</p>
+        User name:<br>
+        <input type="text"><br>
+        User password:<br>
+        <input type="password">
+        <div class="w3-panel w3-note">
+            <p>Символы в поле пароля маскируются (показано как звёздочки или черные кружочки).
+            </p>
+        </div>
+        <hr>
+        <h2>Тип ввода Submit (Отправить)</h2>
+        <p><code>&lt;input type="submit"&gt;</code> определяет кнопку для <strong>отправки</strong> данных формы к <strong>обработчику форм</strong>.</p>
+        <p>Обработчик форм обычно является страницей сервера из сценарием (скриптом) для обработки входных данных. Обработчик форм указан в атрибуте <code>action</code> формы:</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>form<span style="color:red"> action<span style="color:mediumblue">="/action_page.php"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; First name:<span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="text"</span> name<span style="color:mediumblue">="firstname"</span> value<span style="color:mediumblue">="Mickey"</span></span><span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br>&nbsp; Last name:<span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="text"</span> name<span style="color:mediumblue">="lastname"</span> value<span style="color:mediumblue">="Mouse"</span></span><span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="submit"</span> value<span style="color:mediumblue">="Submit"</span></span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/form<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_submit" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <p>Так HTML-код будет отображаться в браузере:</p>
+        <form action="https://www.w3schools.com/action_page.php?firstname=Mickey&lastname=Mouse" target="_blank">
+            First name:<br>
+            <input type="text" name="firstname" value="Mickey"><br>
+            Last name:<br>
+            <input type="text" name="lastname" value="Mouse">
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <p>Если вы не укажете атрибут значения кнопки "Отправить", кнопка получит текст по умолчанию:</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>form<span style="color:red"> action<span style="color:mediumblue">="/action_page.php"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; First name:<span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="text"</span>
+ name<span style="color:mediumblue">="firstname"</span> value<span style="color:mediumblue">="Mickey"</span></span><span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br>&nbsp; Last name:<span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red">
+ type<span style="color:mediumblue">="text"</span> name<span style="color:mediumblue">="lastname"</span> value<span style="color:mediumblue">="Mouse"</span></span><span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="submit"</span></span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/form<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_submit" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <h2>Тип ввода Reset (Сброс)</h2>
+        <p><code>&lt;input type="reset"&gt;</code> определяет кнопку сброса, которая сбрасывает все значения формы к значениям по умолчанию</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>form<span style="color:red"> action<span style="color:mediumblue">="/action_page.php"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; First name:<span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="text"</span>
+ name<span style="color:mediumblue">="firstname"</span> value<span style="color:mediumblue">="Mickey"</span></span><span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br>&nbsp; Last name:<span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red">
+ type<span style="color:mediumblue">="text"</span> name<span style="color:mediumblue">="lastname"</span> value<span style="color:mediumblue">="Mouse"</span></span><span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="submit"</span>
+ value<span style="color:mediumblue">="Submit"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="reset"</span></span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/form<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_reset" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <p>Так HTML-код будет отображаться в браузере:</p>
+        <form action="https://www.w3schools.com/action_page.php?firstname0=Mickey&lastname0=Mouse" target="_blank">
+            First name:<br>
+            <input type="text" name="firstname0" value="Mickey"><br>
+            Last name:<br>
+            <input type="text" name="lastname0" value="Mouse">
+            <br><br>
+            <input type="submit" value="Submit">
+            <input type="reset">
+        </form>
+        <div class="w3-note w3-panel">
+            <p>Если изменить входные значения, а потом нажать кнопку "Submit" ("Отправить"), данные формы будут сброшены до значений по умолчанию.</p>
+        </div>
+        <hr>
+        <h2>Тип ввода Radio</h2>
+        <p><code>&lt;input type="radio"&gt;</code> определяет переключатель (<strong>кнопку radio</strong>).</p>
+        <p>Кнопки radio позволяют пользователю выбрать ТОЛЬКО ОДИН с ограниченного числа вариантов:</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                    <span style="color:brown"><span style="color:mediumblue">&lt;</span>form<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="radio"</span> name<span style="color:mediumblue">="gender"</span> value<span style="color:mediumblue">="male"</span>
+ checked</span><span style="color:mediumblue">&gt;</span></span> Male<span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red">
+ type<span style="color:mediumblue">="radio"</span> name<span style="color:mediumblue">="gender"</span> value<span style="color:mediumblue">="female"</span></span><span style="color:mediumblue">&gt;</span></span> Female<span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red">
+ type<span style="color:mediumblue">="radio"</span> name<span style="color:mediumblue">="gender"</span> value<span style="color:mediumblue">="other"</span></span><span style="color:mediumblue">&gt;</span></span> Other<br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/form<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_radio" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <p>Так HTML-код будет отображаться в браузере:</p>
+        <input type="radio" name="gender" value="V1" checked=""> Male<br>
+        <input type="radio" name="gender" value="V2"> Female<br>
+        <input type="radio" name="gender" value="V3"> Other
+        <hr>
+        <h2>Тип ввода Checkbox (флажок)</h2>
+        <p><code>&lt;input type="checkbox"&gt;</code> определяет флажок.</p>
+        <p>Флажки позволяют пользователю выбрать опции ZERO или MORE для ограниченного выбора.</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>form<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="checkbox"</span> name<span style="color:mediumblue">="vehicle1"</span> value<span style="color:mediumblue">="Bike"</span></span><span style="color:mediumblue">&gt;</span></span> I have a bike<span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br> &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="checkbox"</span> name<span style="color:mediumblue">="vehicle2"</span> value<span style="color:mediumblue">="Car"</span></span><span style="color:mediumblue">&gt;</span></span> I have a car <br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/form<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_checkbox" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <p>Так HTML-код будет отображаться в браузере:</p>
+        <input type="checkbox" name="vehicle1" value="Bike"> I have a bike
+        <br>
+        <input type="checkbox" name="vehicle2" value="Car"> I have a car
+        <hr>
+        <h2>Тип ввода Button (кнопка)</h2>
+        <p><code>&lt;input type="button"&gt;</code> определяет <strong>кнопку</strong>:</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="button"</span> onclick<span style="color:mediumblue">="alert('Hello World!')"</span> value<span style="color:mediumblue">="Click Me!"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_button" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <p>Так HTML-код будет отображаться в браузере:</p>
+        <input type="button" onclick="alert('Hello World!')" value="Click Me!">
+        <hr>
+        <h2>HTML5 Input Types (типы ввода)</h2>
+        <p><strong>HTML5</strong> добавил несколько новых типов ввода:</p>
+        <ul>
+            <li>color
+            <li>date
+            <li>datetime-local
+            <li>email
+            <li>month
+            <li>number
+            <li>range
+            <li>search
+            <li>tel
+            <li>time
+            <li>url
+            <li>week
+        </ul>
+        <div class="w3-panel w3-note">
+            <p>Новые типы ввода данных, которые не поддерживаются более старыми веб-браузерами, будут вести себя как <code>&lt;input type="text"&gt;</code>.</p>
+        </div>
+        <hr>
+        <h2>Тип ввода Color (цвет)</h2>
+        <p><code>&lt;input type="color"&gt;</code> используется для полей ввода, которые должны содержать цвет.</p>
+        <p>В зависимости от поддержки веб-браузера в поле ввода может отображаться выбор цветов.</p>
+        <div class="w3-example">
+            <img style="float:right;" src="../images/compatible_opera2020.gif" title="Підтримується Opera" alt="Opera" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_safari2020.gif" title="Підтримується Safari" alt="Safari" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_chrome2020.gif" title="Підтримується Chrome" alt="Chrome" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_firefox2020.gif" title="Підтримується Firefox" alt="Firefox" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_edge2020.gif" title="Підтримується Internet Explorer" alt="Internet Explorer" width="20" height="20">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>form<span style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                Select your favorite color:<br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="color"</span> name<span style="color:mediumblue">="favcolor"</span></span><span style="color:mediumblue">&gt;</span></span><br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>/form<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_color" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <h2>Тип ввода Date (дата)</h2>
+        <p><code>&lt;input type="date"&gt;</code> используется для полей ввода, которые должны содержать дату.</p>
+        <p>В зависимости от поддержки веб-браузера в поле ввода может отображаться выбор даты.</p>
+        <div class="w3-example">
+            <img style="float:right;" src="../images/compatible_opera2020.gif" title="Підтримується Opera" alt="Opera" width="20" height="20">
+            <img style="float:right;" src="../images/incompatible_safari2020.gif" title="Не підтримується Safari" alt="Safari" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_chrome2020.gif" title="Підтримується Chrome" alt="Chrome" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_firefox2020.gif" title="Підтримується Firefox" alt="Firefox" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_edge2020.gif" title="Підтримується Internet Explorer" alt="Internet Explorer" width="20" height="20">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                Birthday:<br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="date"</span> name<span class="attributevaluecolor" style="color:mediumblue">="bday"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_date" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <p>Можно также использовать атрибуты <code>min</code> и <code>max</code> для добавления ограничений для дат:</p>
+        <div class="w3-example">
+            <img style="float:right;" src="../images/compatible_opera2020.gif" title="Підтримується Opera" alt="Opera" width="20" height="20">
+            <img style="float:right;" src="../images/incompatible_safari2020.gif" title="Не підтримується Safari" alt="Safari" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_chrome2020.gif" title="Підтримується Chrome" alt="Chrome" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_firefox2020.gif" title="Підтримується Firefox" alt="Firefox" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_edge2020.gif" title="Підтримується Internet Explorer" alt="Internet Explorer" width="20" height="20">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; Enter a date before 1980-01-01:<br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="date"</span> name<span class="attributevaluecolor" style="color:mediumblue">="bday"</span> max<span class="attributevaluecolor" style="color:mediumblue">="1979-12-31"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; Enter a date after 2000-01-01:<br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="date"</span> name<span class="attributevaluecolor" style="color:mediumblue">="bday"</span> min<span class="attributevaluecolor" style="color:mediumblue">="2000-01-02"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_date_max_min" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <hr>
+        <h2>Тип ввода Datetime-local</h2>
+        <p><code>&lt;input type="datetime-local"&gt;</code> указывает поле ввода даты и времени, в котором нет временного пояса.</p>
+        <p>В зависимости от поддержки веб-браузера в поле ввода может отображаться выбор даты.</p>
+        <div class="w3-example">
+            <img style="float:right;" src="../images/compatible_opera2020.gif" title="Підтримується Opera" alt="Opera" width="20" height="20">
+            <img style="float:right;" src="../images/incompatible_safari2020.gif" title="Не підтримується Safari" alt="Safari" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_chrome2020.gif" title="Підтримується Chrome" alt="Chrome" width="20" height="20">
+            <img style="float:right;" src="../images/incompatible_firefox2020.gif" title="Не підтримується Firefox" alt="Firefox" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_edge2020.gif" title="Підтримується Internet Explorer" alt="Internet Explorer" width="20" height="20">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                Birthday (date and time):<br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="datetime-local"</span> name<span class="attributevaluecolor" style="color:mediumblue">="bdaytime"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_datetime-local" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <h2>Тип ввода email (электронная почта)</h2>
+        <p><code>&lt;input type="email"&gt;</code> используется для полей ввода, которые должны содержать адрес электронной почты.</p>
+        <p>В зависимости от поддержки браузера, адрес электронной почты может быть автоматически проверен во время отправки.</p>
+        <p>Некоторые смартфоны распознают тип электронной почты и добавляют ".com" на клавиатуру, чтобы отвечать вводу электронной почты.</p>
+        <div class="w3-example">
+            <img style="float:right;" src="../images/compatible_opera2020.gif" title="Підтримується Opera" alt="Opera" width="20" height="20">
+            <img style="float:right;" src="../images/incompatible_safari2020.gif" title="Не підтримується Safari" alt="Safari" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_chrome2020.gif" title="Підтримується Chrome" alt="Chrome" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_firefox2020.gif" title="Підтримується Firefox" alt="Firefox" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_edge2020.gif" title="Підтримується Internet Explorer" alt="Internet Explorer" width="20" height="20">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                E-mail:<br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="email"</span> name<span class="attributevaluecolor" style="color:mediumblue">="email"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_email" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <h2>Тип ввода File (файл)</h2>
+        <p><code>&lt;input type="file"&gt;</code> определяет поле выбора файла и кнопку "Просмотр" для загрузки файлов.</p>
+        <div class="w3-example">
+            <img style="float:right;" src="../images/compatible_opera2020.gif" title="Підтримується Opera" alt="Opera" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_safari2020.gif" title="Підтримується Safari" alt="Safari" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_chrome2020.gif" title="Підтримується Chrome" alt="Chrome" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_firefox2020.gif" title="Підтримується Firefox" alt="Firefox" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_edge2020.gif" title="Підтримується Internet Explorer" alt="Internet Explorer" width="20" height="20">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; Select a file: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="file"</span> name<span class="attributevaluecolor" style="color:mediumblue">="myFile"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_file" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <h2>Тип ввода Month (месяц)</h2>
+        <p><code>&lt;input type="month"&gt;</code> позволяет пользователю выбрать месяц и год.</p>
+        <p>В зависимости от поддержки веб-браузера в поле ввода может отображаться выбор даты.</p>
+        <div class="w3-example">
+            <img style="float:right;" src="../images/compatible_opera2020.gif" title="Підтримується Opera" alt="Opera" width="20" height="20">
+            <img style="float:right;" src="../images/incompatible_safari2020.gif" title="Не підтримується Safari" alt="Safari" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_chrome2020.gif" title="Підтримується Chrome" alt="Chrome" width="20" height="20">
+            <img style="float:right;" src="../images/incompatible_firefox2020.gif" title="Не підтримується Firefox" alt="Firefox" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_edge2020.gif" title="Підтримується Internet Explorer" alt="Internet Explorer" width="20" height="20">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                Birthday (month and year):<br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="month"</span> name<span class="attributevaluecolor" style="color:mediumblue">="bdaymonth"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_month" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <h2>Тип ввода Number (номер)</h2>
+        <p><code>&lt;input type="number"&gt;</code> определяет числовое поле ввода.</p>
+        <p>Вы также можете установить ограничение того, какие числа принимаются.</p>
+        <p>В следующем примере отображается числовое поле ввода, в котором можно ввести значения от 1 до 5:</p>
+        <div class="w3-example">
+            <img style="float:right;" src="../images/compatible_opera2020.gif" title="Підтримується Opera" alt="Opera" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_safari2020.gif" title="Підтримується Safari" alt="Safari" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_chrome2020.gif" title="Підтримується Chrome" alt="Chrome" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_firefox2020.gif" title="Підтримується Firefox" alt="Firefox" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_edge2020.gif" title="Підтримується Internet Explorer" alt="Internet Explorer" width="20" height="20">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; Quantity (between 1 and 5):<br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="number"</span> name<span class="attributevaluecolor" style="color:mediumblue">="quantity"</span> min<span class="attributevaluecolor" style="color:mediumblue">="1"</span> max<span class="attributevaluecolor" style="color:mediumblue">="5"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_number" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <h2>Ограничения ввода</h2>
+        <p>Это список некоторых общих ограничений ввода (некоторые из них новые в <strong>HTML5</strong>):</p>
+        <table class="w3-table-all">
+            <tbody><tr>
+                <th style="width:20%">Атрибут</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>disabled</td>
+                <td>Определяет, что поле ввода должно быть выключено (запрещено)</td>
+            </tr>
+            <tr>
+                <td class="html5badge">max</td>
+                <td>Определяет максимальное значение для поля ввода</td>
+            </tr>
+            <tr>
+                <td>maxlength</td>
+                <td>Определяет максимальное количество символов для поля ввода</td>
+            </tr>
+            <tr>
+                <td class="html5badge">min</td>
+                <td>Определяет минимальное значение для поля ввода</td>
+            </tr>
+            <tr>
+                <td class="html5badge">pattern</td>
+                <td>Определяет регулярное выражение для проверки входящего значения</td>
+            </tr>
+            <tr>
+                <td>readonly</td>
+                <td>Определяет, что поле ввода лишь для чтения (не может быть изменено)</td>
+            </tr>
+            <tr>
+                <td class="html5badge">required</td>
+                <td>Определяет, что поле ввода обязательно (должно быть заполнено)</td>
+            </tr>
+            <tr>
+                <td>size</td>
+                <td>Указывает ширину (в символах) поля ввода</td>
+            </tr>
+            <tr>
+                <td class="html5badge">step</td>
+                <td>Определяет допустимые интервалы номеров для поля ввода</td>
+            </tr>
+            <tr>
+                <td>value</td>
+                <td>Определяет значения по умолчанию для поля ввода</td>
+            </tr>
+            </tbody>
+        </table>
+        <p>Вы узнаете больше про ограничения ввода в следующем разделе.</p>
+        <p>В следующем примере отображается числовое поле ввода, в котором можно ввести значения от 0 до 100, шагами 10. Значение по умолчанию - 30:</p>
+        <div class="w3-example">
+            <img style="float:right;" src="../images/compatible_opera2020.gif" title="Підтримується Opera" alt="Opera" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_safari2020.gif" title="Підтримується Safari" alt="Safari" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_chrome2020.gif" title="Підтримується Chrome" alt="Chrome" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_firefox2020.gif" title="Підтримується Firefox" alt="Firefox" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_edge2020.gif" title="Підтримується Internet Explorer" alt="Internet Explorer" width="20" height="20">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; Quantity:<br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="number"</span> name<span class="attributevaluecolor" style="color:mediumblue">="points"</span> min<span class="attributevaluecolor" style="color:mediumblue">="0"</span> max<span class="attributevaluecolor" style="color:mediumblue">="100"</span> step<span class="attributevaluecolor" style="color:mediumblue">="10"</span> value<span class="attributevaluecolor" style="color:mediumblue">="30"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br> <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_number_step" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <h2>Тип ввода Range (диапазон)</h2>
+        <p><code>&lt;input type="range"&gt;</code> определяет элемент управления для ввода числа, точное значение которого не является важным (например, ползунок). Стандартный диапазон от 0 до 100. Но вы можете установить ограничение того, какие числа принимаются с атрибутами <code>min</code>, <code>max</code> и <code>step</code>:</p>
+        <div class="w3-example">
+            <img style="float:right;" src="../images/compatible_opera2020.gif" title="Підтримується Opera" alt="Opera" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_safari2020.gif" title="Підтримується Safari" alt="Safari" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_chrome2020.gif" title="Підтримується Chrome" alt="Chrome" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_firefox2020.gif" title="Підтримується Firefox" alt="Firefox" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_edge2020.gif" title="Підтримується Internet Explorer" alt="Internet Explorer" width="20" height="20">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="range"</span> name<span class="attributevaluecolor" style="color:mediumblue">="points"</span> min<span class="attributevaluecolor" style="color:mediumblue">="0"</span> max<span class="attributevaluecolor" style="color:mediumblue">="10"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_range" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <h2>Тип ввода Search (поиск)</h2>
+        <p><code>&lt;input type="search"&gt;</code> используется для поисковых полей (поле поиска ведёт себя как обычное текстовое поле).</p>
+        <div class="w3-example">
+            <img style="float:right;" src="../images/compatible_opera2020.gif" title="Підтримується Opera" alt="Opera" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_safari2020.gif" title="Підтримується Safari" alt="Safari" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_chrome2020.gif" title="Підтримується Chrome" alt="Chrome" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_firefox2020.gif" title="Підтримується Firefox" alt="Firefox" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_edge2020.gif" title="Підтримується Internet Explorer" alt="Internet Explorer" width="20" height="20">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; Search Google:<br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="search"</span> name<span class="attributevaluecolor" style="color:mediumblue">="googlesearch"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br> <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_search" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <h2>Тип ввода Tel (телефон)</h2>
+        <p><code>&lt;input type="tel"&gt;</code> используется для полей ввода, которые должны содержать номер телефона.</p>
+        <p><b>Примечание:</b> Тип tel на данный момент поддерживается лишь в браузере Safari 8.</p>
+        <div class="w3-example">
+            <img style="float:right;" src="../images/incompatible_opera2020.gif" title="Не підтримується Opera" alt="Opera" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_safari2020.gif" title="Підтримується Safari" alt="Safari" width="20" height="20">
+            <img style="float:right;" src="../images/incompatible_chrome2020.gif" title="Не підтримується Chrome" alt="Chrome" width="20" height="20">
+            <img style="float:right;" src="../images/incompatible_firefox2020.gif" title="Не підтримується Firefox" alt="Firefox" width="20" height="20">
+            <img style="float:right;" src="../images/incompatible_edge2020.gif" title="Не підтримується Internet Explorer" alt="Internet Explorer" width="20" height="20">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; Telephone:<br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="tel"</span> name<span class="attributevaluecolor" style="color:mediumblue">="usrtel"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br> <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_tel" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <h2>Тип ввода Time (время)</h2>
+        <p><code>&lt;input type="time"&gt;</code> позволяет пользователю выбрать время (без часового пояса).</p>
+        <p>В зависимости от поддержки веб-браузера в поле ввода может отображаться выбор времени.</p>
+        <div class="w3-example">
+            <img style="float:right;" src="../images/compatible_opera2020.gif" title="Підтримується Opera" alt="Opera" width="20" height="20">
+            <img style="float:right;" src="../images/incompatible_safari2020.gif" title="Не підтримується Safari" alt="Safari" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_chrome2020.gif" title="Підтримується Chrome" alt="Chrome" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_firefox2020.gif" title="Підтримується Firefox" alt="Firefox" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_edge2020.gif" title="Підтримується Internet Explorer" alt="Internet Explorer" width="20" height="20">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; Select a time:<br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="time"</span> name<span class="attributevaluecolor" style="color:mediumblue">="usr_time"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br> <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_time" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <h2>Тип ввода Url (веб-адрес)</h2>
+        <p><code>&lt;input type="url"&gt;</code> используется для полей ввода, которые должны содержать URL-адрес.</p>
+        <p>В зависимости от поддержки веб-браузера, поле URL может быть автоматически проверено во время отправки. Некоторые смартфоны распознают тип URL-адреса и добавляют ".com" к набору с клавиатуры, чтобы соответствовать вводу URL.</p>
+        <div class="w3-example">
+            <img style="float:right;" src="../images/compatible_opera2020.gif" title="Підтримується Opera" alt="Opera" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_safari2020.gif" title="Підтримується Safari" alt="Safari" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_chrome2020.gif" title="Підтримується Chrome" alt="Chrome" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_firefox2020.gif" title="Підтримується Firefox" alt="Firefox" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_edge2020.gif" title="Підтримується Internet Explorer" alt="Internet Explorer" width="20" height="20">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; Add your homepage:<br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="url"</span> name<span class="attributevaluecolor" style="color:mediumblue">="homepage"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br> <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_url" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <h2>Тип ввода Week (неделя)</h2>
+        <p><code>&lt;input type="week"&gt;</code> позволяет пользователю выбрать неделю и год.</p>
+        <p>В зависимости от поддержки веб-браузера в поле ввода может отображаться выбор даты.</p>
+        <div class="w3-example">
+            <img style="float:right;" src="../images/compatible_opera2020.gif" title="Підтримується Opera" alt="Opera" width="20" height="20">
+            <img style="float:right;" src="../images/incompatible_safari2020.gif" title="Не підтримується Safari" alt="Safari" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_chrome2020.gif" title="Підтримується Chrome" alt="Chrome" width="20" height="20">
+            <img style="float:right;" src="../images/incompatible_firefox2020.gif" title="Не підтримується Firefox" alt="Firefox" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_edge2020.gif" title="Підтримується Internet Explorer" alt="Internet Explorer" width="20" height="20">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; Select a week:<br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="week"</span> name<span class="attributevaluecolor" style="color:mediumblue">="week_year"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_week" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <div class="w3-container w3-dark-grey w3-padding">
+            <h2 style="text-shadow: 1px 1px 1px #000, 1px 1px 1px #000;">Проверьте себя упражнениями</h2>
+            <div class="w3-bar w3-margin-bottom">
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_form_input_types1" target="_blank" rel="nofollow">Exercise 1 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_form_input_types2" target="_blank" rel="nofollow">Exercise 2 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_form_input_types3" target="_blank" rel="nofollow">Exercise 3 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_form_input_types4" target="_blank" rel="nofollow">Exercise 4 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_form_input_types5" target="_blank" rel="nofollow">Exercise 5 »</a>
+            </div>
+        </div><hr>
+        <h2>HTML Атрибут Input Type</h2>
+        <table class="w3-table-all">
+            <tbody>
+            <tr>
+                <th>Тег</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td><a href="../tags/att_input_type.html">&lt;input type=""&gt;</a></td>
+                <td>Определяет тип ввода для отображения</td>
+            </tr>
+            </tbody>
+        </table><hr>
+        <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> Для получения полного списка всех доступных <strong>HTML</strong> тегов, посетите <a href="../tags/element_reference.html">Справочник <strong>HTML</strong> тегов</a>.</p>
+        </div>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html_form_elements.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html_form_attributes.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr class="hr-bottom">
+        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
+        <!-- Комментарии от Disqus -->
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_config = function () {
+        this.page.url = html5beginners.github.io;  // канонический URL страницы
+        this.page.identifier = html5beginners.github.io/html/html_form_input_types.html; // уникальный идентификатор страницы
+        };
+        (function() { // Не редактировать ниже этой линии
+        var d = document, s = d.createElement('script');
+        s.src = 'https://html5beginners.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+        <!--  / Комментарии от Disqus -->
+    </div>
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>

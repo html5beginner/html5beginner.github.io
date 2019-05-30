@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>HTML5. Урок №45. SVG. Графика на сайте. W3schools на русском. Уроки для начинающих</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="HTML,CSS,уроки,для начинающих,html5,html4,svg,графика,на сайте,элементы,теги,w3schools,на русском" />
+    <meta name="description" content="Урок 45. HTML5. SVG. Графика на сайте. Как добавить элементы svg на веб-страницу? Учебник W3Schools на русском. Пособие для начинающих" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/ws.css" />
+    <link rel="stylesheet" href="../styles/handheld.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/browserref.css">
+    <link rel="canonical" href="https://html5beginners.github.io/" />
+    <meta property="og:title" content="HTML5. Урок №45. SVG. Графика на сайте. W3schools на русском. Уроки для начинающих" />
+    <meta property="og:type" content="веб-сайт" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://html5beginners.github.io/" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="Урок 45. HTML5. SVG. Графика на сайте. Как добавить элементы svg на веб-страницу? Учебник W3Schools на русском. Пособие для начинающих" />
+    <meta property="og:locale" content="ru" /> <!--мова сайту-->
+    <meta property="og:site_name" content="HTML5Beginners - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
+    <script src="../js/topnav.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" class="frame-header"></iframe>
+<main>
+    <div class="left-sidebar">
+        <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>HTML5. SVG - Scalable Vector Graphics</h1>
+        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html5_canvas.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html_media.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr>
+        <h2>Что такое SVG?</h2>
+        <ul>
+            <li><strong>SVG</strong> расшифровывается как Scalable Vector Graphics - Масштабируемая векторная графика
+            <li><strong>SVG</strong> используется для определения Web-графики
+            <li><strong>SVG</strong> рекомендуется W3C (Консорциумом всемирной паутины)
+        </ul>
+        <hr>
+
+        <h2>HTML элемент &lt;svg&gt;</h2>
+        <p>HTML элемент <code class="w3-codespan">&lt;svg&gt;</code> является контейнером для SVG-графики.</p>
+        <p>SVG имеет несколько методов для рисования контуров, боксов, кругов, текста и графических изображений.</p>
+        <hr>
+        <h2>Поддержка браузерами</h2>
+        <p>Цифры в таблице определяют первую версию браузера, которая полностью поддерживает элемент <code class="w3-codespan">&lt;svg&gt;</code>.</p>
+        <table class="browserref notranslate">
+            <tbody><tr>
+                <th style="width:20%;font-size:16px;text-align:left;">Элемент</th>
+                <th style="width:16%;" class="bsChrome" title="Chrome"></th>
+                <th style="width:16%;" class="bsEdge" title="Internet Explorer / Edge"></th>
+                <th style="width:16%;" class="bsFirefox" title="Firefox"></th>
+                <th style="width:16%;" class="bsSafari" title="Safari"></th>
+                <th style="width:16%;" class="bsOpera" title="Opera"></th>
+            </tr>
+            <tr>
+                <td style="text-align:left;">&lt;svg&gt;</td>
+                <td>4.0</td>
+                <td>9.0</td>
+                <td>3.0</td>
+                <td>3.2</td>
+                <td>10.1</td>
+            </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h2>SVG Круг</h2>
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow"></circle>
+        </svg>
+        <div class="w3-example">
+            <h3>Пример:</h3>
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>svg<span class="attributecolor" style="color:red">
+ width<span class="attributevaluecolor" style="color:mediumblue">="100"</span> height<span class="attributevaluecolor" style="color:mediumblue">="100"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>circle<span class="attributecolor" style="color:red"> cx<span class="attributevaluecolor" style="color:mediumblue">="50"</span> cy<span class="attributevaluecolor" style="color:mediumblue">="50"</span> r<span class="attributevaluecolor" style="color:mediumblue">="40"</span> stroke<span class="attributevaluecolor" style="color:mediumblue">="green"</span>
+ stroke-width<span class="attributevaluecolor" style="color:mediumblue">="4"</span> fill<span class="attributevaluecolor" style="color:mediumblue">="yellow"</span> /</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/svg<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_svg_circle" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <hr>
+        <h2>SVG Прямоугольник</h2>
+        <svg width="400" height="100">
+            <rect width="400" height="100" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)"></rect>
+        </svg>
+        <br><br>
+
+        <div class="w3-example">
+            <h3>Пример:</h3>
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>svg<span class="attributecolor" style="color:red"> width<span class="attributevaluecolor" style="color:mediumblue">="400"</span> height<span class="attributevaluecolor" style="color:mediumblue">="100"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>rect<span class="attributecolor" style="color:red"> width<span class="attributevaluecolor" style="color:mediumblue">="400"</span> height<span class="attributevaluecolor" style="color:mediumblue">="100"</span> style<span class="attributevaluecolor" style="color:mediumblue">="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)"</span>
+ /</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/svg<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br> </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_svg_rect" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <hr>
+        <h2>SVG Закругленный прямоугольник</h2>
+        <svg width="300" height="180">
+            <rect x="10" y="10" rx="20" ry="20" width="150" height="150" style="fill:red;stroke:black;stroke-width:5;opacity:0.5"></rect>
+            К сожалению, ваш браузер не поддерживает встроенный SVG.
+        </svg>
+
+        <div class="w3-example">
+            <h3>Пример:</h3>
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>svg<span class="attributecolor" style="color:red"> width<span class="attributevaluecolor" style="color:mediumblue">="400"</span> height<span class="attributevaluecolor" style="color:mediumblue">="180"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>rect<span class="attributecolor" style="color:red"> x<span class="attributevaluecolor" style="color:mediumblue">="50"</span> y<span class="attributevaluecolor" style="color:mediumblue">="20"</span> rx<span class="attributevaluecolor" style="color:mediumblue">="20"</span> ry<span class="attributevaluecolor" style="color:mediumblue">="20"</span>
+ width<span class="attributevaluecolor" style="color:mediumblue">="150"</span> height<span class="attributevaluecolor" style="color:mediumblue">="150"</span><br>&nbsp;
+ style<span class="attributevaluecolor" style="color:mediumblue">="fill:red;stroke:black;stroke-width:5;opacity:0.5"</span> /</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/svg<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br> </div>
+            <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_svg_rect_round" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <hr>
+        <h2>SVG Звезда</h2>
+        <svg width="300" height="200">
+            <polygon points="100,10 40,198 190,78 10,78 160,198" style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;"></polygon>
+            К сожалению, ваш браузер не поддерживает встроенный SVG.
+        </svg>
+
+        <div class="w3-example">
+            <h3>Пример:</h3>
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>svg<span class="attributecolor" style="color:red"> width<span class="attributevaluecolor" style="color:mediumblue">="300"</span> height<span class="attributevaluecolor" style="color:mediumblue">="200"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>polygon<span class="attributecolor" style="color:red"> points<span class="attributevaluecolor" style="color:mediumblue">="100,10 40,198 190,78 10,78 160,198"</span><br>
+ &nbsp; style<span class="attributevaluecolor" style="color:mediumblue">="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;"</span> /</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/svg<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_svg_star" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <hr>
+        <h2>SVG Лого</h2>
+        <svg height="130" width="500">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1"></stop>
+                    <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1"></stop>
+                </linearGradient>
+            </defs>
+            <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)"></ellipse>
+            <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG</text>
+            К сожалению, ваш браузер не поддерживает встроенный SVG.
+        </svg>
+
+        <div class="w3-example">
+            <h3>Пример:</h3>
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>svg<span class="attributecolor" style="color:red"> height<span class="attributevaluecolor" style="color:mediumblue">="130"</span> width<span class="attributevaluecolor" style="color:mediumblue">="500"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>defs<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>linearGradient<span class="attributecolor" style="color:red"> id<span class="attributevaluecolor" style="color:mediumblue">="grad1"</span> x1<span class="attributevaluecolor" style="color:mediumblue">="0%"</span>
+ y1<span class="attributevaluecolor" style="color:mediumblue">="0%"</span> x2<span class="attributevaluecolor" style="color:mediumblue">="100%"</span> y2<span class="attributevaluecolor" style="color:mediumblue">="0%"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>stop<span class="attributecolor" style="color:red"> offset<span class="attributevaluecolor" style="color:mediumblue">="0%"</span> style<span class="attributevaluecolor" style="color:mediumblue">="stop-color:rgb(255,255,0);stop-opacity:1"</span>
+ /</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>stop<span class="attributecolor" style="color:red"> offset<span class="attributevaluecolor" style="color:mediumblue">="100%"</span> style<span class="attributevaluecolor" style="color:mediumblue">="stop-color:rgb(255,0,0);stop-opacity:1"</span> /</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                &nbsp;&nbsp;&nbsp;
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/linearGradient<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/defs<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>ellipse<span class="attributecolor" style="color:red"> cx<span class="attributevaluecolor" style="color:mediumblue">="100"</span> cy<span class="attributevaluecolor" style="color:mediumblue">="70"</span> rx<span class="attributevaluecolor" style="color:mediumblue">="85"</span> ry<span class="attributevaluecolor" style="color:mediumblue">="55"</span>
+ fill<span class="attributevaluecolor" style="color:mediumblue">="url(#grad1)"</span> /</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>text<span class="attributecolor" style="color:red"> fill<span class="attributevaluecolor" style="color:mediumblue">="#ffffff"</span> font-size<span class="attributevaluecolor" style="color:mediumblue">="45"</span>
+ font-family<span class="attributevaluecolor" style="color:mediumblue">="Verdana"</span> x<span class="attributevaluecolor" style="color:mediumblue">="50"</span> y<span class="attributevaluecolor" style="color:mediumblue">="86"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>SVG<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/text<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; К сожалению, ваш браузер не поддерживает встроенный SVG.<br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/svg<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_svg_logo" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <hr>
+        <h2>Отличия между SVG и Canvas</h2>
+        <p>SVG - это язык для описания 2D-графики в XML.</p>
+        <p>Canvas рисует 2D графику на лету (с помощью JavaScript).</p>
+        <p>SVG базируется на XML, что означает, что каждый элемент доступен в SVG DOM. Вы можете присоединить обработчики событий JavaScript для элемента.</p>
+        <p>В SVG каждая нарисованная форма запоминается как объект. Если атрибуты объекта SVG изменены, браузер может автоматически повторно воспроизвести форму.</p>
+        <p>Canvas визуализируется пиксель за пикселем. В canvas, когда рисуется рисунок, он забывается браузером. Если его позицию надо изменить, то необходимо перерисовать всю сцену, включая любые объекты, которые могли быть покрыты графикой.</p>
+        <hr>
+        <h2>Сравнение Canvas и SVG</h2>
+        <p>В таблице ниже показаны некоторые важные отличия между Canvas и SVG:</p>
+        <table class="w3-table-all notranslate">
+            <tbody><tr>
+                <th style="width:50%">Canvas</th>
+                <th style="width:50%">SVG</th>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>Зависит от разрешения</li>
+                        <li>Нет поддержки обработчиков событий</li>
+                        <li>Низкие возможности отображения текста</li>
+                        <li>Вы можете сохранить полученное изображение как .png или .jpg</li>
+                        <li>Хорошо подходит для графических интенсивных игр</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Не зависит от разрешения</li>
+                        <li>Поддержка обработчиков событий</li>
+                        <li>Лучше всего подходит для программ из большими областями рендеринга (Карты Google)</li>
+                        <li>Медленный рендеринг, если комплекс (все, что использует DOM) будет очень медленным</li>
+                        <li>Не подходит для игровых программ</li>
+                    </ul>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h2>SVG Учебник</h2>
+        <p>Узнать больше про SVG можно, посетив <a href="../graphics/svg_intro.html" target="_blank">Учебник по SVG</a>.</p>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html5_canvas.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html_media.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr class="hr-bottom">
+        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
+        <!-- Комментарии от Disqus -->
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_config = function () {
+        this.page.url = html5beginners.github.io;  // канонический URL страницы
+        this.page.identifier = html5beginners.github.io/html/html5_svg.html; // уникальный идентификатор страницы
+        };
+        (function() { // Не редактировать ниже этой линии
+        var d = document, s = d.createElement('script');
+        s.src = 'https://html5beginners.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+        <!--  / Комментарии от Disqus -->
+    </div>
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>

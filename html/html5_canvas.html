@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>HTML5. Урок №44. Canvas. Графика на сайте. W3schools на русском. Уроки для начинающих</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="HTML,CSS,уроки,для начинающих,html5,html4,canvas,графика,на сайте,элементы,теги,w3schools,на русском" />
+    <meta name="description" content="Урок 44. HTML5. Canvas. Графика на сайте. Как добавить элементы canvas на веб-странице? W3Schools на русском языке. Учебник для начинающих" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/ws.css" />
+    <link rel="stylesheet" href="../styles/handheld.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/browserref.css">
+    <link rel="canonical" href="https://html5beginners.github.io/" />
+    <meta property="og:title" content="HTML5. Урок №44. Canvas. Графика на сайте. W3schools на русском. Уроки для начинающих" />
+    <meta property="og:type" content="веб-сайт" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://html5beginners.github.io/" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="Урок 44. HTML5. Canvas. Графика на сайте. Как добавить элементы canvas на веб-странице? W3Schools на русском языке. Учебник для начинающих" />
+    <meta property="og:locale" content="ru" /> <!--мова сайту-->
+    <meta property="og:site_name" content="HTML5Beginners - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
+    <script src="../js/topnav.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" class="frame-header"></iframe>
+<main>
+    <div class="left-sidebar">
+        <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>HTML5. Canvas</h1>
+        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html5_syntax.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html5_svg.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr>
+
+        <div>
+            <canvas id="my1Canvas" width="270" height="160" style="border:1px solid #c3c3c3;float:left;margin-right:20px;margin-bottom:15px">
+                Ваш браузер не поддерживает элемент &lt;canvas&gt;.
+            </canvas>
+            <p class="intro">HTML элемент <code class="w3-codespan">&lt;canvas&gt;</code> используется для рисования графики на веб-странице.</p>
+            <p class="intro">Графический объект слева создаётся с помощью <code class="w3-codespan">&lt;canvas&gt;</code>. Он показывает четиры элемента: красный прямоугольник, градиентный прямоугольник, многоцветный прямоугольник и многоцветный текст.</p>
+        </div>
+        <div style="clear:both;"></div>
+        <script>
+            var c=document.getElementById("my1Canvas");
+            var canvOK=1;
+            try {c.getContext("2d");}
+            catch (er) {canvOK=0;}
+            if (canvOK==1)
+            {
+                var ctx=c.getContext("2d");
+                ctx.fillStyle="#FF0000";
+                ctx.fillRect(20,20,100,50);
+
+                var grd=ctx.createLinearGradient(140,20,240,70);
+                grd.addColorStop(0,"black");
+                grd.addColorStop(1,"white");
+                ctx.fillStyle=grd;
+                ctx.fillRect(140,20,100,50);
+
+                var grd2=ctx.createLinearGradient(20,90,120,90);
+                grd2.addColorStop(0,"black");
+                grd2.addColorStop("0.3","magenta");
+                grd2.addColorStop("0.5","blue");
+                grd2.addColorStop("0.6","green");
+                grd2.addColorStop("0.8","yellow");
+                grd2.addColorStop(1,"red");
+                ctx.fillStyle=grd2;
+                ctx.fillRect(20,90,100,50);
+
+                ctx.font="30px Verdana";
+                var grd3=ctx.createLinearGradient(140,20,240,90);
+                grd3.addColorStop(0,"black");
+                grd3.addColorStop("0.3","magenta");
+                grd3.addColorStop("0.6","blue");
+                grd3.addColorStop("0.8","green");
+                grd3.addColorStop(1,"red");
+                ctx.strokeStyle=grd3;
+                ctx.strokeText("Smile!",140,120); }
+        </script>
+        <hr>
+
+        <h2>Что такое HTML Canvas?</h2>
+        <p>HTML элемент <code class="w3-codespan">&lt;canvas&gt;</code> (с анг. canvas - холст) используется для рисования графики на лету с помощью JavaScript.</p>
+        <p>Элемент <code class="w3-codespan">&lt;canvas&gt;</code> является лишь контейнером для графики. На самом деле необходимо использовать JavaScript, чтобы нарисовать графику.</p>
+        <p>Canvas имеет несколько методов для рисования дорожек, полей, кругов, текста и добавления изображения.</p>
+        <hr>
+        <h2>Поддержка браузерами</h2>
+        <p>Цифры в таблице определяют первую версию браузера, которая полностью поддерживает элемент <code class="w3-codespan">&lt;canvas&gt;</code>.</p>
+        <table class="browserref notranslate">
+            <tbody><tr>
+                <th style="width:20%;font-size:16px;text-align:left;">Элемент</th>
+                <th style="width:16%;" class="bsChrome" title="Chrome"></th>
+                <th style="width:16%;" class="bsEdge" title="Internet Explorer / Edge"></th>
+                <th style="width:16%;" class="bsFirefox" title="Firefox"></th>
+                <th style="width:16%;" class="bsSafari" title="Safari"></th>
+                <th style="width:16%;" class="bsOpera" title="Opera"></th>
+            </tr>
+            <tr>
+                <td style="text-align:left;">&lt;canvas&gt;</td>
+                <td>4.0</td>
+                <td>9.0</td>
+                <td>2.0</td>
+                <td>3.1</td>
+                <td>9.0</td>
+            </tr>
+            </tbody></table>
+        <hr>
+
+        <h2>Canvas Примеры</h2>
+        <p>Canvas (холст) - это прямоугольная область на HTML странице. По умолчанию холст не имеет границы и содержания.</p>
+        <p>Разметка выглядит так:</p>
+        <div class="w3-code w3-border notranslate htmlHigh"><div>
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>canvas<span class="attributecolor" style="color:red"> id<span class="attributevaluecolor" style="color:mediumblue">="myCanvas"</span> width<span class="attributevaluecolor" style="color:mediumblue">="200"</span> height<span class="attributevaluecolor" style="color:mediumblue">="100"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/canvas<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+        </div> </div>
+        <p><b>Примечание:</b> Всегда указывайте атрибут <code class="w3-codespan">id</code> (на который ссылается скрипт), атрибуты <code class="w3-codespan">width</code> (ширина) и <code class="w3-codespan">height</code> (высота) для определения размера холста. Чтобы добавить границу, воспользуйтесь атрибутом <code class="w3-codespan">style</code>.</p>
+        <p>Вот пример основного, пустого холста:</p>
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+            Ваш веб-браузер не поддерживает элемент canvas.
+        </canvas>
+        <div class="w3-example">
+            <h3>Пример:</h3>
+            <div class="w3-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>canvas<span class="attributecolor" style="color:red"> id<span class="attributevaluecolor" style="color:mediumblue">="myCanvas"</span> width<span class="attributevaluecolor" style="color:mediumblue">="200"</span> height<span class="attributevaluecolor" style="color:mediumblue">="100"</span>
+style<span class="attributevaluecolor" style="color:mediumblue">="border:1px solid
+#000000;"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/canvas<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_canvas_empty" class="w3-btn w3-margin-bottom">Попробуйте сами »</a>
+        </div>
+        <hr>
+        <h3>Нарисовать линию</h3>
+        <canvas id="myCanvas2" width="200" height="100" style="border:1px solid #d3d3d3;">
+            Ваш веб-браузер не поддерживает элемент canvas.
+        </canvas>
+        <script>
+            var c=document.getElementById("myCanvas2");
+            var canvOK=1;
+            try {c.getContext("2d");}
+            catch (er) {canvOK=0;}
+            if (canvOK==1)
+            {
+                var ctx=c.getContext("2d");
+                ctx.moveTo(0,0);
+                ctx.lineTo(200,100);
+                ctx.stroke();
+            }
+        </script>
+        <div class="w3-example">
+            <h3>Пример:</h3>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+</span> <span class="jskeywordcolor" style="color:mediumblue">var</span> c = document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"myCanvas"</span>);<br><span class="jskeywordcolor" style="color:mediumblue">var</span> ctx = c.<span class="jspropertycolor" style="color:black">getContext</span>(<span class="jsstringcolor" style="color:brown">"2d"</span>);<br><span class="jsnumbercolor" style="color:red">
+</span> ctx.<span class="jspropertycolor" style="color:black">moveTo</span>(<span class="jsnumbercolor" style="color:red">0</span>, <span class="jsnumbercolor" style="color:red">0</span>);<br>ctx.<span class="jspropertycolor" style="color:black">lineTo</span>(<span class="jsnumbercolor" style="color:red">200</span>, <span class="jsnumbercolor" style="color:red">100</span>);<br><span class="jsnumbercolor" style="color:red">
+</span> ctx.<span class="jspropertycolor" style="color:black">stroke</span>(); </span></div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_canvas_tut_path" target="_blank">Попробуйте сами »</a>
+        </div>
+        <hr>
+
+        <h3>Нарисовать круг</h3>
+        <canvas id="myCanvas3" width="200" height="100" style="border:1px solid #d3d3d3;">
+            Ваш веб-браузер не поддерживает элемент canvas.
+        </canvas>
+        <script>
+            var c=document.getElementById("myCanvas3");
+            var canvOK=1;
+            try {c.getContext("2d");}
+            catch (er) {canvOK=0;}
+            if (canvOK==1)
+            {
+                var ctx=c.getContext("2d");
+                ctx.beginPath();
+                ctx.arc(95,50,40,0,2*Math.PI);
+                ctx.stroke();
+            }
+        </script>
+        <div class="w3-example">
+            <h3>Пример:</h3>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+<span class="jskeywordcolor" style="color:mediumblue">var</span> c = document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"myCanvas"</span>);<br><span class="jskeywordcolor" style="color:mediumblue">var</span> ctx = c.<span class="jspropertycolor" style="color:black">getContext</span>(<span class="jsstringcolor" style="color:brown">"2d"</span>);<br><span class="jsnumbercolor" style="color:red">
+</span> ctx.<span class="jspropertycolor" style="color:black">beginPath</span>();<br>ctx.<span class="jspropertycolor" style="color:black">arc</span>(<span class="jsnumbercolor" style="color:red">95</span>, <span class="jsnumbercolor" style="color:red">50</span>, <span class="jsnumbercolor" style="color:red">40</span>, <span class="jsnumbercolor" style="color:red">0</span>, <span class="jsnumbercolor" style="color:red">2</span> * Math.<span class="jspropertycolor" style="color:black">PI</span>);<br>ctx.<span class="jspropertycolor" style="color:black">stroke</span>(); </span></div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_canvas_tut_path2" target="_blank">Попробуйте сами »</a>
+        </div>
+        <hr>
+
+        <h3>Нарисовать текст</h3>
+        <canvas id="myCanvas4" width="200" height="100" style="border:1px solid #d3d3d3;">
+            Ваш веб-браузер не поддерживает элемент canvas.
+        </canvas>
+        <script>
+            var c=document.getElementById("myCanvas4");
+            var canvOK=1;
+            try {c.getContext("2d");}
+            catch (er) {canvOK=0;}
+            if (canvOK==1)
+            {
+                var ctx=c.getContext("2d");
+                ctx.font="30px Arial";
+                ctx.fillText("Hello World",10,50);
+            }
+        </script>
+        <div class="w3-example">
+            <h3>Пример:</h3>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+</span> <span class="jskeywordcolor" style="color:mediumblue">var</span> c = document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"myCanvas"</span>);<br><span class="jskeywordcolor" style="color:mediumblue">var</span> ctx = c.<span class="jspropertycolor" style="color:black">getContext</span>(<span class="jsstringcolor" style="color:brown">"2d"</span>);<br><span class="jsnumbercolor" style="color:red">
+</span> ctx.<span class="jspropertycolor" style="color:black">font</span> = <span class="jsstringcolor" style="color:brown">"30px Arial"</span>;<br>ctx.<span class="jspropertycolor" style="color:black">fillText</span>(<span class="jsstringcolor" style="color:brown">"Hello World"</span>, <span class="jsnumbercolor" style="color:red">10</span>, <span class="jsnumbercolor" style="color:red">50</span>); </span></div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_canvas_tut_text" target="_blank">Попробуйте сами »</a>
+        </div>
+        <hr>
+
+        <h3>Обведенный текст</h3>
+        <canvas id="myCanvas5" width="200" height="100" style="border:1px solid #d3d3d3;">
+            Ваш веб-браузер не поддерживает элемент canvas.
+        </canvas>
+        <script>
+            var c=document.getElementById("myCanvas5");
+            var canvOK=1;
+            try {c.getContext("2d");}
+            catch (er) {canvOK=0;}
+            if (canvOK==1)
+            {
+                var ctx=c.getContext("2d");
+                ctx.font="30px Arial";
+                ctx.strokeText("Hello World",10,50);
+            }
+        </script>
+        <div class="w3-example">
+            <h3>Пример:</h3>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+</span> <span class="jskeywordcolor" style="color:mediumblue">var</span> c = document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"myCanvas"</span>);<br><span class="jskeywordcolor" style="color:mediumblue">var</span> ctx = c.<span class="jspropertycolor" style="color:black">getContext</span>(<span class="jsstringcolor" style="color:brown">"2d"</span>);<br><span class="jsnumbercolor" style="color:red">
+</span> ctx.<span class="jspropertycolor" style="color:black">font</span> = <span class="jsstringcolor" style="color:brown">"30px Arial"</span>;<br>ctx.<span class="jspropertycolor" style="color:black">strokeText</span>(<span class="jsstringcolor" style="color:brown">"Hello World"</span>, <span class="jsnumbercolor" style="color:red">10</span>, <span class="jsnumbercolor" style="color:red">50</span>); </span></div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_canvas_tut_text2" target="_blank">Попробуйте сами »</a>
+        </div>
+        <hr>
+
+        <h3>Нарисовать линейный градиент</h3>
+        <canvas id="myCanvas6" width="200" height="100" style="border:1px solid #d3d3d3;">
+            Ваш веб-браузер не поддерживает элемент canvas.
+        </canvas>
+        <script>
+            var c=document.getElementById("myCanvas6");
+            var canvOK=1;
+            try {c.getContext("2d");}
+            catch (er) {canvOK=0;}
+            if (canvOK==1)
+            {
+                var ctx=c.getContext("2d");
+                // Create gradient
+                var grd = ctx.createLinearGradient(0,0,200,0);
+                grd.addColorStop(0,"red");
+                grd.addColorStop(1,"white");
+                // Fill with gradient
+                ctx.fillStyle = grd;
+                ctx.fillRect(10,10,150,80);
+            }
+        </script>
+        <div class="w3-example">
+            <h3>Пример:</h3>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+</span> <span class="jskeywordcolor" style="color:mediumblue">var</span> c = document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"myCanvas"</span>);<br><span class="jsnumbercolor" style="color:red">
+</span> <span class="jskeywordcolor" style="color:mediumblue">var</span> ctx = c.<span class="jspropertycolor" style="color:black">getContext</span>(<span class="jsstringcolor" style="color:brown">"2d"</span>);<br><span class="jsnumbercolor" style="color:red">
+</span> <br><span class="jsnumbercolor" style="color:red">
+</span> <span class="commentcolor" style="color:green">// Create gradient<br></span><span class="jsnumbercolor" style="color:red">
+</span> <span class="jskeywordcolor" style="color:mediumblue">var</span> grd = ctx.<span class="jspropertycolor" style="color:black">createLinearGradient</span>(<span class="jsnumbercolor" style="color:red">0</span>, <span class="jsnumbercolor" style="color:red">0</span>, <span class="jsnumbercolor" style="color:red">200</span>, <span class="jsnumbercolor" style="color:red">0</span>);<br><span class="jsnumbercolor" style="color:red">
+</span> grd.<span class="jspropertycolor" style="color:black">addColorStop</span>(<span class="jsnumbercolor" style="color:red">0</span>, <span class="jsstringcolor" style="color:brown">"red"</span>);<br><span class="jsnumbercolor" style="color:red">
+</span> grd.<span class="jspropertycolor" style="color:black">addColorStop</span>(<span class="jsnumbercolor" style="color:red">1</span>, <span class="jsstringcolor" style="color:brown">"white"</span>);<br><span class="jsnumbercolor" style="color:red">
+</span> <br><span class="jsnumbercolor" style="color:red">
+</span> <span class="commentcolor" style="color:green">// Fill with gradient<br></span><span class="jsnumbercolor" style="color:red">
+</span> ctx.<span class="jspropertycolor" style="color:black">fillStyle</span> = grd;<br><span class="jsnumbercolor" style="color:red">
+</span> ctx.<span class="jspropertycolor" style="color:black">fillRect</span>(<span class="jsnumbercolor" style="color:red">10</span>, <span class="jsnumbercolor" style="color:red">10</span>, <span class="jsnumbercolor" style="color:red">150</span>, <span class="jsnumbercolor" style="color:red">80</span>); </span></div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_canvas_tut_grad" target="_blank">Попробуйте сами »</a>
+        </div>
+        <hr>
+
+        <h3>Нарисовать круговой градиент</h3>
+        <canvas id="myCanvas7" width="200" height="100" style="border:1px solid #d3d3d3;">
+           Ваш веб-браузер не поддерживает элемент canvas.
+        </canvas>
+        <script>
+            var c=document.getElementById("myCanvas7");
+            var canvOK=1;
+            try {c.getContext("2d");}
+            catch (er) {canvOK=0;}
+            if (canvOK==1)
+            {
+                var ctx=c.getContext("2d");
+                // Create gradient
+                var grd = ctx.createRadialGradient(75,50,5,90,60,100);
+                grd.addColorStop(0,"red");
+                grd.addColorStop(1,"white");
+                // Fill with gradient
+                ctx.fillStyle = grd;
+                ctx.fillRect(10,10,150,80);
+            }
+        </script>
+        <div class="w3-example">
+            <h3>Пример:</h3>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+</span> <span class="jskeywordcolor" style="color:mediumblue">var</span> c = document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"myCanvas"</span>);<br><span class="jsnumbercolor" style="color:red">
+</span> <span class="jskeywordcolor" style="color:mediumblue">var</span> ctx = c.<span class="jspropertycolor" style="color:black">getContext</span>(<span class="jsstringcolor" style="color:brown">"2d"</span>);<br><span class="jsnumbercolor" style="color:red">
+</span> <br><span class="jsnumbercolor" style="color:red">
+</span> <span class="commentcolor" style="color:green">// Create gradient<br></span><span class="jsnumbercolor" style="color:red">
+</span> <span class="jskeywordcolor" style="color:mediumblue">var</span> grd = ctx.<span class="jspropertycolor" style="color:black">createRadialGradient</span>(<span class="jsnumbercolor" style="color:red">75</span>, <span class="jsnumbercolor" style="color:red">50</span>, <span class="jsnumbercolor" style="color:red">5</span>, <span class="jsnumbercolor" style="color:red">90</span>, <span class="jsnumbercolor" style="color:red">60</span>, <span class="jsnumbercolor" style="color:red">100</span>);<br><span class="jsnumbercolor" style="color:red">
+</span> grd.<span class="jspropertycolor" style="color:black">addColorStop</span>(<span class="jsnumbercolor" style="color:red">0</span>, <span class="jsstringcolor" style="color:brown">"red"</span>);<br><span class="jsnumbercolor" style="color:red">
+</span> grd.<span class="jspropertycolor" style="color:black">addColorStop</span>(<span class="jsnumbercolor" style="color:red">1</span>, <span class="jsstringcolor" style="color:brown">"white"</span>);<br><span class="jsnumbercolor" style="color:red">
+</span> <br><span class="jsnumbercolor" style="color:red">
+</span> <span class="commentcolor" style="color:green">// Fill with gradient<br></span><span class="jsnumbercolor" style="color:red">
+</span>  ctx.<span class="jspropertycolor" style="color:black">fillStyle</span> = grd;<br>ctx.<span class="jspropertycolor" style="color:black">fillRect</span>(<span class="jsnumbercolor" style="color:red">10</span>, <span class="jsnumbercolor" style="color:red">10</span>, <span class="jsnumbercolor" style="color:red">150</span>, <span class="jsnumbercolor" style="color:red">80</span>); </span></div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_canvas_tut_grad2" target="_blank">Попробуйте сами »</a>
+        </div>
+        <hr>
+
+        <div class="w3-example">
+            <h3>Нарисовать изображение</h3>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+</span> <span class="jskeywordcolor" style="color:mediumblue">var</span> c = document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"myCanvas"</span>);<br><span class="jsnumbercolor" style="color:red">
+</span> <span class="jskeywordcolor" style="color:mediumblue">var</span> ctx = c.<span class="jspropertycolor" style="color:black">getContext</span>(<span class="jsstringcolor" style="color:brown">"2d"</span>);<br><span class="jsnumbercolor" style="color:red">
+</span> <span class="jskeywordcolor" style="color:mediumblue">var</span> img = document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"scream"</span>);<br><span class="jsnumbercolor" style="color:red">
+</span> ctx.<span class="jspropertycolor" style="color:black">drawImage</span>(img, <span class="jsnumbercolor" style="color:red">10</span>, <span class="jsnumbercolor" style="color:red">10</span>); </span></div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_canvas_tut_img" target="_blank">Попробуйте сами »</a>
+        </div>
+        <hr>
+        <h2>HTML Canvas учебник</h2>
+        <p>Чтобы узнать больше про HTML <code class="w3-codespan">&lt;canvas&gt;</code>, посетите <a href="../graphics/canvas_intro.html" target="_blank">Учебник по HTML Canvas</a>.</p>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html5_syntax.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html5_svg.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr class="hr-bottom">
+        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
+        <!-- Комментарии от Disqus -->
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_config = function () {
+        this.page.url = html5beginners.github.io;  // канонический URL страницы
+        this.page.identifier = html5beginners.github.io/html/html5_canvas.html; // уникальный идентификатор страницы
+        };
+        (function() { // Не редактировать ниже этой линии
+        var d = document, s = d.createElement('script');
+        s.src = 'https://html5beginners.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+        <!--  / Комментарии от Disqus -->
+    </div>
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>

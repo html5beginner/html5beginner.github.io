@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>HTML5. Поддержка браузерами. Урок №39. W3schools на русском. Уроки для начинающих</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="HTML,CSS,уроки,для начинающих,html5,поддержка,браузерами,w3schools,на русском,языке" />
+    <meta name="description" content="Урок 39. HTML5. Поддержка браузерами. Какие браузеры поддерживают HTML5? Новые стандарты. W3Schools на русском языке. Учебник для начинающих веб-программистов" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/ws.css" />
+    <link rel="stylesheet" href="../styles/handheld.css" />
+    <link rel="canonical" href="https://html5beginners.github.io/" />
+    <meta property="og:title" content="HTML5. Поддержка браузерами. Урок №39. W3schools на русском. Уроки для начинающих" />
+    <meta property="og:type" content="веб-сайт" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://html5beginners.github.io/" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="Урок 39. HTML5. Поддержка браузерами. Какие браузеры поддерживают HTML5? Новые стандарты. W3Schools на русском языке. Учебник для начинающих веб-программистов" />
+    <meta property="og:locale" content="ru" /> <!--мова сайту-->
+    <meta property="og:site_name" content="HTML5Beginners - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
+    <script src="../js/topnav.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" class="frame-header"></iframe>
+<main>
+    <div class="left-sidebar">
+        <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>HTML5. Поддержка браузерами</h1>
+        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html5_intro.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html5_new_elements.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr>
+        <p class="intro">Вы можете научить старые браузеры правильно обрабатывать <strong>HTML5</strong>.</p>
+        <hr>
+        <h2>HTML5 Поддержка браузерами</h2>
+        <p><strong>HTML5</strong> поддерживается всеми современными браузерами.</p>
+        <p>Кроме того, все браузеры, старые и новые, автоматически обрабатывают неопознанные элементы как встроенные элементы. Благодаря чему вы можете "научить" старые браузеры обрабатывать "неизвестные" для него элементы HTML.</p>
+        <div class="w3-panel w3-note">
+            <p>Вы даже можете научить IE6 (Windows XP 2001), как обрабатывать неизвестные элементы HTML.</p>
+        </div>
+        <hr>
+        <h2>Определение семантических элементов как блочных элементов</h2>
+        <p><strong>HTML5</strong> определяет восемь новых <strong>семантических</strong> элементов. Все они являются <strong>блочными</strong> элементами.</p>
+        <p>Чтобы обеспечить корректное поведение в старых браузерах, нужно установить CSS свойство <strong>display</strong>  для этих HTML элементов <strong>block</strong>:</p>
+        <div class="w3-example">
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+header, section, footer, aside, nav, main, article, figure <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+&nbsp;&nbsp;display<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> block<span class="cssdelimitercolor" style="color:black">;</span></span> <br>
+</span><span class="cssdelimitercolor" style="color:black">}</span>
+ </span></div></div>
+        <hr>
+        <h2>Как добавить новые элементы в HTML</h2>
+        <p>Также можно добавить новые элементы в HTML-страницы с помощью обмана браузера.</p>
+        <p>Этот пример добавляет новый элемент с названием <code class="w3-codespan">&lt;myHero&gt;</code> на HTML страницу и определяет его стиль:</p>
+        <div class="w3-example">
+            <h3>Пример:</h3>
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black">document.<span class="jspropertycolor" style="color:black">createElement</span>(<span class="jsstringcolor" style="color:brown">"myHero"</span>)</span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor" style="color:brown"><br>myHero <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+  &nbsp; display<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> block<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> #dddddd<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 50px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; font-size<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 30px<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+  </span><span class="cssdelimitercolor" style="color:black">}</span> <br></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/style<span class="tagcolor" style="color:mediumblue">&gt;</span></span> <br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>A Heading<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>myHero<span class="tagcolor" style="color:mediumblue">&gt;</span></span>My Hero Element<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/myHero<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_browsers_myhero" target="_blank">Попробуйте сами »</a>
+        </div>
+        <p>JavaScript оператор <code class="w3-codespan">document.createElement("myHero")</code> нужен для создания нового элемента в IE 9 и более ранних версиях.</p>
+        <hr>
+        <h2>Проблемы с Internet Explorer 8</h2>
+        <p>Вы можете воспользоваться описанным выше решением для всех новых елементов <strong>HTML5</strong>.</p>
+        <p>При этом <strong>IE8 (и более ранние версии) не позволяет стилизовать неизвестные элементы!</strong></p>
+        <p>Но, слава Богу, Sjoerd Visscher создал <strong>HTML5Shiv</strong>! HTML5Shiv - это обходной путь JavaScript для включения стилизации элементов HTML5 в версиях Internet Explorer до версии 9.</p>
+        <div class="w3-panel w3-note">
+            <p>Вам будет необходим HTML5shiv для обеспечения совместимости для IE браузеров старших от IE 9.</p>
+        </div>
+        <hr>
+        <h2>Синтаксис для HTML5Shiv</h2>
+        <p><strong>HTML5Shiv</strong> располагается в пределах тега <code class="w3-codespan">&lt;head&gt;</code>.</p>
+        <p><strong>HTML5Shiv</strong> - это файл JavaScript, на который ссылается тег <code class="w3-codespan">&lt;script&gt;</code>.</p>
+        <p>Вы можете использовать <strong>HTML5Shiv</strong>, если вы используете новые элементы <strong>HTML5</strong>, такие как: <code class="w3-codespan">&lt;article&gt;</code>, <code class="w3-codespan">&lt;section&gt;</code>, <code class="w3-codespan">&lt;aside&gt;</code>, <code class="w3-codespan">&lt;nav&gt;</code>, <code class="w3-codespan">&lt;footer&gt;</code>.</p>
+        <p>Вы можете <a href="https://github.com/aFarkas/html5shiv" target="_blank" rel="nofollow">загрузить последнюю версию <strong>HTML5shiv</strong> из github</a> или по ссылке CDN версии на <a href="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" target="_blank" rel="nofollow"> https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js</a></p>
+        <div class="w3-example">
+            <h3>Синтаксис</h3>
+            <div class="w3-code">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                <span class="commentcolor" style="color:green">&lt;!--[if lt IE 9]&gt;<br> &nbsp;&nbsp;&nbsp; &lt;script src="/js/html5shiv.js"&gt;&lt;/script&gt;<br>&nbsp; &lt;![endif]--&gt;</span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+        </div>
+        <hr>
+        <h2>HTML5Shiv Пример</h2>
+        <p>Если вы не желаете загружать и сохранять <strong>HTML5Shiv</strong> на своём сайте, можно ссылаться на версию, которая находится на сайте CDN.</p>
+        <p>Скрипт <strong>HTML5Shiv</strong> должен быть расположен в элементе <code class="w3-codespan">&lt;head&gt;</code> после любых таблиц стилей:</p>
+        <div class="w3-example">
+            <h3>Пример:</h3>
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red"> charset<span class="attributevaluecolor" style="color:mediumblue">="UTF-8"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="commentcolor" style="color:green">&lt;!--[if lt IE 9]&gt;<br>
+ &nbsp; &lt;script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"&gt;&lt;/script&gt;<br>
+&lt;![endif]--&gt;</span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>section<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Famous Cities<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>article<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span>London<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/article<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>article<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Paris<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Paris is the capital and most populous city of France.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/article<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>article<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Tokyo<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Tokyo is the capital of Japan, the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/article<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/section<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_browsers_html5shiv" target="_blank">Попробуйте сами »</a>
+        </div>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html5_intro.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html5_new_elements.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr class="hr-bottom">
+        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
+        <!-- Комментарии от Disqus -->
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_config = function () {
+        this.page.url = html5beginners.github.io;  // канонический URL страницы
+        this.page.identifier = html5beginners.github.io/html/html5_browsers.html; // уникальный идентификатор страницы
+        };
+        (function() { // Не редактировать ниже этой линии
+        var d = document, s = d.createElement('script');
+        s.src = 'https://html5beginners.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+        <!--  / Комментарии от Disqus -->
+    </div>
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>

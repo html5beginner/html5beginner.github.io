@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>HTML. Параграфы. Урок №8. W3schools на русском. Уроки для начинающих</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="HTML,CSS,уроки,для начинающих,html5,css3,параграфы,абзацы,теги,paragraph,tags,w3schools,на русском" />
+    <meta name="description" content="Урок 8. HTML. Параграфы на веб-страницах. Как сделать абзац в html? W3Schools на русском. Учебник для начинающих" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/ws.css" />
+    <link rel="stylesheet" href="../styles/handheld.css" />
+    <link rel="canonical" href="https://html5beginners.github.io/" />
+    <meta property="og:title" content="HTML. Параграфы. Урок №8. W3schools на русском. Уроки для начинающих" />
+    <meta property="og:type" content="веб-сайт" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://html5beginners.github.io/" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="Урок 8. HTML. Параграфы на веб-страницах. Как сделать абзац в html? W3Schools на русском. Учебник для начинающих" />
+    <meta property="og:locale" content="ru" /> <!--мова сайту-->
+    <meta property="og:site_name" content="HTML5Beginners - Основы HTML, CSS, JavaScript, PHP для начинающих" />
+    <script src="../js/topnav.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" class="frame-header"></iframe>
+<main>
+    <div class="left-sidebar">
+        <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>Урок №8. HTML. Параграфы (абзацы)</h1>
+        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
+        <!-- buttons prev - next -->
+        <hr>
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les07.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="les09.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <hr>
+        <!-- / buttons prev - next -->
+        <h2>Параграфы в HTML. Как сделать параграфы на веб-страницах?</h2>
+        <p><strong>HTML</strong> элемент <code>&lt;p&gt;</code> определяет параграф (абзац):</p>
+        <div class="w3-panel w3-note">
+            <p><b>Примечание:</b> Слово <em>paragraph</em> обычно переводится, как <em>абзац</em>. Но в среде веб-разработчиков чаще используют слово <em>параграф</em>, т.е. отступ текста с новой строки. Здесь и далее будет использоваться именно слово <em>параграф</em>.</p>
+        </div>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>This is a paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>This is another paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_paragraphs1" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <div class="w3-panel w3-note">
+            <p><b>Примечание:</b> Браузеры автоматически добавляют пробел (margin) до и после параграфа.</p>
+        </div><hr>
+        <h2>Отображение HTML</h2>
+        <p>Вы не можете знать наверняка, где именно будет отображаться ваша веб-страница, на каких дисплеях или устройствах. Большие или маленькие экраны и размеры окон показывают разные результаты. С помощью HTML-кода вы не можете изменить исходное отображение, добавляя дополнительные пробелы или дополнительные строки в вашем HTML-коде. Во время отображения страницы веб-браузер удаляет любые дополнительные пробелы и дополнительные строки:</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span><br>This paragraph<br>contains a lot of lines<br>in the source code,<br>but
+                the browser <br>ignores it.<br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span><br>This paragraph<br>contains&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                a lot of spaces<br>in the source&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                code,<br>but the&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; browser <br>ignores
+                it.<br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_paragraphs2" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <h2>Не забывайте про конечный тег</h2>
+        <p>Большинство браузеров будет отображать HTML правильно, даже если вы забудете конечный тег:</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>This is a paragraph.<br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>This is another paragraph.
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_paragraphs0" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <p>Пример выше будет работать в большинстве браузеров, но не надейтесь на это.</p>
+        <div class="w3-panel w3-note">
+            <p><b>Примечание:</b> Удаление конечного тега может привести до неожиданных результатов или ошибок в отображении веб-страницы.</p>
+        </div>
+        <hr>
+        <h2>Разрывы HTML-строк</h2>
+        <p><strong>HTML</strong> элемент <code>&lt;br&gt;</code> определяет <strong>разрыв строки</strong>. Используйте функцию <code>&lt;br&gt;</code>, если необходимо прервать строку (создать новую строку), не начиная новый параграф:</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>This is<span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span>a paragraph<span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span>with line breaks.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_paragraphs" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <p>Тег <code>&lt;br&gt;</code> - это пустой тег, что означает, что он не имеет конечного тега.</p>
+        <hr>
+        <h2>Проблема отображения поэзии</h2>
+        <p>Этот стих будет отображаться в одну строку:</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span><br>&nbsp; Зродились ми великої години,<br><br>&nbsp; З пожеж війни і з полум'я вогнів,<br><br>&nbsp; Плекав нас біль по втраті України,<br><br>&nbsp; Кормив нас гнів і злість на ворогів.<br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_poem" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <h2>HTML элемент &lt;pre&gt;</h2>
+        <p>HTML элемент <code>&lt;pre&gt;</code> определяет предварительно отформатированный текст. Текст внутри элемента <code>&lt;pre&gt;</code> отображается шрифтом фиксированной ширини (обычно Courier), и он сохраняет пробелы и разрывы строк так, как написано:</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>pre<span style="color:mediumblue">&gt;</span></span><br>&nbsp; І ось ідем у бою життєвому<br>
+                <br>&nbsp; Міцні, тверді, незломні мов граніт,<br><br>&nbsp; Бо плач не дав свободи ще нікому,<br><br>&nbsp; А хто борець, той здобуває світ.<br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/pre<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_pre" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <div class="w3-container w3-dark-grey w3-padding">
+            <h2 style="text-shadow: 1px 1px 1px #000, 1px 1px 1px #000;">Проверьте себя упражнениями!</h2>
+            <div class="w3-bar w3-margin-bottom">
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_paragraphs1" target="_blank" rel="nofollow">Exercise 1 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_paragraphs2" target="_blank" rel="nofollow">Exercise 2 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_paragraphs3" target="_blank" rel="nofollow">Exercise 3 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_paragraphs4" target="_blank" rel="nofollow">Exercise 4 »</a>
+            </div>
+        </div>
+        <hr>
+        <h2>Справочник HTML тегов</h2>
+        <p><em><a href="../tags/element_reference.html">Справочник HTML</a></em> тегов <em><a href="https://www.w3schools.com/tags/default.asp" target="_blank" rel="nofollow">W3Schools</a></em> содержит дополнительную информацию про <strong>HTML</strong> элементы и их атрибуты.</p>
+        <table class="w3-table-all">
+            <tbody><tr>
+                <th>Тег</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td><a href="../tags/tag_p.html" target="_blank">&lt;p&gt;</a></td>
+                <td>Определяет параграф (абзац)</td>
+            </tr>
+            <tr>
+                <td><a href="../tags/tag_br.html" target="_blank">&lt;br&gt;</a></td>
+                <td>Вставляет один разрыв строки</td>
+            </tr>
+            <tr>
+                <td><a href="../tags/tag_pre.html" target="_blank">&lt;pre&gt;</a></td>
+                <td>Определяет предварительно отформатированный текст</td>
+            </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h3>Справочник HTML тегов</h3>
+        <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> Для получения полного списка всех доступных <strong>HTML</strong> тегов, посетите <a href="../tags/default.html">Справочник <strong>HTML</strong> тегов</a> на нашем сайте.</p>
+        </div>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les07.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="les09.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr class="hr-bottom">
+        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
+        <!-- Комментарии от Disqus -->
+  <div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+this.page.url = html5beginners.github.io;  // канонический URL страницы
+this.page.identifier = html5beginners.github.io/html/les08.html; // уникальный идентификатор страницы
+};
+(function() { // Не редактировать ниже этой линии
+var d = document, s = d.createElement('script');
+s.src = 'https://html5beginners.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленых Disqus.</a></noscript>
+<!--  / Комментарии от Disqus -->
+    </div>
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>

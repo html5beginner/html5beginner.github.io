@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>HTML. Мультимедиа - звук, музыка, видео, фыльмы, анимация. W3schools на русском. Уроки для начинающих</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="HTML,CSS,уроки,для начинающих,html5,мультимедиа,на сайте,элементы,теги,звук,музыка,видео,анимация,w3schools,на русском" />
+    <meta name="description" content="Урок 46. HTML. Мультимедиа на сайте. Как добавить мультимедийные элементы видео, аудио, анимацию на веб-страницу? W3Schools на русском. Учебник для начинающих" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/ws.css" />
+    <link rel="stylesheet" href="../styles/handheld.css" />
+    <link rel="canonical" href="https://html5beginners.github.io/" />
+    <meta property="og:title" content="HTML. Мультимедиа - звук, музыка, видео, фыльмы, анимация. W3schools на русском. Уроки для начинающих" />
+    <meta property="og:type" content="веб-сайт" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://html5beginners.github.io/" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="Урок 46. HTML. Мультимедиа на сайте. Как добавить мультимедийные элементы видео, аудио, анимацию на веб-страницу? W3Schools на русском. Учебник для начинающих" />
+    <meta property="og:locale" content="ru" /> <!--мова сайту-->
+    <meta property="og:site_name" content="HTML5Beginners - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
+    <script src="../js/topnav.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" class="frame-header"></iframe>
+<main>
+    <div class="left-sidebar">
+        <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>HTML. Мультимедиа</h1>
+        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html5_svg.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html5_video.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr>
+        <p class="intro">Мультимедиа в Интернете - это звук, музыка, видео, фильмы и анимация.</p>
+        <hr>
+        <h2>Что такое мультимедиа?</h2>
+        <p>Мультимедиа поставляется в различных форматах. Это может быть почти всё, что можно услышать или увидеть.</p>
+        <p>Примеры: изображение, музыка, звук, видео, записи, фильмы, анимация и тому подобное.</p>
+        <p>Интернет-страницы часто содержат мультимедийные элементы различных типов и форматов.</p>
+        <p>В этом разделе вы узнаете о различных мультимедийных форматах.</p>
+        <hr>
+        <h2>Поддержка браузерами</h2>
+        <p>Первые веб-браузеры поддерживали только текст, ограничиваясь одним шрифтом одного цвета.</p>
+        <p>Позже появились браузеры с поддержкой различных цветов и шрифтов, и изображений!</p>
+        <p>Основные браузеры обрабатывают аудио, видео и анимацию по-разному. Пддерживаются различные форматы, а для некоторых форматов нужны дополнительные вспомогательные программы (плагины) для работы.</p>
+        <p> Надеемся, что это всё станет историей. Мультимедийные технологии HTML5 обещают более легкое будущее для мультимедиа.</p>
+        <hr>
+        <h2>Форматы мультимедиа</h2>
+        <p>Мультимедийные элементы (например, аудио или видео) хранятся в медиафайлах.</p>
+        <p>Самым распространенным способом выявления типа файла является просмотр расширение файла.</p>
+        <p>Мультимедийные файлы имеют такие форматы и различные расширения: .swf, .wav, .mp3, .mp4, .mpg, .wmv, .avi. </p>
+        <hr>
+        <h2>Общие форматы видео</h2>
+        <table>
+            <tbody>
+            <tr>
+                <td style="width:225px"><img alt="Videoformats" src="../images/pic_video.jpg" width="196" height="109"></td>
+                <td style="vertical-align:top">MP4 является новым и становящимся основным форматом для Интернет-видео.<br>
+                    <br>MP4 рекомендуется сайтом YouTube.<br><br>MP4 поддерживается Flash плеерами.<br>
+                    <br>MP4 поддерживается HTML5.
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <table class="w3-table-all notranslate">
+            <tbody>
+            <tr>
+                <th>Формат</th>
+                <th style="width:50px">Файл</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>MPEG</td>
+                <td>.mpg<br>.mpeg</td>
+                <td>
+                    MPEG. Разработан Moving Pictures Expert Group. Первый популярный видеоформат в Интернете. Использовался для поддержки всех веб-браузеров, но не поддерживается в HTML5 (см. MP4).
+                </td>
+            </tr>
+            <tr>
+                <td>AVI</td>
+                <td>.avi</td>
+                <td>
+                    AVI (Audio Video Interleave). Разработан компанией Microsoft. Обычно используется в видеокамерах и телевизионном оборудовании. Отлично воспроизводится на компьютерах Windows, но не в веб-браузерах.</td>
+            </tr>
+            <tr>
+                <td>WMV</td>
+                <td>.wmv</td>
+                <td>
+                    WMV (Windows Media Video). Разработан компанией Microsoft. Обычно используется в видеокамерах и телевизионном оборудовании. Отлично воспроизводится на компьютерах Windows, но не в веб-браузерах.</td>
+            </tr>
+            <tr>
+                <td>QuickTime</td>
+                <td>.mov</td>
+                <td>
+                    QuickTime. Разработан Apple. Обычно используется в видеокамерах и телевизионном оборудовании. Отлично воспроизводится на компьютерах Apple, но не в веб-браузерах. (см. MP4)</td>
+            </tr>
+            <tr>
+                <td>RealVideo</td>
+                <td>.rm<br>.ram</td>
+                <td>
+                    RealVideo. Разработан Real Media, что позволяет осуществлять потоковое видео с низкой пропускной способностью. Он по-прежнему используется для онлайн-видео и интернет-телевидения, но не воспроизводится в веб-браузерах.</td>
+            </tr>
+            <tr>
+                <td>Flash</td>
+                <td>.swf<br>.flv</td>
+                <td>
+                    Flash. Разработан компанией Macromedia. Часто нужно иметь дополнительный компонент (плагин) для воспроизведения в веб-браузерах.</td>
+            </tr>
+            <tr>
+                <td>Ogg</td>
+                <td>.ogg</td>
+                <td>
+                    Theora Ogg. Разработан Xiph.Org Foundation. Поддерживается HTML5.</td>
+            </tr>
+            <tr>
+                <td>WebM</td>
+                <td>.webm</td>
+                <td>
+                    WebM. Разработан веб-гигантами Mozilla, Opera, Adobe и Google. Поддерживается HTML5.</td>
+            </tr>
+            <tr>
+                <td>MPEG-4<br>или MP4</td>
+                <td>.mp4</td>
+                <td>
+                    MP4. Разработан Moving Pictures Expert Group. На основе QuickTime. Обычно используется в новых видеокамерах и телевизионном оборудовании. Поддерживается всеми браузерами HTML5. Рекомендуется YouTube.
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="w3-panel w3-note">
+            <p><strong>Только видео в форматах MP4, WebM и Ogg поддерживается стандартом HTML5.</strong></p>
+        </div>
+        <hr>
+        <h2>Audio Formats</h2>
+        <p>MP3 - самый новый формат для записанной музыки. Термин MP3 стал синонимом цифровой музыки.</p>
+        <p>Если на вашем веб-сайте размещается записанная музыка, самый лучший выбор - это MP3.</p>
+        <table class="w3-table-all notranslate">
+            <tbody><tr>
+                <th>Формат</th>
+                <th style="width:50px">Файл</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>MIDI</td>
+                <td>.mid<br>.midi</td>
+                <td>
+                    MIDI (от англ. Musical Instrument Digital Interface - цифровой интерфейс музыкальных инструментов). Главный формат для всех электронных музыкальных устройств, таких как синтезаторы и звуковые карты ПК. Файлы MIDI не содержат звука, а цифровые заметки, которые могут воспроизводиться электроникой. Отлично воспроизводится на всех компьютерах и музыкальных устройствах, но не в веб-браузерах.</td>
+            </tr>
+            <tr>
+                <td>RealAudio</td>
+                <td>.rm<br>.ram</td>
+                <td>
+                    RealAudio. Разработан Real Media, позволяет передавать аудио с низкой пропускной способностью. Не работает в веб-браузерах.</td>
+            </tr>
+            <tr>
+                <td>WMA</td>
+                <td>.wma</td>
+                <td>
+                    WMA (Windows Media Audio). Разработан компанией Microsoft. Обычно используется в музыкальных плеерах. Отлично воспроизводится на компьютерах Windows, но не в веб-браузерах.</td>
+            </tr>
+            <tr>
+                <td>AAC</td>
+                <td>.aac</td>
+                <td>
+                    AAC (Advanced Audio Coding). Разработан компанией Apple как стандартный формат для iTunes. Отлично воспроизводится на компьютерах Apple, но не в веб-браузерах.</td>
+            </tr>
+            <tr>
+                <td>WAV</td>
+                <td>.wav</td>
+                <td>
+                    WAV. Разработан IBM и Microsoft. Отлично воспроизводится в операционных системах Windows, Macintosh и Linux. Поддерживается HTML5.</td>
+            </tr>
+            <tr>
+                <td>Ogg</td>
+                <td>.ogg</td>
+                <td>
+                    Ogg. Разработан Xiph.Org Foundation. Поддерживается HTML5.</td>
+            </tr>
+            <tr>
+                <td>MP3</td>
+                <td>.mp3</td>
+                <td>
+                    Файлы MP3 - это звуковая часть файлов MPEG. MP3 - самый популярный формат для музыкальных плееров. Сочетает в себе хорошее сжатие (малые файлы) с высоким качеством. Поддерживаются всеми браузерами.</td>
+            </tr>
+            <tr>
+                <td>MP4</td>
+                <td>.mp4</td>
+                <td>
+                    MP4 является видеоформатом, но также может использоваться для аудио. MP4 видео - это новый формат видео в Интернете, который уже становится основным. Это приводит к автоматической поддержке MP4 аудио во всех браузерах.</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="w3-panel w3-note">
+            <p><strong>Стандарт HTML5 поддерживает лишь аудиофайлы MP3, WAV и Ogg.</strong></p>
+        </div>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html5_svg.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html5_video.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr class="hr-bottom">
+        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
+        <!-- Комментарии от Disqus -->
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_config = function () {
+        this.page.url = html5beginners.github.io;  // канонический URL страницы
+        this.page.identifier = html5beginners.github.io/html/html_media.html; // уникальный идентификатор страницы
+        };
+        (function() { // Не редактировать ниже этой линии
+        var d = document, s = d.createElement('script');
+        s.src = 'https://html5beginners.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+        <!--  / Комментарии от Disqus -->
+    </div>
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>
