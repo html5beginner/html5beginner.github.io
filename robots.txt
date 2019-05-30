@@ -1,0 +1,6 @@
+# Rule 1
+User-agent: *
+Allow: /
+
+Sitemap: http://html5beginners.pp.ua/sitemap.xml
+Sitemap: https://html5beginners.pp.ua/sitemap.xml
