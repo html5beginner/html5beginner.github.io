@@ -1,0 +1,111 @@
+*{padding: 0; margin: 0; transition: all .2s;}
+
+body{font-family:Verdana,sans-serif;}
+h1{font-size:2.4em; text-shadow: 1px 1px 1px #3a3a3a, 1px 1px 1px #666; }
+h2{font-size:2em; padding-left: 5px;}
+h3{font-size:1.8em}
+h4{font-size:1.6em}
+h5{font-size:1.4em}
+h6{font-size:.9em;font-weight:400;margin-bottom:5px;}
+h1,h2,h3,h4,h5{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 5px}
+
+p {padding: 2px 0; text-align:justify;}
+blockquote{padding: 5px 5px 5px 20px; color:#800C1F}
+
+/* зображення */
+img {margin: 1px;}
+a img {border: 0;}
+ul {padding: 0 0 0 20px}
+.flexible-image {max-width: 90%; margin: 1px;}
+.signature {font-size: .9em; font-family: courier, serif;}
+
+.img-left {float: left;margin: 10px;}
+.img-center {text-align:center; max-width:100%; padding-top: 5px; padding-bottom: 5px;}
+.img-right {float: right;margin: 10px;}
+
+.fig-left {float: left;}
+.fig-center {text-align:center; margin-top: 5px; margin-bottom: 5px;}
+.fig-right {float: right;}
+
+/* вирівнювання */
+.in-center {text-align: center;}
+.in-left {text-align:left;}
+.in-right {text-align:right;}
+
+/* списки */
+.list-disc {padding-left:20px; list-style-type:disc;}
+.list-circle {padding-left:20px; list-style-type:circle;}
+.list-square {padding-left:20px; list-style-type:square;}
+.list-none {padding-left:20px; list-style-type:none;}
+.list-ordered {padding-left:20px;}
+
+/* короткий опис на сторінці */
+.brief {background: #8bc34a; padding: 5px 10px; font-size: 1.2em; font-family: "Indie Flower", cursive; margin: 0 0 10px 0;}
+
+/* голова сторінки */
+header {font-family: "Trebuchet MS", sans-serif; padding: 10px;}
+.sitename {font-family:'Segoe UI',Arial,sans-serif; font-size:1.1em; padding:10px 0; float: right; text-align: right;}
+
+.topnav {overflow: hidden; background-color: #333; text-shadow: 1px 1px 1px #000, 1px 1px 1px #000;}
+.topnav a {float: left; display: block; color: #f2f2f2; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px;}
+.topnav a:hover {background-color: #ccc; color: #000;}
+.active {background-color: #269D9A; color: #fff;}
+.topnav .icon {display: none;}
+
+.text-shadow-black {text-shadow: 1px 1px 1px #000, 1px 1px 1px #000;}
+
+.left-sidebar {min-width: 280px; max-height: 100%;}
+.sidenav {max-width: 100%; min-width:200px; position: relative; z-index: 1; left: 0; background: #eee; overflow-x: hidden;}
+.sidenav a {text-decoration: none; font-size: 1.2em; color: #2196F3; display: block; padding: 5px 10px;}
+.sidenav a:hover {background: #ccc; color: #064579;}
+.title-sidenav {padding-left: 20px;}
+
+/* контент */
+.content {padding: 0 20px; min-height: 760px;}
+
+.right-sidebar {background: #eee; padding: 10px; max-height: 100%;}
+.right-sidebar-list {list-style: none; padding: 0 0 0 10px;}
+
+.right-sidebar li {display: inline-block;}
+.right-sidebar li a {text-decoration: none;}
+.right-sidebar li a:hover {color: #D81235; text-decoration: none;}
+
+.frame-header {min-height: 15%;  min-width: 100%; border:0; position: absolute; left: 0; right: 0; top: 0; bottom: 0;}
+.frame-left-sidebar {min-height: 100%; min-width: 100%; border:0;}
+.frame-right-sidebar {min-height: 100%; min-width: 100%; border:0;}
+.frame-footer {width: 100%; border: 0;}
+
+main {
+    display: grid; grid-template-columns:2fr 6fr 2fr; grid-template-rows:1fr; grid-column-gap:1px; grid-row-gap:1px;
+    border: 1px solid #000; border-radius: 1px; max-width: 1920px; background: #fff; margin: 100px auto 0 auto;
+    box-shadow: 0 0 1px blue, 0 0 1em #87D6E2;}
+
+.inner-grid-content {display: grid; grid-template-columns:1fr 1fr; grid-template-rows:1fr 1fr; grid-column-gap:10px; grid-row-gap:10px;
+    background: #eee; margin: 0 auto; padding: 10px}
+.inner-grid-code {display: grid; grid-template-columns:1fr 1fr 1fr; grid-template-rows:1fr; grid-column-gap:10px; grid-row-gap:10px;
+    max-width: 100%; background: #eee; margin: 0 auto;}
+
+.inner-block-lesson {background: #EDF7FF; padding: 10px; border: 1px dashed #000; text-align:center;}
+.inner-block-code {background: #EDF7FF; padding: 5px; border: 1px dashed #000; box-shadow: 0 0 1px #ccc, 0 0 1em #ccc;}
+
+.learn-link {font-size:1.1em; color: #fff; text-decoration: none;}
+
+.videowrap {margin: 10px auto;}
+.videoblock {position: relative; padding-bottom: 65.25%; height: 0; overflow: hidden;}
+.videoblock iframe, object, embed {border: 0; position: absolute; top: 0; left: 10px; width: 100%; height: 100%;}
+.video-title {font-size: 2em; text-align: center; color:#00008b;}
+
+.hr-bottom {height: 2px; background: #666;}
+.note-warning {text-align: justify; color: #bbb; font-size:.8em;}
+
+.keys {font-size:1pt;padding:0;text-align: center;color: #eee;}
+/* футер
+.footer {background: #2196F3;}
+*/
+
+.footer-wrapper {display: grid; grid-template-columns:2fr 6fr 2fr; grid-template-rows:1fr; grid-column-gap:1px; grid-row-gap:1px; border: 1px solid #000; border-radius: 1px; max-width: 1920px; background: #eee; margin: 5px auto; font-size:.8em; position: relative; left: 0; right: 0; top: 10px; bottom: 0; box-shadow: 0 0 1px #000, 0 0 1em #404040;}
+.footer-left, .footer-right {padding: 10px;}
+.footer-middle {background: #fff; text-align:center; padding: 10px;}
+
+
+

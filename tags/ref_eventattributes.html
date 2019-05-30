@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>HTML Атрибуты событий. Справочник. W3Schools на русском. Основы HTML5 для начинающих</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="HTML,CSS,уроки,html5,css3,основы,атрибуты,событий,справочник,W3C,reference" />
+    <meta name="description" content="Атрибуты событий в HTML. Курс по основам HTML5 | CSS3. W3Schools на русском. Полный справочник. Бесплатные уроки" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/ws.css" />
+    <link rel="stylesheet" href="../styles/handheld.css" />
+    <link rel="canonical" href="https://html5beginners.github.io/" />
+    <meta property="og:title" content="HTML Атрибуты событий. Справочник. W3Schools на русском. Основы HTML5 для начинающих" />
+    <meta property="og:type" content="Content" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://html5beginners.github.io/" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="Атрибуты событий в HTML. Курс по основам HTML5 | CSS3. W3Schools на русском. Полный справочник. Бесплатные уроки" />
+    <meta property="og:locale" content="ru" /> <!--мова сайту-->
+    <meta property="og:site_name" content="HTML5Beginners - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
+    <script src="../js/topnav.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" class="frame-header"></iframe>
+<main>
+
+    <div class="left-sidebar">
+        <iframe src="../pages/menuref.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>HTML Атрибуты событий. Справочник</h1>
+        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="ref_standardattributes.html" title="Головна сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="ref_colornames.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- buttons prev - next -->
+        <hr>
+
+        <h2>Глобальные атрибуты событий</h2>
+        <p><strong>HTML 4</strong> добавил возможность позволить событиям запускать действия в браузере, например, запуск <strong>JavaScript</strong>, когда пользователь нажимает на элемент.</p>
+        <p>Чтобы узнать больше о программировании событий, посетите <a href="/js/javascript_tutorial.html">JavaScript Учебник</a>.</p>
+        <p>Ниже приведены глобальные атрибуты событий, которые можно добавить к <strong>HTML</strong> элементам, чтобы определить действия событий.</p>
+        <p class="html5badge" style="background-position:left;padding-left:20px;height:18px;">= Новые атрибуты событий в <strong>HTML5</strong>.</p>
+        <hr>
+
+        <h2>Окно атрибутов событий</h2>
+        <p>События, что инициируются для объекта окна (применяются к тегу &lt;body&gt;):</p>
+        <table class="w3-table-all notranslate">
+            <tbody><tr>
+                <th style="width:160px">Атрибут</th>
+                <th style="width:75px">Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td class="html5badge"><a href="ev_onafterprint.html">onafterprint</a></td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен после печати документа</td>
+            </tr>
+            <tr>
+                <td class="html5badge"><a href="ev_onbeforeprint.html">onbeforeprint</a></td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен перед печатью документа</td>
+            </tr>
+            <tr>
+                <td class="html5badge"><a href="ev_onbeforeunload.html">onbeforeunload</a></td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен когда документ будет выгружен</td>
+            </tr>
+            <tr>
+                <td class="html5badge"><a href="ev_onerror.html">onerror</a></td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен при возникновении ошибки</td>
+            </tr>
+            <tr>
+                <td class="html5badge"><a href="ev_onhashchange.html">onhashchange</a></td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен когда произошло изменение привязки части URL-адреса</td>
+            </tr>
+            <tr>
+                <td><a href="ev_onload.html">onload</a></td>
+                <td><i>script</i></td>
+                <td>Запускается после завершения загрузки страницы</td>
+            </tr>
+            <tr>
+                <td class="html5badge">onmessage</td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен когда сообщение срабатывает</td>
+            </tr>
+            <tr>
+                <td class="html5badge"><a href="ev_onoffline.html">onoffline</a></td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен когда браузер начинает работать в автономном режиме</td>
+            </tr>
+            <tr>
+                <td class="html5badge"><a href="ev_ononline.html">ononline</a></td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен когда браузер начинает работать в Интернете</td>
+            </tr>
+            <tr>
+                <td class="html5badge">onpagehide</td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен когда пользователь покидает страницу</td>
+            </tr>
+            <tr>
+                <td class="html5badge"><a href="ev_onpageshow.html">onpageshow</a></td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен когда пользователь переходит на страницу</td>
+            </tr>
+            <tr>
+                <td class="html5badge">onpopstate</td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен когда история окна меняется</td>
+            </tr>
+            <tr>
+                <td class="html5badge"><a href="ev_onresize.html">onresize</a></td>
+                <td><i>script</i></td>
+                <td>Запускается, когда меняется размер окна веб-браузера</td>
+            </tr>
+            <tr>
+                <td class="html5badge">onstorage</td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен когда область веб-хранилища обновляется</td>
+            </tr>
+            <tr>
+                <td><a href="ev_onunload.html">onunload</a></td>
+                <td><i>script</i></td>
+                <td>Запускается после выгрузки страницы (или закрытия окна веб-браузера)</td>
+            </tr>
+            </tbody>
+        </table>
+        <hr>
+
+        <h2>События формы</h2>
+        <p>События, вызванные действиями в форме HTML (применяется к почти всем элементам HTML, но наиболее часто используется в элементах формы):</p>
+        <table class="w3-table-all notranslate">
+            <tbody><tr>
+                <th style="width:160px">Атрибут</th>
+                <th style="width:75px">Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td><a href="ev_onblur.html">onblur</a></td>
+                <td><i>script</i></td>
+                <td>Запускает момент, когда элемент теряет фокус</td>
+            </tr>
+            <tr>
+                <td><a href="ev_onchange.html">onchange</a></td>
+                <td><i>script</i></td>
+                <td>Запускает момент, когда меняется значение элемента</td>
+            </tr>
+            <tr>
+                <td class="html5badge"><a href="ev_oncontextmenu.html">oncontextmenu</a></td>
+                <td><i>script</i></td>
+                <td>Скрипт запускается, когда срабатывает контекстное меню</td>
+            </tr>
+            <tr>
+                <td><a href="ev_onfocus.html">onfocus</a></td>
+                <td><i>script</i></td>
+                <td>Запускает момент, когда элемент получает фокус</td>
+            </tr>
+            <tr>
+                <td class="html5badge"><a href="ev_oninput.html">oninput</a></td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен, когда элемент получает ввод пользователя</td>
+            </tr>
+            <tr>
+                <td class="html5badge"><a href="ev_oninvalid.html">oninvalid</a></td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен когда элемент не действителен</td>
+            </tr>
+            <tr>
+                <td class="html5badge"><a href="ev_onreset.html">onreset</a></td>
+                <td><i>script</i></td>
+                <td>Срабатывает при нажимании кнопки "Сброс" в форме</td>
+            </tr>
+            <tr>
+                <td><a href="ev_onsearch.html">onsearch</a></td>
+                <td><i>script</i></td>
+                <td>Запускается, когда пользователь записывает что-то в поле поиска (для &lt;input="search"&gt;)</td>
+            </tr>
+            <tr>
+                <td><a href="ev_onselect.html">onselect</a></td>
+                <td><i>script</i></td>
+                <td>Запускается после выбора текста в элементе</td>
+            </tr>
+            <tr>
+                <td><a href="ev_onsubmit.html">onsubmit</a></td>
+                <td><i>script</i></td>
+                <td>Запускается во время отправки формы</td>
+            </tr>
+            </tbody>
+        </table>
+        <hr>
+
+        <h2>События с помощью клавиатуры</h2>
+        <table class="w3-table-all notranslate">
+            <tbody><tr>
+                <th style="width:160px">Атрибут</th>
+                <th style="width:75px">Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td><a href="ev_onkeydown.html">onkeydown</a></td>
+                <td><i>script</i></td>
+                <td>Запускается, когда пользователь нажимает клавишу</td>
+            </tr>
+            <tr>
+                <td><a href="ev_onkeypress.html">onkeypress</a></td>
+                <td><i>script</i></td>
+                <td>Запускается, когда пользователь нажимает клавишу</td>
+            </tr>
+            <tr>
+                <td><a href="ev_onkeyup.html">onkeyup</a></td>
+                <td><i>script</i></td>
+                <td>Запускается, когда пользователь отпускает клавишу</td>
+            </tr>
+            </tbody>
+        </table>
+        <hr>
+
+        <h2>События с помощью мыши</h2>
+        <table class="w3-table-all notranslate">
+            <tbody><tr>
+                <th style="width:160px">Атрибут</th>
+                <th style="width:75px">Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td><a href="ev_onclick.html">onclick</a></td>
+                <td><i>script</i></td>
+                <td>Запускается при нажимании мыши на элементе</td>
+            </tr>
+            <tr>
+                <td><a href="ev_ondblclick.html">ondblclick</a></td>
+                <td><i>script</i></td>
+                <td>Запускается при двойном клике мыши на элементе</td>
+            </tr>
+            <tr>
+                <td><a href="ev_onmousedown.html">onmousedown</a></td>
+                <td><i>script</i></td>
+                <td>Запускается, когда кнопка мыши нажата на элементе</td>
+            </tr>
+            <tr>
+                <td><a href="ev_onmousemove.html">onmousemove</a></td>
+                <td><i>script</i></td>
+                <td>Запускается, когда указатель мыши перемещается над элементом</td>
+            </tr>
+            <tr>
+                <td><a href="ev_onmouseout.html">onmouseout</a></td>
+                <td><i>script</i></td>
+                <td>Запускается, когда указатель мыши выходит за пределы элемента</td>
+            </tr>
+            <tr>
+                <td><a href="ev_onmouseover.html">onmouseover</a></td>
+                <td><i>script</i></td>
+                <td>Запускается, когда указатель мыши перемещается над элементом</td>
+            </tr>
+            <tr>
+                <td><a href="ev_onmouseup.html">onmouseup</a></td>
+                <td><i>script</i></td>
+                <td>Запускается, когда кнопка мишы отпускается над элементом</td>
+            </tr>
+            <tr>
+                <td>onmousewheel</td>
+                <td><i>script</i></td>
+                <td><span class="deprecated">Устаревший.</span> Используйте атрибут <a href="ev_onwheel.html">onwheel</a> вместо этого</td>
+            </tr>
+            <tr>
+                <td class="html5badge"><a href="ev_onwheel.html">onwheel</a></td>
+                <td><i>script</i></td>
+                <td>Запускается, когда колесо мыши прокручивается вверх или вниз над элементом</td>
+            </tr>
+            </tbody>
+        </table>
+        <hr>
+
+        <h2>События перетягивания</h2>
+        <table class="w3-table-all notranslate">
+            <tbody><tr>
+                <th style="width:160px">Атрибут</th>
+                <th style="width:75px">Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td class="html5badge"><a href="ev_ondrag.html">ondrag</a></td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен когда элемент перетягивается</td>
+            </tr>
+            <tr>
+                <td class="html5badge"><a href="ev_ondragend.html">ondragend</a></td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен после завершения операции перетягивания</td>
+            </tr>
+            <tr>
+                <td class="html5badge"><a href="ev_ondragenter.html">ondragenter</a></td>
+                <td><i>script</i></td>
+                <td>Скрипт буде запущен когда элемент перетягивается к действительной цели скидывания</td>
+            </tr>
+            <tr>
+                <td class="html5badge"><a href="ev_ondragleave.html">ondragleave</a></td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен когда элемент оставляет действительную цель скидывания</td>
+            </tr>
+            <tr>
+                <td class="html5badge" style="height: 32px"><a href="ev_ondragover.html">ondragover</a></td>
+                <td style="height: 32px"><i>script</i></td>
+                <td style="height: 32px">Скрипт будет запущен когда элемент перетягивается через действительную цель скидывания</td>
+            </tr>
+            <tr>
+                <td class="html5badge"><a href="ev_ondragstart.html">ondragstart</a></td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен в начале перетягивания</td>
+            </tr>
+            <tr>
+                <td class="html5badge"><a href="ev_ondrop.html">ondrop</a></td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен когда перетягивается элемент</td>
+            </tr>
+            <tr>
+                <td class="html5badge"><a href="ev_onscroll.html">onscroll</a></td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен когда полоса прокрутки элемента прокручивается</td>
+            </tr>
+            </tbody>
+        </table>
+        <hr>
+
+        <h2>События буфера обмена</h2>
+        <table class="w3-table-all notranslate">
+            <tbody><tr>
+                <th style="width:160px">Атрибут</th>
+                <th style="width:75px">Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td><a href="ev_oncopy.html">oncopy</a></td>
+                <td><i>script</i></td>
+                <td>Запускается, когда пользователь копирует содержимое элемента</td>
+            </tr>
+            <tr>
+                <td><a href="ev_oncut.html">oncut</a></td>
+                <td><i>script</i></td>
+                <td>Запускается, когда пользователь сокращает содержимое элемента</td>
+            </tr>
+            <tr>
+                <td><a href="ev_onpaste.html">onpaste</a></td>
+                <td><i>script</i></td>
+                <td>Запускается, когда пользователь вставляет определённое содержание в элемент</td>
+            </tr>
+            </tbody>
+        </table>
+        <hr>
+
+        <h2>События Медиа</h2>
+        <p>События, которые запускаются средствами медиа, такими как видео, изображения и аудио (применяются ко всем элементам HTML, но наиболее часто встречаются в медиа-элементах, например &lt;audio&gt;, &lt;embed&gt;, &lt;img&gt;, &lt;object&gt; и &lt;video&gt;).</p>
+        <div class="w3-note w3-panel">
+            <p><strong>Совет:</strong> Посетите <a href="ref_av_dom.html">HTML Аудио и Видео DOM Справочник</a> для получения более подробной информации.</p>
+        </div>
+        <table class="w3-table-all notranslate">
+            <tbody><tr>
+                <th style="width:180px">Атрибут</th>
+                <th style="width:75px">Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>onabort</td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен во время отмены</td>
+            </tr>
+            <tr>
+                <td class="html5badge">oncanplay</td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен когда файл готов к началу воспроизведения (когда он буферизирован для начала)</td>
+            </tr>
+            <tr>
+                <td class="html5badge">oncanplaythrough</td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен когда файл можно воспроизвести до конца, не останавливаясь для буферизации</td>
+            </tr>
+            <tr>
+                <td class="html5badge">oncuechange</td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен когда меняется сигнал в элементе &lt;track&gt;</td>
+            </tr>
+            <tr>
+                <td class="html5badge">ondurationchange</td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен когда меняется продолжительность медиа</td>
+            </tr>
+            <tr>
+                <td class="html5badge">onemptied</td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен когда случится что-то плохое и файл неожиданно становится недоступным (например, неожиданно отключается)</td>
+            </tr>
+            <tr>
+                <td class="html5badge">onended</td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен когда медиа достигли конца (полезное событие для сообщений типа "спасибо за прослушивание/просмотр")</td>
+            </tr>
+            <tr>
+                <td class="html5badge">onerror</td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен когда возникает ошибка во время загрузки файла</td>
+            </tr>
+            <tr>
+                <td class="html5badge">onloadeddata</td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен когда медиа-данные загружены</td>
+            </tr>
+            <tr>
+                <td class="html5badge">onloadedmetadata</td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен когда загружаются метаданные (например, размеры и продолжительность)</td>
+            </tr>
+            <tr>
+                <td class="html5badge">onloadstart</td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен когда файл начинает загружаться до того, как что-то действительно загружено</td>
+            </tr>
+            <tr>
+                <td class="html5badge">onpause</td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен когда медиа приостановлено или пользователем, или программно</td>
+            </tr>
+            <tr>
+                <td class="html5badge">onplay</td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен когда медиа готово к началу воспроизведения</td>
+            </tr>
+            <tr>
+                <td class="html5badge">onplaying</td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен когда медиа фактически начало воспроизводиться</td>
+            </tr>
+            <tr>
+                <td class="html5badge">onprogress</td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен когда браузер находится в процессе получения медиаданных</td>
+            </tr>
+            <tr>
+                <td class="html5badge">onratechange</td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен каждый раз, когда скорость воспроизведения меняется (например, когда пользователь переключается на режим медленной или быстрой перемотки вперёд)</td>
+            </tr>
+            <tr>
+                <td class="html5badge">onseeked</td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен когда атрибут ищет значение false, что указывает, что поиск закончился</td>
+            </tr>
+            <tr>
+                <td class="html5badge">onseeking</td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен когда атрибут ищет значение true, что указывает на то, что поиск является активным</td>
+            </tr>
+            <tr>
+                <td class="html5badge">onstalled</td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен когда браузер не может получить данные медиа по какой-либо причине</td>
+            </tr>
+            <tr>
+                <td class="html5badge">onsuspend</td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен при получении медиаданных, останавливается перед полной загрузкой по какой-либо причине</td>
+            </tr>
+            <tr>
+                <td class="html5badge">ontimeupdate</td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен когда меняется позиция воспроизведения (например, когда пользователь быстро переходит в другую точку на медиа)</td>
+            </tr>
+            <tr>
+                <td class="html5badge">onvolumechange</td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен каждый раз, когда меняется громкость (включая настройки громкости на "выключение звука")</td>
+            </tr>
+            <tr>
+                <td class="html5badge">onwaiting</td>
+                <td><i>script</i></td>
+                <td>Скрипт будет запущен когда медиа приостановлено, но ожидается, что его будет возобновлено (например, когда медиа приостанавливается для буферизации большого объёма данных)</td>
+            </tr>
+            </tbody>
+        </table>
+        <hr>
+
+        <h2>Другие События</h2>
+        <table class="w3-table-all notranslate">
+            <tbody><tr>
+                <th style="width:160px">Атрибут</th>
+                <th style="width:75px">Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td class="html5badge"><a href="ev_ontoggle.html">ontoggle</a></td>
+                <td><i>script</i></td>
+                <td>Запустится когда пользователь откроет или закроет элемент &lt;details&gt;</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="ref_standardattributes.html" title="Головна сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="ref_colornames.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- buttons prev - next -->
+        <hr class="hr-bottom">
+        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
+        <!-- Комментарии от Disqus -->
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_config = function () {
+        this.page.url = html5beginners.github.io;  // канонический URL страницы
+        this.page.identifier = html5beginners.github.io/tags/ref_eventattributes.html; // уникальный идентификатор страницы
+        };
+        (function() { // Не редактировать ниже этой линии
+        var d = document, s = d.createElement('script');
+        s.src = 'https://html5beginners.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+        <!--  / Комментарии от Disqus -->
+    </div>
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>
