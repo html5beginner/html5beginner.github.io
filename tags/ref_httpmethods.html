@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>HTTP методы на веб-странице. Справочник. W3Schools на русском. Основы HTML5 для начинающих</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="HTML,CSS,уроки,html5,css3,основы,элементы,методы,справочник,W3Schools,на русском" />
+    <meta name="description" content="Http методы на веб-странице. Справочник. Какие http методы в веб-документах. Курс по основам HTML5 | CSS3. W3Schools на русском. Учебник. Бесплатные уроки для начинающих" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/ws.css" />
+    <link rel="stylesheet" href="../styles/handheld.css" />
+    <link rel="canonical" href="https://html5beginner.github.io" />
+    <meta property="og:title" content="HTTP методы на веб-странице. Справочник. W3Schools на русском. Основы HTML5 для начинающих" />
+    <meta property="og:type" content="Content" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://html5beginner.github.io" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="Http методы на веб-странице. Справочник. Какие http методы в веб-документах. Курс по основам HTML5 | CSS3. W3Schools на русском. Учебник. Бесплатные уроки для начинающих" />
+    <meta property="og:locale" content="ru" /> <!--язык сайта-->
+    <meta property="og:site_name" content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
+    <script src="../js/topnav.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" class="frame-header"></iframe>
+<main>
+    <div class="left-sidebar">
+        <iframe src="../pages/menuref.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>Http методы запроса на веб-странице.</h1>
+        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools на русском. Уроки для начинающих</strong></p>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="ref_httpmessages.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="ref_pxtoemconversion.html" title="Следующая страница" rel="next">Next ❯</a>
+        </div>
+        <!-- buttons prev - next -->
+        <hr>
+        <p class="intro">Два наиболее распространенных метода HTTP: GET и POST.</p>
+<hr>
+
+<h2>Что такое HTTP?</h2>
+<p>Протокол передачи гипертекста (HTTP) предназначен для обеспечения связи между клиентами и серверами.</p>
+<p>HTTP работает как протокол запроса-ответа между клиентом и сервером.</p>
+<p>Веб-браузер может быть клиентом, а приложение на компьютере, на котором размещен веб-сайт, может быть сервером.</p>
+<p>Пример: клиент (браузер) отправляет HTTP-запрос на сервер; затем сервер возвращает ответ клиенту. Ответ содержит информацию о состоянии запроса и может также содержать запрошенный контент.</p>
+<hr>
+
+<h2>HTTP Методы</h2>
+<ul>
+  <li><b>GET</b></li>
+  <li><b>POST</b></li>
+  <li><strong>PUT</strong></li>
+  <li><strong>HEAD</strong></li>
+  <li><strong>DELETE</strong></li>
+  <li><strong>PATCH</strong></li>
+  <li><strong>OPTIONS</strong></li>
+</ul>
+<hr>
+
+<h2>Метод GET</h2>
+<p><strong>GET используется для запроса данных от указанного ресурса.</strong></p>
+<p><strong>GET - один из самых распространенных методов HTTP.</strong></p>
+<p>Обратите внимание, что строка запроса (пары имя/значение) отправляется в URL-адресе запроса GET:</p>
+<div class="w3-code w3-border notranslate">
+<div>
+/test/demo_form.php?name1=value1&amp;name2=value2
+</div></div>
+
+<p><b>Некоторые другие заметки о запросах GET:</b></p>
+<ul>
+  <li>GET-запросы могут быть кэшированы</li>
+  <li>GET запросы остаются в истории браузера</li>
+  <li>GET запросы могут быть добавлены в закладки</li>
+  <li>Запросы GET никогда не должны использоваться при работе с конфиденциальными данными.</li>
+  <li>GET-запросы имеют ограничения по длине</li>
+  <li>GET-запросы используются только для запроса данных (не изменяются)</li>
+</ul>
+<hr>
+
+<h2>Метод POST</h2>
+<p class="intro"><strong>POST используется для отправки данных на сервер для создания/обновления ресурса.</strong></p>
+<p>Данные, отправленные на сервер с помощью POST, хранятся в теле запроса HTTP.:</p>
+<div class="w3-code w3-border notranslate">
+ <div>
+POST /test/demo_form.php HTTP/1.1<br>
+Host: w3schools.com<br>
+   name1=value1&amp;name2=value2
+</div></div>
+<p><strong>POST является одним из самых распространенных методов HTTP. </strong></p>
+<p><b>Некоторые другие заметки о запросах POST:</b></p>
+<ul>
+  <li>POST-запросы никогда не кэшируются</li>
+  <li>POST-запросы не сохраняются в истории браузера</li>
+  <li>POST-запросы не могут быть добавлены в закладки</li>
+  <li>POST-запросы не имеют ограничений по длине данных</li>
+</ul>
+<hr>
+<h2>Метод PUT</h2>
+<p><strong>PUT используется для отправки данных на сервер для создания / обновления ресурса.</strong></p>
+<p>Разница между POST и PUT заключается в том, что PUT-запросы являются идентичными. То есть, вызов одного и того же запроса PUT несколько раз всегда будет приводить к одному и тому же результату. Напротив, вызов POST-запроса неоднократно имеет побочные эффекты от создания одного и того же ресурса несколько раз.</p>
+<hr>
+
+<h2>Метод HEAD</h2>
+<p><strong>HEAD почти идентичен GET, но без тела ответа.</strong></p>
+<p>Другими словами, если GET/users возвращает список пользователей, то HEAD/users сделает такой же запрос, но не вернет список пользователей.</p>
+<p>Запросы HEAD полезны для проверки того, что будет возвращен запрос GET, перед тем, как фактически выполнить запрос GET, например, перед загрузкой большого файла или тела ответа.</p>
+<hr>
+
+<h2>Метод DELETE</h2>
+<p><strong>Метод DELETE удаляет указанный ресурс.</strong></p>
+<hr>
+
+<h2>Метод OPTIONS</h2>
+<p><strong>Метод OPTIONS описывает параметры связи для целевого ресурса.</strong></p>
+<hr>
+
+<h2>Сравнение GET и POST</h2>
+<p>В следующей таблице сравниваются два метода HTTP: GET и POST.</p>
+<div class="w3-responsive">
+<table class="w3-table-all notranslate">
+  <tbody><tr>
+    <th style="width:30%">&nbsp;</th>
+    <th style="width:35%">GET</th>
+    <th>POST</th>
+  </tr>
+  <tr>
+    <td>Кнопка НАЗАД/Перезагрузить</td>
+    <td>Безвредный</td>
+    <td>Данные будут повторно отправлены (браузер должен предупредить пользователя о том, что данные должны быть повторно отправлены)</td>
+  </tr>
+  <tr>
+    <td>Закладки</td>
+    <td>Может быть в закладках</td>
+    <td>Не может быть в закладках</td>
+  </tr>
+  <tr>
+    <td>Кэширование (сохранённая копия)</td>
+    <td>Может быть кэширование</td>
+    <td>Не может быть кэширования</td>
+  </tr>
+  <tr>
+    <td>Тип кодирования</td>
+    <td>application/x-www-form-urlencoded</td>
+    <td>application/x-www-form-urlencoded или multipart/form-data. Используйте многочастное кодирование для двоичных данных</td>
+  </tr>
+  <tr>
+    <td>История</td>
+    <td>Параметры остаются в истории браузера</td>
+    <td>Параметры не сохраняются в истории браузера</td>
+  </tr>
+  <tr>
+    <td>Ограничения на длину данных</td>
+    <td>Да, при отправке данных метод GET добавляет данные в URL; и длина URL-адреса ограничена (максимальная длина URL-адреса составляет 2048 символов)</td>
+    <td>Нет ограничений</td>
+  </tr>
+  <tr>
+    <td>Ограничения на тип данных</td>
+    <td>Разрешены только символы ASCII</td>
+    <td>Нет ограничений. Двоичные данные также разрешены</td>
+  </tr>
+  <tr>
+    <td>Безопасность</td>
+    <td>GET менее безопасен по сравнению с POST, потому что отправленные данные являются частью URL<br>
+ <br>Никогда не используйте GET при отправке паролей или другой конфиденциальной информации!</td>
+    <td>POST немного безопаснее, чем GET, поскольку параметры не сохраняются в истории браузера или в журналах веб-сервера (в логах).</td>
+  </tr>
+  <tr>
+    <td>Видимость</td>
+    <td>Данные видны всем в URL</td>
+    <td>Данные не отображаются в URL</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="ref_httpmessages.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="ref_pxtoemconversion.html" title="Следующая страница" rel="next">Next ❯</a>
+        </div>
+        <!-- buttons prev - next -->
+        <hr class="hr-bottom">
+            <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
+        <!-- Комментарии от Disqus -->
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_config = function () {
+        this.page.url = html5beginner.github.io;  // канонический URL страницы
+        this.page.identifier = html5beginner.github.io/tags/ref_httpmethods.html; // уникальный идентификатор страницы
+        };
+        (function() { // Не редактировать ниже этой линии
+        var d = document, s = d.createElement('script');
+        s.src = 'https://html5beginners.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+        <!--  / Комментарии от Disqus -->
+    </div>
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>

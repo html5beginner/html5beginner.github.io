@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>HTTP сообщения на веб-странице. Справочник. W3Schools на русском. Основы HTML5 для начинающих</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="HTML,CSS,уроки,html5,css3,основы,элементы,коды,кодировка,сообщения,справочник,W3Schools,на русском" />
+    <meta name="description" content="Http сообщения на веб-странице. Справочник. Как кодируются http-сообщения веб-документов. Курс по основам HTML5 | CSS3. W3Schools на русском. Учебник. Бесплатные уроки для начинающих" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/ws.css" />
+    <link rel="stylesheet" href="../styles/handheld.css" />
+    <link rel="canonical" href="https://html5beginner.github.io" />
+    <meta property="og:title" content="HTTP сообщения на веб-странице. Справочник. W3Schools на русском. Основы HTML5 для начинающих" />
+    <meta property="og:type" content="Content" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://html5beginner.github.io" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="Http сообщения на веб-странице. Справочник. Как кодируются http-сообщения веб-документов. Курс по основам HTML5 | CSS3. W3Schools на русском. Учебник. Бесплатные уроки для начинающих" />
+    <meta property="og:locale" content="ru" /> <!--язык сайта-->
+    <meta property="og:site_name" content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
+    <script src="../js/topnav.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" class="frame-header"></iframe>
+<main>
+    <div class="left-sidebar">
+        <iframe src="../pages/menuref.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>Http сообщения на веб-странице. Справочник</h1>
+        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools на русском. Уроки для начинающих</strong></p>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="ref_country_codes.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="ref_httpmethods.html" title="Следующая страница" rel="next">Next ❯</a>
+        </div>
+        <!-- buttons prev - next -->
+        <hr>
+        <p class="intro">Когда браузер запрашивает услугу с веб-сервера, может произойти ошибка.</p>
+<p class="intro">Это список сообщений о состоянии HTTP, которые могут быть возвращены:</p>
+<hr>
+<h2>1xx: Информация</h2>
+<table class="w3-table-all notranslate">
+  <tbody><tr>
+    <th style="width:40%">Сообщение:</th>
+    <th style="width:60%">Описание:</th>
+  </tr>
+  <tr>
+    <td>100 Продолжить</td>
+    <td>Сервер получил заголовки запроса, и клиент должен приступить к отправке тела запроса</td>
+  </tr>
+  <tr>
+    <td>101 Протоколы переключения</td>
+    <td>Заказчик попросил сервер переключить протоколы</td>
+  </tr>
+  <tr>
+    <td>103 Контрольная точка</td>
+    <td>Используется в предложении о возобновляемых запросах для возобновления прерванных запросов PUT или POST</td>
+  </tr>
+</tbody>
+</table>
+
+<h2>2xx: Успешный</h2>
+<table class="w3-table-all notranslate">
+  <tbody><tr>
+    <th style="width:40%">Сообщение:</th>
+    <th>Описание:</th>
+  </tr>
+  <tr>
+    <td>200 OK</td>
+    <td>Запрос в порядке (это стандартный ответ для успешных запросов HTTP)</td>
+  </tr>
+  <tr>
+    <td>201 Создан</td>
+    <td>Запрос был выполнен, и создан новый ресурс</td>
+  </tr>
+  <tr>
+    <td>202 Принято</td>
+    <td>Запрос принят к обработке, но обработка не завершена</td>
+  </tr>
+  <tr>
+    <td>203 Неавторизованная информация</td>
+    <td>Запрос был успешно обработан, но возвращает информацию, которая может быть из другого источника</td>
+  </tr>
+  <tr>
+    <td>204 Без содержания</td>
+    <td>Запрос был успешно обработан, но не возвращает никакого содержания</td>
+  </tr>
+  <tr>
+    <td>205 Сбросить содержимое</td>
+    <td>Запрос был успешно обработан, но не возвращает никакого содержимого и требует, чтобы запрашивающая сторона сбросила представление документа</td>
+  </tr>
+  <tr>
+    <td>206 Частичное содержание</td>
+    <td>Сервер доставляет только часть ресурса из-за заголовка диапазона, отправленного клиентом</td>
+  </tr>
+</tbody></table>
+
+<h2>3xx: Перенаправление</h2>
+<table class="w3-table-all notranslate">
+  <tbody><tr>
+    <th style="width:40%">Сообщение:</th>
+    <th>Описание:</th>
+  </tr>
+  <tr>
+    <td>300 Множественный выбор</td>
+    <td>Список ссылок. Пользователь может выбрать ссылку и перейти в это место. Максимум пять адресов</td>
+  </tr>
+  <tr>
+    <td>301 Перемещено постоянно</td>
+    <td>Запрашиваемая страница перемещена на новый URL</td>
+  </tr>
+  <tr>
+    <td>302 Найдено</td>
+    <td>Запрашиваемая страница временно перемещена на новый URL</td>
+  </tr>
+  <tr>
+    <td>303 Смотрите Другое</td>
+    <td>Запрошенную страницу можно найти по другому URL</td>
+  </tr>
+  <tr>
+    <td>304 Не модифицировано</td>
+    <td>Указывает, что запрошенная страница не была изменена с момента последнего запроса</td>
+  </tr>
+  <tr>
+    <td>306 Переключить прокси</td>
+    <td><i>Больше не используется</i></td>
+  </tr>
+  <tr>
+    <td>307 Временный редирект</td>
+    <td>Запрашиваемая страница временно перемещена на новый URL</td>
+  </tr>
+  <tr>
+    <td>308 Резюме неполное</td>
+    <td>Используется в предложении о возобновляемых запросах для возобновления прерванных запросов PUT или POST</td>
+  </tr>
+</tbody>
+</table>
+<hr>
+<h2>4xx: Ошибка клиента</h2>
+<table class="w3-table-all notranslate">
+  <tbody><tr>
+    <th style="width:40%">Сообщение:</th>
+    <th>Описание:</th>
+  </tr>
+  <tr>
+    <td>400&nbsp;Неверный запрос</td>
+    <td>Запрос не может быть выполнен из-за неправильного синтаксиса</td>
+  </tr>
+  <tr>
+    <td>401 Неразрешенный</td>
+    <td>Запрос был законным, но сервер отказывается отвечать на него. Используется, когда аутентификация возможна, но не прошла или ещё не была предоставлена</td>
+  </tr>
+  <tr>
+    <td>402 Требуется оплата</td>
+    <td><i>Зарезервировано для будущего использования</i>
+    </td>
+  </tr>
+  <tr>
+    <td>403 Запрещено</td>
+    <td>Запрос был законным, но сервер отказывается отвечать на него.</td>
+  </tr>
+  <tr>
+    <td>404 Не обнаружено</td>
+    <td>Запрашиваемая страница не может быть найдена, но может быть снова доступна в будущем</td>
+  </tr>
+  <tr>
+    <td>405 Метод не разрешен</td>
+    <td>Был сделан запрос на странице с использованием метода запроса, не поддерживаемого этой страницей</td>
+  </tr>
+  <tr>
+    <td>406 Неприемлимо</td>
+    <td>Сервер может генерировать только тот ответ, который не принят клиентом</td>
+  </tr>
+  <tr>
+    <td>407 Требуется проверка подлинности прокси</td>
+    <td>Клиент должен сначала аутентифицировать себя с прокси</td>
+  </tr>
+  <tr>
+    <td>408 Тайм-аут запроса</td>
+    <td>Тайм-аут сервера в ожидании запроса</td>
+  </tr>
+  <tr>
+    <td>409 Конфликт</td>
+    <td>Запрос не может быть выполнен из-за конфликта в запросе</td>
+  </tr>
+  <tr>
+    <td>410 Потеряно</td>
+    <td>Запрашиваемая страница больше не доступна</td>
+  </tr>
+  <tr>
+    <td>411 Требуемая длина</td>
+    <td>«Длина содержимого» не определена. Сервер не примет запрос без него</td>
+  </tr>
+  <tr>
+    <td>412 Предварительное условие не выполнено</td>
+    <td>Предварительное условие, указанное в запросе, оценивается сервером как ложное</td>
+  </tr>
+  <tr>
+    <td>413 Слишком большой объект запроса</td>
+    <td>Сервер не примет запрос, так как объект запроса слишком большой</td>
+  </tr>
+  <tr>
+    <td>414 Слишком длинный запрос URI</td>
+    <td>Сервер не примет запрос, потому что URL слишком длинный. Происходит при преобразовании запроса POST в запрос GET с длинной информацией о запросе</td>
+  </tr>
+  <tr>
+    <td>415 Неподдерживаемый тип носителя</td>
+    <td>Сервер не примет запрос, потому что тип носителя не поддерживается</td>
+  </tr>
+  <tr>
+    <td>416 Запрошенный диапазон не удовлетворяется</td>
+    <td>Клиент запросил часть файла, но сервер не может предоставить эту часть</td>
+  </tr>
+  <tr>
+    <td>417 Ожидание не удалось</td>
+    <td>Сервер не может удовлетворить требования поля ожидать заголовок запроса</td>
+  </tr>
+</tbody>
+</table>
+
+<h2>5xx: Ошибка сервера</h2>
+<table class="w3-table-all notranslate">
+  <tbody><tr>
+    <th style="width:40%">Сообщение:</th>
+    <th>Описание:</th>
+  </tr>
+  <tr>
+    <td>500 Внутренняя ошибка сервера</td>
+    <td>Общее сообщение об ошибке, которое появляется, когда более подходящее сообщение не подходит</td>
+  </tr>
+  <tr>
+    <td>501 Не реализовано</td>
+    <td>Сервер либо не распознает метод запроса, либо ему не хватает возможности выполнить запрос</td>
+  </tr>
+  <tr>
+    <td>502 Плохой шлюз</td>
+    <td>Сервер действовал как шлюз или прокси и получил неверный ответ от вышестоящего сервера</td>
+  </tr>
+  <tr>
+    <td>503 Сервис недоступен</td>
+    <td>Сервер в данный момент недоступен (перегружен или выключен)</td>
+  </tr>
+  <tr>
+    <td>504 Время ожидания шлюза</td>
+    <td>Сервер действовал как шлюз или прокси и не получил своевременного ответа от вышестоящего сервера.</td>
+  </tr>
+  <tr>
+    <td>505 Версия HTTP не поддерживается</td>
+    <td>Сервер не поддерживает версию протокола HTTP, используемую в запросе</td>
+  </tr>
+  <tr>
+    <td>511 Требуется сетевая аутентификация</td>
+    <td>Клиент должен пройти аутентификацию, чтобы получить доступ к сети</td>
+  </tr>
+</tbody>
+</table>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="ref_country_codes.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="ref_httpmethods.html" title="Следующая страница" rel="next">Next ❯</a>
+        </div>
+        <!-- buttons prev - next -->
+        <hr class="hr-bottom">
+            <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
+        <!-- Комментарии от Disqus -->
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_config = function () {
+        this.page.url = html5beginner.github.io;  // канонический URL страницы
+        this.page.identifier = html5beginner.github.io/tags/ref_httpmessages.html; // уникальный идентификатор страницы
+        };
+        (function() { // Не редактировать ниже этой линии
+        var d = document, s = d.createElement('script');
+        s.src = 'https://html5beginners.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+        <!--  / Комментарии от Disqus -->
+    </div>
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>
