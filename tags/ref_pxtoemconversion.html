@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Конвертер (преобразователь) пикселей в em. W3Schools на русском. Основы HTML5 для начинающих</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="HTML,CSS,уроки,html5,css3,основы,конвертер,преобразователь,W3Schools,на русском" />
+    <meta name="description" content="Конвертер пикселей в единицу em. Как преобразовать веб-единицы. Курс по основам HTML5 | CSS3. W3Schools на русском. Учебник. Бесплатные уроки для начинающих" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/ws.css" />
+    <link rel="stylesheet" href="../styles/handheld.css" />
+    <link rel="canonical" href="https://html5beginner.github.io" />
+    <meta property="og:title" content="Конвертер (преобразователь) пикселей в em. W3Schools на русском. Основы HTML5 для начинающих" />
+    <meta property="og:type" content="Content" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://html5beginner.github.io" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="Конвертер пикселей в единицу em. Как преобразовать веб-единицы. Курс по основам HTML5 | CSS3. W3Schools на русском. Учебник. Бесплатные уроки для начинающих" />
+    <meta property="og:locale" content="ru" /> <!--язык сайта-->
+    <meta property="og:site_name" content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
+    <script src="../js/topnav.js"></script>
+    <link rel="stylesheet" href="../bootstrap/w3-fix.css">
+<style>
+table.notranslate tr:hover td{
+background-color:#555;
+color:white;
+}
+
+.conv {
+border:1px solid #999999;
+border-radius:0;
+padding: 10px 16px;
+font-size: 18px;
+vertical-align: middle;
+line-height: 1.33;
+}
+
+.conv:hover {
+  border-color:black;
+}
+.conv2 {
+
+font-size: 25px;
+background-color:#F1F1F1;
+line-height: 1.33;
+border:none;
+margin-left:15px;
+}
+
+.btn-lg {
+border-radius:0;
+margin-top:25px;
+display:block;
+padding: 11px 25px 11px 25px;
+}
+
+.pxem {
+float:left;margin-top:25px;
+}
+
+.empx {
+float:right;margin-top:25px;
+}
+
+@media screen and (max-width: 600px){
+    .conv, .empx, .pxem {
+        float:left;
+     width: 100%;
+    }
+}
+</style>
+
+</head>
+<body>
+<iframe src="../pages/header.html" class="frame-header"></iframe>
+<main>
+    <div class="left-sidebar">
+        <iframe src="../pages/menuref.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>Конвертер пикселей в em.</h1>
+        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools на русском. Уроки для начинающих</strong></p>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="ref_httpmethods.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="ref_keyboardshortcuts.html" title="Следующая страница" rel="next">Next ❯</a>
+        </div>
+        <!-- buttons prev - next -->
+        <hr>
+        <p class="intro">Инструмент ниже позволяет вам определить размеры em от пикселей (или наоборот).</p>
+<hr>
+<h2>Конвертер Pixel в Em</h2>
+<ul>
+  <li>Установить размер пикселя по умолчанию для body (обычно 16 пикселей)</li>
+  <li>Затем преобразуйте значение пикселя в em в зависимости от размера пикселя по умолчанию</li>
+  <li>Или преобразуйте значение em в пиксели на основе размера по умолчанию</li>
+</ul>
+<div class="jumbotron" style="padding:50px;margin-top:17px;background-color:#F1F1F1;">
+<p>Установить размер пикселя по умолчанию:</p>
+<input class="conv" type="text" id="pix1" size="8" value="16"> <span style="font-size:23px">px</span>
+<br><br>
+
+<p class="pxem">Конвертировать PX в EM:<br>
+<input onfocus="wrong()" onblur="works()" class="conv" type="text" size="8" id="myInput" value=""> <span style="font-size:23px">px</span>
+ </p>
+ <p class="empx">Конвертировать EM в PX:<br>
+<input onfocus="wrong2()" onblur="works2()" class="conv" type="text" size="8" id="myInput2" value=""> <span style="font-size:23px">em</span>
+</p>
+<p class="clearfix"></p>
+ <button class="btn btn-lg w3-green" onclick="myFunction()"><span class="glyphicon glyphicon-transfer"> </span> Конвертировать</button>
+<hr>
+<p>Результат: <span style="font-size:24px" id="result1"></span></p>
+<br>
+</div>
+
+<h2>Размер шрифта body</h2>
+<p>В приведенной ниже таблице выберите размер основного шрифта в пикселях (px), чтобы отобразить полную таблицу преобразования px в em и в процент.</p>
+<div class="w3-note w3-panel">
+<p><strong>Совет:</strong> Размер шрифта по умолчанию обычно составляет 16 пикселей.</p>
+</div>
+
+<div id="demo"><table style="cursor:pointer;" class="w3-table-all notranslate"><tbody><tr><th style="cursor:auto;width:33%;font-weight:bold;">px</th><th style="cursor:auto;width:33%;font-weight:bold;">em</th><th style="cursor:auto;width:33%;font-weight:bold;">процент</th></tr><tr onclick="fillTable(5)" )'=""><td>5px</td><td>0.3125em</td><td>31.25%</td></tr><tr onclick="fillTable(6)" )'=""><td>6px</td><td>0.3750em</td><td>37.50%</td></tr><tr onclick="fillTable(7)" )'=""><td>7px</td><td>0.4375em</td><td>43.75%</td></tr><tr onclick="fillTable(8)" )'=""><td>8px</td><td>0.5000em</td><td>50.00%</td></tr><tr onclick="fillTable(9)" )'=""><td>9px</td><td>0.5625em</td><td>56.25%</td></tr><tr onclick="fillTable(10)" )'=""><td>10px</td><td>0.6250em</td><td>62.50%</td></tr><tr onclick="fillTable(11)" )'=""><td>11px</td><td>0.6875em</td><td>68.75%</td></tr><tr onclick="fillTable(12)" )'=""><td>12px</td><td>0.7500em</td><td>75.00%</td></tr><tr onclick="fillTable(13)" )'=""><td>13px</td><td>0.8125em</td><td>81.25%</td></tr><tr onclick="fillTable(14)" )'=""><td>14px</td><td>0.8750em</td><td>87.50%</td></tr><tr onclick="fillTable(15)" )'=""><td>15px</td><td>0.9375em</td><td>93.75%</td></tr><tr onclick="fillTable(16)" )'="" style="background-color:#555;color:white;"><td>16px</td><td>1.0000em</td><td>100.00%</td></tr><tr onclick="fillTable(17)" )'=""><td>17px</td><td>1.0625em</td><td>106.25%</td></tr><tr onclick="fillTable(18)" )'=""><td>18px</td><td>1.1250em</td><td>112.50%</td></tr><tr onclick="fillTable(19)" )'=""><td>19px</td><td>1.1875em</td><td>118.75%</td></tr><tr onclick="fillTable(20)" )'=""><td>20px</td><td>1.2500em</td><td>125.00%</td></tr><tr onclick="fillTable(21)" )'=""><td>21px</td><td>1.3125em</td><td>131.25%</td></tr><tr onclick="fillTable(22)" )'=""><td>22px</td><td>1.3750em</td><td>137.50%</td></tr><tr onclick="fillTable(23)" )'=""><td>23px</td><td>1.4375em</td><td>143.75%</td></tr><tr onclick="fillTable(24)" )'=""><td>24px</td><td>1.5000em</td><td>150.00%</td></tr><tr onclick="fillTable(25)" )'=""><td>25px</td><td>1.5625em</td><td>156.25%</td></tr></tbody></table></div>
+
+<div class="w3-panel w3-note">
+<p><strong>В чем разница между PX, EM и Процентами?</strong></p><p>Пиксель - это статическое измерение, а проценты и EM - относительные измерения. Размер EM или процентов зависит от его родителя. Если размер текста body составляет 16 пикселей, тогда 150% или 1,5 EM будут 24 пикселя (1,5*16). Смотрите на <a href="/cssref/css_units.html" target="_blank">CSS Единицы</a> для получения большего количества единиц измерения.</p>
+</div>
+
+<script>
+function fillTable(x) {
+var t = "";
+t = t + "<table style='cursor:pointer;' class='w3-table-all notranslate'>"
+t = t + "<tr>"
+t = t + "<th style='cursor:auto;width:33%;font-weight:bold;'>px</th>"
+t = t + "<th style='cursor:auto;width:33%;font-weight:bold;'>em</th>"
+t = t + "<th style='cursor:auto;width:33%;font-weight:bold;'>процент</th>"
+t = t + "</tr>"
+for (i = 5; i < 26; i++) {
+ t = t + "<tr onclick='fillTable(" + i + ")')'"
+ if (i == x) {
+ 
+ t = t + " style='background-color:#555;color:white;' "
+ }
+ 
+ t = t + "><td>" + i + "px</td>"
+ t = t + "<td>" + (i/x).toFixed(4) + "em</td>"
+ t = t + "<td>" + ((i/x) * 100).toFixed(2) + "%</td>"
+ t = t + "</tr>"
+}
+t = t + "</table>";
+document.getElementById("demo").innerHTML = t;
+}
+
+fillTable(16);
+
+function wrong() {
+ document.getElementById("myInput2").disabled = true;
+ document.getElementById("myInput2").value = "";
+}
+
+function wrong2() {
+ document.getElementById("myInput").disabled = true;
+ document.getElementById("myInput").value = "";
+}
+
+function works() {
+ document.getElementById("myInput2").disabled = false;
+ document.getElementById("myInput2").value = "";
+}
+
+function works2() {
+ document.getElementById("myInput").disabled = false;
+ document.getElementById("myInput").value = "";
+}
+
+function myFunction() {
+    var x = document.getElementById("myInput").value;
+    var z = document.getElementById("myInput2").value;
+    var y = document.getElementById("pix1").value;
+    var res = document.getElementById("result1");
+
+    if (x) {
+        res.innerHTML = x/y + "em"; 
+    } else {
+        res.innerHTML = z*y + "px";
+    }
+
+    if (isNaN (x) || isNaN (z) || isNaN (y)) {
+        res.innerHTML = "Wrong input! Use numbers";
+        res.style.color = "red";
+    } else {
+        res.style.color = "black";
+    }
+}   
+</script>
+        
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="ref_httpmethods.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="ref_keyboardshortcuts.html" title="Следующая страница" rel="next">Next ❯</a>
+        </div>
+        <!-- buttons prev - next -->
+        <hr class="hr-bottom">
+            <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
+        <!-- Комментарии от Disqus -->
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_config = function () {
+        this.page.url = html5beginner.github.io;  // канонический URL страницы
+        this.page.identifier = html5beginner.github.io/tags/ref_pxtoemconversion.html; // уникальный идентификатор страницы
+        };
+        (function() { // Не редактировать ниже этой линии
+        var d = document, s = d.createElement('script');
+        s.src = 'https://html5beginners.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+        <!--  / Комментарии от Disqus -->
+    </div>
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>
