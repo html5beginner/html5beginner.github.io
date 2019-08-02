@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>HTML справочник. Комментарии. W3Schools на русском. Теги HTML5 для начинающих</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="комментарии,HTML,CSS,уроки,html5,css3,основы,теги,справочник,W3C,references,W3Schools,на русском" />
+    <meta name="description" content="HTML справочник. Теги. Комментарии в HTML. Курс по основам HTML5 | CSS3. W3Schools на русском. Бесплатные уроки для начинающих" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/ws.css" />
+    <link rel="stylesheet" href="../styles/handheld.css" />
+    <link rel="stylesheet" href="../styles/browserref.css" />
+    <link rel="canonical" href="https://html5beginner.github.io" />
+    <meta property="og:title" content="HTML справочник. Комментарии. W3Schools на русском. Теги HTML5 для начинающих" />
+    <meta property="og:type" content="profile" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://html5beginner.github.io" /><!--адрес сайта-->
+    <meta property="og:description" content="HTML справочник. Теги. Комментарии в HTML. Курс по основам HTML5 | CSS3. W3Schools на русском. Бесплатные уроки для начинающих" />
+    <meta property="og:locale" content="ru" /> <!-- язык сайта-->
+    <meta property="og:site_name" content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
+    <script src="../js/topnav.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" class="frame-header"></iframe>
+<main>
+    <div class="left-sidebar">
+        <iframe src="../pages/menuref.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>HTML элементы. &lt;!--Комментарии--&gt;</h1>
+        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools на русском. Уроки для начинающих</strong></p>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="ref_keyboardshortcuts.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="tag_doctype.html" title="Следующая страница" rel="next">Next ❯</a>
+        </div>
+        <!-- buttons prev - next -->
+        <hr>
+        <div class="w3-example">
+            <h3>Пример</h3>
+            <p>HTML комментарий:</p>
+            <div class="w3-code notranslate htmlHigh">
+                <span class="commentcolor" style="color:green">&lt;!--Это комментарий. Комментарии не отображаются в браузере--&gt;</span><br><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Это параграф.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a target="_blank" href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_comment" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами! »</a>
+        </div>
+        <hr>
+        <h2>Определение и использование</h2>
+        <p>Тег комментария используется для вставки комментариев в исходный код. Комментарии не отображаются в браузерах.</p>
+        <p>Вы можете использовать комментарии, чтобы объяснить свой код, который может помочь вам в дальнейшем редактировании исходного кода. Это особенно полезно, если у вас много кода.</p>
+        <hr>
+        <h2>Поддержка браузерами</h2>
+        <table class="browserref notranslate">
+            <tbody><tr>
+                <th style="width:20%;font-size:16px;text-align:left;">Элемент</th>
+                <th style="width:16%;" class="bsChrome" title="Chrome"></th>
+                <th style="width:16%;" class="bsEdge" title="Internet Explorer / Edge"></th>
+                <th style="width:16%;" class="bsFirefox" title="Firefox"></th>
+                <th style="width:16%;" class="bsSafari" title="Safari"></th>
+                <th style="width:16%;" class="bsOpera" title="Opera"></th>
+            </tr>
+            <tr>
+                <td style="text-align:left;">&lt;!--...--&gt;</td>
+                <td>Да</td>
+                <td>Да</td>
+                <td>Да</td>
+                <td>Да</td>
+                <td>Да</td>
+            </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h2>Отличия между HTML 4.01 и HTML5</h2>
+        <p>ОТСУТСТВУЮТ.</p>
+        <hr>
+        <h2>Советы и примечания</h2>
+        <p>Вы также можете использовать тег комментариев, чтобы "скрыть" скрипты от браузеров без поддержки сценариев (чтобы они не показывали их как обычный текст):</p>
+        <div class="w3-code w3-border notranslate htmlHigh">
+            <div>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>script<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text/javascript"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"><br>
+<span class="commentcolor" style="color:green">&lt;!--<br>
+function displayMsg()
+{<br>
+&nbsp;&nbsp;alert("Hello World!")<br>
+}<br>
+//--&gt;</span><br>
+</span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/script<span class="tagcolor" style="color:mediumblue">&gt;</span></span>&nbsp;
+            </div> </div>
+        <p><b>Примечание:</b> Две косых черты в конце строки комментариев (//) являются символом комментария JavaScript. Это предотвращает исполнение JavaScript --&gt; тега.</p>
+        <hr>
+        <h2>Стандартные атрибуты</h2>
+        <p>Тег комментария не поддерживает никаких стандартных атрибутов.</p>
+        <p>Больше информации о стандартных атрибутах можно узнать в разделе <a href="ref_standardattributes.html">Стандартные атрибуты</a>.</p>
+        <hr>
+        <h2>Атрибуты события</h2>
+        <p>Тег комментария не поддерживает атрибуты событий.</p>
+        <p>Больше информации об атрибутах события в разделе <a href="ref_eventattributes.html">Атрибуты события</a>.</p>
+        <hr>
+        <p><b>Примечание:</b> Комментарии нельзя влаживать внутрь других комментариев.</p>
+        <div class="w3-example">
+            <h3>Пример:</h3>
+            <div class="w3-code notranslate htmlHigh">
+                <span class="commentcolor" style="color:green">&lt;!-- Один комментарий.<br>&nbsp; &nbsp;&lt;!-- Другой комментарий --&gt;<br> --&gt;</span>
+            </div>
+        </div>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="ref_keyboardshortcuts.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="tag_doctype.html" title="Следующая страница" rel="next">Next ❯</a>
+        </div>
+        <!-- buttons prev - next -->
+        <hr class="hr-bottom">
+            <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
+        <!-- Комментарии от Disqus -->
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_config = function () {
+        this.page.url = html5beginner.github.io;  // канонический URL страницы
+        this.page.identifier = html5beginner.github.io/tags/tag_comment.html; // уникальный идентификатор страницы
+        };
+        (function() { // Не редактировать ниже этой линии
+        var d = document, s = d.createElement('script');
+        s.src = 'https://html5beginners.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+        <!--  / Комментарии от Disqus -->
+    </div>
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>
