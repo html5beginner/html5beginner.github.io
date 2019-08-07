@@ -2,5 +2,6 @@
 User-agent: *
 Allow: /
 
+host: html5beginner.github.io
 Sitemap: http://html5beginner.github.io/sitemap.xml
 Sitemap: https://html5beginner.github.io/sitemap.xml
