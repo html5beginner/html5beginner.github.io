@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>PHP 5 Типы данных. Учебник W3schools на русском. Уроки для начинающих</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="PHP,PHP5,типы,данных,уроки,для начинающих,учебник,основы,языка,w3schools,страница,сайт" />
+    <meta name="description" content="PHP5 Пособие. Типы данных. Курс по основам PHP. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/ws.css" />
+    <link rel="stylesheet" href="../styles/handheld.css" />
+    <link rel="canonical" href="https://html5beginner.github.io/" />
+    <link rel="prev" href="../index.html" />
+    <meta property="og:title" content="PHP5 Типы данных. Учебник W3schools на русском. Уроки для начинающих" />
+    <meta property="og:type" content="Content" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://html5beginner.github.io/" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="PHP5 Пособие. Типы данных. Курс по основам PHP. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+    <meta property="og:locale" content="ru" /> <!--язык сайта-->
+    <meta property="og:site_name" content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
+    <script src="../js/topnav.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" class="frame-header"></iframe>
+<main>
+
+    <div class="left-sidebar">
+        <iframe src="../pages/menuphp5.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>PHP 5 Типы данных</h1>
+        <p class="brief"><strong>Курс по основам языка программирования PHP. W3Schools на русском языке. Уроки для начинающих</strong></p>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="php_echo_print.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="php_string.html" title="Следующая страница" rel="next">Next ❯</a>
+        </div>
+        <!-- buttons prev - next -->
+        <hr>
+        <h2>PHP Типы данных</h2>
+<p>Переменные могут хранить данные разных типов, а разные типы данных могут делать разные вещи.</p>
+<p>PHP поддерживает следующие типы данных:</p>
+<ul>
+  <li>String (Строка)</li>
+  <li>Integer (Целое цисло)</li>
+  <li>Float (Плавающее число) (числа с плавающей запятой - также называемые двойными)</li>
+  <li>Boolean (Булевы значения)</li>
+  <li>Array (Массив)</li>
+  <li>Object (Объект)</li>
+  <li>NULL (Ноль)</li>
+  <li>Resource (Ресурс)</li>
+</ul>
+<hr>
+
+<h2>PHP String (Строка)</h2>
+<p>Строка - это последовательность символов, например «Hello world!».</p>
+<p>Строка может быть любым текстом внутри кавычек. Вы можете использовать одинарные или двойные кавычки:</p>
+<div class="w3-example">
+ <h3>Пример</h3>
+<div class="w3-code htmlHigh notranslate">
+ <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <br>$x = <span class="phpstringcolor" style="color:brown">"Hello world!"</span>;<br>$y = <span class="phpstringcolor" style="color:brown">'Hello world!'</span>;<br><br><span class="phpkeywordcolor" style="color:mediumblue">echo</span> $x;<br><span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"&lt;br&gt;"</span>; <br><span class="phpkeywordcolor" style="color:mediumblue">echo</span> $y;<br><span class="phptagcolor" style="color:red">?&gt;</span></span> </div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_datatypes_string">Выполнить пример »</a></div>
+<hr>
+
+<h2>PHP Integer (Целое число)</h2>
+<p>Целочисленный тип данных - это не десятичное число между -2,147,483,648 и 
+2,147,483,647.</p>
+<p>Правила для целых чисел:</p>
+<ul>
+   <li>Целое число должно содержать хотя бы одну цифру</li>
+   <li>Целое число не должно иметь десятичной точки</li>
+   <li>Целое число может быть положительным или отрицательным</li>
+   <li>Целые числа можно указывать в трех форматах: десятичное (на основе 10), шестнадцатеричное (на основе 16 - с префиксом 0x) или восьмеричное (на основе 8 - с префиксом 0)</li>
+</ul>
+<p>В следующем примере $x является целым числом. Функция PHP var_dump() возвращает тип данных и значение:</p>
+<div class="w3-example">
+<h3>Пример</h3>
+<div class="w3-code htmlHigh notranslate">
+ <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <br>$x = <span class="phpnumbercolor" style="color:red">5985</span>;<br>var_dump($x);<br><span class="phptagcolor" style="color:red">?&gt;</span></span> </div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_datatypes_integer" rel="nofollow">Выполнить пример »</a></div>
+<hr>
+
+<h2>PHP Float (Плавающее число)</h2>
+<p>Число Float (число с плавающей запятой) - это число с десятичной запятой или число в экспоненциальной форме.</p>
+<p>В следующем примере $x - это число с плавающей точкой. Функция PHP var_dump() возвращает тип данных и значение:</p>
+<div class="w3-example">
+<h3>Пример</h3>
+<div class="w3-code htmlHigh notranslate">
+ <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <br>$x = <span class="phpnumbercolor" style="color:red">10.365</span>;<br>var_dump($x);<br><span class="phptagcolor" style="color:red">?&gt;</span></span>  </div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_datatypes_float" rel="nofollow">Выполнить пример »</a></div>
+<hr>
+
+<h2>PHP Boolean (Булево значение)</h2>
+<p>Булево значение (логическое значение) представляет два возможных состояния: TRUE (ИСТИНА) или FALSE (ЛОЖЬ).</p>
+<div class="w3-code htmlHigh w3-border notranslate">
+<div>
+ $x = true;<br>
+ $y = false;</div> </div>
+<p>Логические (булевы) значения часто используются в условных тестах. Вы узнаете больше об условном тестировании в следующей главе этого урока.</p>
+<hr>
+
+<h2>PHP Array (Массив)</h2>
+<p>Массив хранит несколько значений в одной переменной.</p>
+<p>В следующем примере $cars - это массив. Функция PHP var_dump() возвращает тип данных и значение:</p>
+<div class="w3-example">
+<h3>Пример</h3>
+<div class="w3-code htmlHigh notranslate">
+ <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <br>$cars = <span class="phpkeywordcolor" style="color:mediumblue">array</span>(<span class="phpstringcolor" style="color:brown">"Volvo"</span>,<span class="phpstringcolor" style="color:brown">"BMW"</span>,<span class="phpstringcolor" style="color:brown">"Toyota"</span>);<br>var_dump($cars);<br><span class="phpnumbercolor" style="color:red">
+</span> <span class="phptagcolor" style="color:red">?&gt;</span></span>  </div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_datatypes_array" rel="nofollow">Выполнить пример »</a></div>
+<p>Вы узнаете намного больше о массивах в следующих главах этого урока.</p>
+<hr>
+
+<h2>PHP Object (Объект)</h2>
+<p>Объект - это тип данных, в котором хранятся данные и информация о том, как обрабатывать эти данные.</p>
+<p>В PHP объект должен быть явно объявлен.</p>
+<p>Сначала мы должны объявить класс объекта. Для этого мы используем ключевое слово class. Класс - это структура, которая может содержать свойства и методы:</p>
+
+<div class="w3-example">
+<h3>Пример</h3>
+<div class="w3-code htmlHigh notranslate">
+ <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br><span class="phpkeywordcolor" style="color:mediumblue">class</span> Car {<br>&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">function</span> Car() {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $this-&gt;model = <span class="phpstringcolor" style="color:brown">"VW"</span>;<br>&nbsp;&nbsp;&nbsp; }<br>}<br><br><span class="commentcolor" style="color:green">// Создать объект<br></span><span class="phpnumbercolor" style="color:red">
+</span> $herbie = <span class="phpkeywordcolor" style="color:mediumblue">new</span> Car();<br><br><span class="commentcolor" style="color:green">// показать свойства объекта<br></span><span class="phpkeywordcolor" style="color:mediumblue">echo</span> $herbie-&gt;model;<br><span class="phptagcolor" style="color:red">?&gt;</span></span>  </div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_datatypes_object" rel="nofollow">Выполнить пример »</a></div>
+<hr>
+
+<h2>PHP NULL Значение</h2>
+<p>Null - это специальный тип данных, который может иметь только одно значение: NULL.</p>
+<p>Переменная типа данных NULL - это переменная, которой не присвоено значение.</p>
+<p><strong>Совет:</strong> Если переменная создается без значения, ей автоматически присваивается значение NULL.</p>
+<p>Переменные также можно очистить, установив значение в NULL:</p>
+<div class="w3-example">
+ <h3>Пример</h3>
+<div class="w3-code htmlHigh notranslate">
+ <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br>$x = <span class="phpstringcolor" style="color:brown">"Hello world!"</span>;<br>$x = null;<br>var_dump($x);<br><span class="phptagcolor" style="color:red">?&gt;</span></span>  </div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_datatypes_null" rel="nofollow">Выполнить пример »</a></div>
+<hr>
+
+<h2>PHP Resource (Ресурс)</h2>
+<p>Специальный тип ресурса не является фактическим типом данных. Это хранение ссылки на функции и ресурсы, внешние по отношению к PHP.</p>
+<p>Типичным примером использования типа данных ресурса является вызов базы данных.</p>
+<p>Мы не будем здесь говорить о типе ресурса, так как это сложная тема.</p>
+       
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="php_echo_print.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="php_string.html" title="Следующая страница" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr class="hr-bottom">
+        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
+        <!-- Комментарии от Disqus -->
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_config = function () {
+        this.page.url = html5beginner.github.io;  // канонический URL страницы
+        this.page.identifier = html5beginner.github.io/php/php_datatypes.html; // уникальный идентификатор страницы
+        };
+        (function() { // Не редактировать ниже этой линии
+        var d = document, s = d.createElement('script');
+        s.src = 'https://html5beginners.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+        <!--  / Комментарии от Disqus -->
+    </div>
+
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>
