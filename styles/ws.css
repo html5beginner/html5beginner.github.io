@@ -107,5 +107,10 @@ img.viewport {border: 10px solid #f1f1f1;border-radius: 3px;}
 .w3-table th:first-child,.w3-table td:first-child,.w3-table-all th:first-child,.w3-table-all td:first-child{padding-left:16px}
 .w3-ul{list-style-type:none;padding:0;margin:0}.w3-ul li{padding:8px 16px;border-bottom:1px solid #ddd}.w3-ul li:last-child{border-bottom:none}
 .intro {font-size:16px}
+#w3-exerciseform {background-color:#555555;padding:16px;color:#ffffff;}
+#w3-exerciseform .exercisewindow {background-color:#ffffff;padding:16px;color:#000000;}
+#w3-exerciseform .exerciseprecontainer {background-color:#f1f1f1;padding:16px;font-size:120%;font-family:Consolas,"Courier New", Courier, monospace;}
+#w3-exerciseform .exerciseprecontainer pre {display: block;}
+#w3-exerciseform .exerciseprecontainer input {padding:1px;border: 1px solid transparent;height:1.3em;}
 
 
