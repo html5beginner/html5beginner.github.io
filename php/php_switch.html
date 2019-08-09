@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>PHP 5 Оператор Switch. Учебник W3schools на русском. Уроки для начинающих</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="PHP,PHP5,оператор,switch,выражения,уроки,для начинающих,учебник,основы,языка,w3schools,страница,сайт" />
+    <meta name="description" content="PHP5 Пособие. Оператор Switch. Курс по основам PHP. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/ws.css" />
+    <link rel="stylesheet" href="../styles/handheld.css" />
+    <link rel="canonical" href="https://html5beginner.github.io/" />
+    <meta property="og:title" content="PHP 5 Оператор Switch. Учебник W3schools на русском. Уроки для начинающих" />
+    <meta property="og:type" content="Content" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://html5beginner.github.io/" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="PHP5 Пособие. Оператор Switch. Курс по основам PHP. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+    <meta property="og:locale" content="ru" /> <!--язык сайта-->
+    <meta property="og:site_name" content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
+    <script src="../js/topnav.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" class="frame-header"></iframe>
+<main>
+
+    <div class="left-sidebar">
+        <iframe src="../pages/menuphp5.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>PHP 5 Оператор Switch</h1>
+        <p class="brief"><strong>Курс по основам языка программирования PHP. W3Schools на русском языке. Уроки для начинающих</strong></p>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="php_if_else.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="php_looping.html" title="Следующая страница" rel="next">Next ❯</a>
+        </div>
+        <!-- buttons prev - next -->
+        <hr>
+        <p>Switch - в переводе с анг. Переключатель.</p>
+        <p class="intro">Оператор <code class="w3-codespan">switch</code> используется для выполнения различных действий в зависимости от условий.</p>
+<hr>
+
+<h2>PHP Оператор switch</h2>
+<p>Используйте оператор <code class="w3-codespan">switch</code>, чтобы <strong>выбрать один из множества блоков кода, который будет выполнен</strong>.</p>
+<h3>Синтаксис</h3>
+<div class="w3-code w3-border notranslate"><div>
+
+switch (<i>n</i>)
+{<br>
+&nbsp;&nbsp;&nbsp; case <i>label1:</i><br>
+&nbsp;&nbsp;<i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; код будет выполнен, если n=label1;</i><br>
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; break;<br>
+&nbsp;
+&nbsp;
+case <i>label2:</i><br>
+&nbsp;&nbsp;<i>&nbsp;&nbsp;&nbsp; &nbsp; код будет выполнен, если n=label2;</i><br>
+&nbsp;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;break;<br>
+&nbsp;
+&nbsp;
+case <i>label3:</i><br>
+&nbsp;&nbsp;<i>&nbsp;&nbsp;&nbsp; &nbsp; код будет выполнен, если n=label3;</i><br>
+&nbsp;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;break;<br>&nbsp; &nbsp; ...<br>
+&nbsp;&nbsp;&nbsp; default:<br>
+&nbsp;&nbsp;<i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; код будет выполнен, если n отличается от всех меток;</i><br>
+}
+</div></div>
+
+<p>Вот как это работает: сначала у нас есть одно выражение <i>n</i> (чаще всего переменная), которое вычисляется один раз. Затем значение выражения сравнивается со значениями для каждого случая в структуре. Если есть совпадение, выполняется блок кода, связанный с этим случаем. Используйте <code class="w3-codespan">break</code>, чтобы предотвратить автоматический запуск кода в следующем случае. Оператор <code class="w3-codespan">default</code> используется, если совпадений не найдено.</p>
+
+<div class="w3-example">
+<h3>Пример</h3>
+<div class="w3-code htmlHigh notranslate">
+ <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br><span class="phpnumbercolor" style="color:red">
+</span> $favcolor = <span class="phpstringcolor" style="color:brown">"red"</span>;<br><br><span class="phpnumbercolor" style="color:red">
+</span> <span class="phpkeywordcolor" style="color:mediumblue">switch</span> ($favcolor)<span class="phpnumbercolor" style="color:red">
+</span> {<br><span class="phpnumbercolor" style="color:red">
+</span> &nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">case</span> <span class="phpstringcolor" style="color:brown">"red"</span>:<br><span class="phpnumbercolor" style="color:red">
+</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"Your favorite color is red!"</span>;<br><span class="phpnumbercolor" style="color:red">
+</span> &nbsp;&nbsp;&nbsp;<span class="phpnumbercolor" style="color:red">
+</span> &nbsp;<span class="phpnumbercolor" style="color:red">
+</span> &nbsp; <span class="phpkeywordcolor" style="color:mediumblue">break</span>;<br><span class="phpnumbercolor" style="color:red">
+</span> &nbsp;<span class="phpnumbercolor" style="color:red">
+</span> &nbsp;<span class="phpnumbercolor" style="color:red">
+</span> <span class="phpkeywordcolor" style="color:mediumblue">case</span> <span class="phpstringcolor" style="color:brown">"blue"</span>:<br><span class="phpnumbercolor" style="color:red">
+</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"Your favorite color is blue!"</span>;<br><span class="phpnumbercolor" style="color:red">
+</span> &nbsp;&nbsp;&nbsp;<span class="phpnumbercolor" style="color:red">
+</span> &nbsp;<span class="phpnumbercolor" style="color:red">
+</span> &nbsp; <span class="phpkeywordcolor" style="color:mediumblue">break</span>;<br><span class="phpnumbercolor" style="color:red">
+</span> &nbsp;<span class="phpnumbercolor" style="color:red">
+</span> &nbsp;<span class="phpnumbercolor" style="color:red">
+</span> <span class="phpkeywordcolor" style="color:mediumblue">case</span> <span class="phpstringcolor" style="color:brown">"green"</span>:<br><span class="phpnumbercolor" style="color:red">
+</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"Your favorite color is green!"</span>;<br><span class="phpnumbercolor" style="color:red">
+</span> &nbsp;&nbsp;&nbsp;<span class="phpnumbercolor" style="color:red">
+</span> &nbsp;<span class="phpnumbercolor" style="color:red">
+</span> &nbsp; <span class="phpkeywordcolor" style="color:mediumblue">break</span>;<br><span class="phpnumbercolor" style="color:red">
+</span> &nbsp;<span class="phpnumbercolor" style="color:red">
+</span> &nbsp;<span class="phpnumbercolor" style="color:red">
+</span> <span class="phpkeywordcolor" style="color:mediumblue">default</span>:<br><span class="phpnumbercolor" style="color:red">
+</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"Your favorite color is neither red, blue, nor green!"</span>;<br><span class="phpnumbercolor" style="color:red">
+</span> }<br><span class="phpnumbercolor" style="color:red">
+</span> <span class="phptagcolor" style="color:red">?&gt;</span></span>
+ </div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_switch" rel="nofollow">Выполнить пример »</a>
+</div>
+<hr>
+<form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/php/exercise.asp?filename=exercise_switch1" method="post" target="_blank">
+<h2>Проверьте себя с помощью упражнений</h2>
+<div class="exercisewindow">
+<h2>Упражнение:</h2>
+<p>Создайте оператор <code class="w3-codespan">switch</code> который выведет "Hello", если <code class="w3-codespan">$color</code> имеет значение "red", и "welcome" если <code class="w3-codespan">$color</code> имеет значение "green".</p>
+<div class="exerciseprecontainer">
+<pre><input name="ex1" maxlength="6" style="width: 64px;"> ($color) {
+  <input name="ex2" maxlength="4" style="width: 43px;"> "red":
+    echo "Hello";
+    break;
+  <input name="ex3" maxlength="4" style="width: 43px;"> "green":
+    echo "Welcome";
+    break;
+}
+</pre>
+</div>
+<br>
+<button type="submit" class="w3-btn w3-margin-bottom">Отправить ответ »</button>
+</div>
+</form>
+<br>
+
+<div class="keys">
+    <strong>уроки</strong>
+    <strong>для начинающих</strong>
+    <strong>для чайников</strong>
+    <strong>основы</strong>
+    <strong>курсы с нуля</strong>
+    <strong>язык программирования</strong>
+    <strong>php</strong>
+    <strong>оператор</strong>
+    <strong>switch</strong>
+    <strong>примеры и задачи</strong>
+</div>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="php_operators.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="php_switch.html" title="Следующая страница" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr class="hr-bottom">
+        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
+        <!-- Комментарии от Disqus -->
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_config = function () {
+        this.page.url = html5beginner.github.io;  // канонический URL страницы
+        this.page.identifier = html5beginner.github.io/php/php_if_else.html; // уникальный идентификатор страницы
+        };
+        (function() { // Не редактировать ниже этой линии
+        var d = document, s = d.createElement('script');
+        s.src = 'https://html5beginners.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+        <!--  / Комментарии от Disqus -->
+    </div>
+
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>
