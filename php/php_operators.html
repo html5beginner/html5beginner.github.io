@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>PHP 5 Операторы. Учебник W3schools на русском. Уроки для начинающих</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="PHP,PHP5,операторы,выражения,уроки,для начинающих,учебник,основы,языка,w3schools,страница,сайт" />
+    <meta name="description" content="PHP5 Пособие. Операторы. Курс по основам PHP. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/ws.css" />
+    <link rel="stylesheet" href="../styles/handheld.css" />
+    <link rel="canonical" href="https://html5beginner.github.io/" />
+    <meta property="og:title" content="PHP 5 Операторы. Учебник W3schools на русском. Уроки для начинающих" />
+    <meta property="og:type" content="Content" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://html5beginner.github.io/" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="PHP5 Пособие. Операторы. Курс по основам PHP. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+    <meta property="og:locale" content="ru" /> <!--язык сайта-->
+    <meta property="og:site_name" content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
+    <script src="../js/topnav.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" class="frame-header"></iframe>
+<main>
+
+    <div class="left-sidebar">
+        <iframe src="../pages/menuphp5.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>PHP 5 Операторы</h1>
+        <p class="brief"><strong>Курс по основам языка программирования PHP. W3Schools на русском языке. Уроки для начинающих</strong></p>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="php_constants.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="php_if_else.html" title="Следующая страница" rel="next">Next ❯</a>
+        </div>
+        <!-- buttons prev - next -->
+        <hr>
+        <h2>PHP Операторы</h2>
+<p>Операторы используются для выполнения операций с переменными и значениями.</p>
+<p>PHP делит операторы на следующие группы:</p>
+<ul>
+   <li>операторы арифметические</li>
+   <li>операторы присваивания</li>
+   <li>операторы сравнения</li>
+   <li>операторы инкремента/декремента (увеличения/уменьшения)</li>
+   <li>операторы логические</li>
+   <li>операторы строковые</li>
+   <li>операторы массива</li>
+</ul>
+<hr>
+
+<h2>PHP Операторы арифметические</h2>
+<p>PHP Арифметические операторы используются с числовыми значениями для выполнения обычных арифметических операций, таких как сложение, вычитание, умножение и т.д.</p>
+<table class="w3-table-all notranslate">
+<tbody><tr>
+<th style="width:15%">Оператор</th>
+<th style="width:20%">Название</th>
+<th style="width:20%">Пример</th>
+<th style="width:35%">Результат</th>
+<th style="width:10%">Посмотреть</th>
+</tr>
+<tr>
+<td>+</td>
+<td>Сложение</td>
+<td>$x + $y</td>
+<td>Сумма $x и $y</td>
+<td><a target="_blank" class="w3-btn btnsmall" href="https://www.w3schools.com/php/showphp.asp?filename=demo_oper_addition" rel="nofollow">Демо »</a></td>
+</tr>
+<tr>
+<td>-</td>
+<td>Вычитание</td>
+<td>$x - $y</td>
+<td>Разница $x и $y</td>
+<td><a target="_blank" class="w3-btn btnsmall" style="padding-top:2px;padding-bottom:2px;" href="https://www.w3schools.com/php/showphp.asp?filename=demo_oper_subtraction" rel="nofollow">Демо »</a></td>
+</tr>
+<tr>
+<td>*</td>
+<td>Умножение</td>
+<td>$x * $y</td>
+<td>Произведение $x и $y</td>
+<td><a target="_blank" class="w3-btn btnsmall" style="padding-top:2px;padding-bottom:2px;" href="https://www.w3schools.com/php/showphp.asp?filename=demo_oper_multiplication" rel="nofollow">Демо »</a></td>
+</tr>
+<tr>
+<td>/</td>
+<td>Деление</td>
+<td>$x / $y</td>
+<td>Отношение $x и $y</td>
+<td><a target="_blank" class="w3-btn btnsmall" style="padding-top:2px;padding-bottom:2px;" href="https://www.w3schools.com/php/showphp.asp?filename=demo_oper_division" rel="nofollow">Демо »</a></td>
+</tr>
+<tr>
+<td>%</td>
+<td>Модуль</td>
+<td>$x % $y</td>
+<td>Остаток $x делённый на $y</td>
+<td><a target="_blank" class="w3-btn btnsmall" style="padding-top:2px;padding-bottom:2px;" href="https://www.w3schools.com/php/showphp.asp?filename=demo_oper_modulus" rel="nofollow">Демо »</a></td>
+</tr>
+<tr>
+<td>**</td>
+<td>Возведение в степень</td>
+<td>$x ** $y</td>
+<td>Результат повышения $x до степени $y (введено в PHP 5.6)</td>
+<td>&nbsp;</td>
+</tr>
+</tbody></table>
+<hr>
+
+<h2>PHP Операторы присваивания</h2>
+<p>PHP Операторы присваивания используются с числовыми значениями для записи значения в переменную.</p>
+<p>Основной оператор присваивания в PHP - "=". Это означает, что левый операнд устанавливается в значение выражения присваивания справа.</p>
+<table class="w3-table-all notranslate">
+<tbody><tr>
+<th style="width:15%">Присваивание</th>
+<th style="width:20%">Также как...</th>
+<th style="width:55%">Описание</th>
+<th style="width:10%">Посмотреть</th>
+</tr>
+<tr>
+<td>x = y</td>
+<td>x = y</td>
+<td>Левый операнд устанавливается в значение выражения справа</td>
+<td><a target="_blank" class="w3-btn btnsmall" style="padding-top:2px;padding-bottom:2px;" href="https://www.w3schools.com/php/showphp.asp?filename=demo_oper_set" rel="nofollow">Демо »</a></td>
+</tr>
+<tr>
+<td>x += y</td>
+<td>x = x + y</td>
+<td>Сложение</td>
+<td><a target="_blank" class="w3-btn btnsmall" style="padding-top:2px;padding-bottom:2px;" href="https://www.w3schools.com/php/showphp.asp?filename=demo_oper_addition2" rel="nofollow">Демо »</a></td>
+</tr>
+<tr>
+<td>x -= y</td>
+<td>x = x - y</td>
+<td>Вычитание</td>
+<td><a target="_blank" class="w3-btn btnsmall" style="padding-top:2px;padding-bottom:2px;" href="https://www.w3schools.com/php/showphp.asp?filename=demo_oper_subtraction2" rel="nofollow">Демо »</a></td>
+</tr>
+<tr>
+<td>x *= y</td>
+<td>x = x * y</td>
+<td>Умножение</td>
+<td><a target="_blank" class="w3-btn btnsmall" style="padding-top:2px;padding-bottom:2px;" href="https://www.w3schools.com/php/showphp.asp?filename=demo_oper_multiplication" rel="nofollow">Демо »</a></td>
+</tr>
+<tr>
+<td>x /= y</td>
+<td>x = x / y</td>
+<td>Деление</td>
+<td><a target="_blank" class="w3-btn btnsmall" style="padding-top:2px;padding-bottom:2px;" href="https://www.w3schools.com/php/showphp.asp?filename=demo_oper_division2" rel="nofollow">Демо »</a></td>
+</tr>
+<tr>
+<td>x %= y</td>
+<td>x = x % y</td>
+<td>Модуль</td>
+<td><a target="_blank" class="w3-btn btnsmall" style="padding-top:2px;padding-bottom:2px;" href="https://www.w3schools.com/php/showphp.asp?filename=demo_oper_modulus2" rel="nofollow">Демо »</a></td>
+</tr>
+</tbody></table>
+
+<hr>
+<h2>PHP Операторы сравнения</h2>
+<p>PHP операторы сравнения используются для сравнения двух значений (число или строка):</p>
+<table class="w3-table-all notranslate">
+<tbody><tr>
+<th style="width:15%">Оператор</th>
+<th style="width:22%">Название</th>
+<th style="width:15%">Пример</th>
+<th style="width:38%">Результат</th>
+<th style="width:10%">Посмотреть</th>
+</tr>
+<tr>
+<td>==</td>
+<td>Равны</td>
+<td>$x == $y</td>
+<td>Возвращает true если $x равен $y</td>
+<td><a target="_blank" class="w3-btn btnsmall" style="padding-top:2px;padding-bottom:2px;" href="https://www.w3schools.com/php/showphp.asp?filename=demo_oper_equal" rel="nofollow">Демо »</a></td>
+</tr>
+<tr>
+<td>===</td>
+<td>Идентичны</td>
+<td>$x === $y</td>
+<td>Возвращает true, если $x равен $y, и они одного типа</td>
+<td><a target="_blank" class="w3-btn btnsmall" style="padding-top:2px;padding-bottom:2px;" href="https://www.w3schools.com/php/showphp.asp?filename=demo_oper_identical" rel="nofollow">Демо »</a></td>
+</tr>
+<tr>
+<td>!=</td>
+<td>Не равны</td>
+<td>$x != $y</td>
+<td>Возвращает true, если $x не равен $y</td>
+<td><a target="_blank" class="w3-btn btnsmall" style="padding-top:2px;padding-bottom:2px;" href="https://www.w3schools.com/php/showphp.asp?filename=demo_oper_not_equal" rel="nofollow">Демо »</a></td>
+</tr>
+<tr>
+<td>&lt;&gt;</td>
+<td>Не равны</td>
+<td>$x &lt;&gt; $y</td>
+<td>Возвращает true, если $x не равен $y</td>
+<td><a target="_blank" class="w3-btn btnsmall" style="padding-top:2px;padding-bottom:2px;" href="https://www.w3schools.com/php/showphp.asp?filename=demo_oper_not_equal2" rel="nofollow">Демо »</a></td>
+</tr>
+<tr>
+<td>!==</td>
+<td>Не идентичны</td>
+<td>$x !== $y</td>
+<td>Возвращает true, если $x не равно $y или они не одного типа</td>
+<td><a target="_blank" class="w3-btn btnsmall" style="padding-top:2px;padding-bottom:2px;" href="https://www.w3schools.com/php/showphp.asp?filename=demo_oper_not_identical" rel="nofollow">Демо »</a></td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>Больше чем</td>
+<td>$x &gt; $y</td>
+<td>Возвращает true, если $x больше, чем $y</td>
+<td><a target="_blank" class="w3-btn btnsmall" style="padding-top:2px;padding-bottom:2px;" href="https://www.w3schools.com/php/showphp.asp?filename=demo_oper_greater_than" rel="nofollow">Демо »</a></td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>Меньше чем</td>
+<td>$x &lt; $y</td>
+<td>Возвращает true, если $x меньше, чем $y</td>
+<td><a target="_blank" class="w3-btn btnsmall" style="padding-top:2px;padding-bottom:2px;" href="https://www.w3schools.com/php/showphp.asp?filename=demo_oper_less_than" rel="nofollow">Демо »</a></td>
+</tr>
+<tr>
+<td>&gt;=</td>
+<td>Больше или равно</td>
+<td>$x &gt;= $y</td>
+<td>Возвращает true, если $x больше или равно $y</td>
+<td><a target="_blank" class="w3-btn btnsmall" style="padding-top:2px;padding-bottom:2px;" href="https://www.w3schools.com/php/showphp.asp?filename=demo_oper_greater_than2" rel="nofollow">Демо »</a></td>
+</tr>
+<tr>
+<td>&lt;=</td>
+<td>Меньше или равно</td>
+<td>$x &lt;= $y</td>
+<td>Возвращает true, если $x меньше или равно $y</td>
+<td><a target="_blank" class="w3-btn btnsmall" style="padding-top:2px;padding-bottom:2px;" href="https://www.w3schools.com/php/showphp.asp?filename=demo_oper_less_than2" rel="nofollow">Демо »</a></td>
+</tr>
+</tbody></table>
+<hr>
+
+<h2>PHP Операторы инкремента/декремента (увеличения/уменьшения)</h2>
+<p>PHP Операторы инкремента используются для увеличения значения переменной.</p>
+<p>PHP Операторы декремента используются для уменьшения значения переменной.</p>
+<table class="w3-table-all notranslate" id="table1">
+<tbody><tr>
+<th style="width:15%">Оператор</th>
+<th style="width:20%">Название </th>
+<th style="width:55%">Описание</th>
+<th style="width:10%">Посмотреть</th>
+</tr>
+<tr>
+<td>++$x</td>
+<td>Пре-инкремент</td>
+<td>Увеличивает $x на единицу, затем возвращает $x</td>
+<td><a target="_blank" class="w3-btn btnsmall" style="padding-top:2px;padding-bottom:2px;" href="https://www.w3schools.com/php/showphp.asp?filename=demo_oper_pre_incr" rel="nofollow">Демо »</a></td>
+</tr>
+<tr>
+<td>$x++</td>
+<td>Пост-инкремент</td>
+<td>Возвращает $x, затем увеличивает $x на единицу</td>
+<td><a target="_blank" class="w3-btn btnsmall" style="padding-top:2px;padding-bottom:2px;" href="https://www.w3schools.com/php/showphp.asp?filename=demo_oper_post_incr" rel="nofollow">Демо »</a></td>
+</tr>
+<tr>
+<td>--$x</td>
+<td>Пре-декремент</td>
+<td>Уменьшает $x на единицу, затем возвращает $x</td>
+<td><a target="_blank" class="w3-btn btnsmall" style="padding-top:2px;padding-bottom:2px;" href="https://www.w3schools.com/php/showphp.asp?filename=demo_oper_pre_decr" rel="nofollow">Демо »</a></td>
+</tr>
+<tr>
+<td>$x--</td>
+<td>Пост-декремент</td>
+<td>Возвращает $x, затем уменьшает $x на единицу</td>
+<td><a target="_blank" class="w3-btn btnsmall" style="padding-top:2px;padding-bottom:2px;" href="https://www.w3schools.com/php/showphp.asp?filename=demo_oper_post_decr" rel="nofollow">Демо »</a></td>
+</tr>
+</tbody></table>
+<hr>
+
+<h2>PHP Операторы логические</h2>
+<p>PHP логические операторы используются для объединения условных операторов.</p>
+<table class="w3-table-all notranslate">
+<tbody><tr>
+<th style="width:15%">Оператор</th>
+<th style="width:20%">Название</th>
+<th style="width:20%">Пример</th>
+<th style="width:35%">Результат</th>
+<th style="width:10%">Посмотреть</th>
+</tr>
+<tr>
+<td>and</td>
+<td>И</td>
+<td>$x and $y</td>
+<td>True, если оба $x и $y верны</td>
+<td><a target="_blank" class="w3-btn btnsmall" style="padding-top:2px;padding-bottom:2px;" href="https://www.w3schools.com/php/showphp.asp?filename=demo_oper_and" rel="nofollow">Демо »</a></td>
+</tr>
+<tr>
+<td>or</td>
+<td>Или</td>
+<td>$x or $y</td>
+<td>True, если $x или $y верны</td>
+<td><a target="_blank" class="w3-btn btnsmall" style="padding-top:2px;padding-bottom:2px;" href="https://www.w3schools.com/php/showphp.asp?filename=demo_oper_or" rel="nofollow">Демо »</a></td>
+</tr>
+<tr>
+<td>xor</td>
+<td>Xor</td>
+<td>$x xor $y</td>
+<td>True, если $x или $y верны, но не оба</td>
+<td><a target="_blank" class="w3-btn btnsmall" style="padding-top:2px;padding-bottom:2px;" href="https://www.w3schools.com/php/showphp.asp?filename=demo_oper_xor" rel="nofollow">Демо »</a></td>
+</tr>
+<tr>
+<td>&amp;&amp;</td>
+<td>И</td>
+<td>$x &amp;&amp; $y</td>
+<td>True, если оба $x и $y верны</td>
+<td><a target="_blank" class="w3-btn btnsmall" style="padding-top:2px;padding-bottom:2px;" href="https://www.w3schools.com/php/showphp.asp?filename=demo_oper_and2" rel="nofollow">Демо »</a></td>
+</tr>
+<tr>
+<td>||</td>
+<td>Или</td>
+<td>$x || $y</td>
+<td>True, если $x или $y верны</td>
+<td><a target="_blank" class="w3-btn btnsmall" style="padding-top:2px;padding-bottom:2px;" href="https://www.w3schools.com/php/showphp.asp?filename=demo_oper_or2" rel="nofollow">Демо »</a></td>
+</tr>
+<tr>
+<td>!</td>
+<td>Нет</td>
+<td>!$x</td>
+<td>True, если $x не true</td>
+<td><a target="_blank" class="w3-btn btnsmall" style="padding-top:2px;padding-bottom:2px;" href="https://www.w3schools.com/php/showphp.asp?filename=demo_oper_not" rel="nofollow">Демо »</a></td>
+</tr>
+</tbody></table>
+<hr>
+
+<h2>PHP Операторы строковые</h2>
+<p>PHP имеет два оператора, которые специально предназначены для строк.</p>
+<table class="w3-table-all notranslate">
+<tbody><tr>
+<th style="width:15%">Оператор</th>
+<th style="width:25%">Название</th>
+<th style="width:25%">Пример</th>
+<th style="width:25%">Результат</th>
+<th style="width:10%">Посмотреть</th>
+</tr>
+<tr>
+<td>.</td>
+<td>Конкатенация (соединение через точку)</td>
+<td>$txt1 . $txt2</td>
+<td>Конкатенация $txt1 и $txt2</td>
+<td><a target="_blank" class="w3-btn btnsmall" style="padding-top:2px;padding-bottom:2px;" href="https://www.w3schools.com/php/showphp.asp?filename=demo_oper_string1" rel="nofollow">Демо »</a></td>
+</tr>
+<tr>
+<td>.=</td>
+<td>Конкатенация присвоения</td>
+<td>$txt1 .= $txt2</td>
+<td>Присоединить $txt2 к $txt1</td>
+<td><a target="_blank" class="w3-btn btnsmall" style="padding-top:2px;padding-bottom:2px;" href="https://www.w3schools.com/php/showphp.asp?filename=demo_oper_string2" rel="nofollow">Демо »</a></td>
+</tr>
+</tbody></table>
+<hr>
+
+<h2>PHP Операторы массива</h2>
+<p>PHP операторы массива используются для сравнения массивов.</p>
+<table class="w3-table-all notranslate" id="table2">
+<tbody><tr>
+<th style="width:15%">Оператор</th>
+<th style="width:18%">Название</th>
+<th style="width:17%">Пример</th>
+<th style="width:40%">Результат</th>
+<th style="width:10%">Посмотреть</th>
+</tr>
+<tr>
+<td>+</td>
+<td>Объединение</td>
+<td>$x + $y</td>
+<td>Объединение $x и $y</td>
+<td><a target="_blank" class="w3-btn btnsmall" style="padding-top:2px;padding-bottom:2px;" href="https://www.w3schools.com/php/showphp.asp?filename=demo_oper_arr_union" rel="nofollow">Демо »</a></td>
+</tr>
+<tr>
+<td>==</td>
+<td>Равенство</td>
+<td>$x == $y</td>
+<td>Возвращает true, если $x и $y имеют одинаковые пары ключ/значение</td>
+<td><a target="_blank" class="w3-btn btnsmall" style="padding-top:2px;padding-bottom:2px;" href="https://www.w3schools.com/php/showphp.asp?filename=demo_oper_arr_equality" rel="nofollow">Демо »</a></td>
+</tr>
+<tr>
+<td>===</td>
+<td>Идентичность</td>
+<td>$x === $y</td>
+<td>Возвращает true, если $x и $y имеют одинаковые пары ключ/значение в одном и том же порядке и одинаковых типов</td>
+<td><a target="_blank" class="w3-btn btnsmall" style="padding-top:2px;padding-bottom:2px;" href="https://www.w3schools.com/php/showphp.asp?filename=demo_oper_arr_identity" rel="nofollow">Демо »</a></td>
+</tr>
+<tr>
+<td>!=</td>
+<td>Неравенство</td>
+<td>$x != $y</td>
+<td>Возвращает true, если $x не равен $y</td>
+<td><a target="_blank" class="w3-btn btnsmall" style="padding-top:2px;padding-bottom:2px;" href="https://www.w3schools.com/php/showphp.asp?filename=demo_oper_arr_inequality" rel="nofollow">Демо »</a></td>
+</tr>
+<tr>
+<td>&lt;&gt;</td>
+<td>Неравенство</td>
+<td>$x &lt;&gt; $y</td>
+<td>Возвращает true, если $x не равен $y</td>
+<td><a target="_blank" class="w3-btn btnsmall" style="padding-top:2px;padding-bottom:2px;" href="https://www.w3schools.com/php/showphp.asp?filename=demo_oper_arr_inequality2" rel="nofollow">Демо »</a></td>
+</tr>
+<tr>
+<td>!==</td>
+<td>Неидентичность</td>
+<td>$x !== $y</td>
+<td>Возвращает true, если $x не идентичен $y</td>
+<td><a target="_blank" class="w3-btn btnsmall" style="padding-top:2px;padding-bottom:2px;" href="https://www.w3schools.com/php/showphp.asp?filename=demo_oper_arr_non_identity" rel="nofollow">Демо »</a></td>
+</tr>
+</tbody></table>
+
+<hr>
+<form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/php/exercise.asp?filename=exercise_operators1" method="post" target="_blank" rel="nofollow">
+<h2>Проверьте себя с помощью упражнений</h2>
+<div class="exercisewindow">
+<h2>Упражнения:</h2>
+<p>Умножить <code class="w3-codespan">10</code> на <code class="w3-codespan">5</code>, и вывести результат.</p>
+<div class="exerciseprecontainer">
+<pre>echo 10 <input name="ex1" maxlength="1" style="width: 12px;"> 5;
+</pre>
+</div>
+<br>
+<button type="submit" class="w3-btn w3-margin-bottom">Отправить ответ »</button>
+</div>
+</form>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="php_string.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="php_operators.html" title="Следующая страница" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr class="hr-bottom">
+        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
+        <!-- Комментарии от Disqus -->
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_config = function () {
+        this.page.url = html5beginner.github.io;  // канонический URL страницы
+        this.page.identifier = html5beginner.github.io/php/php_constants.html; // уникальный идентификатор страницы
+        };
+        (function() { // Не редактировать ниже этой линии
+        var d = document, s = d.createElement('script');
+        s.src = 'https://html5beginners.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+        <!--  / Комментарии от Disqus -->
+    </div>
+
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>
