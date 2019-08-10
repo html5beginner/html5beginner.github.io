@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>PHP 5 Функции. Учебник W3schools на русском. Уроки для начинающих</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="PHP,PHP5,функции,уроки,для начинающих,учебник,основы,языка,w3schools,страница,сайт" />
+    <meta name="description" content="PHP5 Пособие. Функции. Курс по основам PHP. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/ws.css" />
+    <link rel="stylesheet" href="../styles/handheld.css" />
+    <link rel="canonical" href="https://html5beginner.github.io/" />
+    <meta property="og:title" content="PHP 5 Функции. Учебник W3schools на русском. Уроки для начинающих" />
+    <meta property="og:type" content="Content" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://html5beginner.github.io/" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="PHP5 Пособие. Функции. Курс по основам PHP. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+    <meta property="og:locale" content="ru" /> <!--язык сайта-->
+    <meta property="og:site_name" content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Уроки W3Schools на русском" />
+    <script src="../js/topnav.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" class="frame-header"></iframe>
+<main>
+
+    <div class="left-sidebar">
+        <iframe src="../pages/menuphp5.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>PHP 5 Функции</h1>
+        <p class="brief"><strong>Курс по основам языка программирования PHP. W3Schools на русском языке. Уроки для начинающих</strong></p>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="php_looping_for.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="php_arrays.html" title="Следующая страница" rel="next">Next ❯</a>
+        </div>
+        <!-- buttons prev - next -->
+        <hr>
+        <p class="intro">Настоящая сила <strong>PHP</strong> заключается в его функциях; <strong>PHP</strong> имеет более 1000 встроенных функций.</p>
+<hr>
+
+<h2>Пользовательские функции PHP</h2>
+<p>Помимо встроенных функций PHP, мы можем создавать свои собственные функции.</p>
+<p>Функция - это блок операторов, который можно многократно использовать в программе.</p>
+<p>Функция не будет выполняться сразу после загрузки страницы.</p>
+<p>Функция будет выполнена путем вызова функции.</p>
+<hr>
+
+<h2>Создайте пользовательскую функцию в PHP</h2>
+<p>Объявление пользовательской функции начинается со слова <code class="w3-codespan">function</code> (т.е. функция).</p>
+<h3>Синтаксис</h3>
+<div class="w3-code w3-border notranslate"><div>
+ function <i>functionName</i>()
+ {<br>
+<i>&nbsp; &nbsp; код для выполнения</i>;<br>
+ }
+</div></div>
+<p><strong>Примечание:</strong> Имя функции может начинаться с буквы или подчеркивания (не цифры).</p>
+<p><strong>Совет:</strong> Дайте функции имя, которое отражает то, что делает функция!</p>
+<div class="w3-panel w3-note">
+<p>Имена функций НЕ чувствительны к регистру.</p>
+</div>
+
+<p>В приведенном ниже примере мы создаём функцию с именем "writeMsg()". Открывающая фигурная скобка ({) обозначает начало кода функции, а закрывающая фигурная скобка (}) обозначает конец функции. Функция выводит "Hello world!". Чтобы вызвать функцию, просто напишите её имя, а затем скобки ():</p>
+<div class="w3-example">
+<h3>Пример</h3>
+<div class="w3-code htmlHigh notranslate">
+ <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br><span class="phpkeywordcolor" style="color:mediumblue">function</span> writeMsg() {<br>&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"Hello world!"</span>;<br><span class="phpnumbercolor" style="color:red">
+</span> }<br><br>writeMsg(); <span class="commentcolor" style="color:green">// вызвать функцию<br></span><span class="phptagcolor" style="color:red">?&gt;</span></span> </div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_function1" rel="nofollow">Выполнить пример »</a>
+</div>
+<hr>
+
+<h2>Аргументы PHP функции</h2>
+<p>Информация может передаваться функциям через аргументы. Аргумент похож на переменную.</p>
+<p> Аргументы указываются после имени функции в скобках. Вы можете добавить столько аргументов, сколько захотите, просто разделите их запятой.</p>
+<p>В следующем примере есть функция с одним аргументом ($fname). Когда вызывается функция familyName(), мы также передаем имя (например, Jani), и имя используется внутри функции, которая выводит несколько разных имён, но одинаковую фамилию:</p>
+<div class="w3-example">
+<h3>Пример</h3>
+<div class="w3-code htmlHigh notranslate">
+ <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br><span class="phpkeywordcolor" style="color:mediumblue">function</span> familyName($fname) {<br>&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"$fname Refsnes.&lt;br&gt;"</span>;<br><span class="phpnumbercolor" style="color:red">
+</span> }<br><br>familyName(<span class="phpstringcolor" style="color:brown">"Jani"</span>);<br>familyName(<span class="phpstringcolor" style="color:brown">"Hege"</span>);<br><span class="phpnumbercolor" style="color:red">
+</span> familyName(<span class="phpstringcolor" style="color:brown">"Stale"</span>);<br>familyName(<span class="phpstringcolor" style="color:brown">"Kai Jim"</span>);<br>familyName(<span class="phpstringcolor" style="color:brown">"Borge"</span>);<br><span class="phptagcolor" style="color:red">?&gt;</span></span> </div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_function2" rel="nofollow">Выполнить пример »</a>
+</div>
+
+<p>В следующем примере есть функция с двумя аргументами ($fname и $year):</p>
+<div class="w3-example">
+<h3>Пример</h3>
+<div class="w3-code htmlHigh notranslate">
+ <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br><span class="phpkeywordcolor" style="color:mediumblue">function</span> familyName($fname, $year) {<br>&nbsp; &nbsp; <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"$fname Refsnes. Born in $year &lt;br&gt;"</span>;<br>}<br><br>familyName(<span class="phpstringcolor" style="color:brown">"Hege"</span>, <span class="phpstringcolor" style="color:brown">"1975"</span>);<br><span class="phpnumbercolor" style="color:red">
+</span> familyName(<span class="phpstringcolor" style="color:brown">"Stale"</span>, <span class="phpstringcolor" style="color:brown">"1978"</span>);<br>familyName(<span class="phpstringcolor" style="color:brown">"Kai Jim"</span>, <span class="phpstringcolor" style="color:brown">"1983"</span>);<br><span class="phptagcolor" style="color:red">?&gt;</span></span> </div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_function3" rel="nofollow">Выполнить пример »</a>
+</div>
+<hr>
+
+<h2>Значение PHP аргумента по умолчанию</h2>
+<p>В следующем примере показано, как использовать параметр по умолчанию. Если мы вызываем функцию setHeight() без аргументов, она принимает значение по умолчанию в качестве аргумента:</p>
+<div class="w3-example">
+<h3>Пример</h3>
+<div class="w3-code htmlHigh notranslate">
+ <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br><span class="phpkeywordcolor" style="color:mediumblue">function</span> setHeight($minheight = <span class="phpnumbercolor" style="color:red">50</span>) {<br>&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"The height is : $minheight &lt;br&gt;"</span>;<br>}<br><br>setHeight(<span class="phpnumbercolor" style="color:red">350</span>);<br>setHeight(); <span class="commentcolor" style="color:green">// будет использовать значение по умолчанию 50<br></span>setHeight(<span class="phpnumbercolor" style="color:red">135</span>);<br>setHeight(<span class="phpnumbercolor" style="color:red">80</span>);<br><span class="phptagcolor" style="color:red">?&gt;</span></span> </div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_function4" rel="nofollow">Выполнить пример »</a>
+</div>
+<hr>
+
+<h2>PHP Функции - Возвращение значений</h2>
+<p>Чтобы функция могла вернуть значение, используйте оператор <code class="w3-codespan">return</code>:</p>
+<div class="w3-example">
+<h3>Пример</h3>
+<div class="w3-code htmlHigh notranslate">
+ <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br><span class="phpkeywordcolor" style="color:mediumblue">function</span> sum($x, $y) {<br>&nbsp; &nbsp; $z = $x + $y;<br>&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">return</span> $z;<br>}<br><br><span class="phpnumbercolor" style="color:red">
+</span> <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"5 + 10 = "</span> . sum(<span class="phpnumbercolor" style="color:red">5</span>, <span class="phpnumbercolor" style="color:red">10</span>) . <span class="phpstringcolor" style="color:brown">"&lt;br&gt;"</span>;<br><span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"7 + 13 = "</span> . sum(<span class="phpnumbercolor" style="color:red">7</span>, <span class="phpnumbercolor" style="color:red">13</span>) . <span class="phpstringcolor" style="color:brown">"&lt;br&gt;"</span>;<br><span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"2 + 4 = "</span> . sum(<span class="phpnumbercolor" style="color:red">2</span>, <span class="phpnumbercolor" style="color:red">4</span>);<br><span class="phptagcolor" style="color:red">?&gt;</span></span> </div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_function5" rel="nofollow">Выполнить пример »</a>
+</div>
+<hr>
+<form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/php/exercise.asp?filename=exercise_functions1" method="post" target="_blank">
+<h2>Проверьте себя с помощью упражнений</h2>
+<div class="exercisewindow">
+<h2>Упражнение:</h2>
+<p>Создать функцию с именем <code class="w3-codespan">myFunction</code>.</p>
+<div class="exerciseprecontainer">
+<pre><input name="ex1" maxlength="21" style="width: 223px;"> {
+  echo "Hello World!";
+}
+</pre>
+</div>
+<br>
+<button type="submit" class="w3-btn w3-margin-bottom">Отправить ответ »</button>
+</div>
+</form>               
+
+<br>
+<div class="keys">
+    <strong>уроки</strong> 
+    <strong>для начинающих</strong> 
+    <strong>для новичков</strong> 
+    <strong>основы</strong> 
+    <strong>курсы с нуля</strong> 
+    <strong>язык программирования</strong> 
+    <strong>php</strong> 
+    <strong>функции</strong> 
+    <strong>аргумент</strong> 
+    <strong>операторы</strong>
+</div>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="php_looping_for.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="php_arrays.html" title="Следующая страница" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr class="hr-bottom">
+        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
+        <!-- Комментарии от Disqus -->
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_config = function () {
+        this.page.url = html5beginner.github.io;  // канонический URL страницы
+        this.page.identifier = html5beginner.github.io/php/php_functions.html; // уникальный идентификатор страницы
+        };
+        (function() { // Не редактировать ниже этой линии
+        var d = document, s = d.createElement('script');
+        s.src = 'https://html5beginners.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+        <!--  / Комментарии от Disqus -->
+    </div>
+
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>
