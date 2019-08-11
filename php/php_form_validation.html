@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>PHP 5 Проверка формы. W3schools на русском. Уроки для начинающих</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="PHP,PHP5,проверка формы,отправка,get,post,уроки,для начинающих,учебник,основы,языка,w3schools,на русском,сайт" />
+    <meta name="description" content="PHP5 Пособие. Проверка формы. Обработка форм. Курс по основам PHP. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/ws.css" />
+    <link rel="stylesheet" href="../styles/handheld.css" />
+    <link rel="canonical" href="https://html5beginner.github.io/" />
+    <meta property="og:title" content="PHP 5 Проверка формы. W3schools на русском. Уроки для начинающих" />
+    <meta property="og:type" content="Content" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://html5beginner.github.io/" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="PHP5 Пособие. Проверка формы. Обработка форм. Курс по основам PHP. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+    <meta property="og:locale" content="ru" /> <!--язык сайта-->
+    <meta property="og:site_name" content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Уроки W3Schools на русском" />
+    <script src="../js/topnav.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" class="frame-header"></iframe>
+<main>
+
+    <div class="left-sidebar">
+        <iframe src="../pages/menuphp5.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>PHP 5 Проверка форм</h1>
+        <p class="brief"><strong>Курс по основам языка программирования PHP. W3Schools на русском языке. Уроки для начинающих</strong></p>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="php_forms.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="php_form_required.html" title="Следующая страница" rel="next">Next ❯</a>
+        </div>
+        <!-- buttons prev - next -->
+        <hr>
+
+        <p class="intro">В этой и последующих главах показано, как использовать <strong>PHP</strong> для проверки данных формы.</p>
+<hr>
+
+<h2>PHP Проверка формы</h2>
+<div class="w3-panel w3-note">
+    <p><strong>Подумайте о БЕЗОПАСНОСТИ при обработке PHP форм!</strong></p>
+    <p>На этих страницах будет показано, как обрабатывать <strong>PHP формы</strong> с учетом требований безопасности. Надлежащая проверка данных формы важна для защиты вашей формы от хакеров и спамеров!</p>
+</div>
+
+<p>HTML форма, над которой мы будем работать в этих главах, содержит различные поля ввода:
+обязательные и необязательные текстовые поля, переключатели (кнопка radio) и кнопка отправки:</p>
+    <p><a href="https://www.w3schools.com/php/demo_form_validation_complete.php" target="_blank" rel="nofollow"><b>Перейти на форму</b></a> (смотреть в отдельном окне).</p>
+<p>Правила проверки для данной формы следующие:</p>
+<table class="w3-table-all notranslate">
+  <tbody><tr>
+    <th style="width:25%">Поле</th>
+    <th style="width:75%">Правила валидации</th>
+  </tr>
+  <tr>
+    <td>Имя</td>
+    <td>Обязательно. + Должно содержать только буквы и пробелы</td>
+  </tr>
+  <tr>
+    <td>E-mail</td>
+    <td>Обязательно. + Должно содержать действительный адрес электронной почты (с @ и .)</td>
+  </tr>
+  <tr>
+    <td>Web-сайт</td>
+    <td>Необязательно. Если он присутствует, должно содержать действительный URL</td>
+  </tr>
+  <tr>
+    <td>Комментарий</td>
+    <td>Необязательно. Многострочное поле ввода (текстовое поле)</td>
+  </tr>
+  <tr>
+    <td>Пол</td>
+    <td>Обязательно. Необходимио выбрать один вариант</td>
+  </tr>
+  </tbody></table>
+<p>Сначала мы рассмотрим простой HTML-код для формы:</p>
+<hr>
+
+<h2>Текстовые поля</h2>
+<p>Поля name, email и website являются элементами ввода текста, а поле комментария - текстовой областью. HTML-код выглядит так:</p>
+<div class="w3-code w3-border notranslate htmlHigh"><div>
+ Name: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="name"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+ E-mail: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="email"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>Website: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="website"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>Comment: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>textarea<span class="attributecolor" style="color:red"> name<span class="attributevaluecolor" style="color:mediumblue">="comment"</span> rows<span class="attributevaluecolor" style="color:mediumblue">="5"</span> cols<span class="attributevaluecolor" style="color:mediumblue">="40"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/textarea<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br></div> </div>
+<hr>
+
+<h2>Радио-кнопки</h2>
+<p>Выбор пола осуществляется с помощью переключателей - радио-кнопок, а HTML-код выглядит так:</p>
+<div class="w3-code w3-border notranslate htmlHigh"><div>
+ Gender:<br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="radio"</span> name<span class="attributevaluecolor" style="color:mediumblue">="gender"</span> 
+value<span class="attributevaluecolor" style="color:mediumblue">="female"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Female<br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="radio"</span> name<span class="attributevaluecolor" style="color:mediumblue">="gender"</span> value<span class="attributevaluecolor" style="color:mediumblue">="male"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Male<br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="radio"</span> name<span class="attributevaluecolor" style="color:mediumblue">="gender"</span> value<span class="attributevaluecolor" style="color:mediumblue">="other"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Other</div> </div>
+<hr>
+
+<h2>Элемент формы</h2>
+<p>HTML-код формы выглядит следующим образом:</p>
+<div class="w3-code w3-border notranslate htmlHigh"><div>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> method<span class="attributevaluecolor" style="color:mediumblue">="post"</span> action<span class="attributevaluecolor" style="color:mediumblue">="<span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <span class="phpkeywordcolor" style="color:mediumblue">echo</span> htmlspecialchars(<span class="phpglobalcolor" style="color:goldenrod">$_SERVER</span>[<span class="phpstringcolor" style="color:brown">"PHP_SELF"</span>]);<span class="phptagcolor" style="color:red">?&gt;</span></span>"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span></div> </div>
+<p>Когда форма отправляется, данные формы используют <i>method="post"</i>.</p>
+
+<div class="w3-panel w3-note">
+<p><strong>Что такое $_SERVER["PHP_SELF"] переменная?</strong><br><br>$_SERVER["PHP_SELF"] - это суперглобальная переменная, которая возвращает имя файла исполняемого скрипта.</p>
+</div>
+
+<p>Таким образом, $_SERVER["PHP_SELF"] отправляет данные формы на саму страницу вместо перехода на другую страницу. Таким образом, пользователь будет получать сообщения об ошибках на той же странице, что и форма.</p>
+
+<div class="w3-panel w3-note">
+<p><strong>Что такое функция htmlspecialchars()?</strong><br><br>Функция htmlspecialchars() преобразует специальные символы в объекты HTML. Это означает, что она заменит символы HTML, такие как &lt; и &gt; (угловые скобки) на <code class="w3-codespan">&amp;lt;</code> и <code class="w3-codespan">&amp;gt;</code>. Это предотвращает использование кода злоумышленниками путем внедрения кода HTML или Javascript (межсайтовый скриптинг) в формы.</p>
+</div>
+
+<hr>
+
+<h2>Большая заметка о безопасности форм PHP</h2>
+<p>Переменная $_SERVER["PHP_SELF"] <span style="color:red">может быть использована хакерами</span>!</p>
+<p>Если на вашей странице используется PHP_SELF, то пользователь может ввести косую черту (/), а затем
+некоторые команды межсайтового скриптинга (XSS) для выполнения.</p>
+<div class="w3-panel w3-note">
+<p><strong>Межсайтовый скриптинг (Cross-site scripting - XSS) - это тип уязвимости компьютерной безопасности, обычно встречающийся в веб-приложениях. XSS позволяет злоумышленникам внедрить клиентский скрипт в веб-страницы, просматриваемые другими пользователями.
+</strong></p>
+</div>
+
+<p>Предположим, у нас есть следующая форма на странице с именем "test_form.php":</p>
+<div class="w3-code w3-border notranslate htmlHigh"><div>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> method<span class="attributevaluecolor" style="color:mediumblue">="post"</span> action<span class="attributevaluecolor" style="color:mediumblue">="<span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpglobalcolor" style="color:goldenrod">$_SERVER</span>[<span class="phpstringcolor" style="color:brown">"PHP_SELF"</span>];<span class="phptagcolor" style="color:red">?&gt;</span></span>"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span></div> </div>
+<p>Теперь, если пользователь вводит нормальный URL-адрес в адресную строку, например "http://www.example.com/test_form.php", приведенный выше код будет переведен в:</p>
+<div class="w3-code w3-border notranslate htmlHigh"><div>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> method<span class="attributevaluecolor" style="color:mediumblue">="post"</span> action<span class="attributevaluecolor" style="color:mediumblue">="test_form.php"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span></div> </div>
+<p>Пока всё good!</p>
+
+<p>Однако учтите, что пользователь вводит следующий URL-адрес в адресную строку.:</p>
+<div class="w3-code w3-border notranslate"><div>
+http://www.example.com/test_form.php/%22%3E%3Cscript%3Ealert('hacked')%3C/script%3E</div></div>
+<p>В этом случае приведенный выше код будет переведен на:</p>
+<div class="w3-code w3-border notranslate htmlHigh"><div>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> method<span class="attributevaluecolor" style="color:mediumblue">="post"</span> action<span class="attributevaluecolor" style="color:mediumblue">="test_form.php/"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black">alert(<span class="jsstringcolor" style="color:brown">'hacked'</span>)</span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/script<span class="tagcolor" style="color:mediumblue">&gt;</span></span></div> </div>
+<p>Этот код добавляет тег скрипта и команду оповещения. И когда страница загрузится, код JavaScript будет выполнен (пользователь увидит окно с предупреждением). Это всего лишь безобидный пример того, как можно использовать переменную PHP_SELF.</p>
+<p>Помните, что <strong>любой код JavaScript может быть добавлен в скрипт тега <code class="w3-codespan">&lt;script&gt;!</code></strong> Хакер может перенаправить пользователя в файл на другом сервере, и этот файл может содержать вредоносный код, который может изменять глобальные переменные или отправлять форму по другому адресу, например, для сохранения пользовательских данных.</p>
+<hr>
+
+<h2>Как избежать эксплойтов $_SERVER["PHP_SELF"]?</h2>
+<p>Exploits - перевод с анг. - уязвимости, бреши в коде.</p>
+<p>$_SERVER["PHP_SELF"] эксплойтов можно избежать с помощью функции <em>htmlspecialchars()</em>.</p>
+<p>Код формы должен выглядеть следующим образом:</p>
+<div class="w3-code w3-border notranslate htmlHigh"><div>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> method<span class="attributevaluecolor" style="color:mediumblue">="post"</span> action<span class="attributevaluecolor" style="color:mediumblue">="<span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <span class="phpkeywordcolor" style="color:mediumblue">echo</span> htmlspecialchars(<span class="phpglobalcolor" style="color:goldenrod">$_SERVER</span>[<span class="phpstringcolor" style="color:brown">"PHP_SELF"</span>]);<span class="phptagcolor" style="color:red">?&gt;</span></span>"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span></div> </div>
+<p>Функция <em>htmlspecialchars()</em> преобразует специальные символы в объекты HTML. Теперь, если пользователь попытается использовать переменную PHP_SELF, это приведет к следующему выводу:</p>
+<div class="w3-code w3-border notranslate htmlHigh"><div>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> method<span class="attributevaluecolor" style="color:mediumblue">="post"</span> action<span class="attributevaluecolor" style="color:mediumblue">="test_form.php/&amp;quot;&amp;gt;&amp;lt;script&amp;gt;alert('hacked')&amp;lt;/script&amp;gt;"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span></div> </div>
+<p>Попытка эксплойта не удалась, и никакого вреда не было!</p>
+<hr>
+
+<h2>Проверьте данные формы с помощью PHP</h2>
+<p>Прежде всего мы передадим все переменные через PHP функцию <em>htmlspecialchars()</em>.</p>
+<p>Когда мы используем функцию <em>htmlspecialchars()</em>; если пользователь попытается отправить следующее в текстовом поле:</p>
+<p><i>&lt;script&gt;location.href('http://www.hacked.com')&lt;/script&gt;</i></p>
+<p>- это не будет выполнено, потому что оно будет сохранено как HTML-код, как этот:</p>
+<p><i>&amp;lt;script&amp;gt;location.href('http://www.hacked.com')&amp;lt;/script&amp;gt;</i></p>
+<p>Теперь код будет отображаться безопасно на странице или внутри электронного письма.</p>
+<p>Мы также сделаем ещё две вещи, когда пользователь отправит форму:</p>
+<ol>
+  <li>Уберём ненужные символы (лишний пробел, табуляцию, символ новой строки) из введённых пользователем данных (с помощью PHP функции <i>trim()</i>)</li>
+  <li>Удалим обратную косую черту (\) из введенных пользователем данных (с помощью PHP функции <i>stripslashes()</i>)</li>
+</ol>
+
+<p>Следующим шагом является создание функции, которая будет выполнять всю проверку за нас (что гораздо удобнее, чем писать один и тот же код снова и снова).</p>
+<p>Назовем функцию <i>test_input()</i>.</p>
+<p>Теперь мы можем проверить каждую переменную $_POST с помощью функции <i>test_input()</i>, и скрипт будет выглядеть следующим образом:</p>
+<div class="w3-example">
+<h3>Пример</h3>
+<div class="w3-code htmlHigh notranslate">
+ <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br><span class="commentcolor" style="color:green">// определить переменные и установить пустые значения<br></span>$name = $email = $gender = $comment = $website = <span class="phpstringcolor" style="color:brown">""</span>;<br><br><span class="phpkeywordcolor" style="color:mediumblue">if</span> (<span class="phpglobalcolor" style="color:goldenrod">$_SERVER</span>[<span class="phpstringcolor" style="color:brown">"REQUEST_METHOD"</span>] == <span class="phpstringcolor" style="color:brown">"POST"</span>) {<br>&nbsp; $name = test_input(<span class="phpglobalcolor" style="color:goldenrod">$_POST</span>[<span class="phpstringcolor" style="color:brown">"name"</span>]);<br>&nbsp; $email = test_input(<span class="phpglobalcolor" style="color:goldenrod">$_POST</span>[<span class="phpstringcolor" style="color:brown">"email"</span>]);<br><span class="phpnumbercolor" style="color:red">
+</span> &nbsp;<span class="phpnumbercolor" style="color:red">
+</span> $website = test_input(<span class="phpglobalcolor" style="color:goldenrod">$_POST</span>[<span class="phpstringcolor" style="color:brown">"website"</span>]);<br>&nbsp; $comment = test_input(<span class="phpglobalcolor" style="color:goldenrod">$_POST</span>[<span class="phpstringcolor" style="color:brown">"comment"</span>]);<br>&nbsp; $gender = test_input(<span class="phpglobalcolor" style="color:goldenrod">$_POST</span>[<span class="phpstringcolor" style="color:brown">"gender"</span>]);<br>}<br><span class="phpnumbercolor" style="color:red">
+</span> <br><span class="phpkeywordcolor" style="color:mediumblue">function</span> test_input($data) {<br>&nbsp; $data = trim($data);<br>&nbsp; $data = stripslashes($data);<br>&nbsp; $data = htmlspecialchars($data);<br>&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">return</span> $data;<br><span class="phpnumbercolor" style="color:red">
+</span> }<br><span class="phptagcolor" style="color:red">?&gt;</span></span><br>
+ </div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_form_validation_escapechar" rel="nofollow">Выполнить пример »</a>
+</div>
+
+<p>Обратите внимание, что в начале скрипта мы проверяем, была ли отправлена форма, используя $_SERVER ["REQUEST_METHOD"]. Если REQUEST_METHOD - POST, то форма была отправлена - и она
+должна быть подтверждена. Если она не была отправлена, пропустите проверку и отобразите пустую форму. </p>
+<p>Однако в приведенном выше примере все поля ввода являются необязательными. Скрипт будет работать нормально, даже если пользователь не введёт никаких данных.</p>
+<p>Следующим шагом является обязательное заполнение полей ввода и создание сообщений об ошибках, если это необходимо.</p>
+
+<br>
+<div class="keys">
+    <strong>уроки</strong> 
+    <strong>для начинающих</strong> 
+    <strong>для новичков</strong> 
+    <strong>основы</strong> 
+    <strong>курсы с нуля</strong> 
+    <strong>php</strong> 
+    <strong>проверка форм</strong> 
+    <strong>методы</strong> 
+    <strong>скрипт</strong>
+    <strong>формы</strong>
+</div>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="php_forms.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="php_form_required.html" title="Следующая страница" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr class="hr-bottom">
+        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
+        <!-- Комментарии от Disqus -->
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_config = function () {
+        this.page.url = html5beginner.github.io;  // канонический URL страницы
+        this.page.identifier = html5beginner.github.io/php/php_form_validation.html; // уникальный идентификатор страницы
+        };
+        (function() { // Не редактировать ниже этой линии
+        var d = document, s = d.createElement('script');
+        s.src = 'https://html5beginners.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+        <!--  / Комментарии от Disqus -->
+    </div>
+
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>
