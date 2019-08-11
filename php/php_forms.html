@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>PHP 5 Формы. W3schools на русском. Уроки для начинающих</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="PHP,PHP5,формы,обработка,уроки,для начинающих,учебник,основы,языка,w3schools,на русском,сайт" />
+    <meta name="description" content="PHP5 Пособие. Формы. Обработка форм. Курс по основам PHP. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/ws.css" />
+    <link rel="stylesheet" href="../styles/handheld.css" />
+    <link rel="canonical" href="https://html5beginner.github.io/" />
+    <meta property="og:title" content="PHP 5 Формы. W3schools на русском. Уроки для начинающих" />
+    <meta property="og:type" content="Content" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://html5beginner.github.io/" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="PHP5 Пособие. Формы. Обработка форм. Курс по основам PHP. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+    <meta property="og:locale" content="ru" /> <!--язык сайта-->
+    <meta property="og:site_name" content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Уроки W3Schools на русском" />
+    <script src="../js/topnav.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" class="frame-header"></iframe>
+<main>
+
+    <div class="left-sidebar">
+        <iframe src="../pages/menuphp5.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>PHP 5 Обработка форм</h1>
+        <p class="brief"><strong>Курс по основам языка программирования PHP. W3Schools на русском языке. Уроки для начинающих</strong></p>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="php_superglobals.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="php_form_validation.html" title="Следующая страница" rel="next">Next ❯</a>
+        </div>
+        <!-- buttons prev - next -->
+        <hr>
+        <p class="intro">Суперглобальные PHP переменные <strong>$_GET</strong> и <strong>$_POST</strong> используются для сбора данных формы.</p>
+<hr>
+
+<h2>PHP - Простая HTML форма</h2>
+<p>В приведенном ниже примере показана <strong>простая HTML форма</strong> с двумя полями ввода и кнопкой отправки:</p>
+<div class="w3-example">
+<h3>Пример</h3>
+<div class="w3-code htmlHigh notranslate">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">="welcome.php"</span> method<span class="attributevaluecolor" style="color:mediumblue">="post"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+Name: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="name"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+E-mail: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="email"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_form_post" rel="nofollow">Выполнить пример »</a>
+</div>
+
+<p>Когда пользователь заполняет форму выше и нажимает кнопку отправки, данные формы отправляются для обработки в файл PHP с именем <i>"welcome.php"</i>. Данные формы отправляются HTTP методом <strong>POST</strong>.</p>
+<p>Для отображения представленных данных вы можете просто отобразить все переменные. <i>"Welcome.php"</i> выглядит следующим образом:</p>
+<div class="w3-code w3-border notranslate htmlHigh"><div>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<br>
+Welcome <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpglobalcolor" style="color:goldenrod">$_POST</span>[<span class="phpstringcolor" style="color:brown">"name"</span>]; <span class="phptagcolor" style="color:red">?&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+ Your email address is: <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpglobalcolor" style="color:goldenrod">$_POST</span>[<span class="phpstringcolor" style="color:brown">"email"</span>]; <span class="phptagcolor" style="color:red">?&gt;</span></span><br>
+<br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+</div> </div>
+<p>Будет выведено что-то вроде этого:</p>
+<div class="w3-code htmlHigh w3-border notranslate"><div>
+ Welcome John<br>
+Your email address is john.doe@example.com </div> </div>
+<p>Тот же результат может быть достигнут также с использованием HTTP метода <strong>GET</strong>:</p>
+<div class="w3-example">
+<h3>Пример</h3>
+<div class="w3-code htmlHigh notranslate">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">="welcome_get.php"</span> method<span class="attributevaluecolor" style="color:mediumblue">="get"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+ Name: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="name"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+ E-mail: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="email"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_form_get" rel="nofollow">Выполнить пример »</a>
+</div>
+
+<p>и <i>"welcome_get.php"</i> выглядит так:</p>
+<div class="w3-code w3-border notranslate htmlHigh"><div>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<br>
+Welcome <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpglobalcolor" style="color:goldenrod">$_GET</span>[<span class="phpstringcolor" style="color:brown">"name"</span>]; <span class="phptagcolor" style="color:red">?&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+ Your email address is: <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpglobalcolor" style="color:goldenrod">$_GET</span>[<span class="phpstringcolor" style="color:brown">"email"</span>]; <span class="phptagcolor" style="color:red">?&gt;</span></span><br>
+<br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+</div> </div>
+<p>Код выше довольно прост. Однако самое главное отсутствует. Вам необходимо проверить данные формы, чтобы защитить ваш скрипт от вредоносного кода.</p>
+
+<div class="w3-panel w3-note">
+<p><strong>Подумайте о БЕЗОПАСНОСТИ при обработке форм PHP!</strong></p>
+<p>Эта страница не содержит проверки формы, она просто показывает, как вы можете отправлять и извлекать данные формы.</p>
+<p>Однако на следующих страницах будет показано, как обрабатывать PHP формы с учетом требований безопасности! Правильная проверка данных формы важна для защиты вашей формы от хакеров и спамеров!</p>
+</div>
+<hr>
+
+<h2>GET и POST</h2>
+<p><strong>GET</strong> и <strong>POST</strong> создают массив (например, массив (key1 =&gt; value1, key2 =&gt; value2, key3 =&gt; value3, ...)). Этот массив содержит пары ключ/значение, где ключи - это имена элементов управления формы, а значения - входные данные пользователя.</p>
+<p>И <strong>GET</strong>, и <strong>POST</strong> обрабатываются как $_GET и $_POST. Это суперглобальные переменные, что означает, что они всегда доступны, независимо от области видимости, и вы можете получить к ним доступ из любой функции, класса или файла, не делая ничего специального.</p>
+<p>$_GET - это массив переменных, передаваемых текущему сценарию через параметры URL.</p>
+<p>$_POST - это массив переменных, передаваемых текущему сценарию с помощью HTTP метода POST.</p>
+<hr>
+
+<h2>Когда использовать GET?</h2>
+<p>Информация, отправляемая из формы методом GET, <strong>видна всем</strong> (все имена и значения переменных отображаются в URL-адресе). GET также имеет ограничения на количество информации для отправки. Ограничение составляет около 2000 символов. Однако поскольку переменные отображаются в URL-адресе, можно добавить страницу в закладки. Это может быть полезно в некоторых случаях.</p>
+<p>GET может использоваться для отправки нечувствительных данных.</p>
+<p><b>Примечание.</b> GET НИКОГДА не следует использовать для отправки паролей или другой конфиденциальной информации!</p>
+<hr>
+
+<h2>Когда использовать POST?</h2>
+<p>Информация, отправляемая из формы с помощью метода POST, <strong>невидима для других</strong> (все имена/значения встроены в тело HTTP-запроса) и не имеет <strong>никаких ограничений</strong> на количество информации для отправки.</p>
+<p>Кроме того, POST поддерживает расширенные функциональные возможности, такие как поддержка двоичного ввода из нескольких частей при загрузке файлов на сервер.</p>
+<p>Однако поскольку переменные не отображаются в URL-адресе, невозможно добавить страницу в закладки.</p>
+<div class="w3-panel w3-note">
+<p><strong>Разработчики предпочитают POST для отправки данных формы.</strong></p>
+</div>
+
+<p>Теперь давайте посмотрим, как мы можем обрабатывать PHP-формы безопасным способом!</p>
+<hr>
+<form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/php/exercise.asp?filename=exercise_forms1" method="post" target="_blank">
+<h2>Проверьте себя с помощью упражнений</h2>
+<div class="exercisewindow">
+<h2>Упражнение:</h2>
+<p>Если форма в белом разделе ниже отправлена, как вы можете в welcome.php вывести значение из поля «first name»?</p>
+<div class="exerciseprecontainer">
+<div style="background-color:white; font-family: courier; padding:10px">&lt;form action="welcome.php" method="get"&gt;<br>
+First name: &lt;input type="text" name="fname"&gt;<br>
+&lt;/form&gt;
+</div>
+<pre>
+&lt;html&gt;
+&lt;body&gt;
+
+Welcome &lt;?php echo <input name="ex1" maxlength="14" style="width: 148px;">; ?&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+<br>
+<button type="submit" class="w3-btn w3-margin-bottom">Отправить ответ »</button>
+</div>
+</form>
+
+<br>
+<div class="keys">
+    <strong>уроки</strong> 
+    <strong>для начинающих</strong> 
+    <strong>для новичков</strong> 
+    <strong>основы</strong> 
+    <strong>курсы с нуля</strong> 
+    <strong>php</strong> 
+    <strong>методы GET и POST</strong> 
+    <strong>суперглобальные переменные</strong> 
+    <strong>отправка</strong>
+    <strong>формы</strong>
+</div>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="php_superglobals.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="php_form_validation.html" title="Следующая страница" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr class="hr-bottom">
+        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
+        <!-- Комментарии от Disqus -->
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_config = function () {
+        this.page.url = html5beginner.github.io;  // канонический URL страницы
+        this.page.identifier = html5beginner.github.io/php/php_superglobals.html; // уникальный идентификатор страницы
+        };
+        (function() { // Не редактировать ниже этой линии
+        var d = document, s = d.createElement('script');
+        s.src = 'https://html5beginners.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+        <!--  / Комментарии от Disqus -->
+    </div>
+
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>
