@@ -40,7 +40,7 @@ ul {padding: 0 0 0 20px}
 .list-ordered {padding-left:20px;}
 
 /* короткий опис на сторінці */
-.brief {background: #8bc34a; padding: 5px 10px; font-size: 1.2em; font-family: "Indie Flower", cursive; margin: 0 0 10px 0;}
+.brief {background: #8bc34a; padding: 5px 10px; font-size: 1.2em; font-family: "Indie Flower", cursive; text-align: center; margin: 0 0 10px 0; box-shadow: 0 0 1px green, 0 0 1px #000; }
 
 /* голова сторінки */
 header {font-family: "Trebuchet MS", sans-serif; padding: 10px;}
