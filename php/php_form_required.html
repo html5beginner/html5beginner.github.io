@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>PHP 5 Формы - Обязательные поля. W3schools на русском. Уроки для начинающих</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="PHP,PHP5,проверка формы,обязательные,поля,уроки,для начинающих,учебник,основы,языка,w3schools,на русском,сайт" />
+    <meta name="description" content="PHP5 Пособие. Формы. Обязательные поля. Курс по основам PHP. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/ws.css" />
+    <link rel="stylesheet" href="../styles/handheld.css" />
+    <link rel="canonical" href="https://html5beginner.github.io/" />
+    <meta property="og:title" content="PHP 5 Формы - Обязательные поля. W3schools на русском. Уроки для начинающих" />
+    <meta property="og:type" content="Content" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://html5beginner.github.io/" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="PHP5 Пособие. Формы. Обязательные поля. Курс по основам PHP. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+    <meta property="og:locale" content="ru" /> <!--язык сайта-->
+    <meta property="og:site_name" content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Уроки W3Schools на русском" />
+    <script src="../js/topnav.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" class="frame-header"></iframe>
+<main>
+
+    <div class="left-sidebar">
+        <iframe src="../pages/menuphp5.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>PHP 5 Формы - обязательные поля</h1>
+        <p class="brief"><strong>Курс по основам языка программирования PHP.<br> W3Schools на русском языке. Уроки для начинающих</strong></p>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="php_form_validation.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="php_form_url_email.html" title="Следующая страница" rel="next">Next ❯</a>
+        </div>
+        <!-- buttons prev - next -->
+        <hr>
+        <p class="intro">В этой главе показано, как сделать обязательными поля ввода и, при необходимости, создать сообщения об ошибках.</p>
+<hr>
+
+<h2>PHP - Обязательные поля</h2>
+
+<p>Из таблицы правил валидации на предыдущей странице видно, что поля «Имя», «Электронная почта» и «Пол» обязательны для заполнения. Эти поля не могут быть пустыми и должны быть заполнены в HTML форме.</p>
+<table class="w3-table-all notranslate">
+  <tbody><tr>
+    <th style="width:25%">Поле</th>
+    <th style="width:75%">Правила валидации</th>
+  </tr>
+  <tr>
+    <td>Имя</td>
+    <td>Обязательно. + Должно содержать только буквы и пробелы</td>
+  </tr>
+  <tr>
+    <td>E-mail</td>
+    <td>Обязательно. + Должно содержать реальный адрес электронной почты (с @ и .)</td>
+  </tr>
+  <tr>
+    <td>Web-сайт</td>
+    <td>Необязательно. Если сайт есть, то должно содержать действительный URL</td>
+  </tr>
+  <tr>
+    <td>Комментарий</td>
+    <td>Необязательно. Многострочное поле ввода (текстовое поле)</td>
+  </tr>
+  <tr>
+    <td>Пол</td>
+    <td>Обязательно. Необходимо выбрать один вариант</td>
+  </tr>
+  </tbody></table>
+<p>В предыдущей главе все поля ввода были необязательными.</p>
+<p>В следующем коде мы добавили несколько новых переменных: $nameErr, $emailErr, $sexErr и $websiteErr. Эти переменные ошибки будут содержать сообщения об ошибках для обязательных полей. Мы также добавили оператор <code class="w3-codespan">if else</code> для каждой переменной $_POST. Он проверяет, является ли переменная $_POST пустой (с помощью функции PHP <code class="w3-codespan">empty()</code>). Если она пустая, сообщение об ошибке сохраняется в различных переменных ошибки, а если она не пустая, то отправляет введенные пользователем данные через функцию <code class="w3-codespan">test_input()</code>: </p>
+
+<div class="w3-code w3-border notranslate htmlHigh"><div>
+<span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br><span class="commentcolor" style="color:green">// определить переменные и установить пустые значения<br></span>$nameErr = $emailErr <span class="phpnumbercolor" style="color:red">
+</span>= $genderErr = $websiteErr = <span class="phpstringcolor" style="color:brown">""</span>;<br>$name = $email = $gender = $comment = 
+$website = <span class="phpstringcolor" style="color:brown">""</span>;<br><br><span class="phpkeywordcolor" style="color:mediumblue">if</span> (<span class="phpglobalcolor" style="color:goldenrod">$_SERVER</span>[<span class="phpstringcolor" style="color:brown">"REQUEST_METHOD"</span>] == <span class="phpstringcolor" style="color:brown">"POST"</span>) {<br><span class="phpnumbercolor" style="color:red">
+</span> &nbsp;
+<span class="phpkeywordcolor" style="color:mediumblue">if</span> (<span class="phpkeywordcolor" style="color:mediumblue">empty</span>(<span class="phpglobalcolor" style="color:goldenrod">$_POST</span>[<span class="phpstringcolor" style="color:brown">"name"</span>])) {<br>&nbsp;&nbsp;&nbsp; $nameErr = <span class="phpstringcolor" style="color:brown">"Name is required"</span>;<br>&nbsp; } <span class="phpkeywordcolor" style="color:mediumblue">else</span> {<br>&nbsp;&nbsp;&nbsp; $name = test_input(<span class="phpglobalcolor" style="color:goldenrod">$_POST</span>[<span class="phpstringcolor" style="color:brown">"name"</span>]);<br>&nbsp; }<br><br>&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">if</span> (<span class="phpkeywordcolor" style="color:mediumblue">empty</span>(<span class="phpglobalcolor" style="color:goldenrod">$_POST</span>[<span class="phpstringcolor" style="color:brown">"email"</span>]))<span class="phpnumbercolor" style="color:red">
+</span>{<br>&nbsp;&nbsp;&nbsp; $emailErr = <span class="phpstringcolor" style="color:brown">"Email is required"</span>;<br>&nbsp; } <span class="phpkeywordcolor" style="color:mediumblue">else</span> {<br>&nbsp;&nbsp;&nbsp; $email = test_input(<span class="phpglobalcolor" style="color:goldenrod">$_POST</span>[<span class="phpstringcolor" style="color:brown">"email"</span>]);<br>&nbsp; }<br><br>&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">if</span> (<span class="phpkeywordcolor" style="color:mediumblue">empty</span>(<span class="phpglobalcolor" style="color:goldenrod">$_POST</span>[<span class="phpstringcolor" style="color:brown">"website"</span>]))<span class="phpnumbercolor" style="color:red">
+</span>{<br>&nbsp;&nbsp;&nbsp; $website = <span class="phpstringcolor" style="color:brown">""</span>;<br>&nbsp; } <span class="phpkeywordcolor" style="color:mediumblue">else</span> {<br>&nbsp;&nbsp;&nbsp; $website = test_input(<span class="phpglobalcolor" style="color:goldenrod">$_POST</span>[<span class="phpstringcolor" style="color:brown">"website"</span>]);<br>&nbsp; }<br><br>&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">if</span> (<span class="phpkeywordcolor" style="color:mediumblue">empty</span>(<span class="phpglobalcolor" style="color:goldenrod">$_POST</span>[<span class="phpstringcolor" style="color:brown">"comment"</span>])) {<br>&nbsp;&nbsp;&nbsp; $comment = <span class="phpstringcolor" style="color:brown">""</span>;<br>&nbsp; } <span class="phpkeywordcolor" style="color:mediumblue">else</span> {<br>&nbsp;&nbsp;&nbsp; $comment = test_input(<span class="phpglobalcolor" style="color:goldenrod">$_POST</span>[<span class="phpstringcolor" style="color:brown">"comment"</span>]);<br>&nbsp; }<br><br>&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">if</span> <span class="phpnumbercolor" style="color:red">
+</span>(<span class="phpkeywordcolor" style="color:mediumblue">empty</span>(<span class="phpglobalcolor" style="color:goldenrod">$_POST</span>[<span class="phpstringcolor" style="color:brown">"gender"</span>])) {<br>&nbsp;&nbsp;&nbsp; $genderErr = <span class="phpstringcolor" style="color:brown">"Gender is required"</span>;<br>&nbsp; } <span class="phpkeywordcolor" style="color:mediumblue">else</span><span class="phpnumbercolor" style="color:red">
+</span>{<br>&nbsp;&nbsp;&nbsp; $gender = test_input(<span class="phpglobalcolor" style="color:goldenrod">$_POST</span>[<span class="phpstringcolor" style="color:brown">"gender"</span>]);<br>&nbsp; }<br>}<br><span class="phptagcolor" style="color:red">?&gt;</span></span></div> </div>
+<hr>
+
+<h2>PHP - Отображение сообщений об ошибках</h2>
+<p>Затем в HTML-форму мы добавляем небольшой скрипт после каждого обязательного поля, который при необходимости генерирует правильное сообщение об ошибке (то есть, если пользователь пытается отправить форму без заполнения обязательных полей):</p>
+<div class="w3-example">
+<h3>Пример</h3>
+<div class="w3-code htmlHigh notranslate">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> method<span class="attributevaluecolor" style="color:mediumblue">="post"</span> action<span class="attributevaluecolor" style="color:mediumblue">="<span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <span class="phpkeywordcolor" style="color:mediumblue">echo</span> htmlspecialchars(<span class="phpglobalcolor" style="color:goldenrod">$_SERVER</span>[<span class="phpstringcolor" style="color:brown">"PHP_SELF"</span>]);<span class="phptagcolor" style="color:red">?&gt;</span></span>"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br> <br>
+ Name: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="name"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>span<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="error"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>* <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <span class="phpkeywordcolor" style="color:mediumblue">echo</span> $nameErr;<span class="phptagcolor" style="color:red">?&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/span<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>E-mail:<br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="email"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>span<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="error"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>* <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <span class="phpkeywordcolor" style="color:mediumblue">echo</span> $emailErr;<span class="phptagcolor" style="color:red">?&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/span<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+ Website:<br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="website"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>span<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="error"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <span class="phpkeywordcolor" style="color:mediumblue">echo</span> $websiteErr;<span class="phptagcolor" style="color:red">?&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/span<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+ Comment: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>textarea<span class="attributecolor" style="color:red"> name<span class="attributevaluecolor" style="color:mediumblue">="comment"</span> rows<span class="attributevaluecolor" style="color:mediumblue">="5"</span> cols<span class="attributevaluecolor" style="color:mediumblue">="40"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/textarea<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+ Gender:<br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="radio"</span> name<span class="attributevaluecolor" style="color:mediumblue">="gender"</span>  value<span class="attributevaluecolor" style="color:mediumblue">="female"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Female<br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="radio"</span> name<span class="attributevaluecolor" style="color:mediumblue">="gender"</span> value<span class="attributevaluecolor" style="color:mediumblue">="male"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Male<br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="radio"</span> name<span class="attributevaluecolor" style="color:mediumblue">="gender"</span> value<span class="attributevaluecolor" style="color:mediumblue">="other"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Other<br>
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>span<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="error"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>* <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <span class="phpkeywordcolor" style="color:mediumblue">echo</span> $genderErr;<span class="phptagcolor" style="color:red">?&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/span<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span> name<span class="attributevaluecolor" style="color:mediumblue">="submit"</span> value<span class="attributevaluecolor" style="color:mediumblue">="Submit"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> <br>
+ <br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_form_validation_required" rel="nofollow">Выполнить пример »</a>
+</div>
+<p>Следующим шагом является проверка входных данных, а именно: "Содержит ли поле <i>Name</i> только буквы и пробелы?" И "Содержит ли поле <i>email</i> действительный синтаксис адреса электронной почты?" И, если заполнено, содержит ли поле <i>Website</i> реальный URL-адрес?"</p>
+
+
+<br>
+<div class="keys">
+    <strong>уроки</strong> 
+    <strong>для начинающих</strong> 
+    <strong>для новичков</strong> 
+    <strong>основы</strong> 
+    <strong>курсы с нуля</strong> 
+    <strong>php</strong> 
+    <strong>проверка форм</strong> 
+    <strong>методы</strong> 
+    <strong>скрипт</strong>
+    <strong>формы</strong>
+</div>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="php_form_validation.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="php_form_url_email.html" title="Следующая страница" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr class="hr-bottom">
+        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
+        <!-- Комментарии от Disqus -->
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_config = function () {
+        this.page.url = html5beginner.github.io;  // канонический URL страницы
+        this.page.identifier = html5beginner.github.io/php/php_form_required.html; // уникальный идентификатор страницы
+        };
+        (function() { // Не редактировать ниже этой линии
+        var d = document, s = d.createElement('script');
+        s.src = 'https://html5beginners.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+        <!--  / Комментарии от Disqus -->
+    </div>
+
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>
