@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>PHP 5 Глобальные переменные - Суперглобальные. Уроки W3schools на русском</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="PHP,PHP5,массивы,уроки,для начинающих,учебник,основы,языка,w3schools,на русском,сайт" />
+    <meta name="description" content="PHP5 Пособие. Глобальные переменные - суперглобальные. Курс по основам PHP. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/ws.css" />
+    <link rel="stylesheet" href="../styles/handheld.css" />
+    <link rel="canonical" href="https://html5beginner.github.io/" />
+    <meta property="og:title" content="PHP 5 Глобальные переменные - Суперглобальные. Уроки W3schools на русском" />
+    <meta property="og:type" content="Content" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://html5beginner.github.io/" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="PHP5 Пособие. Глобальные переменные - суперглобальные. Курс по основам PHP. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+    <meta property="og:locale" content="ru" /> <!--язык сайта-->
+    <meta property="og:site_name" content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Уроки W3Schools на русском" />
+    <script src="../js/topnav.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" class="frame-header"></iframe>
+<main>
+
+    <div class="left-sidebar">
+        <iframe src="../pages/menuphp5.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>PHP 5 Глобальные переменные - Суперглобальные</h1>
+        <p class="brief"><strong>Курс по основам языка программирования PHP. W3Schools на русском языке. Уроки для начинающих</strong></p>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="php_arrays_sort.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="php_forms.html" title="Следующая страница" rel="next">Next ❯</a>
+        </div>
+        <!-- buttons prev - next -->
+        <hr>
+        <p class="intro"><strong>Суперглобальные переменные</strong> были введены в PHP 4.1.0 и представляют собой <strong>встроенные переменные</strong>, которые всегда доступны во всех областях.</p>
+<hr>
+
+<h2>PHP Глобальные переменные - Суперглобальные</h2>
+<p>Несколько предопределенных переменных в PHP являются «суперглобальными», что означает, что они всегда доступны, независимо от области видимости, и вы можете получить к ним доступ из любой функции, класса или файла, не делая ничего специально.</p>
+<p><strong>Суперглобальные переменные PHP</strong>:</p>
+<ul>
+  <li>$GLOBALS</li>
+  <li>$_SERVER</li>
+  <li>$_REQUEST</li>
+  <li>$_POST</li>
+  <li>$_GET</li>
+  <li>$_FILES</li>
+  <li>$_ENV</li>
+  <li>$_COOKIE</li>
+  <li>$_SESSION</li>
+</ul>
+<p>Эта глава объяснит некоторые из суперглобальных переменных, а остальные будут объяснены в последующих главах.</p>
+<hr>
+
+<h2>PHP $GLOBALS</h2>
+<p>$GLOBALS - это суперглобальная переменная PHP, которая используется для доступа к глобальным переменным из любой точки скрипта PHP (также из функций или методов).</p>
+<p>PHP хранит все глобальные переменные в массиве с именем $GLOBALS [<i>index</i>]. <Em>index</em> содержит имя переменной. </p>
+<p>В приведенном ниже примере показано, как использовать суперглобальную переменную $GLOBALS:</p>
+
+<div class="w3-example">
+<h3>Пример</h3>
+<div class="w3-code htmlHigh notranslate">
+ <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <br>$x = <span class="phpnumbercolor" style="color:red">75</span>; <br>$y = <span class="phpnumbercolor" style="color:red">25</span>;<br>&nbsp;<br><span class="phpkeywordcolor" style="color:mediumblue">function</span> addition() { <br>&nbsp;&nbsp;&nbsp; <span class="phpglobalcolor" style="color:goldenrod">$GLOBALS</span>[<span class="phpstringcolor" style="color:brown">'z'</span>] = <span class="phpglobalcolor" style="color:goldenrod">$GLOBALS</span>[<span class="phpstringcolor" style="color:brown">'x'</span>] + <span class="phpglobalcolor" style="color:goldenrod">$GLOBALS</span>[<span class="phpstringcolor" style="color:brown">'y'</span>]; <br>}<br>&nbsp;<br>addition(); <br><span class="phpkeywordcolor" style="color:mediumblue">echo</span> $z; <br><span class="phptagcolor" style="color:red">?&gt;</span></span>  </div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_global_global" rel="nofollow">Выполнить пример »</a>
+</div>
+
+<p>В приведенном выше примере, поскольку z является переменной, присутствующей в массиве $GLOBALS, она также доступна извне функции!</p>
+<hr>
+
+<h2>PHP $_SERVER</h2>
+<p>$_SERVER - это суперглобальная переменная PHP, которая содержит информацию о заголовках, путях и расположениях скриптов.</p>
+<p>В приведенном ниже примере показано, как использовать некоторые элементы в $_SERVER:</p>
+
+<div class="w3-example">
+<h3>Пример</h3>
+<div class="w3-code htmlHigh notranslate">
+ <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <br><span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpglobalcolor" style="color:goldenrod">$_SERVER</span>[<span class="phpstringcolor" style="color:brown">'PHP_SELF'</span>];<br><span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"&lt;br&gt;"</span>;<br><span class="phpnumbercolor" style="color:red">
+</span> <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpglobalcolor" style="color:goldenrod">$_SERVER</span>[<span class="phpstringcolor" style="color:brown">'SERVER_NAME'</span>];<br><span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"&lt;br&gt;"</span>;<br><span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpglobalcolor" style="color:goldenrod">$_SERVER</span>[<span class="phpstringcolor" style="color:brown">'HTTP_HOST'</span>];<br><span class="phpnumbercolor" style="color:red">
+</span> <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"&lt;br&gt;"</span>;<br><span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpglobalcolor" style="color:goldenrod">$_SERVER</span>[<span class="phpstringcolor" style="color:brown">'HTTP_REFERER'</span>];<br><span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"&lt;br&gt;"</span>;<br><span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpglobalcolor" style="color:goldenrod">$_SERVER</span>[<span class="phpstringcolor" style="color:brown">'HTTP_USER_AGENT'</span>];<br><span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"&lt;br&gt;"</span>;<br><span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpglobalcolor" style="color:goldenrod">$_SERVER</span>[<span class="phpstringcolor" style="color:brown">'SCRIPT_NAME'</span>];<br><span class="phptagcolor" style="color:red">?&gt;</span></span>  </div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_global_server" rel="nofollow">Выполнить пример »</a>
+</div>
+<p>В следующей таблице перечислены наиболее важные элементы, которые могут входить в $_SERVER:</p>
+<table class="w3-table-all notranslate">
+<tbody><tr>
+<th style="width:35%">Элемент/Код</th>
+<th style="width:65%">Описание</th>
+</tr>
+<tr>
+<td>$_SERVER['PHP_SELF']</td>
+<td>Возвращает имя файла исполняемого скрипта</td>
+</tr>
+<tr>
+<td>$_SERVER['GATEWAY_INTERFACE']</td>
+<td>Возвращает версию Common Gateway Interface (CGI), которую использует сервер</td>
+</tr>
+<tr>
+<td>$_SERVER['SERVER_ADDR']</td>
+<td>Возвращает IP-адрес хост-сервера</td>
+</tr>
+<tr>
+<td>$_SERVER['SERVER_NAME']</td>
+<td>Возвращает имя хост-сервера (например, www.w3schools.com)</td>
+</tr>
+<tr>
+<td>$_SERVER['SERVER_SOFTWARE']</td>
+<td>Возвращает строку идентификации сервера (например, Apache/2.2.24)</td>
+</tr>
+<tr>
+<td>$_SERVER['SERVER_PROTOCOL']</td>
+<td>Возвращает имя и версию информационного протокола (например, HTTP/1.1)</td>
+</tr>
+<tr>
+<td>$_SERVER['REQUEST_METHOD']</td>
+<td>Возвращает метод запроса, используемый для доступа к странице (например, POST)</td>
+</tr>
+<tr>
+<td>$_SERVER['REQUEST_TIME']</td>
+<td>Возвращает метку времени начала запроса (например, 1377687496).</td>
+</tr>
+<tr>
+<td>$_SERVER['QUERY_STRING']</td>
+<td>Возвращает строку запроса, если доступ к странице осуществляется через строку запроса</td>
+</tr>
+<tr>
+<td>$_SERVER['HTTP_ACCEPT']</td>
+<td>Возвращает заголовок Accept из текущего запроса</td>
+</tr>
+<tr>
+<td>$_SERVER['HTTP_ACCEPT_CHARSET']</td>
+<td>Возвращает заголовок Accept_Charset из текущего запроса (например, utf-8, ISO-8859-1)</td>
+</tr>
+<tr>
+<td>$_SERVER['HTTP_HOST']</td>
+<td>Возвращает заголовок хоста из текущего запроса</td>
+</tr>
+<tr>
+<td>$_SERVER['HTTP_REFERER']</td>
+<td>Возвращает полный URL-адрес страницы, с которой была вызвана текущая страница</td>
+</tr>
+<tr>
+<td>$_SERVER['HTTPS']</td>
+<td>Запрашивается ли скрипт по безопасному протоколу HTTP?</td>
+</tr>
+<tr>
+<td>$_SERVER['REMOTE_ADDR']</td>
+<td>Возвращает IP-адрес, с которого пользователь просматривает текущую страницу</td>
+</tr>
+<tr>
+<td>$_SERVER['REMOTE_HOST']</td>
+<td>Возвращает имя хоста, с которого пользователь просматривает текущую страницу</td>
+</tr>
+<tr>
+<td>$_SERVER['REMOTE_PORT']</td>
+<td>Возвращает порт, используемый на компьютере пользователя для связи с веб-сервером.</td>
+</tr>
+<tr>
+<td>$_SERVER['SCRIPT_FILENAME']</td>
+<td>Возвращает абсолютный путь к исполняемому скрипту</td>
+</tr>
+<tr>
+<td>$_SERVER['SERVER_ADMIN']</td>
+<td>Возвращает значение, данное директиве SERVER_ADMIN в файле конфигурации веб-сервера (если ваш скрипт выполняется на виртуальном хосте, это будет значение, определенное для этого виртуального хоста) (например, somebody@w3schools.com)</td>
+</tr>
+<tr>
+<td>$_SERVER['SERVER_PORT']</td>
+<td>Возвращает порт на сервере, который используется веб-сервером для связи (например, 80)</td>
+</tr>
+<tr>
+<td>$_SERVER['SERVER_SIGNATURE']</td>
+<td>Возвращает версию сервера и имя виртуального хоста, которые добавляются на сгенерированные сервером страницы</td>
+</tr>
+<tr>
+<td>$_SERVER['PATH_TRANSLATED']</td>
+<td>Возвращает путь к текущему сценарию на основе файловой системы</td>
+</tr>
+<tr>
+<td>$_SERVER['SCRIPT_NAME']</td>
+<td>Возвращает путь текущего скрипта</td>
+</tr>
+<tr>
+<td>$_SERVER['SCRIPT_URI']</td>
+<td>Возвращает URI текущей страницы</td>
+</tr>
+</tbody></table>
+<hr>
+
+<h2>PHP $_REQUEST</h2>
+<p>PHP $_REQUEST используется для сбора данных после отправки HTML-формы.</p>
+<p>(Request - перевод с анг. "Запрос").</p>
+<p>В приведенном ниже примере показана форма с полем ввода и кнопкой отправки. Когда пользователь отправляет данные, нажимая «Отправить», данные формы отправляются в файл, указанный в атрибуте <em>action</em> тега формы <code class="w3-codespan">&lt;form&gt;</code>. В этом примере мы указываем сам этот файл для обработки данных формы. Если вы хотите использовать другой файл PHP для обработки данных формы, замените его именем файла по вашему выбору. Затем мы можем использовать суперглобальную переменную $_REQUEST для сбора значения поля ввода:</p>
+<div class="w3-example">
+<h3>Пример</h3>
+<div class="w3-code htmlHigh notranslate">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<br>
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> method<span class="attributevaluecolor" style="color:mediumblue">="post"</span> action<span class="attributevaluecolor" style="color:mediumblue">="<span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpglobalcolor" style="color:goldenrod">$_SERVER</span>[<span class="phpstringcolor" style="color:brown">'PHP_SELF'</span>];<span class="phptagcolor" style="color:red">?&gt;</span></span>"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; Name: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br><span class="phpkeywordcolor" style="color:mediumblue">if</span> (<span class="phpglobalcolor" style="color:goldenrod">$_SERVER</span>[<span class="phpstringcolor" style="color:brown">"REQUEST_METHOD"</span>] == <span class="phpstringcolor" style="color:brown">"POST"</span>) {<br>&nbsp;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// собрать значение поля ввода<br></span>&nbsp;&nbsp;&nbsp; $name = <span class="phpglobalcolor" style="color:goldenrod">$_REQUEST</span>[<span class="phpstringcolor" style="color:brown">'fname'</span>];<br>&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">if</span> (<span class="phpkeywordcolor" style="color:mediumblue">empty</span>($name)) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"Name is empty"</span>;<br>&nbsp;&nbsp;&nbsp; } <span class="phpkeywordcolor" style="color:mediumblue">else</span> {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">echo</span> $name;<br>&nbsp;&nbsp;&nbsp; }<br>}<br><span class="phptagcolor" style="color:red">?&gt;</span></span><br>
+<br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_global_request" rel="nofollow">Выполнить пример »</a>
+</div>
+<hr>
+
+<h2>PHP $_POST</h2>
+<p>PHP $_POST широко используется для сбора данных формы после отправки формы HTML с method="post". $_POST также широко используется для передачи переменных.</p>
+<p>В приведенном ниже примере показана форма с полем ввода и кнопкой отправки. Когда пользователь отправляет данные, нажимая «Отправить», данные формы отправляются в файл, указанный в атрибуте <i>action</i> тега формы <code class="w3-codespan">&lt;form&gt;</code>. В этом примере мы указываем на сам файл для обработки данных формы. Если вы хотите использовать другой файл PHP для обработки данных формы, замените его именем файла по вашему выбору. Затем мы можем использовать суперглобальную переменную $_POST для сбора значения поля ввода:</p>
+<div class="w3-example">
+<h3>Пример</h3>
+<div class="w3-code htmlHigh notranslate">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<br>
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> method<span class="attributevaluecolor" style="color:mediumblue">="post"</span> action<span class="attributevaluecolor" style="color:mediumblue">="<span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpglobalcolor" style="color:goldenrod">$_SERVER</span>[<span class="phpstringcolor" style="color:brown">'PHP_SELF'</span>];<span class="phptagcolor" style="color:red">?&gt;</span></span>"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; Name: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br><span class="phpkeywordcolor" style="color:mediumblue">if</span> (<span class="phpglobalcolor" style="color:goldenrod">$_SERVER</span>[<span class="phpstringcolor" style="color:brown">"REQUEST_METHOD"</span>] == <span class="phpstringcolor" style="color:brown">"POST"</span>) {<br>&nbsp;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// собрать значение поля ввода<br></span>&nbsp;&nbsp;&nbsp; $name = <span class="phpglobalcolor" style="color:goldenrod">$_POST</span>[<span class="phpstringcolor" style="color:brown">'fname'</span>];<br>&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">if</span> (<span class="phpkeywordcolor" style="color:mediumblue">empty</span>($name)) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"Name is empty"</span>;<br>&nbsp;&nbsp;&nbsp; } <span class="phpkeywordcolor" style="color:mediumblue">else</span> {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">echo</span> $name;<br>&nbsp;&nbsp;&nbsp; }<br>}<br><span class="phptagcolor" style="color:red">?&gt;</span></span><br>
+<br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_global_post" rel="nofollow">Выполнить пример »</a>
+</div>
+<hr>
+
+<h2>PHP $_GET</h2>
+<p>PHP $_GET также можно использовать для сбора данных формы после отправки HTML-формы с method="get".</p>
+<p>$_GET также может собирать данные, отправленные в URL.</p>
+<p>Предположим, у нас есть HTML-страница, которая содержит гиперссылку с параметрами:</p>
+<div class="w3-code w3-border notranslate"><div>
+&lt;html&gt;<br>
+&lt;body&gt;<br><br>
+&lt;a href="test_get.php?subject=PHP&amp;web=W3schools.com"&gt;Test $GET&lt;/a&gt;<br><br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+</div></div>
+<p>Когда пользователь нажимает ссылку «Test $GET», параметры «subject» и «web» отправляются в «test_get.php», а затем вы можете получить доступ к их значениям в «test_get.php» с помощью $_GET.</p>
+<p>В приведенном ниже примере показан код в "test_get.php":</p>
+
+<div class="w3-example">
+<h3>Пример</h3>
+<div class="w3-code htmlHigh notranslate">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<br>
+ <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <br><span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"Study "</span> . <span class="phpglobalcolor" style="color:goldenrod">$_GET</span>[<span class="phpstringcolor" style="color:brown">'subject'</span>] . <span class="phpstringcolor" style="color:brown">" at "</span> . <span class="phpglobalcolor" style="color:goldenrod">$_GET</span>[<span class="phpstringcolor" style="color:brown">'web'</span>];<br><span class="phptagcolor" style="color:red">?&gt;</span></span><br>
+<br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_global_get" rel="nofollow">Выполнить пример »</a>
+</div>
+<p><strong>Примечание:</strong> Подробнее о $_POST и $_GET вы узнаете из главы <a href="php_forms.html">PHP Формы</a>.</p>
+
+<br>
+<div class="keys">
+    <strong>уроки</strong> 
+    <strong>для начинающих</strong> 
+    <strong>для новичков</strong> 
+    <strong>основы</strong> 
+    <strong>курсы с нуля</strong> 
+    <strong>php</strong> 
+    <strong>глобальные переменные</strong> 
+    <strong>суперглобальные</strong> 
+    <strong>методы</strong>
+    <strong>формы</strong>
+</div>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="php_arrays_sort.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="php_forms.html" title="Следующая страница" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr class="hr-bottom">
+        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
+        <!-- Комментарии от Disqus -->
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_config = function () {
+        this.page.url = html5beginner.github.io;  // канонический URL страницы
+        this.page.identifier = html5beginner.github.io/php/php_superglobals.html; // уникальный идентификатор страницы
+        };
+        (function() { // Не редактировать ниже этой линии
+        var d = document, s = d.createElement('script');
+        s.src = 'https://html5beginners.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+        <!--  / Комментарии от Disqus -->
+    </div>
+
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>
