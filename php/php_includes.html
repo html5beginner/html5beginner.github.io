@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <title>PHP 5 Подключение файлов. W3schools на русском. Уроки для начинающих</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="keywords" content="PHP,PHP5,подключение,файлов,include,require,пример,уроки,для начинающих,учебник,основы,языка,w3schools,на русском,сайт" />
+   <meta name="description" content="PHP5 Пособие. Подключение файлов. Оператор include (или require). Примеры. Курс по основам PHP. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+   <link rel="stylesheet" href="../styles/style.css" />
+   <link rel="stylesheet" href="../styles/ws.css" />
+   <link rel="stylesheet" href="../styles/handheld.css" />
+   <link rel="canonical" href="https://html5beginner.github.io/" />
+   <meta property="og:title" content="PHP 5 Подключение файлов. W3schools на русском. Уроки для начинающих" />
+   <meta property="og:type" content="Content" />
+   <!--описывает тип объекта на странице-->
+   <meta property="og:url" content="https://html5beginner.github.io/" />
+   <!--адрес сайта-->
+   <meta property="og:image" content="../image/html5_64x64.png" />
+   <!--адрес картинки-->
+   <meta property="og:description" content="PHP5 Пособие. Подключение файлов. Оператор include (или require). Примеры. Курс по основам PHP. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+   <meta property="og:locale" content="ru" />
+   <!--язык сайта-->
+   <meta property="og:site_name" content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Уроки W3Schools на русском" />
+   <script src="../js/topnav.js"></script>
+</head>
+
+<body>
+   <iframe src="../pages/header.html" class="frame-header"></iframe>
+   <main>
+
+      <div class="left-sidebar">
+         <iframe src="../pages/menuphp5.html" class="frame-left-sidebar"></iframe>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+         <h1>PHP 5 Подключение файлов</h1>
+         <p class="brief"><strong>Курс по основам языка программирования PHP.<br> W3Schools на русском языке. Уроки для начинающих</strong></p>
+         <hr>
+         <!-- buttons prev - next -->
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="php_date.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="php_file.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         <!-- buttons prev - next -->
+         <hr>
+         <p class="intro">Оператор<code class="w3-codespan">include</code> (или <code class="w3-codespan">require</code>) принимает весь текст/код/разметку, которая существует в указанном файле и копирует её в файл, который использует оператор подключения - include.</p>
+         <p class="intro"><strong>Подключение файлов</strong> очень полезно, если вы хотите подключить один и тот же PHP-код, HTML-код или текст на нескольких страницах веб-сайта.</p>
+         <hr>
+         <h2>PHP операторы include и require</h2>
+         <p>Можно вставить содержимое одного файла PHP в другой файл PHP (до того, как сервер его запустит) с помощью оператора <em>include</em> или <em>require</em>.</p>
+         <p><b>Операторы <em>include</em> и <em>require</em> идентичны, за исключением случаев сбоя:</b></p>
+         <ul>
+            <li><code class="w3-codespan">require</code> выдаст фатальную ошибку (E_COMPILE_ERROR) и остановит выполнение скрипта</li>
+            <li><code class="w3-codespan">include</code> выдаст только предупреждение (E_WARNING) и скрипт продолжит выполняться</li>
+         </ul>
+         <p>Таким образом, если вы хотите, чтобы выполнение продолжалось и показывало пользователям вывод, даже если файл подключения отсутствует, используйте оператор <code class="w3-codespan">include</code>. В противном случае, в случае FrameWork, CMS или сложной кодировки приложения PHP, всегда используйте оператор <code class="w3-codespan">require</code> для включения файла ключа в поток выполнения. Это поможет избежать нарушения безопасности и целостности вашего приложения, просто на случай, если один файл ключа случайно пропадет.</p>
+
+         <p>Подключение файлов экономит кучу времени. Это означает, что вы можете создать стандартный заголовок, нижний колонтитул или файл меню сразу для всех ваших веб-страниц. Затем, когда требуется обновить заголовок, вы можете обновить только файл заголовка.</p>
+         <h3>Синтаксис</h3>
+         <div class="w3-code w3-border notranslate">
+            <div>
+               include '<i>filename</i>';<br>
+               <br>
+               or<br>
+               <br>
+               require '<i>filename</i>';</div>
+         </div>
+         <hr>
+
+         <h2>PHP Примеры подключения файлов</h2>
+         <h3>Пример 1</h3>
+         <p>Предположим, у нас есть стандартный файл нижнего колонтитула с именем "<i>footer.php</i>", который выглядит следующим образом:</p>
+         <div class="w3-code w3-border notranslate">
+            <div>
+               &lt;?php<br>echo "&lt;p&gt;Copyright &amp;copy; 1999-" . date("Y") . " W3Schools.com&lt;/p&gt;";<br>?&gt;</div>
+         </div>
+
+         <p>Чтобы подключить файл нижнего колонтитула к странице, используйте оператор <code class="w3-codespan">include</code>:</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code htmlHigh notranslate">
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Welcome to my home page!<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Some text.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Some more text.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <span class="phpkeywordcolor" style="color:mediumblue">include</span> <span class="phpstringcolor" style="color:brown">'footer.php'</span>;<span class="phptagcolor" style="color:red">?&gt;</span></span><br>
+               <br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_include1" rel="nofollow">Выполнить пример »</a>
+         </div>
+         <hr>
+
+         <h3>Пример 2</h3>
+         <p>Предположим, у нас есть стандартный файл меню с именем "<i>menu.php</i>":</p>
+         <div class="w3-code w3-border notranslate">
+            <div>
+               &lt;?php<br>echo '&lt;a href="/default.asp"&gt;Home&lt;/a&gt; -<br>&lt;a href="/html/default.asp"&gt;HTML Tutorial&lt;/a&gt; -<br>&lt;a href="/css/default.asp"&gt;CSS Tutorial&lt;/a&gt; -<br>&lt;a href="/js/default.asp"&gt;JavaScript Tutorial&lt;/a&gt; -<br>&lt;a href="default.asp"&gt;PHP Tutorial&lt;/a&gt;';<br>?&gt;</div>
+         </div>
+         <p>Все страницы на веб-сайте должны использовать этот файл меню. Вот как это можно сделать (мы используем элемент <code class="w3-codespan">&lt;div&gt;</code>, чтобы меню потом можно было легко стилизовать с помощью CSS):</p>
+
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code htmlHigh notranslate">
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="menu"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <span class="phpkeywordcolor" style="color:mediumblue">include</span> <span class="phpstringcolor" style="color:brown">'menu.php'</span>;<span class="phptagcolor" style="color:red">?&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Welcome to my home page!<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Some text.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Some more text.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_include2" rel="nofollow">Выполнить пример »</a>
+         </div>
+         <hr>
+
+         <h3>Пример 3</h3>
+         <p>Предположим, у нас есть файл с именем "<i>vars.php</i>", в котором определены некоторые переменные:</p>
+         <div class="w3-code w3-border notranslate">
+            <div>
+               &lt;?php<br>
+               $color='red';<br>
+               $car='BMW';<br>
+               ?&gt;</div>
+         </div>
+         <p>Затем, если мы подключим файл "<i>vars.php</i>", переменные могут быть использованы в вызывающем файле:</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code htmlHigh notranslate">
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Welcome to my home page!<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <span class="phpkeywordcolor" style="color:mediumblue">include</span> <span class="phpstringcolor" style="color:brown">'vars.php'</span>;<br>
+                  <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"I have a $color $car."</span>;<br><span class="phptagcolor" style="color:red">?&gt;</span></span><br>
+               <br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_include3" rel="nofollow">Выполнить пример »</a>
+         </div>
+         <hr>
+
+         <h2>PHP include и require</h2>
+         <p>Оператор <code class="w3-codespan">require</code> также используется для подключения файла в PHP-коде.</p>
+         <p>Однако, есть одно большое различие между <em>include</em> и <em>require</em>; если файл подключен оператором <code class="w3-codespan">include</code> и PHP не может его найти, скрипт продолжит выполнение:</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code htmlHigh notranslate">
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Welcome to my home page!<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <span class="phpkeywordcolor" style="color:mediumblue">include</span> <span class="phpstringcolor" style="color:brown">'noFileExists.php'</span>;<br>
+                  <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"I have a $color $car."</span>;<br><span class="phptagcolor" style="color:red">?&gt;</span></span><br>
+               <br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_include4" rel="nofollow">Выполнить пример »</a>
+         </div>
+
+         <p>Если мы выполним тот же пример, используя оператор <code class="w3-codespan">require</code>, оператор <em>echo</em> не будет выполнен, поскольку выполнение скрипта прекращается после того, как оператор <code class="w3-codespan">require</code> вернул фатальную ошибку:</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code htmlHigh notranslate">
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Welcome to my home page!<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <span class="phpkeywordcolor" style="color:mediumblue">require</span> <span class="phpstringcolor" style="color:brown">'noFileExists.php'</span>;<br>
+                  <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"I have a $color $car."</span>;<br><span class="phptagcolor" style="color:red">?&gt;</span></span><br>
+               <br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_include5" rel="nofollow">Выполнить пример »</a>
+         </div>
+
+         <div class="w3-panel w3-note">
+            <p>Используйте <code class="w3-codespan">require</code> когда файл требуется приложением.</p>
+            <p>Используйте <code class="w3-codespan">include</code> когда файл не требуется и приложение
+               должно продолжаться, когда файл не найден.</p>
+         </div>
+
+         <hr>
+         <form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/php/exercise.asp?filename=exercise_advanced1" method="post" target="_blank" rel="nofollow">
+            <h2>Проверьте себя с помощью упражнений</h2>
+            <div class="exercisewindow">
+               <h2>Упражнение:</h2>
+               <p>Напишите правильный синтаксис для подключения файла с именем "footer.php".</p>
+               <div class="exerciseprecontainer">
+                  <pre>&lt;?php <input name="ex1" maxlength="20" style="width: 212px;">;?&gt;
+</pre>
+               </div>
+               <br>
+               <button type="submit" class="w3-btn w3-margin-bottom">Отправить ответ »</button>
+            </div>
+         </form>
+         <br>
+         <div class="keys">
+            <strong>W3Schools на русском </strong>
+            <strong>уроки для начинающих </strong>
+            <strong>для новичков </strong>
+            <strong>основы языка </strong>
+            <strong>курсы с нуля </strong>
+            <strong>язык php </strong>
+            <strong>даты и время </strong>
+            <strong>дни недели </strong>
+            <strong>как вывести в PHP </strong>
+            <strong>полный справочник дат </strong>
+         </div>
+
+         <hr>
+         <!-- buttons prev - next -->
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="php_date.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="php_file.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         <!-- / buttons prev - next -->
+         <hr class="hr-bottom">
+         <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left">
+         <p class="note-warning"><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
+         <!-- Комментарии от Disqus -->
+         <div id="disqus_thread"></div>
+         <script>
+            var disqus_config = function() {
+               this.page.url = html5beginner.github.io; // канонический URL страницы
+               this.page.identifier = html5beginner.github.io / php / php_includes.html; // уникальный идентификатор страницы
+            };
+            (function() { // Не редактировать ниже этой линии
+               var d = document,
+                  s = d.createElement('script');
+               s.src = 'https://html5beginners.disqus.com/embed.js';
+               s.setAttribute('data-timestamp', +new Date());
+               (d.head || d.body).appendChild(s);
+            })();
+
+         </script>
+         <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+         <!-- / Комментарии от Disqus -->
+      </div>
+
+      <!-- / CONTENT -->
+      <div class="right-sidebar">
+         <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+      </div>
+   </main>
+   <footer>
+      <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+   </footer>
+</body>
+
+</html>
