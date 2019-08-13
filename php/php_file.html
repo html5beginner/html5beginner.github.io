@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <title>PHP 5 Обработка файлов. W3schools на русском. Уроки для начинающих</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="keywords" content="PHP,PHP5,обработка,файлов,пример,уроки,для начинающих,учебник,основы,языка,w3schools,на русском,сайт" />
+   <meta name="description" content="PHP5 Пособие. Обработка файлов. Примеры. Курс по основам PHP. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+   <link rel="stylesheet" href="../styles/style.css" />
+   <link rel="stylesheet" href="../styles/ws.css" />
+   <link rel="stylesheet" href="../styles/handheld.css" />
+   <link rel="canonical" href="https://html5beginner.github.io/" />
+   <meta property="og:title" content="PHP 5 Обработка файлов. W3schools на русском. Уроки для начинающих" />
+   <meta property="og:type" content="Content" />
+   <!--описывает тип объекта на странице-->
+   <meta property="og:url" content="https://html5beginner.github.io/" />
+   <!--адрес сайта-->
+   <meta property="og:image" content="../image/html5_64x64.png" />
+   <!--адрес картинки-->
+   <meta property="og:description" content="PHP5 Пособие. Обработка файлов. Примеры. Курс по основам PHP. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+   <meta property="og:locale" content="ru" />
+   <!--язык сайта-->
+   <meta property="og:site_name" content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Уроки W3Schools на русском" />
+   <script src="../js/topnav.js"></script>
+</head>
+
+<body>
+   <iframe src="../pages/header.html" class="frame-header"></iframe>
+   <main>
+
+      <div class="left-sidebar">
+         <iframe src="../pages/menuphp5.html" class="frame-left-sidebar"></iframe>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+         <h1>PHP 5 Обработка файлов</h1>
+         <p class="brief"><strong>Курс по основам языка программирования PHP.<br> W3Schools на русском языке. Уроки для начинающих</strong></p>
+         <hr>
+         <!-- buttons prev - next -->
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="php_includes.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="php_file_open.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         <!-- buttons prev - next -->
+         <hr>
+         <p class="intro"><strong>Обработка файлов</strong> является важной частью любого веб-приложения. Вам часто нужно открывать и обрабатывать файл для разных задач.</p>
+         <hr>
+
+         <h2>PHP Управление файлами</h2>
+         <p><strong>PHP</strong> имеет несколько функций для создания, чтения, загрузки и редактирования файлов.</p>
+         <div class="w3-panel w3-note">
+            <p><strong>Будьте осторожны при работе с файлами!</strong></p>
+            <p>При работе с файлами вы должны быть очень осторожны и внимательны. Вы можете нанести большой ущерб, если сделаете что-то не так.</p>
+            <p><strong>Распространенные ошибки</strong>: редактирование неправильного файла, заполнение жесткого диска мусорными данными и случайное удаление содержимого файла.</p>
+         </div>
+         <hr>
+
+         <h2>PHP функция readfile()</h2>
+         <p>Функция <code class="w3-codespan">readfile()</code> читает файл и записывает его в выходной буфер.</p>
+         <p>Предположим, у нас есть текстовый файл с именем "<i>webdictionary.txt</i>", хранящийся на сервере, который выглядит следующим образом:</p>
+         <div class="w3-code w3-border notranslate">
+            <div>
+               AJAX = Asynchronous JavaScript and XML<br>CSS = Cascading Style Sheets<br>
+               HTML = Hyper Text Markup Language<br>PHP = PHP Hypertext Preprocessor<br>SQL = Structured Query Language<br>SVG = Scalable Vector Graphics<br>XML = Extensible Markup Language</div>
+         </div>
+
+         <p>PHP-код для чтения файла и записи его в выходной буфер выглядит следующим образом (функция <code class="w3-codespan">readfile()</code> возвращает количество байтов, прочитанных при успешном выполнении):</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code htmlHigh notranslate">
+               <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br><span class="phpkeywordcolor" style="color:mediumblue">echo</span> readfile(<span class="phpstringcolor" style="color:brown">"webdictionary.txt"</span>);<br><span class="phptagcolor" style="color:red">?&gt;</span></span>
+            </div>
+            <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_file_readfile" rel="nofollow">Выполнить пример »</a>
+         </div>
+         <p>Функция <code class="w3-codespan">readfile()</code> полезна, если все, что вы хотите сделать, это открыть файл и прочитать его содержимое.</p>
+         <p>В следующих главах вы узнаете больше об обработке файлов.</p>
+
+         <hr>
+         <form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/php/exercise.asp?filename=exercise_advanced2" method="post" target="_blank" rel="nofollow">
+            <h2>Проверьте себя с помощью упражнений</h2>
+            <div class="exercisewindow">
+               <h2>Упражнение:</h2>
+               <p>Предположим, у нас есть файл с именем "<i>webdict.txt</i>", напишите правильный синтаксис, чтобы открыть и прочитать содержимое файла.</p>
+               <div class="exerciseprecontainer">
+                  <pre>echo <input name="ex1" maxlength="23" style="width: 244px;">;
+</pre>
+               </div>
+               <br>
+               <button type="submit" class="w3-btn w3-margin-bottom">Отправить ответ »</button>
+            </div>
+         </form>
+         <br>
+         <div class="keys">
+            <strong>W3Schools на русском </strong>
+            <strong>уроки для начинающих </strong>
+            <strong>для новичков </strong>
+            <strong>основы языка </strong>
+            <strong>курсы с нуля </strong>
+            <strong>язык php </strong>
+            <strong>управление файлами </strong>
+            <strong>файлы в PHP </strong>
+            <strong>обработка файлов в PHP </strong>
+            <strong>функции в PHP </strong>
+         </div>
+
+         <hr>
+         <!-- buttons prev - next -->
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="php_includes.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="php_file_open.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         <!-- / buttons prev - next -->
+         <hr class="hr-bottom">
+         <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left">
+         <p class="note-warning"><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
+         <!-- Комментарии от Disqus -->
+         <div id="disqus_thread"></div>
+         <script>
+            var disqus_config = function() {
+               this.page.url = html5beginner.github.io; // канонический URL страницы
+               this.page.identifier = html5beginner.github.io / php / php_file.html; // уникальный идентификатор страницы
+            };
+            (function() { // Не редактировать ниже этой линии
+               var d = document,
+                  s = d.createElement('script');
+               s.src = 'https://html5beginners.disqus.com/embed.js';
+               s.setAttribute('data-timestamp', +new Date());
+               (d.head || d.body).appendChild(s);
+            })();
+
+         </script>
+         <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+         <!-- / Комментарии от Disqus -->
+      </div>
+
+      <!-- / CONTENT -->
+      <div class="right-sidebar">
+         <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+      </div>
+   </main>
+   <footer>
+      <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+   </footer>
+</body>
+
+</html>
