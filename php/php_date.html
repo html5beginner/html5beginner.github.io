@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <title>PHP 5 Дата и время. W3schools на русском. Уроки для начинающих</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="keywords" content="PHP,PHP5,data,time,дата,время,пример,уроки,для начинающих,учебник,основы,языка,w3schools,на русском,сайт" />
+   <meta name="description" content="PHP5 Пособие. Дата и время. Примеры. Курс по основам PHP. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+   <link rel="stylesheet" href="../styles/style.css" />
+   <link rel="stylesheet" href="../styles/ws.css" />
+   <link rel="stylesheet" href="../styles/handheld.css" />
+   <link rel="canonical" href="https://html5beginner.github.io/" />
+   <meta property="og:title" content="PHP 5 Дата и время. W3schools на русском. Уроки для начинающих" />
+   <meta property="og:type" content="Content" />
+   <!--описывает тип объекта на странице-->
+   <meta property="og:url" content="https://html5beginner.github.io/" />
+   <!--адрес сайта-->
+   <meta property="og:image" content="../image/html5_64x64.png" />
+   <!--адрес картинки-->
+   <meta property="og:description" content="PHP5 Пособие. Дата и время. Примеры. Курс по основам PHP. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+   <meta property="og:locale" content="ru" />
+   <!--язык сайта-->
+   <meta property="og:site_name" content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Уроки W3Schools на русском" />
+   <script src="../js/topnav.js"></script>
+</head>
+
+<body>
+   <iframe src="../pages/header.html" class="frame-header"></iframe>
+   <main>
+
+      <div class="left-sidebar">
+         <iframe src="../pages/menuphp5.html" class="frame-left-sidebar"></iframe>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+         <h1>PHP 5 Дата и время</h1>
+         <p class="brief"><strong>Курс по основам языка программирования PHP.<br> W3Schools на русском языке. Уроки для начинающих</strong></p>
+         <hr>
+         <!-- buttons prev - next -->
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="php_arrays_multi.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="php_includes.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         <!-- buttons prev - next -->
+         <hr>
+         <p class="intro">PHP функция <code class="w3-codespan">date()</code> используется для форматирования даты и/или времени.</p>
+         <hr>
+
+         <h2>PHP функция Date()</h2>
+         <p>PHP функция <code class="w3-codespan">date()</code> форматирует метку времени для более удобочитаемой даты и времени.</p>
+         <h3>Синтаксис</h3>
+         <div class="w3-code w3-border notranslate">
+            <div>
+               date(<i>format</i>,<i>timestamp</i>)
+            </div>
+         </div>
+
+         <table class="w3-table-all notranslate">
+            <tbody>
+               <tr>
+                  <th style="width:20%">Параметр</th>
+                  <th style="width:80%">Описание</th>
+               </tr>
+               <tr>
+                  <td>format</td>
+                  <td>Обязательно. Определяет формат отметки времени</td>
+               </tr>
+               <tr>
+                  <td>timestamp</td>
+                  <td>Необязательно. Определяет метку времени. По умолчанию текущая дата и время</td>
+               </tr>
+            </tbody>
+         </table>
+
+         <div class="w3-panel w3-note">
+            <p>
+            </p>
+            <p>Отметка времени - это последовательность символов, обозначающая дату и/или время, когда произошло определенное событие.</p>
+         </div>
+
+         <hr>
+
+         <h2>Получить простую дату</h2>
+         <p>Обязательный параметр <i>format</i> функции date() указывает, как форматировать дату (или время).</p>
+         <p>Вот некоторые символы, которые обычно используются для дат:</p>
+         <ul>
+            <li>d - Представляет день месяца (с 01 по 31)</li>
+            <li>m - Представляет месяц (с 01 по 12)</li>
+            <li>Y - Представляет год (в четыре цифры)</li>
+            <li>l (в нижнем регистре 'L') - Представляет день недели</li>
+         </ul>
+         <p>Другие символы, такие как "/", "."" Или "-" также могут быть вставлены между символами, чтобы добавить дополнительное форматирование.</p>
+         <p>Пример ниже форматирует сегодняшнюю дату тремя различными способами:</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code htmlHigh notranslate">
+               <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br><span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"Today is "</span> . date(<span class="phpstringcolor" style="color:brown">"Y/m/d"</span>) . <span class="phpstringcolor" style="color:brown">"&lt;br&gt;"</span>;<br><span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"Today is "</span> . date(<span class="phpstringcolor" style="color:brown">"Y.m.d"</span>) . <span class="phpstringcolor" style="color:brown">"&lt;br&gt;"</span>;<br><span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"Today is "</span> . date(<span class="phpstringcolor" style="color:brown">"Y-m-d"</span>) . <span class="phpstringcolor" style="color:brown">"&lt;br&gt;"</span>;<br><span class="phpnumbercolor" style="color:red">
+                  </span> <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"Today is "</span> . date(<span class="phpstringcolor" style="color:brown">"l"</span>);<br><span class="phptagcolor" style="color:red">?&gt;</span></span> </div>
+            <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_date1" rel="nofollow">Выполнить пример »</a>
+         </div>
+         <hr>
+
+         <h2>PHP - Автоматический год авторского права</h2>
+         <p>Используйте функцию <code class="w3-codespan">date()</code> для автоматического обновления года авторских прав на вашем веб-сайте:</p>
+
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code htmlHigh notranslate">
+               &amp;copy; 2010-<span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <span class="phpkeywordcolor" style="color:mediumblue">echo</span> date(<span class="phpstringcolor" style="color:brown">"Y"</span>);<span class="phptagcolor" style="color:red">?&gt;</span></span><br> </div>
+            <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_date_copyright" rel="nofollow">Выполнить пример »</a>
+         </div>
+         <hr>
+
+         <h2>Получить простое время</h2>
+         <p>Вот некоторые символы, которые обычно используются для времен:</p>
+         <ul>
+            <li>H - 24-часовой формат часа (от 00 до 23)</li>
+            <li>h - 12-часовой формат часа с ведущими нулями (от 01 до 12)</li>
+            <li>i - Минуты с ведущими нулями (от 00 до 59)</li>
+            <li>s - Секунды с ведущими нулями (от 00 до 59)</li>
+            <li>a - В нижнем регистре до полудня и после полудня (am или pm)</li>
+         </ul>
+         <p>В приведенном ниже примере выводится текущее время в указанном формате:</p>
+
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code htmlHigh notranslate">
+               <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br><span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"The time is "</span> . date(<span class="phpstringcolor" style="color:brown">"h:i:sa"</span>);<br><span class="phptagcolor" style="color:red">?&gt;</span></span> </div>
+            <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_date2" rel="nofollow">Выполнить пример »</a>
+         </div>
+
+         <div class="w3-panel w3-note">
+            <p>
+            </p>
+            <p>Обратите внимание, что PHP функция date() будет возвращать текущую дату/время сервера!</p>
+         </div>
+
+         <hr>
+
+         <h2>Получите ваш часовой пояс</h2>
+         <p>Если код вернул вам не то время, возможно потому, что ваш сервер находится в другой стране или настроен на другой часовой пояс.</p>
+         <p>Если вам нужно точное время в соответствии с конкретным местоположением, вы можете установить используемый часовой пояс.</p>
+         <p>В приведенном ниже примере для часового пояса установлено значение «America/New_York», а затем выводится текущее время в указанном формате:</p>
+
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code htmlHigh notranslate">
+               <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br>date_default_timezone_set(<span class="phpstringcolor" style="color:brown">"America/New_York"</span>);<br><span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"The time is "</span> . date(<span class="phpstringcolor" style="color:brown">"h:i:sa"</span>);<br><span class="phptagcolor" style="color:red">?&gt;</span></span> </div>
+            <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_date3" rel="nofollow">Выполнить пример »</a>
+         </div>
+         <hr>
+
+         <h2>Создать дату с PHP mktime()</h2>
+         <p>Необязательный параметр <i>timestamp</i> в функции date() указывает метку времени. Если вы не укажете метку времени, будут использованы текущие дата и время (как показано в примерах выше).</p>
+         <p>Функция <code class="w3-codespan">mktime()</code> возвращает метку времени Unix для даты. Временная метка Unix содержит количество секунд между эпохой Unix (1 января 1970 г., 00:00:00 по Гринвичу) и указанным временем.</p>
+         <h3>Синтаксис</h3>
+         <div class="w3-code w3-border notranslate">
+            <div>
+               mktime(<em>час,минута,секунда,месяц,день,год</em>)
+            </div>
+         </div>
+
+         <p>В приведенном ниже примере создается дата и время из ряда параметров в функции <code class="w3-codespan">mktime()</code>:</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code htmlHigh notranslate">
+               <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br>$d=mktime(<span class="phpnumbercolor" style="color:red">11</span>, <span class="phpnumbercolor" style="color:red">14</span>, <span class="phpnumbercolor" style="color:red">54</span>, <span class="phpnumbercolor" style="color:red">8</span>, <span class="phpnumbercolor" style="color:red">12</span>, <span class="phpnumbercolor" style="color:red">2014</span>);<br><span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"Created date is "</span> . date(<span class="phpstringcolor" style="color:brown">"Y-m-d h:i:sa"</span>, $d);<br><span class="phptagcolor" style="color:red">?&gt;</span></span> </div>
+            <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_date4" rel="nofollow">Выполнить пример »</a>
+         </div>
+         <hr>
+
+         <h2>Создать дату из строки с PHP strtotime()</h2>
+         <p>Функция PHP <code class="w3-codespan">strtotime()</code> используется для преобразования читаемой человеком строки во время Unix.</p>
+         <h3>Синтаксис</h3>
+         <div class="w3-code w3-border notranslate">
+            <div>
+               strtotime(<em>time,now</em>)</div>
+         </div>
+
+         <p>В приведенном ниже примере создается дата и время из функции <code class="w3-codespan">strtotime()</code>:</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code htmlHigh notranslate">
+               <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br>$d=strtotime(<span class="phpstringcolor" style="color:brown">"10:30pm April 15 2014"</span>);<br><span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"Created date is "</span> . date(<span class="phpstringcolor" style="color:brown">"Y-m-d h:i:sa"</span>, $d);<br><span class="phptagcolor" style="color:red">?&gt;</span></span> </div>
+            <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_date5" rel="nofollow">Выполнить пример »</a>
+         </div>
+
+         <p>PHP довольно умен для преобразования строки в дату, поэтому вы можете ввести различные значения:</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code htmlHigh notranslate">
+               <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br>$d=strtotime(<span class="phpstringcolor" style="color:brown">"tomorrow"</span>);<br><span class="phpkeywordcolor" style="color:mediumblue">echo</span> date(<span class="phpstringcolor" style="color:brown">"Y-m-d h:i:sa"</span>, $d) . <span class="phpstringcolor" style="color:brown">"&lt;br&gt;"</span>;<br><span class="phpnumbercolor" style="color:red">
+                  </span> <br>$d=strtotime(<span class="phpstringcolor" style="color:brown">"next Saturday"</span>);<br><span class="phpkeywordcolor" style="color:mediumblue">echo</span> date(<span class="phpstringcolor" style="color:brown">"Y-m-d h:i:sa"</span>, $d) . <span class="phpstringcolor" style="color:brown">"&lt;br&gt;"</span>;<br><span class="phpnumbercolor" style="color:red">
+                  </span> <br>$d=strtotime(<span class="phpstringcolor" style="color:brown">"+3 Months"</span>);<br><span class="phpkeywordcolor" style="color:mediumblue">echo</span> date(<span class="phpstringcolor" style="color:brown">"Y-m-d h:i:sa"</span>, $d) . <span class="phpstringcolor" style="color:brown">"&lt;br&gt;"</span>;<br><span class="phptagcolor" style="color:red">?&gt;</span></span> </div>
+            <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_date6" rel="nofollow">Выполнить пример »</a>
+         </div>
+         <p>Однако <code class="w3-codespan">strtotime()</code> не идеален, поэтому не забудьте проверить строки, которые вы там вставили.</p>
+         <hr>
+
+         <h2>Больше примеров даты</h2>
+         <p>В приведенном ниже примере выводятся даты следующих шести суббот:</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code htmlHigh notranslate">
+               <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br>$startdate = strtotime(<span class="phpstringcolor" style="color:brown">"Saturday"</span>);<br>$enddate = strtotime(<span class="phpstringcolor" style="color:brown">"+6 weeks"</span>, $startdate);<br><br><span class="phpkeywordcolor" style="color:mediumblue">while</span> ($startdate &lt; $enddate) {<br>&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">echo</span> date(<span class="phpstringcolor" style="color:brown">"M d"</span>, $startdate) . <span class="phpstringcolor" style="color:brown">"&lt;br&gt;"</span>;<br>&nbsp; $startdate = strtotime(<span class="phpstringcolor" style="color:brown">"+1 week"</span>, $startdate);<br>}<br><span class="phptagcolor" style="color:red">?&gt;</span></span> </div>
+            <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_date7" rel="nofollow">Выполнить пример »</a>
+         </div>
+         <p>В приведенном ниже примере показано количество дней до 4 июля:</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code htmlHigh notranslate">
+               <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br>$d1=strtotime(<span class="phpstringcolor" style="color:brown">"July 04"</span>);<br>$d2=ceil(($d1-time())/<span class="phpnumbercolor" style="color:red">60</span>/<span class="phpnumbercolor" style="color:red">60</span>/<span class="phpnumbercolor" style="color:red">24</span>);<br><span class="phpnumbercolor" style="color:red">
+                  </span> <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"There are "</span> . $d2 .<span class="phpstringcolor" style="color:brown">" days until 4th of July."</span>;<br><span class="phptagcolor" style="color:red">?&gt;</span></span> </div>
+            <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_date8" rel="nofollow">Выполнить пример »</a>
+         </div>
+         <hr>
+
+         <h2>PHP Даты. Полный справочник</h2>
+         <p>Для полного ознакомления со всеми функциями даты перейдите на <a href="php_ref_date.asp">PHP Даты. Полный Справочник</a>.</p>
+         <p>Справочник содержит краткое описание и примеры использования для каждой функции!</p>
+         <hr>
+         <form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/php/exercise.asp?filename=exercise_dates1" method="post" target="_blank" rel="nofollow">
+            <h2>Проверьте себя с помощью упражнений</h2>
+            <div class="exercisewindow">
+               <h2>Упражнение:</h2>
+               <p>Используйте правильную функцию даты, чтобы вывести название дня недели сегодня (понедельник, вторник и т.д.).</p>
+               <div class="exerciseprecontainer">
+                  <pre>echo <input name="ex1" maxlength="9" style="width: 96px;">;
+</pre>
+               </div>
+               <br>
+               <button type="submit" class="w3-btn w3-margin-bottom">Отправить ответ »</button>
+            </div>
+         </form>
+         <br>
+         <div class="keys">
+            <strong>W3Schools на русском </strong>
+            <strong>уроки для начинающих </strong>
+            <strong>для новичков </strong>
+            <strong>основы языка </strong>
+            <strong>курсы с нуля </strong>
+            <strong>язык php </strong>
+            <strong>даты и время </strong>
+            <strong>дни недели </strong>
+            <strong>как вывести в PHP </strong>
+            <strong>полный справочник дат </strong>
+         </div>
+
+         <hr>
+         <!-- buttons prev - next -->
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="php_arrays_multi.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="php_includes.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         <!-- / buttons prev - next -->
+         <hr class="hr-bottom">
+         <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left">
+         <p class="note-warning"><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
+         <!-- Комментарии от Disqus -->
+         <div id="disqus_thread"></div>
+         <script>
+            var disqus_config = function() {
+               this.page.url = html5beginner.github.io; // канонический URL страницы
+               this.page.identifier = html5beginner.github.io / php / php_date.html; // уникальный идентификатор страницы
+            };
+            (function() { // Не редактировать ниже этой линии
+               var d = document,
+                  s = d.createElement('script');
+               s.src = 'https://html5beginners.disqus.com/embed.js';
+               s.setAttribute('data-timestamp', +new Date());
+               (d.head || d.body).appendChild(s);
+            })();
+
+         </script>
+         <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+         <!-- / Комментарии от Disqus -->
+      </div>
+
+      <!-- / CONTENT -->
+      <div class="right-sidebar">
+         <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+      </div>
+   </main>
+   <footer>
+      <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+   </footer>
+</body>
+
+</html>
