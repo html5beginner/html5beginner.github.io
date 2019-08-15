@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <title>PHP 5 Сессии. W3schools на русском. Уроки для начинающих</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="keywords" content="PHP,PHP5,сессии,примеры,уроки,для начинающих,учебник,основы,языка,w3schools,на русском,сайт" />
+   <meta name="description" content="PHP5 Пособие. PHP сессии. Способ хранения информации. Курс по основам PHP. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+   <link rel="stylesheet" href="../styles/style.css" />
+   <link rel="stylesheet" href="../styles/ws.css" />
+   <link rel="stylesheet" href="../styles/handheld.css" />
+   <link rel="canonical" href="https://html5beginner.github.io/" />
+   <meta property="og:title" content="PHP 5 Сессии. W3schools на русском. Уроки для начинающих" />
+   <meta property="og:type" content="Content" />
+   <!--описывает тип объекта на странице-->
+   <meta property="og:url" content="https://html5beginner.github.io/" />
+   <!--адрес сайта-->
+   <meta property="og:image" content="../image/html5_64x64.png" />
+   <!--адрес картинки-->
+   <meta property="og:description" content="PHP5 Пособие. PHP сессии. Способ хранения информации. Курс по основам PHP. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+   <meta property="og:locale" content="ru" />
+   <!--язык сайта-->
+   <meta property="og:site_name" content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Уроки W3Schools на русском" />
+   <script src="../js/topnav.js"></script>
+</head>
+
+<body>
+   <iframe src="../pages/header.html" class="frame-header"></iframe>
+   <main>
+
+      <div class="left-sidebar">
+         <iframe src="../pages/menuphp5.html" class="frame-left-sidebar"></iframe>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+         <h1>PHP 5 Сессии</h1>
+         <p class="brief"><strong>Курс по основам языка программирования PHP.<br> W3Schools на русском языке. Уроки для начинающих</strong></p>
+         <hr>
+         <!-- buttons prev - next -->
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="php_cookies.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="php_filter.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         <!-- buttons prev - next -->
+         <hr>
+         <p class="intro">Сессия - это способ хранения информации (в переменных) для использования на нескольких страницах.</p>
+         <p class="intro">В отличие от куки, информация не хранится на компьютере пользователя.</p>
+         <hr>
+
+         <h2>Что такое PHP сессия?</h2>
+         <p>Когда вы работаете с приложением, вы открываете его, вносите некоторые изменения, а затем закрываете его. Это очень похоже на сессию. Компьютер знает, кто ты. Он знает, когда вы запускаете приложение и когда вы закрываете его. Но в Интернете есть одна проблема: веб-сервер не знает, кто вы и чем занимаетесь, потому что HTTP-адрес не поддерживает состояние.</p>
+         <p>Переменные сессии решают эту проблему путем хранения пользовательской информации, которая будет использоваться на нескольких страницах (например, имя пользователя, любимый цвет и т.д.). По умолчанию переменные сеанса сохраняются до тех пор, пока пользователь не закроет браузер.</p>
+         <p>Таким образом, переменные сессии содержат информацию об одном пользователе и доступны для всех страниц в одном приложении.</p>
+
+         <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> Если вам нужно постоянное хранилище, вы можете сохранить данные в базе данных - <a href="php_mysql_intro.html">database</a>.</p>
+         </div>
+         <hr>
+
+         <h2>Начало PHP сессии</h2>
+         <p>Сессия запускается с помощью функции <code class="w3-codespan">session_start()</code>.</p>
+         <p>Переменные сессии устанавливаются с помощью глобальной переменной PHP: <code class="w3-codespan">$_SESSION</code>.</p>
+         <p>Теперь давайте создадим новую страницу с именем <i>"demo_session1.php"</i>. На этой странице мы начинаем новую PHP сессию и устанавливаем некоторые переменные сессии:</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code htmlHigh notranslate">
+               <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br><span class="commentcolor" style="color:green">// Начало сессии<br></span>session_start();<br><span class="phptagcolor" style="color:red">?&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br><span class="commentcolor" style="color:green">// Установите переменные сессии<br></span><span class="phpglobalcolor" style="color:goldenrod">$_SESSION</span>[<span class="phpstringcolor" style="color:brown">"favcolor"</span>] = <span class="phpstringcolor" style="color:brown">"green"</span>;<br><span class="phpglobalcolor" style="color:goldenrod">$_SESSION</span>[<span class="phpstringcolor" style="color:brown">"favanimal"</span>] = <span class="phpstringcolor" style="color:brown">"cat"</span>;<br><span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"Session variables are set."</span>;<br><span class="phptagcolor" style="color:red">?&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_session1" rel="nofollow">Выполнить пример »</a>
+         </div>
+         <div class="w3-panel w3-note">
+            <p><strong><b>Примечание:</b></strong> Функция <code class="w3-codespan">session_start()</code> должна быть указана самой первой в HTML-документе. Перед любыми HTML тегами.</p>
+         </div>
+         <hr>
+
+         <h2>Получение значения переменной PHP сессии</h2>
+         <p>Далее мы создаем ещё одну страницу под названием <i>"demo_session2.php"</i>. На этой странице мы получим доступ к информации о сессии, которую мы установили на первой странице (<i>"demo_session1.php"</i>).</p>
+         <p>Обратите внимание, что переменные сессии не передаются по отдельности каждой новой странице, а извлекаются из сессии, которую мы открываем в начале каждой страницы (<code class="w3-codespan">session_start()</code>).</p>
+         <p>Также обратите внимание, что все значения переменных сессии хранятся в глобальной переменной <code class="w3-codespan">$_SESSION</code>:</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code htmlHigh notranslate">
+               <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br>session_start();<br><span class="phptagcolor" style="color:red">?&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br><span class="commentcolor" style="color:green">// Echo сессии, которые были установлены на предыдущей странице<br></span><span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"Favorite color is "</span> . <span class="phpglobalcolor" style="color:goldenrod">$_SESSION</span>[<span class="phpstringcolor" style="color:brown">"favcolor"</span>] . <span class="phpstringcolor" style="color:brown">".&lt;br&gt;"</span>;<br><span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"Favorite animal is "</span> . <span class="phpglobalcolor" style="color:goldenrod">$_SESSION</span>[<span class="phpstringcolor" style="color:brown">"favanimal"</span>] . <span class="phpstringcolor" style="color:brown">"."</span>;<br><span class="phptagcolor" style="color:red">?&gt;</span></span><br><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_session2" rel="nofollow">Выполнить пример »</a>
+         </div>
+         <p>Другой способ показать все значения переменных сессии для пользовательской сессии - запустить следующий код:</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code htmlHigh notranslate">
+               <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br>session_start();<br><span class="phptagcolor" style="color:red">?&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br><span class="phpnumbercolor" style="color:red">
+                  </span> print_r(<span class="phpglobalcolor" style="color:goldenrod">$_SESSION</span>);<br><span class="phptagcolor" style="color:red">?&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_session3" rel="nofollow">Выполнить пример »</a>
+         </div>
+
+         <div class="w3-panel w3-note">
+            <p><strong>Как это работает? Как он узнал, что это я?</strong><br><br>Большинство сессий устанавливают на компьютере пользователя ключ пользователя, который выглядит примерно так: 765487cf34ert8dede5a562e4f3a7e12. Затем, когда сессия открывается на другой странице, он сканирует компьютер на предмет наличия ключа пользователя. Если есть совпадение, он обращается к этой сессии, если нет, он начинает новую сессию.</p>
+         </div>
+         <hr>
+
+         <h2>Изменение переменной PHP сессии</h2>
+         <p>Чтобы изменить переменную сессии, просто перезапишите её:</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code htmlHigh notranslate">
+               <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br>session_start();<br><span class="phptagcolor" style="color:red">?&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br><span class="commentcolor" style="color:green">// чтобы изменить переменную сессии, просто перезапишите её <br></span><span class="phpglobalcolor" style="color:goldenrod">$_SESSION</span>[<span class="phpstringcolor" style="color:brown">"favcolor"</span>] = <span class="phpstringcolor" style="color:brown">"yellow"</span>;<br>print_r(<span class="phpglobalcolor" style="color:goldenrod">$_SESSION</span>);<br><span class="phptagcolor" style="color:red">?&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_session4" rel="nofollow">Выполнить пример »</a>
+         </div>
+         <hr>
+
+         <h2>Уничтожение PHP сессии</h2>
+         <p>Чтобы удалить все глобальные переменные сессии и уничтожить сессию, используйте <code class="w3-codespan">session_unset()</code> и <code class="w3-codespan">session_destroy()</code>:</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code htmlHigh notranslate">
+               <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br>session_start();<br><span class="phptagcolor" style="color:red">?&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br><span class="commentcolor" style="color:green">// удалить все переменные сессии<br></span>session_unset(); <br><br><span class="commentcolor" style="color:green">// уничтожить сессию <br></span>session_destroy(); <br><span class="phptagcolor" style="color:red">?&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_session5" rel="nofollow">Выполнить пример »</a>
+         </div>
+         <hr>
+         <form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/php/exercise.asp?filename=exercise_advanced5" method="post" target="_blank" rel="nofollow">
+            <h2>Проверьте себя с помощью упражнений</h2>
+            <div class="exercisewindow">
+               <h2>Упражнение:</h2>
+               <p>Создайте переменную сессии с именем "favcolor".</p>
+               <div class="exerciseprecontainer">
+                  <pre>session_start();
+<input name="ex1" maxlength="9" style="width: 96px;">["favcolor"] = "green";
+</pre>
+               </div>
+               <br>
+               <button type="submit" class="w3-btn w3-margin-bottom">Отправить ответ »</button>
+            </div>
+         </form>
+
+
+         <br>
+         <div class="keys">
+            <strong>W3Schools на русском </strong>
+            <strong>уроки для начинающих </strong>
+            <strong>для новичков </strong>
+            <strong>основы языка </strong>
+            <strong>курсы с нуля </strong>
+            <strong>язык php </strong>
+            <strong>сессии в PHP </strong>
+            <strong>что такое сессии в PHP </strong>
+            <strong>переменные PHP сессии</strong>
+            <strong>примеры PHP </strong>
+         </div>
+
+         <hr>
+         <!-- buttons prev - next -->
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="php_cookies.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="php_filter.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         <!-- / buttons prev - next -->
+         <hr class="hr-bottom">
+         <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left">
+         <p class="note-warning"><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
+         <!-- Комментарии от Disqus -->
+         <div id="disqus_thread"></div>
+         <script>
+            var disqus_config = function() {
+               this.page.url = html5beginner.github.io; // канонический URL страницы
+               this.page.identifier = html5beginner.github.io / php / php_sessions.html; // уникальный идентификатор страницы
+            };
+            (function() { // Не редактировать ниже этой линии
+               var d = document,
+                  s = d.createElement('script');
+               s.src = 'https://html5beginners.disqus.com/embed.js';
+               s.setAttribute('data-timestamp', +new Date());
+               (d.head || d.body).appendChild(s);
+            })();
+
+         </script>
+         <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+         <!-- / Комментарии от Disqus -->
+      </div>
+
+      <!-- / CONTENT -->
+      <div class="right-sidebar">
+         <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+      </div>
+   </main>
+   <footer>
+      <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+   </footer>
+</body>
+
+</html>
