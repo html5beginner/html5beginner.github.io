@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <title>PHP 5 Загрузка файлов. W3schools на русском. Уроки для начинающих</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="keywords" content="PHP,PHP5,загрузка,файлов,пример,уроки,для начинающих,учебник,основы,языка,w3schools,на русском,сайт" />
+   <meta name="description" content="PHP5 Пособие. Как загрузить PHP файл. Курс по основам PHP. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+   <link rel="stylesheet" href="../styles/style.css" />
+   <link rel="stylesheet" href="../styles/ws.css" />
+   <link rel="stylesheet" href="../styles/handheld.css" />
+   <link rel="canonical" href="https://html5beginner.github.io/" />
+   <meta property="og:title" content="PHP 5 Загрузка файлов. W3schools на русском. Уроки для начинающих" />
+   <meta property="og:type" content="Content" />
+   <!--описывает тип объекта на странице-->
+   <meta property="og:url" content="https://html5beginner.github.io/" />
+   <!--адрес сайта-->
+   <meta property="og:image" content="../image/html5_64x64.png" />
+   <!--адрес картинки-->
+   <meta property="og:description" content="PHP5 Пособие. Как загрузить PHP файл. Курс по основам PHP. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+   <meta property="og:locale" content="ru" />
+   <!--язык сайта-->
+   <meta property="og:site_name" content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Уроки W3Schools на русском" />
+   <script src="../js/topnav.js"></script>
+</head>
+
+<body>
+   <iframe src="../pages/header.html" class="frame-header"></iframe>
+   <main>
+
+      <div class="left-sidebar">
+         <iframe src="../pages/menuphp5.html" class="frame-left-sidebar"></iframe>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+         <h1>PHP 5 Загрузка файлов</h1>
+         <p class="brief"><strong>Курс по основам языка программирования PHP.<br> W3Schools на русском языке. Уроки для начинающих</strong></p>
+         <hr>
+         <!-- buttons prev - next -->
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="php_file_create.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="php_cookies.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         <!-- buttons prev - next -->
+         <hr>
+         <p class="intro">С помощью PHP легко загружать файлы на сервер.</p>
+<p class="intro">Однако с легкостью возникает опасность, поэтому всегда будьте осторожны при загрузке файлов!</p>
+<hr>
+
+<h2>Настройка файла "php.ini"</h2>
+<p>Во-первых, убедитесь, что PHP настроен на загрузку файлов..</p>
+<p>В вашем файле "php.ini" найдите директиву <code class="w3-codespan">file_uploads</code> и установите для неё значение <b>On</b> (т.е. включено):</p>
+<div class="w3-example">
+<div class="w3-code htmlHigh notranslate">
+file_uploads = On
+ </div>
+</div>
+<hr>
+
+<h2>Создание HTML формы</h2>
+<p>Затем создайте HTML-форму, которая позволит пользователям выбирать файл изображения, который они хотят загрузить:</p>
+<div class="w3-example">
+<div class="w3-code htmlHigh notranslate">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">="upload.php"</span> method<span class="attributevaluecolor" style="color:mediumblue">="post"</span>
+enctype<span class="attributevaluecolor" style="color:mediumblue">="multipart/form-data"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; Выберите изображение для загрузки:<br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="file"</span> name<span class="attributevaluecolor" style="color:mediumblue">="fileToUpload"</span> id<span class="attributevaluecolor" style="color:mediumblue">="fileToUpload"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span> value<span class="attributevaluecolor" style="color:mediumblue">="Upload Image"</span> name<span class="attributevaluecolor" style="color:mediumblue">="submit"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+</div>
+
+<p>Некоторые правила для HTML-формы выше:</p>
+<ul>
+<li>Убедитесь, что форма использует <code class="w3-codespan">method="post"</code></li>
+   <li>Для формы также необходим следующий атрибут: <code class="w3-codespan">enctype="multipart/form-data"</code>. Указывает, какой тип контента использовать при отправке формы</li>
+</ul>
+<p>Без вышеуказанных требований загрузка файла не будет работать.</p>
+<p>На что ещё стоит обратить внимание:</p>
+<ul>
+   <li>Атрибут <code class="w3-codespan">type="file"</code> в теге <code class="w3-codespan">&lt;input&gt;</code> показывает поле ввода в качестве элемента управления выбором файла с кнопкой «Обзор» рядом с элементом управления вводом</li>
+</ul>
+<p>Приведенная выше форма отправляет данные в файл с именем <i>upload.php</i>, который мы создадим следующим.</p>
+<hr>
+
+<h2>PHP скрипт - создание файла загрузки</h2>
+<p>Файл <i>"upload.php"</i> содержит код для загрузки файла:</p>
+<div class="w3-example">
+<div class="w3-code htmlHigh notranslate">
+<span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br>$target_dir = <span class="phpstringcolor" style="color:brown">"uploads/"</span>;<br>$target_file = $target_dir . basename(<span class="phpglobalcolor" style="color:goldenrod">$_FILES</span>[<span class="phpstringcolor" style="color:brown">"fileToUpload"</span>][<span class="phpstringcolor" style="color:brown">"name"</span>]);<br>$uploadOk = <span class="phpnumbercolor" style="color:red">1</span>;<br>$imageFileType = <span class="phpnumbercolor" style="color:red">
+</span>  strtolower(pathinfo($target_file,PATHINFO_EXTENSION));<br><span class="commentcolor" style="color:green">// Check if image file is a actual image or fake image<br></span><span class="phpkeywordcolor" style="color:mediumblue">if</span>(<span class="phpkeywordcolor" style="color:mediumblue">isset</span>(<span class="phpglobalcolor" style="color:goldenrod">$_POST</span>[<span class="phpstringcolor" style="color:brown">"submit"</span>])) {<br>&nbsp;&nbsp;&nbsp; $check = getimagesize(<span class="phpglobalcolor" style="color:goldenrod">$_FILES</span>[<span class="phpstringcolor" style="color:brown">"fileToUpload"</span>][<span class="phpstringcolor" style="color:brown">"tmp_name"</span>]);<br>&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">if</span>($check !== false) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"File is an image - "</span> . $check[<span class="phpstringcolor" style="color:brown">"mime"</span>] . <span class="phpstringcolor" style="color:brown">"."</span>;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $uploadOk = <span class="phpnumbercolor" style="color:red">1</span>;<br>&nbsp;&nbsp;&nbsp; } <span class="phpkeywordcolor" style="color:mediumblue">else</span> {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"File is not an image."</span>;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $uploadOk = <span class="phpnumbercolor" style="color:red">0</span>;<br>&nbsp;&nbsp;&nbsp; }<br>}<br><span class="phptagcolor" style="color:red">?&gt;</span></span>
+ </div>
+</div>
+<p>Пояснение PHP скрипта:</p>
+<ul>
+  <li>$target_dir = "uploads/" - указывает каталог, в который будет помещен файл</li>
+  <li>$target_file указывает путь к файлу для загрузки</li>
+  <li>$uploadOk=1 еще не используется (будет использоваться позже)</li>
+  <li>$imageFileType содержит расширение файла (в нижнем регистре)</li>
+  <li>Затем проверьте, является ли файл изображения фактическим изображением или поддельным изображением.</li>
+</ul>
+
+<div class="w3-panel w3-note"><p>
+</p><p><strong>Примечание:</strong> Вам нужно будет создать новый каталог с именем <i>"uploads"</i> в каталоге, где находится файл <i>"upload.php"</i>. Загруженные файлы будут сохранены там.</p>
+</div>
+<hr>
+
+<h2>Проверьте, существует ли файл уже</h2>
+<p>Теперь мы можем добавить некоторые ограничения.</p>
+<p>Сначала мы проверим, существует ли файл в папке <i>"uploads"</i>. Если это так, отображается сообщение об ошибке, и <i>$uploadOk</i> устанавливается в 0:</p>
+<div class="w3-example">
+<div class="w3-code htmlHigh notranslate">
+// Проверяем, существует ли файл<br> if (file_exists($target_file)) {<br>&nbsp;&nbsp;&nbsp; echo "Извините, файл уже существует";<br>&nbsp;&nbsp;&nbsp; $uploadOk = 0;<br>
+ }  </div>
+</div>
+<hr>
+
+<h2>Ограничение размера файла</h2>
+<p>Поле ввода файла в HTML-форме называется <i>"fileToUpload"</i>.</p>
+<p>Теперь проверяем размер файла. Если размер файла превышает 500 КБ, отображается сообщение об ошибке, и <i>uploadOk</i> имеет значение 0:</p>
+<div class="w3-example">
+<div class="w3-code phpHigh notranslate">
+// Проверяем размер файла<br>if ($_FILES["fileToUpload"]["size"] &gt; 500000) {<br>&nbsp;&nbsp;&nbsp; echo "Извините, ваш файл слишком большой.";<br>&nbsp;&nbsp;&nbsp; $uploadOk = 0;<br>
+ } </div>
+</div>
+<hr>
+
+<h2>Ограничение типа файла</h2>
+<p>Приведенный ниже код позволяет пользователям загружать только файлы JPG, JPEG, PNG и GIF. Все другие типы файлов выдают сообщение об ошибке перед установкой <i>$uploadOk</i> в 0:</p>
+<div class="w3-example">
+<div class="w3-code phpHigh notranslate">
+// Разрешить определенные форматы файлов<br>if($imageFileType != "jpg" &amp;&amp; $imageFileType  != "png" &amp;&amp; $imageFileType != "jpeg"<br>&amp;&amp; $imageFileType != "gif" ) {<br>&nbsp;&nbsp;&nbsp;  echo "Извините, только JPG, JPEG, PNG и GIF файлы разрешены.";<br>&nbsp;&nbsp;&nbsp;  $uploadOk = 0;<br>}
+</div>
+</div>
+<hr>
+
+<h2>Полный PHP скрипт загрузки файла</h2>
+<p>Весь файл <i>upload.php</i> теперь выглядит так:</p>
+<div class="w3-example">
+<div class="w3-code htmlHigh notranslate">
+<span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br>$target_dir = <span class="phpstringcolor" style="color:brown">"uploads/"</span>;<br>$target_file = $target_dir . basename(<span class="phpglobalcolor" style="color:goldenrod">$_FILES</span>[<span class="phpstringcolor" style="color:brown">"fileToUpload"</span>][<span class="phpstringcolor" style="color:brown">"name"</span>]);<br>$uploadOk = <span class="phpnumbercolor" style="color:red">1</span>;<br>$imageFileType = <span class="phpnumbercolor" style="color:red">
+</span>  strtolower(pathinfo($target_file,PATHINFO_EXTENSION));<br><span class="commentcolor" style="color:green">// Проверьте, является ли файл изображения фактическим изображением или поддельным изображением<br></span><span class="phpkeywordcolor" style="color:mediumblue">if</span>(<span class="phpkeywordcolor" style="color:mediumblue">isset</span>(<span class="phpglobalcolor" style="color:goldenrod">$_POST</span>[<span class="phpstringcolor" style="color:brown">"submit"</span>])) {<br>&nbsp;&nbsp;&nbsp; $check = getimagesize(<span class="phpglobalcolor" style="color:goldenrod">$_FILES</span>[<span class="phpstringcolor" style="color:brown">"fileToUpload"</span>][<span class="phpstringcolor" style="color:brown">"tmp_name"</span>]);<br>&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">if</span>($check !== false) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"Файл является изображением - "</span> . $check[<span class="phpstringcolor" style="color:brown">"mime"</span>] . <span class="phpstringcolor" style="color:brown">"."</span>;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $uploadOk = <span class="phpnumbercolor" style="color:red">1</span>;<br>&nbsp;&nbsp;&nbsp; } <span class="phpkeywordcolor" style="color:mediumblue">else</span> {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"Файл не является изображением."</span>;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $uploadOk = <span class="phpnumbercolor" style="color:red">0</span>;<br>&nbsp;&nbsp;&nbsp; }<br>}<br><span class="commentcolor" style="color:green">// Проверьте, существует ли файл<br></span><span class="phpkeywordcolor" style="color:mediumblue">if</span> (file_exists($target_file)) {<br>&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"Извините, файл уже существует."</span>;<br>&nbsp;&nbsp;&nbsp; $uploadOk = <span class="phpnumbercolor" style="color:red">0</span>;<br>}<br><span class="phpnumbercolor" style="color:red">
+</span> <span class="commentcolor" style="color:green">// Проверьте размер файла<br></span><span class="phpkeywordcolor" style="color:mediumblue">if</span> (<span class="phpglobalcolor" style="color:goldenrod">$_FILES</span>[<span class="phpstringcolor" style="color:brown">"fileToUpload"</span>][<span class="phpstringcolor" style="color:brown">"size"</span>] &gt; <span class="phpnumbercolor" style="color:red">500000</span>) {<br>&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"Извините, ваш файл слишком большой."</span>;<br>&nbsp;&nbsp;&nbsp; $uploadOk = <span class="phpnumbercolor" style="color:red">0</span>;<br><span class="phpnumbercolor" style="color:red">
+</span> }<br><span class="commentcolor" style="color:green">// Разрешить определенные форматы файлов<br></span><span class="phpkeywordcolor" style="color:mediumblue">if</span>($imageFileType != <span class="phpstringcolor" style="color:brown">"jpg"</span> &amp;&amp; $imageFileType != <span class="phpstringcolor" style="color:brown">"png"</span> &amp;&amp; $imageFileType != <span class="phpstringcolor" style="color:brown">"jpeg"</span><br>&amp;&amp; $imageFileType != <span class="phpstringcolor" style="color:brown">"gif"</span> ) {<br>&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"Извините, только JPG, JPEG, PNG &amp; GIF файлы разрешены."</span>;<br>&nbsp;&nbsp;&nbsp; $uploadOk = <span class="phpnumbercolor" style="color:red">0</span>;<br>}<br><span class="commentcolor" style="color:green">// Проверьте, не установлен ли $uploadOk в 0 по ошибке<br></span><span class="phpkeywordcolor" style="color:mediumblue">if</span> ($uploadOk == <span class="phpnumbercolor" style="color:red">0</span>) {<br>&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"Извините, ваш файл не был загружен."</span>;<br><span class="commentcolor" style="color:green">// если все в порядке, попробуйте загрузить файл<br></span>} <span class="phpkeywordcolor" style="color:mediumblue">else</span> {<br>&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">if</span> (move_uploaded_file(<span class="phpglobalcolor" style="color:goldenrod">$_FILES</span>[<span class="phpstringcolor" style="color:brown">"fileToUpload"</span>][<span class="phpstringcolor" style="color:brown">"tmp_name"</span>], $target_file)) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"Файл "</span>. basename( <span class="phpglobalcolor" style="color:goldenrod">$_FILES</span>[<span class="phpstringcolor" style="color:brown">"fileToUpload"</span>][<span class="phpstringcolor" style="color:brown">"name"</span>]). <span class="phpstringcolor" style="color:brown">" был загружен."</span>;<br>&nbsp;&nbsp;&nbsp; } <span class="phpkeywordcolor" style="color:mediumblue">else</span> {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"Извините, при загрузке файла произошла ошибка."</span>;<br>&nbsp;&nbsp;&nbsp; }<br>}<br><span class="phptagcolor" style="color:red">?&gt;</span></span>
+ </div>
+</div>
+<hr>
+
+<h2>Полный справочник по файловой системе PHP</h2>
+         <p>Для получения более полной информации о функциях файловой системы, перейдите к <a href="php_ref_filesystem.html">PHP Файловая система. Полный справочник</a>.</p>
+
+         <br>
+         <div class="keys">
+            <strong>W3Schools на русском </strong>
+            <strong>уроки для начинающих </strong>
+            <strong>для новичков </strong>
+            <strong>основы языка </strong>
+            <strong>курсы с нуля </strong>
+            <strong>язык php </strong>
+            <strong>загрузка PHP файлов </strong>
+            <strong>файлы в PHP </strong>
+            <strong>работа с файлами в PHP </strong>
+            <strong>примеры PHP </strong>
+         </div>
+
+         <hr>
+         <!-- buttons prev - next -->
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="php_file_create.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="php_cookies.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         <!-- / buttons prev - next -->
+         <hr class="hr-bottom">
+         <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left">
+         <p class="note-warning"><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
+         <!-- Комментарии от Disqus -->
+         <div id="disqus_thread"></div>
+         <script>
+            var disqus_config = function() {
+               this.page.url = html5beginner.github.io; // канонический URL страницы
+               this.page.identifier = html5beginner.github.io / php / php_file_create.html; // уникальный идентификатор страницы
+            };
+            (function() { // Не редактировать ниже этой линии
+               var d = document,
+                  s = d.createElement('script');
+               s.src = 'https://html5beginners.disqus.com/embed.js';
+               s.setAttribute('data-timestamp', +new Date());
+               (d.head || d.body).appendChild(s);
+            })();
+
+         </script>
+         <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+         <!-- / Комментарии от Disqus -->
+      </div>
+
+      <!-- / CONTENT -->
+      <div class="right-sidebar">
+         <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+      </div>
+   </main>
+   <footer>
+      <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+   </footer>
+</body>
+
+</html>
