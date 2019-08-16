@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang=ru>
+<head>
+<title>PHP 5 Обработка ошибок. W3schools на русском. Уроки для начинающих</title>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, initial-scale=1" />
+<meta name=keywords content="PHP,PHP5,обработка,ошибок,примеры,уроки,для начинающих,учебник,основы,языка,w3schools,на русском,сайт" />
+<meta name=description content="PHP5 Пособие. Обработка ошибок в PHP. Курс по основам PHP. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+<link rel=icon href=/favicon.ico type=image/x-icon />
+<link rel=stylesheet href=../styles/style.css />
+<link rel=stylesheet href=../styles/ws.css />
+<link rel=stylesheet href=../styles/handheld.css />
+<link rel=canonical href=https://html5beginner.github.io/ />
+<meta property=og:title content="PHP 5 Обработка ошибок. W3schools на русском. Уроки для начинающих" />
+<meta property=og:type content=Content />
+<meta property=og:url content=https://html5beginner.github.io/ />
+<meta property=og:image content=../image/html5_64x64.png />
+<meta property=og:description content="PHP5 Пособие. Обработка ошибок в PHP. Курс по основам PHP. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+<meta property=og:locale content=ru />
+<meta property=og:site_name content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Уроки W3Schools на русском" />
+<script src=../js/topnav.js></script>
+</head>
+<body>
+<iframe src=../pages/header.html class=frame-header></iframe>
+<main>
+<div class=left-sidebar>
+<iframe src=../pages/menuphp5.html class=frame-left-sidebar></iframe>
+</div>
+<div class=content>
+<h1>PHP 5 Обработка ошибок</h1>
+<p class=brief><strong>Курс по основам языка программирования PHP.<br> W3Schools на русском языке. Уроки для начинающих</strong></p>
+<hr>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href=php_filter_advanced.html title="Предыдущая страница" rel=prev>❮ Prev</a>
+<a class="w3-right w3-btn" href=php_exception.html title="Следующая страница" rel=next>Next ❯</a>
+</div>
+<hr>
+<p class=intro>По умолчанию <strong>обработка ошибок в PHP</strong> очень проста. Сообщение об ошибке с именем файла, номером строки и сообщением об ошибке отправляется в браузер.</p>
+<hr>
+<h2>PHP Обработка ошибок</h2>
+<p>При создании скриптов и веб-приложений обработка ошибок является важной частью. Если в вашем коде отсутствует код проверки ошибок, ваша программа может выглядеть очень непрофессионально, и вы можете быть подвержены угрозам безопасности.</p>
+<p>Это руководство содержит некоторые из наиболее распространенных методов проверки ошибок в PHP.</p>
+<p>Мы покажем разные методы обработки ошибок:</p>
+<ul>
+<li>Простые выражения "die()"</li>
+<li>Пользовательские ошибки и триггеры ошибок</li>
+<li>Отчет об ошибках</li>
+</ul>
+<hr>
+<h2>Основная обработка ошибок: использование функции die()</h2>
+<p>Die - (<i>перевод с анг.</i>) - умереть.</p>
+<p>В первом примере показан простой скрипт, который открывает текстовый файл:</p>
+<div class=w3-example>
+<div class="w3-code htmlHigh notranslate">
+<span class=phpcolor style=color:black><span class=phptagcolor style=color:red>&lt;?php</span><br>
+$file=fopen(<span class=phpstringcolor style=color:brown>"welcome.txt"</span>,<span class=phpstringcolor style=color:brown>"r"</span>);<br>
+<span class=phptagcolor style=color:red>?&gt;</span></span>
+</div>
+</div>
+<p>Если файл не существует, вы можете получить такую ошибку:</p>
+<div class="w3-code w3-border notranslate">
+<div>
+<b>Предупреждение</b>: fopen(welcome.txt) [function.fopen]: не удалось открыть поток:<br>
+Нет такого файла или каталога <b>C:\webfolder\test.php</b> в строке <b>2</b>
+</div>
+</div>
+<p>Чтобы пользователь не мог получить сообщение об ошибке, подобное приведенному выше, мы проверяем, существует ли файл, прежде чем пытаться получить к нему доступ:</p>
+<div class=w3-example>
+<div class="w3-code htmlHigh notranslate">
+<span class=phpcolor style=color:black><span class=phptagcolor style=color:red>&lt;?php</span><br>
+<span class=phpkeywordcolor style=color:mediumblue>if</span>(!file_exists(<span class=phpstringcolor style=color:brown>"welcome.txt"</span>))&nbsp;{<br><span class=phpnumbercolor style=color:red>
+</span>&nbsp;&nbsp;<span class=phpkeywordcolor style=color:mediumblue>die</span>(<span class=phpstringcolor style=color:brown>"File not found"</span>);<br><span class=phpnumbercolor style=color:red>
+</span> }
+<span class=phpkeywordcolor style=color:mediumblue>else</span> {<br><span class=phpnumbercolor style=color:red>
+</span>&nbsp;&nbsp;$file=fopen(<span class=phpstringcolor style=color:brown>"welcome.txt"</span>,<span class=phpstringcolor style=color:brown>"r"</span>);<br><span class=phpnumbercolor style=color:red>
+</span> }<br>
+<span class=phptagcolor style=color:red>?&gt;</span></span>
+</div>
+</div>
+<p>Теперь, если файл не существует, вы получаете сообщение об ошибке, подобное этому:</p>
+<div class="w3-code w3-border notranslate">File not found (Файл не найден)</div>
+<p>Приведенный выше код более эффективен, чем предыдущий, потому что он использует простой механизм обработки ошибок, чтобы остановить скрипт после ошибки.</p>
+<p>Однако простая остановка скрипта - не всегда правильный путь. Давайте посмотрим на альтернативные функции PHP для обработки ошибок.</p>
+<hr>
+<h2>Создание собственного обработчика ошибок</h2>
+<p>Создать собственный обработчик ошибок довольно просто. Мы просто создаем специальную функцию, которую можно вызывать при возникновении ошибки в PHP.</p>
+<p>Эта функция должна иметь возможность обрабатывать минимум два параметра (уровень ошибки и сообщение об ошибке), но может принимать до пяти параметров (необязательно: файл, номер строки и контекст ошибки):</p>
+<h2>Синтаксис</h2>
+<div class="w3-code w3-border notranslate">
+<div>
+error_function(error_level,error_message,<br>
+error_file,error_line,error_context)
+</div>
+</div>
+<table class="w3-table-all notranslate">
+<tbody>
+<tr>
+<th style=width:20%>Параметр</th>
+<th style=width:80%>Описание</th>
+</tr>
+<tr>
+<td>error_level</td>
+<td>Обязательно. Определяет уровень отчета об ошибке для пользовательской ошибки. Должно быть значением числа. В таблице ниже приведены возможные уровни сообщений об ошибках.</td>
+</tr>
+<tr>
+<td>error_message</td>
+<td>Обязательно. Определяет сообщение об ошибке для пользовательской ошибки</td>
+</tr>
+<tr>
+<td>error_file</td>
+<td>Не обязательно. Указывает имя файла, в котором произошла ошибка</td>
+</tr>
+<tr>
+<td>error_line</td>
+<td>Не обязательно. Указывает номер строки, в которой произошла ошибка</td>
+</tr>
+<tr>
+<td>error_context</td>
+<td>Не обязательно. Определяет массив, содержащий каждую переменную и их значения, используемые при возникновении ошибки</td>
+</tr>
+</tbody>
+</table>
+<h2>Уровни отчетов об ошибках</h2>
+<p>Эти уровни отчетов об ошибках - это различные типы ошибок, для которых может использоваться пользовательский обработчик ошибок:</p>
+<div class=w3-responsive>
+<table class="w3-table-all notranslate">
+<tbody>
+<tr>
+<th style=width:5%>Значение</th>
+<th style=width:30%>Константа</th>
+<th style=width:65%>Описание</th>
+</tr>
+<tr>
+<td>2</td>
+<td>E_WARNING</td>
+<td>Не фатальные ошибки времени выполнения. Выполнение скрипта не прекращается</td>
+</tr>
+<tr>
+<td>8</td>
+<td>E_NOTICE</td>
+<td>Уведомления во время выполнения. Скрипт обнаружил что-то, что может быть ошибкой, но также может произойти при нормальном запуске скрипта</td>
+</tr>
+<tr>
+<td>256</td>
+<td>E_USER_ERROR</td>
+<td>Фатальная ошибка, сгенерированная пользователем. Это похоже на E_ERROR, установленный программистом с помощью PHP функции trigger_error()</td>
+</tr>
+<tr>
+<td>512</td>
+<td>E_USER_WARNING</td>
+<td>Не фатальное предупреждение, генерируемое пользователем. Это похоже на E_WARNING, установленный программистом с помощью PHP функции trigger_error()</td>
+</tr>
+<tr>
+<td>1024</td>
+<td>E_USER_NOTICE</td>
+<td>Пользовательское уведомление. Это похоже на E_NOTICE, установленный программистом с помощью PHP функции trigger_error()</td>
+</tr>
+<tr>
+<td>4096</td>
+<td>E_RECOVERABLE_ERROR</td>
+<td>Ловимая фатальная ошибка. Это похоже на E_ERROR, но может быть перехвачено пользовательским дескриптором (см. также set_error_handler())</td>
+</tr>
+<tr>
+<td>8191</td>
+<td>E_ALL</td>
+<td>Все ошибки и предупреждения (E_STRICT стал частью E_ALL в PHP 5.4)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Теперь давайте создадим функцию для обработки ошибок:</p>
+<div class=w3-example>
+<div class="w3-code htmlHigh notranslate">
+function customError($errno, $errstr) {<br>
+&nbsp;&nbsp;echo "<span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>b<span class=tagcolor style=color:mediumblue>&gt;</span></span>Error:<span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>/b<span class=tagcolor style=color:mediumblue>&gt;</span></span> [$errno] $errstr<span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>br<span class=tagcolor style=color:mediumblue>&gt;</span></span>";<br>
+&nbsp;&nbsp;echo "Ending Script";<br>
+&nbsp;&nbsp;die();<br>
+}
+</div>
+</div>
+<p>Приведенный выше код представляет собой простую функцию обработки ошибок. Когда он запускается, он получает уровень ошибки и сообщение об ошибке. Затем он выводит уровень ошибки и сообщение и завершает скрипт.</p>
+<p>Теперь, когда мы создали функцию обработки ошибок, нам нужно решить, когда она должна быть запущена.</p>
+<hr>
+<h2>Установить обработчик ошибок</h2>
+<p>Обработчиком ошибок по умолчанию для PHP является встроенный обработчик ошибок. Мы собираемся сделать функцию выше обработчика ошибок по умолчанию на время работы скрипта.</p>
+<p>Можно изменить обработчик ошибок, чтобы он применялся только к некоторым ошибкам, чтобы скрипт мог по-разному обрабатывать разные ошибки. Однако в этом примере мы собираемся использовать наш собственный обработчик ошибок для всех ошибок:</p>
+<div class="w3-code w3-border notranslate">
+<div>
+set_error_handler("customError");
+</div>
+</div>
+<p>Поскольку мы хотим, чтобы наша пользовательская функция обрабатывала все ошибки, <code class=w3-codespan>set_error_handler()</code> требовался только один параметр, можно добавить второй параметр, чтобы указать уровень ошибки.</p>
+<h2>Пример</h2>
+<p>Тестирование обработчика ошибок при попытке вывести переменную, которая не существует:</p>
+<div class=w3-example>
+<div class="w3-code htmlHigh notranslate">
+<span class=phpcolor style=color:black><span class=phptagcolor style=color:red>&lt;?php</span><br><span class=phpnumbercolor style=color:red>
+</span><span class=commentcolor style=color:green>//функция обработчика ошибок<br></span>
+<span class=phpkeywordcolor style=color:mediumblue>function</span> customError($errno, $errstr) {<br><span class=phpnumbercolor style=color:red>
+</span>&nbsp;&nbsp;<span class=phpkeywordcolor style=color:mediumblue>echo</span> <span class=phpstringcolor style=color:brown>"&lt;b&gt;Error:&lt;/b&gt; [$errno] $errstr"</span>;<br><span class=phpnumbercolor style=color:red>
+</span> }<br><span class=phpnumbercolor style=color:red>
+</span><br><span class=phpnumbercolor style=color:red>
+</span><span class=commentcolor style=color:green>//установить обработчик ошибок<br></span>
+set_error_handler(<span class=phpstringcolor style=color:brown>"customError"</span>);<br><span class=phpnumbercolor style=color:red>
+</span><br><span class=phpnumbercolor style=color:red>
+</span><span class=commentcolor style=color:green>//ошибка триггера<br></span>
+<span class=phpkeywordcolor style=color:mediumblue>echo</span>($test);<br>
+<span class=phptagcolor style=color:red>?&gt;</span></span>
+</div>
+</div>
+<p>Вывод кода выше должен быть примерно таким:</p>
+<div class="w3-code w3-border notranslate"><b>Error:</b> [8] Undefined variable: test</div>
+<hr>
+<h2>Вызвать ошибку</h2>
+<p>В скрипте, где пользователи могут вводить данные, полезно вызывать ошибки, когда происходит неправильный ввод. В PHP это делается функцией <code class=w3-codespan>trigger_error()</code>.</p>
+<h2>Пример</h2>
+<p>В этом примере возникает ошибка, если переменная "test" больше "1":</p>
+<div class=w3-example>
+<div class="w3-code htmlHigh notranslate">
+<span class=phpcolor style=color:black><span class=phptagcolor style=color:red>&lt;?php</span><br>
+$test=<span class=phpnumbercolor style=color:red>2</span>;<br>
+<span class=phpkeywordcolor style=color:mediumblue>if</span> ($test&gt;=<span class=phpnumbercolor style=color:red>1</span>)<span class=phpnumbercolor style=color:red>
+</span>{<br><span class=phpnumbercolor style=color:red>
+</span>&nbsp;
+trigger_error(<span class=phpstringcolor style=color:brown>"Значение должно быть 1 или меньше"</span>);<br><span class=phpnumbercolor style=color:red>
+</span>}<br>
+<span class=phptagcolor style=color:red>?&gt;</span></span>
+</div>
+</div>
+<p>Вывод кода выше должен быть примерно таким:</p>
+<div class="w3-code w3-border notranslate">
+<div>
+<b>Уведомление</b>: Значение должно быть 1 или меньше<br><b>C:\webfolder\test.php</b> в строке <b>6</b>
+</div>
+</div>
+<p>Ошибка может быть вызвана в любом месте скрипта, и, добавив второй параметр, вы можете указать уровень ошибки.</p>
+<p>Возможные типы ошибок:</p>
+<ul>
+<li>E_USER_ERROR - Неустранимая пользовательская ошибка времени выполнения. Ошибки, которые невозможно восстановить. Выполнение скрипта остановлено</li>
+<li>E_USER_WARNING - Не фатальное предупреждение, генерируемое пользователем во время выполнения. Выполнение скрипта не прекращается</li>
+<li>E_USER_NOTICE - По умолчанию. Пользовательское уведомление во время выполнения. Скрипт обнаружил что-то, что может быть ошибкой, но также может произойти при нормальном запуске скрипта</li>
+</ul>
+<h2>Пример</h2>
+<p>В этом примере E_USER_WARNING происходит, если переменная "test" больше, чем "1". Если происходит E_USER_WARNING, мы будем использовать наш собственный обработчик ошибок и завершать скрипт:</p>
+<div class=w3-example>
+<div class="w3-code htmlHigh notranslate">
+<span class=phpcolor style=color:black><span class=phptagcolor style=color:red>&lt;?php</span><br><span class=phpnumbercolor style=color:red>
+</span><span class=commentcolor style=color:green>//функция обработчика ошибок<br></span>
+<span class=phpkeywordcolor style=color:mediumblue>function</span> customError($errno, $errstr)&nbsp;{<br><span class=phpnumbercolor style=color:red>
+</span>&nbsp;&nbsp;<span class=phpkeywordcolor style=color:mediumblue>echo</span> <span class=phpstringcolor style=color:brown>"&lt;b&gt;Error:&lt;/b&gt; [$errno] $errstr&lt;br&gt;"</span>;<br><span class=phpnumbercolor style=color:red>
+</span>&nbsp;&nbsp;<span class=phpkeywordcolor style=color:mediumblue>echo</span> <span class=phpstringcolor style=color:brown>"Ending Script"</span>;<br><span class=phpnumbercolor style=color:red>
+</span>&nbsp;&nbsp;<span class=phpkeywordcolor style=color:mediumblue>die</span>();<br><span class=phpnumbercolor style=color:red>
+</span> }<br><span class=phpnumbercolor style=color:red>
+</span><br><span class=phpnumbercolor style=color:red>
+</span><span class=commentcolor style=color:green>//установить обработчик ошибок<br></span>
+set_error_handler(<span class=phpstringcolor style=color:brown>"customError"</span>,E_USER_WARNING);<br><span class=phpnumbercolor style=color:red>
+</span><br><span class=phpnumbercolor style=color:red>
+</span><span class=commentcolor style=color:green>//ошибка триггера<br></span>
+$test=<span class=phpnumbercolor style=color:red>2</span>;<br>
+<span class=phpkeywordcolor style=color:mediumblue>if</span> ($test&gt;=<span class=phpnumbercolor style=color:red>1</span>)&nbsp;{<br><span class=phpnumbercolor style=color:red>
+</span>&nbsp;&nbsp;trigger_error(<span class=phpstringcolor style=color:brown>"Value must be 1 or below"</span>,E_USER_WARNING);<br><span class=phpnumbercolor style=color:red>
+</span> }<br>
+<span class=phptagcolor style=color:red>?&gt;</span></span>
+</div>
+</div>
+<p>Вывод кода выше должен быть примерно таким:</p>
+<div class="w3-code w3-border notranslate"><b>Ошибка:</b> [512] Значение должно быть 1 или меньше<br> Завершение скрипта</div>
+<p>Теперь, когда мы научились создавать свои собственные ошибки и как их вызывать, давайте взглянем на регистрацию ошибок.</p>
+<hr>
+<h2>Регистрация ошибок</h2>
+<p>По умолчанию PHP отправляет журнал ошибок в систему журналов сервера или в файл, в зависимости от того, как в файле <i>php.ini</i> задана конфигурация <i>error_log</i>. Используя функцию <code class=w3-codespan>error_log()</code>, вы можете отправлять журналы ошибок в указанный файл или в удаленное место назначения.</p>
+<p>Отправка сообщений об ошибках себе по электронной почте может быть хорошим способом получения уведомлений о конкретных ошибках.</p>
+<h2>Отправка сообщения об ошибке по электронной почте</h2>
+<p>В приведенном ниже примере мы отправим электронное письмо с сообщением об ошибке и завершим работу скрипта, если произойдет конкретная ошибка:</p>
+<div class=w3-example>
+<div class="w3-code htmlHigh notranslate">
+<span class=phpcolor style=color:black><span class=phptagcolor style=color:red>&lt;?php</span><br><span class=phpnumbercolor style=color:red>
+</span><span class=commentcolor style=color:green>//функция обработчика ошибок<br></span>
+<span class=phpkeywordcolor style=color:mediumblue>function</span> customError($errno, $errstr) {<br><span class=phpnumbercolor style=color:red>
+</span>&nbsp;&nbsp;<span class=phpkeywordcolor style=color:mediumblue>echo</span> <span class=phpstringcolor style=color:brown>"&lt;b&gt;Error:&lt;/b&gt; [$errno] $errstr&lt;br&gt;"</span>;<br><span class=phpnumbercolor style=color:red>
+</span>&nbsp;&nbsp;<span class=phpkeywordcolor style=color:mediumblue>echo</span> <span class=phpstringcolor style=color:brown>"Webmaster has been notified"</span>;<br><span class=phpnumbercolor style=color:red>
+</span>&nbsp;&nbsp;error_log(<span class=phpstringcolor style=color:brown>"Error: [$errno] $errstr"</span>,<span class=phpnumbercolor style=color:red>1</span>,<br><span class=phpnumbercolor style=color:red>
+</span>&nbsp;&nbsp;<span class=phpstringcolor style=color:brown>"someone@example.com"</span>,<span class=phpstringcolor style=color:brown>"From: webmaster@example.com"</span>);<br><span class=phpnumbercolor style=color:red>
+</span> }<br><span class=phpnumbercolor style=color:red>
+</span><br><span class=phpnumbercolor style=color:red>
+</span><span class=commentcolor style=color:green>//установить обработчик ошибок<br></span>
+set_error_handler(<span class=phpstringcolor style=color:brown>"customError"</span>,E_USER_WARNING);<br><span class=phpnumbercolor style=color:red>
+</span><br><span class=phpnumbercolor style=color:red>
+</span><span class=commentcolor style=color:green>//ошибка триггера<br></span>
+$test=<span class=phpnumbercolor style=color:red>2</span>;<br>
+<span class=phpkeywordcolor style=color:mediumblue>if</span> ($test&gt;=<span class=phpnumbercolor style=color:red>1</span>)&nbsp;{<br><span class=phpnumbercolor style=color:red>
+</span>&nbsp;&nbsp;trigger_error(<span class=phpstringcolor style=color:brown>"Значение должно быть 1 или меньше"</span>,E_USER_WARNING);<br><span class=phpnumbercolor style=color:red>
+</span> }<br>
+<span class=phptagcolor style=color:red>?&gt;</span></span>
+</div>
+</div>
+<p>Вывод кода выше должен быть примерно таким:</p>
+<div class="w3-code w3-border notranslate">
+<div>
+<b>Ошибка:</b> [512] Значение должно быть 1 или меньше<br>
+Веб-мастер был уведомлен</div>
+</div>
+<p>И почта, полученная из кода выше, выглядит так:</p>
+<div class="w3-code w3-border notranslate">
+<div>
+Ошибка: [512] Значение должно быть 1 или меньше</div>
+</div>
+<p>Это не должно использоваться со всеми ошибками. Регулярные ошибки должны регистрироваться на сервере с использованием стандартной системы PHP регистрации.</p>
+<br>
+<div class=keys>
+<strong>W3Schools на русском </strong>
+<strong>уроки для начинающих </strong>
+<strong>для новичков </strong>
+<strong>основы языка </strong>
+<strong>курсы с нуля </strong>
+<strong>язык php </strong>
+<strong>обработка ошибок в PHP </strong>
+<strong>какие бывают ошибки в PHP </strong>
+<strong>error php </strong>
+<strong>примеры ошибок PHP скрипта </strong>
+</div>
+<hr>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href=php_filter_advanced.html title="Предыдущая страница" rel=prev>❮ Prev</a>
+<a class="w3-right w3-btn" href=php_exception.html title="Следующая страница" rel=next>Next ❯</a>
+</div>
+<hr class=hr-bottom>
+<img src=../svg/warning_black.svg alt=warning width=30 class=img-left>
+<p class=note-warning><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href=https://jsfiddle.net/ target=_blank rel=nofollow>jsfiddle.net</a>, <a href=https://codepen.io/pen/tour/welcome/start target=_blank rel=nofollow>codepen.io</a>, <a href=https://liveweave.com/ target=_blank rel=nofollow>liveweave.com</a>, <a href=https://jsbin.com/?html,css,output target=_blank rel=nofollow>jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
+<div id=disqus_thread></div>
+<script>var disqus_config=function(){this.page.url=html5beginner.github.io;this.page.identifier=html5beginner.github.io/php/php_error.html};(function(){var b=document,a=b.createElement("script");a.src="https://html5beginners.disqus.com/embed.js";a.setAttribute("data-timestamp",+new Date());(b.head||b.body).appendChild(a)})();</script>
+<noscript>Пожалуйста, включите JavaScript для просмотра <a href=https://disqus.com/?ref_noscript>комментариев, предоставленных Disqus.</a></noscript>
+</div>
+<div class=right-sidebar>
+<iframe src=../pages/source.html class=frame-right-sidebar></iframe>
+</div>
+</main>
+<footer>
+<iframe src=../pages/footer.html class=frame-footer></iframe>
+</footer>
+</body>
+</html>
