@@ -45,53 +45,128 @@
          </div>
          <!-- buttons prev - next -->
          <hr>
-         <h2>Проверка целого числа в диапазоне</h2>
-         <p>В следующем примере функция <code class="w3-codespan">filter_var()</code> используется для проверки, имеет ли переменная тип INT (целое число) и находится ли в диапазоне от 1 до 200:</p>
+         <p class="intro"><strong>Проверка данных</strong> = определяет, находятся ли данные в правильной форме.</p>
+         <p class="intro"><strong>Очистка данных</strong> = удаление любых недопустимых символов из данных.</p>
+         <hr>
+
+         <h2>PHP Расширение фильтра</h2>
+         <p><strong>PHP фильтры</strong> используются для проверки и очистки внешнего ввода.</p>
+         <p>Расширение PHP фильтра имеет множество функций, необходимых для проверки пользовательского ввода, и предназначено для упрощения и ускорения проверки данных.</p>
+         <p>Функция <code class="w3-codespan">filter_list()</code> может быть использована для просмотра списка расширений PHP фильтра:</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code htmlHigh notranslate">
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>table<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>tr<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>td<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Filter Name<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>td<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Filter ID<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/tr<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br>&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">foreach</span> (filter_list() <span class="phpkeywordcolor" style="color:mediumblue">as</span> $id =&gt;$filter) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">'&lt;tr&gt;&lt;td&gt;'</span> . $filter . <span class="phpstringcolor" style="color:brown">'&lt;/td&gt;&lt;td&gt;'</span> . filter_id($filter) . <span class="phpstringcolor" style="color:brown">'&lt;/td&gt;&lt;/tr&gt;'</span>;<br>&nbsp; }<br>&nbsp; <span class="phptagcolor" style="color:red">?&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/table<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+            <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_filter1" rel="nofollow">Выполнить пример »</a>
+         </div>
+         <hr>
+
+         <h2>Зачем использовать фильтры?</h2>
+         <p>Многие веб-приложения получают внешние входные данные. Внешние входные данные могут быть:</p>
+         <ul>
+            <li>Пользовательский ввод из формы</li>
+            <li>Cookies</li>
+            <li>Данные веб-сервисов</li>
+            <li>Переменные сервера</li>
+            <li>Результаты запроса к базе данных</li>
+         </ul>
+
+         <div class="w3-panel w3-note">
+            <p><strong>Вы всегда должны проверять внешние данные!</strong> Неверные отправленные данные могут привести к проблемам с безопасностью и сломать вашу веб-страницу!<br> Используя PHP фильтры, вы можете быть уверены, что ваше приложение получит правильный ввод!</p>
+         </div>
+         <hr>
+
+         <h2>PHP функция filter_var()</h2>
+         <p>Функция <code class="w3-codespan">filter_var()</code> - проверка и очистка данных.</p>
+         <p>Функция <code class="w3-codespan">filter_var()</code> - фильтрует одну переменную с указанным фильтром. Требуется две части данных:</p>
+         <ul>
+            <li>Переменная, которую вы хотите проверить</li>
+            <li>Тип используемой проверки</li>
+         </ul>
+         <hr>
+
+         <h2>Очистить строку</h2>
+         <p>В следующем примере функция <code class="w3-codespan">filter_var()</code> используется для удаления всех HTML тегов из строки:</p>
 
          <div class="w3-example">
             <h3>Пример</h3>
             <div class="w3-code htmlHigh notranslate">
-               <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br>$int = <span class="phpnumbercolor" style="color:red">122</span>;<br>$min = <span class="phpnumbercolor" style="color:red">1</span>;<br>$max = <span class="phpnumbercolor" style="color:red">200</span>;<br><br><span class="phpkeywordcolor" style="color:mediumblue">if</span> (filter_var($int, FILTER_VALIDATE_INT, <span class="phpkeywordcolor" style="color:mediumblue">array</span>(<span class="phpstringcolor" style="color:brown">"options"</span> =&gt; <span class="phpkeywordcolor" style="color:mediumblue">array</span>(<span class="phpstringcolor" style="color:brown">"min_range"</span>=&gt;$min, <span class="phpstringcolor" style="color:brown">"max_range"</span>=&gt;$max))) === false) {<br>&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">echo</span>(<span class="phpstringcolor" style="color:brown">"Значение переменной находится вне допустимого диапазона"</span>);<br>} <span class="phpkeywordcolor" style="color:mediumblue">else</span> {<br>&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">echo</span>(<span class="phpstringcolor" style="color:brown">"Значение переменной находится в допустимых пределах"</span>);<br>}<br><span class="phptagcolor" style="color:red">?&gt;</span></span>
+               <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br>$str = <span class="phpstringcolor" style="color:brown">"&lt;h1&gt;Hello World!&lt;/h1&gt;"</span>;<br>$newstr = filter_var($str, FILTER_SANITIZE_STRING);<br><span class="phpkeywordcolor" style="color:mediumblue">echo</span> $newstr;<br><span class="phptagcolor" style="color:red">?&gt;</span></span>
             </div>
-            <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_filter_adv1" rel="nofollow">Выполнить пример »</a>
+            <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_filter2" rel="nofollow">Выполнить пример »</a>
          </div>
          <hr>
 
-         <h2>Проверка IPv6 адреса</h2>
-         <p>В следующем примере функция <code class="w3-codespan">filter_var()</code> используется для проверки, является ли переменная <i>$ip</i> действительным адресом IPv6:</p>
+         <h2>Проверить целое число</h2>
+
+         <p>В следующем примере функция <code class="w3-codespan">filter_var()</code> используется для проверки, является ли переменная <i>$int</i> целым числом. Если <i>$int</i> является целым числом, вывод приведенного ниже кода будет выглядеть так: "Integer is valid" ("Целое число валидно"). Если <i>$int</i> не является целым числом, выводом будет: "Integer is not valid" ("Целое число не валидно"):</p>
+
          <div class="w3-example">
             <h3>Пример</h3>
             <div class="w3-code htmlHigh notranslate">
-               <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br>$ip = <span class="phpstringcolor" style="color:brown">"2001:0db8:85a3:08d3:1319:8a2e:0370:7334"</span>;<br><br><span class="phpkeywordcolor" style="color:mediumblue">if</span> (!filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_IPV6) === false) {<br>&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">echo</span>(<span class="phpstringcolor" style="color:brown">"$ip является действительным адресом IPv6"</span>);<br>} <span class="phpkeywordcolor" style="color:mediumblue">else</span> {<br>&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">echo</span>(<span class="phpstringcolor" style="color:brown">"$ip не является действительным адресом IPv6"</span>);<br>}<br><span class="phptagcolor" style="color:red">?&gt;</span></span>
+               <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br>$int = <span class="phpnumbercolor" style="color:red">100</span>;<br><br><span class="phpkeywordcolor" style="color:mediumblue">if</span> (!filter_var($int, FILTER_VALIDATE_INT) === false) {<br>&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">echo</span>(<span class="phpstringcolor" style="color:brown">"Integer is valid"</span>);<br>} <span class="phpkeywordcolor" style="color:mediumblue">else</span> {<br>&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">echo</span>(<span class="phpstringcolor" style="color:brown">"Integer is not valid"</span>);<br>}<br><span class="phptagcolor" style="color:red">?&gt;</span></span>
             </div>
-            <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_filter_adv2" rel="nofollow">Выполнить пример »</a>
+            <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_filter3" rel="nofollow">Выполнить пример »</a>
          </div>
-         <hr>
 
-         <h2>Проверка URL - должен содержать QueryString</h2>
-         <p>В следующем примере функция <code class="w3-codespan">filter_var()</code> используется для проверки, является ли переменная $url URL-адресом со строкой запроса:</p>
+         <h3>Примечание: filter_var() и проблема с 0</h3>
+         <p>В приведенном выше примере, если <i>$int</i> был установлен в 0, вышеприведенная функция вернет «Integer is not valid» ("Целое число не валидно"). Чтобы решить эту проблему, используйте код ниже:</p>
+
          <div class="w3-example">
             <h3>Пример</h3>
             <div class="w3-code htmlHigh notranslate">
-               <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br>$url = <span class="phpstringcolor" style="color:brown">"https://www.w3schools.com"</span>;<br><br><span class="phpkeywordcolor" style="color:mediumblue">if</span> (!filter_var($url, FILTER_VALIDATE_URL, FILTER_FLAG_QUERY_REQUIRED) === false) {<br>&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">echo</span>(<span class="phpstringcolor" style="color:brown">"$url действительный URL"</span>);<br>} <span class="phpkeywordcolor" style="color:mediumblue">else</span> {<br>&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">echo</span>(<span class="phpstringcolor" style="color:brown">"$url не действительный URL"</span>);<br>}<br><span class="phptagcolor" style="color:red">?&gt;</span></span>
+               <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br>$int = <span class="phpnumbercolor" style="color:red">0</span>;<br><br><span class="phpkeywordcolor" style="color:mediumblue">if</span> (filter_var($int, FILTER_VALIDATE_INT) === <span class="phpnumbercolor" style="color:red">0</span> || !filter_var($int, FILTER_VALIDATE_INT) === false) {<br>&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">echo</span>(<span class="phpstringcolor" style="color:brown">"Integer is valid"</span>);<br>} <span class="phpkeywordcolor" style="color:mediumblue">else</span> {<br>&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">echo</span>(<span class="phpstringcolor" style="color:brown">"Integer is not valid"</span>);<br>}<br><span class="phptagcolor" style="color:red">?&gt;</span></span>
             </div>
-            <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_filter_adv3" rel="nofollow">Выполнить пример »</a>
+            <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_filter4" rel="nofollow">Выполнить пример »</a>
          </div>
+
          <hr>
 
-         <h2>Удаление символов со значением ASCII &gt; 127</h2>
-         <p>В следующем примере используется функция <code class="w3-codespan">filter_var()</code> для очистки строки. Она удалит все теги HTML и все символы со значением ASCII &gt;127 из строки:</p>
+         <h2>Проверьте IP-адрес</h2>
+
+         <p>В следующем примере функция <code class="w3-codespan">filter_var()</code> используется для проверки, является ли переменная <i>$ip</i> действительным IP-адресом:</p>
+
          <div class="w3-example">
             <h3>Пример</h3>
             <div class="w3-code htmlHigh notranslate">
-               <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br>$str = <span class="phpstringcolor" style="color:brown">"&lt;h1&gt;Hello WorldÆØÅ!&lt;/h1&gt;"</span>;<br><br>$newstr = filter_var($str, FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);<br><span class="phpkeywordcolor" style="color:mediumblue">echo</span> $newstr;<br><span class="phptagcolor" style="color:red">?&gt;</span></span>
+               <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br>$ip = <span class="phpstringcolor" style="color:brown">"127.0.0.1"</span>;<br><br><span class="phpkeywordcolor" style="color:mediumblue">if</span> (!filter_var($ip, FILTER_VALIDATE_IP) === false) {<br>&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">echo</span>(<span class="phpstringcolor" style="color:brown">"$ip is a valid IP address"</span>);<br>} <span class="phpkeywordcolor" style="color:mediumblue">else</span> {<br>&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">echo</span>(<span class="phpstringcolor" style="color:brown">"$ip is not a valid IP address"</span>);<br>}<br><span class="phptagcolor" style="color:red">?&gt;</span></span>
             </div>
-            <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_filter_adv4" rel="nofollow">Выполнить пример »</a>
+            <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_filter5" rel="nofollow">Выполнить пример »</a>
          </div>
+
          <hr>
 
-         <h2>PHP Фильтр. Полный справочник</h2>
-         <p>Для получения более полной информации обо всех функциях фильтра перейдите к полному <a href="php_ref_filter.html"> Справочнику по фильтрам PHP.</a> Проверьте каждый фильтр, чтобы узнать, какие параметры и метки доступны.</p>
+         <h2>Очистка и проверка email адреса</h2>
+
+         <p>В следующем примере используется функция <code class="w3-codespan">filter_var()</code>, чтобы сначала удалить все недопустимые символы из переменной <i>$email</i>, а затем проверить, является ли это действительный адрес электронной почты:</p>
+
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code htmlHigh notranslate">
+               <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br>$email = <span class="phpstringcolor" style="color:brown">"john.doe@example.com"</span>;<br><br><span class="commentcolor" style="color:green">// Удалить все запрещенные символы из электронной почты<br></span>$email = filter_var($email, FILTER_SANITIZE_EMAIL);<br><br><span class="commentcolor" style="color:green">// Проверить e-mail<br></span><span class="phpkeywordcolor" style="color:mediumblue">if</span> (!filter_var($email, FILTER_VALIDATE_EMAIL) === false) {<br>&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">echo</span>(<span class="phpstringcolor" style="color:brown">"$email действительный email адрес"</span>);<br>} <span class="phpkeywordcolor" style="color:mediumblue">else</span> {<br>&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">echo</span>(<span class="phpstringcolor" style="color:brown">"$email не действительный email адрес"</span>);<br>}<br><span class="phptagcolor" style="color:red">?&gt;</span></span>
+            </div>
+            <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_filter6" rel="nofollow">Выполнить пример »</a>
+         </div>
+
+         <hr>
+
+         <h2>Очистка и проверка URL</h2>
+
+         <p>В следующем примере функция <code class="w3-codespan">filter_var()</code> сначала удаляет все недопустимые символы из URL, а затем проверяет, является ли <i>$url</i> действительным URL:</p>
+
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code htmlHigh notranslate">
+               <span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br>$url = <span class="phpstringcolor" style="color:brown">"https://www.w3schools.com"</span>;<br><span class="phpnumbercolor" style="color:red">
+                  </span> <br><span class="commentcolor" style="color:green">// Удаляет все недопустимые символы из url<br></span>$url = filter_var($url, FILTER_SANITIZE_URL);<br><br><span class="commentcolor" style="color:green">// Проверка url<br></span><span class="phpkeywordcolor" style="color:mediumblue">if</span> (!filter_var($url, FILTER_VALIDATE_URL) === false) {<br>&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">echo</span>(<span class="phpstringcolor" style="color:brown">"$url является валидным URL"</span>);<br>} <span class="phpkeywordcolor" style="color:mediumblue">else</span> {<br>&nbsp;&nbsp;&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">echo</span>(<span class="phpstringcolor" style="color:brown">"$url не является валидным URL"</span>);<br>}<br><span class="phptagcolor" style="color:red">?&gt;</span></span>
+            </div>
+            <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_filter7" rel="nofollow">Выполнить пример »</a>
+         </div>
+
+         <hr>
+
+         <h2>PHP Фильтры. Полный справочник</h2>
+         <p>Полный справочник всех функций фильтра приведен в <a href="php_ref_filter.html">PHP Фильтры. Справочник.</a> Проверьте каждый фильтр, чтобы узнать, какие параметры и метки доступны.</p>
          <p>Справочник содержит краткое описание и примеры использования для каждой функции!</p>
 
          <br>
@@ -104,7 +179,7 @@
             <strong>язык php </strong>
             <strong>фильтры в PHP </strong>
             <strong>что такое фильтр в PHP </strong>
-            <strong>полный справочник PHP фильтра</strong>
+            <strong>полный справочник PHP фильтров </strong>
             <strong>примеры PHP </strong>
          </div>
 
