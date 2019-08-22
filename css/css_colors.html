@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang=ru>
+<head>
+<title>CSS Цвета на веб-страницах. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих</title>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, initial-scale=1" />
+<meta name=keywords content="HTML,CSS,цвет,веб-цвета,уроки,для начинающих,учебник,html5,css3,основы,язык,веб,страницы,сайт" />
+<meta name=description content="CSS Пособие. Какие бывают цвета на веб-страницах. Курс по основам HTML5 | CSS3. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+<link rel=icon href=/favicon.ico type=image/x-icon />
+<link rel=stylesheet href=../styles/style.css />
+<link rel=stylesheet href=../styles/ws.css />
+<link rel=stylesheet href=../styles/handheld.css />
+<link rel=canonical href=https://html5beginner.github.io/ />
+<meta property=og:title content="CSS Цвета на веб-страницах. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих" />
+<meta property=og:type content=Content />
+<meta property=og:url content=https://html5beginner.github.io/ />
+<meta property=og:image content=../image/html5_64x64.png />
+<meta property=og:description content="CSS Пособие. Какие бывают цвета на веб-страницах. Курс по основам HTML5 | CSS3. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+<meta property=og:locale content=ru />
+<meta property=og:site_name content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
+<script src=../js/topnav.js></script>
+</head>
+<body>
+<iframe src=../pages/header.html class=frame-header></iframe>
+<main>
+<div class=left-sidebar>
+<iframe src=../pages/menucss.html class=frame-left-sidebar></iframe>
+</div>
+<div class=content>
+<h1>CSS Цвета</h1>
+<p class=brief><strong>Курс по основам CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href=css_howto.html title="Предыдущая страница" rel=prev>❮ Prev</a>
+<a class="w3-right w3-btn" href=css_background.html title="Следующая страница" rel=next>Next ❯</a>
+</div>
+<hr>
+<p class=intro>Цвета задаются с использованием предварительно определенных имен цветов или значений: RGB, HEX, HSL, RGBA, HSLA.</p>
+<hr>
+<h2>Color Names / Названия цветов</h2>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="notranslate w3-white w3-container">
+<h3 style=background-color:Tomato>Tomato</h3>
+<h3 style=background-color:Orange>Orange</h3>
+<h3 style=background-color:DodgerBlue>DodgerBlue</h3>
+<h3 style=background-color:MediumSeaGreen>MediumSeaGreen</h3>
+<h3 style=background-color:Gray>Gray</h3>
+<h3 style=background-color:SlateBlue>SlateBlue</h3>
+<h3 style=background-color:Violet>Violet</h3>
+<h3 style=background-color:LightGray>LightGray</h3>
+</div>
+</div>
+<p><a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_color_names" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a></p>
+<div>HTML поддерживает <a href=/colors/colors_names.html>140 названия стандартных цветов</a>.</div>
+<hr>
+<h2>Цвет фона / Background Color</h2>
+<p>Вы можете установить цвет фона для элементов HTML:</p>
+<div style=background-color:dodgerblue;text-align:center;color:white;font-size:24px>Hello World</div>
+<br>
+<div class=w3-container style=background-color:tomato;color:white><br>
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<br><br>
+</div>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="w3-code notranslate htmlHigh">
+<span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>h1<span class=attributecolor style=color:red> style<span class=attributevaluecolor style=color:mediumblue>="background-color:DodgerBlue;"</span></span><span class=tagcolor style=color:mediumblue>&gt;</span></span>Hello World<span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>/h1<span class=tagcolor style=color:mediumblue>&gt;</span></span><br><span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>p<span class=attributecolor style=color:red> style<span class=attributevaluecolor style=color:mediumblue>="background-color:Tomato;"</span></span><span class=tagcolor style=color:mediumblue>&gt;</span></span>Lorem
+ipsum...<span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>/p<span class=tagcolor style=color:mediumblue>&gt;</span></span> </div>
+<br>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_color_background" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
+</div>
+<hr>
+<h2>Цвет текста / Text Color</h2>
+<p>Вы можете установить цвет текста:</p>
+<h3 style=color:tomato>Hello World</h3>
+<p style=color:dodgerblue>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+<p style=color:mediumseagreen>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="w3-code notranslate htmlHigh">
+<span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>h1<span class=attributecolor style=color:red> style<span class=attributevaluecolor style=color:mediumblue>="color:Tomato;"</span></span><span class=tagcolor style=color:mediumblue>&gt;</span></span>Hello
+World<span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>/h1<span class=tagcolor style=color:mediumblue>&gt;</span></span><br><span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>p<span class=attributecolor style=color:red> style<span class=attributevaluecolor style=color:mediumblue>="color:DodgerBlue;"</span></span><span class=tagcolor style=color:mediumblue>&gt;</span></span>Lorem
+ipsum...<span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>/p<span class=tagcolor style=color:mediumblue>&gt;</span></span><br><span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>p<span class=attributecolor style=color:red> style<span class=attributevaluecolor style=color:mediumblue>="color:MediumSeaGreen;"</span></span><span class=tagcolor style=color:mediumblue>&gt;</span></span>Ut wisi
+enim...<span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>/p<span class=tagcolor style=color:mediumblue>&gt;</span></span> </div>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_color_text" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
+</div>
+<hr>
+<h2>Цвет границы / Border Color</h2>
+<p>Вы можете установить цвет границ:</p>
+<h2 style="border:2px solid Tomato">Hello World</h2>
+<h2 style="border:2px solid DodgerBlue">Hello World</h2>
+<h2 style="border:2px solid Violet">Hello World</h2>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="w3-code notranslate htmlHigh">
+<span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>h1<span class=attributecolor style=color:red> style<span class=attributevaluecolor style=color:mediumblue>="border:2px
+solid Tomato;"</span></span><span class=tagcolor style=color:mediumblue>&gt;</span></span>Hello
+World<span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>/h1<span class=tagcolor style=color:mediumblue>&gt;</span></span><br><span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>h1<span class=attributecolor style=color:red> style<span class=attributevaluecolor style=color:mediumblue>="border:2px
+solid DodgerBlue;"</span></span><span class=tagcolor style=color:mediumblue>&gt;</span></span>Hello
+World<span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>/h1<span class=tagcolor style=color:mediumblue>&gt;</span></span><br><span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>h1<span class=attributecolor style=color:red> style<span class=attributevaluecolor style=color:mediumblue>="border:2px
+solid Violet;"</span></span><span class=tagcolor style=color:mediumblue>&gt;</span></span>Hello
+World<span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>/h1<span class=tagcolor style=color:mediumblue>&gt;</span></span> </div>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_color_border" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
+</div>
+<hr>
+<h2>Цветовые значения</h2>
+<p>В <strong>HTML</strong> цвета также могут быть указаны с использованием значений <strong>RGB, HEX, HSL, RGBA и HSLA</strong>:</p>
+<p>То же, что и название цвета "Tomato":</p>
+<div class=w3-center style="line-height:60px;color:white;font-size:20px;font-weight:bold;font-family:Consolas,'Courier New',Courier,monospace">
+<div style="background-color:#ff6347;margin:10px 0">rgb(255, 99, 71)</div>
+<div style="background-color:#ff6347;margin:10px 0">#ff6347</div>
+<div style="background-color:hsl(9,100%,64%);margin:10px 0">hsl(9, 100%, 64%)</div>
+</div>
+<p>То же, что и название цвета "Tomato", но прозрачное на 50%:</p>
+<div class=w3-center style="line-height:60px;color:white;font-size:20px;font-weight:bold;font-family:Consolas,'Courier New',Courier,monospace">
+<div style="background-color:rgba(255,99,71,0.5);margin:10px 0">rgba(255, 99, 71, 0.5)</div>
+<div style="background-color:hsla(9,100%,64%,0.5);margin:10px 0">hsla(9, 100%, 64%, 0.5)</div>
+</div>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="w3-code notranslate htmlHigh">
+<span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>h1<span class=attributecolor style=color:red> style<span class=attributevaluecolor style=color:mediumblue>="background-color:rgb(255,
+99, 71);"</span></span><span class=tagcolor style=color:mediumblue>&gt;</span></span>...<span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>/h1<span class=tagcolor style=color:mediumblue>&gt;</span></span><br><span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>h1<span class=attributecolor style=color:red> style<span class=attributevaluecolor style=color:mediumblue>="background-color:#ff6347;"</span></span><span class=tagcolor style=color:mediumblue>&gt;</span></span>...<span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>/h1<span class=tagcolor style=color:mediumblue>&gt;</span></span><br><span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>h1<span class=attributecolor style=color:red> style<span class=attributevaluecolor style=color:mediumblue>="background-color:hsl(9,
+100%, 64%);"</span></span><span class=tagcolor style=color:mediumblue>&gt;</span></span>...<span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>/h1<span class=tagcolor style=color:mediumblue>&gt;</span></span><br><br><span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>h1<span class=attributecolor style=color:red> style<span class=attributevaluecolor style=color:mediumblue>="background-color:rgba(255,
+99, 71, 0.5);"</span></span><span class=tagcolor style=color:mediumblue>&gt;</span></span>...<span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>/h1<span class=tagcolor style=color:mediumblue>&gt;</span></span><br><span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>h1<span class=attributecolor style=color:red> style<span class=attributevaluecolor style=color:mediumblue>="background-color:hsla(9,
+100%, 64%, 0.5);"</span></span><span class=tagcolor style=color:mediumblue>&gt;</span></span>...<span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>/h1<span class=tagcolor style=color:mediumblue>&gt;</span></span> </div>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_color_values" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
+</div>
+<hr>
+<h2>RGB значение</h2>
+<p>В <strong>HTML</strong> цвет можно указать как значение <strong>RGB</strong>, используя эту формулу:</p>
+<p style="font-size:20px;font-weight:bold;font-family:Consolas,'Courier New',Courier,monospace">rgb(<em>red</em>, <em>green</em>, <em>blue</em>)</p>
+<p>где <span style=color:red>red</span> - красный, <span style=color:green>green</span> - зелёный, <span style=color:blue>blue</span> - синий.</p>
+<p>Каждый параметр (красный, зеленый и синий) определяет интенсивность цвета от 0 до 255.</p>
+<p>Например, rgb(255, 0, 0) отображается красным, потому что для красного установлено самое высокое значение (255), а для других - 0.</p>
+<p>Чтобы отобразить черный цвет, все параметры цвета должны быть установлены на 0, как здесь: rgb(0, 0, 0).</p>
+<p>Чтобы отобразить белый цвет, все параметры цвета должны быть установлены на 255, как здесь: rgb(255, 255, 255). </p>
+<p>Экспериментируйте, смешивая значения <strong>RGB</strong>!</p>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="notranslate w3-white w3-container">
+<h3 style=background-color:#f00>rgb(255, 0, 0)</h3>
+<h3 style=background-color:#00f>rgb(0, 0, 255)</h3>
+<h3 style=background-color:#3cb371>rgb(60, 179, 113)</h3>
+<h3 style=background-color:#ee82ee>rgb(238, 130, 238)</h3>
+<h3 style=background-color:#ffa500>rgb(255, 165, 0)</h3>
+<h3 style=background-color:#6a5acd>rgb(106, 90, 205)</h3>
+</div>
+<br>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_color_rgb2" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
+</div>
+<p>Оттенки серого часто определяются с использованием равных значений для всех трёх источников света:</p>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="notranslate w3-white w3-container">
+<h3 style=background-color:#000><span style=color:#fff>rgb(0, 0, 0)</span></h3>
+<h3 style=background-color:#3c3c3c>rgb(60, 60, 60)</h3>
+<h3 style=background-color:#787878>rgb(120, 120, 120)</h3>
+<h3 style=background-color:#b4b4b4>rgb(180, 180, 180)</h3>
+<h3 style=background-color:#f0f0f0>rgb(240, 240, 240)</h3>
+<h3 style=background-color:#fff>rgb(255, 255, 255)</h3>
+</div>
+<br>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_color_rgb_gray" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
+</div>
+<hr>
+<h2>HEX Значение</h2>
+<p>В <strong>HTML</strong> цвет можно указать, используя шестнадцатеричное значение <strong>HEX</strong> в форме:</p>
+<p style="font-size:20px;font-weight:bold;font-family:Consolas,'Courier New',Courier,monospace">#<em>rrggbb</em></p>
+<p>Где rr (<span style=color:red>red</span>), gg (<span style=color:green>green</span>) и bb (<span style=color:blue>blue</span>) шестнадцатеричные значения от 00 до ff (такие же, как десятичные 0-255).</p>
+<p>Например, #ff0000 отображается красным, потому что для красного установлено самое высокое значение (ff), а для остальных установлено самое низкое значение (00).</p>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="notranslate w3-white w3-container">
+<h3 style=background-color:#ff0000>#ff0000</h3>
+<h3 style=background-color:#0000ff>#0000ff</h3>
+<h3 style=background-color:#3cb371>#3cb371</h3>
+<h3 style=background-color:#ee82ee>#ee82ee</h3>
+<h3 style=background-color:#ffa500>#ffa500</h3>
+<h3 style=background-color:#6a5acd>#6a5acd</h3>
+</div>
+<br>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_color_hex2" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
+</div>
+<p>Оттенки серого часто определяются с использованием равных значений для всех 3 источников света:</p>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="notranslate w3-white w3-container">
+<h3 style=background-color:#000000><span style=color:#f0f0f0>#000000</span></h3>
+<h3 style=background-color:#3c3c3c>#3c3c3c</h3>
+<h3 style=background-color:#787878>#787878</h3>
+<h3 style=background-color:#b4b4b4>#b4b4b4</h3>
+<h3 style=background-color:#f0f0f0>#f0f0f0</h3>
+<h3 style=background-color:#ffffff>#ffffff</h3>
+</div>
+<br>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_color_hex_gray" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
+</div>
+<hr>
+<h2>HSL Значение</h2>
+<p>В <strong>HTML</strong> цвет можно указать с помощью оттенка (hue), насыщенности (saturation) и яркости (lightness) <strong>HSL</strong> в форме:</p>
+<p style="font-size:20px;font-weight:bold;font-family:Consolas,'Courier New',Courier,monospace">hsl(<em>hue</em>, <em>saturation</em>, <em>lightness</em>)</p>
+<p>Оттенок (hue) - это градус цветового круга от 0 до 360. 0 - красный, 120 - зеленый, а 240 - синий.</p>
+<p>Насыщенность (saturation) - это процентное значение, 0% означает оттенок серого, а 100% - это полный цвет.</p>
+<p>Яркость (lightness) также в процентах, 0% черный, 50% ни светлый, ни темный, 100% белый.</p>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="notranslate w3-white w3-container">
+<h3 style=background-color:hsl(0,100%,50%)>hsl(0, 100%, 50%)</h3>
+<h3 style=background-color:hsl(240,100%,50%)>hsl(240, 100%, 50%)</h3>
+<h3 style=background-color:hsl(147,50%,47%)>hsl(147, 50%, 47%)</h3>
+<h3 style=background-color:hsl(300,76%,72%)>hsl(300, 76%, 72%)</h3>
+<h3 style=background-color:hsl(39,100%,50%)>hsl(39, 100%, 50%)</h3>
+<h3 style=background-color:hsl(248,53%,58%)>hsl(248, 53%, 58%)</h3>
+</div>
+<br>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_color_hsl2" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
+</div>
+<hr>
+<h3>Насыщенность</h3>
+<p><strong>Насыщенность</strong> можно описать как интенсивность цвета.</p>
+<p>100% чистый цвет, без оттенков серого.</p>
+<p>50% - это 50% серый, но вы все еще можете видеть цвет.</p>
+<p>0% полностью серый, вы больше не можете видеть цвет.</p>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="notranslate w3-white w3-container">
+<h3 style=background-color:hsl(0,100%,50%)>hsl(0, 100%, 50%)</h3>
+<h3 style=background-color:hsl(0,80%,50%)>hsl(0, 80%, 50%)</h3>
+<h3 style=background-color:hsl(0,60%,50%)>hsl(0, 60%, 50%)</h3>
+<h3 style=background-color:hsl(0,40%,50%)>hsl(0, 40%, 50%)</h3>
+<h3 style=background-color:hsl(0,20%,50%)>hsl(0, 20%, 50%)</h3>
+<h3 style=background-color:hsl(0,0%,50%)>hsl(0, 0%, 50%)</h3>
+</div>
+<br>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_color_hsl_saturation" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
+</div>
+<hr>
+<h3>Яркость</h3>
+<p><strong>Яркость</strong> цвета можно описать как количество света, которое вы хотите дать цвету, где 0% означает отсутствие света (черный), 50% означает 50% света (ни темно, ни светло), 100% означает полную яркость (белый цвет).</p>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="notranslate w3-white w3-container">
+<h3 style=background-color:hsl(0,100%,0%)><span style=color:#fff>hsl(0, 100%, 0%)</span></h3>
+<h3 style=background-color:hsl(0,100%,25%)>hsl(0, 100%, 25%)</h3>
+<h3 style=background-color:hsl(0,100%,50%)>hsl(0, 100%, 50%)</h3>
+<h3 style=background-color:hsl(0,100%,75%)>hsl(0, 100%, 75%)</h3>
+<h3 style=background-color:hsl(0,100%,90%)>hsl(0, 100%, 90%)</h3>
+<h3 style=background-color:hsl(0,100%,100%)>hsl(0, 100%, 100%)</h3>
+</div>
+<br>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_color_hsl_lightness" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
+</div>
+<hr>
+<p>Оттенки серого часто определяются путем установки оттенка и насыщенности на 0 и регулировки яркости от 0% до 100%, чтобы получить более темные/более светлые оттенки:</p>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="notranslate w3-white w3-container">
+<h3 style=background-color:hsl(0,0%,0%)><span style=color:#fff>hsl(0, 0%, 0%)</span></h3>
+<h3 style=background-color:hsl(0,0%,24%)>hsl(0, 0%, 24%)</h3>
+<h3 style=background-color:hsl(0,0%,47%)>hsl(0, 0%, 47%)</h3>
+<h3 style=background-color:hsl(0,0%,71%)>hsl(0, 0%, 71%)</h3>
+<h3 style=background-color:hsl(0,0%,94%)>hsl(0, 0%, 94%)</h3>
+<h3 style=background-color:hsl(0,0%,100%)>hsl(0, 0%, 100%)</h3>
+</div>
+<br>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_color_hsl_gray" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
+</div>
+<hr>
+<h2>RGBA Значение</h2>
+<p>Цветовые значения <strong>RGBA</strong> являются расширением цветовых значений RGB с альфа-каналом, который определяет непрозрачность для цвета.</p>
+<p>Значение цвета <strong>RGBA</strong> указывается с:</p>
+<p style="font-size:20px;font-weight:bold;font-family:Consolas,'Courier New',Courier,monospace">rgba(<em>red,</em> <em>green</em>, <em>blue, alpha</em>)</p>
+<p>Альфа-параметр - это число от 0,0 (полностью прозрачное) до 1,0 (совсем не прозрачное):</p>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="notranslate w3-white">
+<h3 style=background-color:rgba(255,99,71,0)>rgba(255, 99, 71, 0)</h3>
+<h3 style=background-color:rgba(255,99,71,0.2)>rgba(255, 99, 71, 0.2)</h3>
+<h3 style=background-color:rgba(255,99,71,0.4)>rgba(255, 99, 71, 0.4)</h3>
+<h3 style=background-color:rgba(255,99,71,0.6)>rgba(255, 99, 71, 0.6)</h3>
+<h3 style=background-color:rgba(255,99,71,0.8)>rgba(255, 99, 71, 0.8)</h3>
+<h3 style=background-color:rgba(255,99,71,1)>rgba(255, 99, 71, 1)</h3>
+</div>
+<br>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_color_rgba2" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
+</div>
+<hr>
+<h2>HSLA Значение</h2>
+<p>Значения цвета <strong>HSLA</strong> являются расширением значений цвета HSL с альфа-каналом, который определяет непрозрачность для цвета.</p>
+<p>Значение цвета <strong>HSLA</strong> указывается с:</p>
+<p style="font-size:20px;font-weight:bold;font-family:Consolas,'Courier New',Courier,monospace">hsla: <em>hue</em> (оттенок), <em>saturation</em> (насыщенность), <em>lightness</em> (яркость), <em>alpha</em> (альфа).</p>
+<p>Альфа-параметр - это число от 0,0 (полностью прозрачное) до 1,0 (совсем не прозрачное):</p>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="notranslate w3-white">
+<h3 style=background-color:hsla(9,100%,64%,0)>hsla(9, 100%, 64%, 0)</h3>
+<h3 style=background-color:hsla(9,100%,64%,0.2)>hsla(9, 100%, 64%, 0.2)</h3>
+<h3 style=background-color:hsla(9,100%,64%,0.4)>hsla(9, 100%, 64%, 0.4)</h3>
+<h3 style=background-color:hsla(9,100%,64%,0.6)>hsla(9, 100%, 64%, 0.6)</h3>
+<h3 style=background-color:hsla(9,100%,64%,0.8)>hsla(9, 100%, 64%, 0.8)</h3>
+<h3 style=background-color:hsla(9,100%,64%,1)>hsla(9, 100%, 64%, 1)</h3>
+</div>
+<br>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_color_hsla2" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
+</div>
+<br>
+<div class=keys>
+<strong>W3Schools на русском </strong>
+<strong>уроки для начинающих по CSS </strong>
+<strong>CSS3 для новичков </strong>
+<strong>основы языка CSS </strong>
+<strong>курсы с нуля </strong>
+<strong>язык css </strong>
+<strong>использование цветов в css </strong>
+<strong>какие бывают цвета на веб-страницах </strong>
+<strong>значения цветов </strong>
+<strong>каскадные таблицы стилей css </strong>
+</div>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href=css_howto.html title="Предыдущая страница" rel=prev>❮ Prev</a>
+<a class="w3-right w3-btn" href=css_background.html title="Следующая страница" rel=next>Next ❯</a>
+</div>
+<hr class=hr-bottom>
+<img src=../svg/warning_black.svg alt=warning width=30 class=img-left>
+<p class=note-warning><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href=https://jsfiddle.net/ target=_blank rel=nofollow>jsfiddle.net</a>, <a href=https://codepen.io/pen/tour/welcome/start target=_blank rel=nofollow>codepen.io</a>, <a href=https://liveweave.com/ target=_blank rel=nofollow>liveweave.com</a>, <a href=https://jsbin.com/?html,css,output target=_blank rel=nofollow>jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
+<div id=disqus_thread></div>
+<script>var disqus_config=function(){this.page.url=html5beginners.github.io;this.page.identifier=html5beginners.github.io/css/css_colors.html};(function(){var b=document,a=b.createElement("script");a.src="https://html5beginners.disqus.com/embed.js";a.setAttribute("data-timestamp",+new Date());(b.head||b.body).appendChild(a)})();</script>
+<noscript>Пожалуйста, включите JavaScript для просмотра <a href=https://disqus.com/?ref_noscript>комментариев, предоставленных Disqus.</a></noscript>
+</div>
+<div class=right-sidebar>
+<iframe src=../pages/source.html class=frame-right-sidebar></iframe>
+</div>
+</main>
+<footer>
+<iframe src=../pages/footer.html class=frame-footer></iframe>
+</footer>
+</body>
+</html>
