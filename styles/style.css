@@ -15,7 +15,7 @@ blockquote{padding: 5px 5px 5px 20px; color:#800C1F}
 /* зображення */
 img {margin: 1px;}
 a img {border: 0;}
-ul {padding: 0 0 0 20px}
+ul,ol {padding: 0 0 0 30px}
 .flexible-image {max-width: 90%; margin: 1px;}
 .signature {font-size: .9em; font-family: courier, serif;}
 

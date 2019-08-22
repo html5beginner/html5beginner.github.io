@@ -1,0 +1,13 @@
+body{font-family:Verdana,sans-serif;}
+h1{font-size:2.4em; /*text-shadow: .1px .1px .1px #3a3a3a, .1px .1px .1px #666;*/}
+h2{font-size:2em; padding-left: 5px;}
+h3{font-size:1.8em}
+h4{font-size:1.6em}
+h5{font-size:1.4em}
+h6{font-size:.9em;font-weight:400;margin-bottom:5px;}
+h1,h2,h3,h4,h5{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 5px}
+
+p {padding: 0 2px; text-align:justify;}
+/*pre {font-family: calibri, arial; font-size: 1.1em;}*/
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1.1em}
+hr{box-sizing:content-box;height:0;overflow:visible}
