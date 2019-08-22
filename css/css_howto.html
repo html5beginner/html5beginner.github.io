@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang=ru>
+<head>
+<title>CSS Учебник. Как использовать. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих</title>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, initial-scale=1" />
+<meta name=keywords content="HTML,CSS,как использовать,делать,уроки,для начинающих,учебник,html5,css3,основы,язык,веб,страницы,сайт,стили,стилизация" />
+<meta name=description content="CSS Пособие. Как использовать стили. Курс по основам HTML5 | CSS3. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+<link rel=icon href=/favicon.ico type=image/x-icon />
+<link rel=stylesheet href=../styles/style.css />
+<link rel=stylesheet href=../styles/ws.css />
+<link rel=stylesheet href=../styles/handheld.css />
+<link rel=canonical href=https://html5beginner.github.io/ />
+<meta property=og:title content="CSS Учебник. Как использовать CSS при создании веб-страниц. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих" />
+<meta property=og:type content=Content />
+<meta property=og:url content=https://html5beginner.github.io/ />
+<meta property=og:image content=../image/html5_64x64.png />
+<meta property=og:description content="CSS Пособие. Как использовать CSS при создании веб-страниц. Курс по основам HTML5 | CSS3. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+<meta property=og:locale content=ru />
+<meta property=og:site_name content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
+<script src=../js/topnav.js></script>
+</head>
+<body>
+<iframe src=../pages/header.html class=frame-header></iframe>
+<main>
+<div class=left-sidebar>
+<iframe src=../pages/menucss.html class=frame-left-sidebar></iframe>
+</div>
+<div class=content>
+<h1>CSS Как использовать</h1>
+<p class=brief><strong>Курс по основам CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href=css_syntax.html title="Предыдущая страница" rel=prev>❮ Prev</a>
+<a class="w3-right w3-btn" href=css_colors.html title="Следующая страница" rel=next>Next ❯</a>
+</div>
+<hr>
+<p class=intro>Когда браузер читает таблицу стилей, он форматирует HTML документ в соответствии с информацией в таблице стилей.</p>
+<hr>
+<h2>Три способа подключения CSS</h2>
+<p>Существует три способа подключения таблицы стилей:</p>
+<ul class="w3-leftbar w3-border w3-border-green" style=padding-top:8px;padding-bottom:8px>
+<li>Внешняя таблица стилей (External)</li>
+<li>Внутренняя таблица стилей (Internal)</li>
+<li>Встроенный стиль (Inline)</li>
+</ul>
+<hr>
+<h2>Внешняя таблица стилей</h2>
+<p>С помощью внешней таблицы стилей вы можете изменить внешний вид всего сайта, изменив только один файл!</p>
+<p>Каждая HTML страница должна содержать ссылку на файл внешней таблицы стилей внутри элемента <code class=w3-codespan>&lt;link&gt;</code>.</p>
+<div class="w3-panel w3-note">
+<p><b>Примечание.</b> Подключение файла внешней таблицы стилей является наиболее распространенным способом использования каскадных таблиц стилей.</p>
+</div>
+<div class=w3-example>
+<h3>Пример</h3>
+<p>Внешние стили определены в теге <code class=w3-codespan>&lt;link&gt;</code> внутри раздела <code class=w3-codespan>&lt;head&gt;</code> HTML-страницы:</p>
+<div class="w3-code notranslate htmlHigh">
+<span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>head<span class=tagcolor style=color:mediumblue>&gt;</span></span><br>
+<span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>link<span class=attributecolor style=color:red> rel<span class=attributevaluecolor style=color:mediumblue>="stylesheet"</span> type<span class=attributevaluecolor style=color:mediumblue>="text/css"</span>
+href<span class=attributevaluecolor style=color:mediumblue>="mystyle.css"</span></span><span class=tagcolor style=color:mediumblue>&gt;</span></span><br>
+<span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>/head<span class=tagcolor style=color:mediumblue>&gt;</span></span> </div>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_howto_external" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
+</div>
+<p>Внешнюю таблицу стилей можно написать в любом текстовом редакторе (например, в стандартном Блокноте). Файл не должен содержать никаких HTML-тегов. Файл таблицы стилей должен быть сохранен с расширением <em>.css</em>.</p>
+<div class="w3-panel w3-note">
+<p><b>Примечание:</b> Подробнее о текстовых редакторах, которые можно использовать для написания как HTML-кода, так и CSS-кода, читайте в разделе <a href=../html/les03.html>Редакторы кода</a>.</p>
+</div>
+<p>Вот как выглядит файл "mystyle.css":</p>
+<div class=w3-example>
+<h3>"mystyle.css"</h3>
+<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
+body <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;background-color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> lightblue<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span><br><br>h1 <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> navy<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp;&nbsp;margin-left<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 20px<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
+</div>
+<div class="w3-panel w3-warning">
+<p><strong>Примечание:</strong> Не добавляйте пробел между значением свойства и единицей (например <code class=w3-codespan>margin-left: 20 px;</code>). Правильно писать: <code class=w3-codespan>margin-left: 20px;</code></p>
+</div>
+<hr>
+<h2>Внутренняя таблица стилей</h2>
+<p>Внутренняя таблица стилей может использоваться, если одна отдельная HTML страница имеет свой уникальный стиль и этот стиль больше нигде не используется на других страницах.</p>
+<div class=w3-example>
+<h3>Пример</h3>
+<p>Внутренние стили определены в теге <code class=w3-codespan>&lt;style&gt;</code> внутри раздела <code class=w3-codespan>&lt;head&gt;</code> HTML-страницы:</p>
+<div class="w3-code notranslate htmlHigh">
+<span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>head<span class=tagcolor style=color:mediumblue>&gt;</span></span><br><span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>style<span class=tagcolor style=color:mediumblue>&gt;</span></span><span class=cssselectorcolor style=color:brown><br>body <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp; background-color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> linen<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span><br><br>
+h1 <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp; color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> maroon<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp;&nbsp;margin-left<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 40px<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> <br>
+</span><span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>/style<span class=tagcolor style=color:mediumblue>&gt;</span></span><br><span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>/head<span class=tagcolor style=color:mediumblue>&gt;</span></span> </div>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_howto_internal" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
+</div>
+<hr>
+<h2>Встроенные стили</h2>
+<p>Встроенный стиль может использоваться для применения уникального стиля для отдельного элемента на HTML странице.</p>
+<p>Чтобы использовать встроенные стили, добавьте атрибут стиля к соответствующему элементу (тегу). Атрибут <code class=w3-codespan>style</code> может содержать любое свойство CSS.</p>
+<div class="w3-panel w3-note">
+<p><b>Примечание.</b> Встроенный стиль необходимо использовать как-можно реже, в крайних случаях, когда нужно выделить отдельный фрагмент текста (словосочетание) только на одной HTML странице. Встроенный стиль перегружает HTML-код и увеличивает общий объем веб-страницы.</p>
+</div>
+<div class=w3-example>
+<h3>Пример</h3>
+<p>Встроенные стили определяются в атрибуте <code class=w3-codespan>style</code> соответствующего элемента:</p>
+<div class="w3-code notranslate htmlHigh">
+<span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>h1<span class=attributecolor style=color:red> style<span class=attributevaluecolor style=color:mediumblue>="color:blue;margin-left:30px;"</span></span><span class=tagcolor style=color:mediumblue>&gt;</span></span>This is a heading<span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>/h1<span class=tagcolor style=color:mediumblue>&gt;</span></span> </div>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_howto_inline" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
+</div>
+<div class="w3-panel w3-note">
+<p><strong>Примечание:</strong> Встроенный стиль теряет многие из преимуществ таблицы стилей (путем смешивания контента с его визуальным представлением). Используйте этот метод умеренно.</p>
+</div>
+<hr>
+<h2>Несколько таблиц стилей</h2>
+<p>Если некоторые свойства были определены для одного и того же селектора (элемента) в разных таблицах стилей, будет использоваться значение из последней прочитанной таблицы стилей.</p>
+<div class=w3-example>
+<p>Предположим, что <strong>внешняя таблица стилей</strong> имеет следующий стиль для элемента <code class=w3-codespan>&lt;h1&gt;</code>:</p>
+<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
+h1
+<span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>
+&nbsp;&nbsp;color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> navy<span class=cssdelimitercolor style=color:black>;</span></span><br>
+</span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
+</div>
+<div class=w3-example>
+<p>Затем предположим <strong>внтутренняя таблица стилей</strong> также имеет следующий стиль для элемента <code class=w3-codespan>&lt;h1&gt;</code>:</p>
+<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
+h1
+<span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>
+&nbsp;&nbsp;color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> orange<span class=cssdelimitercolor style=color:black>;</span></span>&nbsp;&nbsp;&nbsp;
+<br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
+</div>
+<div class=w3-example>
+<h3>Пример</h3>
+<p>Если внутренний стиль определен <strong>после</strong> ссылки на внешнюю таблицу стилей, то элемент <code class=w3-codespan>&lt;h1&gt;</code> будет отображаться "<span style=color:orange>orange</span>" (оранжевым):</p>
+<div class="w3-code notranslate htmlHigh">
+<span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>head<span class=tagcolor style=color:mediumblue>&gt;</span></span><br><span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>link<span class=attributecolor style=color:red> rel<span class=attributevaluecolor style=color:mediumblue>="stylesheet"</span> type<span class=attributevaluecolor style=color:mediumblue>="text/css"</span> href<span class=attributevaluecolor style=color:mediumblue>="mystyle.css"</span></span><span class=tagcolor style=color:mediumblue>&gt;</span></span><br>
+<span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>style<span class=tagcolor style=color:mediumblue>&gt;</span></span><span class=cssselectorcolor style=color:brown><br>h1 <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> orange<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span><br></span><span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>/style<span class=tagcolor style=color:mediumblue>&gt;</span></span><br><span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>/head<span class=tagcolor style=color:mediumblue>&gt;</span></span> </div>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_howto_multiple" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
+</div>
+<div class=w3-example>
+<h3>Пример</h3>
+<p>Однако, если внутренний стиль определен <strong>перед</strong> ссылкой на внешнюю таблицу стилей, то <code class=w3-codespan>&lt;h1&gt;</code> элементы будут "<span style=color:navy>navy</span>" (тёмно-синего цвета):</p>
+<div class="w3-code notranslate htmlHigh htmlHigh">
+<span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>head<span class=tagcolor style=color:mediumblue>&gt;</span></span><br><span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>style<span class=tagcolor style=color:mediumblue>&gt;</span></span><span class=cssselectorcolor style=color:brown><br>h1 <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> orange<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span><br></span><span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>/style<span class=tagcolor style=color:mediumblue>&gt;</span></span><br><span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>link<span class=attributecolor style=color:red> rel<span class=attributevaluecolor style=color:mediumblue>="stylesheet"</span> type<span class=attributevaluecolor style=color:mediumblue>="text/css"</span> href<span class=attributevaluecolor style=color:mediumblue>="mystyle.css"</span></span><span class=tagcolor style=color:mediumblue>&gt;</span></span><br>
+<span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>/head<span class=tagcolor style=color:mediumblue>&gt;</span></span> </div>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_howto_multiple2" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
+</div>
+<hr>
+<h2>Порядок каскадных стилей</h2>
+<p>Какой стиль будет использоваться, если для элемента HTML указано более одного стиля?</p>
+<p>Все стили на странице будут "каскадно" превращаться в новую "виртуальную" таблицу стилей по следующим правилам, где номер один имеет наивысший приоритет:</p>
+<ol>
+<li>Встроенный стиль (внутри элемента HTML)</li>
+<li>Внешние и внутренние таблицы стилей (в разделе head)</li>
+<li>Стиль браузера по умолчанию</li>
+</ol>
+<p>Таким образом, встроенный стиль имеет наивысший приоритет и переопределяет внешние и внутренние стили и настройки браузера по умолчанию.</p>
+<p><a class=w3-btn href="https://www.w3schools.com/css/tryit.asp?filename=trycss_howto_cascade" target=_blank rel=nofollow>Попробуйте сами »</a></p>
+<hr>
+<div class="w3-container w3-dark-grey w3-padding">
+<h2>Проверьте себя с помощью упражнений</h2>
+<div class="w3-bar w3-margin-bottom">
+<a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_howto1" target=_blank rel=nofollow>Упражнение 1 »</a>
+<a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_howto2" target=_blank rel=nofollow>Упражнение 2 »</a>
+<a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_howto3" target=_blank rel=nofollow>Упражнение 3 »</a>
+<a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_howto4" target=_blank rel=nofollow>Упражнение 4 »</a>
+</div>
+</div>
+<br>
+<div class=keys>
+<strong>W3Schools на русском </strong>
+<strong>уроки для начинающих по CSS </strong>
+<strong>CSS3 для новичков </strong>
+<strong>синтаксис языка CSS </strong>
+<strong>курсы с нуля </strong>
+<strong>язык css </strong>
+<strong>порядок использования стилей css </strong>
+<strong>как использовать каскадные таблицы стилей </strong>
+<strong>справочники по css </strong>
+<strong>каскадные таблицы стилей css </strong>
+</div>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href=css_syntax.html title="Предыдущая страница" rel=prev>❮ Prev</a>
+<a class="w3-right w3-btn" href=css_colors.html title="Следующая страница" rel=next>Next ❯</a>
+</div>
+<hr class=hr-bottom>
+<img src=../svg/warning_black.svg alt=warning width=30 class=img-left>
+<p class=note-warning><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href=https://jsfiddle.net/ target=_blank rel=nofollow>jsfiddle.net</a>, <a href=https://codepen.io/pen/tour/welcome/start target=_blank rel=nofollow>codepen.io</a>, <a href=https://liveweave.com/ target=_blank rel=nofollow>liveweave.com</a>, <a href=https://jsbin.com/?html,css,output target=_blank rel=nofollow>jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
+<div id=disqus_thread></div>
+<script>var disqus_config=function(){this.page.url=html5beginners.github.io;this.page.identifier=html5beginners.github.io/css/css_howto.html};(function(){var b=document,a=b.createElement("script");a.src="https://html5beginners.disqus.com/embed.js";a.setAttribute("data-timestamp",+new Date());(b.head||b.body).appendChild(a)})();</script>
+<noscript>Пожалуйста, включите JavaScript для просмотра <a href=https://disqus.com/?ref_noscript>комментариев, предоставленных Disqus.</a></noscript>
+</div>
+<div class=right-sidebar>
+<iframe src=../pages/source.html class=frame-right-sidebar></iframe>
+</div>
+</main>
+<footer>
+<iframe src=../pages/footer.html class=frame-footer></iframe>
+</footer>
+</body>
+</html>
