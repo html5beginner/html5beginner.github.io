@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <title>CSS Границы. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="keywords" content="HTML,CSS,границы,border,уроки,для начинающих,css3,основы,как" />
+   <meta name="description" content="CSS Пособие. Как добавить границы на веб-странице. Курс по основам HTML5 | CSS3. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+   <link rel="icon" href="../images/css3_64x64.png" type="image/x-icon" />
+   <link rel="stylesheet" href="../styles/style.css" />
+   <link rel="stylesheet" href="../styles/ws.css" />
+   <link rel="stylesheet" href="../styles/handheld.css" />
+   <link rel="canonical" href="https://html5beginner.github.io/" />
+   <meta property="og:title" content="CSS Границы. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих" />
+   <meta property="og:type" content="Content" />
+   <!--описывает тип объекта на странице-->
+   <meta property="og:url" content="https://html5beginner.github.io/" />
+   <!--адрес сайта-->
+   <meta property="og:image" content="../image/html5_64x64.png" />
+   <!--адрес картинки-->
+   <meta property="og:description" content="CSS Пособие. Как добавить границы на веб-странице. Курс по основам HTML5 | CSS3. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+   <meta property="og:locale" content="ru" />
+   <!--язык сайта-->
+   <meta property="og:site_name" content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
+   <script src="../js/topnav.js"></script>
+</head>
+
+<body>
+   <iframe src="../pages/header.html" class="frame-header"></iframe>
+   <main>
+
+      <div class="left-sidebar">
+         <iframe src="../pages/menucss.html" class="frame-left-sidebar"></iframe>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+         <h1>CSS Границы</h1>
+         <p class="brief"><strong>Курс по основам CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
+
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="css_background.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="css_margin.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+
+         <h2>CSS Border. Свойства границы</h2>
+         <p>CSS свойство <code class="w3-codespan">border</code> позволяет указать стиль, ширину и цвет границы элемента.</p>
+         <div class="w3-container w3-border w3-border-black w3-margin-top">
+            <p>У меня есть границы со всех сторон.</p>
+         </div>
+         <br>
+         <div class="w3-container w3-border-bottom w3-border-red">
+            <p>У меня красная нижняя граница.</p>
+         </div>
+         <br>
+         <div class="w3-container w3-border w3-round-xlarge">
+            <p>У меня закругленные границы.</p>
+         </div>
+         <br>
+         <div class="w3-container w3-pale-blue w3-leftbar w3-border-blue">
+            <p>У меня синяя левая граница.</p>
+         </div>
+         <hr>
+
+         <h2>CSS Border Style. Стиль границы</h2>
+         <p>Свойство <code class="w3-codespan">border-style</code> указывает, какую границу отображать.</p>
+         <p>Допустимы следующие значения:</p>
+         <ul>
+            <li><code class="w3-codespan">dotted</code> - Определяет границу точками</li>
+            <li><code class="w3-codespan">dashed</code> - Определяет пунктирную границу</li>
+            <li><code class="w3-codespan">solid</code> - Определяет сплошную границу</li>
+            <li><code class="w3-codespan">double</code> - Определяет двойную границу</li>
+            <li><code class="w3-codespan">groove</code> - Определяет трехмерную (3D) желобчатую границу. Эффект зависит от значения цвета границы - border-color</li>
+            <li><code class="w3-codespan">ridge</code> - Определяет трехмерную (3D) ребристую границу. Эффект зависит от значения цвета границы - border-color</li>
+            <li><code class="w3-codespan">inset</code> - Определяет трехмерную (3D) границу вставки. Эффект зависит от значения цвета границы - border-color</li>
+            <li><code class="w3-codespan">outset</code> - Определяет трехмерную (3D) рамку. Эффект зависит от значения цвета границы - border-color</li>
+            <li><code class="w3-codespan">none</code> - Определяет отсутствие границы</li>
+            <li><code class="w3-codespan">hidden</code> - Определяет скрытую границу</li>
+         </ul>
+
+         <p>Свойство <code class="w3-codespan">border-style</code> может иметь от одного до четырех значений (для верхней границы, правой границы, нижней границы и левой границы), т.е. по порядку по часовой стрелке.</p>
+
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <p>Демонстрация различных стилей границ:</p>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  p.dotted <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">border-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> dotted<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br>p.dashed
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">border-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> dashed<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br>p.solid <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">border-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> solid<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br>p.double
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">border-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> double<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br>p.groove <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">border-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> groove<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br>p.ridge
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">border-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> ridge<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br>p.inset <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">border-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> inset<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br>p.outset
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">border-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> outset<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br>p.none <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">border-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> none<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br>p.hidden <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">border-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> hidden<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br>
+                  p.mix <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">border-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> dotted dashed solid double<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <p>Результат:</p>
+            <div class="w3-white w3-padding notranslate">
+               <p style="border-style: dotted;margin: 5px 0;padding: 0 5px">Точечная граница.</p>
+               <p style="border-style: dashed;margin: 5px 0;padding: 0 5px">Пунктирная граница.</p>
+               <p style="border-style: solid;margin: 5px 0;padding: 0 5px">Сплошная граница.</p>
+               <p style="border-style: double;margin: 5px 0;padding: 0 5px">Двойная граница.</p>
+               <p style="border-style: groove;margin: 5px 0;padding: 0 5px">Желобчатая границы. Эффект зависит от значения цвета границы.</p>
+               <p style="border-style: ridge;margin: 5px 0;padding: 0 5px">Ребристая граница. Эффект зависит от значения цвета границы.</p>
+               <p style="border-style: inset;margin: 5px 0;padding: 0 5px">Граница внутрь. Эффект зависит от значения цвета границы.</p>
+               <p style="border-style: outset;margin: 5px 0;padding: 0 5px">Граница наружу. Эффект зависит от значения цвета границы.</p>
+               <p style="border-style: none;margin: 5px 0;padding: 0 5px">Нет границы.</p>
+               <p style="border-style: hidden;margin: 5px 0;padding: 0 5px">Скрытая граница.</p>
+               <p style="border-style: dotted dashed solid double;margin: 5px 0;padding: 0 5px">Смешанная граница.</p>
+            </div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_border-style" class="w3-btn w3-margin-top w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <div class="w3-panel w3-note">
+            <p><b>Примечание:</b> Ни одно из ДРУГИХ свойств границ CSS, описанных ниже, не будет иметь ЛЮБОГО эффекта, если не установлено свойство <code class="w3-codespan">border-style</code>!</p>
+         </div>
+         <hr>
+
+         <h2>CSS Ширина границы</h2>
+         <p>Свойство <code class="w3-codespan">border-width</code> определяет ширину четырех границ.</p>
+         <p>Ширина может быть задана в качестве определенного размера (в px, pt, cm, em и т.д.). Или с помощью одного из трёх предопределенных значений: thin (тонкий), medium (средний) или thick (толстый).</p>
+         <p>Свойство <code class="w3-codespan">border-width</code> может иметь от одного до четырех значений (для верхней границы, правой границы, нижней границы и левой границы).</p>
+
+         <div style="border:5px solid black;padding:8px;">5px border-width</div>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  p.one
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                     &nbsp;
+                     border-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> solid<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                     &nbsp;
+                     border-width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 5px<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                  </span><span class="cssdelimitercolor" style="color:black">}</span><br><br>
+                  p.two
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                     &nbsp;
+                     border-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> solid<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                     &nbsp;&nbsp;border-width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> medium<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                  </span><span class="cssdelimitercolor" style="color:black">}</span><br><br>p.three
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                     &nbsp;
+                     border-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> solid<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                     &nbsp;&nbsp;border-width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 2px 10px 4px 20px<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                  </span><span class="cssdelimitercolor" style="color:black">}</span>
+               </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_border-width" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+
+         <h2>CSS Border Color. Цвет границы</h2>
+         <p>Свойство <code class="w3-codespan">border-color</code> используется для установки цвета четырех границ.</p>
+         <p>Цвет может быть установлен с помощью:</p>
+         <ul>
+            <li>name - укажите название цвета, например "red"</li>
+            <li>Hex - укажите шестнадцатеричное значение, например "#ff0000"</li>
+            <li>RGB - укажите значение RGB, например, "rgb(255,0,0)"</li>
+            <li>прозрачный</li>
+         </ul>
+         <p>Свойство <code class="w3-codespan">border-color</code> может иметь от одного до четырех значений (для верхней границы, правой границы, нижней границы и левой границы).</p>
+         <p>Если <code class="w3-codespan">border-color</code> не установлен, он наследует цвет элемента.</p>
+         <div style="border:5px solid red;padding:8px;">Красная граница</div>
+
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  p.one
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                     &nbsp;
+                     border-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> solid<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                     &nbsp;
+                     border-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> red<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                  </span><span class="cssdelimitercolor" style="color:black">}</span><br><br>
+                  p.two
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                     &nbsp;
+                     border-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> solid<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                     &nbsp;&nbsp;border-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> green<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                  </span><span class="cssdelimitercolor" style="color:black">}</span><br><br>p.three <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;border-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> solid<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;border-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> red green blue yellow<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_border-color1" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+
+         <h2>CSS Границы - Отдельные стороны</h2>
+         <p>Из приведенных выше примеров вы видели, что можно задать разные границы для каждой стороны.</p>
+         <p>В CSS также есть свойства для определения каждой из границ (сверху, справа, снизу и слева):</p>
+
+         <div style="border-style: dotted solid;padding:8px;">Разные стили границ</div>
+
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  p
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                     &nbsp;
+                     border-top-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> dotted<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                     &nbsp;
+                     border-right-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> solid<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                     &nbsp;&nbsp;border-bottom-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> dotted<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                     &nbsp;&nbsp;border-left-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> solid<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                  </span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_border-side" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <p>Пример выше даёт тот же результат, что и этот:</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  p <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;
+                     border-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> dotted solid<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_border-side2" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+
+         <p>Таким образом, вот как это работает:</p>
+         <p>Если свойство <code class="w3-codespan">border-style</code> имеет четыре значения:</p>
+         <ul>
+            <li><b>border-style: dotted solid double dashed; </b>
+               <ul>
+                  <li>вверху граница dotted - точечная</li>
+                  <li>справа граница solid - сплошная</li>
+                  <li>снизу граница double - двойная</li>
+                  <li>слева граница dashed - пунктирная</li>
+               </ul>
+            </li>
+         </ul>
+         <p>Если свойство <code class="w3-codespan">border-style</code> имеет три значения:</p>
+         <ul>
+            <li><b>border-style: dotted solid double;</b>
+               <ul>
+                  <li>вверху граница dotted - точечная</li>
+                  <li>справа и слева границы solid - сплошные</li>
+                  <li>нижняя граница double - двойная</li>
+               </ul>
+            </li>
+         </ul>
+         <p>Если свойство <code class="w3-codespan">border-style</code> имеет два значения:</p>
+         <ul>
+            <li><b>border-style: dotted solid;</b>
+               <ul>
+                  <li>вверху и внизу границы dotted - точечные</li>
+                  <li>справа и слева границы solid - сплошные</li>
+               </ul>
+            </li>
+         </ul>
+         <p>Если свойство <code class="w3-codespan">border-style</code> имеет одно значение:</p>
+         <ul>
+            <li><b>border-style: dotted;</b>
+               <ul>
+                  <li>все четыре границы dotted - точечные</li>
+               </ul>
+            </li>
+         </ul>
+         <p>Свойство <code class="w3-codespan">border-style</code> используется в примере выше. Однако он также работает с <code class="w3-codespan">border-width</code> и <code class="w3-codespan">border-color</code>.</p>
+         <hr>
+
+         <h2>CSS Граница - Сокращенное Свойство</h2>
+         <p>Как видно из приведенных выше примеров, при работе с границами необходимо учитывать множество свойств.</p>
+         <p>Чтобы сократить код, также можно указать все отдельные свойства границы в одном свойстве.</p>
+         <p>Свойство <code class="w3-codespan">border</code> является сокращенным свойством для следующих отдельных свойств границы:</p>
+         <ul>
+            <li><code class="w3-codespan">border-width</code></li>
+            <li><code class="w3-codespan">border-style</code> (обязательно)</li>
+            <li><code class="w3-codespan">border-color</code></li>
+         </ul>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  p <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;
+                     border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 5px solid red<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <p>Результат:</p>
+            <div class="w3-white w3-padding notranslate">
+               <p style="border:5px solid red;padding:2px">Некоторый текст</p>
+            </div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_border" class="w3-btn w3-margin-top w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+
+         <p>Вы также можете указать все отдельные свойства границы только для одной стороны:</p>
+         <div class="w3-example">
+            <h3>Левая граница</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  p <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;
+                     border-left<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 6px solid red<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> lightgrey<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <p>Результат:</p>
+            <div class="w3-white w3-padding notranslate">
+               <p style="border-left:6px solid red;padding:5px 5px;background-color:lightgrey">Некоторый текст</p>
+            </div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_border_left" class="w3-btn w3-margin-top w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+
+         <div class="w3-example">
+            <h3>Нижняя граница</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  p <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;
+                     border-bottom<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 6px solid red<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> lightgrey<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <p>Result:</p>
+            <div class="w3-white w3-padding notranslate">
+               <p style="border-bottom:6px solid red;padding:5px 5px;background-color:lightgrey">Некоторый текст</p>
+            </div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_border_bottom" class="w3-btn w3-margin-top w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+
+         <hr>
+
+         <h2>CSS Округлые границы</h2>
+         <p>Свойство <code class="w3-codespan">border-radius</code> используется для добавления округленных границ к элементу:</p>
+         <p style="border: 2px solid red;padding:2px;margin:5px 0">Normal border - нормальная граница</p>
+         <p style="border: 2px solid red;border-radius: 5px;padding:2px;margin:5px 0">Round border - чуть круглая граница</p>
+         <p style="border: 2px solid red;border-radius: 8px;padding:2px;margin:5px 0">Rounder border - округленная граница</p>
+         <p style="border: 2px solid red;border-radius: 12px;padding:2px;margin:5px 0">Roundest border - максимально округленная граница</p>
+
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  p <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 2px solid red<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;border-radius<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 5px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_border_round" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <p><strong>Примечание:</strong> Свойство <code class="w3-codespan">border-radius</code> не поддерживается в IE8 и более ранних версиях.</p>
+         <hr>
+
+         <h2>Больше примеров</h2>
+         <p><a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_border-top">Все свойства верхней границы в одном объявлении</a><br>В этом примере демонстрируется сокращенное свойство для установки всех свойств верхней границы в одном объявлении.</p>
+
+         <p><a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_border-bottom-style">Установить стиль нижней границы</a><br>Этот пример демонстрирует, как установить стиль нижней границы.</p>
+
+         <p><a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_border-left-width">Установите ширину левой границы</a><br>Этот пример демонстрирует, как установить ширину левой границы.</p>
+
+         <p><a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_border-color">Установите цвет четырех границ</a><br>Этот пример демонстрирует, как установить цвет четырех границ. Может иметь от одного до четырех цветов.</p>
+
+         <p><a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_border-right-color">Установите цвет правой границы</a><br>Этот пример демонстрирует, как установить цвет правой границы.</p>
+         <hr>
+
+         <div class="w3-container w3-dark-grey w3-padding">
+            <h2>Проверьте себя с помощью упражнений!</h2>
+            <div class="w3-bar w3-margin-bottom">
+               <a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_border1" target="_blank" rel="nofollow">Упражнение 1 »</a>
+               <a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_border2" target="_blank" rel="nofollow">Упражнение 2 »</a>
+               <a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_border3" target="_blank" rel="nofollow">Упражнение 3 »</a>
+               <a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_border4" target="_blank" rel="nofollow">Упражнение 4 »</a>
+            </div>
+         </div>
+
+         <hr>
+         <h2>Все свойства CSS Границ</h2>
+         <table class="w3-table-all notranslate">
+            <tbody>
+               <tr>
+                  <th style="width:25%">Свойство</th>
+                  <th>Описание</th>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_border.html">border</a></td>
+                  <td>Устанавливает все свойства границы в одном объявлении</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_border-bottom.html">border-bottom</a></td>
+                  <td>Устанавливает все свойства нижней границы в одном объявлении</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_border-bottom_color.html">border-bottom-color</a></td>
+                  <td>Устанавливает цвет нижней границы</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_border-bottom_style.html">border-bottom-style</a></td>
+                  <td>Устанавливает стиль нижней границы</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_border-bottom_width.html">border-bottom-width</a></td>
+                  <td>Устанавливает ширину нижней границы</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_border-color.html">border-color</a></td>
+                  <td>Устанавливает цвет четырех границ</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_border-left.html">border-left</a></td>
+                  <td>Устанавливает все свойства левой границы в одном объявлении</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_border-left_color.html">border-left-color</a></td>
+                  <td>Устанавливает цвет левой границы</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_border-left_style.html">border-left-style</a></td>
+                  <td>Устанавливает стиль левой границы</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_border-left_width.html">border-left-width</a></td>
+                  <td>Устанавливает ширину левой границы</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/css3_pr_border-radius.html">border-radius</a></td>
+                  <td>Устанавливает все четыре свойства border-*-radius для закругленных углов</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_border-right.html">border-right</a></td>
+                  <td>Устанавливает все свойства правой границы в одном объявлении</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_border-right_color.html">border-right-color</a></td>
+                  <td>Устанавливает цвет правой границы</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_border-right_style.html">border-right-style</a></td>
+                  <td>Устанавливает стиль правой границы</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_border-right_width.html">border-right-width</a></td>
+                  <td>Устанавливает ширину правой границы</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_border-style.html">border-style</a></td>
+                  <td>Устанавливает стиль четырех границ</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_border-top.html">border-top</a></td>
+                  <td>Устанавливает все свойства верхней границы в одном объявлении</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_border-top_color.html">border-top-color</a></td>
+                  <td>Устанавливает цвет верхней границы</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_border-top_style.html">border-top-style</a></td>
+                  <td>Устанавливает стиль верхней границы</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_border-top_width.html">border-top-width</a></td>
+                  <td>Устанавливает ширину верхней границы</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_border-width.html">border-width</a></td>
+                  <td>Устанавливает ширину четырех границ</td>
+               </tr>
+            </tbody>
+         </table>
+
+         <hr>
+         <div class="keys">
+            <strong>W3Schools на русском </strong>
+            <strong>уроки для начинающих по CSS </strong>
+            <strong>CSS3 для новичков </strong>
+            <strong>основы языка CSS </strong>
+            <strong>курсы с нуля </strong>
+            <strong>язык css </strong>
+            <strong>как сделать границы в css </strong>
+            <strong>цвет границ на веб-страницах </strong>
+            <strong>border </strong>
+            <strong>каскадные таблицы стилей css </strong>
+         </div>
+
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="css_background.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="css_margin.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+
+         <br>
+      </div>
+
+      <!-- / CONTENT -->
+      <div class="right-sidebar">
+         <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+      </div>
+   </main>
+   <footer>
+      <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+   </footer>
+</body>
+
+</html>
