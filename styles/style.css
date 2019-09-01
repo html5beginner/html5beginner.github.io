@@ -8,7 +8,7 @@ h5{font-size:1.4em}
 h6{font-size:.9em;font-weight:400;margin-bottom:5px;}
 h1,h2,h3,h4,h5{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 5px}
 
-p {padding: 0; text-align:justify;}
+p {padding: 2px;margin: 10px; text-align:justify;}
 blockquote{padding: 5px 5px 5px 20px; color:#800C1F}
 
 /* зображення */
