@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang=ru>
+<head>
+<title>CSS Высота и ширина. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих</title>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, initial-scale=1" />
+<meta name=keywords content="HTML,CSS,высота,ширина,height,width,уроки,для начинающих,css3,основы,как" />
+<meta name=description content="CSS Учебник. Как выставить высоту и ширину элементов на веб-странице? Курс по основам HTML5 | CSS3. W3schools на русском языке. Уроки для начинающих бесплатно" />
+<link rel=icon href=../images/css3_64x64.png type=image/x-icon />
+<link rel=stylesheet href=../styles/style.css />
+<link rel=stylesheet href=../styles/ws.css />
+<link rel=stylesheet href=../styles/handheld.css />
+<link rel=canonical href=https://html5beginner.github.io/ />
+<meta property=og:title content="CSS Высота и ширина. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих" />
+<meta property=og:type content=Content />
+<meta property=og:url content=https://html5beginner.github.io/ />
+<meta property=og:image content=../image/html5_64x64.png />
+<meta property=og:description content="CSS Учебник. Как выставить высоту и ширину элементов на веб-странице? Курс по основам HTML5 | CSS3. W3schools на русском языке. Уроки для начинающих бесплатно" />
+<meta property=og:locale content=ru />
+<meta property=og:site_name content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
+<script src=../js/topnav.js></script>
+</head>
+<body>
+<iframe src=../pages/header.html class=frame-header></iframe>
+<main>
+<div class=left-sidebar>
+<iframe src=../pages/menucss.html class=frame-left-sidebar></iframe>
+</div>
+<div class=content>
+<h1>CSS Высота и Ширина</h1>
+<p class=brief><strong>Курс по основам CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href=css_padding.html title="Предыдущая страница" rel=prev>❮ Prev</a>
+<a class="w3-right w3-btn" href=css_boxmodel.html title="Следующая страница" rel=next>Next ❯</a>
+</div>
+<hr>
+<div class=w3-theme-border style=max-width:100%;border-width:1px;border-style:solid;padding:5px>Этот элемент имеет ширину 100%.</div>
+<br>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_height_width_intro" class=w3-btn rel=nofollow>Попробуйте сами »</a>
+<hr>
+<h2>CSS Настройка высоты и ширины</h2>
+<p>Свойства <code class=w3-codespan>height</code> и <code class=w3-codespan>width</code> используются для установки высоты и ширины элемента.</p>
+<p>Свойства высоты и ширины не включают <strong>padding</strong> (отступы), <strong>border</strong> (границы) или <strong>margin</strong> (поля). Они устанавливают высоту/ширину области внутри отступа, границы и поля элемента.</p>
+<hr>
+<h2>CSS Значения height/width</h2>
+<p>Свойства <code class=w3-codespan>height</code> и <code class=w3-codespan>width</code> могут иметь следующие значения:</p>
+<ul>
+<li><code class=w3-codespan>auto</code> - Это по умолчанию. Браузер рассчитывает высоту и ширину</li>
+<li><code class=w3-codespan>length</code> - Определяет высоту/ширину в px, cm и т.д.</li>
+<li><code class=w3-codespan>%</code> - Определяет высоту/ширину в процентах от содержащего блока</li>
+<li><code class=w3-codespan>initial</code> - Устанавливает высоту/ширину в значение по умолчанию</li>
+<li><code class=w3-codespan>inherit</code> - Высота/ширина будут унаследованы от родительского значения</li>
+</ul>
+<hr>
+<h2>CSS height/width Примеры</h2>
+<div class=w3-theme-border style=width:50%;height:200px;padding:10px;background-color:powderblue>Этот элемент имеет высоту 200 пикселей и ширину 50%.</div>
+<div class=w3-example>
+<h3>Пример</h3>
+<p>Установите высоту и ширину элемента <code class=w3-codespan>&lt;div&gt;</code>:</p>
+<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
+div <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;height<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span>
+200px<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp; width<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 50%<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp; background-color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> powderblue<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
+<p>
+<a class=w3-btn target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_dim_height_width2" rel=nofollow>Попробуйте сами »</a>
+</p>
+</div>
+<div class=w3-theme-border style=height:100px;width:500px;padding:10px;background-color:powderblue>
+Этот элемент имеет высоту 100 пикселей и ширину 500 пикселей.</div>
+<div class=w3-example>
+<h3>Пример</h3>
+<p>Установите высоту и ширину другого элемента <code class=w3-codespan>&lt;div&gt;</code>:</p>
+<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
+div <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;
+height<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span>
+100px<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp;&nbsp;width<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 500px<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp;&nbsp;background-color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> powderblue<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
+<p>
+<a class=w3-btn target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_dim_height_width" rel=nofollow>Попробуйте сами »</a>
+</p>
+</div>
+<p><strong>Примечание:</strong> Помните, что свойства <code class=w3-codespan>height</code> и <code class=w3-codespan>width</code> не включают отступы (padding), границы (border) или поля (margin)! Они устанавливают высоту/ширину области внутри отступа, границы и поля элемента!</p>
+<hr>
+<h2>Установка максимальной ширины - max-width</h2>
+<p>Свойство <code class=w3-codespan>max-width</code> используется для установки максимальной ширины элемента.</p>
+<p>Свойство <code class=w3-codespan>max-width</code> можно указывать в <em>значениях длины</em>, таких как px, cm и т.д. или в процентах (%) от содержащего блока или установите значение none (это значение по умолчанию - означает, что максимальная ширина отсутствует).</p>
+<p>Проблема с <code class=w3-codespan>&lt;div&gt;</code> выше возникает, когда окно браузера меньше ширины элемента (500 пикселей), т.к. браузер добавляет на страницу горизонтальную полосу прокрутки.</p>
+<p>Использование <code class=w3-codespan>max-width</code> вместо этого в данной ситуации улучшит работу браузера с небольшими окнами.</p>
+<p><strong>Совет:</strong> Измените окно браузера на ширину меньше 500 пикселей, чтобы увидеть разницу между двумя div-ами!</p>
+<div class=w3-theme-border style=padding:10px;background-color:powderblue;height:100px;max-width:500px>
+Этот элемент имеет высоту 100 пикселей и максимальную ширину 500 пикселей.</div>
+<p><strong>Примечание:</strong> Значение свойства <code class=w3-codespan>max-width</code> переопределяет <code class=w3-codespan>width</code>.</p>
+<div class=w3-example>
+<h3>Пример</h3>
+<p>Этот <code class=w3-codespan>&lt;div&gt;</code> элемент имеет высоту 100 пикселей и максимальную ширину 500 пикселей:</p>
+<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
+div <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>
+&nbsp; max-width<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 500px<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp;
+height<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span>
+100px<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp; background-color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> powderblue<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
+<p>
+<a class=w3-btn target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_dim_max_width" rel=nofollow>Попробуйте сами »</a>
+</p>
+</div>
+<hr>
+<h2>Попробуйте сами - Упражнения</h2>
+<p><a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_dim_height" rel=nofollow>Установите высоту и ширину элементов</a><br>
+Этот пример демонстрирует, как установить высоту и ширину различных элементов.</p>
+<p><a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_dim_height_percent" rel=nofollow>Установите высоту и ширину изображения, используя проценты</a><br>
+Этот пример демонстрирует, как установить высоту и ширину изображения, используя процентное значение.</p>
+<p><a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_dim_max-width" rel=nofollow>Установите минимальную ширину и максимальную ширину элемента</a><br>
+Этот пример демонстрирует, как установить минимальную ширину и максимальную ширину элемента, используя значение в пикселях.</p>
+<p><a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_dim_max-height" rel=nofollow>Установите минимальную высоту и максимальную высоту элемента</a><br>
+Этот пример демонстрирует, как установить минимальную высоту и максимальную высоту элемента, используя значение в пикселях.</p>
+<hr>
+<div class="w3-container w3-dark-grey w3-padding">
+<h2>Проверьте себя с помощью упражнений!</h2>
+<div class="w3-bar w3-margin-bottom">
+<a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_dimension1" target=_blank rel=nofollow>Упражнение 1 »</a>
+<a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_dimension2" target=_blank rel=nofollow>Упражнение 2 »</a>
+</div>
+</div>
+<hr>
+<h2>Все свойства CSS Размеров</h2>
+<table class="w3-table-all notranslate">
+<tbody>
+<tr>
+<th style=width:20%>Свойство</th>
+<th>Описание</th>
+</tr>
+<tr>
+<td><a href=/cssref/pr_dim_height.html>height</a></td>
+<td>Устанавливает высоту элемента</td>
+</tr>
+<tr>
+<td><a href=/cssref/pr_dim_max-height.html>max-height</a></td>
+<td>Устанавливает максимальную высоту элемента</td>
+</tr>
+<tr>
+<td><a href=/cssref/pr_dim_max-width.html>max-width</a></td>
+<td>Устанавливает максимальную ширину элемента</td>
+</tr>
+<tr>
+<td><a href=/cssref/pr_dim_min-height.html>min-height</a></td>
+<td>Устанавливает минимальную высоту элемента</td>
+</tr>
+<tr>
+<td><a href=/cssref/pr_dim_min-width.html>min-width</a></td>
+<td>Устанавливает минимальную ширину элемента</td>
+</tr>
+<tr>
+<td><a href=/cssref/pr_dim_width.html>width</a></td>
+<td>Устанавливает ширину элемента</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<div class=keys>
+<strong>W3Schools на русском </strong>
+<strong>уроки для начинающих по CSS </strong>
+<strong>CSS3 для чайников </strong>
+<strong>основы CSS - каскадные таблицы стилей </strong>
+<strong>обучение бесплатно от А до Я </strong>
+<strong>язык стилей css </strong>
+<strong>как выставить в css ширину и высоту </strong>
+<strong>ширина и высота элементов на веб-странице </strong>
+<strong>размеры элементов на HTML-страницах </strong>
+<strong>все свойства в каскадных таблицах стилей css </strong>
+</div>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href=css_padding.html title="Предыдущая страница" rel=prev>❮ Prev</a>
+<a class="w3-right w3-btn" href=css_boxmodel.html title="Следующая страница" rel=next>Next ❯</a>
+</div>
+<br>
+</div>
+<div class=right-sidebar>
+<iframe src=../pages/source.html class=frame-right-sidebar></iframe>
+</div>
+</main>
+<footer>
+<iframe src=../pages/footer.html class=frame-footer></iframe>
+</footer>
+</body>
+</html>
