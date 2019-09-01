@@ -60,7 +60,6 @@ header {font-family: "Trebuchet MS", sans-serif; padding: 10px;}
 .title-sidenav {padding-left: 20px;}
 
 /* контент */
-.content {padding: 0 20px; min-height: 760px;}
 
 .right-sidebar {background: #eee; padding: 10px; max-height: 100%;}
 .right-sidebar-list {list-style: none; padding: 0 0 0 10px;}
