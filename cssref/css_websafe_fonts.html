@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang=ru>
+<head>
+<title>CSS Комбинации безопасных веб-шрифтов. CSS3. W3schools на русском. Уроки для начинающих</title>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, initial-scale=1" />
+<meta name=keywords content="HTML,CSS,шрифты,комбинации,безопасные,веб,уроки,для начинающих,css3,основы,как" />
+<meta name=description content="CSS Учебник. Какие безопасные веб-шрифты используются на сайтах? Курс по основам HTML5 | CSS3. W3schools на русском языке. Уроки для начинающих бесплатно" />
+<link rel=icon href=../images/css3_64x64.png type=image/x-icon />
+<link rel=stylesheet href=../styles/style.css />
+<link rel=stylesheet href=../styles/ws.css />
+<link rel=stylesheet href=../styles/handheld.css />
+<link rel=stylesheet type=text/css href=../styles/css_outline.css>
+<link rel=canonical href=https://html5beginner.github.io/ />
+<meta property=og:title content="CSS Комбинации безопасных веб-шрифтов. CSS3. W3schools на русском. Уроки для начинающих" />
+<meta property=og:type content=Content />
+<meta property=og:url content=https://html5beginner.github.io/ />
+<meta property=og:image content=../image/html5_64x64.png />
+<meta property=og:description content="CSS Учебник. Какие безопасные веб-шрифты используются на сайтах? Курс по основам HTML5 | CSS3. W3schools на русском языке. Уроки для начинающих бесплатно" />
+<meta property=og:locale content=ru />
+<meta property=og:site_name content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
+<script src=../js/topnav.js></script>
+</head>
+<body>
+<iframe src=../pages/header.html class=frame-header></iframe>
+<main>
+<div class=left-sidebar>
+<iframe src=../pages/menucss.html class=frame-left-sidebar></iframe>
+</div>
+<div class=content>
+<h1>CSS Комбинации безопасных веб-шрифтов</h1>
+<p class=brief><strong>Курс по основам CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href=css_ref_aural.html title="Предыдущая страница" rel=prev>❮ Prev</a>
+<a class="w3-right w3-btn" href=css_animatable.html title="Следующая страница" rel=next>Next ❯</a>
+</div>
+<hr>
+<h2>Часто используемые комбинации шрифтов</h2>
+<p>Свойство <strong>font-family</strong> должно содержать несколько названий шрифтов в качестве "резервной" системы, чтобы обеспечить максимальную совместимость между браузерами/операционными системами. Если браузер не поддерживает первый указанный шрифт, он пытается использовать следующий указанный шрифт.</p>
+<p>Начните с нужного шрифта и завершите общим шрифтом, чтобы браузер мог выбрать аналогичный шрифт в общем семействе шрифтов, если другие шрифты недоступны:</p>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
+p <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp; font-family<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> "Times New Roman", Times, serif<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span>
+</span></div>
+<a target=_blank href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss_font-family" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
+</div>
+<p>Ниже приведены некоторые часто используемые комбинации шрифтов, организованные общим семейством шрифтов.</p>
+<hr>
+<h2>Serif шрифты</h2>
+<div class=w3-responsive>
+<table class="w3-table-all notranslate">
+<tbody>
+<tr>
+<th style=width:55%>font-family</th>
+<th>Пример текста</th>
+</tr>
+<tr>
+<td>Georgia, serif</td>
+<td>
+<h2 style=margin-top:0;font-family:Georgia,serif>Это заголовок</h2>
+<p style=margin-bottom:0;font-family:Georgia,serif>Это параграф</p>
+</td>
+</tr>
+<tr>
+<td>"Palatino Linotype", "Book Antiqua", Palatino, serif</td>
+<td>
+<h2 style="margin-top:0;font-family:'Palatino Linotype','Book Antiqua',Palatino,serif">Это заголовок</h2>
+<p style="margin-bottom:0;font-family:'Palatino Linotype','Book Antiqua',Palatino,serif">Это параграф</p>
+</td>
+</tr>
+<tr>
+<td>"Times New Roman", Times, serif</td>
+<td>
+<h2 style="margin-top:0;font-family:'Times New Roman',Times,serif">Это заголовок</h2>
+<p style="margin-bottom:0;font-family:'Times New Roman',Times,serif">Это параграф</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h2>Sans-Serif шрифты</h2>
+<div class=w3-responsive>
+<table class="w3-table-all notranslate">
+<tbody>
+<tr>
+<th style=width:55%>font-family</th>
+<th>Пример текста</th>
+</tr>
+<tr>
+<td>Arial, Helvetica, sans-serif</td>
+<td>
+<h2 style=margin-top:0;font-family:Arial,Helvetica,sans-serif>Это заголовок</h2>
+<p style=margin-bottom:0;font-family:Arial,Helvetica,sans-serif>Это параграф</p>
+</td>
+</tr>
+<tr>
+<td>"Arial Black", Gadget, sans-serif</td>
+<td>
+<h2 style="margin-top:0;font-family:Arial Black,Gadget,sans-serif;font-weight:normal">Это заголовок</h2>
+<p style="margin-bottom:0;font-family:Arial Black,Gadget,sans-serif">Это параграф</p>
+</td>
+</tr>
+<tr>
+<td>"Comic Sans MS", cursive, sans-serif</td>
+<td>
+<h2 style="margin-top:0;font-family:'Comic Sans MS',cursive,sans-serif">Это заголовок</h2>
+<p style="margin-bottom:0;font-family:'Comic Sans MS',cursive,sans-serif">Это параграф</p>
+</td>
+</tr>
+<tr>
+<td>Impact, Charcoal, sans-serif</td>
+<td>
+<h2 style=margin-top:0;font-family:Impact,Charcoal,sans-serif;font-weight:normal>Это заголовок</h2>
+<p style=margin-bottom:0;font-family:Impact,Charcoal,sans-serif>Это параграф</p>
+</td>
+</tr>
+<tr>
+<td>"Lucida Sans Unicode", "Lucida Grande", sans-serif</td>
+<td>
+<h2 style="margin-top:0;font-family:'Lucida Sans Unicode','Lucida Grande',sans-serif">Это заголовок</h2>
+<p style="margin-bottom:0;font-family:'Lucida Sans Unicode','Lucida Grande',sans-serif">Это параграф</p>
+</td>
+</tr>
+<tr>
+<td>Tahoma, Geneva, sans-serif</td>
+<td>
+<h2 style=margin-top:0;font-family:Tahoma,Geneva,sans-serif>Это заголовок</h2>
+<p style=margin-bottom:0;font-family:Tahoma,Geneva,sans-serif>Это параграф</p>
+</td>
+</tr>
+<tr>
+<td>"Trebuchet MS", Helvetica, sans-serif</td>
+<td>
+<h2 style="margin-top:0;font-family:'Trebuchet MS',Helvetica,sans-serif">Это заголовок</h2>
+<p style="margin-bottom:0;font-family:'Trebuchet MS',Helvetica,sans-serif">Это параграф</p>
+</td>
+</tr>
+<tr>
+<td>Verdana, Geneva, sans-serif</td>
+<td>
+<h2 style=margin-top:0;font-family:Verdana,Geneva,sans-serif>Это заголовок</h2>
+<p style=margin-bottom:0;font-family:Verdana,Geneva,sans-serif>Это параграф</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2>Моноширинные шрифты</h2>
+<div class=w3-responsive>
+<table class="w3-table-all notranslate">
+<tbody>
+<tr>
+<th style=width:55%>font-family</th>
+<th>Пример текста</th>
+</tr>
+<tr>
+<td>"Courier New", Courier, monospace</td>
+<td>
+<h2 style="margin-top:0;font-family:'Courier New',Courier,monospace">Это заголовок</h2>
+<p style="margin-bottom:0;font-family:'Courier New',Courier,monospace">Это параграф</p>
+</td>
+</tr>
+<tr>
+<td>"Lucida Console", Monaco, monospace</td>
+<td>
+<h2 style="margin-top:0;font-family:'Lucida Console',Monaco,monospace">Это заголовок</h2>
+<p style="margin-bottom:0;font-family:'Lucida Console',Monaco,monospace">Это параграф</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="w3-note w3-panel">
+<p><strong>Совет:</strong> Также ознакомьтесь со всеми доступными <a href=/howto/howto_google_fonts.asp>Google шрифтами</a> и их использованием.</p>
+</div>
+<hr>
+<div class=keys>
+<strong>W3Schools на русском языке </strong>
+<strong>уроки для начинающих по CSS для детей и взрослых </strong>
+<strong>CSS3 для школьников и студентов </strong>
+<strong>основы CSS - каскадные таблицы стилей </strong>
+<strong>научиться CSS бесплатно от любителя до профессионала </strong>
+<strong>стилизация с помощью css </strong>
+<strong>безопасные веб-шрифты в css </strong>
+<strong>шрифты на веб-странице </strong>
+<strong>как вставить нужный шрифт на HTML-странице </strong>
+<strong>полный справочник шрифтов css </strong>
+</div>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href=css_ref_aural.html title="Предыдущая страница" rel=prev>❮ Prev</a>
+<a class="w3-right w3-btn" href=css_animatable.html title="Следующая страница" rel=next>Next ❯</a>
+</div>
+<br>
+</div>
+<div class=right-sidebar>
+<iframe src=../pages/source.html class=frame-right-sidebar></iframe>
+</div>
+</main>
+<footer>
+<iframe src=../pages/footer.html class=frame-footer></iframe>
+</footer>
+</body>
+</html>
