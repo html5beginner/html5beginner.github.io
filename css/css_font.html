@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang=ru>
+<head>
+<title>CSS Шрифты. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих</title>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, initial-scale=1" />
+<meta name=keywords content="HTML,CSS,текст,шрифты,уроки,для начинающих,css3,основы,как" />
+<meta name=description content="CSS Учебник. Какие шрифты используются на веб-сайтах? Курс по основам HTML5 | CSS3. W3schools на русском языке. Уроки для начинающих бесплатно" />
+<link rel=icon href=../images/css3_64x64.png type=image/x-icon />
+<link rel=stylesheet href=../styles/style.css />
+<link rel=stylesheet href=../styles/ws.css />
+<link rel=stylesheet href=../styles/handheld.css />
+<link rel=stylesheet type=text/css href=../styles/css_outline.css>
+<link rel=canonical href=https://html5beginner.github.io/ />
+<meta property=og:title content="CSS Шрифты. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих" />
+<meta property=og:type content=Content />
+<meta property=og:url content=https://html5beginner.github.io/ />
+<meta property=og:image content=../image/html5_64x64.png />
+<meta property=og:description content="CSS Учебник. Какие шрифты используются на веб-сайтах? Курс по основам HTML5 | CSS3. W3schools на русском языке. Уроки для начинающих бесплатно" />
+<meta property=og:locale content=ru />
+<meta property=og:site_name content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
+<script src=../js/topnav.js></script>
+</head>
+<body>
+<iframe src=../pages/header.html class=frame-header></iframe>
+<main>
+<div class=left-sidebar>
+<iframe src=../pages/menucss.html class=frame-left-sidebar></iframe>
+</div>
+<div class=content>
+<h1>CSS Шрифты</h1>
+<p class=brief><strong>Курс по основам CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href=css_text.html title="Предыдущая страница" rel=prev>❮ Prev</a>
+<a class="w3-right w3-btn" href=css_icons.html title="Следующая страница" rel=next>Next ❯</a>
+</div>
+<hr>
+<p class=intro><strong>Свойства шрифта</strong> CSS определяют семейство шрифтов, жирность, размер и стиль текста.</p>
+<hr>
+<h2>Разница между шрифтами с засечками (Serif) и без засечек (Sans-serif)</h2>
+<img alt="Шрифты Serif и Sans-serif" src=../images/serif.gif style=max-width:100%;height:auto width=398 height=142>
+<hr>
+<h2>CSS Font Families - Семейства шрифтов</h2>
+<p>В CSS есть два типа имен семейств шрифтов:</p>
+<ul>
+<li><b>generic family</b> (общие шрифты) - группа семейств шрифтов с похожим видом (например "Serif" или "Monospace")</li>
+<li><b>font family</b> (семейство шрифтов) - определенное семейство шрифтов (например "Times New Roman" или "Arial")</li>
+</ul>
+<table class="w3-table-all notranslate">
+<tbody>
+<tr>
+<th style=width:20%>Generic family</th>
+<th style=width:30%>Font family</th>
+<th>Описание</th>
+</tr>
+<tr>
+<td>Serif</td>
+<td><span style="font-size:150%;font-family:Times New Roman">Times New Roman</span><br>
+<span style=font-size:150%;font-family:Georgia>Georgia</span></td>
+<td>Serif шрифты имеют небольшие линии (засечки) на концах на некоторых символах</td>
+</tr>
+<tr>
+<td>Sans-serif</td>
+<td><span style=font-size:150%;font-family:Arial>Arial</span><br>
+<span style=font-size:150%;font-family:Verdana>Verdana</span></td>
+<td>"Sans" означает "без"" - эти шрифты не имеют линий (засечек) на концах символов</td>
+</tr>
+<tr>
+<td>Monospace</td>
+<td><span style="font-size:150%;font-family:Courier New">Courier New</span><br>
+<span style="font-size:150%;font-family:Lucida Console">Lucida Console</span></td>
+<td>Все моноширинные (monospace) символы имеют одинаковую ширину</td>
+</tr>
+</tbody>
+</table>
+<div class="w3-panel w3-note">
+<p><strong>Примечание:</strong> На экранах компьютеров шрифты без засечек считаются более легкими для чтения, чем шрифты с засечками.</p>
+</div>
+<hr>
+<h2>Font Family - Семейство шрифтов</h2>
+<p>Семейство шрифтов текста устанавливается с помощью свойства <code class=w3-codespan>font-family</code>.</p>
+<p>Свойство <code class=w3-codespan>font-family</code> должно содержать несколько имен шрифтов в качестве "резервных". Если браузер не поддерживает первый шрифт, он пытается использовать следующий шрифт и т.д.</p>
+<p>Начните со шрифта, который вам нужен, и завершите общим семейством шрифтов (generic family), чтобы браузер мог выбрать аналогичный шрифт в общем семействе, если другие шрифты недоступны.</p>
+<p><b>Примечание</b>: Если название семейства шрифтов содержит более одного слова, оно должно быть в кавычках, например: "Times New Roman".</p>
+<p>В списке через запятую указано несколько семейств шрифтов:</p>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
+p <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;font-family<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> "Times New Roman", Times, serif<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span>
+</span></div>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_font-family" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
+</div>
+<p>Для наиболее часто используемых комбинаций шрифтов ознакомьтесь с нашими <a href=/cssref/css_websafe_fonts.html>Веб-безопасными комбинациями шрифтов</a>.</p>
+<hr>
+<h2>Font Style - Стиль шрифта</h2>
+<p>Свойство <code class=w3-codespan>font-style</code> в основном используется для указания курсивного текста.</p>
+<p>Это свойство имеет три значения:</p>
+<ul>
+<li>normal - Текст отображается нормально</li>
+<li>italic - Текст выделен курсивом</li>
+<li>oblique - Текст отображается "наклонным" (наклонный текст очень похож на курсив, но менее поддерживается)</li>
+</ul>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
+p.normal <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;font-style<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> normal<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span><br>
+<br>p.italic <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;font-style<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> italic<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span><br>
+<br>p.oblique <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp; font-style<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> oblique<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_font-style" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
+</div>
+<hr>
+<h2>Font Size - Размер шрифта</h2>
+<p>Свойство <code class=w3-codespan>font-size</code> устанавливает размер текста.</p>
+<p>Возможность управлять размером текста важна в веб-дизайне. Однако не следует использовать настройки размера шрифта, чтобы параграфы выглядели как заголовки или заголовки выглядели как параграфы.</p>
+<p>Всегда используйте правильные теги HTML, такие как &lt;h1&gt; - &lt;h6&gt; для заголовков и &lt;p&gt; для параграфов.</p>
+<p>Значение размера шрифта может быть абсолютным или относительным размером.</p>
+<p>Абсолютный размер:</p>
+<ul>
+<li>Устанавливает текст в указанный размер</li>
+<li>Не позволяет пользователю изменять размер текста во всех браузерах (плохо по причинам доступности)</li>
+<li>Абсолютный размер полезен, когда известен физический размер выходных данных.</li>
+</ul>
+<p>Относительный размер:</p>
+<ul>
+<li>Устанавливает размер относительно окружающих элементов</li>
+<li>Позволяет пользователю изменять размер текста в браузерах</li>
+</ul>
+<div class="w3-panel w3-note">
+<p><strong>Примечание:</strong> Если вы не укажете размер шрифта, размер по умолчанию для обычного текста, например параграфов, будет 16px (16px=1em).</p>
+</div>
+<hr>
+<h2>Установить размер шрифта с пикселями</h2>
+<p>Установка размера текста в пикселях дает вам полный контроль над размером текста:</p>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
+h1 <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;font-size<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 40px<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span><br>
+<br>h2 <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;font-size<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 30px<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span><br>
+<br>p <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;font-size<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 14px<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_font-size_px" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
+</div>
+<p><strong>Совет:</strong> Если вы используете пиксели, вы все равно можете использовать инструмент масштабирования, чтобы изменить размер всей страницы.</p>
+<hr>
+<h2>Установить размер шрифта с помощью Em</h2>
+<p>Чтобы позволить пользователям изменять размер текста (в меню браузера), многие разработчики используют единицу <strong>em</strong> вместо пикселей.</p>
+<p>Единица размера <strong>em</strong> рекомендуется W3C.</p>
+<p>1em равно текущему размеру шрифта. Размер текста по умолчанию в браузерах составляет 16 пикселей. Таким образом, размер по умолчанию 1em составляет 16 пикселей.</p>
+<p>Размер может быть преобразован из пикселей в <strong>em</strong>, используя эту формулу: <i>pixels</i>/16=<i>em</i></p>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
+h1 <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp; font-size<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 2.5em<span class=cssdelimitercolor style=color:black>;</span></span> <span class=commentcolor style=color:green>/* 40px/16=2.5em */</span><br></span><span class=cssdelimitercolor style=color:black>}</span><br>
+<br>h2 <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;font-size<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 1.875em<span class=cssdelimitercolor style=color:black>;</span></span> <span class=commentcolor style=color:green>/* 30px/16=1.875em */</span><br>
+</span><span class=cssdelimitercolor style=color:black>}</span><br>
+<br>p <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp; font-size<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 0.875em<span class=cssdelimitercolor style=color:black>;</span></span> <span class=commentcolor style=color:green>/* 14px/16=0.875em */</span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_font-size_em" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
+</div>
+<p>В приведенном выше примере размер текста в em такой же, как и в предыдущем примере в пикселях. Однако с помощью размера em можно регулировать размер текста во всех браузерах. </p>
+<p>К сожалению, все еще существует проблема со старыми версиями Internet Explorer. Текст становится больше, чем должен, когда он больше, и меньше, чем должен, когда меньше.</p>
+<hr>
+<h2>Используйте комбинацию процентов и Em</h2>
+<p>Решение, которое работает во всех браузерах, заключается в установке размера шрифта по умолчанию в процентах для элемента <code class=w3-codespan>&lt;body&gt;</code>:</p>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
+body <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp; font-size<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 100%<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span><br>
+<br>h1 <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp; font-size<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 2.5em<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span><br>
+<br>h2 <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;font-size<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 1.875em<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span><br>
+<br>p <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp; font-size<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 0.875em<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_font-size_percent_em" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
+</div>
+<p>Наш код теперь отлично работает! Он показывает одинаковый размер текста во всех браузерах и позволяет всем браузерам увеличивать или изменять размер текста!</p>
+<hr>
+<h2>Font Weight - Толщина шрифта</h2>
+<p>Свойство <code class=w3-codespan>font-weight</code> указывает толщину шрифта:</p>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
+p.normal <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp; font-weight<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> normal<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span><br>
+<br>p.thick <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp; font-weight<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> bold<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_font-weight" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
+</div>
+<hr>
+<h2>Responsive Font Size - Отзывчивый (адаптивный) размер шрифта</h2>
+<p>Размер текста может быть установлен с помощью единицы <code class=w3-codespan>vw</code> что означает "ширина области просмотра" - сокращенно от "viewport width".</p>
+<p>Таким образом, размер текста будет соответствовать размеру окна браузера:</p>
+<div class="w3-light-grey w3-padding w3-round">
+<h1 style=font-size:8vw>Hello World</h1>
+<p style=font-size:2vw>Измените размер окна браузера, чтобы увидеть, как масштабируется размер шрифта.</p>
+</div>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="w3-code notranslate htmlHigh">
+<span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>h1<span class=attributecolor style=color:red> style<span class=attributevaluecolor style=color:mediumblue>="<strong>font-size:10vw</strong>"</span></span><span class=tagcolor style=color:mediumblue>&gt;</span></span>Hello World<span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>/h1<span class=tagcolor style=color:mediumblue>&gt;</span></span>
+</div>
+<a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_font_responsive" target=_blank rel=nofollow>Попробуйте сами »</a>
+</div>
+<div class="w3-note w3-panel">
+<p>Окно просмотра - это размер окна браузера. 1vw = 1% ширины области просмотра. Если ширина области просмотра составляет 50 см, значение 1vw составляет 0,5 см.</p>
+</div>
+<hr>
+<h2>Font Variant - Вариант шрифта</h2>
+<p>Свойство <code class=w3-codespan>font-variant</code> указывает, должен ли текст отображаться шрифтом с маленькой буквы.</p>
+<p>В шрифте с маленькими заглавными буквами все строчные буквы преобразуются в прописные. Однако преобразованные заглавные буквы отображаются шрифтом меньшего размера, чем исходные заглавные буквы в тексте.</p>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
+p.normal <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;font-variant<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> normal<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span><br>
+<br>p.small <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp; font-variant<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> small-caps<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_font-variant" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
+</div>
+<hr>
+<h2>Больше примеров</h2>
+<p><a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_font" rel=nofollow>Все свойства шрифта в одном объявлении</a><br>
+Этот пример демонстрирует, как использовать сокращенное свойство для установки всех свойств шрифта в одном объявлении.</p>
+<hr>
+<div class="w3-container w3-dark-grey w3-padding">
+<h2>Проверьте себя с помощью упражнений!</h2>
+<div class="w3-bar w3-margin-bottom">
+<a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_font1" target=_blank rel=nofollow>Упражнение 1 »</a>
+<a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_font2" target=_blank rel=nofollow>Упражнение 2 »</a>
+<a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_font3" target=_blank rel=nofollow>Упражнение 3 »</a>
+<a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_font4" target=_blank rel=nofollow>Упражнение 4 »</a>
+<a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_font5" target=_blank rel=nofollow>Упражнение 5 »</a>
+</div>
+</div>
+<hr>
+<h2>Все CSS свойства шрифта</h2>
+<table class="w3-table-all notranslate">
+<tbody>
+<tr>
+<th style=width:25%>Свойство</th>
+<th>Описание</th>
+</tr>
+<tr>
+<td><a href=/cssref/pr_font_font.html>font</a></td>
+<td>Устанавливает все свойства шрифта в одном объявлении</td>
+</tr>
+<tr>
+<td><a href=/cssref/pr_font_font-family.html>font-family</a></td>
+<td>Определяет семейство шрифтов для текста</td>
+</tr>
+<tr>
+<td><a href=/cssref/pr_font_font-size.html>font-size</a></td>
+<td>Определяет размер шрифта текста</td>
+</tr>
+<tr>
+<td><a href=/cssref/pr_font_font-style.html>font-style</a></td>
+<td>Определяет стиль шрифта для текста</td>
+</tr>
+<tr>
+<td><a href=/cssref/pr_font_font-variant.html>font-variant</a></td>
+<td>Определяет, должен ли текст отображаться шрифтом с маленькой буквы</td>
+</tr>
+<tr>
+<td><a href=/cssref/pr_font_weight.html>font-weight</a></td>
+<td>Определяет вес шрифта</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<div class=keys>
+<strong>W3Schools на русском языке </strong>
+<strong>уроки для начинающих по CSS для детей </strong>
+<strong>CSS3 для школьников и студентов </strong>
+<strong>основы CSS - каскадные таблицы стилей </strong>
+<strong>научиться CSS бесплатно от А до Я </strong>
+<strong>стилизация с помощью css </strong>
+<strong>форматирование текста в css </strong>
+<strong>шрифты на веб-странице </strong>
+<strong>как вставить нужный шрифт на HTML-странице </strong>
+<strong>полный справочник каскадных таблиц стилей css </strong>
+</div>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href=css_text.html title="Предыдущая страница" rel=prev>❮ Prev</a>
+<a class="w3-right w3-btn" href=css_icons.html title="Следующая страница" rel=next>Next ❯</a>
+</div>
+<br>
+</div>
+<div class=right-sidebar>
+<iframe src=../pages/source.html class=frame-right-sidebar></iframe>
+</div>
+</main>
+<footer>
+<iframe src=../pages/footer.html class=frame-footer></iframe>
+</footer>
+</body>
+</html>
