@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang=ru>
+<head>
+<title>CSS Текст. Форматирование. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих</title>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, initial-scale=1" />
+<meta name=keywords content="HTML,CSS,текст,форматирование,уроки,для начинающих,css3,основы,как" />
+<meta name=description content="CSS Учебник. Как форматировать текст на веб-странице? Курс по основам HTML5 | CSS3. W3schools на русском языке. Уроки для начинающих бесплатно" />
+<link rel=icon href=../images/css3_64x64.png type=image/x-icon />
+<link rel=stylesheet href=../styles/style.css />
+<link rel=stylesheet href=../styles/ws.css />
+<link rel=stylesheet href=../styles/handheld.css />
+<link rel=stylesheet type=text/css href=../styles/css_outline.css>
+<link rel=canonical href=https://html5beginner.github.io/ />
+<meta property=og:title content="CSS Текст. Форматирование. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих" />
+<meta property=og:type content=Content />
+<meta property=og:url content=https://html5beginner.github.io/ />
+<meta property=og:image content=../image/html5_64x64.png />
+<meta property=og:description content="CSS Учебник. Как форматировать текст на веб-странице? Курс по основам HTML5 | CSS3. W3schools на русском языке. Уроки для начинающих бесплатно" />
+<meta property=og:locale content=ru />
+<meta property=og:site_name content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
+<script src=../js/topnav.js></script>
+</head>
+<body>
+<iframe src=../pages/header.html class=frame-header></iframe>
+<main>
+<div class=left-sidebar>
+<iframe src=../pages/menucss.html class=frame-left-sidebar></iframe>
+</div>
+<div class=content>
+<h1>CSS Текст</h1>
+<p class=brief><strong>Курс по основам CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href=css_outline.html title="Предыдущая страница" rel=prev>❮ Prev</a>
+<a class="w3-right w3-btn" href=css_font.html title="Следующая страница" rel=next>Next ❯</a>
+</div>
+<hr>
+<h2>Зачем нужно форматирование текста?</h2>
+<p><strong>Форматирование текста</strong> осуществляют для придания веб-странице более привлекательного вида и большей оригинальности. При этом можно выравнивать параграфы, менять семейство шрифта, размер шрифта, его начертание, цвет, добавлять тень к тексту и т.д.</p>
+<div style="margin:auto;border:1px solid gray;padding:8px">
+<h1 style=text-align:center;text-transform:uppercase;color:#4CAF50>форматирование текста</h1>
+<p style=text-indent:50px;text-align:justify;letter-spacing:3px>Этот текст имеет некоторые свойства форматирования текста. В заголовке используются свойства text-align, text-transform и color. Параграф с отступом, выровнен и между символами указан пробел. Подчеркивание удалено из этой цветной ссылки <a style=text-decoration:none;color:#008CBA target=_blank href="https://www.w3schools.com/code/tryit.asp?filename=G7KOQV0PVY3A" rel=nofollow>"Попробуйте сами"</a>.</p>
+</div>
+<br>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_text" class=w3-btn rel=nofollow>Попробуйте сами »</a>
+<hr>
+<h2>Text Color - Цвет текста</h2>
+<p>Свойство <code class=w3-codespan>color</code> используется для установки цвета текста. Цвет может быть указан:</p>
+<ul>
+<li>название цвета - например "red" (красный)</li>
+<li>в значении HEX - например "#ff0000"</li>
+<li>в значении RGB - например "rgb(255,0,0)"</li>
+</ul>
+<p>Посмотрите <a href=/cssref/css_colors_legal.html>CSS значения цветов</a> для полученя полного списка возможных значений цвета.</p>
+<p>Цвет текста по умолчанию для страницы определяется в селекторе <em>body</em>.</p>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
+body <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp; color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> blue<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span><br>
+<br>h1 <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp; color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> green<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_color" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
+</div>
+<div class="w3-panel w3-note">
+<p><strong>Примечание:</strong> Для CSS, совместимого с W3C: если вы определяете свойство <code class=w3-codespan>color</code> вы также должны определить <code class=w3-codespan>background-color</code>.</p>
+</div>
+<hr>
+<h2>Text Alignment - Выравнивание текста</h2>
+<p>Свойство <code class=w3-codespan>text-align</code> используется для горизонтального выравнивания текста.</p>
+<p>Текст может быть выровнен по левому или правому краю, центрирован или выровнен по ширине.</p>
+<p>В следующем примере показано выравнивание по центру и выравнивание по левому и правому краям (выравнивание по левому краю по умолчанию, если направление текста слева направо, и выравнивание по правому краю по умолчанию, если направление текста справа налево):</p>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
+h1 <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp; text-align<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> center<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span><br><br>h2 <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;text-align<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> left<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span><br><br>h3 <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;text-align<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> right<span class=cssdelimitercolor style=color:black>;</span></span><br>
+</span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_text-align" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
+</div>
+<p>Если для свойства <code class=w3-codespan>text-align</code> установлено значение <em>"justify"</em>, каждая строка растягивается, так что каждая строка имеет одинаковую ширину, а левые и правые поля будут выровнены (как в журналах и газетах):</p>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
+div <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;text-align<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> justify<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_text-align_all" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
+</div>
+<hr>
+<h2>Text Decoration - Оформление текста</h2>
+<p>Свойство <code class=w3-codespan>text-decoration</code> используется для установки или удаления оформлений из текста.</p>
+<p>Значение <code class=w3-codespan>text-decoration: none;</code> часто используется для удаления подчеркиваний из ссылок:</p>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
+a <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp; text-decoration<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> none<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span>
+</span></div>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_text-decoration_link" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
+</div>
+<p>Другие значения <code class=w3-codespan>text-decoration</code>, которые используются для оформления текста:</p>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
+h1 <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp; text-decoration<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> overline<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span><br>
+<br>h2 <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp; text-decoration<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> line-through<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span><br>
+<br>h3 <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp; text-decoration<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> underline<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_text-decoration" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
+</div>
+<div class="w3-panel w3-note">
+<p><strong>Примечание:</strong> Не рекомендуется подчеркивать текст, который не является ссылкой, так как это часто путает читателя.</p>
+</div>
+<hr>
+<h2>Text Transformation - Преобразование текста</h2>
+<p>Свойство <code class=w3-codespan>text-transform</code> используется для указания прописных и строчных букв в тексте.</p>
+<p>С его помощью можно превратить все в прописные или строчные буквы или использовать заглавные буквы в каждом слове:</p>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
+p.uppercase <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;text-transform<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> uppercase<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span><br>
+<br>p.lowercase <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;text-transform<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> lowercase<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span><br>
+<br>p.capitalize <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;text-transform<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> capitalize<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_text-transform" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
+</div>
+<hr>
+<h2>Text Indentation - Отступ текста</h2>
+<p>Свойство <code class=w3-codespan>text-indent</code> используется для указания отступа первой строки текста:</p>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
+p <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp; text-indent<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 50px<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_text-indent" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
+</div>
+<hr>
+<h2>Letter Spacing - Межбуквенное расстояние</h2>
+<p>Свойство <code class=w3-codespan>letter-spacing</code> используется для указания пробела между символами в тексте.</p>
+<p>В следующем примере показано, как увеличить или уменьшить расстояние между символами:</p>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
+h1 <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp; letter-spacing<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 3px<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span><br><br>h2 <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;letter-spacing<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> -3px<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_letter-spacing" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
+</div>
+<hr>
+<h2>Line Height - Высота строки</h2>
+<p>Свойство <code class=w3-codespan>line-height</code> используется для указания пробела между строками:</p>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
+p.small <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp; line-height<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 0.8<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span><br><br>p.big <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;
+line-height<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 1.8<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_line-height" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
+</div>
+<hr>
+<h2>Text Direction - Направление текста</h2>
+<p>Свойство <code class=w3-codespan>direction</code> используется для изменения направления текста элемента:</p>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
+p <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;direction<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> rtl<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_text_direction" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
+</div>
+<hr>
+<h2>Word Spacing - Расстояние между словами</h2>
+<p>Свойство <code class=w3-codespan>word-spacing</code> используется для указания пробела между словами в тексте.</p>
+<p>В следующем примере показано, как увеличить или уменьшить расстояние между словами:</p>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
+h1 <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;word-spacing<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 10px<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span><br><br>h2 <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;word-spacing<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> -5px<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_text_word-spacing" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
+</div>
+<hr>
+<h2>Text Shadow - Тень текста</h2>
+<p>Свойство <code class=w3-codespan>text-shadow</code> добавляет тень к тексту.</p>
+<p>В следующем примере указывается положение горизонтальной тени (3 пикселя), положение вертикальной тени (2 пикселя) и цвет тени (красный):</p>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
+h1 <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp; text-shadow<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 3px 2px red<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_text-shadow" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
+</div>
+<hr>
+<h2>Больше примеров</h2>
+<p><a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_text_white-space" rel=nofollow>Отключить перенос текста внутри элемента</a><br>Этот пример демонстрирует, как отключить перенос текста внутри элемента.</p>
+<p><a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_vertical-align" rel=nofollow>Вертикальное выравнивание изображения</a><br>Этот пример демонстрирует, как установить вертикальное выравнивание изображения в тексте.</p>
+<div class="w3-note w3-panel">
+<p><strong>Примечание:</strong> <a href=css_font.html>Перейти к разделу CSS Шрифты</a>, чтобы узнать, как изменить шрифты, размер текста и стиль текста.</p>
+</div>
+<hr>
+<div class="w3-container w3-dark-grey w3-padding">
+<h2>Проверьте себя с помощью упражнений!</h2>
+<div class="w3-bar w3-margin-bottom">
+<a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_text1" target=_blank rel=nofollow>Упражнение 1 »</a>
+<a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_text2" target=_blank rel=nofollow>Упражнение 2 »</a>
+<a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_text3" target=_blank rel=nofollow>Упражнение 3 »</a>
+<a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_text4" target=_blank rel=nofollow>Упражнение 4 »</a>
+<a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_text5" target=_blank rel=nofollow>Упражнение 5 »</a>
+</div>
+</div>
+<hr>
+<h2>Все CSS свойства текста</h2>
+<table class="w3-table-all notranslate">
+<tbody>
+<tr>
+<th style=width:30%>Свойство</th>
+<th>Описание</th>
+</tr>
+<tr>
+<td><a href=/cssref/pr_text_color.html>color</a></td>
+<td>Устанавливает цвет текста</td>
+</tr>
+<tr>
+<td><a href=/cssref/pr_text_direction.html>direction</a></td>
+<td>Определяет направление текста/направление написания</td>
+</tr>
+<tr>
+<td><a href=/cssref/pr_text_letter-spacing.html>letter-spacing</a></td>
+<td>Увеличивает или уменьшает расстояние между символами в тексте</td>
+</tr>
+<tr>
+<td><a href=/cssref/pr_dim_line-height.html>line-height</a></td>
+<td>Устанавливает высоту линии</td>
+</tr>
+<tr>
+<td><a href=/cssref/pr_text_text-align.html>text-align</a></td>
+<td>Определяет горизонтальное выравнивание текста</td>
+</tr>
+<tr>
+<td><a href=/cssref/pr_text_text-decoration.html>text-decoration</a></td>
+<td>Определяет украшение, добавленное к тексту</td>
+</tr>
+<tr>
+<td><a href=/cssref/pr_text_text-indent.html>text-indent</a></td>
+<td>Определяет отступ первой строки в текстовом блоке</td>
+</tr>
+<tr>
+<td><a href=/cssref/css3_pr_text-shadow.html>text-shadow</a></td>
+<td>Определяет эффект тени, добавляемый к тексту</td>
+</tr>
+<tr>
+<td><a href=/cssref/pr_text_text-transform.html>text-transform</a></td>
+<td>Управляет капитализацией текста</td>
+</tr>
+<tr>
+<td><a href=/cssref/css3_pr_text-overflow.html>text-overflow</a></td>
+<td>Определяет, как переполненный контент, который не отображается, должен сообщаться пользователю</td>
+</tr>
+<tr>
+<td><a href=/cssref/pr_text_unicode-bidi.html>unicode-bidi</a></td>
+<td>Используется вместе со свойством <a href=/cssref/pr_text_direction.html>direction</a> для установки или возврата необходимости переопределения текста для поддержки нескольких языков в одном документе.</td>
+</tr>
+<tr>
+<td><a href=/cssref/pr_pos_vertical-align.html>vertical-align</a></td>
+<td>Устанавливает вертикальное выравнивание элемента</td>
+</tr>
+<tr>
+<td><a href=/cssref/pr_text_white-space.html>white-space</a></td>
+<td>Определяет, как обрабатывается пробел внутри элемента</td>
+</tr>
+<tr>
+<td><a href=/cssref/pr_text_word-spacing.html>word-spacing</a></td>
+<td>Увеличивает или уменьшает расстояние между словами в тексте</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<div class=keys>
+<strong>W3Schools на русском </strong>
+<strong>уроки для начинающих по CSS </strong>
+<strong>CSS3 для чайников </strong>
+<strong>основы CSS - каскадные таблицы стилей </strong>
+<strong>научиться CSS бесплатно от А до Я </strong>
+<strong>стилизация с помощью css </strong>
+<strong>форматирование текста в css </strong>
+<strong>создание текста на веб-странице </strong>
+<strong>как сделать текст невидимым на HTML-странице </strong>
+<strong>справочник каскадные таблицы стилей css </strong>
+</div>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href=css_outline.html title="Предыдущая страница" rel=prev>❮ Prev</a>
+<a class="w3-right w3-btn" href=css_font.html title="Следующая страница" rel=next>Next ❯</a>
+</div>
+<br>
+</div>
+<div class=right-sidebar>
+<iframe src=../pages/source.html class=frame-right-sidebar></iframe>
+</div>
+</main>
+<footer>
+<iframe src=../pages/footer.html class=frame-footer></iframe>
+</footer>
+</body>
+</html>
