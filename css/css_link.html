@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang=ru>
+<head>
+<title>CSS Ссылки. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих</title>
+<meta charset=utf-8 />
+<meta name=viewport content="width=device-width, initial-scale=1" />
+<meta name=keywords content="HTML,CSS,ссылки,уроки,для начинающих,css3,основы,как,пример" />
+<meta name=description content="CSS Учебник. Как добавить ссылку на веб-страницу? Курс по основам HTML5 | CSS3. W3schools на русском языке. Уроки для начинающих бесплатно" />
+<link rel=icon href=../images/css3_64x64.png type=image/x-icon />
+<link rel=stylesheet href=../styles/style.css />
+<link rel=stylesheet href=../styles/ws.css />
+<link rel=stylesheet href=../styles/handheld.css />
+<link rel=stylesheet href=../styles/w3colors.css />
+<link rel=canonical href=https://html5beginner.github.io/ />
+<meta property=og:title content="CSS Ссылки. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих" />
+<meta property=og:type content=Content />
+<meta property=og:url content=https://html5beginner.github.io/ />
+<meta property=og:image content=../image/html5_64x64.png />
+<meta property=og:description content="CSS Учебник. Как добавить ссылку на веб-страницу? Курс по основам HTML5 | CSS3. W3schools на русском языке. Уроки для начинающих бесплатно" />
+<meta property=og:locale content=ru />
+<meta property=og:site_name content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
+<script src=../js/topnav.js></script>
+<style>.btn{display:inline-block;background-color:#f44336;color:#fff;padding:14px 25px;text-align:center;text-decoration:none;font-size:16px;margin-left:20px;opacity:.9}.btn:hover{color:white;background-color:red;opacity:1}.button{background-color:white;color:black;border:2px solid #4caf50;padding:10px 20px;text-align:center;text-decoration:none;display:inline-block;font-size:16px;margin-left:20px}.button:hover{background-color:#4caf50;color:white}.txtlink{color:green;text-decoration:none;margin-left:20px;font-size:16px}.txtlink:hover{text-decoration:underline}.txtlink2:hover{color:#008cba}@media only screen and (max-width:547px){.btn{margin:0!important}}@media only screen and (max-width:381px){.button{margin:0!important}}@media only screen and (max-width:337px){.button{margin:10px 0!important}}</style>
+</head>
+<body>
+<iframe src=../pages/header.html class=frame-header></iframe>
+<main>
+<div class=left-sidebar>
+<iframe src=../pages/menucss.html class=frame-left-sidebar></iframe>
+</div>
+<div class=content>
+<h1>CSS Ссылки</h1>
+<p class=brief><strong>Курс по основам CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href=css_icons.html title="Предыдущая страница" rel=prev>❮ Prev</a>
+<a class="w3-right w3-btn" href=css_list.html title="Следующая страница" rel=next>Next ❯</a>
+</div>
+<hr>
+<p class=intro>С помощью CSS ссылки можно стилизовать разными способами.</p>
+<a href=javascript:void(0) class=txtlink2>Текстовая ссылка</a>
+<a href=javascript:void(0) class=txtlink>Текстовая ссылка</a>
+<a href=javascript:void(0) class="button button1">Кнопочная ссылка</a>
+<a href=javascript:void(0) class=btn>Кнопочная ссылка</a>
+<hr>
+<h2>Стилизация ссылок</h2>
+<p>Ссылки могут быть оформлены с помощью любого свойства CSS (например, <code class=w3-codespan>color</code>, <code class=w3-codespan>font-family</code>,
+<code class=w3-codespan>background</code> и т.д.).</p>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
+a <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> hotpink<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
+<a target=_blank href="tryit.asp?filename=trycss_link_all" class="w3-btn w3-margin-bottom">Try it Yourself »</a>
+</div>
+<p>Кроме того, ссылки могут быть оформлены по-разному в зависимости от того, в каком <strong>состоянии</strong> они находятся.</p>
+<p>Четыре состояния ссылок:</p>
+<ul>
+<li><code class=w3-codespan>a:link</code> - обычная, не посещенная ссылка</li>
+<li><code class=w3-codespan>a:visited</code> - ссылка, которую посетил пользователь</li>
+<li><code class=w3-codespan>a:hover</code> - ссылка, когда пользователь наводит на неё курсор мыши</li>
+<li><code class=w3-codespan>a:active</code> - ссылка в тот момент, когда она нажата (активная)</li>
+</ul>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
+<span class=commentcolor style=color:green>/* непосещенная ссылка */</span><br>a:link <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp; color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> red<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span><br><br><span class=commentcolor style=color:green>/* посещенная ссылка */</span><br>a:visited <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp; color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> green<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span><br><br><span class=commentcolor style=color:green>/* ссылка при наведении мыши */</span><br>
+a:hover <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> hotpink<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span><br><br><span class=commentcolor style=color:green>/* активная ссылка */</span><br>a:active <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>
+&nbsp;
+color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> blue<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
+<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_link" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
+</div>
+<p>При настройке стиля для нескольких состояний ссылок существуют некоторые правила порядка:</p>
+<ul>
+<li>a:hover ДОЛЖЕН следовать после a:link и a:visited</li>
+<li>a:active ДОЛЖЕН следовать после a:hover</li>
+</ul>
+<hr>
+<h2>Text Decoration - Оформление текста</h2>
+<p>Свойство <code class=w3-codespan>text-decoration</code> в основном используется для удаления подчеркиваний из ссылок:</p>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
+a:link <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp; text-decoration<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> none<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span><br>
+<br>a:visited <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp; text-decoration<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> none<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span><br>
+<br>a:hover <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;text-decoration<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> underline<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span><br>
+<br>a:active <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;text-decoration<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> underline<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
+<a target=_blank class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_link_decoration" rel=nofollow>Попробуйте сами »</a>
+</div>
+<hr>
+<h2>Background Color - Цвет фона</h2>
+<p>Свойство <code class=w3-codespan>background-color</code> может быть использовано для указания цвета фона для ссылок:</p>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
+a:link <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;background-color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> yellow<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span><br><br>
+a:visited <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp; background-color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> cyan<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span><br><br>
+a:hover <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;background-color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> lightgreen<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span><br><br>
+a:active <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;background-color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> hotpink<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span>&nbsp;
+</span></div>
+<a target=_blank class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_link_background" rel=nofollow>Попробуйте сами »</a>
+</div>
+<hr>
+<h2>Дополнительно - Кнопки-ссылки</h2>
+<p>Этот пример демонстрирует более сложный пример, где объединяются несколько свойств CSS для отображения ссылок в виде блоков / кнопок:</p>
+<div class=w3-example>
+<h3>Пример</h3>
+<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
+a:link, a:visited <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;background-color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> #f44336<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp;
+color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> white<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp; padding<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 14px 25px<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp;&nbsp;text-align<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> center<span class=cssdelimitercolor style=color:black>;</span></span> <br>&nbsp;&nbsp;text-decoration<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> none<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp;&nbsp;display<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> inline-block<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span><br><br>a:hover, a:active <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;background-color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> red<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
+<a target=_blank class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_link_advanced" rel=nofollow>Попробуйте сами »</a>
+</div>
+<hr>
+<h2>Больше примеров</h2>
+<p><a target=_blank href="tryit.asp?filename=trycss_link2">Добавить разные стили к гиперссылкам</a><br>
+Этот пример демонстрирует, как добавить другие стили к гиперссылкам.</p>
+<p><a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_link_advanced2" rel=nofollow>Дополнительно - Создать кнопку ссылки с границами</a><br>
+Еще один пример того, как создавать поля ссылок/кнопки.</p>
+<p><a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_cursor" rel=nofollow>Изменить курсор</a><br>
+Свойство курсора определяет тип курсора для отображения. Этот пример демонстрирует различные типы курсоров (может быть полезным для ссылок).</p>
+<hr>
+<div class="w3-container w3-dark-grey w3-padding">
+<h2>Проверьте себя с помощью упражнений!</h2>
+<div class="w3-bar w3-margin-bottom">
+<a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_link1" target=_blank rel=nofollow>Упражнение 1 »</a>
+<a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_link2" target=_blank rel=nofollow>Упражнение 2 »</a>
+<a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_link3" target=_blank rel=nofollow>Упражнение 3 »</a>
+<a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_link4" target=_blank rel=nofollow>Упражнение 4 »</a>
+</div>
+</div>
+<hr>
+<div class=keys>
+<strong>W3Schools на русском языке </strong>
+<strong>уроки для начинающих по CSS онлайн </strong>
+<strong>CSS3 для детей и взрослых </strong>
+<strong>основы CSS - каскадные таблицы стилей </strong>
+<strong>курсы CSS3 бесплатно от А до Я </strong>
+<strong>стилизация ссылки с помощью css </strong>
+<strong>ссылки в css </strong>
+<strong>оформление ссылок на веб-странице </strong>
+<strong>как вставить ссылку на HTML-странице </strong>
+<strong>создание ссылок на веб-страницах </strong>
+</div>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href=css_icons.html title="Предыдущая страница" rel=prev>❮ Prev</a>
+<a class="w3-right w3-btn" href=css_list.html title="Следующая страница" rel=next>Next ❯</a>
+</div>
+<br>
+</div>
+<div class=right-sidebar>
+<iframe src=../pages/source.html class=frame-right-sidebar></iframe>
+</div>
+</main>
+<footer>
+<iframe src=../pages/footer.html class=frame-footer></iframe>
+</footer>
+</body>
+</html>
