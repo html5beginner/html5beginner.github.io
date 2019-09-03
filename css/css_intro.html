@@ -1,100 +1,115 @@
 <!DOCTYPE html>
-<html lang=ru>
+<html lang="ru">
+
 <head>
-<title>CSS Учебник. Введение. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих</title>
-<meta charset=utf-8 />
-<meta name=viewport content="width=device-width, initial-scale=1" />
-<meta name=keywords content="HTML,CSS,введение,уроки,для начинающих,учебник,html5,css3,tutorial,основы,язык,веб,страницы,сайт,старт,стили,стилизация,начало" />
-<meta name=description content="CSS Пособие. Введение. Курс по основам HTML5 | CSS3. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
-<link rel="icon" href="../images/css3_64x64.png" type="image/x-icon" />
-<link rel=stylesheet href=../styles/style.css />
-<link rel=stylesheet href=../styles/ws.css />
-<link rel=stylesheet href=../styles/handheld.css />
-<link rel=canonical href=https://html5beginner.github.io/ />
-<meta property=og:title content="CSS Учебник. Введение. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих" />
-<meta property=og:type content=Content />
-<meta property=og:url content=https://html5beginner.github.io/ />
-<meta property=og:image content=../image/html5_64x64.png />
-<meta property=og:description content="CSS Пособие. Введение. Курс по основам HTML5 | CSS3. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
-<meta property=og:locale content=ru />
-<meta property=og:site_name content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
-<script src=../js/topnav.js></script>
+   <title>CSS Учебник. Введение. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="keywords" content="HTML,CSS,введение,уроки,для начинающих,учебник,html5,css3,tutorial,основы,язык,веб,страницы,сайт,старт,стили,стилизация,начало" />
+   <meta name="description" content="CSS Пособие. Введение. Курс по основам HTML5 | CSS3. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+   <link rel="icon" href="../images/css3_64x64.png" type="image/x-icon" />
+   <link rel="stylesheet" href="../styles/style.css" />
+   <link rel="stylesheet" href="../styles/ws.css" />
+   <link rel="stylesheet" href="../styles/handheld.css" />
+   <link rel="canonical" href="https://html5beginner.github.io/" />
+   <meta property="og:title" content="CSS Учебник. Введение. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих" />
+   <meta property="og:type" content="Content" />
+   <!--описывает тип объекта на странице-->
+   <meta property="og:url" content="https://html5beginner.github.io/" />
+   <!--адрес сайта-->
+   <meta property="og:image" content="../image/html5_64x64.png" />
+   <!--адрес картинки-->
+   <meta property="og:description" content="CSS Пособие. Введение. Курс по основам HTML5 | CSS3. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+   <meta property="og:locale" content="ru" />
+   <!--язык сайта-->
+   <meta property="og:site_name" content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
+   <script src="../js/topnav.js"></script>
 </head>
+
 <body>
-<iframe src=../pages/header.html class=frame-header></iframe>
-<main>
-<div class=left-sidebar>
-<iframe src=../pages/menucss.html class=frame-left-sidebar></iframe>
-</div>
-<div class=content>
-<h1>CSS Введение</h1>
-<p class=brief><strong>Курс по основам CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
-<div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href=css_tutorial.html title="Предыдущая страница" rel=prev>❮ Prev</a>
-<a class="w3-right w3-btn" href=css_syntax.html title="Следующая страница" rel=next>Next ❯</a>
-</div>
-<hr>
-<h2>Что такое CSS?</h2>
-<ul>
-<li><strong>CSS</strong> расшифровывается как <b>C</b>ascading <b>S</b>tyle <b>S</b>heets (<strong>каскадные таблицы стилей</strong>)</li>
-<li><strong>CSS</strong> описывает <strong>как HTML элементы должны отображаться на экране, бумаге или других носителях.</strong></li>
-<li><strong>CSS</strong> <strong>экономит много времени</strong>. Он может контролировать макет нескольких веб-страниц одновременно</li>
-<li>Внешние таблицы стилей хранятся в отдельных <strong>CSS файлах</strong></li>
-</ul>
-<hr>
-<h2>CSS демо - Одна HTML страница - несколько стилей!</h2>
-<p>Здесь мы покажем одну HTML-страницу с четырьмя различными таблицами стилей. Нажмите на ссылку "Таблица стилей 1", "Таблица стилей 2", "Таблица стилей 3", "Таблица стилей 4" ниже, чтобы увидеть различные стили:</p>
-<div class=w3-example style=text-align:center;padding:30px>
-<iframe style=width:96%;height:850px;background:#ffffff;border:none src=demo_default.html></iframe>
-</div>
-<hr>
-<h2>Зачем использовать CSS?</h2>
-<p><strong>CSS используется</strong> для определения стилей ваших веб-страниц, включая дизайн, макет и варианты отображения для разных устройств и размеров экрана.</p>
-<hr>
-<h2>CSS решил большую проблему</h2>
-<p><strong>HTML</strong> НИКОГДА не должен содержать теги для форматирования веб-страницы!</p>
-<p><strong>HTML</strong> был создан для <strong>описания содержания</strong> веб-страницы, например:</p>
-<p>&lt;h1&gt;это заголовок&lt;/h1&gt;</p>
-<p>&lt;p&gt;Это абзац.&lt;/p&gt;</p>
-<p>Когда такие теги, как &lt;font&gt; и атрибуты цвета были добавлены в спецификацию <strong>HTML 3.2</strong>, это стало кошмаром для веб-разработчиков. Разработка крупных веб-сайтов, на которых шрифты и информация о цвете добавлялись на каждую страницу, стала длительным и дорогостоящим процессом.</p>
-<p>Чтобы решить эту проблему, Консорциум World Wide Web (W3C) создал <strong>CSS</strong>.</p>
-<p><strong>CSS</strong> удалил форматирование стилей со страницы <strong>HTML</strong>!</p>
-<div class="w3-note w3-panel">
-<p>Если вы ещё не знаете, что такое <strong>HTML</strong>, рекомендуем вам прочитать на нашем сайте <a href=../html/les01.html title="Перейти на Урок №1 по HTML">Учебник по HTML</a>.</p>
-</div>
-<hr>
-<h2>CSS экономит много работы!</h2>
-<p>Описания стиля обычно сохраняются во внешних файлах с расширением <em>.css</em>.</p>
-<p>С помощью внешнего файла таблицы стилей вы можете изменить внешний вид всего сайта, изменив только один файл <strong>css</strong>!</p>
-<br>
-<div class=keys>
-<strong>W3Schools на русском </strong>
-<strong>уроки для начинающих </strong>
-<strong>для новичков </strong>
-<strong>основы языка CSS </strong>
-<strong>курсы с нуля </strong>
-<strong>язык css </strong>
-<strong>стилизация страниц с помощью css</strong>
-<strong>каскадные таблицы стилей </strong>
-<strong>справочники по css </strong>
-<strong>примеры css </strong>
-</div>
-<div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href=css_tutorial.html title="Предыдущая страница" rel=prev>❮ Prev</a>
-<a class="w3-right w3-btn" href=css_syntax.html title="Следующая страница" rel=next>Next ❯</a>
-</div>
-<hr class=hr-bottom>
-<img src=../svg/warning_black.svg alt=warning width=30 class=img-left><p class=note-warning><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href=https://jsfiddle.net/ target=_blank rel=nofollow>jsfiddle.net</a>, <a href=https://codepen.io/pen/tour/welcome/start target=_blank rel=nofollow>codepen.io</a>, <a href=https://liveweave.com/ target=_blank rel=nofollow>liveweave.com</a>, <a href=https://jsbin.com/?html,css,output target=_blank rel=nofollow>jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
-<div id=disqus_thread></div>
-<script>var disqus_config=function(){this.page.url=html5beginners.github.io;this.page.identifier=html5beginners.github.io/css/css_intro.html};(function(){var b=document,a=b.createElement("script");a.src="https://html5beginners.disqus.com/embed.js";a.setAttribute("data-timestamp",+new Date());(b.head||b.body).appendChild(a)})();</script>
-<noscript>Пожалуйста, включите JavaScript для просмотра <a href=https://disqus.com/?ref_noscript>комментариев, предоставленных Disqus.</a></noscript>
-</div>
-<div class=right-sidebar>
-<iframe src=../pages/source.html class=frame-right-sidebar></iframe>
-</div>
-</main>
-<footer>
-<iframe src=../pages/footer.html class=frame-footer></iframe>
-</footer>
+   <iframe src="../pages/header.html" class="frame-header"></iframe>
+   <main>
+
+      <div class="left-sidebar">
+         <iframe src="../pages/menucss.html" class="frame-left-sidebar"></iframe>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+         <h1>CSS Введение</h1>
+         <p class="brief"><strong>Курс по основам CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
+
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="css_tutorial.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="css_syntax.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         <hr>
+
+         <h2>Что такое CSS?</h2>
+         <ul>
+            <li><strong>CSS</strong> расшифровывается как <b>C</b>ascading <b>S</b>tyle <b>S</b>heets (<strong>каскадные таблицы стилей</strong>)</li>
+            <li><strong>CSS</strong> описывает <strong>как HTML элементы должны отображаться на экране, бумаге или других носителях.</strong></li>
+            <li><strong>CSS</strong> <strong>экономит много времени</strong>. Он может контролировать макет нескольких веб-страниц одновременно</li>
+            <li>Внешние таблицы стилей хранятся в отдельных <strong>CSS файлах</strong></li>
+         </ul>
+         <hr>
+
+         <h2>CSS демо - Одна HTML страница - несколько стилей!</h2>
+         <p>Здесь мы покажем одну HTML-страницу с четырьмя различными таблицами стилей. Нажмите на ссылку "Таблица стилей 1", "Таблица стилей 2", "Таблица стилей 3", "Таблица стилей 4" ниже, чтобы увидеть различные стили:</p>
+         <div class="w3-example" style="text-align:center;padding:30px;">
+            <iframe style="width:96%;height:850px;background:#ffffff;border:none;" src="demo_default.html"></iframe>
+         </div>
+         <hr>
+
+         <h2>Зачем использовать CSS?</h2>
+         <p><strong>CSS используется</strong> для определения стилей ваших веб-страниц, включая дизайн, макет и варианты отображения для разных устройств и размеров экрана.</p>
+         <hr>
+
+         <h2>CSS решил большую проблему</h2>
+         <p><strong>HTML</strong> НИКОГДА не должен содержать теги для форматирования веб-страницы!</p>
+         <p><strong>HTML</strong> был создан для <strong>описания содержания</strong> веб-страницы, например:</p>
+         <p>&lt;h1&gt;это заголовок&lt;/h1&gt;</p>
+         <p>&lt;p&gt;Это абзац.&lt;/p&gt;</p>
+         <p>Когда такие теги, как &lt;font&gt; и атрибуты цвета были добавлены в спецификацию <strong>HTML 3.2</strong>, это стало кошмаром для веб-разработчиков. Разработка крупных веб-сайтов, на которых шрифты и информация о цвете добавлялись на каждую страницу, стала длительным и дорогостоящим процессом.</p>
+         <p>Чтобы решить эту проблему, Консорциум World Wide Web (W3C) создал <strong>CSS</strong>.</p>
+         <p><strong>CSS</strong> удалил форматирование стилей со страницы <strong>HTML</strong>!</p>
+         <div class="w3-note w3-panel">
+            <p>Если вы ещё не знаете, что такое <strong>HTML</strong>, рекомендуем вам прочитать на нашем сайте <a href="../html/les01.html" title="Перейти на Урок №1 по HTML">Учебник по HTML</a>.</p>
+         </div>
+         <hr>
+
+         <h2>CSS экономит много работы!</h2>
+         <p>Описания стиля обычно сохраняются во внешних файлах с расширением <em>.css</em>.</p>
+         <p>С помощью внешнего файла таблицы стилей вы можете изменить внешний вид всего сайта, изменив только один файл <strong>css</strong>!</p>
+
+         <hr>
+         <div class="keys">
+            <strong>W3Schools на русском </strong>
+            <strong>уроки для начинающих </strong>
+            <strong>для новичков </strong>
+            <strong>основы языка CSS </strong>
+            <strong>курсы с нуля </strong>
+            <strong>язык css </strong>
+            <strong>стилизация страниц с помощью css</strong>
+            <strong>каскадные таблицы стилей </strong>
+            <strong>справочники по css </strong>
+            <strong>примеры css </strong>
+         </div>
+
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="css_tutorial.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="css_syntax.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         <br>
+      </div>
+
+      <!-- / CONTENT -->
+      <div class="right-sidebar">
+         <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+      </div>
+   </main>
+   <footer>
+      <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+   </footer>
 </body>
+
 </html>

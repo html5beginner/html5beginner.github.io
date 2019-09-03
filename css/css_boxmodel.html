@@ -1,140 +1,161 @@
 <!DOCTYPE html>
-<html lang=ru>
+<html lang="ru">
+
 <head>
-<title>CSS Блочная модель. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих</title>
-<meta charset=utf-8 />
-<meta name=viewport content="width=device-width, initial-scale=1" />
-<meta name=keywords content="HTML,CSS,бокс,блок,блочная,модель,уроки,для начинающих,css3,основы,как" />
-<meta name=description content="CSS Учебник. Как работает блочная модель на веб-странице? Курс по основам HTML5 | CSS3. W3schools на русском языке. Уроки для начинающих бесплатно" />
-<link rel=icon href=../images/css3_64x64.png type=image/x-icon />
-<link rel=stylesheet href=../styles/style.css />
-<link rel=stylesheet href=../styles/ws.css />
-<link rel=stylesheet href=../styles/handheld.css />
-<link rel=stylesheet type=text/css href=../styles/css_boxmodel.css>
-<link rel=canonical href=https://html5beginner.github.io/ />
-<meta property=og:title content="CSS Блочная модель. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих" />
-<meta property=og:type content=Content />
-<meta property=og:url content=https://html5beginner.github.io/ />
-<meta property=og:image content=../image/html5_64x64.png />
-<meta property=og:description content="CSS Учебник. Как работает блочная модель на веб-странице? Курс по основам HTML5 | CSS3. W3schools на русском языке. Уроки для начинающих бесплатно" />
-<meta property=og:locale content=ru />
-<meta property=og:site_name content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
-<script src=../js/topnav.js></script>
+   <title>CSS Блочная модель. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="keywords" content="HTML,CSS,бокс,блок,блочная,модель,уроки,для начинающих,css3,основы,как" />
+   <meta name="description" content="CSS Учебник. Как работает блочная модель на веб-странице? Курс по основам HTML5 | CSS3. W3schools на русском языке. Уроки для начинающих бесплатно" />
+   <link rel="icon" href="../images/css3_64x64.png" type="image/x-icon" />
+   <link rel="stylesheet" href="../styles/style.css" />
+   <link rel="stylesheet" href="../styles/ws.css" />
+   <link rel="stylesheet" href="../styles/handheld.css" />
+   <link rel="stylesheet" type="text/css" href="../styles/css_boxmodel.css">
+   <link rel="canonical" href="https://html5beginner.github.io/" />
+   <meta property="og:title" content="CSS Блочная модель. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих" />
+   <meta property="og:type" content="Content" />
+   <!--описывает тип объекта на странице-->
+   <meta property="og:url" content="https://html5beginner.github.io/" />
+   <!--адрес сайта-->
+   <meta property="og:image" content="../image/html5_64x64.png" />
+   <!--адрес картинки-->
+   <meta property="og:description" content="CSS Учебник. Как работает блочная модель на веб-странице? Курс по основам HTML5 | CSS3. W3schools на русском языке. Уроки для начинающих бесплатно" />
+   <meta property="og:locale" content="ru" />
+   <!--язык сайта-->
+   <meta property="og:site_name" content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
+   <script src="../js/topnav.js"></script>
 </head>
+
 <body>
-<iframe src=../pages/header.html class=frame-header></iframe>
-<main>
-<div class=left-sidebar>
-<iframe src=../pages/menucss.html class=frame-left-sidebar></iframe>
-</div>
-<div class=content>
-<h1>CSS Блочная модель</h1>
-<p class=brief><strong>Курс по основам CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
-<div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href=css_dimension.html title="Предыдущая страница" rel=prev>❮ Prev</a>
-<a class="w3-right w3-btn" href=css_outline.html title="Следующая страница" rel=next>Next ❯</a>
-</div>
-<hr>
-<h2>CSS Box Model - Блочная модель</h2>
-<p>Все элементы <strong>HTML</strong> могут рассматриваться как блоки. В <strong>CSS</strong> термин "блочная модель" ("box model") используется, когда речь идет о дизайне и верстке.</p>
-<p>Блочная модель CSS, по сути, представляет собой коробку, которая охватывает каждый элемент HTML. Он состоит из: полей, границ, отступов и фактического содержимого. Изображение ниже иллюстрирует модель коробки:</p>
-<div class=w3-boxmodel>
-<div class=margin>
-<div class="border w3-theme">
-<div class=padding>
-<div class=content></div>
-</div>
-</div>
-</div>
-</div>
-<p>Объяснение разных частей:</p>
-<ul>
-<li><b>Content</b> - Содержимое поля, где появляются текст и изображения</li>
-<li><b>Padding</b> - Очищает область вокруг содержимого. Отступ (padding) прозрачный</li>
-<li><b>Border</b> - Граница, которая идет вокруг отступа и содержания</li>
-<li><b>Margin</b> - Очищает область за пределами границы. Поля (margin) прозрачные</li>
-</ul>
-<p>Блочная модель позволяет нам добавлять границы вокруг элементов и определять пространство между элементами.</p>
-<div class=w3-example>
-<h3>Пример</h3>
-<p>Демонстрация блочной модели:</p>
-<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
-div <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;width<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 300px<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp;&nbsp;border<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 15px solid
-green<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp;
-padding<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 50px<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp;
-margin<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 20px<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
-<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_boxmodel" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
-</div>
-<hr>
-<h2>Ширина и высота элемента</h2>
-<p>Чтобы правильно установить ширину и высоту элемента во всех браузерах, необходимо знать, как работает блочная модель.</p>
-<div class="w3-panel w3-note">
-<p><b>Важно:</b> Когда вы устанавливаете свойства ширины и высоты элемента с помощью CSS, вы просто устанавливаете ширину и высоту <b>области содержимого</b>. Чтобы рассчитать полный размер элемента, вы также должны учесть отступы (padding), границы (border) и поля (margin).</p>
-</div>
-<div class=w3-example>
-<h3>Пример</h3>
-<p>Этот &lt;div&gt; элемент будет иметь общую ширину 350px:</p>
-<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
-div <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;
-width<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 320px<span class=cssdelimitercolor style=color:black>;</span></span><br>
-&nbsp;
-padding<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 10px<span class=cssdelimitercolor style=color:black>;</span></span><br>
-&nbsp;
-border<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 5px solid gray<span class=cssdelimitercolor style=color:black>;</span></span><br>
-&nbsp;
-margin<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 0<span class=cssdelimitercolor style=color:black>;</span></span>
-<br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
-<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_boxmodel_width" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
-</div>
-<p>Вот расчет:<br>
-</p>
-<div class="w3-leftbar w3-border w3-padding w3-theme-border">
-320px (width)<br>
-+ 20px (left + right padding)<br>
-+ 10px (left + right border)<br>
-+ 0px (left + right margin)<br>
-<strong>= 350px
-</strong>
-</div>
-<p>Общая ширина элемента должна быть рассчитана следующим образом:</p>
-<p>Общая ширина элемента = width + left padding + right padding + left border + right border + left margin + right margin</p>
-<p>Общая высота элемента должна быть рассчитана следующим образом:</p>
-<p>Общая высота элемента = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin</p>
-<hr>
-<div class="w3-container w3-dark-grey w3-padding">
-<h2>Проверьте себя с помощью упражнений!</h2>
-<div class="w3-bar w3-margin-bottom">
-<a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_boxmodel1" target=_blank rel=nofollow>Упражнение 1 »</a>
-<a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_boxmodel2" target=_blank rel=nofollow>Упражнение 2 »</a>
-<a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_boxmodel3" target=_blank rel=nofollow>Упражнение 3 »</a>
-<a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_boxmodel4" target=_blank rel=nofollow>Упражнение 4 »</a>
-</div>
-</div>
-<hr>
-<div class=keys>
-<strong>W3Schools на русском </strong>
-<strong>уроки для начинающих по CSS </strong>
-<strong>CSS3 для чайников </strong>
-<strong>основы CSS - каскадные таблицы стилей </strong>
-<strong>обучение CSS бесплатно от А до Я </strong>
-<strong>язык стилей css </strong>
-<strong>блочная модель в css </strong>
-<strong>box model на веб-странице </strong>
-<strong>как создать блочную модель на HTML-страницах </strong>
-<strong>все свойства в каскадных таблицах стилей css </strong>
-</div>
-<div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href=css_dimension.html title="Предыдущая страница" rel=prev>❮ Prev</a>
-<a class="w3-right w3-btn" href=css_outline.html title="Следующая страница" rel=next>Next ❯</a>
-</div>
-<br>
-</div>
-<div class=right-sidebar>
-<iframe src=../pages/source.html class=frame-right-sidebar></iframe>
-</div>
-</main>
-<footer>
-<iframe src=../pages/footer.html class=frame-footer></iframe>
-</footer>
+   <iframe src="../pages/header.html" class="frame-header"></iframe>
+   <main>
+
+      <div class="left-sidebar">
+         <iframe src="../pages/menucss.html" class="frame-left-sidebar"></iframe>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+         <h1>CSS Блочная модель</h1>
+         <p class="brief"><strong>Курс по основам CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
+
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="css_dimension.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="css_outline.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         <hr>
+         <h2>CSS Box Model - Блочная модель</h2>
+         <p>Все элементы <strong>HTML</strong> могут рассматриваться как блоки. В <strong>CSS</strong> термин "блочная модель" ("box model") используется, когда речь идет о дизайне и верстке.</p>
+         <p>Блочная модель CSS, по сути, представляет собой коробку, которая охватывает каждый элемент HTML. Он состоит из: полей, границ, отступов и фактического содержимого. Изображение ниже иллюстрирует модель коробки:</p>
+         <div class="w3-boxmodel">
+            <div class="margin">
+               <div class="border w3-theme">
+                  <div class="padding">
+                     <div class="content"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <p>Объяснение разных частей:</p>
+         <ul>
+            <li><b>Content</b> - Содержимое поля, где появляются текст и изображения</li>
+            <li><b>Padding</b> - Очищает область вокруг содержимого. Отступ (padding) прозрачный</li>
+            <li><b>Border</b> - Граница, которая идет вокруг отступа и содержания</li>
+            <li><b>Margin</b> - Очищает область за пределами границы. Поля (margin) прозрачные</li>
+         </ul>
+         <p>Блочная модель позволяет нам добавлять границы вокруг элементов и определять пространство между элементами.</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <p>Демонстрация блочной модели:</p>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 300px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 15px solid
+                        green<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                     padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 50px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                     margin<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 20px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_boxmodel" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+
+         <h2>Ширина и высота элемента</h2>
+         <p>Чтобы правильно установить ширину и высоту элемента во всех браузерах, необходимо знать, как работает блочная модель.</p>
+
+         <div class="w3-panel w3-note">
+            <p><b>Важно:</b> Когда вы устанавливаете свойства ширины и высоты элемента с помощью CSS, вы просто устанавливаете ширину и высоту <b>области содержимого</b>. Чтобы рассчитать полный размер элемента, вы также должны учесть отступы (padding), границы (border) и поля (margin).</p>
+         </div>
+
+         <div class="w3-example">
+            <h3>Пример</h3>
+
+            <p>Этот &lt;div&gt; элемент будет иметь общую ширину 350px:</p>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;
+                     width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 320px<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                     &nbsp;
+                     padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 10px<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                     &nbsp;
+                     border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 5px solid gray<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                     &nbsp;
+                     margin<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 0<span class="cssdelimitercolor" style="color:black">;</span></span>
+                     <br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_boxmodel_width" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+
+         <p>Вот расчет:<br>
+         </p>
+         <div class="w3-leftbar w3-border w3-padding w3-theme-border">
+            320px (width)<br>
+            + 20px (left + right padding)<br>
+            + 10px (left + right border)<br>
+            + 0px (left + right margin)<br>
+            <strong>= 350px
+            </strong>
+         </div>
+         <p>Общая ширина элемента должна быть рассчитана следующим образом:</p>
+         <p>Общая ширина элемента = width + left padding + right padding + left border + right border + left margin + right margin</p>
+         <p>Общая высота элемента должна быть рассчитана следующим образом:</p>
+         <p>Общая высота элемента = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin</p>
+         <hr>
+
+         <div class="w3-container w3-dark-grey w3-padding">
+            <h2>Проверьте себя с помощью упражнений!</h2>
+            <div class="w3-bar w3-margin-bottom">
+               <a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_boxmodel1" target="_blank" rel="nofollow">Упражнение 1 »</a>
+               <a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_boxmodel2" target="_blank" rel="nofollow">Упражнение 2 »</a>
+               <a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_boxmodel3" target="_blank" rel="nofollow">Упражнение 3 »</a>
+               <a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_boxmodel4" target="_blank" rel="nofollow">Упражнение 4 »</a>
+            </div>
+         </div>
+
+         <hr>
+         <div class="keys">
+            <strong>W3Schools на русском </strong>
+            <strong>уроки для начинающих по CSS </strong>
+            <strong>CSS3 для чайников </strong>
+            <strong>основы CSS - каскадные таблицы стилей </strong>
+            <strong>обучение CSS бесплатно от А до Я </strong>
+            <strong>язык стилей css </strong>
+            <strong>блочная модель в css </strong>
+            <strong>box model на веб-странице </strong>
+            <strong>как создать блочную модель на HTML-страницах </strong>
+            <strong>все свойства в каскадных таблицах стилей css </strong>
+         </div>
+
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="css_dimension.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="css_outline.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         <br>
+
+      </div>
+
+      <!-- / CONTENT -->
+      <div class="right-sidebar">
+         <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+      </div>
+   </main>
+   <footer>
+      <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+   </footer>
 </body>
+
 </html>

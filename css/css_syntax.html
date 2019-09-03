@@ -1,217 +1,240 @@
 <!DOCTYPE html>
-<html lang=ru>
+<html lang="ru">
+
 <head>
-<title>CSS Учебник. Синтаксис. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих</title>
-<meta charset=utf-8 />
-<meta name=viewport content="width=device-width, initial-scale=1" />
-<meta name=keywords content="HTML,CSS,синтаксис,уроки,для начинающих,учебник,html5,css3,основы,язык,веб,страницы,сайт,стили,стилизация" />
-<meta name=description content="CSS Пособие. Синтаксис. Курс по основам HTML5 | CSS3. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
-<link rel="icon" href="../images/css3_64x64.png" type="image/x-icon" />
-<link rel=stylesheet href=../styles/style.css />
-<link rel=stylesheet href=../styles/ws.css />
-<link rel=stylesheet href=../styles/handheld.css />
-<link rel=canonical href=https://html5beginner.github.io/ />
-<meta property=og:title content="CSS Учебник. Синтаксис. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих" />
-<meta property=og:type content=Content />
-<meta property=og:url content=https://html5beginner.github.io/ />
-<meta property=og:image content=../image/html5_64x64.png />
-<meta property=og:description content="CSS Пособие. Синтаксис. Курс по основам HTML5 | CSS3. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
-<meta property=og:locale content=ru />
-<meta property=og:site_name content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
-<script src=../js/topnav.js></script>
+   <title>CSS Учебник. Синтаксис. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="keywords" content="HTML,CSS,синтаксис,уроки,для начинающих,учебник,html5,css3,основы,язык,веб,страницы,сайт,стили,стилизация" />
+   <meta name="description" content="CSS Пособие. Синтаксис. Курс по основам HTML5 | CSS3. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+   <link rel="icon" href="../images/css3_64x64.png" type="image/x-icon" />
+   <link rel="stylesheet" href="../styles/style.css" />
+   <link rel="stylesheet" href="../styles/ws.css" />
+   <link rel="stylesheet" href="../styles/handheld.css" />
+   <link rel="canonical" href="https://html5beginner.github.io/" />
+   <meta property="og:title" content="CSS Учебник. Синтаксис. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих" />
+   <meta property="og:type" content="Content" />
+   <!--описывает тип объекта на странице-->
+   <meta property="og:url" content="https://html5beginner.github.io/" />
+   <!--адрес сайта-->
+   <meta property="og:image" content="../image/html5_64x64.png" />
+   <!--адрес картинки-->
+   <meta property="og:description" content="CSS Пособие. Синтаксис. Курс по основам HTML5 | CSS3. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+   <meta property="og:locale" content="ru" />
+   <!--язык сайта-->
+   <meta property="og:site_name" content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
+   <script src="../js/topnav.js"></script>
 </head>
+
 <body>
-<iframe src=../pages/header.html class=frame-header></iframe>
-<main>
-<div class=left-sidebar>
-<iframe src=../pages/menucss.html class=frame-left-sidebar></iframe>
-</div>
-<div class=content>
-<h1>CSS Синтаксис</h1>
-<p class=brief><strong>Курс по основам CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
-<div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href=css_intro.html title="Предыдущая страница" rel=prev>❮ Prev</a>
-<a class="w3-right w3-btn" href=css_howto.html title="Следующая страница" rel=next>Next ❯</a>
-</div>
-<hr>
-<h2>CSS Синтаксис</h2>
-<p>Набор правил <strong>CSS</strong> состоит из <strong>селектора</strong> и <strong>блока объявления</strong> (декларации):</p>
-<p><img src=../images/selector.gif alt="CSS selector" class=w3-image></p>
-<p><strong>Селектор</strong> указывает на элемент <strong>HTML</strong>, который вы хотите стилизовать.</p>
-<p><strong>Блок объявлений</strong> содержит одно или несколько объявлений, разделенных точкой с запятой.</p>
-<p>Каждое объявление включает имя свойства <strong>CSS</strong> и значение, разделенное двоеточием.</p>
-<p>Объявление <strong>CSS</strong> всегда заканчивается точкой с запятой, а блоки объявления заключаются в фигурные скобки.</p>
-<div class=w3-example>
-<h3>Пример</h3>
-<p>В этом примере все <code class=w3-codespan>&lt;p&gt;</code> элементы будут выровнены по центру с текстом красного цвета:</p>
-<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
-p
-<span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>
-&nbsp;&nbsp;color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> red<span class=cssdelimitercolor style=color:black>;</span></span><br>
-&nbsp;&nbsp;text-align<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> center<span class=cssdelimitercolor style=color:black>;</span></span><br>
-</span><span class=cssdelimitercolor style=color:black>}</span>
-</span></div>
-<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_syntax1" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуй сам »</a>
-</div>
-<hr>
-<h2>CSS Селекторы</h2>
-<p>CSS селекторы используются для "поиска" (или выбора) HTML элементов на основе их имени, идентификатора (id), класса (class), атрибута и т.д.</p>
-<hr>
-<h2>Элемент Селектор</h2>
-<p>Элемент Селектор выбирает элементы на основе имени элемента.</p>
-<div class=w3-example>
-<h3>Пример</h3>
-<p>Вы можете выбрать все <code class=w3-codespan>&lt;p&gt;</code> элементы на странице вот так (здесь все элементы <code class=w3-codespan>&lt;p&gt;</code> будут выровнены по центру с текстом красного цвета):</p>
-<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
-p
-<span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>
-&nbsp;&nbsp;text-align<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> center<span class=cssdelimitercolor style=color:black>;</span></span><br>
-&nbsp;&nbsp;color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> red<span class=cssdelimitercolor style=color:black>;</span></span><br>
-</span><span class=cssdelimitercolor style=color:black>}</span>
-</span></div>
-<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_syntax_element" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуй сам »</a>
-</div>
-<hr>
-<h2>Селектор id</h2>
-<p>Селектор идентификаторов использует атрибут id HTML элемента для выбора определенного элемента.</p>
-<p>Идентификатор элемента должен быть уникальным на странице, поэтому селектор id используется для выбора одного уникального элемента!</p>
-<p>Чтобы выбрать элемент с определенным идентификатором, сначала пишется символ хеша (#), за которым следует id элемента.</p>
-<div class=w3-example>
-<h3>Пример</h3>
-<p>Приведенное ниже правило стиля будет применено к HTML элементу с id="para1":</p>
-<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
-#para1
-<span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>
-&nbsp;&nbsp;text-align<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> center<span class=cssdelimitercolor style=color:black>;</span></span><br>
-&nbsp;&nbsp;color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> red<span class=cssdelimitercolor style=color:black>;</span></span><br>
-</span><span class=cssdelimitercolor style=color:black>}</span>
-</span></div>
-<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_syntax_id" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуй сам »</a>
-</div>
-<div class="w3-panel w3-note">
-<p><strong>Примечание:</strong> Название id не может начинаться с цифры!</p>
-</div>
-<hr>
-<h2>Селектор class</h2>
-<p>Селектор class выбирает элементы с определенным атрибутом класса.</p>
-<p>Чтобы выбрать элементы с определенным классом, введите символ точки (.), а затем имя класса.</p>
-<div class=w3-example>
-<h3>Пример</h3>
-<p>В этом примере все HTML элементы с class="center" будут красными и выровненными по центру:</p>
-<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
-.center <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp; text-align<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> center<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp;&nbsp;color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> red<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span>
-</span></div>
-<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_syntax_class" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуй сам »</a>
-</div>
-<p>Вы также можете указать, что класс должен затрагивать только определенные HTML элементы.</p>
-<div class=w3-example>
-<h3>Пример</h3>
-<p>В этом примере только <code class=w3-codespan>&lt;p&gt;</code> элементы с class="center" будут выровнены по центру:</p>
-<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
-p.center <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp; text-align<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> center<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp;&nbsp;color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> red<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span>
-</span></div>
-<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_syntax_element_class" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуй сам »</a>
-</div>
-<p>HTML элементы также могут ссылаться на несколько классов.</p>
-<div class=w3-example>
-<h3>Пример</h3>
-<p>В этом примере <code class=w3-codespan>&lt;p&gt;</code> элемент будет стилизован в соответствии с class="center" и class="large":</p>
-<div class="w3-code notranslate htmlHigh">
-<span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>p<span class=attributecolor style=color:red> class<span class=attributevaluecolor style=color:mediumblue>="center large"</span></span><span class=tagcolor style=color:mediumblue>&gt;</span></span>This paragraph refers to two classes.<span class=tagnamecolor style=color:brown><span class=tagcolor style=color:mediumblue>&lt;</span>/p<span class=tagcolor style=color:mediumblue>&gt;</span></span> </div>
-<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_syntax_element_class2" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуй сам »</a>
-</div>
-<div class="w3-panel w3-note">
-<p><strong>Примечание:</strong> Имя класса не может начинаться с цифры!</p>
-</div>
-<hr>
-<h2>Группировка селекторов</h2>
-<p>Если у вас есть элементы с одинаковыми определениями стиля, как эти:</p>
-<div class=w3-example>
-<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
-h1
-<span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>
-&nbsp;&nbsp;text-align<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> center<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp;&nbsp;color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> red<span class=cssdelimitercolor style=color:black>;</span></span><br>
-</span><span class=cssdelimitercolor style=color:black>}</span><br>
-<br>h2
-<span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>
-&nbsp;
-text-align<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> center<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp; color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> red<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span><br>
-<br>p
-<span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>
-&nbsp;&nbsp;text-align<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> center<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp;&nbsp;color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> red<span class=cssdelimitercolor style=color:black>;</span></span><br>
-</span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
-</div>
-<p>Будет лучше сгруппировать селекторы, чтобы минимизировать код.</p>
-<p>Чтобы сгруппировать селекторы, разделяйте каждый селектор запятой.</p>
-<div class=w3-example>
-<h3>Пример</h3>
-<p>В этом примере мы сгруппировали селекторы из кода выше:</p>
-<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
-h1, h2, p
-<span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>
-&nbsp;
-text-align<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> center<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp;&nbsp;color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> red<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
-<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grouping" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуй сам »</a>
-</div>
-<hr>
-<h2>CSS Комментарии</h2>
-<p>Комментарии используются для пояснения кода и могут помочь при редактировании исходного кода позднее.</p>
-<p>Комментарии игнорируются браузерами и нужны только для людей, которые будут просматривать код.</p>
-<div class=w3-example>
-<h3>Пример</h3>
-<p>CSS комментарий начинается с /* и заканчивается */. Комментарии также могут занимать несколько строк:</p>
-<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
-p
-<span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>
-&nbsp;
-color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> red<span class=cssdelimitercolor style=color:black>;</span></span><br>
-&nbsp;
-<span class=commentcolor style=color:green>/* Это однострочный комментарий */</span><br>
-&nbsp;&nbsp;text-align<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> center<span class=cssdelimitercolor style=color:black>;</span></span><br>
-</span><span class=cssdelimitercolor style=color:black>}</span><br><br><span class=commentcolor style=color:green>/* Это<br>многострочный<br>комментарий */</span>
-</span></div>
-<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_syntax2" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуй сам »</a>
-</div>
-<hr>
-<div class="w3-container w3-dark-grey w3-padding">
-<h2>Проверьте себя с помощью упражнений!</h2>
-<div class="w3-bar w3-margin-bottom">
-<a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_syntax1" target=_blank rel=nofollow>Упражнение 1 »</a>
-<a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_syntax2" target=_blank rel=nofollow>Упражнение 2 »</a>
-<a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_syntax3" target=_blank rel=nofollow>Упражнение 3 »</a>
-<a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_syntax4" target=_blank rel=nofollow>Упражнение 4 »</a>
-</div>
-</div>
-<br>
-<div class=keys>
-<strong>W3Schools на русском </strong>
-<strong>уроки для начинающих по CSS </strong>
-<strong>CSS3 для новичков </strong>
-<strong>синтаксис языка CSS </strong>
-<strong>курсы с нуля </strong>
-<strong>язык css </strong>
-<strong>стилизация страниц с помощью css</strong>
-<strong>каскадные таблицы стилей </strong>
-<strong>справочники по css </strong>
-<strong>как создавать таблицы стилей css </strong>
-</div>
-<div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href=css_intro.html title="Предыдущая страница" rel=prev>❮ Prev</a>
-<a class="w3-right w3-btn" href=css_howto.html title="Следующая страница" rel=next>Next ❯</a>
-</div>
-<hr class=hr-bottom>
-<img src=../svg/warning_black.svg alt=warning width=30 class=img-left>
-<p class=note-warning><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href=https://jsfiddle.net/ target=_blank rel=nofollow>jsfiddle.net</a>, <a href=https://codepen.io/pen/tour/welcome/start target=_blank rel=nofollow>codepen.io</a>, <a href=https://liveweave.com/ target=_blank rel=nofollow>liveweave.com</a>, <a href=https://jsbin.com/?html,css,output target=_blank rel=nofollow>jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
-<div id=disqus_thread></div>
-<script>var disqus_config=function(){this.page.url=html5beginners.github.io;this.page.identifier=html5beginners.github.io/css/css_syntax.html};(function(){var b=document,a=b.createElement("script");a.src="https://html5beginners.disqus.com/embed.js";a.setAttribute("data-timestamp",+new Date());(b.head||b.body).appendChild(a)})();</script>
-<noscript>Пожалуйста, включите JavaScript для просмотра <a href=https://disqus.com/?ref_noscript>комментариев, предоставленных Disqus.</a></noscript>
-</div>
-<div class=right-sidebar>
-<iframe src=../pages/source.html class=frame-right-sidebar></iframe>
-</div>
-</main>
-<footer>
-<iframe src=../pages/footer.html class=frame-footer></iframe>
-</footer>
+   <iframe src="../pages/header.html" class="frame-header"></iframe>
+   <main>
+
+      <div class="left-sidebar">
+         <iframe src="../pages/menucss.html" class="frame-left-sidebar"></iframe>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+         <h1>CSS Синтаксис</h1>
+         <p class="brief"><strong>Курс по основам CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
+
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="css_intro.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="css_howto.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         <hr>
+
+         <h2>CSS Синтаксис</h2>
+         <p>Набор правил <strong>CSS</strong> состоит из <strong>селектора</strong> и <strong>блока объявления</strong> (декларации):</p>
+         <p><img src="../images/selector.gif" alt="CSS selector" class="w3-image"></p>
+         <p><strong>Селектор</strong> указывает на элемент <strong>HTML</strong>, который вы хотите стилизовать.</p>
+         <p><strong>Блок объявлений</strong> содержит одно или несколько объявлений, разделенных точкой с запятой.</p>
+         <p>Каждое объявление включает имя свойства <strong>CSS</strong> и значение, разделенное двоеточием.</p>
+         <p>Объявление <strong>CSS</strong> всегда заканчивается точкой с запятой, а блоки объявления заключаются в фигурные скобки.</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <p>В этом примере все <code class="w3-codespan">&lt;p&gt;</code> элементы будут выровнены по центру с текстом красного цвета:</p>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  p
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                     &nbsp;&nbsp;color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> red<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                     &nbsp;&nbsp;text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> center<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                  </span><span class="cssdelimitercolor" style="color:black">}</span>
+               </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_syntax1" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуй сам »</a>
+         </div>
+         <hr>
+
+         <h2>CSS Селекторы</h2>
+         <p>CSS селекторы используются для "поиска" (или выбора) HTML элементов на основе их имени, идентификатора (id), класса (class), атрибута и т.д.</p>
+         <hr>
+
+         <h2>Элемент Селектор</h2>
+         <p>Элемент Селектор выбирает элементы на основе имени элемента.</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <p>Вы можете выбрать все <code class="w3-codespan">&lt;p&gt;</code> элементы на странице вот так (здесь все элементы <code class="w3-codespan">&lt;p&gt;</code> будут выровнены по центру с текстом красного цвета):</p>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  p
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                     &nbsp;&nbsp;text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> center<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                     &nbsp;&nbsp;color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> red<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                  </span><span class="cssdelimitercolor" style="color:black">}</span>
+               </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_syntax_element" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуй сам »</a>
+         </div>
+         <hr>
+
+         <h2>Селектор id</h2>
+         <p>Селектор идентификаторов использует атрибут id HTML элемента для выбора определенного элемента.</p>
+         <p>Идентификатор элемента должен быть уникальным на странице, поэтому селектор id используется для выбора одного уникального элемента!</p>
+         <p>Чтобы выбрать элемент с определенным идентификатором, сначала пишется символ хеша (#), за которым следует id элемента.</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <p>Приведенное ниже правило стиля будет применено к HTML элементу с id="para1":</p>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  #para1
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                     &nbsp;&nbsp;text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> center<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                     &nbsp;&nbsp;color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> red<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                  </span><span class="cssdelimitercolor" style="color:black">}</span>
+               </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_syntax_id" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуй сам »</a>
+         </div>
+
+         <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> Название id не может начинаться с цифры!</p>
+         </div>
+         <hr>
+
+         <h2>Селектор class</h2>
+         <p>Селектор class выбирает элементы с определенным атрибутом класса.</p>
+         <p>Чтобы выбрать элементы с определенным классом, введите символ точки (.), а затем имя класса.</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <p>В этом примере все HTML элементы с class="center" будут красными и выровненными по центру:</p>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  .center <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> center<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> red<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+               </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_syntax_class" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуй сам »</a>
+         </div>
+
+         <p>Вы также можете указать, что класс должен затрагивать только определенные HTML элементы.</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <p>В этом примере только <code class="w3-codespan">&lt;p&gt;</code> элементы с class="center" будут выровнены по центру:</p>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  p.center <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> center<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> red<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+               </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_syntax_element_class" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуй сам »</a>
+         </div>
+
+         <p>HTML элементы также могут ссылаться на несколько классов.</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <p>В этом примере <code class="w3-codespan">&lt;p&gt;</code> элемент будет стилизован в соответствии с class="center" и class="large":</p>
+            <div class="w3-code notranslate htmlHigh">
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="center large"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>This paragraph refers to two classes.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_syntax_element_class2" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуй сам »</a>
+         </div>
+         <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> Имя класса не может начинаться с цифры!</p>
+         </div>
+
+         <hr>
+
+         <h2>Группировка селекторов</h2>
+         <p>Если у вас есть элементы с одинаковыми определениями стиля, как эти:</p>
+         <div class="w3-example">
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  h1
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                     &nbsp;&nbsp;text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> center<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> red<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                  </span><span class="cssdelimitercolor" style="color:black">}</span><br>
+                  <br>h2
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                     &nbsp;
+                     text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> center<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> red<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br>
+                  <br>p
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                     &nbsp;&nbsp;text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> center<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> red<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                  </span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+         </div>
+
+
+         <p>Будет лучше сгруппировать селекторы, чтобы минимизировать код.</p>
+         <p>Чтобы сгруппировать селекторы, разделяйте каждый селектор запятой.</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <p>В этом примере мы сгруппировали селекторы из кода выше:</p>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  h1, h2, p
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                     &nbsp;
+                     text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> center<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> red<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grouping" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуй сам »</a>
+         </div>
+         <hr>
+
+         <h2>CSS Комментарии</h2>
+         <p>Комментарии используются для пояснения кода и могут помочь при редактировании исходного кода позднее.</p>
+         <p>Комментарии игнорируются браузерами и нужны только для людей, которые будут просматривать код.</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <p>CSS комментарий начинается с /* и заканчивается */. Комментарии также могут занимать несколько строк:</p>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  p
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                     &nbsp;
+                     color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> red<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                     &nbsp;
+                     <span class="commentcolor" style="color:green">/* Это однострочный комментарий */</span><br>
+                     &nbsp;&nbsp;text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> center<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                  </span><span class="cssdelimitercolor" style="color:black">}</span><br><br><span class="commentcolor" style="color:green">/* Это<br>многострочный<br>комментарий */</span>
+               </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_syntax2" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуй сам »</a>
+         </div>
+         <hr>
+
+         <div class="w3-container w3-dark-grey w3-padding">
+            <h2>Проверьте себя с помощью упражнений!</h2>
+            <div class="w3-bar w3-margin-bottom">
+               <a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_syntax1" target="_blank" rel="nofollow">Упражнение 1 »</a>
+               <a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_syntax2" target="_blank" rel="nofollow">Упражнение 2 »</a>
+               <a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_syntax3" target="_blank" rel="nofollow">Упражнение 3 »</a>
+               <a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_syntax4" target="_blank" rel="nofollow">Упражнение 4 »</a>
+            </div>
+         </div>
+
+         <hr>
+         <div class="keys">
+            <strong>W3Schools на русском </strong>
+            <strong>уроки для начинающих по CSS </strong>
+            <strong>CSS3 для новичков </strong>
+            <strong>синтаксис языка CSS </strong>
+            <strong>курсы с нуля </strong>
+            <strong>язык css </strong>
+            <strong>стилизация страниц с помощью css</strong>
+            <strong>каскадные таблицы стилей </strong>
+            <strong>справочники по css </strong>
+            <strong>как создавать таблицы стилей css </strong>
+         </div>
+
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="css_intro.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="css_howto.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         <br>         
+      </div>
+
+      <!-- / CONTENT -->
+      <div class="right-sidebar">
+         <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+      </div>
+   </main>
+   <footer>
+      <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+   </footer>
 </body>
+
 </html>

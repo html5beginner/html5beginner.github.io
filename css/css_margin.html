@@ -1,254 +1,285 @@
 <!DOCTYPE html>
-<html lang=ru>
+<html lang="ru">
+
 <head>
-<title>CSS Поля. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих</title>
-<meta charset=utf-8 />
-<meta name=viewport content="width=device-width, initial-scale=1" />
-<meta name=keywords content="HTML,CSS,поля,margin,уроки,для начинающих,css3,основы,как" />
-<meta name=description content="CSS Пособие. Как добавить внешние отступы (поля) на веб-странице. Курс по основам HTML5 | CSS3. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
-<link rel=icon href=../images/css3_64x64.png type=image/x-icon />
-<link rel=stylesheet href=../styles/style.css />
-<link rel=stylesheet href=../styles/ws.css />
-<link rel=stylesheet href=../styles/handheld.css />
-<link rel=canonical href=https://html5beginner.github.io/ />
-<meta property=og:title content="CSS Поля. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих" />
-<meta property=og:type content=Content />
-<meta property=og:url content=https://html5beginner.github.io/ />
-<meta property=og:image content=../image/html5_64x64.png />
-<meta property=og:description content="CSS Пособие. Как добавить внешние отступы (поля) на веб-странице. Курс по основам HTML5 | CSS3. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
-<meta property=og:locale content=ru />
-<meta property=og:site_name content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
-<script src=../js/topnav.js></script>
+   <title>CSS Поля. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="keywords" content="HTML,CSS,поля,margin,уроки,для начинающих,css3,основы,как" />
+   <meta name="description" content="CSS Пособие. Как добавить внешние отступы (поля) на веб-странице. Курс по основам HTML5 | CSS3. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+   <link rel="icon" href="../images/css3_64x64.png" type="image/x-icon" />
+   <link rel="stylesheet" href="../styles/style.css" />
+   <link rel="stylesheet" href="../styles/ws.css" />
+   <link rel="stylesheet" href="../styles/handheld.css" />
+   <link rel="canonical" href="https://html5beginner.github.io/" />
+   <meta property="og:title" content="CSS Поля. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих" />
+   <meta property="og:type" content="Content" />
+   <!--описывает тип объекта на странице-->
+   <meta property="og:url" content="https://html5beginner.github.io/" />
+   <!--адрес сайта-->
+   <meta property="og:image" content="../image/html5_64x64.png" />
+   <!--адрес картинки-->
+   <meta property="og:description" content="CSS Пособие. Как добавить внешние отступы (поля) на веб-странице. Курс по основам HTML5 | CSS3. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+   <meta property="og:locale" content="ru" />
+   <!--язык сайта-->
+   <meta property="og:site_name" content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
+   <script src="../js/topnav.js"></script>
 </head>
+
 <body>
-<iframe src=../pages/header.html class=frame-header></iframe>
-<main>
-<div class=left-sidebar>
-<iframe src=../pages/menucss.html class=frame-left-sidebar></iframe>
-</div>
-<div class=content>
-<h1>CSS Поля</h1>
-<p class=brief><strong>Курс по основам CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
-<div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href=css_border.html title="Предыдущая страница" rel=prev>❮ Prev</a>
-<a class="w3-right w3-btn" href=css_padding.html title="Следующая страница" rel=next>Next ❯</a>
-</div>
-<hr>
-<div class=w3-theme-border style=border-width:1px;border-style:solid;margin:70px;padding:5px>Этот элемент имеет поле (край) в 70 пикселей</div>
-<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_margin_intro" class=w3-btn rel=nofollow>Попробуйте сами »</a>
-<hr>
-<h2>CSS Margin - Поля</h2>
-<p><strong>CSS</strong> свойство <code class=w3-codespan>margin</code> используется для создания пространства вокруг элементов вне любых определенных границ.</p>
-<p>Из <strong>CSS</strong> у вас есть полный контроль над полями. Есть свойства для установки поля для каждой стороны элемента (сверху, справа, снизу и слева).</p>
-<hr>
-<h2>Поля - Отдельные стороны</h2>
-<p><strong>CSS</strong> имеет свойства для указания полей для каждой стороны элемента:</p>
-<ul>
-<li><code class=w3-codespan>margin-top</code> - поле сверху</li>
-<li><code class=w3-codespan>margin-right</code> - поле справа</li>
-<li><code class=w3-codespan>margin-bottom</code> - поле снизу</li>
-<li><code class=w3-codespan>margin-left</code> - поле слева</li>
-</ul>
-<p>Все свойства полей могут иметь следующие значения:</p>
-<ul>
-<li><em>auto</em> (автоматически) - браузер сам определяет края</li>
-<li><em>length</em> (длина) - указывает на разницу в px, pt, cm и т.д.</li>
-<li><em>%</em> (проценты) - задаёт поле в % от ширины содержащего элемента</li>
-<li><em>inherit</em> (наследование) - указывает, что поле должно быть унаследовано от родительского элемента</li>
-</ul>
-<p><b>Примечание:</b> Отрицательные значения допускаются.</p>
-<div class=w3-example>
-<h3>Пример</h3>
-<p>Установите разные поля для всех четырех сторон <code class=w3-codespan>&lt;p&gt;</code> элемента:</p>
-<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
-p <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;margin-top<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 100px<span class=cssdelimitercolor style=color:black>;</span></span><br>
-&nbsp;&nbsp;margin-bottom<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 100px<span class=cssdelimitercolor style=color:black>;</span></span><br>
-&nbsp;&nbsp;margin-right<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 150px<span class=cssdelimitercolor style=color:black>;</span></span><br>
-&nbsp;&nbsp;margin-left<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 80px<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
-<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_margin_sides" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
-</div>
-<hr>
-<h2>Поля - Сокращенное свойство</h2>
-<p>Чтобы сократить код, можно указать все свойства поля в одном свойстве.</p>
-<p>Свойство <code class=w3-codespan>margin</code> является сокращенным свойством для следующих отдельных свойств полей:</p>
-<ul>
-<li><code class=w3-codespan>margin-top</code> - поле сверху</li>
-<li><code class=w3-codespan>margin-right</code> - поле справа</li>
-<li><code class=w3-codespan>margin-bottom</code> - поле снизу</li>
-<li><code class=w3-codespan>margin-left</code> - поле слева</li>
-</ul>
-<p>Таким образом, вот как это работает:</p>
-<p>Если свойство <code class=w3-codespan>margin</code> имеет четыре значения:</p>
-<ul>
-<li><b>margin: 25px 50px 75px 100px; </b>
-<ul>
-<li>верхнее поле 25px</li>
-<li>правое поле 50px</li>
-<li>нижнее поле 75px</li>
-<li>левое поле 100px</li>
-</ul>
-</li>
-</ul>
-<div class=w3-example>
-<h3>Пример</h3>
-<p>Используйте сокращенное свойство <code class=w3-codespan>margin</code> с четырьмя значениями:</p>
-<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
-p <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;margin<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 25px 50px 75px 100px<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
-<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_margin_shorthand_4val" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
-</div>
-<p>Если свойство <code class=w3-codespan>margin</code> имеет три значения:</p>
-<ul>
-<li><b>margin: 25px 50px 75px;</b>
-<ul>
-<li>верхнее поле 25px</li>
-<li>поля справа и слева 50px</li>
-<li>нижнее поле 75px</li>
-</ul>
-</li>
-</ul>
-<div class=w3-example>
-<h3>Пример</h3>
-<p>Используйте сокращенное свойство <code class=w3-codespan>margin</code> с тремя значениями:</p>
-<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
-p <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;
-margin<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 25px 50px 75px<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
-<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_margin_shorthand_3val" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
-</div>
-<p>Если свойство <code class=w3-codespan>margin</code> имеет два значения:</p>
-<ul>
-<li><b>margin: 25px 50px;</b>
-<ul>
-<li>верхнее и нижнее поле 25px</li>
-<li>правое и левое поле 50px</li>
-</ul>
-</li>
-</ul>
-<div class=w3-example>
-<h3>Пример</h3>
-<p>Используйте сокращенное свойство <code class=w3-codespan>margin</code> с двумя значениями:</p>
-<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
-p <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;
-margin<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 25px 50px<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
-<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_margin_shorthand_2val" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
-</div>
-<p>Если свойство <code class=w3-codespan>margin</code> имеет одно значение:</p>
-<ul>
-<li><b>margin: 25px;</b>
-<ul>
-<li>все четыре поля по 25px</li>
-</ul>
-</li>
-</ul>
-<div class=w3-example>
-<h3>Пример</h3>
-<p>Используйте сокращенное свойство <code class=w3-codespan>margin</code> с одним значением:</p>
-<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
-p <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;margin<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 25px<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
-<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_margin_shorthand_1val" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
-</div>
-<hr>
-<h2>Значение auto</h2>
-<p>Вы можете установить для свойства <code class=w3-codespan>margin</code> значение <code class=w3-codespan>auto</code> чтобы горизонтально центрировать элемент в его контейнере, т.е. выровнять по центру.</p>
-<p>Таким образом элемент займёт указанную ширину, а оставшееся пространство будет разделено поровну между левым и правым полями.</p>
-<div class=w3-example>
-<h3>Пример</h3>
-<p>Используйте поле <code class=w3-codespan>auto</code>:</p>
-<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
-div <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp; width<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 300px<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp; margin<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span>
-auto<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp;&nbsp;border<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 1px solid red<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
-<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_margin_auto" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
-</div>
-<hr>
-<h2>Значение inherit (наследования)</h2>
-<p>В этом примере показано, как левый край элемента <code class=w3-codespan>&lt;p class="ex1"&gt;</code> наследуется от родительского элемента (<code class=w3-codespan>&lt;div&gt;</code>):</p>
-<div class=w3-example>
-<h3>Пример</h3>
-<p>Используйте значение <code class=w3-codespan>inherit</code>:</p>
-<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
-div <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;border<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 1px solid red<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp;&nbsp;margin-left<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 100px<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span><br><br>p.ex1 <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>
-&nbsp; margin-left<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span>
-inherit<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
-<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_margin-left_inherit" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
-</div>
-<hr>
-<h2>Сворачивание полей</h2>
-<p>Верхние и нижние поля элементов иногда сворачиваются в одно поле, равное наибольшему из двух полей.</p>
-<p>Этого не происходит на левом и правом полях! Можно свернуть только верхние и нижние поля!</p>
-<p>Посмотрите на следующий пример:</p>
-<div class=w3-example>
-<h3>Пример</h3>
-<p>Демонстрация сворачивания полей:</p>
-<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
-h1 <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;margin<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 0 0 50px 0<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span><br><br>h2 <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;margin<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 20px 0 0 0<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
-<a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_margin_collapse" target=_blank rel=nofollow>Попробуйте сами »</a>
-</div>
-<p>В приведенном выше примере элемент <code class=w3-codespan>&lt;h1&gt;</code> имеет нижнее поле 50 пикселей, а элемент <code class=w3-codespan>&lt;h2&gt;</code> имеет верхнее поле 20 пикселей.</p>
-<p>Казалось бы, здравый смысл подсказывает, что вертикальная граница между <code class=w3-codespan>&lt;h1&gt;</code> и <code class=w3-codespan>&lt;h2&gt;</code> будет в общей сложности 70px (50px + 20px). Но из-за сворачивания полей фактическое поле в итоге составляет 50px.</p>
-<hr>
-<div class="w3-container w3-dark-grey w3-padding">
-<h2>Проверьте себя с помощью упражнений!</h2>
-<div class="w3-bar w3-margin-bottom">
-<a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_margin1" target=_blank rel=nofollow>Упражнение 1 »</a>
-<a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_margin2" target=_blank rel=nofollow>Упражнение 2 »</a>
-<a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_margin3" target=_blank rel=nofollow>Упражнение 3 »</a>
-<a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_margin4" target=_blank rel=nofollow>Упражнение 4 »</a>
-</div>
-</div>
-<hr>
-<h2>Все CSS свойства полей</h2>
-<table class="w3-table-all notranslate">
-<tbody>
-<tr>
-<th style=width:20%>Свойство</th>
-<th>Описание</th>
-</tr>
-<tr>
-<td><a href=/cssref/pr_margin.html>margin</a></td>
-<td>Сокращенное свойство для установки свойств полей в одном объявлении</td>
-</tr>
-<tr>
-<td><a href=/cssref/pr_margin-bottom.html>margin-bottom</a></td>
-<td>Устанавливает нижнее поле элемента</td>
-</tr>
-<tr>
-<td><a href=/cssref/pr_margin-left.html>margin-left</a></td>
-<td>Устанавливает левое поле элемента</td>
-</tr>
-<tr>
-<td><a href=/cssref/pr_margin-right.html>margin-right</a></td>
-<td>Устанавливает правое поле элемента</td>
-</tr>
-<tr>
-<td><a href=/cssref/pr_margin-top.html>margin-top</a></td>
-<td>Устанавливает верхнее поле элемента</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<div class=keys>
-<strong>W3Schools на русском </strong>
-<strong>уроки для начинающих по CSS </strong>
-<strong>CSS3 для новичков </strong>
-<strong>основы CSS - каскадные таблицы стилей </strong>
-<strong>бесплатное обучение с нуля </strong>
-<strong>язык css </strong>
-<strong>как сделать поля или отступы в css </strong>
-<strong>margin на веб-страницах </strong>
-<strong>внешние края на страницах </strong>
-<strong>как создают каскадные таблицы стилей css </strong>
-</div>
-<div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href=css_border.html title="Предыдущая страница" rel=prev>❮ Prev</a>
-<a class="w3-right w3-btn" href=css_padding.html title="Следующая страница" rel=next>Next ❯</a>
-</div>
-<br>
-</div>
-<div class=right-sidebar>
-<iframe src=../pages/source.html class=frame-right-sidebar></iframe>
-</div>
-</main>
-<footer>
-<iframe src=../pages/footer.html class=frame-footer></iframe>
-</footer>
+   <iframe src="../pages/header.html" class="frame-header"></iframe>
+   <main>
+
+      <div class="left-sidebar">
+         <iframe src="../pages/menucss.html" class="frame-left-sidebar"></iframe>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+         <h1>CSS Поля</h1>
+         <p class="brief"><strong>Курс по основам CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
+
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="css_border.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="css_padding.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         <hr>
+         <div class="w3-theme-border" style="border-width:1px;border-style:solid;margin:70px;padding:5px;">Этот элемент имеет поле (край) в 70 пикселей</div>
+         <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_margin_intro" class="w3-btn" rel="nofollow">Попробуйте сами »</a>
+         <hr>
+
+         <h2>CSS Margin - Поля</h2>
+         <p><strong>CSS</strong> свойство <code class="w3-codespan">margin</code> используется для создания пространства вокруг элементов вне любых определенных границ.</p>
+         <p>Из <strong>CSS</strong> у вас есть полный контроль над полями. Есть свойства для установки поля для каждой стороны элемента (сверху, справа, снизу и слева).</p>
+         <hr>
+
+         <h2>Поля - Отдельные стороны</h2>
+         <p><strong>CSS</strong> имеет свойства для указания полей для каждой стороны элемента:</p>
+         <ul>
+            <li><code class="w3-codespan">margin-top</code> - поле сверху</li>
+            <li><code class="w3-codespan">margin-right</code> - поле справа</li>
+            <li><code class="w3-codespan">margin-bottom</code> - поле снизу</li>
+            <li><code class="w3-codespan">margin-left</code> - поле слева</li>
+         </ul>
+         <p>Все свойства полей могут иметь следующие значения:</p>
+         <ul>
+            <li><em>auto</em> (автоматически) - браузер сам определяет края</li>
+            <li><em>length</em> (длина) - указывает на разницу в px, pt, cm и т.д.</li>
+            <li><em>%</em> (проценты) - задаёт поле в % от ширины содержащего элемента</li>
+            <li><em>inherit</em> (наследование) - указывает, что поле должно быть унаследовано от родительского элемента</li>
+         </ul>
+
+         <p><b>Примечание:</b> Отрицательные значения допускаются.</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <p>Установите разные поля для всех четырех сторон <code class="w3-codespan">&lt;p&gt;</code> элемента:</p>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  p <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;margin-top<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 100px<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                     &nbsp;&nbsp;margin-bottom<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 100px<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                     &nbsp;&nbsp;margin-right<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 150px<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                     &nbsp;&nbsp;margin-left<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 80px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_margin_sides" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+
+         <h2>Поля - Сокращенное свойство</h2>
+         <p>Чтобы сократить код, можно указать все свойства поля в одном свойстве.</p>
+         <p>Свойство <code class="w3-codespan">margin</code> является сокращенным свойством для следующих отдельных свойств полей:</p>
+         <ul>
+            <li><code class="w3-codespan">margin-top</code> - поле сверху</li>
+            <li><code class="w3-codespan">margin-right</code> - поле справа</li>
+            <li><code class="w3-codespan">margin-bottom</code> - поле снизу</li>
+            <li><code class="w3-codespan">margin-left</code> - поле слева</li>
+         </ul>
+
+         <p>Таким образом, вот как это работает:</p>
+         <p>Если свойство <code class="w3-codespan">margin</code> имеет четыре значения:</p>
+         <ul>
+            <li><b>margin: 25px 50px 75px 100px; </b>
+               <ul>
+                  <li>верхнее поле 25px</li>
+                  <li>правое поле 50px</li>
+                  <li>нижнее поле 75px</li>
+                  <li>левое поле 100px</li>
+               </ul>
+            </li>
+         </ul>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <p>Используйте сокращенное свойство <code class="w3-codespan">margin</code> с четырьмя значениями:</p>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  p <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;margin<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 25px 50px 75px 100px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_margin_shorthand_4val" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+
+         <p>Если свойство <code class="w3-codespan">margin</code> имеет три значения:</p>
+         <ul>
+            <li><b>margin: 25px 50px 75px;</b>
+               <ul>
+                  <li>верхнее поле 25px</li>
+                  <li>поля справа и слева 50px</li>
+                  <li>нижнее поле 75px</li>
+               </ul>
+            </li>
+         </ul>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <p>Используйте сокращенное свойство <code class="w3-codespan">margin</code> с тремя значениями:</p>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  p <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;
+                     margin<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 25px 50px 75px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_margin_shorthand_3val" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+
+         <p>Если свойство <code class="w3-codespan">margin</code> имеет два значения:</p>
+         <ul>
+            <li><b>margin: 25px 50px;</b>
+               <ul>
+                  <li>верхнее и нижнее поле 25px</li>
+                  <li>правое и левое поле 50px</li>
+               </ul>
+            </li>
+         </ul>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <p>Используйте сокращенное свойство <code class="w3-codespan">margin</code> с двумя значениями:</p>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  p <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;
+                     margin<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 25px 50px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_margin_shorthand_2val" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+
+         <p>Если свойство <code class="w3-codespan">margin</code> имеет одно значение:</p>
+         <ul>
+            <li><b>margin: 25px;</b>
+               <ul>
+                  <li>все четыре поля по 25px</li>
+               </ul>
+            </li>
+         </ul>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <p>Используйте сокращенное свойство <code class="w3-codespan">margin</code> с одним значением:</p>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  p <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;margin<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 25px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_margin_shorthand_1val" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+
+         <h2>Значение auto</h2>
+         <p>Вы можете установить для свойства <code class="w3-codespan">margin</code> значение <code class="w3-codespan">auto</code> чтобы горизонтально центрировать элемент в его контейнере, т.е. выровнять по центру.</p>
+         <p>Таким образом элемент займёт указанную ширину, а оставшееся пространство будет разделено поровну между левым и правым полями.</p>
+
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <p>Используйте поле <code class="w3-codespan">auto</code>:</p>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 300px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; margin<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                        auto<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1px solid red<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_margin_auto" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+
+         <h2>Значение inherit (наследования)</h2>
+         <p>В этом примере показано, как левый край элемента <code class="w3-codespan">&lt;p class="ex1"&gt;</code> наследуется от родительского элемента (<code class="w3-codespan">&lt;div&gt;</code>):</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <p>Используйте значение <code class="w3-codespan">inherit</code>:</p>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1px solid red<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;margin-left<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 100px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br>p.ex1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                     &nbsp; margin-left<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                        inherit<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_margin-left_inherit" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+
+         <h2>Сворачивание полей</h2>
+         <p>Верхние и нижние поля элементов иногда сворачиваются в одно поле, равное наибольшему из двух полей.</p>
+         <p>Этого не происходит на левом и правом полях! Можно свернуть только верхние и нижние поля!</p>
+         <p>Посмотрите на следующий пример:</p>
+
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <p>Демонстрация сворачивания полей:</p>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  h1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;margin<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 0 0 50px 0<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br>h2 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;margin<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 20px 0 0 0<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_margin_collapse" target="_blank" rel="nofollow">Попробуйте сами »</a>
+         </div>
+
+         <p>В приведенном выше примере элемент <code class="w3-codespan">&lt;h1&gt;</code> имеет нижнее поле 50 пикселей, а элемент <code class="w3-codespan">&lt;h2&gt;</code> имеет верхнее поле 20 пикселей.</p>
+         <p>Казалось бы, здравый смысл подсказывает, что вертикальная граница между <code class="w3-codespan">&lt;h1&gt;</code> и <code class="w3-codespan">&lt;h2&gt;</code> будет в общей сложности 70px (50px + 20px). Но из-за сворачивания полей фактическое поле в итоге составляет 50px.</p>
+         <hr>
+
+         <div class="w3-container w3-dark-grey w3-padding">
+            <h2>Проверьте себя с помощью упражнений!</h2>
+            <div class="w3-bar w3-margin-bottom">
+               <a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_margin1" target="_blank" rel="nofollow">Упражнение 1 »</a>
+               <a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_margin2" target="_blank" rel="nofollow">Упражнение 2 »</a>
+               <a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_margin3" target="_blank" rel="nofollow">Упражнение 3 »</a>
+               <a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_margin4" target="_blank" rel="nofollow">Упражнение 4 »</a>
+            </div>
+         </div>
+         <hr>
+
+         <h2>Все CSS свойства полей</h2>
+         <table class="w3-table-all notranslate">
+            <tbody>
+               <tr>
+                  <th style="width:20%">Свойство</th>
+                  <th>Описание</th>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_margin.html">margin</a></td>
+                  <td>Сокращенное свойство для установки свойств полей в одном объявлении</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_margin-bottom.html">margin-bottom</a></td>
+                  <td>Устанавливает нижнее поле элемента</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_margin-left.html">margin-left</a></td>
+                  <td>Устанавливает левое поле элемента</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_margin-right.html">margin-right</a></td>
+                  <td>Устанавливает правое поле элемента</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_margin-top.html">margin-top</a></td>
+                  <td>Устанавливает верхнее поле элемента</td>
+               </tr>
+            </tbody>
+         </table>
+
+         <hr>
+         <div class="keys">
+            <strong>W3Schools на русском </strong>
+            <strong>уроки для начинающих по CSS </strong>
+            <strong>CSS3 для новичков </strong>
+            <strong>основы CSS - каскадные таблицы стилей </strong>
+            <strong>бесплатное обучение с нуля </strong>
+            <strong>язык css </strong>
+            <strong>как сделать поля или отступы в css </strong>
+            <strong>margin на веб-страницах </strong>
+            <strong>внешние края на страницах </strong>
+            <strong>как создают каскадные таблицы стилей css </strong>
+         </div>
+
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="css_border.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="css_padding.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+
+         <br>
+      </div>
+
+      <!-- / CONTENT -->
+      <div class="right-sidebar">
+         <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+      </div>
+   </main>
+   <footer>
+      <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+   </footer>
 </body>
+
 </html>

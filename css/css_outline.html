@@ -1,313 +1,351 @@
 <!DOCTYPE html>
-<html lang=ru>
+<html lang="ru">
+
 <head>
-<title>CSS Свойства контура. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих</title>
-<meta charset=utf-8 />
-<meta name=viewport content="width=device-width, initial-scale=1" />
-<meta name=keywords content="HTML,CSS,свойства,контура,контур,уроки,для начинающих,css3,основы,как" />
-<meta name=description content="CSS Учебник. Как создают контур на веб-странице? Его свойства. Курс по основам HTML5 | CSS3. W3schools на русском языке. Уроки для начинающих бесплатно" />
-<link rel=icon href=../images/css3_64x64.png type=image/x-icon />
-<link rel=stylesheet href=../styles/style.css />
-<link rel=stylesheet href=../styles/ws.css />
-<link rel=stylesheet href=../styles/handheld.css />
-<link rel=stylesheet type=text/css href=../styles/css_outline.css>
-<link rel=canonical href=https://html5beginner.github.io/ />
-<meta property=og:title content="CSS Свойства контура. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих" />
-<meta property=og:type content=Content />
-<meta property=og:url content=https://html5beginner.github.io/ />
-<meta property=og:image content=../image/html5_64x64.png />
-<meta property=og:description content="CSS Учебник. Как создают контур на веб-странице? Его свойства. Курс по основам HTML5 | CSS3. W3schools на русском языке. Уроки для начинающих бесплатно" />
-<meta property=og:locale content=ru />
-<meta property=og:site_name content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
-<script src=../js/topnav.js></script>
+   <title>CSS Свойства контура. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="keywords" content="HTML,CSS,свойства,контура,контур,уроки,для начинающих,css3,основы,как" />
+   <meta name="description" content="CSS Учебник. Как создают контур на веб-странице? Его свойства. Курс по основам HTML5 | CSS3. W3schools на русском языке. Уроки для начинающих бесплатно" />
+   <link rel="icon" href="../images/css3_64x64.png" type="image/x-icon" />
+   <link rel="stylesheet" href="../styles/style.css" />
+   <link rel="stylesheet" href="../styles/ws.css" />
+   <link rel="stylesheet" href="../styles/handheld.css" />
+   <link rel="stylesheet" type="text/css" href="../styles/css_outline.css">
+   <link rel="canonical" href="https://html5beginner.github.io/" />
+   <meta property="og:title" content="CSS Свойства контура. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих" />
+   <meta property="og:type" content="Content" />
+   <!--описывает тип объекта на странице-->
+   <meta property="og:url" content="https://html5beginner.github.io/" />
+   <!--адрес сайта-->
+   <meta property="og:image" content="../image/html5_64x64.png" />
+   <!--адрес картинки-->
+   <meta property="og:description" content="CSS Учебник. Как создают контур на веб-странице? Его свойства. Курс по основам HTML5 | CSS3. W3schools на русском языке. Уроки для начинающих бесплатно" />
+   <meta property="og:locale" content="ru" />
+   <!--язык сайта-->
+   <meta property="og:site_name" content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
+   <script src="../js/topnav.js"></script>
 </head>
+
 <body>
-<iframe src=../pages/header.html class=frame-header></iframe>
-<main>
-<div class=left-sidebar>
-<iframe src=../pages/menucss.html class=frame-left-sidebar></iframe>
-</div>
-<div class=content>
-<h1>CSS Контур</h1>
-<p class=brief><strong>Курс по основам CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
-<div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href=css_boxmodel.html title="Предыдущая страница" rel=prev>❮ Prev</a>
-<a class="w3-right w3-btn" href=css_text.html title="Следующая страница" rel=next>Next ❯</a>
-</div>
-<hr>
-<div style="max-width:100%;border:2px solid black;outline:#4caf50 solid 10px;padding:20px;margin:auto;text-align:center">Этот элемент имеет чёрную границу (border) и зелёный контур (outline) шириной 10 пикселей.</div>
-<br>
-<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_outline_intro" class=w3-btn rel=nofollow>Попробуйте сами »</a>
-<hr>
-<h2>CSS Outline - Контур</h2>
-<p><strong>Контур</strong> - это линия, которая рисуется вокруг элементов вне границ, чтобы элемент выделялся.</p>
-<p><strong>Outline</strong> (в переводе с анг.) - Контур.</p>
-<div class=w3-boxmodel>
-<div class="outline w3-theme">
-<div class=border>
-<div class=content></div>
-</div>
-</div>
-</div>
-<p><strong>CSS</strong> имеет следующие <strong>свойства контура</strong>:</p>
-<ul>
-<li><code class=w3-codespan>outline-style</code></li>
-<li><code class=w3-codespan>outline-color</code></li>
-<li><code class=w3-codespan>outline-width</code></li>
-<li><code class=w3-codespan>outline-offset</code></li>
-<li><code class=w3-codespan>outline</code></li>
-</ul>
-<div class="w3-panel w3-note">
-<p><b>Примечание:</b> Контур отличается от границ! В отличие от границы, контур рисуется вне границы элемента и может перекрывать другое содержимое. Кроме того, контур <b>НЕ является</b> частью размеров элемента; ширина и высота элемента не зависят от ширины контура.</p>
-</div>
-<hr>
-<h2>CSS Outline Style - Стиль контура</h2>
-<p>Свойство <code class=w3-codespan>outline-style</code> задает стиль контура и может иметь одно из следующих значений:</p>
-<ul>
-<li><code class=w3-codespan>dotted</code> - Определяет точечный контур</li>
-<li><code class=w3-codespan>dashed</code> - Определяет пунктирный контур</li>
-<li><code class=w3-codespan>solid</code> - Определяет сплошной контур</li>
-<li><code class=w3-codespan>double</code> - Определяет двойной контур</li>
-<li><code class=w3-codespan>groove</code> - Определяет трехмерный (3D) желобчатый контур</li>
-<li><code class=w3-codespan>ridge</code> - Определяет трехмерный (3D) ребристый контур</li>
-<li><code class=w3-codespan>inset</code> - Определяет 3D-внутренний контур</li>
-<li><code class=w3-codespan>outset</code> - Определяет 3D-наружный контур</li>
-<li><code class=w3-codespan>none</code> - Определяет отсутствие контура</li>
-<li><code class=w3-codespan>hidden</code> - Определяет скрытый контур</li>
-</ul>
-<br>
-<p>В следующих примерах показаны разные значения <code class=w3-codespan>outline-style</code>:</p>
-<p style=outline-style:dotted;margin:10px>Точечный контур.</p>
-<p style=outline-style:dashed;margin:10px>Пунктирный контур.</p>
-<p style=outline-style:solid;margin:10px>Сплошной контур.</p>
-<p style=outline-style:double;margin:10px>Двойной контур.</p>
-<p style=outline-style:groove;margin:10px>Контур канавки (желобка). Эффект зависит от значения цвета контура.</p>
-<p style=outline-style:ridge;margin:10px>Контур гребня. Эффект зависит от значения цвета контура.</p>
-<p style=outline-style:inset;margin:10px>Контур врезки. Эффект зависит от значения цвета контура.</p>
-<p style=outline-style:outset;margin:10px>Наружный контур. Эффект зависит от значения цвета контура.</p>
-<div class=w3-example>
-<h3>Пример</h3>
-<p>Демонстрация различных стилей контура:</p>
-<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
-p.dotted <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red>outline-style<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> dotted<span class=cssdelimitercolor style=color:black>;</span></span></span><span class=cssdelimitercolor style=color:black>}</span><br>
-p.dashed <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red>outline-style<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> dashed<span class=cssdelimitercolor style=color:black>;</span></span></span><span class=cssdelimitercolor style=color:black>}</span><br>p.solid <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red>outline-style<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> solid<span class=cssdelimitercolor style=color:black>;</span></span></span><span class=cssdelimitercolor style=color:black>}</span><br>
-p.double <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red>outline-style<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> double<span class=cssdelimitercolor style=color:black>;</span></span></span><span class=cssdelimitercolor style=color:black>}</span><br>p.groove <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red>outline-style<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> groove<span class=cssdelimitercolor style=color:black>;</span></span></span><span class=cssdelimitercolor style=color:black>}</span><br>
-p.ridge <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red>outline-style<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> ridge<span class=cssdelimitercolor style=color:black>;</span></span></span><span class=cssdelimitercolor style=color:black>}</span><br>p.inset <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red>outline-style<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> inset<span class=cssdelimitercolor style=color:black>;</span></span></span><span class=cssdelimitercolor style=color:black>}</span><br>
-p.outset <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red>outline-style<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> outset<span class=cssdelimitercolor style=color:black>;</span></span></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
-<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_outline-style" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
-</div>
-<div class="w3-panel w3-note">
-<p><b>Примечание:</b> Ни одно из других свойств контура не будет иметь никакого эффекта, если не установлено свойство <code class=w3-codespan>outline-style</code>!</p>
-</div>
-<hr>
-<h2>CSS Outline Color - Цвет контура</h2>
-<p>Свойство <code class=w3-codespan>outline-color</code> используется для установки цвета контура.</p>
-<p>Цвет может быть установлен с помощью:</p>
-<ul>
-<li>name - указания названия цвета, например "red" (красный)</li>
-<li>RGB - указания значения RGB, например "rgb(255,0,0)"</li>
-<li>Hex - указания значения HEX, например "#ff0000"</li>
-<li>invert - выполняется инверсия цвета (которая обеспечивает видимость контура независимо от цвета фона)</li>
-</ul>
-<p>В следующем примере показаны несколько разных контуров с разными цветами. Также обратите внимание, что эти элементы также имеют тонкую чёрную рамку внутри контура:</p>
-<p style="border:1px solid black;outline-style:solid;outline-color:red">Сплошной красный контур.</p>
-<p style="border:1px solid black;outline-style:double;outline-color:green">Двойной зеленый контур.</p>
-<p style="border:1px solid black;outline-style:outset;outline-color:yellow">Наружный желтый контур.</p>
-<div class=w3-example>
-<h3>Пример</h3>
-<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
-p.ex1
-<span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>
-&nbsp; border<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 1px solid black<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp;
-outline-style<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> solid<span class=cssdelimitercolor style=color:black>;</span></span><br>
-&nbsp;&nbsp;outline-color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> red<span class=cssdelimitercolor style=color:black>;</span></span><br>
-</span><span class=cssdelimitercolor style=color:black>}</span><br><br>p.ex2
-<span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>
-&nbsp;&nbsp;border<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 1px solid black<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp;
-outline-style<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> double<span class=cssdelimitercolor style=color:black>;</span></span><br>
-&nbsp;
-outline-color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> green<span class=cssdelimitercolor style=color:black>;</span></span><br>
-</span><span class=cssdelimitercolor style=color:black>}</span><br><br>p.ex3
-<span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>
-&nbsp;&nbsp;border<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 1px solid black<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp;&nbsp;outline-style<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> outset<span class=cssdelimitercolor style=color:black>;</span></span><br>
-&nbsp;&nbsp;outline-color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> yellow<span class=cssdelimitercolor style=color:black>;</span></span><br>
-</span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
-<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_outline-color" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
-</div>
-<p>В следующем примере используется <code class=w3-codespan>outline-color: invert</code>, который выполняет инверсию цвета. Это гарантирует, что контур будет виден независимо от цвета фона:</p>
-<p style="border:1px solid yellow;outline-style:solid;outline-color:invert">Сплошной перевернутый (инверсный) контур.</p>
-<div class=w3-example>
-<h3>Пример</h3>
-<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
-p.ex1
-<span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>
-&nbsp;&nbsp;border<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 1px solid yellow<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp;
-outline-style<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> solid<span class=cssdelimitercolor style=color:black>;</span></span><br>
-&nbsp;
-outline-color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> invert<span class=cssdelimitercolor style=color:black>;</span></span><br>
-</span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
-<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_outline-color_invert" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
-</div>
-<hr>
-<h2>CSS Outline Width - Ширина контура</h2>
-<p>Свойство <code class=w3-codespan>outline-width</code> задает ширину контура и может иметь одно из следующих значений:</p>
-<ul>
-<li>thin (типично 1px)</li>
-<li>medium (типично 3px)</li>
-<li>thick (типично 5px)</li>
-<li>Определенный размер (в px, pt, cm, em и т.д.)</li>
-</ul>
-<p>В следующем примере показаны некоторые контуры с различной шириной:</p>
-<p style="border:1px solid black;outline-style:solid;outline-color:red;outline-width:thin">Тонкий контур.</p>
-<p style="border:1px solid black;outline-style:solid;outline-color:red;outline-width:medium">Средний контур.</p>
-<p style="border:1px solid black;outline-style:solid;outline-color:red;outline-width:thick">Толстый контур.</p>
-<p style="border:1px solid black;outline-style:solid;outline-color:red;outline-width:4px">Толстый контур в 4px.</p>
-<div class=w3-example>
-<h3>Пример</h3>
-<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
-p.ex1
-<span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;border<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 1px solid black<span class=cssdelimitercolor style=color:black>;</span></span><br>
-&nbsp;&nbsp;outline-style<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> solid<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp;&nbsp;outline-color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> red<span class=cssdelimitercolor style=color:black>;</span></span><br>
-&nbsp;
-outline-width<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> thin<span class=cssdelimitercolor style=color:black>;</span></span><br>
-</span><span class=cssdelimitercolor style=color:black>}</span><br><br>p.ex2
-<span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp; border<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 1px solid black<span class=cssdelimitercolor style=color:black>;</span></span><br>
-&nbsp;
-outline-style<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> solid<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp; outline-color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> red<span class=cssdelimitercolor style=color:black>;</span></span><br>
-&nbsp;&nbsp;outline-width<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> medium<span class=cssdelimitercolor style=color:black>;</span></span><br>
-</span><span class=cssdelimitercolor style=color:black>}</span><br><br>p.ex3
-<span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;border<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 1px solid black<span class=cssdelimitercolor style=color:black>;</span></span><br>
-&nbsp;
-outline-style<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> solid<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp; outline-color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> red<span class=cssdelimitercolor style=color:black>;</span></span><br>
-&nbsp;&nbsp;outline-width<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> thick<span class=cssdelimitercolor style=color:black>;</span></span><br>
-</span><span class=cssdelimitercolor style=color:black>}</span><br><br>
-p.ex4
-<span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>
-&nbsp;&nbsp;border<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 1px solid black<span class=cssdelimitercolor style=color:black>;</span></span><br>
-&nbsp;&nbsp;outline-style<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> solid<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp; outline-color<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> red<span class=cssdelimitercolor style=color:black>;</span></span><br>
-&nbsp;
-outline-width<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 4px<span class=cssdelimitercolor style=color:black>;</span></span><br>
-</span><span class=cssdelimitercolor style=color:black>}</span>
-</span></div>
-<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_outline-width" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
-</div>
-<hr>
-<h2>CSS Outline - Контур. Сокращенное свойство</h2>
-<p>Свойство <code class=w3-codespan>outline</code> является сокращенным свойством для установки следующих отдельных свойств контура:</p>
-<ul>
-<li><code class=w3-codespan>outline-width</code></li>
-<li><code class=w3-codespan>outline-style</code> (обязательно)</li>
-<li><code class=w3-codespan>outline-color</code></li>
-</ul>
-<p>Свойство <code class=w3-codespan>outline</code> указывается как одно, два или три значения из списка выше. Порядок значений не имеет значения.</p>
-<p>В следующем примере показаны некоторые контуры, указанные с помощью свойства <code class=w3-codespan>outline</code>:</p>
-<p style=outline:dashed>Пунктирный контур.</p>
-<p style="outline:dotted red">Точечный red (красный) контур.</p>
-<p style="outline:5px solid yellow">Сплошной в 5px yellow (жёлтый) контур.</p>
-<p style="outline:ridge thick pink">Толстый ребристый pink (розовый) контур.</p>
-<div class=w3-example>
-<h3>Пример</h3>
-<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
-p.ex1
-<span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red>outline<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> dashed<span class=cssdelimitercolor style=color:black>;</span></span></span><span class=cssdelimitercolor style=color:black>}</span><br>p.ex2
-<span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red>outline<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> dotted red<span class=cssdelimitercolor style=color:black>;</span></span></span><span class=cssdelimitercolor style=color:black>}</span><br>p.ex3
-<span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red>outline<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 5px solid yellow<span class=cssdelimitercolor style=color:black>;</span></span></span><span class=cssdelimitercolor style=color:black>}</span><br>p.ex4
-<span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red>outline<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> thick ridge pink<span class=cssdelimitercolor style=color:black>;</span></span></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
-<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_outline" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
-</div>
-<hr>
-<h2>CSS Outline Offset - Смещение контура</h2>
-<p>Свойство <code class=w3-codespan>outline-offset</code> добавляет пространство между контуром и краем/границей элемента. Пространство между элементом и его контуром прозрачно.</p>
-<p>В следующем примере указывается контур в 15px за пределами границы:</p>
-<p style="margin:30px;border:1px solid black;outline:1px solid red;outline-offset:15px">
-Этот параграф имеет контур 15px за пределами границы.</p>
-<div class=w3-example>
-<h3>Пример</h3>
-<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
-p <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;margin<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 30px<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp; border<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 1px solid black<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp; outline<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span>
-1px solid red<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp;
-outline-offset<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 15px<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span>
-</span></div>
-<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_outline-offset" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
-</div>
-<p>В следующем примере показано, что пространство между элементом и его контуром является прозрачным:</p>
-<p style="margin:30px;background:yellow;border:1px solid black;outline:1px solid red;outline-offset:15px">
-Этот параграф имеет контур 15px за пределами границы.</p>
-<div class=w3-example>
-<h3>Пример</h3>
-<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
-p <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp; margin<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 30px<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp; background<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span>
-yellow<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp; border<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 1px solid black<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp; outline<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span>
-1px solid red<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp;
-outline-offset<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 15px<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span>
-</span></div>
-<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_outline-offset2" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
-</div>
-<hr>
-<div class="w3-container w3-dark-grey w3-padding">
-<h2>Проверьте себя с помощью упражнений!</h2>
-<div class="w3-bar w3-margin-bottom">
-<a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_outline1" target=_blank rel=nofollow>Упражнение 1 »</a>
-<a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_outline2" target=_blank rel=nofollow>Упражнение 2 »</a>
-<a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_outline3" target=_blank rel=nofollow>Упражнение 3 »</a>
-</div>
-</div>
-<hr>
-<h2>Все CSS свойства контура</h2>
-<table class="w3-table-all notranslate">
-<tbody>
-<tr>
-<th style=width:20%>Свойство</th>
-<th>Описание</th>
-</tr>
-<tr>
-<td><a href=/cssref/pr_outline.html>outline</a></td>
-<td>Сокращенное свойство для задания ширины контура, стиля контура и цвета контура в одном объявлении</td>
-</tr>
-<tr>
-<td><a href=/cssref/pr_outline-color.html>outline-color</a></td>
-<td>Устанавливает цвет контура</td>
-</tr>
-<tr>
-<td><a href=/cssref/css3_pr_outline-offset.html>outline-offset</a></td>
-<td>Определяет пространство между контуром и краем или границей элемента</td>
-</tr>
-<tr>
-<td><a href=/cssref/pr_outline-style.html>outline-style</a></td>
-<td>Устанавливает стиль контура</td>
-</tr>
-<tr>
-<td>
-<a href=/cssref/pr_outline-width.html>outline-width</a></td>
-<td>Устанавливает ширину контура</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<div class=keys>
-<strong>W3Schools на русском </strong>
-<strong>уроки для начинающих по CSS </strong>
-<strong>CSS3 для учащихся </strong>
-<strong>основы CSS - каскадные таблицы стилей </strong>
-<strong>обучение CSS бесплатно от начала до конца </strong>
-<strong>язык стилей css </strong>
-<strong>свойства контура в css </strong>
-<strong>создание контура на веб-странице </strong>
-<strong>как создать контур на HTML-странице </strong>
-<strong>справочник каскадных таблиц стилей css </strong>
-</div>
-<div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href=css_boxmodel.html title="Предыдущая страница" rel=prev>❮ Prev</a>
-<a class="w3-right w3-btn" href=css_text.html title="Следующая страница" rel=next>Next ❯</a>
-</div>
-<br>
-</div>
-<div class=right-sidebar>
-<iframe src=../pages/source.html class=frame-right-sidebar></iframe>
-</div>
-</main>
-<footer>
-<iframe src=../pages/footer.html class=frame-footer></iframe>
-</footer>
+   <iframe src="../pages/header.html" class="frame-header"></iframe>
+   <main>
+
+      <div class="left-sidebar">
+         <iframe src="../pages/menucss.html" class="frame-left-sidebar"></iframe>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+         <h1>CSS Контур</h1>
+         <p class="brief"><strong>Курс по основам CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
+
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="css_boxmodel.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="css_text.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         <hr>
+
+         <div style="max-width:100%;border:2px solid black;outline:#4CAF50 solid 10px;padding:20px;margin:auto;text-align:center">Этот элемент имеет чёрную границу (border) и зелёный контур (outline) шириной 10 пикселей.</div>
+         <br>
+         <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_outline_intro" class="w3-btn" rel="nofollow">Попробуйте сами »</a>
+         <hr>
+
+         <h2>CSS Outline - Контур</h2>
+         <p><strong>Контур</strong> - это линия, которая рисуется вокруг элементов вне границ, чтобы элемент выделялся.</p>
+         <p><strong>Outline</strong> (в переводе с анг.) - Контур.</p>
+         <div class="w3-boxmodel">
+            <div class="outline w3-theme">
+               <div class="border">
+                  <div class="content"></div>
+               </div>
+            </div>
+         </div>
+
+         <p><strong>CSS</strong> имеет следующие <strong>свойства контура</strong>:</p>
+         <ul>
+            <li><code class="w3-codespan">outline-style</code></li>
+            <li><code class="w3-codespan">outline-color</code></li>
+            <li><code class="w3-codespan">outline-width</code></li>
+            <li><code class="w3-codespan">outline-offset</code></li>
+            <li><code class="w3-codespan">outline</code></li>
+         </ul>
+
+         <div class="w3-panel w3-note">
+            <p><b>Примечание:</b> Контур отличается от границ! В отличие от границы, контур рисуется вне границы элемента и может перекрывать другое содержимое. Кроме того, контур <b>НЕ является</b> частью размеров элемента; ширина и высота элемента не зависят от ширины контура.</p>
+         </div>
+         <hr>
+
+         <h2>CSS Outline Style - Стиль контура</h2>
+         <p>Свойство <code class="w3-codespan">outline-style</code> задает стиль контура и может иметь одно из следующих значений:</p>
+         <ul>
+            <li><code class="w3-codespan">dotted</code> - Определяет точечный контур</li>
+            <li><code class="w3-codespan">dashed</code> - Определяет пунктирный контур</li>
+            <li><code class="w3-codespan">solid</code> - Определяет сплошной контур</li>
+            <li><code class="w3-codespan">double</code> - Определяет двойной контур</li>
+            <li><code class="w3-codespan">groove</code> - Определяет трехмерный (3D) желобчатый контур</li>
+            <li><code class="w3-codespan">ridge</code> - Определяет трехмерный (3D) ребристый контур</li>
+            <li><code class="w3-codespan">inset</code> - Определяет 3D-внутренний контур</li>
+            <li><code class="w3-codespan">outset</code> - Определяет 3D-наружный контур</li>
+            <li><code class="w3-codespan">none</code> - Определяет отсутствие контура</li>
+            <li><code class="w3-codespan">hidden</code> - Определяет скрытый контур</li>
+         </ul>
+         <br>
+         <p>В следующих примерах показаны разные значения <code class="w3-codespan">outline-style</code>:</p>
+         <p style="outline-style:dotted;margin:10px">Точечный контур.</p>
+         <p style="outline-style:dashed;margin:10px">Пунктирный контур.</p>
+         <p style="outline-style:solid;margin:10px">Сплошной контур.</p>
+         <p style="outline-style:double;margin:10px">Двойной контур.</p>
+         <p style="outline-style:groove;margin:10px">Контур канавки (желобка). Эффект зависит от значения цвета контура.</p>
+         <p style="outline-style:ridge;margin:10px">Контур гребня. Эффект зависит от значения цвета контура.</p>
+         <p style="outline-style:inset;margin:10px">Контур врезки. Эффект зависит от значения цвета контура.</p>
+         <p style="outline-style:outset;margin:10px">Наружный контур. Эффект зависит от значения цвета контура.</p>
+
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <p>Демонстрация различных стилей контура:</p>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  p.dotted <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">outline-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> dotted<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br>
+                  p.dashed <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">outline-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> dashed<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br>p.solid <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">outline-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> solid<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br>
+                  p.double <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">outline-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> double<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br>p.groove <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">outline-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> groove<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br>
+                  p.ridge <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">outline-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> ridge<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br>p.inset <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">outline-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> inset<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br>
+                  p.outset <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">outline-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> outset<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_outline-style" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+
+         <div class="w3-panel w3-note">
+            <p><b>Примечание:</b> Ни одно из других свойств контура не будет иметь никакого эффекта, если не установлено свойство <code class="w3-codespan">outline-style</code>!</p>
+         </div>
+         <hr>
+
+         <h2>CSS Outline Color - Цвет контура</h2>
+         <p>Свойство <code class="w3-codespan">outline-color</code> используется для установки цвета контура.</p>
+         <p>Цвет может быть установлен с помощью:</p>
+         <ul>
+            <li>name - указания названия цвета, например "red" (красный)</li>
+            <li>RGB - указания значения RGB, например "rgb(255,0,0)"</li>
+            <li>Hex - указания значения HEX, например "#ff0000"</li>
+            <li>invert - выполняется инверсия цвета (которая обеспечивает видимость контура независимо от цвета фона)</li>
+         </ul>
+
+         <p>В следующем примере показаны несколько разных контуров с разными цветами. Также обратите внимание, что эти элементы также имеют тонкую чёрную рамку внутри контура:</p>
+         <p style="border: 1px solid black;outline-style:solid;outline-color:red;">Сплошной красный контур.</p>
+         <p style="border: 1px solid black;outline-style:double;outline-color:green;">Двойной зеленый контур.</p>
+         <p style="border: 1px solid black;outline-style:outset;outline-color:yellow;">Наружный желтый контур.</p>
+
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  p.ex1
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                     &nbsp; border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1px solid black<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                     outline-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> solid<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                     &nbsp;&nbsp;outline-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> red<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                  </span><span class="cssdelimitercolor" style="color:black">}</span><br><br>p.ex2
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                     &nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1px solid black<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                     outline-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> double<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                     &nbsp;
+                     outline-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> green<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                  </span><span class="cssdelimitercolor" style="color:black">}</span><br><br>p.ex3
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                     &nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1px solid black<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;outline-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> outset<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                     &nbsp;&nbsp;outline-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> yellow<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                  </span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_outline-color" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+
+         <p>В следующем примере используется <code class="w3-codespan">outline-color: invert</code>, который выполняет инверсию цвета. Это гарантирует, что контур будет виден независимо от цвета фона:</p>
+         <p style="border: 1px solid yellow;outline-style:solid;outline-color:invert;">Сплошной перевернутый (инверсный) контур.</p>
+
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  p.ex1
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                     &nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1px solid yellow<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                     outline-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> solid<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                     &nbsp;
+                     outline-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> invert<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                  </span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_outline-color_invert" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+
+         <h2>CSS Outline Width - Ширина контура</h2>
+         <p>Свойство <code class="w3-codespan">outline-width</code> задает ширину контура и может иметь одно из следующих значений:</p>
+         <ul>
+            <li>thin (типично 1px)</li>
+            <li>medium (типично 3px)</li>
+            <li>thick (типично 5px)</li>
+            <li>Определенный размер (в px, pt, cm, em и т.д.)</li>
+         </ul>
+
+         <p>В следующем примере показаны некоторые контуры с различной шириной:</p>
+         <p style="border: 1px solid black;outline-style:solid;outline-color:red;outline-width:thin;">Тонкий контур.</p>
+         <p style="border: 1px solid black;outline-style:solid;outline-color:red;outline-width:medium;">Средний контур.</p>
+         <p style="border: 1px solid black;outline-style:solid;outline-color:red;outline-width:thick;">Толстый контур.</p>
+         <p style="border: 1px solid black;outline-style:solid;outline-color:red;outline-width:4px;">Толстый контур в 4px.</p>
+
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  p.ex1
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1px solid black<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                     &nbsp;&nbsp;outline-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> solid<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;outline-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> red<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                     &nbsp;
+                     outline-width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> thin<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                  </span><span class="cssdelimitercolor" style="color:black">}</span><br><br>p.ex2
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1px solid black<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                     &nbsp;
+                     outline-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> solid<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; outline-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> red<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                     &nbsp;&nbsp;outline-width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> medium<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                  </span><span class="cssdelimitercolor" style="color:black">}</span><br><br>p.ex3
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1px solid black<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                     &nbsp;
+                     outline-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> solid<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; outline-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> red<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                     &nbsp;&nbsp;outline-width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> thick<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                  </span><span class="cssdelimitercolor" style="color:black">}</span><br><br>
+                  p.ex4
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                     &nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1px solid black<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                     &nbsp;&nbsp;outline-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> solid<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; outline-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> red<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                     &nbsp;
+                     outline-width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 4px<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                  </span><span class="cssdelimitercolor" style="color:black">}</span>
+               </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_outline-width" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+
+         <h2>CSS Outline - Контур. Сокращенное свойство</h2>
+         <p>Свойство <code class="w3-codespan">outline</code> является сокращенным свойством для установки следующих отдельных свойств контура:</p>
+         <ul>
+            <li><code class="w3-codespan">outline-width</code></li>
+            <li><code class="w3-codespan">outline-style</code> (обязательно)</li>
+            <li><code class="w3-codespan">outline-color</code></li>
+         </ul>
+         <p>Свойство <code class="w3-codespan">outline</code> указывается как одно, два или три значения из списка выше. Порядок значений не имеет значения.</p>
+         <p>В следующем примере показаны некоторые контуры, указанные с помощью свойства <code class="w3-codespan">outline</code>:</p>
+         <p style="outline: dashed;">Пунктирный контур.</p>
+         <p style="outline: dotted red;">Точечный red (красный) контур.</p>
+         <p style="outline: 5px solid yellow;">Сплошной в 5px yellow (жёлтый) контур.</p>
+         <p style="outline: ridge thick pink;">Толстый ребристый pink (розовый) контур.</p>
+
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  p.ex1
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">outline<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> dashed<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br>p.ex2
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">outline<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> dotted red<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br>p.ex3
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">outline<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 5px solid yellow<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br>p.ex4
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">outline<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> thick ridge pink<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_outline" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+
+         <h2>CSS Outline Offset - Смещение контура</h2>
+         <p>Свойство <code class="w3-codespan">outline-offset</code> добавляет пространство между контуром и краем/границей элемента. Пространство между элементом и его контуром прозрачно.</p>
+
+         <p>В следующем примере указывается контур в 15px за пределами границы:</p>
+         <p style="margin:30px;border:1px solid black;outline:1px solid red;outline-offset:15px;">
+            Этот параграф имеет контур 15px за пределами границы.</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  p <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;margin<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 30px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1px solid black<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; outline<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                        1px solid red<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                     outline-offset<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 15px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+               </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_outline-offset" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+
+         <p>В следующем примере показано, что пространство между элементом и его контуром является прозрачным:</p>
+         <p style="margin:30px;background:yellow;border:1px solid black;outline:1px solid red;outline-offset:15px;">
+            Этот параграф имеет контур 15px за пределами границы.</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  p <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; margin<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 30px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; background<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                        yellow<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1px solid black<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; outline<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                        1px solid red<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                     outline-offset<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 15px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+               </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_outline-offset2" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+
+         <div class="w3-container w3-dark-grey w3-padding">
+            <h2>Проверьте себя с помощью упражнений!</h2>
+            <div class="w3-bar w3-margin-bottom">
+               <a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_outline1" target="_blank" rel="nofollow">Упражнение 1 »</a>
+               <a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_outline2" target="_blank" rel="nofollow">Упражнение 2 »</a>
+               <a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_outline3" target="_blank" rel="nofollow">Упражнение 3 »</a>
+            </div>
+         </div>
+         <hr>
+
+         <h2>Все CSS свойства контура</h2>
+
+         <table class="w3-table-all notranslate">
+            <tbody>
+               <tr>
+                  <th style="width:20%">Свойство</th>
+                  <th>Описание</th>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_outline.html">outline</a></td>
+                  <td>Сокращенное свойство для задания ширины контура, стиля контура и цвета контура в одном объявлении</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_outline-color.html">outline-color</a></td>
+                  <td>Устанавливает цвет контура</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/css3_pr_outline-offset.html">outline-offset</a></td>
+                  <td>Определяет пространство между контуром и краем или границей элемента</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_outline-style.html">outline-style</a></td>
+                  <td>Устанавливает стиль контура</td>
+               </tr>
+               <tr>
+                  <td>
+                     <a href="/cssref/pr_outline-width.html">outline-width</a></td>
+                  <td>Устанавливает ширину контура</td>
+               </tr>
+            </tbody>
+         </table>
+
+         <hr>
+         <div class="keys">
+            <strong>W3Schools на русском </strong>
+            <strong>уроки для начинающих по CSS </strong>
+            <strong>CSS3 для учащихся </strong>
+            <strong>основы CSS - каскадные таблицы стилей </strong>
+            <strong>обучение CSS бесплатно от начала до конца </strong>
+            <strong>язык стилей css </strong>
+            <strong>свойства контура в css </strong>
+            <strong>создание контура на веб-странице </strong>
+            <strong>как создать контур на HTML-странице </strong>
+            <strong>справочник каскадных таблиц стилей css </strong>
+         </div>
+
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="css_boxmodel.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="css_text.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+
+         <br>
+      </div>
+
+      <!-- / CONTENT -->
+      <div class="right-sidebar">
+         <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+      </div>
+   </main>
+   <footer>
+      <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+   </footer>
 </body>
+
 </html>

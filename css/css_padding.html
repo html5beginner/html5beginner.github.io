@@ -1,247 +1,280 @@
 <!DOCTYPE html>
-<html lang=ru>
+<html lang="ru">
+
 <head>
-<title>CSS Отступы. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих</title>
-<meta charset=utf-8 />
-<meta name=viewport content="width=device-width, initial-scale=1" />
-<meta name=keywords content="HTML,CSS,отступы,padding,уроки,для начинающих,css3,основы,как" />
-<meta name=description content="CSS Пособие. Как добавить внтуренние отступы на веб-странице. Курс по основам HTML5 | CSS3. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
-<link rel=icon href=../images/css3_64x64.png type=image/x-icon />
-<link rel=stylesheet href=../styles/style.css />
-<link rel=stylesheet href=../styles/ws.css />
-<link rel=stylesheet href=../styles/handheld.css />
-<link rel=canonical href=https://html5beginner.github.io/ />
-<meta property=og:title content="CSS Отступы. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих" />
-<meta property=og:type content=Content />
-<meta property=og:url content=https://html5beginner.github.io/ />
-<meta property=og:image content=../image/html5_64x64.png />
-<meta property=og:description content="CSS Пособие. Как добавить внутренние отступы на веб-странице. Курс по основам HTML5 | CSS3. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
-<meta property=og:locale content=ru />
-<meta property=og:site_name content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
-<script src=../js/topnav.js></script>
+   <title>CSS Отступы. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="keywords" content="HTML,CSS,отступы,padding,уроки,для начинающих,css3,основы,как" />
+   <meta name="description" content="CSS Пособие. Как добавить внтуренние отступы на веб-странице. Курс по основам HTML5 | CSS3. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+   <link rel="icon" href="../images/css3_64x64.png" type="image/x-icon" />
+   <link rel="stylesheet" href="../styles/style.css" />
+   <link rel="stylesheet" href="../styles/ws.css" />
+   <link rel="stylesheet" href="../styles/handheld.css" />
+   <link rel="canonical" href="https://html5beginner.github.io/" />
+   <meta property="og:title" content="CSS Отступы. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих" />
+   <meta property="og:type" content="Content" />
+   <!--описывает тип объекта на странице-->
+   <meta property="og:url" content="https://html5beginner.github.io/" />
+   <!--адрес сайта-->
+   <meta property="og:image" content="../image/html5_64x64.png" />
+   <!--адрес картинки-->
+   <meta property="og:description" content="CSS Пособие. Как добавить внутренние отступы на веб-странице. Курс по основам HTML5 | CSS3. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+   <meta property="og:locale" content="ru" />
+   <!--язык сайта-->
+   <meta property="og:site_name" content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
+   <script src="../js/topnav.js"></script>
 </head>
+
 <body>
-<iframe src=../pages/header.html class=frame-header></iframe>
-<main>
-<div class=left-sidebar>
-<iframe src=../pages/menucss.html class=frame-left-sidebar></iframe>
-</div>
-<div class=content>
-<h1>CSS Отступы</h1>
-<p class=brief><strong>Курс по основам CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
-<div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href=css_margin.html title="Предыдущая страница" rel=prev>❮ Prev</a>
-<a class="w3-right w3-btn" href=css_dimension.html title="Следующая страница" rel=next>Next ❯</a>
-</div>
-<hr>
-<div style=max-width:100%;padding:70px;border-width:1px;border-style:solid>Этот элемент имеет отступ 70px.</div>
-<br>
-<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding_intro" class=w3-btn rel=nofollow>Попробуйте сами »</a>
-<hr>
-<h2>CSS Padding - Отступ</h2>
-<p><strong>CSS</strong> свойство <code class=w3-codespan>padding</code> используется для создания пространства вокруг содержимого элемента внутри любых определенных границ.</p>
-<p>Из <strong>CSS</strong> у вас есть полный контроль над отступами. Есть свойства для установки отступов для каждой стороны элемента (сверху, справа, снизу и слева).</p>
-<hr>
-<h2>Отступ - Отдельные стороны</h2>
-<p><strong>CSS</strong> имеет свойства для указания отступов для каждой стороны элемента:</p>
-<ul>
-<li><code class=w3-codespan>padding-top</code> - отступ сверху</li>
-<li><code class=w3-codespan>padding-right</code> - отступ справа</li>
-<li><code class=w3-codespan>padding-bottom</code> - отступ снизу</li>
-<li><code class=w3-codespan>padding-left</code> - отступ слева</li>
-</ul>
-<p>Все padding-свойства могут иметь следующие значения:</p>
-<ul>
-<li><em>length</em> (длина) - указывает отступ в px, pt, cm и т.д.</li>
-<li><em>%</em> (проценты) - задает отступ в % от ширины содержащего элемента</li>
-<li><em>inherit</em> (наследование) - указывает, что отступ должен быть унаследован от родительского элемента</li>
-</ul>
-<p><b>Примечание:</b> Отрицательные значения не допускаются.</p>
-<div class=w3-example>
-<h3>Пример</h3>
-<p>Установите разные отступы для всех четырех сторон элемента <code class=w3-codespan>&lt;div&gt;</code></p>
-<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
-div <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;
-padding-top<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 50px<span class=cssdelimitercolor style=color:black>;</span></span><br>
-&nbsp;&nbsp;padding-right<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 30px<span class=cssdelimitercolor style=color:black>;</span></span><br>
-&nbsp;&nbsp;padding-bottom<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 50px<span class=cssdelimitercolor style=color:black>;</span></span><br>
-&nbsp;&nbsp;padding-left<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 80px<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
-<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding_sides" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
-</div>
-<hr>
-<h2>Padding - Сокращенные свойства</h2>
-<p>Чтобы сократить код, можно указать все свойства <code class=w3-codespan>padding</code> в одном свойстве.</p>
-<p>Свойство <code class=w3-codespan>padding</code> является сокращенным свойством для следующих отдельных свойств <strong>padding</strong>:</p>
-<ul>
-<li><code class=w3-codespan>padding-top</code> - отступ сверху</li>
-<li><code class=w3-codespan>padding-right</code> - отступ справа</li>
-<li><code class=w3-codespan>padding-bottom</code> - отступ снизу</li>
-<li><code class=w3-codespan>padding-left</code> - отступ слева</li>
-</ul>
-<p>Таким образом, вот как это работает:</p>
-<p>Если свойство <code class=w3-codespan>padding</code> имеет четыре значения:</p>
-<ul>
-<li><b>padding: 25px 50px 75px 100px; </b>
-<ul>
-<li>отступ сверху 25px</li>
-<li>отступ справа 50px</li>
-<li>отступ снизу 75px</li>
-<li>отступ слева 100px</li>
-</ul>
-</li>
-</ul>
-<div class=w3-example>
-<h3>Пример</h3>
-<p>Используйте сокращенное свойство <code class=w3-codespan>padding</code> с четырьмя значениями:</p>
-<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
-div <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;
-padding<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 25px 50px 75px 100px<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
-<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding_shorthand_4val" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
-</div>
-<p>Если свойство <code class=w3-codespan>padding</code> имеет три значения:</p>
-<ul>
-<li><b>padding: 25px 50px 75px;</b>
-<ul>
-<li>отступ сверху 25px</li>
-<li>отступы справа и слева 50px</li>
-<li>отступ снизу 75px</li>
-</ul>
-</li>
-</ul>
-<div class=w3-example>
-<h3>Пример</h3>
-<p>Используйте сокращенное свойство <code class=w3-codespan>padding</code> с тремя значениями:</p>
-<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
-div <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;
-padding<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 25px 50px 75px<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
-<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding_shorthand_3val" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
-</div>
-<p>Если свойство <code class=w3-codespan>padding</code> имеет два значения:</p>
-<ul>
-<li><b>padding: 25px 50px;</b>
-<ul>
-<li>отступы сверху и снизу 25px</li>
-<li>отступы справа и слева 50px</li>
-</ul>
-</li>
-</ul>
-<div class=w3-example>
-<h3>Пример</h3>
-<p>Используйте сокращенное свойство <code class=w3-codespan>padding</code> с двумя значениями:</p>
-<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
-div <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;
-padding<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 25px 50px<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
-<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding_shorthand_2val" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
-</div>
-<p>Если свойство <code class=w3-codespan>padding</code> использует одно значение:</p>
-<ul>
-<li><b>padding: 25px;</b>
-<ul>
-<li>все четыре отступа 25px</li>
-</ul>
-</li>
-</ul>
-<div class=w3-example>
-<h3>Пример</h3>
-<p>Используйте сокращенное свойство <code class=w3-codespan>padding</code> с одним значением:</p>
-<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
-div <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;
-padding<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 25px<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
-<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding_shorthand_1val" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
-</div>
-<hr>
-<h2>Padding и элемент Width (ширина)</h2>
-<p>CSS свойство <code class=w3-codespan>width</code> определяет ширину области содержимого элемента. Область содержимого - это часть внутри отступа, границы и поля элемента (<a href=css_boxmodel.html>box model</a>).</p>
-<p>Таким образом, если элемент имеет указанную ширину, отступ, добавленный к этому элементу, будет добавлен к общей ширине элемента. Это часто нежелательный результат.</p>
-<div class=w3-example>
-<h3>Пример</h3>
-<p>Здесь элемент <code>&lt;div&gt;</code> имеет ширину 300 пикселей. Однако фактическая ширина элемента <code>&lt;div&gt;</code> будет 350px (300px + 25px для левого отступа + 25px для правого отступа):</p>
-<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
-div <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp;&nbsp;width<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 300px<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp;&nbsp;padding<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 25px<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
-<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding_width" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
-</div>
-<p>Чтобы сохранить ширину в 300 пикселей, независимо от величины заполнения, вы можете использовать свойство <code class=w3-codespan>box-sizing</code>. Это заставляет элемент сохранять свою ширину; если вы увеличите отступ, доступное пространство контента уменьшится.</p>
-<div class=w3-example>
-<h3>Пример</h3>
-<p>Используйте свойство <code class=w3-codespan>box-sizing</code>, чтобы ширина составляла 300 пикселей независимо от размера отступа:</p>
-<div class="w3-code notranslate cssHigh"><span class=cssselectorcolor style=color:brown>
-div <span class=cssdelimitercolor style=color:black>{</span><span class=csspropertycolor style=color:red><br>&nbsp; width<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 300px<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp;&nbsp;padding<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> 25px<span class=cssdelimitercolor style=color:black>;</span></span><br>&nbsp;&nbsp;box-sizing<span class=csspropertyvaluecolor style=color:mediumblue><span class=cssdelimitercolor style=color:black>:</span> border-box<span class=cssdelimitercolor style=color:black>;</span></span><br></span><span class=cssdelimitercolor style=color:black>}</span> </span></div>
-<a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding_width2" class="w3-btn w3-margin-bottom" rel=nofollow>Попробуйте сами »</a>
-</div>
-<hr>
-<h2>Больше примеров</h2>
-<p><a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding-left" rel=nofollow>Установите левый отступ</a><br>
-Этот пример демонстрирует, как установить левый отступ элемента &lt;p&gt;.</p>
-<p><a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding-right" rel=nofollow>Установите правый отступ</a><br>
-Этот пример демонстрирует, как установить правый отступ элемента &lt;p&gt;.</p>
-<p><a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding-top" rel=nofollow>Установите верхний отступ</a><br>
-Этот пример демонстрирует, как установить верхний отступ элемента &lt;p&gt;.</p>
-<p><a target=_blank href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding-bottom" rel=nofollow>Установите нижний отступ</a><br>
-Этот пример демонстрирует, как установить нижний отступ элемента &lt;p&gt;.</p>
-<hr>
-<div class="w3-container w3-dark-grey w3-padding">
-<h2>Проверьте себя с помощью упражнений!</h2>
-<div class="w3-bar w3-margin-bottom">
-<a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_padding1" target=_blank rel=nofollow>Упражнение 1 »</a>
-<a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_padding2" target=_blank rel=nofollow>Упражнение 2 »</a>
-<a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_padding3" target=_blank rel=nofollow>Упражнение 3 »</a>
-</div>
-</div>
-<hr>
-<h2>Все свойства CSS Padding</h2>
-<table class="w3-table-all notranslate">
-<tbody>
-<tr>
-<th style=width:30%>Свойство</th>
-<th>Описание</th>
-</tr>
-<tr>
-<td><a href=/cssref/pr_padding.html>padding</a></td>
-<td>Сокращенное свойство для установки всех свойств psdding в одном объявлении</td>
-</tr>
-<tr>
-<td><a href=/cssref/pr_padding-bottom.html>padding-bottom</a></td>
-<td>Устанавливает нижний отступ элемента</td>
-</tr>
-<tr>
-<td><a href=/cssref/pr_padding-left.html>padding-left</a></td>
-<td>Устанавливает левый отступ элемента</td>
-</tr>
-<tr>
-<td><a href=/cssref/pr_padding-right.html>padding-right</a></td>
-<td>Устанавливает правый отступ элемента</td>
-</tr>
-<tr>
-<td><a href=/cssref/pr_padding-top.html>padding-top</a></td>
-<td>Устанавливает верхний отступ элемента</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<div class=keys>
-<strong>W3Schools на русском </strong>
-<strong>уроки для начинающих по CSS </strong>
-<strong>CSS3 для новичков </strong>
-<strong>основы CSS - каскадные таблицы стилей </strong>
-<strong>бесплатное обучение с нуля </strong>
-<strong>язык css </strong>
-<strong>как сделать внутренние отступы в css </strong>
-<strong>padding на веб-страницах </strong>
-<strong>внутренние отступы на страницах </strong>
-<strong>все свойства padding в каскадных таблицах стилей css </strong>
-</div>
-<div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href=css_margin.html title="Предыдущая страница" rel=prev>❮ Prev</a>
-<a class="w3-right w3-btn" href=css_dimension.html title="Следующая страница" rel=next>Next ❯</a>
-</div>
-<br>
-</div>
-<div class=right-sidebar>
-<iframe src=../pages/source.html class=frame-right-sidebar></iframe>
-</div>
-</main>
-<footer>
-<iframe src=../pages/footer.html class=frame-footer></iframe>
-</footer>
+   <iframe src="../pages/header.html" class="frame-header"></iframe>
+   <main>
+
+      <div class="left-sidebar">
+         <iframe src="../pages/menucss.html" class="frame-left-sidebar"></iframe>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+         <h1>CSS Отступы</h1>
+         <p class="brief"><strong>Курс по основам CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
+
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="css_margin.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="css_dimension.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         <hr>
+
+         <div style="max-width:100%;padding:70px;border-width:1px;border-style:solid;">Этот элемент имеет отступ 70px.</div>
+         <br>
+         <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding_intro" class="w3-btn" rel="nofollow">Попробуйте сами »</a>
+         <hr>
+
+         <h2>CSS Padding - Отступ</h2>
+         <p><strong>CSS</strong> свойство <code class="w3-codespan">padding</code> используется для создания пространства вокруг содержимого элемента внутри любых определенных границ.</p>
+         <p>Из <strong>CSS</strong> у вас есть полный контроль над отступами. Есть свойства для установки отступов для каждой стороны элемента (сверху, справа, снизу и слева).</p>
+         <hr>
+
+         <h2>Отступ - Отдельные стороны</h2>
+         <p><strong>CSS</strong> имеет свойства для указания отступов для каждой стороны элемента:</p>
+         <ul>
+            <li><code class="w3-codespan">padding-top</code> - отступ сверху</li>
+            <li><code class="w3-codespan">padding-right</code> - отступ справа</li>
+            <li><code class="w3-codespan">padding-bottom</code> - отступ снизу</li>
+            <li><code class="w3-codespan">padding-left</code> - отступ слева</li>
+         </ul>
+         <p>Все padding-свойства могут иметь следующие значения:</p>
+         <ul>
+            <li><em>length</em> (длина) - указывает отступ в px, pt, cm и т.д.</li>
+            <li><em>%</em> (проценты) - задает отступ в % от ширины содержащего элемента</li>
+            <li><em>inherit</em> (наследование) - указывает, что отступ должен быть унаследован от родительского элемента</li>
+         </ul>
+
+         <p><b>Примечание:</b> Отрицательные значения не допускаются.</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <p>Установите разные отступы для всех четырех сторон элемента <code class="w3-codespan">&lt;div&gt;</code></p>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;
+                     padding-top<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 50px<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                     &nbsp;&nbsp;padding-right<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 30px<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                     &nbsp;&nbsp;padding-bottom<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 50px<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                     &nbsp;&nbsp;padding-left<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 80px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding_sides" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+
+         <h2>Padding - Сокращенные свойства</h2>
+         <p>Чтобы сократить код, можно указать все свойства <code class="w3-codespan">padding</code> в одном свойстве.</p>
+         <p>Свойство <code class="w3-codespan">padding</code> является сокращенным свойством для следующих отдельных свойств <strong>padding</strong>:</p>
+         <ul>
+            <li><code class="w3-codespan">padding-top</code> - отступ сверху</li>
+            <li><code class="w3-codespan">padding-right</code> - отступ справа</li>
+            <li><code class="w3-codespan">padding-bottom</code> - отступ снизу</li>
+            <li><code class="w3-codespan">padding-left</code> - отступ слева</li>
+         </ul>
+
+         <p>Таким образом, вот как это работает:</p>
+         <p>Если свойство <code class="w3-codespan">padding</code> имеет четыре значения:</p>
+         <ul>
+            <li><b>padding: 25px 50px 75px 100px; </b>
+               <ul>
+                  <li>отступ сверху 25px</li>
+                  <li>отступ справа 50px</li>
+                  <li>отступ снизу 75px</li>
+                  <li>отступ слева 100px</li>
+               </ul>
+            </li>
+         </ul>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <p>Используйте сокращенное свойство <code class="w3-codespan">padding</code> с четырьмя значениями:</p>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;
+                     padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 25px 50px 75px 100px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding_shorthand_4val" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+
+         <p>Если свойство <code class="w3-codespan">padding</code> имеет три значения:</p>
+         <ul>
+            <li><b>padding: 25px 50px 75px;</b>
+               <ul>
+                  <li>отступ сверху 25px</li>
+                  <li>отступы справа и слева 50px</li>
+                  <li>отступ снизу 75px</li>
+               </ul>
+            </li>
+         </ul>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <p>Используйте сокращенное свойство <code class="w3-codespan">padding</code> с тремя значениями:</p>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;
+                     padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 25px 50px 75px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding_shorthand_3val" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+
+         <p>Если свойство <code class="w3-codespan">padding</code> имеет два значения:</p>
+         <ul>
+            <li><b>padding: 25px 50px;</b>
+               <ul>
+                  <li>отступы сверху и снизу 25px</li>
+                  <li>отступы справа и слева 50px</li>
+               </ul>
+            </li>
+         </ul>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <p>Используйте сокращенное свойство <code class="w3-codespan">padding</code> с двумя значениями:</p>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;
+                     padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 25px 50px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding_shorthand_2val" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+
+         <p>Если свойство <code class="w3-codespan">padding</code> использует одно значение:</p>
+         <ul>
+            <li><b>padding: 25px;</b>
+               <ul>
+                  <li>все четыре отступа 25px</li>
+               </ul>
+            </li>
+         </ul>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <p>Используйте сокращенное свойство <code class="w3-codespan">padding</code> с одним значением:</p>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;
+                     padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 25px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding_shorthand_1val" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+
+         <h2>Padding и элемент Width (ширина)</h2>
+         <p>CSS свойство <code class="w3-codespan">width</code> определяет ширину области содержимого элемента. Область содержимого - это часть внутри отступа, границы и поля элемента (<a href="css_boxmodel.html">box model</a>).</p>
+         <p>Таким образом, если элемент имеет указанную ширину, отступ, добавленный к этому элементу, будет добавлен к общей ширине элемента. Это часто нежелательный результат.</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <p>Здесь элемент <code>&lt;div&gt;</code> имеет ширину 300 пикселей. Однако фактическая ширина элемента <code>&lt;div&gt;</code> будет 350px (300px + 25px для левого отступа + 25px для правого отступа):</p>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 300px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 25px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding_width" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+
+         <p>Чтобы сохранить ширину в 300 пикселей, независимо от величины заполнения, вы можете использовать свойство <code class="w3-codespan">box-sizing</code>. Это заставляет элемент сохранять свою ширину; если вы увеличите отступ, доступное пространство контента уменьшится.</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <p>Используйте свойство <code class="w3-codespan">box-sizing</code>, чтобы ширина составляла 300 пикселей независимо от размера отступа:</p>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 300px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 25px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;box-sizing<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> border-box<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding_width2" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+
+         <h2>Больше примеров</h2>
+
+         <p><a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding-left" rel="nofollow">Установите левый отступ</a><br>
+            Этот пример демонстрирует, как установить левый отступ элемента &lt;p&gt;.</p>
+
+         <p><a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding-right" rel="nofollow">Установите правый отступ</a><br>
+            Этот пример демонстрирует, как установить правый отступ элемента &lt;p&gt;.</p>
+
+         <p><a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding-top" rel="nofollow">Установите верхний отступ</a><br>
+            Этот пример демонстрирует, как установить верхний отступ элемента &lt;p&gt;.</p>
+
+         <p><a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding-bottom" rel="nofollow">Установите нижний отступ</a><br>
+            Этот пример демонстрирует, как установить нижний отступ элемента &lt;p&gt;.</p>
+         <hr>
+
+         <div class="w3-container w3-dark-grey w3-padding">
+            <h2>Проверьте себя с помощью упражнений!</h2>
+            <div class="w3-bar w3-margin-bottom">
+               <a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_padding1" target="_blank" rel="nofollow">Упражнение 1 »</a>
+               <a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_padding2" target="_blank" rel="nofollow">Упражнение 2 »</a>
+               <a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_padding3" target="_blank" rel="nofollow">Упражнение 3 »</a>
+            </div>
+         </div>
+         <hr>
+
+         <h2>Все свойства CSS Padding</h2>
+
+         <table class="w3-table-all notranslate">
+            <tbody>
+               <tr>
+                  <th style="width:30%">Свойство</th>
+                  <th>Описание</th>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_padding.html">padding</a></td>
+                  <td>Сокращенное свойство для установки всех свойств psdding в одном объявлении</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_padding-bottom.html">padding-bottom</a></td>
+                  <td>Устанавливает нижний отступ элемента</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_padding-left.html">padding-left</a></td>
+                  <td>Устанавливает левый отступ элемента</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_padding-right.html">padding-right</a></td>
+                  <td>Устанавливает правый отступ элемента</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_padding-top.html">padding-top</a></td>
+                  <td>Устанавливает верхний отступ элемента</td>
+               </tr>
+            </tbody>
+         </table>
+         <hr>
+         <div class="keys">
+            <strong>W3Schools на русском </strong>
+            <strong>уроки для начинающих по CSS </strong>
+            <strong>CSS3 для новичков </strong>
+            <strong>основы CSS - каскадные таблицы стилей </strong>
+            <strong>бесплатное обучение с нуля </strong>
+            <strong>язык css </strong>
+            <strong>как сделать внутренние отступы в css </strong>
+            <strong>padding на веб-страницах </strong>
+            <strong>внутренние отступы на страницах </strong>
+            <strong>все свойства padding в каскадных таблицах стилей css </strong>
+         </div>
+
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="css_margin.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="css_dimension.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+
+         <br>
+      </div>
+
+      <!-- / CONTENT -->
+      <div class="right-sidebar">
+         <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+      </div>
+   </main>
+   <footer>
+      <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+   </footer>
 </body>
+
 </html>
