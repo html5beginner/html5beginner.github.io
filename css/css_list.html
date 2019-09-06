@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <title>CSS Списки. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="keywords" content="HTML,CSS,списки,уроки,для начинающих,css3,основы,как,пример" />
+   <meta name="description" content="CSS Учебник. Как создать списки на веб-странице? Курс по основам HTML5 | CSS3. W3schools на русском языке. Уроки для начинающих бесплатно" />
+   <link rel="icon" href="../images/css3_64x64.png" type="image/x-icon" />
+   <link rel="stylesheet" href="../styles/style.css" />
+   <link rel="stylesheet" href="../styles/ws.css" />
+   <link rel="stylesheet" href="../styles/handheld.css" />
+   <link rel="stylesheet" href="../styles/w3colors.css" />
+   <link rel="canonical" href="https://html5beginner.github.io/" />
+   <meta property="og:title" content="CSS Списки. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих" />
+   <meta property="og:type" content="Content" />
+   <!--описывает тип объекта на странице-->
+   <meta property="og:url" content="https://html5beginner.github.io/" />
+   <!--адрес сайта-->
+   <meta property="og:image" content="../image/html5_64x64.png" />
+   <!--адрес картинки-->
+   <meta property="og:description" content="CSS Учебник. Как создать списки на веб-странице? Курс по основам HTML5 | CSS3. W3schools на русском языке. Уроки для начинающих бесплатно" />
+   <meta property="og:locale" content="ru" />
+   <!--язык сайта-->
+   <meta property="og:site_name" content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
+   <script src="../js/topnav.js"></script>
+</head>
+
+<body>
+   <iframe src="../pages/header.html" class="frame-header"></iframe>
+   <main>
+
+      <div class="left-sidebar">
+         <iframe src="../pages/menucss.html" class="frame-left-sidebar"></iframe>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+         <h1>CSS Списки</h1>
+         <p class="brief"><strong>Курс по основам CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
+
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="css_link.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="css_table.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         <hr>
+         <div class="w3-row">
+            <div class="w3-half w3-container">
+               <h2>Неупорядоченные списки:</h2>
+               <ul style="list-style:circle">
+                  <li>Coffee</li>
+                  <li>Tea</li>
+                  <li>Coca Cola</li>
+               </ul>
+               <ul style="list-style:square">
+                  <li>Coffee</li>
+                  <li>Tea</li>
+                  <li>Coca Cola</li>
+               </ul>
+            </div>
+            <div class="w3-half w3-container">
+               <h2>Упорядоченные списки:</h2>
+               <ol style="list-style:decimal">
+                  <li>Coffee</li>
+                  <li>Tea</li>
+                  <li>Coca Cola</li>
+               </ol>
+               <ol style="list-style:upper-roman">
+                  <li>Coffee</li>
+                  <li>Tea</li>
+                  <li>Coca Cola</li>
+               </ol>
+            </div>
+         </div>
+
+         <hr>
+
+         <h2>HTML списки и свойства CSS списков</h2>
+         <p>В <strong>HTML</strong> есть два основных типа списков:</p>
+         <ul>
+            <li>неупорядоченные списки (<code class="w3-codespan">&lt;ul&gt;</code>) - элементы списка помечены маркерами</li>
+            <li>упорядоченные списки (<code class="w3-codespan">&lt;ol&gt;</code>) - элементы списка помечены цифрами или буквами</li>
+         </ul>
+         <p>Свойства <strong>CSS</strong> списка позволяют вам:</p>
+         <ul>
+            <li>Установить разные маркеры элементов списка для упорядоченных списков</li>
+            <li>Установить разные маркеры элементов списка для неупорядоченных списков</li>
+            <li>Установить изображение в качестве маркера элемента списка</li>
+            <li>Добавить цвета фона в списки и элементы списка</li>
+         </ul>
+         <hr>
+
+         <h2>Различные маркеры списка</h2>
+         <p>Свойство <code class="w3-codespan">list-style-type</code> указывает тип маркера элемента списка.</p>
+         <p>В следующем примере показаны некоторые из доступных маркеров элементов списка:</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  ul.a <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;list-style-type<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> circle<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br>
+                  <br>ul.b <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; list-style-type<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> square<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br>
+                  <br>
+                  ol.c <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; list-style-type<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> upper-roman<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br>
+                  <br>ol.d <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; list-style-type<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> lower-alpha<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_list-style-type_ex" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <p><b>Примечание</b>: Некоторые значения для неупорядоченных списков, а некоторые для упорядоченных списков.</p>
+         <hr>
+
+         <h2>Изображение как маркер элемента списка</h2>
+         <p>Свойство <code class="w3-codespan">list-style-image</code> указывает изображение как маркер элемента списка:</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  ul
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                     &nbsp; list-style-image<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> url('sqpurple.gif')<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                  </span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_list-style-image" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+
+         <h2>Расположите маркеры элементов списка</h2>
+         <p>Свойство <code class="w3-codespan">list-style-position</code> указывает положение маркеров элемента списка (маркерованные пункты).</p>
+         <p>"list-style-position: outside;" означает, что маркеры будут вне элемента списка. Начало каждой строки элемента списка будет выровнено по вертикали. Это по умолчанию:</p>
+         <ul style="list-style-position:outside;width:25%;">
+            <li style="border:1px solid #000000;">Coffee -
+               <span style="display: inline !important; float: none; background-color: transparent; color: rgb(0, 0, 0); font-family: Times New Roman; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; list-style-position: inside; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">
+                  Сваренный напиток, приготовленный из жареных кофейных зерен...</span></li>
+            <li style="border:1px solid #000000;border-top:0;">Tea</li>
+            <li style="border:1px solid #000000;border-top:0;">Coca-cola</li>
+         </ul>
+         <p>"list-style-position: inside;" означает, что маркеры будут внутри элемента списка. Поскольку он является частью элемента списка, он будет частью текста и вставит текст в начале:</p>
+         <ul style="list-style-position:inside;width:25%;">
+            <li style="border:1px solid #000000;">Coffee -
+               <span style="display: inline !important; float: none; background-color: transparent; color: rgb(0, 0, 0); font-family: Times New Roman; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; list-style-position: inside; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">
+                  Сваренный напиток, приготовленный из жареных кофейных зерен...</span></li>
+            <li style="border:1px solid #000000;border-top:0;">Tea</li>
+            <li style="border:1px solid #000000;border-top:0;">Coca-cola</li>
+         </ul>
+
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  ul.a <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; list-style-position<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> outside<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br>ul.b <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;list-style-position<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> inside<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_list-style-position" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+
+         <h2>Удалить настройки по умолчанию</h2>
+         <p>Свойство <code class="w3-codespan">list-style-type:none</code> также может быть использовано для удаления меток/маркеров. Обратите внимание, что в списке также есть поля по умолчанию и отступы. Чтобы удалить их, добавьте <code class="w3-codespan">margin:0</code> и <code class="w3-codespan">padding:0</code> к <code class="w3-codespan">&lt;ul&gt;</code> или <code class="w3-codespan">&lt;ol&gt;</code>:</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  ul
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                     &nbsp;
+                     list-style-type<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> none<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; margin<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 0<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                     padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 0<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                  </span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_list-style_none" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+
+         <h2>Список - Сокращенное свойство</h2>
+         <p>Свойство <code class="w3-codespan">list-style</code> является сокращенным свойством. Используется для установки всех свойств списка в одном объявлении:</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  ul
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                     &nbsp;
+                     list-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> square inside url("sqpurple.gif")<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                  </span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_list-style" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+
+         <p>При использовании сокращенного свойства порядок значений свойств:</p>
+         <ul>
+            <li><code class="w3-codespan">list-style-type</code> (если указан list-style-image, значение этого свойства будет отображаться, если изображение по какой-то причине не может быть отображено)</li>
+            <li><code class="w3-codespan">list-style-position</code> (указывает, должны ли маркеры элементов списка появляться внутри или вне потока контента)</li>
+            <li><code class="w3-codespan">list-style-image</code> (указывает изображение как маркер элемента списка)</li>
+         </ul>
+         <p>Если одно из значений свойства выше отсутствует, будет вставлено значение по умолчанию для отсутствующего свойства, если оно есть.</p>
+         <hr>
+
+         <h2>Список стилей с цветами</h2>
+         <p>Мы также можем стилизовать списки с цветами, чтобы они выглядели немного интереснее.</p>
+         <p>Все, что добавлено в тег <code class="w3-codespan">&lt;ol&gt;</code> или <code class="w3-codespan">&lt;ul&gt;</code> влияет на весь список, в то время как свойства, добавленные в тег <code class="w3-codespan">&lt;li&gt;</code>, влияют на отдельные элементы списка:</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  ol <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; background<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> #ff9999<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                     padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 20px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br>ul <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; background<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> #3399ff<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                     padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 20px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br>ol li <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; background<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                        #ffe5e5<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 5px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                     margin-left<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 35px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br>ul li <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; background<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                        #cce5ff<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; margin<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 5px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <p>Результат:</p>
+            <div class="w3-padding w3-white notranslate">
+               <ol id="ex4">
+                  <li>Coffee</li>
+                  <li>Tea</li>
+                  <li>Coca Cola</li>
+               </ol>
+               <ul id="ex5">
+                  <li>Coffee</li>
+                  <li>Tea</li>
+                  <li>Coca Cola</li>
+               </ul>
+            </div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_list-style_colors" class="w3-btn w3-margin-bottom w3-margin-top" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+
+         <h2>Больше примеров</h2>
+         <p><a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_list-style-red-border" rel="nofollow">Пользовательский список с красной левой границей</a><br>
+            Этот пример демонстрирует, как создать список с красной левой границей.</p>
+         <div class="jsfiddle-code">Пример
+            <p class="codepen" data-height="353" data-theme-id="light" data-default-tab="html,result" data-user="olexa-petrw" data-slug-hash="xxKpprg" data-pen-title="css_list_trycss_list-style-red-border"></p>
+         </div>
+
+         <p><a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_list-style-border" rel="nofollow">Full-width bordered list</a><br>
+            Этот пример демонстрирует, как создать ограниченный список без маркеров.</p>
+         <div class="jsfiddle-code">Пример
+            <p class="codepen" data-height="371" data-theme-id="light" data-default-tab="html,result" data-user="olexa-petrw" data-slug-hash="eYOyyeJ" data-pen-title="css_list_trycss_list-style-border"></p>
+         </div>
+
+         <p><a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_list-style-type_all" rel="nofollow">Все различные маркеры элементов списка для списков</a><br>
+            Этот пример демонстрирует все различные маркеры элементов списка в CSS.</p>
+         <div class="jsfiddle-code">Пример
+            <p class="codepen" data-height="321" data-theme-id="light" data-default-tab="html,result" data-user="olexa-petrw" data-slug-hash="aboEEYJ" data-pen-title="css_list_trycss_list-style-type_all"></p>
+            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+         </div>
+
+         <hr>
+
+         <div class="w3-container w3-dark-grey w3-padding">
+            <h2>Проверьте себя с помощью упражнений!</h2>
+            <div class="w3-bar w3-margin-bottom">
+               <a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_list1" target="_blank" rel="nofollow">Упражнение 1 »</a>
+               <a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_list2" target="_blank" rel="nofollow">Упражнение 2 »</a>
+               <a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_list3" target="_blank" rel="nofollow">Упражнение 3 »</a>
+               <a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_list4" target="_blank" rel="nofollow">Упражнение 4 »</a>
+            </div>
+         </div>
+         <hr>
+
+         <h2>Все свойства CSS Списка</h2>
+
+         <table class="w3-table-all notranslate">
+            <tbody>
+               <tr>
+                  <th style="width:20%">Свойство</th>
+                  <th>Описание</th>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_list-style.html">list-style</a></td>
+                  <td>Устанавливает все свойства для списка в одном объявлении</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_list-style-image.html">list-style-image</a></td>
+                  <td>Определяет изображение как маркер элемента списка</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_list-style-position.html">list-style-position</a></td>
+                  <td>Определяет положение маркеров элемента списка (точки маркеров)</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_list-style-type.html">list-style-type</a></td>
+                  <td>Определяет тип маркера элемента списка</td>
+               </tr>
+            </tbody>
+         </table>
+
+         <hr>
+         <div class="keys">
+            <strong>Сайт W3Schools на русском языке </strong>
+            <strong>уроки W3Schols для начинающих по CSS онлайн </strong>
+            <strong>Курсы CSS3 от W3schools для детей и взрослых </strong>
+            <strong>основы CSS на сайте W3schools - каскадные таблицы стилей </strong>
+            <strong>курсы CSS3 бесплатно от А до Я </strong>
+            <strong>стилизация списков с помощью css </strong>
+            <strong>неупорядоченные и упорядоченные списки в css </strong>
+            <strong>оформление списков на веб-странице </strong>
+            <strong>как создать список на HTML-странице </strong>
+            <strong>создание списков на веб-страницах </strong>
+         </div>
+
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="css_link.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="css_table.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+
+         <br>
+      </div>
+
+      <!-- / CONTENT -->
+      <div class="right-sidebar">
+         <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+      </div>
+   </main>
+   <footer>
+      <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+   </footer>
+</body>
+
+</html>
