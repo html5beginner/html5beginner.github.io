@@ -75,6 +75,8 @@ header {font-family: "Trebuchet MS", sans-serif; padding: 10px;}
 
 .jsfiddle-code {background: #ddd;padding: 0 5px 5px;margin-left: 10px;}
 
+tag {color:brown;}
+
 main {
     display: grid; grid-template-columns:2fr 6fr 2fr; grid-template-rows:1fr; grid-column-gap:1px; grid-row-gap:1px;
     border: 1px solid #000; border-radius: 1px; max-width: 1920px; background: #fff; margin: 100px auto 0 auto;
