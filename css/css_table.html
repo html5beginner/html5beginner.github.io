@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <title>CSS Таблицы. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="keywords" content="HTML,CSS,таблицы,уроки,для начинающих,css3,основы,как,пример" />
+   <meta name="description" content="CSS Учебник. Как создать таблицы на веб-странице с помощью CSS? Курс по основам HTML5 | CSS3. W3schools на русском языке. Уроки для начинающих бесплатно" />
+   <link rel="icon" href="../images/css3_64x64.png" type="image/x-icon" />
+   <link rel="stylesheet" href="../styles/style.css" />
+   <link rel="stylesheet" href="../styles/ws.css" />
+   <link rel="stylesheet" href="../styles/handheld.css" />
+   <link rel="stylesheet" href="../styles/w3colors.css" />
+   <link rel="canonical" href="https://html5beginner.github.io/" />
+   <meta property="og:title" content="CSS Таблицы. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих" />
+   <meta property="og:type" content="Content" />
+   <!--описывает тип объекта на странице-->
+   <meta property="og:url" content="https://html5beginner.github.io/" />
+   <!--адрес сайта-->
+   <meta property="og:image" content="../image/html5_64x64.png" />
+   <!--адрес картинки-->
+   <meta property="og:description" content="CSS Учебник. Как создать таблицы на веб-странице с помощью CSS? Курс по основам HTML5 | CSS3. W3schools на русском языке. Уроки для начинающих бесплатно" />
+   <meta property="og:locale" content="ru" />
+   <!--язык сайта-->
+   <meta property="og:site_name" content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
+   <script src="../js/topnav.js"></script>
+
+   <style>
+      table#customers {
+         font-size: 16px;
+         font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+         border-collapse: collapse;
+         border-spacing: 0;
+         width: 100%;
+      }
+
+      #customers td,
+      #customers th {
+         border: 1px solid #ddd;
+         text-align: left;
+         padding: 8px;
+      }
+
+      #customers tr:nth-child(even) {
+         background-color: #f2f2f2
+      }
+
+      #customers th {
+         padding-top: 11px;
+         padding-bottom: 11px;
+         background-color: #4CAF50;
+         color: white;
+      }
+
+      .tabletest {
+         margin-top: 20px;
+         margin-bottom: 40px;
+         border-collapse: collapse;
+         border-spacing: 0;
+         width: 100%;
+      }
+
+      .tabletest,
+      .tabletest th,
+      .tabletest td {
+         padding: 8px;
+         text-align: left;
+      }
+
+      .tabletest2 {
+         font-size: 15px;
+         margin-top: 20px;
+         margin-bottom: 40px;
+         border-collapse: collapse;
+         width: 100%;
+      }
+
+      .tabletest2,
+      .tabletest2 th,
+      .tabletest2 td {
+         padding: 8px;
+         text-align: left;
+         border-bottom: 1px solid #ddd;
+      }
+
+      .tabletest3 {
+         border: 1px solid #ddd;
+         margin-top: 20px;
+         margin-bottom: 40px;
+         border-collapse: collapse;
+         border-spacing: 0;
+         width: 100%;
+      }
+
+      .tabletest3,
+      .tabletest3 th,
+      .tabletest3 td {
+         padding: 8px;
+         text-align: left;
+         border-bottom: 1px solid #ddd;
+      }
+
+      .tabletest4 {
+         margin-top: 20px;
+         margin-bottom: 40px;
+         border-collapse: collapse;
+         width: 100%;
+      }
+
+      .tabletest4,
+      .tabletest4 th,
+      .tabletest4 td {
+         padding: 8px;
+         text-align: left;
+         border-bottom: 1px solid #ddd;
+      }
+
+      .tabletest4 tr:hover {
+         background-color: #f5f5f5
+      }
+
+      .tabler2 {
+         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+         margin-top: 20px;
+         margin-bottom: 40px;
+         border-collapse: collapse;
+         border-spacing: 0;
+         width: 100%;
+      }
+
+      .tabler2,
+      .tabler2 th,
+      .tabler2 td {
+         border: none;
+         text-align: left;
+         padding: 8px;
+      }
+
+      .tabler2 tbody tr:nth-child(even) {
+         background-color: #f2f2f2
+      }
+
+      .tabler {
+         margin-top: 20px;
+         margin-bottom: 40px;
+         border-collapse: collapse;
+         border-spacing: 0;
+         width: 100%;
+      }
+
+      .tabler,
+      .tabler th,
+      .tabler td {
+         border: none;
+         text-align: left;
+         padding: 8px;
+      }
+
+      .tabler tbody tr:nth-child(even) {
+         background-color: #f2f2f2
+      }
+   </style>
+</head>
+
+<body>
+   <iframe src="../pages/header.html" class="frame-header"></iframe>
+   <main>
+
+      <div class="left-sidebar">
+         <iframe src="../pages/menucss.html" class="frame-left-sidebar"></iframe>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+         <h1>CSS Таблицы</h1>
+         <p class="brief"><strong>Курс по основам CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
+
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="css_list.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="css_display_visibility.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         <hr>
+         <p class="intro">Внешний вид <strong>HTML</strong> таблицы может быть значительно улучшен с помощью <strong>CSS</strong>:</p>
+         <table id="customers">
+            <tbody>
+               <tr>
+                  <th>Company</th>
+                  <th>Contact</th>
+                  <th>Country</th>
+               </tr>
+               <tr>
+                  <td>Alfreds Futterkiste</td>
+                  <td>Maria Anders</td>
+                  <td>Germany</td>
+               </tr>
+               <tr class="alt">
+                  <td>Berglunds snabbköp</td>
+                  <td>Christina Berglund</td>
+                  <td>Sweden</td>
+               </tr>
+               <tr>
+                  <td>Centro comercial Moctezuma</td>
+                  <td>Francisco Chang</td>
+                  <td>Mexico</td>
+               </tr>
+               <tr class="alt">
+                  <td>Ernst Handel</td>
+                  <td>Roland Mendel</td>
+                  <td>Austria</td>
+               </tr>
+               <tr>
+                  <td>Island Trading</td>
+                  <td>Helen Bennett</td>
+                  <td>UK</td>
+               </tr>
+               <tr class="alt">
+                  <td>Königlich Essen</td>
+                  <td>Philip Cramer</td>
+                  <td>Germany</td>
+               </tr>
+               <tr>
+                  <td>Laughing Bacchus Winecellars</td>
+                  <td>Yoshi Tannamuri</td>
+                  <td>Canada</td>
+               </tr>
+               <tr class="alt">
+                  <td>Magazzini Alimentari Riuniti</td>
+                  <td>Giovanni Rovelli</td>
+                  <td>Italy</td>
+               </tr>
+            </tbody>
+         </table>
+         <br>
+         <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_table_fancy" class="w3-btn" rel="nofollow">Попробуйте сами »</a>
+         <hr>
+
+         <h2>Border - Границы таблицы</h2>
+         <p>Чтобы указать границы таблицы в CSS, используйте свойство <code class="w3-codespan">border</code>.</p>
+         <p>В приведенном ниже примере указывается черная граница для элементов <code>&lt;table&gt;</code>, <code>&lt;th&gt;</code> и <code>&lt;td&gt;</code>:</p>
+         <iframe src="trycss_table_border_iframe.html" style="border:none;height:105px;"></iframe>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  table, th, td <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                     &nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1px solid black<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                  </span><span class="cssdelimitercolor" style="color:black">}</span>
+               </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_table_border" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <p>Обратите внимание, что таблица в приведенном выше примере имеет двойные границы. Это связано с тем, что элементы <code>&lt;table&gt;</code>, <code>&lt;th&gt;</code> и <code>&lt;td&gt;</code> имеют разные границы.</p>
+         <hr>
+
+         <h2>Border-Collapse - Свёртывание границ таблицы</h2>
+         <p>Свойство <code class="w3-codespan">border-collapse</code> устанавливает, должны ли границы таблицы быть объединены в одну границу (т.е. свёрнуты):</p>
+         <iframe src="trycss_table_border-collapse_iframe.html" style="border:none;height:95px;"></iframe>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  table
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                     &nbsp;&nbsp;border-collapse<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> collapse<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                  </span><span class="cssdelimitercolor" style="color:black">}</span><br><br>
+                  table, th, td
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                     &nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1px solid black<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                  </span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_table_border-collapse" rel="nofollow">Попробуйте сами »</a>
+         </div>
+
+         <p style="margin-top:25px;">Если вам нужна только рамка вокруг таблицы, укажите только свойство <code class="w3-codespan">border</code> для <code>&lt;table&gt;</code>:</p>
+         <iframe src="trycss_table_border2_iframe.html" style="border:none;height:95px;"></iframe>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  table
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                     &nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1px solid black<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                  </span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_table_border2" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+
+         <h2>Width/Height - Ширина и высота таблицы</h2>
+         <p>Ширина и высота таблицы определяются с помощью свойств <code class="w3-codespan">width</code> и <code class="w3-codespan">height</code>.</p>
+         <p>В приведенном ниже примере ширина таблицы устанавливается на 100%, а высота элементов <code>&lt;th&gt;</code> 50px:</p>
+
+         <iframe src="trycss_table_width_iframe.html" style="border:none;width:100%;height:146px;"></iframe>
+
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  table
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                     &nbsp;&nbsp;width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 100%<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                  </span><span class="cssdelimitercolor" style="color:black">}</span><br><br>
+                  th
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                     &nbsp;&nbsp;height<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 50px<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                  </span><span class="cssdelimitercolor" style="color:black">}</span>
+               </span></div>
+            <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_table_width" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+
+         <h2>Text-align - Горизонтальное выравнивание</h2>
+         <p>Свойство <code class="w3-codespan">text-align</code> устанавливает горизонтальное выравнивание (например слева, справа или по центру) содержимого в элементах <code>&lt;th&gt;</code> или <code>&lt;td&gt;</code>.</p>
+         <p>По умолчанию содержимое элементов <code>&lt;th&gt;</code> выравнивается по центру, а содержимое элементов <code>&lt;td&gt;</code> выравнивается по левому краю.</p>
+         <p>В следующем примере текст выравнивается по левому краю элементов <code>&lt;th&gt;</code>:</p>
+         <iframe src="trycss_table_align_iframe.html" style="border:none;width:100%;height:120px;"></iframe>
+
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  th
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                     &nbsp;
+                     text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> left<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                  </span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_table_align" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+
+         <h2>Vertical-align - Вертикальное выравнивание</h2>
+         <p>Свойство <code class="w3-codespan">vertical-align</code> устанавливает вертикальное выравнивание (например, верх, низ или середина) содержимого в <code>&lt;th&gt;</code> или <code>&lt;td&gt;</code>.</p>
+         <p>По умолчанию вертикальное выравнивание содержимого в таблице является посередине (для обоих элементов <code>&lt;th&gt;</code> и <code>&lt;td&gt;</code>).</p>
+         <p>В следующем примере устанавливается вертикальное выравнивание текста по низу для элементов <code>&lt;td&gt;</code></p>
+         <iframe src="trycss_table_vertical-align_iframe.html" style="border:none;width:100%;height:206px;"></iframe>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  td
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                     &nbsp;
+                     height<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 50px<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                     &nbsp;
+                     vertical-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> bottom<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                  </span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_table_vertical-align" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+
+         <h2>Padding - Отступы в таблице</h2>
+         <p>Чтобы контролировать пространство между границей и содержимым таблицы, используйте свойство
+            <code class="w3-codespan">padding</code> в элементах <code>&lt;td&gt;</code> и <code>&lt;th&gt;</code>:</p>
+         <iframe src="trycss_table_border-padding_iframe.html" style="border:none;width:100%;height:231px;"></iframe>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  th, td
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                     &nbsp;
+                     padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 15px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> left<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                  </span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_table_padding" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+
+         <h2>Горизонтальные делители</h2>
+         <table class="tabletest2">
+            <thead>
+               <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Savings</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>Peter</td>
+                  <td>Griffin</td>
+                  <td>$100</td>
+               </tr>
+               <tr>
+                  <td>Lois</td>
+                  <td>Griffin</td>
+                  <td>$150</td>
+               </tr>
+               <tr>
+                  <td>Joe</td>
+                  <td>Swanson</td>
+                  <td>$300</td>
+               </tr>
+            </tbody>
+         </table>
+         <p>Добавьте свойство <code class="w3-codespan">border-bottom</code> в &lt;th&gt; и &lt;td&gt; для установки горизонтальных делителей в таблице:</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  th, td <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;border-bottom<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1px solid #ddd<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_table_border_divider" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+
+         <h2>Выделение строк таблицы с помощью мыши</h2>
+         <p>Используйте селектор <code class="w3-codespan">:hover</code> на &lt;tr&gt; чтобы выделить строки таблицы при наведении на них мыши:</p>
+         <table class="tabletest4">
+            <tbody>
+               <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Savings</th>
+               </tr>
+               <tr>
+                  <td>Peter</td>
+                  <td>Griffin</td>
+                  <td>$100</td>
+               </tr>
+               <tr>
+                  <td>Lois</td>
+                  <td>Griffin</td>
+                  <td>$150</td>
+               </tr>
+               <tr>
+                  <td>Joe</td>
+                  <td>Swanson</td>
+                  <td>$300</td>
+               </tr>
+            </tbody>
+         </table>
+
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  tr:hover <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> #f5f5f5<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_table_hover" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+
+         <h2>Полосатые таблицы</h2>
+         <table class="tabler">
+            <tbody>
+               <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Savings</th>
+               </tr>
+               <tr>
+                  <td>Peter</td>
+                  <td>Griffin</td>
+                  <td>$100</td>
+               </tr>
+               <tr>
+                  <td>Lois</td>
+                  <td>Griffin</td>
+                  <td>$150</td>
+               </tr>
+               <tr>
+                  <td>Joe</td>
+                  <td>Swanson</td>
+                  <td>$300</td>
+               </tr>
+            </tbody>
+         </table>
+         <p>Для таблиц с полосками зебры используйте селектор <code class="w3-codespan">nth-child()</code> и добавьте <code class="w3-codespan">background-color</code> для всех чётных (или нечётных) строк таблицы:</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  tr:nth-child(even) <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> #f2f2f2<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_table_striped" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+
+         <h2>Цвета таблицы</h2>
+         <p>Пример ниже определяет цвет фона и цвет текста элементов <code>&lt;th&gt;</code>:</p>
+         <table class="tabler">
+            <tbody>
+               <tr style="background-color:#4CAF50;color:white;">
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Savings</th>
+               </tr>
+               <tr>
+                  <td>Peter</td>
+                  <td>Griffin</td>
+                  <td>$100</td>
+               </tr>
+               <tr>
+                  <td>Lois</td>
+                  <td>Griffin</td>
+                  <td>$150</td>
+               </tr>
+               <tr>
+                  <td>Joe</td>
+                  <td>Swanson</td>
+                  <td>$300</td>
+               </tr>
+            </tbody>
+         </table>
+
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  th <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> #4CAF50<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> white<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_table_color" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+
+         <h2>Responsive Table - Отзывчивая (адаптивная) таблица</h2>
+         <p>Адаптивная таблица будет отображать горизонтальную полосу прокрутки, если экран слишком мал для отображения всего содержимого:</p>
+
+         <div class="w3-responsive">
+            <table class="w3-table w3-striped w3-bordered">
+               <tbody>
+                  <tr>
+                     <th>First Name</th>
+                     <th>Last Name</th>
+                     <th>Points</th>
+                     <th>Points</th>
+                     <th>Points</th>
+                     <th>Points</th>
+                     <th>Points</th>
+                     <th>Points</th>
+                     <th>Points</th>
+                     <th>Points</th>
+                     <th>Points</th>
+                     <th>Points</th>
+                     <th>Points</th>
+                     <th>Points</th>
+                  </tr>
+                  <tr>
+                     <td>Jill</td>
+                     <td>Smith</td>
+                     <td>50</td>
+                     <td>50</td>
+                     <td>50</td>
+                     <td>50</td>
+                     <td>50</td>
+                     <td>50</td>
+                     <td>50</td>
+                     <td>50</td>
+                     <td>50</td>
+                     <td>50</td>
+                     <td>50</td>
+                     <td>50</td>
+                  </tr>
+                  <tr>
+                     <td>Eve</td>
+                     <td>Jackson</td>
+                     <td>94</td>
+                     <td>94</td>
+                     <td>94</td>
+                     <td>94</td>
+                     <td>94</td>
+                     <td>94</td>
+                     <td>94</td>
+                     <td>94</td>
+                     <td>94</td>
+                     <td>94</td>
+                     <td>94</td>
+                     <td>94</td>
+                  </tr>
+                  <tr>
+                     <td>Adam</td>
+                     <td>Johnson</td>
+                     <td>67</td>
+                     <td>67</td>
+                     <td>67</td>
+                     <td>67</td>
+                     <td>67</td>
+                     <td>67</td>
+                     <td>67</td>
+                     <td>67</td>
+                     <td>67</td>
+                     <td>67</td>
+                     <td>67</td>
+                     <td>67</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+
+         <p>Добавьте элемент контейнера (например, <code>&lt;div&gt;</code>) с помощью <code class="w3-codespan">overflow-x:auto</code> вокруг элемента <code>&lt;table&gt;</code>, чтобы сделать его адаптивным:</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate htmlHigh">
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> style<span class="attributevaluecolor" style="color:mediumblue">="overflow-x:auto;"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>table<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               ... table content ...<br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/table<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_table_responsive" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+
+         <div class="w3-note w3-panel">
+            <p><strong>Примечание:</strong> В OS X Lion (на Mac) полосы прокрутки по умолчанию скрыты и отображаются только при использовании (даже если установлено "overflow: scroll").</p>
+         </div>
+         <hr>
+
+         <h2>Больше примеров</h2>
+         <p><a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_table_fancy" rel="nofollow">Сделать красивую таблицу</a><br>
+            Этот пример демонстрирует, как создать красивую таблицу.</p>
+         <div class="jsfiddle-code">Пример
+            <p class="codepen" data-height="337" data-theme-id="light" data-default-tab="html,result" data-user="olexa-petrw" data-slug-hash="gOYvwxz" data-pen-title="css_table_trycss_table_fancy"></p>
+         </div>
+
+         <p><a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_table_caption-side" rel="nofollow">Установить положение заголовка таблицы</a><br>
+            Этот пример демонстрирует, как расположить заголовок таблицы.</p>
+         <div class="jsfiddle-code">Пример
+            <p class="codepen" data-height="374" data-theme-id="light" data-default-tab="html,result" data-user="olexa-petrw" data-slug-hash="jONZMao" data-pen-title="css_table_trycss_table_caption-side"></p>
+            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+         </div>
+
+         <hr>
+
+         <div class="w3-container w3-dark-grey w3-padding">
+            <h2>Проверьте себя с помощью упражнений!</h2>
+            <div class="w3-bar w3-margin-bottom">
+               <a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_table1" target="_blank" rel="nofollow">Упражнение 1 »</a>
+               <a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_table2" target="_blank" rel="nofollow">Упражнение 2 »</a>
+               <a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_table3" target="_blank" rel="nofollow">Упражнение 3 »</a>
+               <a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_table4" target="_blank" rel="nofollow">Упражнение 4 »</a>
+               <a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_table5" target="_blank" rel="nofollow">Упражнение 5 »</a>
+               <a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_table6" target="_blank" rel="nofollow">Упражнение 6 »</a>
+            </div>
+         </div>
+         <hr>
+
+         <h2>Свойства CSS таблицы</h2>
+
+         <table class="w3-table-all notranslate">
+            <tbody>
+               <tr>
+                  <th style="width:20%">Свойство</th>
+                  <th>Описание</th>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_border.html">border</a></td>
+                  <td>Устанавливает все свойства границы в одном объявлении</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_border-collapse.html">border-collapse</a></td>
+                  <td>Указывает, должны ли быть свёрнуты границы таблицы</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_border-spacing.html">border-spacing</a></td>
+                  <td>Определяет расстояние между границами соседних ячеек</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_tab_caption-side.html">caption-side</a></td>
+                  <td>Определяет размещение заголовка таблицы</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_tab_empty-cells.html">empty-cells</a></td>
+                  <td>Указывает, следует ли отображать границы и фон для пустых ячеек в таблице</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_tab_table-layout.html">table-layout</a></td>
+                  <td>Устанавливает алгоритм макета для таблицы</td>
+               </tr>
+            </tbody>
+         </table>
+
+         <hr>
+         <div class="keys">
+            <strong>W3Schools на русском языке </strong>
+            <strong>уроки W3Schols для начинающих по CSS онлайн </strong>
+            <strong>курсы CSS3 от W3schools для школьников </strong>
+            <strong>основы CSS на сайте W3schools - каскадные таблицы стилей </strong>
+            <strong>курсы CSS3 бесплатно от А до Я </strong>
+            <strong>создание таблицы с помощью css </strong>
+            <strong>таблицы в css </strong>
+            <strong>оформление таблиц на веб-странице </strong>
+            <strong>как создать таблицу на HTML-странице </strong>
+            <strong>создание таблицы на веб-страницах </strong>
+         </div>
+
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="css_list.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="css_display_visibility.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+
+         <br>
+      </div>
+
+      <!-- / CONTENT -->
+      <div class="right-sidebar">
+         <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+      </div>
+   </main>
+   <footer>
+      <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+   </footer>
+</body>
+
+</html>
