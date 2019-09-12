@@ -1,115 +1,123 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <title>PHP 5 Полная Форма. W3schools на русском. Уроки для начинающих</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="keywords" content="PHP,PHP5,полная,форма,пример,уроки,для начинающих,учебник,основы,языка,w3schools,на русском,сайт" />
-    <meta name="description" content="PHP5 Пособие. Форма. Полный пример формы. Курс по основам PHP. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="stylesheet" href="../styles/ws.css" />
-    <link rel="stylesheet" href="../styles/handheld.css" />
-    <link rel="canonical" href="https://html5beginner.github.io/" />
-    <meta property="og:title" content="PHP 5 Полная Форма. W3schools на русском. Уроки для начинающих" />
-    <meta property="og:type" content="Content" /> <!--описывает тип объекта на странице-->
-    <meta property="og:url" content="https://html5beginner.github.io/" /><!--адрес сайта-->
-    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
-    <meta property="og:description" content="PHP5 Пособие. Форма. Полный пример формы. Курс по основам PHP. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
-    <meta property="og:locale" content="ru" /> <!--язык сайта-->
-    <meta property="og:site_name" content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Уроки W3Schools на русском" />
-    <script src="../js/topnav.js"></script>
+   <title>PHP 5 Полная Форма. W3schools на русском. Уроки для начинающих</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="keywords" content="PHP,PHP5,полная,форма,пример,уроки,для начинающих,учебник,основы,языка,w3schools,на русском,сайт" />
+   <meta name="description" content="PHP5 Пособие. Форма. Полный пример формы. Курс по основам PHP. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+   <link rel="stylesheet" href="../styles/style.css" />
+   <link rel="stylesheet" href="../styles/ws.css" />
+   <link rel="stylesheet" href="../styles/handheld.css" />
+   <link rel="canonical" href="https://html5beginner.github.io/" />
+   <meta property="og:title" content="PHP 5 Полная Форма. W3schools на русском. Уроки для начинающих" />
+   <meta property="og:type" content="Content" />
+   <!--описывает тип объекта на странице-->
+   <meta property="og:url" content="https://html5beginner.github.io/" />
+   <!--адрес сайта-->
+   <meta property="og:image" content="../image/html5_64x64.png" />
+   <!--адрес картинки-->
+   <meta property="og:description" content="PHP5 Пособие. Форма. Полный пример формы. Курс по основам PHP. Учебник W3schools на русском языке. Уроки для начинающих бесплатно" />
+   <meta property="og:locale" content="ru" />
+   <!--язык сайта-->
+   <meta property="og:site_name" content="HTML5Beginner - Основы HTML, CSS, JavaScript, PHP. Уроки W3Schools на русском" />
+   <script src="../js/topnav.js"></script>
 </head>
+
 <body>
-<iframe src="../pages/header.html" class="frame-header"></iframe>
-<main>
+   <iframe src="../pages/header.html" class="frame-header"></iframe>
+   <main>
 
-    <div class="left-sidebar">
-        <iframe src="../pages/menuphp5.html" class="frame-left-sidebar"></iframe>
-    </div>
-    <!-- CONTENT -->
-    <div class="content">
-        <h1>PHP 5 Полный пример формы</h1>
-        <p class="brief"><strong>Курс по основам языка программирования PHP.<br> W3Schools на русском языке. Уроки для начинающих</strong></p>
-        <hr>
-        <!-- buttons prev - next -->
-        <div class="w3-clear nextprev">
+      <div class="left-sidebar">
+         <iframe src="../pages/menuphp5.html" class="frame-left-sidebar"></iframe>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+         <h1>PHP 5 Полный пример формы</h1>
+         <p class="brief"><strong>Курс по основам языка программирования PHP.<br> W3Schools на русском языке. Уроки для начинающих</strong></p>
+         <hr>
+         <!-- buttons prev - next -->
+         <div class="w3-clear nextprev">
             <a class="w3-left w3-btn" href="php_form_url_email.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
             <a class="w3-right w3-btn" href="php_arrays_multi.html" title="Следующая страница" rel="next">Next ❯</a>
-        </div>
-        <!-- buttons prev - next -->
-        <hr>
-        <p class="intro">В этой главе показано, <strong>как сохранить значения в полях ввода</strong>, когда пользователь нажимает кнопку отправки.</p>
-<hr>
+         </div>
+         <!-- buttons prev - next -->
+         <hr>
+         <p class="intro">В этой главе показано, <strong>как сохранить значения в полях ввода</strong>, когда пользователь нажимает кнопку отправки.</p>
+         <hr>
 
-<h2>PHP - Сохранить значения в форме</h2>
-<p>Чтобы показать значения в полях ввода после того, как пользователь нажмет кнопку отправки, мы добавим небольшой PHP-скрипт в атрибут значения следующих полей ввода: <i>name</i>, <i>e-mail</i> и <i>website</i>. В поле комментария <i>textarea</i> мы помещаем скрипт между тегами <code class="w3-codespan">&lt;textarea&gt;</code> и <code class="w3-codespan">&lt;/textarea&gt;</code>. Небольшой скрипт выводит значение переменных <i>$name</i>, <i>$email</i>, <i>$website</i> и <i>$comment</i>.</p>
-<p>Затем нам также нужно показать, какая радио-кнопка была отмечена. Для этого мы должны манипулировать проверяемым атрибутом (а не атрибутом значения для радио-кнопки):</p>
-<div class="w3-code w3-border notranslate htmlHigh"><div>
- Name: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="name"</span> value<span class="attributevaluecolor" style="color:mediumblue">="<span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <span class="phpkeywordcolor" style="color:mediumblue">echo</span> $name;<span class="phptagcolor" style="color:red">?&gt;</span></span>"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>E-mail: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="email"</span> value<span class="attributevaluecolor" style="color:mediumblue">="<span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <span class="phpkeywordcolor" style="color:mediumblue">echo</span> $email;<span class="phptagcolor" style="color:red">?&gt;</span></span>"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
- <br>Website: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="website"</span> value<span class="attributevaluecolor" style="color:mediumblue">="<span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <span class="phpkeywordcolor" style="color:mediumblue">echo</span> $website;<span class="phptagcolor" style="color:red">?&gt;</span></span>"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>Comment: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>textarea<span class="attributecolor" style="color:red"> name<span class="attributevaluecolor" style="color:mediumblue">="comment"</span> rows<span class="attributevaluecolor" style="color:mediumblue">="5"</span> cols<span class="attributevaluecolor" style="color:mediumblue">="40"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <span class="phpkeywordcolor" style="color:mediumblue">echo</span> $comment;<span class="phptagcolor" style="color:red">?&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/textarea<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
- <br>Gender:<br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="radio"</span> name<span class="attributevaluecolor" style="color:mediumblue">="gender"</span><br><span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <span class="phpkeywordcolor" style="color:mediumblue">if</span> (<span class="phpkeywordcolor" style="color:mediumblue">isset</span>($gender) &amp;&amp; $gender==<span class="phpstringcolor" style="color:brown">"female"</span>) <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"checked"</span>;<span class="phptagcolor" style="color:red">?&gt;</span></span><br>value<span class="attributevaluecolor" style="color:mediumblue">="female"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Female<br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="radio"</span> name<span class="attributevaluecolor" style="color:mediumblue">="gender"</span><br><span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <span class="phpkeywordcolor" style="color:mediumblue">if</span> (<span class="phpkeywordcolor" style="color:mediumblue">isset</span>($gender) &amp;&amp; $gender==<span class="phpstringcolor" style="color:brown">"male"</span>) <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"checked"</span>;<span class="phptagcolor" style="color:red">?&gt;</span></span><br>value<span class="attributevaluecolor" style="color:mediumblue">="male"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Male<br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="radio"</span> name<span class="attributevaluecolor" style="color:mediumblue">="gender"</span><br><span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <span class="phpkeywordcolor" style="color:mediumblue">if</span> (<span class="phpkeywordcolor" style="color:mediumblue">isset</span>($gender) &amp;&amp; $gender==<span class="phpstringcolor" style="color:brown">"other"</span>) <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"checked"</span>;<span class="phptagcolor" style="color:red">?&gt;</span></span><br>value<span class="attributevaluecolor" style="color:mediumblue">="other"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Other</div>
- </div>
-<hr>
+         <h2>PHP - Сохранить значения в форме</h2>
+         <p>Чтобы показать значения в полях ввода после того, как пользователь нажмет кнопку отправки, мы добавим небольшой PHP-скрипт в атрибут значения следующих полей ввода: <i>name</i>, <i>e-mail</i> и <i>website</i>. В поле комментария <i>textarea</i> мы помещаем скрипт между тегами <code class="w3-codespan">&lt;textarea&gt;</code> и <code class="w3-codespan">&lt;/textarea&gt;</code>. Небольшой скрипт выводит значение переменных <i>$name</i>, <i>$email</i>, <i>$website</i> и <i>$comment</i>.</p>
+         <p>Затем нам также нужно показать, какая радио-кнопка была отмечена. Для этого мы должны манипулировать проверяемым атрибутом (а не атрибутом значения для радио-кнопки):</p>
+         <div class="w3-code w3-border notranslate htmlHigh">
+            <div>
+               Name: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="name"</span> value<span class="attributevaluecolor" style="color:mediumblue">="<span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <span class="phpkeywordcolor" style="color:mediumblue">echo</span> $name;<span class="phptagcolor" style="color:red">?&gt;</span></span>"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>E-mail: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="email"</span> value<span class="attributevaluecolor" style="color:mediumblue">="<span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <span class="phpkeywordcolor" style="color:mediumblue">echo</span> $email;<span class="phptagcolor" style="color:red">?&gt;</span></span>"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <br>Website: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="website"</span> value<span class="attributevaluecolor" style="color:mediumblue">="<span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <span class="phpkeywordcolor" style="color:mediumblue">echo</span> $website;<span class="phptagcolor" style="color:red">?&gt;</span></span>"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>Comment: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>textarea<span class="attributecolor" style="color:red"> name<span class="attributevaluecolor" style="color:mediumblue">="comment"</span> rows<span class="attributevaluecolor" style="color:mediumblue">="5"</span> cols<span class="attributevaluecolor" style="color:mediumblue">="40"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <span class="phpkeywordcolor" style="color:mediumblue">echo</span> $comment;<span class="phptagcolor" style="color:red">?&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/textarea<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <br>Gender:<br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="radio"</span> name<span class="attributevaluecolor" style="color:mediumblue">="gender"</span><br><span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <span class="phpkeywordcolor" style="color:mediumblue">if</span> (<span class="phpkeywordcolor" style="color:mediumblue">isset</span>($gender) &amp;&amp; $gender==<span class="phpstringcolor" style="color:brown">"female"</span>) <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"checked"</span>;<span class="phptagcolor" style="color:red">?&gt;</span></span><br>value<span class="attributevaluecolor" style="color:mediumblue">="female"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Female<br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="radio"</span> name<span class="attributevaluecolor" style="color:mediumblue">="gender"</span><br><span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <span class="phpkeywordcolor" style="color:mediumblue">if</span> (<span class="phpkeywordcolor" style="color:mediumblue">isset</span>($gender) &amp;&amp; $gender==<span class="phpstringcolor" style="color:brown">"male"</span>) <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"checked"</span>;<span class="phptagcolor" style="color:red">?&gt;</span></span><br>value<span class="attributevaluecolor" style="color:mediumblue">="male"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Male<br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="radio"</span> name<span class="attributevaluecolor" style="color:mediumblue">="gender"</span><br><span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span> <span class="phpkeywordcolor" style="color:mediumblue">if</span> (<span class="phpkeywordcolor" style="color:mediumblue">isset</span>($gender) &amp;&amp; $gender==<span class="phpstringcolor" style="color:brown">"other"</span>) <span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"checked"</span>;<span class="phptagcolor" style="color:red">?&gt;</span></span><br>value<span class="attributevaluecolor" style="color:mediumblue">="other"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Other</div>
+         </div>
+         <hr>
 
-<h2>PHP - Полный пример формы</h2>
-<p>Вот полный код для примера проверки формы PHP:</p>
-<div class="w3-example">
-<h3>Пример</h3>
-<div class="w3-code notranslate">
-<iframe src="demo_form_validation_complete.html" style="width:100%;height:600px;border:none"></iframe>
-</div>
-<a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/php/showphp.asp?filename=demo_form_validation_complete" rel="nofollow">Выполнить пример »</a>
-</div>
-<p><b>Примечание</b>. Форма работает только в отдельном окне после нажатия кнопки "Выполнить пример"</p>
+         <h2>PHP - Пример полной формы</h2>
+         <p>Вот код полного примера проверки формы PHP:</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate">
+               <iframe src="demo_form_validation_complete.html" style="width:100%;height:600px;border:none"></iframe>
+            </div>
+            <a target="_blank" class="w3-btn w3-margin-bottom" href="https://tryphp.w3schools.com/showphp.php?filename=demo_form_validation_complete" rel="nofollow">Выполнить пример »</a>
+         </div>
+         <p><b>Примечание</b>. Форма работает только в отдельном окне после нажатия кнопки "Выполнить пример"</p>
 
-<br>
-<div class="keys">
-    <strong>уроки</strong> 
-    <strong>для начинающих</strong> 
-    <strong>для новичков</strong> 
-    <strong>основы</strong> 
-    <strong>курсы с нуля</strong> 
-    <strong>php</strong> 
-    <strong>проверка форм</strong> 
-    <strong>полная форма</strong> 
-    <strong>пример</strong>
-    <strong>валидация</strong>
-</div>
-        <hr>
-        <!-- buttons prev - next -->
-        <div class="w3-clear nextprev">
+         <br>
+         <div class="keys">
+            <strong>уроки </strong>
+            <strong>для начинающих </strong>
+            <strong>для новичков </strong>
+            <strong>основы </strong>
+            <strong>курсы с нуля </strong>
+            <strong>php </strong>
+            <strong>проверка форм </strong>
+            <strong>полная форма </strong>
+            <strong>пример </strong>
+            <strong>валидация</strong>
+         </div>
+
+         <hr>
+
+         <div class="w3-clear nextprev">
             <a class="w3-left w3-btn" href="php_form_url_email.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
             <a class="w3-right w3-btn" href="php_arrays_multi.html" title="Следующая страница" rel="next">Next ❯</a>
-        </div>
-        <!-- / buttons prev - next -->
-        <hr class="hr-bottom">
-        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
-        <!-- Комментарии от Disqus -->
-        <div id="disqus_thread"></div>
-        <script>
-        var disqus_config = function () {
-        this.page.url = html5beginner.github.io;  // канонический URL страницы
-        this.page.identifier = html5beginner.github.io/php/php_form_complete.html; // уникальный идентификатор страницы
-        };
-        (function() { // Не редактировать ниже этой линии
-        var d = document, s = d.createElement('script');
-        s.src = 'https://html5beginners.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-        })();
-        </script>
-        <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
-        <!--  / Комментарии от Disqus -->
-    </div>
+         </div>
+         <iframe class="predisqus" src="../pages/predisqus.html"></iframe>
+         <!-- Комментарии от Disqus -->
+         <div id="disqus_thread"></div>
+         <script>
+            var disqus_config = function() {
+               this.page.url = html5beginner.github.io; // канонический URL страницы
+               this.page.identifier = html5beginner.github.io / html / html_tutorial.html; // уникальный идентификатор страницы
+            };
+            (function() { // Не редактировать ниже этой линии
+               var d = document,
+                  s = d.createElement('script');
+               s.src = 'https://html5beginner-1.disqus.com/embed.js';
+               s.setAttribute('data-timestamp', +new Date());
+               (d.head || d.body).appendChild(s);
+            })();
+         </script>
+         <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+         <!--  / Комментарии от Disqus -->
+      </div>
 
-    <!-- / CONTENT -->
-    <div class="right-sidebar">
-        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
-    </div>
-</main>
-<footer>
-    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
-</footer>
+      <!-- / CONTENT -->
+      <div class="right-sidebar">
+         <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+      </div>
+   </main>
+   <footer>
+      <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+   </footer>
 </body>
+
 </html>
