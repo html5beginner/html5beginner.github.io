@@ -6,790 +6,891 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
+
 <url>
   <loc>https://html5beginner.github.io/</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://html5beginner.github.io/html/les01.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
   <loc>https://html5beginner.github.io/seowords/keywords1.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/video/index.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.90</priority>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/books/index.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.90</priority>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/pages/source.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.60</priority>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/css/css_tutorial.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.90</priority>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/php/php_tutorial.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.90</priority>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/php7/php7_tutorial.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.90</priority>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/pages/header.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.60</priority>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/pages/basichtml.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.60</priority>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/pages/footer.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.20</priority>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/index.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/html/les02.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/tags/element_reference.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.90</priority>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/css/css_intro.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.90</priority>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/pages/menucss.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/php/php_intro.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.90</priority>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/pages/menuphp5.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/php7/php7_intro.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.90</priority>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/pages/menuphp7.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/html/html_tutorial.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/pages/404.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.24</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/about/about_html5beginners.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/html/les03.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/html/les04.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/html/les05.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/html/les06.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/html/les07.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/html/les08.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/html/les09.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/html/les10.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/html/les11.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://html5beginner.github.io/html/les12.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <loc>https://html5beginner.github.io/bootstrap4/bootstrap_tutorial.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://html5beginner.github.io/html/les13.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <loc>https://html5beginner.github.io/about/about_html5beginner.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://html5beginner.github.io/html/les14.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <loc>https://html5beginner.github.io/html/html_intro.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://html5beginner.github.io/html/les15.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <loc>https://html5beginner.github.io/html/html_editors.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://html5beginner.github.io/html/les16.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <loc>https://html5beginner.github.io/html/html_basic.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://html5beginner.github.io/html/les17.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <loc>https://html5beginner.github.io/html/html_elements.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://html5beginner.github.io/html/les18.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <loc>https://html5beginner.github.io/html/html_attributes.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://html5beginner.github.io/html/les19.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <loc>https://html5beginner.github.io/html/html_headings.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://html5beginner.github.io/html/les20.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <loc>https://html5beginner.github.io/html/html_paragraphs.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://html5beginner.github.io/html/les21.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <loc>https://html5beginner.github.io/html/html_styles.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://html5beginner.github.io/html/les22.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <loc>https://html5beginner.github.io/html/html_formatting.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://html5beginner.github.io/html/les23.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <loc>https://html5beginner.github.io/html/html_quotation_elements.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://html5beginner.github.io/html/les24.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <loc>https://html5beginner.github.io/html/html_comments.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://html5beginner.github.io/html/les25.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <loc>https://html5beginner.github.io/html/html_colors.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://html5beginner.github.io/html/les26.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <loc>https://html5beginner.github.io/html/html_css.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://html5beginner.github.io/html/les27.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <loc>https://html5beginner.github.io/html/html_links.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://html5beginner.github.io/html/les28.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <loc>https://html5beginner.github.io/html/html_images.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://html5beginner.github.io/html/les29.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <loc>https://html5beginner.github.io/html/html_tables.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://html5beginner.github.io/html/les30.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <loc>https://html5beginner.github.io/html/html_lists.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://html5beginner.github.io/html/les31.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <loc>https://html5beginner.github.io/html/html_blocks.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://html5beginner.github.io/html/les32.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <loc>https://html5beginner.github.io/html/html_classes.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://html5beginner.github.io/html/les33.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <loc>https://html5beginner.github.io/html/html_id.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/html/html_iframe.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/html/html_scripts.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/html/html_filepaths.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/html/html_head.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/html/html_layout.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/html/html_responsive.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/html/html_computercode_elements.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/html/html_entities.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/html/html_symbols.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/html/html_charset.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/html/html_urlencode.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/html/html_xhtml.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/html/html_forms.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/html/html_form_elements.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/html/html_form_input_types.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/html/html_form_attributes.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/html/html5_intro.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/html/html5_browsers.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/html/html5_new_elements.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/html/html5_semantic_elements.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/html/html5_migration.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/html/html5_syntax.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/html/html5_canvas.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/html/html5_svg.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/html/html_media.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/html/html5_video.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/html/html5_audio.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/html/html_object.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/html/html_youtube.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/html/html5_geolocation.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/html/html5_draganddrop.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/html/html5_webstorage.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/html/html5_webworkers.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/html/html5_serversentevents.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/html/html_examples.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/html/html_quiz.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/html/html_exercises.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/html/html_exam.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/html/html_summary.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/html/html_accessibility.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/tags/element_reference.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/tags/ref_byfunc.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/tags/ref_attributes.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/tags/ref_standardattributes.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/tags/ref_eventattributes.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/tags/ref_colornames.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/tags/ref_canvas.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/tags/ref_av_dom.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/tags/ref_charactersets.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/tags/ref_html_dtd.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/tags/ref_urlencode.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/tags/ref_language_codes.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/tags/ref_country_codes.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/tags/ref_httpmessages.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/tags/ref_httpmethods.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/tags/ref_pxtoemconversion.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/tags/ref_keyboardshortcuts.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/blog/seo_optimization.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/blog/whatsites.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://html5beginner.github.io/tags/tag_comment.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/tags/tag_doctype.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/tags/tag_a.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
   <loc>https://html5beginner.github.io/css/css_syntax.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/css/demo_default.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/php/php_install.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/php/php_syntax.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/php/php_variables.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/php/php_echo_print.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/php/php_datatypes.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/php/php_string.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/php/php_constants.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/php/php_operators.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/php/php_if_else.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/php/php_switch.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/php/php_looping.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/php/php_looping_for.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/php/php_functions.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/php/php_arrays.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/php/php_arrays_sort.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/php/php_superglobals.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/php/php_forms.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/php/php_form_validation.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/php/php_form_required.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/php/php_form_url_email.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/php/php_form_complete.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/php/php_arrays_multi.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/php/php_date.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/php/php_includes.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/php/php_file.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/php/php_file_open.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/php/php_file_create.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/php/php_file_upload.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/php/php_cookies.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/php/php_sessions.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/php/php_filter.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/php/php_filter_advanced.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/php/php_error.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/about/about_w3schools.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/pages/aboutus.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/colors/colors_names.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/html/computer.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/html/phone.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/html/coffee.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/css/css_background.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/html/example_withoutviewport.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/html/example_withviewport.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/html/tryhtml5_draganddrop_ifr.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/pages/menuref.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/colors/colors_tutorial.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/css/css_howto.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/php/demo_form_validation_complete.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/about/about_copyright.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/about/about_privacy.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://html5beginner.github.io/about/about_advert.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.41</priority>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/css/css_colors.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.41</priority>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/css/css_background.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
   <loc>https://html5beginner.github.io/css/css_border.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/css/css_margin.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/css/css_padding.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/css/css_dimension.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/css/css_boxmodel.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/css/css_outline.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/css/css_text.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/css/css_font.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/css/css_icons.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/css/css_link.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/css/css_list.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/css/css_table.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/cssref/css_websafe_fonts.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/php/php_install.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/php/php_syntax.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/php/php_variables.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/php/php_echo_print.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/php/php_datatypes.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/php/php_string.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/php/php_constants.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/php/php_operators.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/php/php_if_else.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/php/php_switch.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/php/php_looping.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/php/php_looping_for.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/php/php_functions.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/php/php_arrays.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/php/php_arrays_sort.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/php/php_superglobals.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/php/php_forms.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/php/php_form_validation.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/php/php_form_required.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/php/php_form_url_email.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/php/php_form_complete.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/php/php_arrays_multi.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/php/php_date.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/php/php_includes.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/php/php_file.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/php/php_file_open.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/php/php_file_create.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/php/php_file_upload.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/php/php_cookies.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/php/php_sessions.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/php/php_filter.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/php/php_filter_advanced.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/php/php_error.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/pages/predisqus.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/bootstrap4/trybs_template1.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/howto/tryhow_website_bootstrap4_ifr.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/about/about_w3schools.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/colors/colors_names.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/tags/tag_a.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/html/computer.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/html/phone.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/html/coffee.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/html/example_withoutviewport.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/html/example_withviewport.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/tags/tag_doctype.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/html/tryhtml5_draganddrop_ifr.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/tags/tag_comment.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/pages/menuref.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/colors/colors_tutorial.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/css/trycss_icons_bs_ifr.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
-  <loc>https://html5beginner.github.io/pages/menucss.html</loc>
-  <lastmod>2019-08-29T19:53:33+00:00</lastmod>
-  <priority>0.33</priority>
+  <loc>https://html5beginner.github.io/css/trycss_icons_google_ifr.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/css/trycss_table_border_iframe.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/css/trycss_table_border-collapse_iframe.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/css/trycss_table_border2_iframe.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/css/trycss_table_width_iframe.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/css/trycss_table_align_iframe.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/css/trycss_table_vertical-align_iframe.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://html5beginner.github.io/css/trycss_table_border-padding_iframe.html</loc>
+  <lastmod>2019-09-14T21:33:40+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 
 
