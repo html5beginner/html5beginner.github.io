@@ -1,337 +1,334 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <title>HTML5. Семантические элементы. Урок №41. W3schools на русском. Уроки для начинающих</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="keywords" content="HTML,CSS,уроки,для начинающих,html5,семантические,элементы,семантика,новы,теги,w3schools,на русском" />
-    <meta name="description" content="Урок 41. HTML5. Семантические элементы. Какие новые семантические элементы появились в спецификации HTML5? Чтоо такое семантика? W3Schools на русском. Учебник для начинающих" />
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="stylesheet" href="../styles/ws.css" />
-    <link rel="stylesheet" href="../styles/handheld.css" />
-    <link rel="stylesheet" href="../styles/browserref.css" />
-    <link rel="canonical" href="https://html5beginner.github.io/" />
-    <meta property="og:title" content="HTML5. Семантические элементы. Урок №41. W3schools на русском. Уроки для начинающих" />
-    <meta property="og:type" content="веб-сайт" /> <!--описывает тип объекта на странице-->
-    <meta property="og:url" content="https://html5beginner.github.io/" /><!--адрес сайта-->
-    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
-    <meta property="og:description" content="Урок 41. HTML5. Семантические элементы. Какие новые семантические элементы появились в спецификации HTML5? Чтоо такое семантика? W3Schools на русском. Учебник для начинающих" />
-    <meta property="og:locale" content="ru" /> <!--мова сайту-->
-    <meta property="og:site_name" content="HTML5Beginners - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
-    <script src="../js/topnav.js"></script>
+   <title>HTML5 Семантические элементы. W3schools на русском. Уроки для начинающих</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="keywords" content="HTML,CSS,уроки,для начинающих,html5,семантические,элементы,семантика,новы,теги,w3schools,на русском" />
+   <meta name="description" content="HTML5 Семантические элементы. Какие новые семантические элементы появились в спецификации HTML5? Чтоо такое семантика? W3Schools на русском. Учебник для начинающих" />
+   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+   <link rel="stylesheet" href="../styles/style.css" />
+   <link rel="stylesheet" href="../styles/ws.css" />
+   <link rel="stylesheet" href="../styles/handheld.css" />
+   <link rel="stylesheet" href="../styles/w3colors.css" />
+   <link rel="stylesheet" href="../styles/browserref.css" />
+   <script src="../js/topnav.js"></script>
 </head>
+
 <body>
-<iframe src="../pages/header.html" class="frame-header"></iframe>
-<main>
-    <div class="left-sidebar">
-        <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
-    </div>
-    <!-- CONTENT -->
-    <div class="content">
-        <h1>HTML5. Семантическиие элементы</h1>
-        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
-        <hr>
-        <!-- buttons prev - next -->
-        <div class="w3-clear nextprev">
-            <a class="w3-left w3-btn" href="html5_new_elements.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
-            <a class="w3-right w3-btn" href="html5_migration.html" title="Наступна сторінка" rel="next">Next ❯</a>
-        </div>
-        <!-- / buttons prev - next -->
-        <hr>
-        <p class="intro"><strong>Семантика</strong> - это изучение значений слов и фраз в языке.</p>
-        <p class="intro"><strong>Семантические элементы</strong> = элементы со значением.</p>
-        <hr>
-        <h2>Что такое семантические элементы?</h2>
-        <p>Семантический элемент чётко описывает его значение как для браузера, так и для разработчика.</p>
-        <p>Например, <strong>несемантические</strong> элементы: <code class="w3-codespan">&lt;div&gt;</code> и <code class="w3-codespan">&lt;span&gt;</code> - нечого не говорят о своём содержании.</p>
-        <p>Например, <strong>семантические</strong> элементы: <code class="w3-codespan">&lt;form&gt;</code>, <code class="w3-codespan">&lt;table&gt;</code> и <code class="w3-codespan">&lt;article&gt;</code> - чётко определяют своё содержание.</p>
-        <hr>
-        <h2>Поддержка браузерами</h2>
-        <table class="browserref notranslate">
-            <tbody><tr>
-                <th style="width:20%;font-size:20px;padding:22px" class="bsChrome" title="Chrome"></th>
-                <th style="width:20%;font-size:16px;padding:22px" class="bsEdge" title="Internet Explorer / Edge"></th>
-                <th style="width:20%;font-size:16px;padding:22px" class="bsFirefox" title="Firefox"></th>
-                <th style="width:20%;font-size:16px;padding:22px" class="bsSafari" title="Safari"></th>
-                <th style="width:20%;font-size:16px;padding:22px" class="bsOpera" title="Opera"></th>
-            </tr>
-            <tr>
-                <td>Да</td>
-                <td>Да</td>
-                <td>Да</td>
-                <td>Да</td>
-                <td>Да</td>
-            </tr>
+   <iframe src="../pages/header.html" class="frame-header"></iframe>
+   <main>
+      <div class="left-sidebar">
+         <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+         <h1>HTML5 Семантическиие элементы</h1>
+         <p class="brief"><strong>Курс по основам HTML5. W3Schools на русском языке. Уроки для начинающих</strong></p>
+         <hr>
+
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html5_new_elements.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html5_migration.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+
+         <hr>
+         <p class="intro"><strong>Семантика</strong> - это изучение значений слов и фраз в языке.</p>
+         <p class="intro"><strong>Семантические элементы</strong> = элементы со значением.</p>
+         <hr>
+         <h2>Что такое семантические элементы?</h2>
+         <p>Семантический элемент чётко описывает его значение как для браузера, так и для разработчика.</p>
+         <p>Например, <strong>несемантические</strong> элементы: <code class="w3-codespan">&lt;div&gt;</code> и <code class="w3-codespan">&lt;span&gt;</code> - нечого не говорят о своём содержании.</p>
+         <p>Например, <strong>семантические</strong> элементы: <code class="w3-codespan">&lt;form&gt;</code>, <code class="w3-codespan">&lt;table&gt;</code> и <code class="w3-codespan">&lt;article&gt;</code> - чётко определяют своё содержание.</p>
+         <hr>
+         <h2>Поддержка браузерами</h2>
+         <table class="browserref notranslate">
+            <tbody>
+               <tr>
+                  <th style="width:20%;font-size:20px;padding:22px" class="bsChrome" title="Chrome"></th>
+                  <th style="width:20%;font-size:16px;padding:22px" class="bsEdge" title="Internet Explorer / Edge"></th>
+                  <th style="width:20%;font-size:16px;padding:22px" class="bsFirefox" title="Firefox"></th>
+                  <th style="width:20%;font-size:16px;padding:22px" class="bsSafari" title="Safari"></th>
+                  <th style="width:20%;font-size:16px;padding:22px" class="bsOpera" title="Opera"></th>
+               </tr>
+               <tr>
+                  <td>Да</td>
+                  <td>Да</td>
+                  <td>Да</td>
+                  <td>Да</td>
+                  <td>Да</td>
+               </tr>
             </tbody>
-        </table>
-        <p><strong>Семантические элементы HTML5 поддерживаются во всех современных браузерах.</strong></p>
-        <p>Кроме того, вы можете "научить" старые браузеры обрабатывать "неизвестные элементы".</p>
-        <p>Читайте об этом в разделе <a href="html5_browsers.html">HTML5 Поддержка браузерами</a>.</p>
-        <hr>
-        <h2>Новые семантические элементы в HTML5</h2>
-        <p>Многие веб-сайты содержат HTML-код: &lt;div id="nav"&gt; &lt;div class="header"&gt; &lt;div id="footer"&gt;<br> для обозначения навигации, заголовка и нижнего колонтитула.</p>
-        <p>HTML5 предлагает новые семантические элементы для определения разных частей веб-страницы:</p><br>
-        <div style="width:374px;float:left">
+         </table>
+         <p><strong>Семантические элементы HTML5 поддерживаются во всех современных браузерах.</strong></p>
+         <p>Кроме того, вы можете "научить" старые браузеры обрабатывать "неизвестные элементы".</p>
+         <p>Читайте об этом в разделе <a href="html5_browsers.html">HTML5 Поддержка браузерами</a>.</p>
+         <hr>
+         <h2>Новые семантические элементы в HTML5</h2>
+         <p>Многие веб-сайты содержат HTML-код: &lt;div id="nav"&gt; &lt;div class="header"&gt; &lt;div id="footer"&gt;<br> для обозначения навигации, заголовка и нижнего колонтитула.</p>
+         <p>HTML5 предлагает новые семантические элементы для определения разных частей веб-страницы:</p><br>
+         <div style="width:374px;float:left">
             <ul>
-                <li>&lt;article&gt;</li>
-                <li>&lt;aside&gt;</li>
-                <li>&lt;details&gt;</li>
-                <li>&lt;figcaption&gt;</li>
-                <li>&lt;figure&gt;</li>
-                <li>&lt;footer&gt;</li>
-                <li>&lt;header&gt;</li>
-                <li>&lt;main&gt;</li>
-                <li>&lt;mark&gt;</li>
-                <li>&lt;nav&gt;</li>
-                <li>&lt;section&gt;</li>
-                <li>&lt;summary&gt;</li>
-                <li>&lt;time&gt;</li>
+               <li>&lt;article&gt;</li>
+               <li>&lt;aside&gt;</li>
+               <li>&lt;details&gt;</li>
+               <li>&lt;figcaption&gt;</li>
+               <li>&lt;figure&gt;</li>
+               <li>&lt;footer&gt;</li>
+               <li>&lt;header&gt;</li>
+               <li>&lt;main&gt;</li>
+               <li>&lt;mark&gt;</li>
+               <li>&lt;nav&gt;</li>
+               <li>&lt;section&gt;</li>
+               <li>&lt;summary&gt;</li>
+               <li>&lt;time&gt;</li>
             </ul>
-        </div>
-        <div style="width:260px;float:left;margin-bottom:15px;"><img alt="HTML5 Семантические элементы" src="img_sem_elements.gif" width="219" height="258">
-        </div>
-        <p style="clear:both;"></p>
-        <hr>
-        <h2>HTML5 элемент &lt;section&gt;</h2>
-        <p>Элемент <code class="w3-codespan">&lt;section&gt;</code> определяет раздел в документе.</p>
-        <p>В соответствие с документацией HTML5 W3C: "Раздел является тематической группировкой содержания, как правило, из заголовком."</p>
-        <p>Домашнюю страницу обычно можно разделить на разделы для представления, содержания и контактной информации.</p>
-        <div class="w3-example">
+         </div>
+         <div style="width:260px;float:left;margin-bottom:15px;"><img alt="HTML5 Семантические элементы" src="../img/img_sem_elements.gif" width="219" height="258">
+         </div>
+         <p style="clear:both;"></p>
+         <hr>
+         <h2>HTML5 элемент &lt;section&gt;</h2>
+         <p>Элемент <code class="w3-codespan">&lt;section&gt;</code> определяет раздел в документе.</p>
+         <p>В соответствие с документацией HTML5 W3C: "Раздел является тематической группировкой содержания, как правило, из заголовком."</p>
+         <p>Домашнюю страницу обычно можно разделить на разделы для представления, содержания и контактной информации.</p>
+         <div class="w3-example">
             <h3>Пример:</h3>
             <div class="w3-code">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>section<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>WWF<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>The World Wide Fund for Nature (WWF) is....<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/section<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>section<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>WWF<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>The World Wide Fund for Nature (WWF) is....<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/section<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
             </div>
             <a target="_blank" rel="nofollow" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_section" class="w3-btn w3-margin-bottom">Попробуйте сами »</a>
-        </div>
-        <hr>
-        <h2>HTML5 элемент &lt;article&gt;</h2>
-        <p>Элемент <code class="w3-codespan">&lt;article&gt;</code> определяет независимое, автономное содержание (статью).</p>
-        <p>Статья должна иметь смысл сама по себе, так, чтобы её можно было читать независимо от остального сайта.</p>
-        <p>Примеры использования элемента <code class="w3-codespan">&lt;article&gt;</code>:</p>
-        <ul>
+         </div>
+         <hr>
+         <h2>HTML5 элемент &lt;article&gt;</h2>
+         <p>Элемент <code class="w3-codespan">&lt;article&gt;</code> определяет независимое, автономное содержание (статью).</p>
+         <p>Статья должна иметь смысл сама по себе, так, чтобы её можно было читать независимо от остального сайта.</p>
+         <p>Примеры использования элемента <code class="w3-codespan">&lt;article&gt;</code>:</p>
+         <ul>
             <li>Сообщение форума</li>
             <li>Публикация в блоге</li>
             <li>Газетная статья</li>
-        </ul>
-        <div class="w3-example">
+         </ul>
+         <div class="w3-example">
             <h3>Пример:</h3>
             <div class="w3-code">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>article<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp;
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>What Does WWF Do?<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>WWF's mission is to stop the degradation of our planet's natural environment,<br>&nbsp; and build a future in which humans live in harmony with nature.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/article<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>article<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp;
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>What Does WWF Do?<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>WWF's mission is to stop the degradation of our planet's natural environment,<br>&nbsp; and build a future in which humans live in harmony with nature.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/article<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
             </div>
             <a target="_blank" rel="nofollow" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_article">Попробуйте сами »</a>
-        </div>
-        <hr>
-        <h2>Вложение &lt;article&gt; в &lt;section&gt; или наоборот?</h2>
-        <p>Элемент<code class="w3-codespan">&lt;article&gt;</code>определяет независимое, автономное содержание.</p>
-        <p>Элемент <code class="w3-codespan">&lt;section&gt;</code> определяет раздел в документе.</p>
-        <p>Можем ли мы использовать определение, чтобы решить, как вставить эти элементы? Нет, мы не можем!</p>
-        <p>Итак, в Интернете вы найдете HTML-страницы с элементами <code class="w3-codespan">&lt;section&gt;</code> которые содержат элементы <code class="w3-codespan">&lt;article&gt;</code> и элементы <code class="w3-codespan">&lt;article&gt;</code>, которые содержат элементы <code class="w3-codespan">&lt;section&gt;</code>.</p>
-        <p>Вы также найдёте страницы с элементами <code class="w3-codespan">&lt;section&gt;</code>, которые содержат элементы <code class="w3-codespan">&lt;section&gt;</code> и элементы <code class="w3-codespan">&lt;article&gt;</code>, которые содержат элементы <code class="w3-codespan">&lt;article&gt;</code>.</p>
-        <div class="w3-panel w3-note">
+         </div>
+         <hr>
+         <h2>Вложение &lt;article&gt; в &lt;section&gt; или наоборот?</h2>
+         <p>Элемент<code class="w3-codespan">&lt;article&gt;</code>определяет независимое, автономное содержание.</p>
+         <p>Элемент <code class="w3-codespan">&lt;section&gt;</code> определяет раздел в документе.</p>
+         <p>Можем ли мы использовать определение, чтобы решить, как вставить эти элементы? Нет, мы не можем!</p>
+         <p>Итак, в Интернете вы найдете HTML-страницы с элементами <code class="w3-codespan">&lt;section&gt;</code> которые содержат элементы <code class="w3-codespan">&lt;article&gt;</code> и элементы <code class="w3-codespan">&lt;article&gt;</code>, которые содержат элементы <code class="w3-codespan">&lt;section&gt;</code>.</p>
+         <p>Вы также найдёте страницы с элементами <code class="w3-codespan">&lt;section&gt;</code>, которые содержат элементы <code class="w3-codespan">&lt;section&gt;</code> и элементы <code class="w3-codespan">&lt;article&gt;</code>, которые содержат элементы <code class="w3-codespan">&lt;article&gt;</code>.</p>
+         <div class="w3-panel w3-note">
             <p>Пример из газеты: Спортивная статья <code class="w3-codespan">&lt;article&gt;</code> в спортивном разделе <strong>section</strong>, может содержать технический раздел <strong>section</strong> в каждой статье <code class="w3-codespan">&lt;article&gt;</code>.
             </p>
-        </div>
-        <hr>
-        <h2>HTML5 элемент &lt;header&gt;</h2>
-        <p>Элемент <code class="w3-codespan">&lt;header&gt;</code> определяет заголовок для документа или раздела.</p>
-        <p>Элемент <code class="w3-codespan">&lt;header&gt;</code> должен использоваться как контейнер для вступительного содержания.</p>
-        <p>Вы можете иметь несколько элементов <code class="w3-codespan">&lt;header&gt;</code> в одном документе.</p>
-        <p>Следующий пример определяет заголовок статьи:</p>
-        <div class="w3-example">
+         </div>
+         <hr>
+         <h2>HTML5 элемент &lt;header&gt;</h2>
+         <p>Элемент <code class="w3-codespan">&lt;header&gt;</code> определяет заголовок для документа или раздела.</p>
+         <p>Элемент <code class="w3-codespan">&lt;header&gt;</code> должен использоваться как контейнер для вступительного содержания.</p>
+         <p>Вы можете иметь несколько элементов <code class="w3-codespan">&lt;header&gt;</code> в одном документе.</p>
+         <p>Следующий пример определяет заголовок статьи:</p>
+         <div class="w3-example">
             <h3>Пример:</h3>
             <div class="w3-code">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>article<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>header<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp;&nbsp;&nbsp;
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>What Does WWF Do?<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>WWF's mission:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/header<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>WWF's mission is to stop the degradation of our planet's natural environment,<br>&nbsp; and build a future in which humans live in harmony with nature.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/article<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>article<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>header<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp;&nbsp;&nbsp;
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>What Does WWF Do?<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>WWF's mission:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/header<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>WWF's mission is to stop the degradation of our planet's natural environment,<br>&nbsp; and build a future in which humans live in harmony with nature.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/article<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
             </div>
             <a target="_blank" rel="nofollow" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_header">Попробуйте сами »</a>
-        </div>
-        <hr>
-        <h2>HTML5 элемент &lt;footer&gt;</h2>
-        <p>Элемент <code class="w3-codespan">&lt;footer&gt;</code> определяет колонтитул для документа или раздела.</p>
-        <p>Элемент <code class="w3-codespan">&lt;footer&gt;</code> должен содержать информацию, которая содержится в нём.</p>
-        <p>В нижнем колонтитуле (футере) обычно содержится информация об авторе документа, информация об авторских правах, ссылка на условия использования, контактная информация и т.д.</p>
-        <p>Может быть несколько элементов <code class="w3-codespan">&lt;footer&gt;</code> на одной веб-странице.</p>
-        <div class="w3-example">
+         </div>
+         <hr>
+         <h2>HTML5 элемент &lt;footer&gt;</h2>
+         <p>Элемент <code class="w3-codespan">&lt;footer&gt;</code> определяет колонтитул для документа или раздела.</p>
+         <p>Элемент <code class="w3-codespan">&lt;footer&gt;</code> должен содержать информацию, которая содержится в нём.</p>
+         <p>В нижнем колонтитуле (футере) обычно содержится информация об авторе документа, информация об авторских правах, ссылка на условия использования, контактная информация и т.д.</p>
+         <p>Может быть несколько элементов <code class="w3-codespan">&lt;footer&gt;</code> на одной веб-странице.</p>
+         <div class="w3-example">
             <h3>Пример:</h3>
             <div class="w3-code">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>footer<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Posted by: Hege Refsnes<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Contact information: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="mailto:someone@example.com"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; someone@example.com<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span>.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/footer<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>footer<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Posted by: Hege Refsnes<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Contact information: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="mailto:someone@example.com"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; someone@example.com<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span>.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/footer<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
             </div>
             <a target="_blank" rel="nofollow" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_footer">Попробуйте сами »</a>
-        </div>
-        <hr>
-        <h2>HTML5 элемент &lt;nav&gt;</h2>
-        <p>Элемент <code class="w3-codespan">&lt;nav&gt;</code> определяет набор навигационных ссылок.</p>
-        <div class="w3-panel w3-note">
+         </div>
+         <hr>
+         <h2>HTML5 элемент &lt;nav&gt;</h2>
+         <p>Элемент <code class="w3-codespan">&lt;nav&gt;</code> определяет набор навигационных ссылок.</p>
+         <div class="w3-panel w3-note">
             <p>Обратите внимание, что НЕ все ссылки документа должны находиться внутри элемента <code class="w3-codespan">&lt;nav&gt;</code>. Элемент <code class="w3-codespan">&lt;nav&gt;</code> предназначен лишь для основного блока навигационных ссылок.</p>
-        </div>
-        <div class="w3-example">
+         </div>
+         <div class="w3-example">
             <h3>Пример:</h3>
             <div class="w3-code">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>nav<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp;
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="/html/"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>HTML<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span> |<br>
-                &nbsp;
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="/css/"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>CSS<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span> |<br>
-                &nbsp;
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="/js/"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>JavaScript<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span> |<br>
-                &nbsp;
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="/jquery/"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>jQuery<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/nav<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>nav<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp;
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="/html/"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>HTML<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span> |<br>
+               &nbsp;
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="/css/"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>CSS<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span> |<br>
+               &nbsp;
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="/js/"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>JavaScript<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span> |<br>
+               &nbsp;
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="/jquery/"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>jQuery<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/nav<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
             </div>
             <a target="_blank" rel="nofollow" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_nav">Попробуйте сами »</a>
-        </div>
-        <hr>
-        <h2>HTML5 элемент &lt;aside&gt;</h2>
-        <p>Элемент <code class="w3-codespan">&lt;aside&gt;</code> определяет некоторое содержание, кроме содержания, в котором он расположен (как боковая панель)</p>
-        <p>Содержание <code class="w3-codespan">&lt;aside&gt;</code> должно быть связано с окружающим содержанием.</p>
-        <div class="w3-example">
+         </div>
+         <hr>
+         <h2>HTML5 элемент &lt;aside&gt;</h2>
+         <p>Элемент <code class="w3-codespan">&lt;aside&gt;</code> определяет некоторое содержание, кроме содержания, в котором он расположен (как боковая панель)</p>
+         <p>Содержание <code class="w3-codespan">&lt;aside&gt;</code> должно быть связано с окружающим содержанием.</p>
+         <div class="w3-example">
             <h3>Пример:</h3>
             <div class="w3-code">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>My family and I visited The Epcot center this summer.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>aside<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp;
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h4<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Epcot Center<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h4<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>The Epcot Center is a theme park in Disney World, Florida.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/aside<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>My family and I visited The Epcot center this summer.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>aside<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp;
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h4<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Epcot Center<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h4<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>The Epcot Center is a theme park in Disney World, Florida.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/aside<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
             </div>
             <a target="_blank" rel="nofollow" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_aside">Попробуйте сами »</a>
-        </div>
-        <hr>
-        <h2>HTML5 элементы &lt;figure&gt; и &lt;figcaption&gt;</h2>
-        <p>Подпись к изображению делается для того, чтобы добавить объяснение, что на нём изображено.</p>
-        <p>В HTML5 изображения и подпись к нему можна сгруппировать в элемент <code class="w3-codespan">&lt;figure&gt;</code>:</p>
-        <div class="w3-example">
+         </div>
+         <hr>
+         <h2>HTML5 элементы &lt;figure&gt; и &lt;figcaption&gt;</h2>
+         <p>Подпись к изображению делается для того, чтобы добавить объяснение, что на нём изображено.</p>
+         <p>В HTML5 изображения и подпись к нему можна сгруппировать в элемент <code class="w3-codespan">&lt;figure&gt;</code>:</p>
+         <div class="w3-example">
             <h3>Пример:</h3>
             <div class="w3-code">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>figure<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="pic_trulli.jpg"</span> alt<span class="attributevaluecolor" style="color:mediumblue">="Trulli"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>figcaption<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Fig1. - Trulli, Puglia, Italy.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/figcaption<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/figure<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>figure<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="pic_trulli.jpg"</span> alt<span class="attributevaluecolor" style="color:mediumblue">="Trulli"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>figcaption<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Fig1. - Trulli, Puglia, Italy.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/figcaption<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/figure<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
             </div>
             <a class="w3-btn w3-margin-bottom" rel="nofollow" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_figcaption" target="_blank">Попробуйте сами »</a>
-        </div>
-        <p>Элемент <code class="w3-codespan">&lt;img&gt;</code> определяет изображение, элемент <code class="w3-codespan">&lt;figcaption&gt;</code> определяет подпись к изображению.</p>
-        <hr>
-        <h2>Почему семантические элементы?</h2>
-        <p>Начиная с HTML4, разработчики использовали свои собственные названия id/class для стилизации элементов: header, top, bottom, footer, menu, navigation, main, container, content, article, sidebar, topnav и др.</p>
-        <p>Это значительно усложняло поисковым системам определять правильное содержание веб-страницы.</p>
-        <p>С новыми HTML5 элементами (<code class="w3-codespan">&lt;header&gt; &lt;footer&gt; &lt;nav&gt; &lt;section&gt; &lt;article&gt;</code>) это стало намного легче.</p>
-        <p>Согласно определения с W3C, Semantic Web: "Позволяет обмениваться данными и повторно использовать их в разных программах, на предприятиях и в сообществах".</p>
-        <hr>
-        <h2>Семантические элементы в HTML5</h2>
-        <p>Ниже приведён <strong>алфавитный список новых семантических элементов в HTML5</strong>.</p>
-        <p>Ссылка на полный <a href="../tags/element_reference.html">HTML5 Справочник тегов</a>.</p>
-        <table class="w3-table-all">
-            <tbody><tr>
-                <th style="width:20%">Тег</th>
-                <th>Описание</th>
-            </tr>
-            <tr>
-                <td><a href="../tags/tag_article.html">&lt;article&gt;</a></td>
-                <td>Определяет статью</td>
-            </tr>
-            <tr>
-                <td><a href="../tags/tag_aside.html">&lt;aside&gt;</a></td>
-                <td>Определяет содержание, кроме содержания страницы</td>
-            </tr>
-            <tr>
-                <td><a href="../tags/tag_details.html">&lt;details&gt;</a></td>
-                <td>Определяет дополнительные детали, которые пользователь может просматривать или скрывать</td>
-            </tr>
-            <tr>
-                <td><a href="../tags/tag_figcaption.html">&lt;figcaption&gt;</a></td>
-                <td>Определяет подпись для элемента &lt;figure&gt;</td>
-            </tr>
-            <tr>
-                <td><a href="../tags/tag_figure.html">&lt;figure&gt;</a></td>
-                <td>Определяет автономное содержание, например, иллюстрации, диаграммы, фотографии, списки кодов и т.д.</td>
-            </tr>
-            <tr>
-                <td><a href="../tags/tag_footer.html">&lt;footer&gt;</a></td>
-                <td>Определяет нижний колонтитул для документа или раздела</td>
-            </tr>
-            <tr>
-                <td><a href="../tags/tag_header.html">&lt;header&gt;</a></td>
-                <td>Определяет заголовок для документа или раздела</td>
-            </tr>
-            <tr>
-                <td><a href="../tags/tag_main.html">&lt;main&gt;</a></td>
-                <td>Определяет основное содержание документа</td>
-            </tr>
-            <tr>
-                <td><a href="../tags/tag_mark.html">&lt;mark&gt;</a></td>
-                <td>Определяет помеченный / выделенный текст</td>
-            </tr>
-            <tr>
-                <td><a href="../tags/tag_nav.html">&lt;nav&gt;</a></td>
-                <td>Определяет навигационные ссылки</td>
-            </tr>
-            <tr>
-                <td><a href="../tags/tag_section.html">&lt;section&gt;</a></td>
-                <td>Определяет раздел в документе</td>
-            </tr>
-            <tr>
-                <td><a href="../tags/tag_summary.html">&lt;summary&gt;</a></td>
-                <td>Определяет видимый заголовок для элемента &lt;details&gt;</td>
-            </tr>
-            <tr>
-                <td><a href="../tags/tag_time.html">&lt;time&gt;</a></td>
-                <td>Определяет дату/время</td>
-            </tr>
+         </div>
+         <p>Элемент <code class="w3-codespan">&lt;img&gt;</code> определяет изображение, элемент <code class="w3-codespan">&lt;figcaption&gt;</code> определяет подпись к изображению.</p>
+         <hr>
+         <h2>Почему семантические элементы?</h2>
+         <p>Начиная с HTML4, разработчики использовали свои собственные названия id/class для стилизации элементов: header, top, bottom, footer, menu, navigation, main, container, content, article, sidebar, topnav и др.</p>
+         <p>Это значительно усложняло поисковым системам определять правильное содержание веб-страницы.</p>
+         <p>С новыми HTML5 элементами (<code class="w3-codespan">&lt;header&gt; &lt;footer&gt; &lt;nav&gt; &lt;section&gt; &lt;article&gt;</code>) это стало намного легче.</p>
+         <p>Согласно определения с W3C, Semantic Web: "Позволяет обмениваться данными и повторно использовать их в разных программах, на предприятиях и в сообществах".</p>
+         <hr>
+         <h2>Семантические элементы в HTML5</h2>
+         <p>Ниже приведён <strong>алфавитный список новых семантических элементов в HTML5</strong>.</p>
+         <p>Ссылка на полный <a href="../tags/element_reference.html">HTML5 Справочник тегов</a>.</p>
+         <table class="w3-table-all">
+            <tbody>
+               <tr>
+                  <th style="width:20%">Тег</th>
+                  <th>Описание</th>
+               </tr>
+               <tr>
+                  <td><a href="../tags/tag_article.html">&lt;article&gt;</a></td>
+                  <td>Определяет статью</td>
+               </tr>
+               <tr>
+                  <td><a href="../tags/tag_aside.html">&lt;aside&gt;</a></td>
+                  <td>Определяет содержание, кроме содержания страницы</td>
+               </tr>
+               <tr>
+                  <td><a href="../tags/tag_details.html">&lt;details&gt;</a></td>
+                  <td>Определяет дополнительные детали, которые пользователь может просматривать или скрывать</td>
+               </tr>
+               <tr>
+                  <td><a href="../tags/tag_figcaption.html">&lt;figcaption&gt;</a></td>
+                  <td>Определяет подпись для элемента &lt;figure&gt;</td>
+               </tr>
+               <tr>
+                  <td><a href="../tags/tag_figure.html">&lt;figure&gt;</a></td>
+                  <td>Определяет автономное содержание, например, иллюстрации, диаграммы, фотографии, списки кодов и т.д.</td>
+               </tr>
+               <tr>
+                  <td><a href="../tags/tag_footer.html">&lt;footer&gt;</a></td>
+                  <td>Определяет нижний колонтитул для документа или раздела</td>
+               </tr>
+               <tr>
+                  <td><a href="../tags/tag_header.html">&lt;header&gt;</a></td>
+                  <td>Определяет заголовок для документа или раздела</td>
+               </tr>
+               <tr>
+                  <td><a href="../tags/tag_main.html">&lt;main&gt;</a></td>
+                  <td>Определяет основное содержание документа</td>
+               </tr>
+               <tr>
+                  <td><a href="../tags/tag_mark.html">&lt;mark&gt;</a></td>
+                  <td>Определяет помеченный / выделенный текст</td>
+               </tr>
+               <tr>
+                  <td><a href="../tags/tag_nav.html">&lt;nav&gt;</a></td>
+                  <td>Определяет навигационные ссылки</td>
+               </tr>
+               <tr>
+                  <td><a href="../tags/tag_section.html">&lt;section&gt;</a></td>
+                  <td>Определяет раздел в документе</td>
+               </tr>
+               <tr>
+                  <td><a href="../tags/tag_summary.html">&lt;summary&gt;</a></td>
+                  <td>Определяет видимый заголовок для элемента &lt;details&gt;</td>
+               </tr>
+               <tr>
+                  <td><a href="../tags/tag_time.html">&lt;time&gt;</a></td>
+                  <td>Определяет дату/время</td>
+               </tr>
             </tbody>
-        </table>
+         </table>
+         <hr>
 
-        <hr>
-        <!-- buttons prev - next -->
-        <div class="w3-clear nextprev">
-            <a class="w3-left w3-btn" href="html5_new_elements.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
-            <a class="w3-right w3-btn" href="html5_migration.html" title="Наступна сторінка" rel="next">Next ❯</a>
-        </div>
-        <!-- / buttons prev - next -->
-        <hr class="hr-bottom">
-        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
-        <!-- Комментарии от Disqus -->
-        <div id="disqus_thread"></div>
-        <script>
-        var disqus_config = function () {
-        this.page.url = html5beginners.github.io;  // канонический URL страницы
-        this.page.identifier = html5beginners.github.io/html/html5_semantic_elements.html; // уникальный идентификатор страницы
-        };
-        (function() { // Не редактировать ниже этой линии
-        var d = document, s = d.createElement('script');
-        s.src = 'https://html5beginners.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-        })();
-        </script>
-        <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
-        <!--  / Комментарии от Disqus -->
-    </div>
-    <!-- / CONTENT -->
-    <div class="right-sidebar">
-        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
-    </div>
-</main>
-<footer>
-    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
-</footer>
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html5_new_elements.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html5_migration.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+
+         <iframe class="predisqus" src="../pages/predisqus.html"></iframe>
+         <!-- Комментарии от Disqus -->
+         <div id="disqus_thread"></div>
+         <script>
+            var disqus_config = function() {
+               this.page.url = html5beginner.github.io; // канонический URL страницы
+               this.page.identifier = html5beginner.github.io / html / html5_new_elements.html; // уникальный идентификатор страницы
+            };
+            (function() { // Не редактировать ниже этой линии
+               var d = document,
+                  s = d.createElement('script');
+               s.src = 'https://html5beginner-1.disqus.com/embed.js';
+               s.setAttribute('data-timestamp', +new Date());
+               (d.head || d.body).appendChild(s);
+            })();
+         </script>
+         <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+         <!--  / Комментарии от Disqus -->
+      </div>
+      <!-- / CONTENT -->
+      <div class="right-sidebar">
+         <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+      </div>
+   </main>
+   <footer>
+      <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+   </footer>
 </body>
+
 </html>

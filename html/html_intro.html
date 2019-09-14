@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <title>HTML Основы. Введение. Курсы W3schools на русском. Уроки для начинающих</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="keywords" content="HTML,CSS,веб-разработка,W3Schools,на русском,учебное пособие,основы,язык,программирования,курсы,обучение,бесплатно,учебник для начинающих,уроки для новичков,примеры,упражнения">
+   <meta name="description" content="HTML Основы. Что такое HTML5. Как создать собственный веб-сайт. Уроки для начинающих. Бесплатные курсы, учебники, книги">
+   <link rel="icon" href="/favicon.ico" type="image/x-icon">
+   <link rel="stylesheet" href="../styles/style.css">
+   <link rel="stylesheet" href="../styles/ws.css">
+   <link rel="stylesheet" href="../styles/w3colors.css">
+   <link rel="stylesheet" href="../styles/handheld.css">
+   <script src="../js/topnav.js"></script>
+</head>
+
+<body>
+   <iframe src="../pages/header.html" class="frame-header"></iframe>
+   <main>
+      <div class="left-sidebar">
+         <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+         <h1>HTML Основы. Введение</h1>
+         <p class="brief"><strong>Курс по основам HTML. W3Schools на русском языке. Уроки для начинающих</strong></p>
+         <hr>
+         <!-- buttons prev - next -->
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html_tutorial.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html_editors.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         <!-- buttons prev - next -->
+         <hr>
+         <h2>Что такое HTML?</h2>
+         <p><strong>HTML</strong> является стандартным языком разметки для создания веб-страниц.</p>
+         <ul class="list-disc">
+            <li><strong>HTML</strong> означает <em>Hyper Text Markup Language</em> (язык гипертекстовой разметки)
+            <li><strong>HTML</strong> описывает структуру веб-страниц с помощью разметки
+            <li><strong>HTML-елементы</strong> являются стротельными блоками страниц <strong>HTML</strong>
+            <li>Элементы <strong>HTML</strong> представлены <em>тегами</em>
+            <li><em>Теги</em> <strong>HTML</strong> обозначают фрагменты содержания, такие как <strong>header</strong> (заголовок), <strong>paragraph</strong> (параграф), <strong>table</strong> (таблица) и др.
+            <li>Браузеры не показывают <em>теги</em> <strong>HTML</strong>, но используют их для отображения содержания web-страницы
+         </ul>
+         <hr>
+         <h2>Простой HTML документ</h2>
+         <p>Пример:</p>
+         <div class="w3-example">
+            <div class="w3-border-green w3-code">
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br>
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>head<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>title<span style="color:mediumblue">&gt;</span></span>Page Title<span style="color:brown"><span style="color:mediumblue">&lt;</span>/title<span style="color:mediumblue">&gt;</span></span><br>
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>/head<span style="color:mediumblue">&gt;</span></span><br>
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:mediumblue">&gt;</span></span>My First Heading<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>My first paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br><br>
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_intro" target="_blank" rel="nofollow">Попробуй сам »</a>
+         </div><br>
+         <p><b>Объяснение примера:</b></p>
+         <ul>
+            <li>Объявление <code>&lt;!DOCTYPE html&gt;</code> определяет этот документ как <strong>HTML5</strong>
+            <li>Элемент <code>&lt;html&gt;</code> является корневым элементом <strong>HTML</strong> страницы
+            <li>Элемент <code>&lt;head&gt;</code> содержит мета-информацию об <strong>HTML</strong> документе
+            <li>Элемент <code>&lt;title&gt;</code> указывает название <strong>HTML</strong> документа
+            <li>Элемент <code>&lt;body&gt;</code> отображает видимое содержание <strong>HTML</strong> страницы
+            <li>Элемент <code>&lt;h1&gt;</code> определяет большой заголовок на <strong>HTML</strong> странице
+            <li>Элемент <code>&lt;p&gt;</code> определяет абзац (параграф) в <strong>HTML</strong> документе
+         </ul>
+         <hr>
+         <h2>Теги HTML</h2>
+         <p><strong>HTML-теги</strong> - это названия элементов, окружённые угловыми скобками:</p>
+         <div class="w3-panel w3-light-grey w3-border">
+            <p class="w3-xlarge">&lt;название тега&gt;Здесь идёт содержание...&lt;/название тега&gt;</p>
+         </div>
+         <ul>
+            <li>Теги <strong>HTML</strong> обычно идут <b>парами</b>, например, <code>&lt;p&gt;</code> и <code>&lt;/p&gt;</code>
+            <li>Первым тегом в паре есть <b>начальный тег</b>, второй - <b>конечный тег</b>
+            <li>Конечный тег записывается как начальный тег, но перед названием тега вставляется косая черта ( / слэш)
+         </ul>
+         <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> Начальный тег также називается - <strong>открывающим тегом</strong>, а конечный тег - <strong>закрывающим тегом</strong>.</p>
+         </div>
+         <hr>
+         <h2>Веб-браузеры</h2>
+         <p>Целью веб-браузера (Chrome, Firefox, Opera, Internet Explorer, Safari) является чтение документов <em>HTML</em> и их отображение. Браузер не отображает теги <em>HTML</em>, но использует их, чтобы определить, как отобразить веб-страницу:</p>
+         <div class="img-center"><a href="../img/myfirstpage.png" target="_blank"><img src="../img/myfirstpage.png" alt="Отображение HTML-страницы в браузере" class="flexible-image"></a><br>
+            <div class="signature">Отображение HTML-страницы в браузере</div>
+         </div>
+         <hr>
+         <h2>Структура HTML страницы</h2>
+         <p>Ниже приведена визуализация структуры <em>HTML-страницы</em>:</p>
+         <div style="width:100%;border:1px solid grey;padding:3px;margin:10px 1px;background-color:#44B4F9;">&lt;html&gt;
+            <div style="width:95%;border:1px solid grey;padding:3px;margin:10px;background-color:#44EEF9;">&lt;head&gt;
+               <div style="width:95%;border:1px solid grey;padding:3px;margin:10px;background-color:#FF74A3;">&lt;title&gt;Название страницы&lt;/title&gt;</div>
+               &lt;/head&gt;</div>
+            <div style="width:95%;border:1px solid grey;padding:3px;margin:10px;background-color:#ddd;">&lt;body&gt;
+               <div style="width:95%;border:1px solid grey;padding:3px;margin:10px;background-color:#fff;">
+                  <div style="width:95%;border:1px solid grey;padding:3px;margin:10px;background-color:#F0A79A;">&lt;h1&gt;Это заголовок&lt;/h1&gt;</div>
+                  <div style="width:95%;border:1px solid grey;padding:3px;margin:10px;background-color:#F0F59A;">&lt;p&gt;Это параграф.&lt;/p&gt;</div>
+                  <div style="width:95%;border:1px solid grey;padding:3px;margin:10px;background-color:#F0F59A;">&lt;p&gt;Это другой параграф.&lt;/p&gt;</div>
+               </div>
+               &lt;/body&gt;
+            </div>
+            &lt;/html&gt;
+         </div>
+         <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> В браузере отображается только содержание раздела &lt;body&gt;.</p>
+         </div>
+         <hr>
+         <h2>Оъявление &lt;!DOCTYPE&gt;</h2>
+         <p>Объявление <code>&lt;!DOCTYPE&gt;</code> представляет собой определение типа документа и помогает браузерам правильно отображать веб-страницы. Оно должно появляться только один раз в верхней части страницы (перед любыми тегами <em>HTML</em>).</p>
+         <p>Объявление <code>&lt;!DOCTYPE&gt;</code> не чувствительно к регистру.</p>
+         <p>Объявление <code>&lt;!DOCTYPE&gt;</code> для <strong>HTML5</strong> выглядит так:</p>
+         <div class="w3-example">
+            <div class="w3-border-green w3-code">
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+         </div>
+         <hr>
+         <h3>Версии HTML</h3>
+         <p>С первых дней существования Интернета было много версий <em>HTML</em>:</p>
+         <table class="w3-table-all">
+            <tbody>
+               <tr>
+                  <th>Версия</th>
+                  <th>Год появления</th>
+               </tr>
+               <tr>
+                  <td>HTML</td>
+                  <td>1991</td>
+               </tr>
+               <tr>
+                  <td>HTML 2.0</td>
+                  <td>1995</td>
+               </tr>
+               <tr>
+                  <td>HTML 3.2</td>
+                  <td>1997</td>
+               </tr>
+               <tr>
+                  <td>HTML 4.01</td>
+                  <td>1999</td>
+               </tr>
+               <tr>
+                  <td>XHTML</td>
+                  <td>2000</td>
+               </tr>
+               <tr>
+                  <td>HTML5</td>
+                  <td>2014</td>
+               </tr>
+            </tbody>
+         </table>
+         <hr>
+         
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html_tutorial.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html_editors.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         
+         <iframe class="predisqus" src="../pages/predisqus.html"></iframe>
+         <!-- Комментарии от Disqus -->
+         <div id="disqus_thread"></div>
+         <script>
+            var disqus_config = function() {
+               this.page.url = html5beginner.github.io; // канонический URL страницы
+               this.page.identifier = html5beginner.github.io / html / html_intro.html; // уникальный идентификатор страницы
+            };
+            (function() { // Не редактировать ниже этой линии
+               var d = document,
+                  s = d.createElement('script');
+               s.src = 'https://html5beginner-1.disqus.com/embed.js';
+               s.setAttribute('data-timestamp', +new Date());
+               (d.head || d.body).appendChild(s);
+            })();
+         </script>
+         <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+         <!--  / Комментарии от Disqus -->
+      </div>
+      <!-- / CONTENT -->
+      <div class="right-sidebar">
+         <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+      </div>
+   </main>
+   <footer>
+      <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+   </footer>
+</body>
+
+</html>

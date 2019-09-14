@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <title>HTML Основы. Iframes. Фреймы. W3schools на русском. Уроки для начинающих</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="keywords" content="HTML,CSS,уроки,для начинающих,html5,css3,iframe,фреймы,web,веб,страница,w3schools,на русском,учебник" />
+   <meta name="description" content="HTML. CSS. Фреймы - iframe на веб-страницах. Как использовать фреймы на веб-сайтах? W3Schools на русском. Учебник для начинающих" />
+   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+   <link rel="stylesheet" href="../styles/style.css" />
+   <link rel="stylesheet" href="../styles/ws.css" />
+   <link rel="stylesheet" href="../styles/w3colors.css">
+   <link rel="stylesheet" href="../styles/handheld.css" />
+   <script src="../js/topnav.js"></script>
+</head>
+
+<body>
+   <iframe src="../pages/header.html" class="frame-header"></iframe>
+   <main>
+      <div class="left-sidebar">
+         <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+         <h1>HTML. Iframe. Фреймы</h1>
+         <p class="brief"><strong>Курс по основам HTML. W3Schools на русском языке. Уроки для начинающих</strong></p>
+
+         <hr>
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html_id.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html_scripts.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         <hr>
+
+         <h2>HTML. Как добавить фрейм на веб-странице? Использование фреймов - iframe</h2>
+         <p>Фреймы используются для отображения веб-страницы внутри другой веб-страницы.</p>
+         <div style="width:100%;height:310px;overflow:hidden;">
+            <iframe src="../index.html" style="width:100%; height:310px;"></iframe>
+         </div>
+         <hr>
+         <h2>Синтаксис фреймов</h2>
+         <p><strong>HTML фрейм</strong> определяется тегом <code>&lt;iframe&gt;</code>:</p>
+         <div class="w3-example">
+            <div class="w3-border-green w3-code">
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>iframe<span style="color:red"> src<span style="color:mediumblue">="<em>URL</em>"</span></span><span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/iframe<span style="color:mediumblue">&gt;</span></span>
+            </div>
+         </div>
+         <p>Атрибут <code class="w3-codespan">src</code> указывает URL-адрес (веб-адрес) страницы встроенного фрейма.</p>
+         <hr>
+         <h2>Iframe - установка высоты (height) и ширины (width)</h2>
+         <p>Используйте атрибуты <code class="w3-codespan">height</code> (высота) и <code class="w3-codespan">width</code> (ширина), чтобы указать размеры фрейма. Значение атрибутов по умолчанию задаются в пикселях, но они также могут быть в процентах (например, "80%"). При этом для соответствия спецификации <strong>HTML5</strong> в процентах можно указывать лишь через задание стилей для фрейма, то есть через <strong>CSS</strong> или атрибут <code class="w3-codespan">style</code>.</p>
+         <p>Если указать высоту и ширину фрейма в процентах непосредственно с помощью атрибутов <code class="w3-codespan">height</code> и <code class="w3-codespan">width</code>, то фрейм также будет работать, но при этом код не будет проходить валидацию и соответствовать спецификации <strong>HTML5</strong>.</p>
+         <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>iframe<span style="color:red"> src<span style="color:mediumblue">="demo_iframe.htm"</span> height<span style="color:mediumblue">="200"</span> width<span style="color:mediumblue">="300"</span></span><span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/iframe<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_iframe_height_width" target="_blank" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <p>Или вы можете использовать <strong>CSS</strong> для установки высоты и ширины фрейма (в пикселях или процентах):</p>
+         <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>iframe<span style="color:red"> src<span style="color:mediumblue">="demo_iframe.htm"</span> style<span style="color:mediumblue">="height:200px;width:300px;"</span></span><span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/iframe<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_iframe_height_width_css" target="_blank" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+         <h2>Iframe - удаление границы</h2>
+         <p>По умолчанию фрейм имеет границу вокруг себя. Чтобы удалить границу, добавьте атрибут <code class="w3-codespan">style</code> и используйте <strong>CSS</strong> свойство <code class="w3-codespan">border</code>:</p>
+         <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>iframe<span style="color:red"> src<span style="color:mediumblue">="demo_iframe.htm"</span> style<span style="color:mediumblue">="border:none;"</span></span><span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/iframe<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_iframe_frameborder" target="_blank" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <div class="w3-panel w3-note">
+            <p><b>Примечание</b>. Для того, чтобы убрать видимую границу фрейма, можно использовать два значения установки свойства <b>border</b>: <code class="w3-codespan">border:0;</code> или <code class="w3-codespan">border:none;</code>.</p>
+         </div>
+         <p>С помощью <strong>CSS</strong> можно также изменить размер, стиль и цвет границы фрейма:</p>
+         <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>iframe<span style="color:red"> src<span style="color:mediumblue">="demo_iframe.htm"</span> style<span style="color:mediumblue">="border:2px solid red;"</span></span><span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/iframe<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_iframe_border2" target="_blank" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+         <h2>Iframe - цель для ссылки - target</h2>
+         <p>В качестве целевого фрейма для ссылки можно использовать iframe. Атрибут <code class="w3-codespan">target</code> ссылки должен ссылаться на атрибут <code class="w3-codespan">name</code> фрейма:</p>
+         <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>iframe<span style="color:red"> src<span style="color:mediumblue">="demo_iframe.htm"</span> name<span style="color:mediumblue">="iframe_a"</span></span><span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/iframe<span style="color:mediumblue">&gt;</span></span><br><br> <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="https://www.w3schools.com"</span> target<span style="color:mediumblue">="iframe_a"</span></span><span style="color:mediumblue">&gt;</span></span>W3Schools.com<span style="color:brown"><span style="color:mediumblue">&lt;</span>/a<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_iframe_target" target="_blank" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+         <div class="w3-container w3-dark-grey w3-padding">
+            <h2 class="heading">Проверьте себя с помощью упражнений!</h2>
+            <div class="w3-bar w3-margin-bottom">
+               <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_iframe1" target="_blank" rel="nofollow">Упражнение 1 »</a>
+               <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_iframe2" target="_blank" rel="nofollow">Упражнение 2 »</a>
+               <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_iframe3" target="_blank" rel="nofollow">Упражнение 3 »</a>
+               <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_iframe4" target="_blank" rel="nofollow">Упражнение 4 »</a>
+            </div>
+         </div>
+         <hr>
+         <h2>HTML тег iframe</h2>
+         <table class="w3-table-all">
+            <tbody>
+               <tr>
+                  <th>Тег</th>
+                  <th>Описание</th>
+               </tr>
+               <tr>
+                  <td><a href="../tags/tag_iframe.html" target="_blank"><code>&lt;iframe&gt;</code></a></td>
+                  <td>Определяет встроенный фрейм</td>
+               </tr>
+            </tbody>
+         </table>
+         <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> Для получения полного списка всех доступных <strong>HTML</strong> тегов, посетите <a href="../tags/element_reference.html">Справочник <strong>HTML</strong> тегов</a>.</p>
+         </div>
+         <hr>
+
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html_id.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html_scripts.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+
+         <iframe class="predisqus" src="../pages/predisqus.html"></iframe>
+         <!-- Комментарии от Disqus -->
+         <div id="disqus_thread"></div>
+         <script>
+            var disqus_config = function() {
+               this.page.url = html5beginner.github.io; // канонический URL страницы
+               this.page.identifier = html5beginner.github.io / html / html_iframe.html; // уникальный идентификатор страницы
+            };
+            (function() { // Не редактировать ниже этой линии
+               var d = document,
+                  s = d.createElement('script');
+               s.src = 'https://html5beginner-1.disqus.com/embed.js';
+               s.setAttribute('data-timestamp', +new Date());
+               (d.head || d.body).appendChild(s);
+            })();
+         </script>
+         <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+         <!--  / Комментарии от Disqus -->
+      </div>
+      <!-- / CONTENT -->
+      <div class="right-sidebar">
+         <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+      </div>
+   </main>
+   <footer>
+      <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+   </footer>
+</body>
+
+</html>

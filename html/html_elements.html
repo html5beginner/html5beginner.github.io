@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <title>HTML Основы. Элементы. Курсы W3schools на русском. Уроки для начинающих</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="keywords" content="HTML,CSS,уроки,для начинающих,html5,css3,элементы,код,теги,документ,страница,веб,w3schools,на русском">
+   <meta name="description" content="HTML Основы. Элементы веб-страницы. Заголовки, параграфы. Как создавать сайты? Структура веб-страницы. W3Schools на русском - учебник для начинающих. ">
+   <link rel="icon" href="/favicon.ico" type="image/x-icon">
+   <link rel="stylesheet" href="../styles/style.css">
+   <link rel="stylesheet" href="../styles/ws.css">
+   <link rel="stylesheet" href="../styles/w3colors.css">
+   <link rel="stylesheet" href="../styles/handheld.css">
+   <script src="../js/topnav.js"></script>
+</head>
+
+<body>
+   <iframe src="../pages/header.html" class="frame-header"></iframe>
+   <main>
+      <div class="left-sidebar">
+         <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+         <h1>HTML Основы. Элементы</h1>
+         <p class="brief"><strong>Курс по основам HTML. W3Schools на русском языке. Уроки для начинающих</strong></p>
+         <hr>
+         <!-- buttons prev - next -->
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html_basic.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html_attributes.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         <!-- / buttons prev - next -->
+         <hr>
+         <h2>Элементы HTML-кода. С чего состоит веб-страница?</h2>
+         <p>Элемент в HTML обычно состоит из <b>начального</b> тега и <b>конечного</b> тега, содержание которого вставлено между ними:</p>
+         <code>&lt;Начальный тег&gt;</code> Содержание размещается здесь ... <code>&lt;/Конечный тег&gt;</code>
+         <p><strong>Элемент HTML</strong> - это всё от начального тега до конечного тега:</p>
+         <span style="font-size: 1.2em;"><span style="color:mediumblue">&lt;</span><span style="color:brown">p</span><span style="color:mediumblue">&gt;</span>My first paragraph.<span style="color:mediumblue">&lt;</span><span style="color:brown">/p</span><span style="color:mediumblue">&gt;</span></span>
+         <table class="w3-table-all">
+            <tbody>
+               <tr>
+                  <th>Начальный тег</th>
+                  <th>Содержание элемента</th>
+                  <th>Конечный тег</th>
+               </tr>
+               <tr>
+                  <td>&lt;h1&gt;</td>
+                  <td>My First Heading</td>
+                  <td>&lt;/h1&gt;</td>
+               </tr>
+               <tr>
+                  <td>&lt;p&gt;</td>
+                  <td>My first paragraph.</td>
+                  <td>&lt;/p&gt;</td>
+               </tr>
+               <tr>
+                  <td>&lt;br&gt;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+               </tr>
+            </tbody>
+         </table>
+         <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> Элементы <strong>HTML</strong> без содержания называются пустыми элементами. Пустые элементы не имеют конечного тега, например элемент <code>&lt;br&gt;</code>, который указывает на разрыв строки (<em>break – разрыв</em>)</p>
+         </div>
+         <hr>
+         <h2>Вложенные элементы HTML</h2>
+         <p>Элементы <strong>HTML</strong> могут быть вложенными (элементы могут содержать элементы). Все документы <strong>HTML</strong> состоят из вложенных элементов <strong>HTML</strong>.</p>
+         <p>Этот пример содержит четыре <strong>HTML элемента</strong>:</p><br>
+         <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br>
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br>
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:mediumblue">&gt;</span></span>My First Heading<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>My first paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br><br>
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elements" target="_blank" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <h3>Объяснение примера</h3>
+         <p>Элемент <code>&lt;html&gt;</code> определяет весь документ (от <em>HyperText Markup Language</em>). Он имеет <strong>начальный тег</strong> <code>&lt;html&gt;</code> и <strong>конечный тег</strong> <code>&lt;/html&gt;</code>. Содержание (<strong>контент</strong>) элемента - это другой элемент <strong>HTML</strong> (элемент <code>&lt;body&gt;</code>).</p>
+         <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span><br>
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br>
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:mediumblue">&gt;</span></span>My First Heading<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>My first paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br><br>
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br>
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+            </div>
+         </div><br>
+         <p>Элемент <code>&lt;body&gt;</code> определяет тело документа (<em>body - тело</em>). Он имеет <strong>начальный тег</strong> <code>&lt;body&gt;</code> и <strong>конечный тег</strong> <code>&lt;/body&gt;</code>. Содержание (<strong>контент</strong>) элемента - это два других элемента <strong>HTML</strong> <code>(&lt;h1&gt;</code> и <code>&lt;p&gt;</code>).</p>
+         <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br>
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:mediumblue">&gt;</span></span>My First Heading<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>My first paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br><br>
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span>
+            </div>
+         </div><br>
+         <p>Элемент <code>&lt;h1&gt;</code> определяет заголовок (сокращенно от <em>heading - заголовок</em>). Он имеет <strong>начальный тег</strong> <code>&lt;h1&gt;</code> и <strong>конечный тег</strong> <code>&lt;/h1&gt;</code>. Содержание (<strong>контент</strong>) элемента: My First Heading.</p>
+         <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:mediumblue">&gt;</span></span>My First Heading<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span>
+            </div>
+         </div>
+         <p>Элемент <code>&lt;p&gt;</code> определяет параграф (сокращенно от <em>paragraph - абзац, параграф</em>). Он имеет начальный тег <code>&lt;p&gt;</code> и конечный тег <code>&lt;/p&gt;</code>. Содержание (<strong>контент</strong>) элемента: My first paragraph.</p>
+         <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>My first paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span>
+            </div>
+         </div>
+         <hr>
+         <h3>Не забывайте конечный тег</h3>
+         <p>Некоторые элементы <strong>HTML</strong> будут отображаться правильно, даже если вы забыли <strong>конечный тег</strong>:</p>
+         <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br>
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>This is a paragraph<br>
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>This is a paragraph<br>
+               <br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_no_endtag" target="_blank" rel="nofollow">Попробуйте сами »</a>
+         </div><br>
+         <p>Приведённый выше пример работает во всех браузерах, поскольку <strong>закрывающий тег</strong> считается необязательным.</p>
+         <p>Никогда не полагайтесь на это. Иначе это может привести к неожиданным результатам и / или ошибкам, если вы забудете <strong>конечный тег</strong>.</p>
+         <hr>
+         <h3>Пустые элементы HTML</h3>
+         <p>Элементы <strong>HTML</strong> без содержания называются <strong>пустыми элементами</strong>.</p>
+         <p><code>&lt;br&gt;</code> - это пустой элемент без закрывающего тега (тег <strong>&lt;br&gt;</strong> определяет разрыв строки):</p>
+         <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>This is a <span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span> paragraph with a line break.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elements_br" target="_blank" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <p>Пустые элементы могут быть "закрыты" в начальном теге: <code>&lt;br /&gt;</code>.</p>
+         <p><strong>HTML5</strong> не требует закрытия пустых элементов. Но если вы хотите более суровой проверки, или если вам необходимо сделать ваш документ читаемым XML-парсерами, вы должны закрыть все <strong>HTML-элементы</strong> надлежащим образом.</p>
+         <hr>
+         <h2>Используйте строчные теги</h2>
+         <p>Теги <strong>HTML</strong> не чувствительны к регистру: <code>&lt;P&gt;</code> (в большом регистре) означает то же, что и <code>&lt;p&gt;</code> (в маленьком регистре).</p>
+         <p>Стандарт <strong>HTML5</strong> не требует использования тегов в нижнем регистре, но <em>W3C</em> рекомендует нижний регистр для написания <strong>HTML-кода</strong> и требует нижнего регистра для более строгих типов документов, таких как <strong>XHTML</strong>.</p>
+         <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> В <strong>W3Schools</strong> всегда используют теги нижнего регистра.</p>
+         </div>
+         <hr>
+         
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html_basic.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html_attributes.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         
+         <iframe class="predisqus" src="../pages/predisqus.html"></iframe>
+         <!-- Комментарии от Disqus -->
+         <div id="disqus_thread"></div>
+         <script>
+            var disqus_config = function() {
+               this.page.url = html5beginner.github.io; // канонический URL страницы
+               this.page.identifier = html5beginner.github.io / html / html_elements.html; // уникальный идентификатор страницы
+            };
+            (function() { // Не редактировать ниже этой линии
+               var d = document,
+                  s = d.createElement('script');
+               s.src = 'https://html5beginner-1.disqus.com/embed.js';
+               s.setAttribute('data-timestamp', +new Date());
+               (d.head || d.body).appendChild(s);
+            })();
+         </script>
+         <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+         <!--  / Комментарии от Disqus -->
+      </div>
+      <!-- / CONTENT -->
+      <div class="right-sidebar">
+         <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+      </div>
+   </main>
+   <footer>
+      <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+   </footer>
+</body>
+
+</html>

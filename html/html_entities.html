@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <title>HTML Сущности. Символьные объекты. Курсы W3schools на русском. Уроки для начинающих</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="keywords" content="HTML,CSS,уроки,для начинающих,html5,css3,сущности,символы,символьные,объекты,знаки,значки,web,веб,страница,w3schools,на русском,языке" />
+   <meta name="description" content="HTML Сущности. Символы и символьные объекты на веб-страницах. Как создавать символьные объекты на веб-страницах? W3Schools на русском языке. Учебник для начинающих" />
+   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+   <link rel="stylesheet" href="../styles/style.css" />
+   <link rel="stylesheet" href="../styles/ws.css" />
+   <link rel="stylesheet" href="../styles/w3colors.css" />
+   <link rel="stylesheet" href="../styles/handheld.css" />
+   <script src="../js/topnav.js"></script>
+</head>
+
+<body>
+   <iframe src="../pages/header.html" class="frame-header"></iframe>
+   <main>
+      <div class="left-sidebar">
+         <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+         <h1>HTML Символьные объекты</h1>
+         <p class="brief"><strong>Курс по основам HTML. W3Schools на русском языке. Уроки для начинающих</strong></p>
+
+         <hr>
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html_computercode_elements.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html_symbols.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         <hr>
+
+         <h2>Символьные объекты на веб-страницах</h2>
+         <p>Зарезервированные символы в <strong>HTML</strong> должны быть заменены символьными объектами. Символы, которых нет на клавиатуре, также могут быть заменены объектами.</p>
+         <h2>HTML символьные объекты</h2>
+         <p>Некоторые символы зарезервированы в <strong>HTML</strong>. Если вы используете в вашем тексте знаки "меньше чем" (&lt;) или "больше чем" (&gt;), браузер может смешивать их с тегами. Символьные объекты используются для отображения зарезервированных символов в <strong>HTML</strong>.</p>
+         <p>Структура написания символа выглядит так:</p>
+         <div class="w3-example">
+            <div class="w3-border-green w3-code">
+               &amp;<i>название_символа</i>;
+               <p>или</p>
+               &amp;#<i>номер_символа</i>;
+            </div>
+         </div>
+         <p>Чтобы отобразить знак «меньше» (&lt;), мы должны написать: <code>&amp;lt;</code> или <code>&amp;#60;</code></p>
+         <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> Преимущество использования имени объекта - название объекта легко запоминается. Недостаток использования названия объекта - браузеры могут не поддерживать все имена объектов, но поддержка номеров хорошая.</p>
+         </div>
+         <hr>
+         <h2>Неразрывное пространство &amp;nbsp;</h2>
+         <p>Общим символом, используемым в <strong>HTML</strong>, является неразрывное пространство <code>&amp;nbsp;</code></p>
+         <p><strong>Неразрывное пространство</strong> - это пространство, которое не прорывается в новую строку. Два слова, разделённые неразрывным пространством, слипаются вместе (не разбиваются на новую строку). Это удобно, когда слова разделяются.</p>
+         <p>Примеры:</p>
+         <ul>
+            <li>§ 10
+            <li>10 км / час
+            <li>10 PM
+         </ul>
+         <p>Другое распространённое использование неразрывного пространства состоит в том, чтобы запретить браузерам отсекать пробелы в HTML-страницах. Если вы пишете 10 пробелов в вашем тексте (с помощью клавиши "Пробел"), браузер удалит 9 из них. Чтобы добавить настоящие пробелы к тексту, можно воспользоваться символьным объектом <code>&amp;nbsp;</code>.</p>
+         <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> Неразрывный дефис (<a href="../charsets/ref_utf_punctuation.html">&amp;#8209;</a>) позволяет использовать дефис (-), который не разрывается.</p>
+         </div>
+         <hr>
+         <h2>Некоторые другие полезные символьные HTML объекты</h2>
+         <table class="w3-table-all">
+            <tbody>
+               <tr>
+                  <th>Результат</th>
+                  <th>Описание</th>
+                  <th>Название символьного объекта</th>
+                  <th>Номер символьного объекта</th>
+               </tr>
+               <tr>
+                  <td>&nbsp;</td>
+                  <td>неразрывное пространство</td>
+                  <td>&amp;nbsp;</td>
+                  <td>&amp;#160;</td>
+               </tr>
+               <tr>
+                  <td>&lt;</td>
+                  <td>меньше чем</td>
+                  <td>&amp;lt;</td>
+                  <td>&amp;#60;</td>
+               </tr>
+               <tr>
+                  <td>&gt;</td>
+                  <td>больше чем</td>
+                  <td>&amp;gt;</td>
+                  <td>&amp;#62;</td>
+               </tr>
+               <tr>
+                  <td>&amp;</td>
+                  <td>амперсанд</td>
+                  <td>&amp;amp;</td>
+                  <td>&amp;#38;</td>
+               </tr>
+               <tr>
+                  <td>"</td>
+                  <td>двойные кавычки</td>
+                  <td>&amp;quot;</td>
+                  <td>&amp;#34;</td>
+               </tr>
+               <tr>
+                  <td>'</td>
+                  <td>одинарные кавычки (апостроф)</td>
+                  <td>&amp;apos;</td>
+                  <td>&amp;#39;</td>
+               </tr>
+               <tr>
+                  <td>¢</td>
+                  <td>цент</td>
+                  <td>&amp;cent;</td>
+                  <td>&amp;#162;</td>
+               </tr>
+               <tr>
+                  <td>£</td>
+                  <td>фунт</td>
+                  <td>&amp;pound;</td>
+                  <td>&amp;#163;</td>
+               </tr>
+               <tr>
+                  <td>¥</td>
+                  <td>ена</td>
+                  <td>&amp;yen;</td>
+                  <td>&amp;#165;</td>
+               </tr>
+               <tr>
+                  <td>€</td>
+                  <td>евро</td>
+                  <td>&amp;euro;</td>
+                  <td>&amp;#8364;</td>
+               </tr>
+               <tr>
+                  <td>©</td>
+                  <td>авторское право</td>
+                  <td>&amp;copy;</td>
+                  <td>&amp;#169;</td>
+               </tr>
+               <tr>
+                  <td>®</td>
+                  <td>зарегистрированный товарный знак</td>
+                  <td>&amp;reg;</td>
+                  <td>&amp;#174;</td>
+               </tr>
+            </tbody>
+         </table>
+         <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> Названия символьных объектов чувствительны к регистру.</p>
+         </div>
+         <hr>
+         <h2>Объединение диакритических знаков</h2>
+         <p>Диакритический знак - это "глиф", который добавляется к букве. Некоторые диакритические знаки, такие как важность (&nbsp; ̀) и ударение (&nbsp; ́), называются акцентами.</p>
+         <p>Диакритические знаки могут появляться как над, так и под буквой, внутри буквы и между двумя буквами.</p>
+         <p>Диакритические знаки могут использоваться в соединении с буквенно-цифровыми символами для создания символа, который отсутствует в наборе символов (кодировке), используемом на странице.</p>
+         <p>Вот несколько примеров.</p>
+         <table class="w3-table-all">
+            <tbody>
+               <tr>
+                  <th>Знак</th>
+                  <th>Символ</th>
+                  <th>Конструкция</th>
+                  <th>Результат</th>
+               </tr>
+               <tr>
+                  <td>&nbsp;̀</td>
+                  <td>a</td>
+                  <td>a&amp;#768;</td>
+                  <td>à</td>
+               </tr>
+               <tr>
+                  <td>&nbsp;́</td>
+                  <td>a</td>
+                  <td>a&amp;#769;</td>
+                  <td>á</td>
+               </tr>
+               <tr>
+                  <td>̂</td>
+                  <td>a</td>
+                  <td>a&amp;#770;</td>
+                  <td>â</td>
+               </tr>
+               <tr>
+                  <td>&nbsp;̃</td>
+                  <td>a</td>
+                  <td>a&amp;#771;</td>
+                  <td>ã</td>
+               </tr>
+               <tr>
+                  <td>&nbsp;̀</td>
+                  <td>O</td>
+                  <td>O&amp;#768;</td>
+                  <td>Ò</td>
+               </tr>
+               <tr>
+                  <td>&nbsp;́</td>
+                  <td>O</td>
+                  <td>O&amp;#769;</td>
+                  <td>Ó</td>
+               </tr>
+               <tr>
+                  <td>̂</td>
+                  <td>O</td>
+                  <td>O&amp;#770;</td>
+                  <td>Ô</td>
+               </tr>
+               <tr>
+                  <td>&nbsp;̃</td>
+                  <td>O</td>
+                  <td>O&amp;#771;</td>
+                  <td>Õ</td>
+               </tr>
+            </tbody>
+         </table>
+         <p>В следующем разделе этого учебника вы увидите больше <strong>HTML-символов</strong>.</p>
+         <hr>
+
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html_computercode_elements.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html_symbols.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+
+         <iframe class="predisqus" src="../pages/predisqus.html"></iframe>
+         <!-- Комментарии от Disqus -->
+         <div id="disqus_thread"></div>
+         <script>
+            var disqus_config = function() {
+               this.page.url = html5beginner.github.io; // канонический URL страницы
+               this.page.identifier = html5beginner.github.io / html / html_entities.html; // уникальный идентификатор страницы
+            };
+            (function() { // Не редактировать ниже этой линии
+               var d = document,
+                  s = d.createElement('script');
+               s.src = 'https://html5beginner-1.disqus.com/embed.js';
+               s.setAttribute('data-timestamp', +new Date());
+               (d.head || d.body).appendChild(s);
+            })();
+         </script>
+         <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+         <!--  / Комментарии от Disqus -->
+      </div>
+      <!-- / CONTENT -->
+      <div class="right-sidebar">
+         <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+      </div>
+   </main>
+   <footer>
+      <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+   </footer>
+</body>
+
+</html>

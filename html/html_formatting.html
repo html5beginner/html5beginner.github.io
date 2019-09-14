@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>HTML Основы. Форматирование текста. W3schools на русском. Уроки для начинающих</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="HTML,CSS,уроки,для начинающих,html5,css3,форматирование текста,жирный,подчёркнутый,выделенный,важный">
+    <meta name="description" content="HTML Основы. Форматирование текста на веб-страницах. Как необходимо форматировать текст? W3Schools на русском. Учебник для начинающих">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/ws.css">
+    <link rel="stylesheet" href="../styles/w3colors.css">
+    <link rel="stylesheet" href="../styles/handheld.css">
+    <script src="../js/topnav.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" class="frame-header"></iframe>
+<main>
+    <div class="left-sidebar">
+        <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>HTML Форматирование текста</h1>
+        <p class="brief"><strong>Курс по основам HTML. W3Schools на русском языке. Уроки для начинающих</strong></p>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html_styles.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html_quotation_elements.html" title="Следующая страница" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr>
+        <h2>Форматирование текста в HTML. Как сделать форматирование на веб-страницах?</h2>
+        <div class="w3-example">
+            <p>Форматирование текста:</p>
+            <div class="w3-container w3-white">
+                <p><b>This text is bold</b></p>
+                <p><i>This text is italic</i></p>
+                <p>This is<sub> subscript</sub> and <sup>superscript</sup></p>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_intro" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <h2>Элементы форматирования в HTML</h2>
+        <p>В предыдущем уроке вы узнали об <strong>HTML</strong> атрибуте <em>style</em>. <strong>HTML</strong> также определяет специальные элементы для придания тексту <strong>особого значения</strong>. <strong>HTML</strong> использует такие элементы, как <code>&lt;b&gt;</code> и <code>&lt;i&gt;</code> для форматирования вывода, например <strong>жирний</strong> или <em>курсивный</em> текст. Элементы форматирования предназначены для отображения специальных типов текста.</p>
+        <ul>
+            <li><code>&lt;b&gt;</code> - жирный текст
+            <li><code>&lt;strong&gt;</code> - важный текст (семантически важный, выводится жирным)
+            <li><code>&lt;i&gt;</code> - курсивный текст
+            <li><code>&lt;em&gt;</code> - подчёркнутый текст (семантически важный, выводится курсивом)
+            <li><code>&lt;mark&gt;</code> - помеченный (маркированный) текст
+            <li><code>&lt;small&gt;</code> - уменьшенный текст
+            <li><code>&lt;del&gt;</code> - удаленный текст
+            <li><code>&lt;ins&gt;</code> - вставленный текст
+            <li><code>&lt;sub&gt;</code> - текст подстрочный (нижний индекс)
+            <li><code>&lt;sup&gt;</code> - текст надстрочный (верхний индекс)
+        </ul>
+        <hr>
+        <h2>HTML элементы &lt;b&gt; и &lt;strong&gt;</h2>
+        <p>HTML элемент <code>&lt;b&gt;</code> определяет жирный текст без дополнительного значения.</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>b<span style="color:mediumblue">&gt;</span></span>This text is bold<span style="color:brown"><span style="color:mediumblue">&lt;</span>/b<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_b" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <p><strong>HTML</strong> элемент <code>&lt;strong&gt;</code> определяет важный текст с добавлением семантически «сильного» значения.</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>strong<span style="color:mediumblue">&gt;</span></span>This text is strong<span style="color:brown"><span style="color:mediumblue">&lt;</span>/strong<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_strong" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <h2>HTML элементы &lt;i&gt; и &lt;em&gt;</h2>
+        <p><strong>HTML</strong> элемент <code>&lt;i&gt;</code> определяет текст курсивом без дополнительного значения.</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>i<span style="color:mediumblue">&gt;</span></span>This text is italic<span style="color:brown"><span style="color:mediumblue">&lt;</span>/i<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_i" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <p><strong>HTML</strong> элемент <code>&lt;em&gt;</code> определяет подчёркнутый текст с дополнительным смысловым значением.</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>em<span style="color:mediumblue">&gt;</span></span>This text is
+                emphasized<span style="color:brown"><span style="color:mediumblue">&lt;</span>/em<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_em" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> Браузеры отображают <code>&lt;strong&gt;</code> как <code>&lt;b&gt;</code> (выделяют жирным шрифтом), а <code>&lt;em&gt;</code> как <code>&lt;i&gt;</code> (выделяют курсивным шрифтом). Однако, существует разница в значении этих тегов: <code>&lt;b&gt;</code> и <code>&lt;i&gt;</code> лишь отображаются жирным и курсивным текстом, но теги <code>&lt;strong&gt;</code> и <code>&lt;em&gt;</code> означают, что текст "важный" по значению.</p>
+        </div>
+        <hr>
+        <h2>HTML элемент &lt;small&gt;</h2>
+        <p><strong>HTML</strong> элемент <code>&lt;small&gt;</code> определяет меньший текст (по сравнению с текстом по умолчанию):</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>h2<span style="color:mediumblue">&gt;</span></span>HTML
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>small<span style="color:mediumblue">&gt;</span></span>Small<span style="color:brown"><span style="color:mediumblue">&lt;</span>/small<span style="color:mediumblue">&gt;</span></span> Formatting<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h2<span style="color:mediumblue">&gt;</span></span><br>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_small" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <h2>HTML элемент &lt;mark&gt;</h2>
+        <p><strong>HTML</strong> элемент <code>&lt;mark&gt;</code> определяет <mark>помеченный</mark> (<mark>маркированный</mark>) текст (по умолчанию - выделяется желтым цветом):</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>h2<span style="color:mediumblue">&gt;</span></span>HTML
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>mark<span style="color:mediumblue">&gt;</span></span>Marked<span style="color:brown"><span style="color:mediumblue">&lt;</span>/mark<span style="color:mediumblue">&gt;</span></span> Formatting<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h2<span style="color:mediumblue">&gt;</span></span><br>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_mark" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <h2>HTML элемент &lt;del&gt;</h2>
+        <p>HTML элемент <code>&lt;del&gt;</code> определяет удалённый (изъятый) текст. По умолчанию отображается зачёркнутым.</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>My favorite color is <span style="color:brown"><span style="color:mediumblue">&lt;</span>del<span style="color:mediumblue">&gt;</span></span>blue<span style="color:brown"><span style="color:mediumblue">&lt;</span>/del<span style="color:mediumblue">&gt;</span></span> red.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_del" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <h2>HTML элемент &lt;ins&gt;</h2>
+        <p><strong>HTML</strong> элемент <code>&lt;ins&gt;</code> определяет вставленный (добавленный) текст. По умолчанию отображается подчёркнутым.</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>My favorite
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>ins<span style="color:mediumblue">&gt;</span></span>color<span style="color:brown"><span style="color:mediumblue">&lt;</span>/ins<span style="color:mediumblue">&gt;</span></span> is red.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_ins" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <h2>HTML элемент &lt;sub&gt;</h2>
+        <p>HTML элемент <code>&lt;sub&gt;</code> определяет подстрочный текст (нижнего индекса).</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>This is <span style="color:brown"><span style="color:mediumblue">&lt;</span>sub<span style="color:mediumblue">&gt;</span></span>subscripted<span style="color:brown"><span style="color:mediumblue">&lt;</span>/sub<span style="color:mediumblue">&gt;</span></span> text.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_sub" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <h2>HTML элемент &lt;sup&gt;</h2>
+        <p><strong>HTML</strong> элемент <code>&lt;sup&gt;</code> определяет надстрочный текст (верхнего индекса).</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>This is <span style="color:brown"><span style="color:mediumblue">&lt;</span>sup<span style="color:mediumblue">&gt;</span></span>superscripted<span style="color:brown"><span style="color:mediumblue">&lt;</span>/sup<span style="color:mediumblue">&gt;</span></span> text.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_sup" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div><hr>
+        <div class="w3-container w3-dark-grey w3-padding">
+            <h2 class="heading">Проверьте себя с помощью упражнений!</h2>
+            <div class="w3-bar w3-margin-bottom">
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_formatting1" target="_blank" rel="nofollow">Упражнение 1 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_formatting2" target="_blank" rel="nofollow">Упражнение 2 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_formatting3" target="_blank" rel="nofollow">Упражнение 3 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_formatting4" target="_blank" rel="nofollow">Упражнение 4 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_formatting5" target="_blank" rel="nofollow">Упражнение 5 »</a>
+            </div>
+        </div><hr>
+        <h2>HTML элементы форматирования текста</h2>
+        <table class="w3-table-all">
+            <tbody><tr>
+                <th>Тег</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td><a href="../tags/tag_b.html" target="_blank" rel="nofollow"><code>&lt;b&gt;</code></a></td>
+                <td>Определяет жирный текст</td>
+            </tr>
+            <tr>
+                <td><a href="../tags/tag_em.html" target="_blank" rel="nofollow"><code>&lt;em&gt;</code></a></td>
+                <td>Определяет важно подчёркнутый текст</td>
+            </tr>
+            <tr>
+                <td><a href="../tags/tag_i.html" target="_blank" rel="nofollow"><code>&lt;i&gt;</code></a></td>
+                <td>Определяет курсивный текст</td>
+            </tr>
+            <tr>
+                <td><a href="../tags/tag_small.html" target="_blank" rel="nofollow"><code>&lt;small&gt;</code></a></td>
+                <td>Определяет уменьшенный текст</td>
+            </tr>
+            <tr>
+                <td><a href="../tags/tag_strong.html" target="_blank" rel="nofollow"><code>&lt;strong&gt;</code></a></td>
+                <td>Определяет важный по значению текст</td>
+            </tr>
+            <tr>
+                <td><a href="../tags/tag_sub.html" target="_blank" rel="nofollow"><code>&lt;sub&gt;</code></a></td>
+                <td>Определяет подстрочный текст</td>
+            </tr>
+            <tr>
+                <td><a href="../tags/tag_sup.html" target="_blank" rel="nofollow"><code>&lt;sup&gt;</code></a></td>
+                <td>Определяет надстрочный текст</td>
+            </tr>
+            <tr>
+                <td><a href="../tags/tag_ins.html" target="_blank" rel="nofollow"><code>&lt;ins&gt;</code></a></td>
+                <td>Определяет вставленный текст</td>
+            </tr>
+            <tr>
+                <td><a href="../tags/tag_del.html" target="_blank" rel="nofollow"><code>&lt;del&gt;</code></a></td>
+                <td>Определяет удаленный текст</td>
+            </tr>
+            <tr>
+                <td><a href="../tags/tag_mark.html" target="_blank" rel="nofollow"><code>&lt;mark&gt;</code></a></td>
+                <td>Определяет помеченный/маркированный текст</td>
+            </tr>
+            </tbody>
+        </table><hr>
+        <h3>Справочник HTML тегов</h3>
+        <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> Для получения полного списка всех доступных <strong>HTML</strong> тегов, посетите <a
+                    href="../tags/element_reference.html" target="_blank">Справочник <strong>HTML</strong> тегов</a>.</p>
+        </div>
+        <hr>
+        
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html_styles.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html_quotation_elements.html" title="Следующая страница" rel="next">Next ❯</a>
+        </div>
+        
+        <iframe class="predisqus" src="../pages/predisqus.html"></iframe>
+         <!-- Комментарии от Disqus -->
+         <div id="disqus_thread"></div>
+         <script>
+            var disqus_config = function() {
+               this.page.url = html5beginner.github.io; // канонический URL страницы
+               this.page.identifier = html5beginner.github.io / html / html_formatting.html; // уникальный идентификатор страницы
+            };
+            (function() { // Не редактировать ниже этой линии
+               var d = document,
+                  s = d.createElement('script');
+               s.src = 'https://html5beginner-1.disqus.com/embed.js';
+               s.setAttribute('data-timestamp', +new Date());
+               (d.head || d.body).appendChild(s);
+            })();
+         </script>
+         <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+         <!--  / Комментарии от Disqus -->
+    </div>
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>

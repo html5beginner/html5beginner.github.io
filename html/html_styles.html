@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <title>HTML Основы. Стили. W3schools на русском. Уроки для начинающих</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="keywords" content="HTML,CSS,уроки,для начинающих,html5,css3,стили,каскадная,таблица,стилей" />
+   <meta name="description" content="HTML Основы. Стили на веб-страницах. Как подключить каскадную таблицу стилей в HTML? W3schools на русском языке. Учебник для начинающих" />
+   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+   <link rel="stylesheet" href="../styles/style.css" />
+   <link rel="stylesheet" href="../styles/ws.css" />
+   <link rel="stylesheet" href="../styles/w3colors.css">
+   <link rel="stylesheet" href="../styles/handheld.css">
+   <script src="../js/topnav.js"></script>
+</head>
+
+<body>
+   <iframe src="../pages/header.html" class="frame-header"></iframe>
+   <main>
+      <div class="left-sidebar">
+         <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+         <h1>HTML. Стили</h1>
+         <p class="brief"><strong>Курс по основам HTML. W3Schools на русском языке. Уроки для начинающих</strong></p>
+         <hr>
+         <!-- buttons prev - next -->
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html_paragraphs.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html_formatting.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         <!-- / buttons prev - next -->
+         <hr>
+         <h2>Стили в HTML. Как создать каскадную таблицу стилей (CSS) на веб-сайте?</h2>
+         <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-container w3-white">
+               <p style="font-size:20px;color:red;">I am Red</p>
+               <p style="font-size:24px;color:blue; margin:5px 0">I am Blue</p>
+               <p style="font-size:36px;margin:10px 0">I am Big</p>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_intro" target="_blank" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+         <h2>HTML Атрибут style</h2>
+         <p>Установка стиля <strong>HTML</strong> элемента может быть выполнена с помощью атрибута <code class="w3-codespan">style</code>. Атрибут <code class="w3-codespan">style</code> в <strong>HTML</strong> имеет такой <strong>синтаксис</strong>:</p>
+         <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>tagname<span style="color:red">
+                     style<span style="color:mediumblue">="<em>property</em>:<em>value;</em>"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+         </div>
+         <hr>
+         <p>где <i>tagname</i> - название тега, <i>property</i> - это свойство, <i>value</i> - это значение.</p>
+         <div class="w3-panel w3-note">
+            <p><b>Примечание:</b> Подробнее о <strong>CSS</strong> вы узнаете далее в этом <a href="../css/css_tutorial.html" target="_blank">Учебнике по CSS</a>.</p>
+         </div>
+         <hr>
+         <h2>HTML Background Color - Цвет фона</h2>
+         <p>Свойство <code class="w3-codespan">background-color</code> определяет цвет фона для элемента <strong>HTML</strong>. В этом примере для страницы установлен фон (background color): <span style="background-color:powderblue">powderblue</span> (голубой цвет):</p>
+         <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:red"> style<span style="color:mediumblue">="background-color:powderblue;"</span></span><span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:mediumblue">&gt;</span></span>This is a heading<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>This is a paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_background-color" target="_blank" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+         <h2>HTML Color - Цвет текста</h2>
+         <p>Свойство <code class="w3-codespan">color</code> определяет цвет текста для элемента <strong>HTML</strong>:</p>
+         <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:red"> style<span style="color:mediumblue">="color:blue;"</span></span><span style="color:mediumblue">&gt;</span></span>This is a heading<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br>
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:red"> style<span style="color:mediumblue">="color:red;"</span></span><span style="color:mediumblue">&gt;</span></span>This is a paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_color" target="_blank" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+         <h2>HTML Fonts - Шрифты</h2>
+         <p>Свойство <code class="w3-codespan">font-family</code> определяет семейство шрифта, который будет использоваться для элемента <strong>HTML</strong>:</p>
+         <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:red"> style<span style="color:mediumblue">="font-family:verdana;"</span></span><span style="color:mediumblue">&gt;</span></span>This is a heading<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:red"> style<span style="color:mediumblue">="font-family:courier;"</span></span><span style="color:mediumblue">&gt;</span></span>This is a paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_font-family" target="_blank" rel="nofollow">Попробуйте сам »</a>
+         </div>
+         <hr>
+         <h2>HTML Font-size - Размер шрифта</h2>
+         <p>Свойство <code class="w3-codespan">font-size</code> определяет размер текста для элемента <strong>HTML</strong>:</p>
+         <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:red"> style<span style="color:mediumblue">="font-size:300%;"</span></span><span style="color:mediumblue">&gt;</span></span>This is a heading<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:red">
+                     style<span style="color:mediumblue">="font-size:160%;"</span></span><span style="color:mediumblue">&gt;</span></span>This is a paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_font-size" target="_blank" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+         <h2>HTML Text-align - Выравнивание текста</h2>
+         <p>Свойство <code class="w3-codespan">text-align</code> определяет горизонтальное выравнивание текста для элемента <strong>HTML</strong>:</p>
+         <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:red"> style<span style="color:mediumblue">="text-align:center;"</span></span><span style="color:mediumblue">&gt;</span></span>Centered Heading<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br>
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:red"> style<span style="color:mediumblue">="text-align:center;"</span></span><span style="color:mediumblue">&gt;</span></span>Centered paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_text-align" target="_blank" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+         <h3>Резюме раздела</h3>
+         <ul>
+            <li>Используйте атрибут <code class="w3-codespan">style</code> для стилизации <strong>HTML-элементов</strong>
+            <li>Используйте <code class="w3-codespan">background-color</code> для присвоения цвета фону
+            <li>Используйте <code class="w3-codespan">color</code> для присвоения цвета тексту
+            <li>Используйте <code class="w3-codespan">font-family</code> для присвоения семейства шрифтов тексту
+            <li>Используйте <code class="w3-codespan">font-size</code> для присвоения размера тексту
+            <li>Используйте <code class="w3-codespan">text-align</code> для горизонтального выравнивания текста
+         </ul>
+         <hr>
+         <div class="w3-container w3-dark-grey w3-padding">
+            <h2 class="heading">Проверьте себя с помощью упражнений!</h2>
+            <div class="w3-bar w3-margin-bottom">
+               <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_styles1" target="_blank" rel="nofollow">Упражнение 1 »</a>
+               <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_styles2" target="_blank" rel="nofollow">Упражнение 2 »</a>
+               <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_styles3" target="_blank" rel="nofollow">Упражнение 3 »</a>
+               <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_styles4" target="_blank" rel="nofollow">Упражнение 4 »</a>
+               <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_styles5" target="_blank" rel="nofollow">Упражнение 5 »</a>
+               <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_styles6" target="_blank" rel="nofollow">Упражнение 6 »</a>
+            </div>
+         </div>
+         <hr>
+         <h2>Справочник HTML тегов</h2>
+         <p><strong>Справочник HTML</strong> тегов <em>W3Schools</em> содержит дополнительную информацию про элементы <strong>HTML</strong> и их атрибуты.</p>
+         <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> Для получения полного списка всех доступных <strong>HTML</strong> тегов, посетите <a href="../tags/element_reference.html" target="_blank">Справочник <strong>HTML</strong> тегов</a>.</p>
+         </div>
+         <hr>
+         
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html_paragraphs.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html_formatting.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         
+         <iframe class="predisqus" src="../pages/predisqus.html"></iframe>
+         <!-- Комментарии от Disqus -->
+         <div id="disqus_thread"></div>
+         <script>
+            var disqus_config = function() {
+               this.page.url = html5beginner.github.io; // канонический URL страницы
+               this.page.identifier = html5beginner.github.io / html / html_styles.html; // уникальный идентификатор страницы
+            };
+            (function() { // Не редактировать ниже этой линии
+               var d = document,
+                  s = d.createElement('script');
+               s.src = 'https://html5beginner-1.disqus.com/embed.js';
+               s.setAttribute('data-timestamp', +new Date());
+               (d.head || d.body).appendChild(s);
+            })();
+         </script>
+         <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+         <!--  / Комментарии от Disqus -->
+      </div>
+      <!-- / CONTENT -->
+      <div class="right-sidebar">
+         <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+      </div>
+   </main>
+   <footer>
+      <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+   </footer>
+</body>
+
+</html>

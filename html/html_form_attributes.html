@@ -1,104 +1,99 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <title>HTML. Атрибуты ввода. Урок №37. W3schools на русском. Основы HTML5 для начинающих</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="keywords" content="HTML,CSS,уроки,для начинающих,html5,ввода,атрибуты,input,w3schools,на русском языке" />
-    <meta name="description" content="Урок 37. Основы HTML. Атрибуты ввода. Какие бывают input атрибуты на веб-страницах? W3Schools на русском языке. Учебник для начинающих" />
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="stylesheet" href="../styles/ws.css" />
-    <link rel="stylesheet" href="../styles/handheld.css" />
-    <link rel="canonical" href="https://html5beginner.github.io/" />
-    <meta property="og:title" content="HTML. Атрибуты ввода. Урок №37. W3schools на русском. Основы HTML5 для начинающих" />
-    <meta property="og:type" content="веб-сайт" /> <!--описывает тип объекта на странице-->
-    <meta property="og:url" content="https://html5beginner.github.io/" /><!--адрес сайта-->
-    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
-    <meta property="og:description" content="Урок 37. Основы HTML. Атрибуты ввода. Какие бывают input атрибуты на веб-страницах? W3Schools на русском языке. Учебник для начинающих" />
-    <meta property="og:locale" content="ru" /> <!--мова сайту-->
-    <meta property="og:site_name" content="HTML5Beginners - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
-    <script src="../js/topnav.js"></script>
+   <title>HTML Атрибуты ввода. Уроки для начинающих. W3schools на русском</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="keywords" content="HTML,CSS,уроки,для начинающих,html5,ввода,атрибуты,input,w3schools,на русском языке" />
+   <meta name="description" content="Основы HTML. Атрибуты ввода. Какие бывают input атрибуты на веб-страницах? W3Schools на русском языке. Учебник для начинающих" />
+   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+   <link rel="stylesheet" href="../styles/style.css" />
+   <link rel="stylesheet" href="../styles/ws.css" />
+   <link rel="stylesheet" href="../styles/w3colors.css" />
+   <link rel="stylesheet" href="../styles/handheld.css" />
+   <script src="../js/topnav.js"></script>
 </head>
+
 <body>
-<iframe src="../pages/header.html" class="frame-header"></iframe>
-<main>
-    <div class="left-sidebar">
-        <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
-    </div>
-    <!-- CONTENT -->
-    <div class="content">
-        <h1>Урок. HTML Input Attributes. Атрибуты ввода</h1>
-        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
-        <hr>
-        <!-- buttons prev - next -->
-        <div class="w3-clear nextprev">
-            <a class="w3-left w3-btn" href="html_form_input_types.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
-            <a class="w3-right w3-btn" href="html5_intro.html" title="Наступна сторінка" rel="next">Next ❯</a>
-        </div>
-        <!-- / buttons prev - next -->
-        <hr>
-        <h2>Атрибут value (значения)</h2>
-        <p>Атрибут <code class="w3-codespan">value</code> определяет начальное значениие для поля ввода:</p>
-        <div class="w3-example">
+   <iframe src="../pages/header.html" class="frame-header"></iframe>
+   <main>
+      <div class="left-sidebar">
+         <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+         <h1>HTML Input Attributes. Атрибуты ввода</h1>
+         <p class="brief"><strong>Курс по основам HTML. W3Schools на русском языке. Уроки для начинающих</strong></p>
+         <hr>
+         
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html_form_input_types.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html5_intro.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         
+         <hr>
+         <h2>Атрибут value (значения)</h2>
+         <p>Атрибут <code class="w3-codespan">value</code> определяет начальное значениие для поля ввода:</p>
+         <div class="w3-example">
             <h3>Пример:</h3>
             <div class="w3-code">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">=""</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br> &nbsp; First name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="firstname"</span> value<span class="attributevaluecolor" style="color:mediumblue">="John"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">=""</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br> &nbsp; First name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="firstname"</span> value<span class="attributevaluecolor" style="color:mediumblue">="John"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
             </div>
             <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_attributes_value" target="_blank">Попробуйте сами »</a>
-        </div>
-        <hr>
-        <h2>Атрибут readonly (только для чтения)</h2>
-        <p>Атрибут <code class="w3-codespan">readonly</code> указывает, что поле ввода только для чтения (не может быть изменено):</p>
-        <div class="w3-example">
+         </div>
+         <hr>
+         <h2>Атрибут readonly (только для чтения)</h2>
+         <p>Атрибут <code class="w3-codespan">readonly</code> указывает, что поле ввода только для чтения (не может быть изменено):</p>
+         <div class="w3-example">
             <h3>Пример:</h3>
             <div class="w3-code">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">=""</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br> &nbsp; First name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="firstname"</span> value<span class="attributevaluecolor" style="color:mediumblue">="John"</span> readonly</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">=""</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br> &nbsp; First name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="firstname"</span> value<span class="attributevaluecolor" style="color:mediumblue">="John"</span> readonly</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
             </div>
             <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_attributes_readonly" target="_blank">Попробуйте сами »</a>
-        </div>
-        <hr>
-        <h2>Атрибут disabled (выключено)</h2>
-        <p>Атрибут <code class="w3-codespan">disabled</code> указывает, что поле ввода выключено.</p>
-        <p>Выключенное поле ввода нельзя использовать и невозможно кликнуть, а его значение не отправляется во время отправки формы:</p>
-        <div class="w3-example">
+         </div>
+         <hr>
+         <h2>Атрибут disabled (выключено)</h2>
+         <p>Атрибут <code class="w3-codespan">disabled</code> указывает, что поле ввода выключено.</p>
+         <p>Выключенное поле ввода нельзя использовать и невозможно кликнуть, а его значение не отправляется во время отправки формы:</p>
+         <div class="w3-example">
             <h3>Пример:</h3>
             <div class="w3-code">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">=""</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br> &nbsp; First name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="firstname"</span>
- value<span class="attributevaluecolor" style="color:mediumblue">="John"</span> disabled</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">=""</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br> &nbsp; First name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="firstname"</span>
+                     value<span class="attributevaluecolor" style="color:mediumblue">="John"</span> disabled</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
             </div>
             <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_attributes_disabled" target="_blank">Попробуйте сами »</a>
-        </div>
-        <hr>
-        <h2>Атрибут size (размер)</h2>
-        <p>Атрибут <code class="w3-codespan">size</code> определяет размер (в символах) поля ввода:</p>
-        <div class="w3-example">
+         </div>
+         <hr>
+         <h2>Атрибут size (размер)</h2>
+         <p>Атрибут <code class="w3-codespan">size</code> определяет размер (в символах) поля ввода:</p>
+         <div class="w3-example">
             <h3>Пример:</h3>
             <div class="w3-code">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">=""</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br> &nbsp; First name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="firstname"</span> value<span class="attributevaluecolor" style="color:mediumblue">="John"</span> size<span class="attributevaluecolor" style="color:mediumblue">="40"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">=""</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br> &nbsp; First name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="firstname"</span> value<span class="attributevaluecolor" style="color:mediumblue">="John"</span> size<span class="attributevaluecolor" style="color:mediumblue">="40"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
             </div>
             <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_attributes_size" target="_blank">Попробуйте сами »</a>
-        </div>
-        <hr>
-        <h2>Атрибут maxlength (максимальная длина)</h2>
-        <p>Атрибут <code class="w3-codespan">maxlength</code> определяет максимально допустимую длину поля ввода:</p>
-        <div class="w3-example">
+         </div>
+         <hr>
+         <h2>Атрибут maxlength (максимальная длина)</h2>
+         <p>Атрибут <code class="w3-codespan">maxlength</code> определяет максимально допустимую длину поля ввода:</p>
+         <div class="w3-example">
             <h3>Пример:</h3>
             <div class="w3-code">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">=""</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br> &nbsp; First name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="firstname"</span> maxlength<span class="attributevaluecolor" style="color:mediumblue">="10"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">=""</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br> &nbsp; First name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="firstname"</span> maxlength<span class="attributevaluecolor" style="color:mediumblue">="10"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
             </div>
             <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_attributes_maxlength" target="_blank">Попробуйте сами »</a>
-        </div>
-        <p>С помощью атрибута <code class="w3-codespan">maxlength</code> поле ввода не будет принимать больше допустимого числа символов.</p>
-        <p>Атрибут <code class="w3-codespan">maxlength</code> не предоставляет никакого отклика. Если вы хотите отправить сообщение пользователю, вы должны написать JavaScript код.</p>
-        <div class="w3-panel w3-note">
+         </div>
+         <p>С помощью атрибута <code class="w3-codespan">maxlength</code> поле ввода не будет принимать больше допустимого числа символов.</p>
+         <p>Атрибут <code class="w3-codespan">maxlength</code> не предоставляет никакого отклика. Если вы хотите отправить сообщение пользователю, вы должны написать JavaScript код.</p>
+         <div class="w3-panel w3-note">
             <p><strong>Примечание:</strong> Ограничение на входящие данные не является надёжным, а JavaScript предоставляет множество способов добавить незаконный вход. Чтобы безопасно ограничить ввод, он также должен быть проверен принимающей стороной (сервером)!
             </p>
-        </div>
-        <hr>
-        <h2>HTML5 Атрибуты</h2>
-        <p><strong>HTML5</strong> добавил следующие атрибуты для <code class="w3-codespan">&lt;input&gt;</code>:</p>
-        <ul>
+         </div>
+         <hr>
+         <h2>HTML5 Атрибуты</h2>
+         <p><strong>HTML5</strong> добавил следующие атрибуты для <code>&lt;input&gt;</code>:</p>
+         <ul>
             <li>autocomplete</li>
             <li>autofocus</li>
             <li>form</li>
@@ -115,19 +110,19 @@
             <li>placeholder</li>
             <li>required</li>
             <li>step</li>
-        </ul>
-        <p>и следующие атрибуты для <code class="w3-codespan">&lt;form&gt;</code>:</p>
-        <ul>
+         </ul>
+         <p>и следующие атрибуты для <code>&lt;form&gt;</code>:</p>
+         <ul>
             <li>autocomplete</li>
             <li>novalidate</li>
-        </ul>
-        <hr>
-        <h2>Атрибут autocomplete (автозаполнение)</h2>
-        <p>Атрибут <code class="w3-codespan">autocomplete</code> указывает, должна ли форма или поле использовать автозаповнение.</p>
-        <p>Когда автозаполнение включено, браузер автоматически завершает вводимые значения на основе значений, введенных пользователем ранее.</p>
-        <p><b>Совет:</b> Можно иметь автозаполнение "включено" для формы и "выключено" для определённых полей ввода данных, или наоборот.</p>
-        <p>Атрибут <code class="w3-codespan">autocomplete</code> работает с <code class="w3-codespan">&lt;form&gt;</code> и следующими <code class="w3-codespan">&lt;input&gt;</code> типами: text, search, url, tel, email, password, datepickers, range и color.</p>
-        <div class="w3-example">
+         </ul>
+         <hr>
+         <h2>Атрибут autocomplete (автозаполнение)</h2>
+         <p>Атрибут <code class="w3-codespan">autocomplete</code> указывает, должна ли форма или поле использовать автозаповнение.</p>
+         <p>Когда автозаполнение включено, браузер автоматически завершает вводимые значения на основе значений, введенных пользователем ранее.</p>
+         <p><b>Совет:</b> Можно иметь автозаполнение "включено" для формы и "выключено" для определённых полей ввода данных, или наоборот.</p>
+         <p>Атрибут <code class="w3-codespan">autocomplete</code> работает с <code>&lt;form&gt;</code> и следующими <code>&lt;input&gt;</code> типами: text, search, url, tel, email, password, datepickers, range и color.</p>
+         <div class="w3-example">
             <img style="float:right;" src="../images/compatible_opera2020.gif" title="Opera" alt="Opera" width="20" height="20">
             <img style="float:right;" src="../images/compatible_safari2020.gif" title="Safari" alt="Safari" width="20" height="20">
             <img style="float:right;" src="../images/compatible_chrome2020.gif" title="Chrome" alt="Chrome" width="20" height="20">
@@ -136,25 +131,25 @@
             <h3>Пример:</h3>
             <p>Форма HTML с автозаполнением (и без автозаполнения для одного поля ввода):</p>
             <div class="w3-code">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">="/action_page.php"</span> autocomplete<span class="attributevaluecolor" style="color:mediumblue">="on"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp;
-                First name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp;
-                Last name: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="lname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp;
-                E-mail: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="email"</span> name<span class="attributevaluecolor" style="color:mediumblue">="email"</span> autocomplete<span class="attributevaluecolor" style="color:mediumblue">="off"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp;
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">="/action_page.php"</span> autocomplete<span class="attributevaluecolor" style="color:mediumblue">="on"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp;
+               First name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp;
+               Last name: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="lname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp;
+               E-mail: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="email"</span> name<span class="attributevaluecolor" style="color:mediumblue">="email"</span> autocomplete<span class="attributevaluecolor" style="color:mediumblue">="off"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp;
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
             </div>
             <a class="w3-btn w3-margin-bottom" target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_autocomplete">Попробуйте сами »</a>
-        </div>
-        <p><strong>Совет:</strong> В некоторых браузерах вам может понадобиться активировать функцию автозаполнения для этого.</p>
-        <hr>
-        <h2>Атрибут novalidate (не проверяется)</h2>
-        <p>Атрибут <code class="w3-codespan">novalidate</code> является атрибутом <code class="w3-codespan">&lt;form&gt;</code>.</p>
-        <p>При наличие novalidate указывается, что данные формы не должны проверяться, когда они отправляются.</p>
-        <div class="w3-example">
+         </div>
+         <p><strong>Совет:</strong> В некоторых браузерах вам может понадобиться активировать функцию автозаполнения для этого.</p>
+         <hr>
+         <h2>Атрибут novalidate (не проверяется)</h2>
+         <p>Атрибут <code class="w3-codespan">novalidate</code> является атрибутом <code>&lt;form&gt;</code>.</p>
+         <p>При наличии <code class="w3-codespan">novalidate</code> указывается, что данные формы не должны проверяться, когда они отправляются.</p>
+         <div class="w3-example">
             <img style="float:right;" src="../images/compatible_opera2020.gif" title="Opera" alt="Opera" width="20" height="20">
             <img style="float:right;" src="../images/compatible_safari2020.gif" title="Safari" alt="Safari" width="20" height="20">
             <img style="float:right;" src="../images/compatible_chrome2020.gif" title="Chrome" alt="Chrome" width="20" height="20">
@@ -163,19 +158,19 @@
             <h3>Пример:</h3>
             <p>Указывается, что форма не проверяется при отправке:</p>
             <div class="w3-code">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">="/action_page.php"</span> novalidate</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp;
-                E-mail: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="email"</span> name<span class="attributevaluecolor" style="color:mediumblue">="user_email"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp;
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">="/action_page.php"</span> novalidate</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp;
+               E-mail: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="email"</span> name<span class="attributevaluecolor" style="color:mediumblue">="user_email"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp;
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
             </div>
             <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_form_novalidate" target="_blank">Попробуйте сами »</a>
-        </div>
-        <hr>
-        <h2>Атрибут autofocus (автофокус)</h2>
-        <p>Атрибут <code class="w3-codespan">autofocus</code> указывает, что поле ввода должно автоматически получать фокус при загрузке страницы.</p>
-        <div class="w3-example">
+         </div>
+         <hr>
+         <h2>Атрибут autofocus (автофокус)</h2>
+         <p>Атрибут <code class="w3-codespan">autofocus</code> указывает, что поле ввода должно автоматически получать фокус при загрузке страницы.</p>
+         <div class="w3-example">
             <img style="float:right;" src="../images/compatible_opera2020.gif" title="Opera" alt="Opera" width="20" height="20">
             <img style="float:right;" src="../images/compatible_safari2020.gif" title="Safari" alt="Safari" width="20" height="20">
             <img style="float:right;" src="../images/compatible_chrome2020.gif" title="Chrome" alt="Chrome" width="20" height="20">
@@ -184,39 +179,39 @@
             <h3>Пример:</h3>
             <p>Пусть поле ввода "First name" автоматически получает фокус, когда страница загружается:</p>
             <div class="w3-code notranslate htmlHigh">
-                First name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="fname"</span>
-autofocus</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+               First name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="fname"</span>
+                     autofocus</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
             <a class="w3-btn w3-margin-bottom" target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_autofocus">Попробуйте сами »</a>
-        </div>
-        <hr>
-        <h2>Атрибут form (форма)</h2>
-        <p>Атрибут <code class="w3-codespan">form</code> определяет одну или больше форм, к которым принадлежит элемент <code class="w3-codespan">&lt;input&gt;</code></p>
-        <p><b>Совет:</b> Чтобы ссылаться более чем на одну форму, используйте разделённый пробелами список идентификаторов форм.</p>
-        <div class="w3-example">
+         </div>
+         <hr>
+         <h2>Атрибут form (форма)</h2>
+         <p>Атрибут <code class="w3-codespan">form</code> определяет одну или больше форм, к которым принадлежит элемент <code>&lt;input&gt;</code></p>
+         <p><b>Совет:</b> Чтобы ссылаться более чем на одну форму, используйте разделённый пробелами список идентификаторов форм.</p>
+         <div class="w3-example">
             <img style="float:right;" src="../images/compatible_opera2020.gif" title="Opera" alt="Opera" width="20" height="20">
             <img style="float:right;" src="../images/compatible_safari2020.gif" title="Safari" alt="Safari" width="20" height="20">
             <img style="float:right;" src="../images/compatible_chrome2020.gif" title="Chrome" alt="Chrome" width="20" height="20">
             <img style="float:right;" src="../images/compatible_firefox2020.gif" title="Firefox" alt="Firefox" width="20" height="20">
-            <img style="float:right;" src="../images/incompatible_edge2020.gif" title="Internet Explorer" alt="Internet Explorer" width="20" height="20">
+            <img style="float:right;" src="../images/compatible_edge2020.gif" title="Internet Explorer" alt="Internet Explorer" width="20" height="20">
             <h3>Пример:</h3>
             <p>Поле ввода, расположенное вне формы HTML (но которое всё ещё является частью формы):</p>
             <div class="w3-code">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">="/action_page.php"</span> id<span class="attributevaluecolor" style="color:mediumblue">="form1"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp;
-                First name: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp;
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span> value<span class="attributevaluecolor" style="color:mediumblue">="Submit"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <br>
-                Last name: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="lname"</span> form<span class="attributevaluecolor" style="color:mediumblue">="form1"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">="/action_page.php"</span> id<span class="attributevaluecolor" style="color:mediumblue">="form1"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp;
+               First name: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp;
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span> value<span class="attributevaluecolor" style="color:mediumblue">="Submit"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <br>
+               Last name: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="lname"</span> form<span class="attributevaluecolor" style="color:mediumblue">="form1"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
             <a class="w3-btn w3-margin-bottom" target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_form">Попробуйте сами »</a>
-        </div>
-        <hr>
-        <h2>Атрибут formaction (формирование)</h2>
-        <p>Атрибут <code class="w3-codespan">formaction</code> определяет URL-адрес файла, который будет обрабатывать элемент управления вводом, когда форма будет отправлена.</p>
-        <p>Атрибут formaction переопределяет атрибут элемента <code class="w3-codespan">&lt;form&gt;</code>.</p>
-        <p>Атрибут formaction используется с <code class="w3-codespan">type="submit"</code> та <code class="w3-codespan">type="image"</code>.</p>
-        <div class="w3-example">
+         </div>
+         <hr>
+         <h2>Атрибут formaction (формирование)</h2>
+         <p>Атрибут <code class="w3-codespan">formaction</code> определяет URL-адрес файла, который будет обрабатывать элемент управления вводом, когда форма будет отправлена.</p>
+         <p>Атрибут formaction переопределяет атрибут элемента <code>&lt;form&gt;</code>.</p>
+         <p>Атрибут formaction используется с <code class="w3-codespan">type="submit"</code> та <code class="w3-codespan">type="image"</code>.</p>
+         <div class="w3-example">
             <img style="float:right;" src="../images/compatible_opera2020.gif" title="Opera" alt="Opera" width="20" height="20">
             <img style="float:right;" src="../images/compatible_safari2020.gif" title="Safari" alt="Safari" width="20" height="20">
             <img style="float:right;" src="../images/compatible_chrome2020.gif" title="Chrome" alt="Chrome" width="20" height="20">
@@ -225,26 +220,26 @@ autofocus</span><span class="tagcolor" style="color:mediumblue">&gt;</span></spa
             <h3>Пример:</h3>
             <p>HTML форма с двумя кнопками отправки, с разными действиями:</p>
             <div class="w3-code">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">="/action_page.php"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp;
-                First name: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp;
-                Last name: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="lname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp;
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span> value<span class="attributevaluecolor" style="color:mediumblue">="Submit"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp;
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span> formaction<span class="attributevaluecolor" style="color:mediumblue">="/action_page2.php"</span><br>
-&nbsp; value<span class="attributevaluecolor" style="color:mediumblue">="Submit as admin"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">="/action_page.php"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp;
+               First name: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp;
+               Last name: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="lname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp;
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span> value<span class="attributevaluecolor" style="color:mediumblue">="Submit"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp;
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span> formaction<span class="attributevaluecolor" style="color:mediumblue">="/action_page2.php"</span><br>
+                     &nbsp; value<span class="attributevaluecolor" style="color:mediumblue">="Submit as admin"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
             </div>
             <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_formaction" target="_blank">Попробуйте сами »</a>
-        </div>
-        <hr>
-        <h2>Атрибут formenctype (тип формата)</h2>
-        <p>Атрибут <code class="w3-codespan">formenctype</code> указывает, как будут кодироваться данные формы после отправки (лишь для форм с method="post").</p>
-        <p>Атрибут <code class="w3-codespan">formenctype</code> переопределяет атрибут enctype элемента <code class="w3-codespan">&lt;form&gt;</code>.</p>
-        <p>Атрибут <code class="w3-codespan">formenctype</code> используется с <code class="w3-codespan">type="submit"</code> и <code class="w3-codespan">type="image"</code>.</p>
-        <div class="w3-example">
+         </div>
+         <hr>
+         <h2>Атрибут formenctype (тип формата)</h2>
+         <p>Атрибут <code class="w3-codespan">formenctype</code> указывает, как будут кодироваться данные формы после отправки (лишь для форм с method="post").</p>
+         <p>Атрибут <code class="w3-codespan">formenctype</code> переопределяет атрибут <code class="w3-codespan">enctype</code> элемента <code>&lt;form&gt;</code>.</p>
+         <p>Атрибут <code class="w3-codespan">formenctype</code> используется с <code class="w3-codespan">type="submit"</code> и <code class="w3-codespan">type="image"</code>.</p>
+         <div class="w3-example">
             <img style="float:right;" src="../images/compatible_opera2020.gif" title="Opera" alt="Opera" width="20" height="20">
             <img style="float:right;" src="../images/compatible_safari2020.gif" title="Safari" alt="Safari" width="20" height="20">
             <img style="float:right;" src="../images/compatible_chrome2020.gif" title="Chrome" alt="Chrome" width="20" height="20">
@@ -253,24 +248,24 @@ autofocus</span><span class="tagcolor" style="color:mediumblue">&gt;</span></spa
             <h3>Пример:</h3>
             <p>Отправляются данные формы, кодированные по умолчанию (первая кнопка submit), и кодированные как "multipart/form-data" (вторая кнопка submit):</p>
             <div class="w3-code">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">="/action_page_binary.asp"</span> method<span class="attributevaluecolor" style="color:mediumblue">="post"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp;
-                First name: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp;
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span> value<span class="attributevaluecolor" style="color:mediumblue">="Submit"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp;
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span> formenctype<span class="attributevaluecolor" style="color:mediumblue">="multipart/form-data"</span><br>
-&nbsp; value<span class="attributevaluecolor" style="color:mediumblue">="Submit as Multipart/form-data"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">="/action_page_binary.asp"</span> method<span class="attributevaluecolor" style="color:mediumblue">="post"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp;
+               First name: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp;
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span> value<span class="attributevaluecolor" style="color:mediumblue">="Submit"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp;
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span> formenctype<span class="attributevaluecolor" style="color:mediumblue">="multipart/form-data"</span><br>
+                     &nbsp; value<span class="attributevaluecolor" style="color:mediumblue">="Submit as Multipart/form-data"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
             </div>
             <a class="w3-btn w3-margin-bottom" target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_formenctype">Попробуйте сами »</a>
-        </div>
-        <hr>
-        <h2>Атрибут formmethod (метод формы)</h2>
-        <p>Атрибут <code class="w3-codespan">formmethod</code> определяет метод HTTP для отправки данных формы действующему URL.</p>
-        <p>Атрибут <code class="w3-codespan">formmethod</code> переопределяет атрибут метода элемента <code class="w3-codespan">&lt;form&gt;</code>.</p>
-        <p>Атрибут <code class="w3-codespan">formmethod</code> можно использовать с <code class="w3-codespan">type="submit"</code> и <code class="w3-codespan">type="image"</code>.</p>
-        <div class="w3-example">
+         </div>
+         <hr>
+         <h2>Атрибут formmethod (метод формы)</h2>
+         <p>Атрибут <code class="w3-codespan">formmethod</code> определяет метод HTTP для отправки данных формы действующему URL.</p>
+         <p>Атрибут <code class="w3-codespan">formmethod</code> переопределяет атрибут метода элемента <code>&lt;form&gt;</code>.</p>
+         <p>Атрибут <code class="w3-codespan">formmethod</code> можно использовать с <code class="w3-codespan">type="submit"</code> и <code class="w3-codespan">type="image"</code>.</p>
+         <div class="w3-example">
             <img style="float:right;" src="../images/compatible_opera2020.gif" title="Opera" alt="Opera" width="20" height="20">
             <img style="float:right;" src="../images/compatible_safari2020.gif" title="Safari" alt="Safari" width="20" height="20">
             <img style="float:right;" src="../images/compatible_chrome2020.gif" title="Chrome" alt="Chrome" width="20" height="20">
@@ -279,24 +274,24 @@ autofocus</span><span class="tagcolor" style="color:mediumblue">&gt;</span></spa
             <h3>Пример:</h3>
             <p>Вторая кнопка submit заменяет метод HTTP формы::</p>
             <div class="w3-code">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">="/action_page.php"</span> method<span class="attributevaluecolor" style="color:mediumblue">="get"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp;
-                First name: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp;
-                Last name: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="lname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp;
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span> value<span class="attributevaluecolor" style="color:mediumblue">="Submit"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp;
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span> formmethod<span class="attributevaluecolor" style="color:mediumblue">="post"</span> value<span class="attributevaluecolor" style="color:mediumblue">="Submit using POST"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">="/action_page.php"</span> method<span class="attributevaluecolor" style="color:mediumblue">="get"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp;
+               First name: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp;
+               Last name: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="lname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp;
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span> value<span class="attributevaluecolor" style="color:mediumblue">="Submit"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp;
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span> formmethod<span class="attributevaluecolor" style="color:mediumblue">="post"</span> value<span class="attributevaluecolor" style="color:mediumblue">="Submit using POST"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
             </div>
             <a class="w3-btn w3-margin-bottom" target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_formmethod">Попробуйте сами »</a>
-        </div>
-        <hr>
-        <h2>Атрибут formnovalidate (форма без проверки)</h2>
-        <p>Атрибут <code class="w3-codespan">formnovalidate</code> заменяет атрибут novalidate элемента <code class="w3-codespan">&lt;form&gt;</code>.</p>
-        <p>Атрибут <code class="w3-codespan">formnovalidate</code> можно использовать с <code class="w3-codespan">type="submit"</code>.</p>
-        <div class="w3-example">
+         </div>
+         <hr>
+         <h2>Атрибут formnovalidate (форма без проверки)</h2>
+         <p>Атрибут <code class="w3-codespan">formnovalidate</code> заменяет атрибут novalidate элемента <code>&lt;form&gt;</code>.</p>
+         <p>Атрибут <code class="w3-codespan">formnovalidate</code> можно использовать с <code class="w3-codespan">type="submit"</code>.</p>
+         <div class="w3-example">
             <img style="float:right;" src="../images/compatible_opera2020.gif" title="Opera" alt="Opera" width="20" height="20">
             <img style="float:right;" src="../images/compatible_safari2020.gif" title="Safari" alt="Safari" width="20" height="20">
             <img style="float:right;" src="../images/compatible_chrome2020.gif" title="Chrome" alt="Chrome" width="20" height="20">
@@ -305,23 +300,23 @@ autofocus</span><span class="tagcolor" style="color:mediumblue">&gt;</span></spa
             <h3>Пример:</h3>
             <p>Форма с двумя кнопками submit (с проверкой и без):</p>
             <div class="w3-code">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">="/action_page.php"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp;
-                E-mail: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="email"</span> name<span class="attributevaluecolor" style="color:mediumblue">="userid"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp;
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span> value<span class="attributevaluecolor" style="color:mediumblue">="Submit"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp;
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span> formnovalidate value<span class="attributevaluecolor" style="color:mediumblue">="Submit without validation"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">="/action_page.php"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp;
+               E-mail: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="email"</span> name<span class="attributevaluecolor" style="color:mediumblue">="userid"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp;
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span> value<span class="attributevaluecolor" style="color:mediumblue">="Submit"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp;
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span> formnovalidate value<span class="attributevaluecolor" style="color:mediumblue">="Submit without validation"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
             </div>
             <a class="w3-btn w3-margin-bottom" target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_formnovalidate">Попробуйте сами »</a>
-        </div>
-        <hr>
-        <h2>Атрибут formtarget (цель формы)</h2>
-        <p>Атрибут <code class="w3-codespan">formtarget</code> указывает название или ключевое слово, которое указывает, где будет отображаться ответ, полученный после отправки формы.</p>
-        <p>Атрибут <code class="w3-codespan">formtarget</code> переопределяет целевой атрибут элемента <code class="w3-codespan">&lt;form&gt;</code>.</p>
-        <p>Атрибут <code class="w3-codespan">formtarget</code> можно использовать с <code class="w3-codespan">type="submit"</code> и <code class="w3-codespan">type="image"</code>.</p>
-        <div class="w3-example">
+         </div>
+         <hr>
+         <h2>Атрибут formtarget (цель формы)</h2>
+         <p>Атрибут <code class="w3-codespan">formtarget</code> указывает название или ключевое слово, которое указывает, где будет отображаться ответ, полученный после отправки формы.</p>
+         <p>Атрибут <code class="w3-codespan">formtarget</code> переопределяет целевой атрибут элемента <code>&lt;form&gt;</code>.</p>
+         <p>Атрибут <code class="w3-codespan">formtarget</code> можно использовать с <code class="w3-codespan">type="submit"</code> и <code class="w3-codespan">type="image"</code>.</p>
+         <div class="w3-example">
             <img style="float:right;" src="../images/compatible_opera2020.gif" title="Opera" alt="Opera" width="20" height="20">
             <img style="float:right;" src="../images/compatible_safari2020.gif" title="Safari" alt="Safari" width="20" height="20">
             <img style="float:right;" src="../images/compatible_chrome2020.gif" title="Chrome" alt="Chrome" width="20" height="20">
@@ -330,26 +325,26 @@ autofocus</span><span class="tagcolor" style="color:mediumblue">&gt;</span></spa
             <h3>Пример:</h3>
             <p>Форма с двумя кнопками submit, с разными целевыми окнами:</p>
             <div class="w3-code">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">="/action_page.php"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp;
-                First name: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp;
-                Last name: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="lname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp;
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span> value<span class="attributevaluecolor" style="color:mediumblue">="Submit as normal"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span> formtarget<span class="attributevaluecolor" style="color:mediumblue">="_blank"</span><br>
-&nbsp; value<span class="attributevaluecolor" style="color:mediumblue">="Submit to a new window"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">="/action_page.php"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp;
+               First name: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp;
+               Last name: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="lname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp;
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span> value<span class="attributevaluecolor" style="color:mediumblue">="Submit as normal"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span> formtarget<span class="attributevaluecolor" style="color:mediumblue">="_blank"</span><br>
+                     &nbsp; value<span class="attributevaluecolor" style="color:mediumblue">="Submit to a new window"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
             </div>
             <a class="w3-btn w3-margin-bottom" target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_formtarget">Попробуйте сами »</a>
-        </div>
-        <hr>
-        <h2>Атрибуты height и width (высота и ширина)</h2>
-        <p>Атрибуты <code class="w3-codespan">height</code> и <code class="w3-codespan">width</code> определяют высоту и ширину элемента <code class="w3-codespan">&lt;input type="image"&gt;</code>.</p>
-        <div class="w3-panel w3-note">
+         </div>
+         <hr>
+         <h2>Атрибуты height и width (высота и ширина)</h2>
+         <p>Атрибуты <code class="w3-codespan">height</code> и <code class="w3-codespan">width</code> определяют высоту и ширину элемента <code class="w3-codespan">&lt;input type="image"&gt;</code>.</p>
+         <div class="w3-panel w3-note">
             <p>Всегда указывайте размер изображений. Если веб-браузер не знает размера, страница будет мерцать во время загрузки изображений.</p>
-        </div>
-        <div class="w3-example">
+         </div>
+         <div class="w3-example">
             <img style="float:right;" src="../images/compatible_opera2020.gif" title="Opera" alt="Opera" width="20" height="20">
             <img style="float:right;" src="../images/compatible_safari2020.gif" title="Safari" alt="Safari" width="20" height="20">
             <img style="float:right;" src="../images/compatible_chrome2020.gif" title="Chrome" alt="Chrome" width="20" height="20">
@@ -358,39 +353,39 @@ autofocus</span><span class="tagcolor" style="color:mediumblue">&gt;</span></spa
             <h3>Пример:</h3>
             <p>Определить изображение как кнопку submit, с атрибутами высоты и ширины:</p>
             <div class="w3-code">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="image"</span> src<span class="attributevaluecolor" style="color:mediumblue">="img_submit.gif"</span> alt<span class="attributevaluecolor" style="color:mediumblue">="Submit"</span> width<span class="attributevaluecolor" style="color:mediumblue">="48"</span> height<span class="attributevaluecolor" style="color:mediumblue">="48"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="image"</span> src<span class="attributevaluecolor" style="color:mediumblue">="img_submit.gif"</span> alt<span class="attributevaluecolor" style="color:mediumblue">="Submit"</span> width<span class="attributevaluecolor" style="color:mediumblue">="48"</span> height<span class="attributevaluecolor" style="color:mediumblue">="48"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
             </div>
             <a class="w3-btn w3-margin-bottom" target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_height_width">Попробуйте сами »</a>
-        </div>
-        <hr>
-        <h2>Атрибут list (список)</h2>
-        <p>Атрибут <code class="w3-codespan">list</code> ссылается на элемент <code class="w3-codespan">&lt;datalist&gt;</code> который содержит предварительно определённые параметры для элемента <code class="w3-codespan">&lt;input&gt;</code>.</p>
-        <div class="w3-example">
+         </div>
+         <hr>
+         <h2>Атрибут list (список)</h2>
+         <p>Атрибут <code class="w3-codespan">list</code> ссылается на элемент <code>&lt;datalist&gt;</code> который содержит предварительно определённые параметры для элемента <code>&lt;input&gt;</code>.</p>
+         <div class="w3-example">
             <img style="float:right;" src="../images/compatible_opera2020.gif" title="Opera" alt="Opera" width="20" height="20">
             <img style="float:right;" src="../images/incompatible_safari2020.gif" title="Safari" alt="Safari" width="20" height="20">
             <img style="float:right;" src="../images/compatible_chrome2020.gif" title="Chrome" alt="Chrome" width="20" height="20">
             <img style="float:right;" src="../images/compatible_firefox2020.gif" title="Firefox" alt="Firefox" width="20" height="20">
             <img style="float:right;" src="../images/compatible_edge2020.gif" title="Internet Explorer" alt="Internet Explorer" width="20" height="20">
             <h3>Пример:</h3>
-            <p>Элемент &lt;input&gt; с предварительно определёнными значениями в &lt;datalist&gt;:</p>
+            <p>Элемент <code>&lt;input&gt;</code> с предварительно определёнными значениями в <code>&lt;datalist&gt;</code>:</p>
             <div class="w3-code">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> list<span class="attributevaluecolor" style="color:mediumblue">="browsers"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>datalist<span class="attributecolor" style="color:red"> id<span class="attributevaluecolor" style="color:mediumblue">="browsers"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span class="attributevaluecolor" style="color:mediumblue">="Internet Explorer"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span class="attributevaluecolor" style="color:mediumblue">="Firefox"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span class="attributevaluecolor" style="color:mediumblue">="Chrome"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span class="attributevaluecolor" style="color:mediumblue">="Opera"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span class="attributevaluecolor" style="color:mediumblue">="Safari"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/datalist<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> list<span class="attributevaluecolor" style="color:mediumblue">="browsers"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>datalist<span class="attributecolor" style="color:red"> id<span class="attributevaluecolor" style="color:mediumblue">="browsers"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span class="attributevaluecolor" style="color:mediumblue">="Internet Explorer"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span class="attributevaluecolor" style="color:mediumblue">="Firefox"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span class="attributevaluecolor" style="color:mediumblue">="Chrome"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span class="attributevaluecolor" style="color:mediumblue">="Opera"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span class="attributevaluecolor" style="color:mediumblue">="Safari"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/datalist<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
             </div>
             <a class="w3-btn w3-margin-bottom" target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_datalist">Попробуйте сами »</a>
-        </div>
-        <hr>
-        <h2>Атрибуты min и max (минимум и максимум)</h2>
-        <p>Атрибуты <code class="w3-codespan">min</code> и <code class="w3-codespan">max</code> определяют минимальное и максимальное значение для элемента <code class="w3-codespan">&lt;input&gt;</code>.</p>
-        <p>Атрибуты <code class="w3-codespan">min</code> и <code class="w3-codespan">max</code> работают с такими типами input: number, range, date, datetime-local, month, time и week.</p>
-        <div class="w3-example">
+         </div>
+         <hr>
+         <h2>Атрибуты min и max (минимум и максимум)</h2>
+         <p>Атрибуты <code class="w3-codespan">min</code> и <code class="w3-codespan">max</code> определяют минимальное и максимальное значение для элемента <code>&lt;input&gt;</code>.</p>
+         <p>Атрибуты <code class="w3-codespan">min</code> и <code class="w3-codespan">max</code> работают с такими типами input: number, range, date, datetime-local, month, time и week.</p>
+         <div class="w3-example">
             <img style="float:right;" src="../images/compatible_opera2020.gif" title="Opera" alt="Opera" width="20" height="20">
             <img style="float:right;" src="../images/compatible_safari2020.gif" title="Safari" alt="Safari" width="20" height="20">
             <img style="float:right;" src="../images/compatible_chrome2020.gif" title="Chrome" alt="Chrome" width="20" height="20">
@@ -399,19 +394,19 @@ autofocus</span><span class="tagcolor" style="color:mediumblue">&gt;</span></spa
             <h3>Пример:</h3>
             <p>&lt;input&gt; элементы с min и max значениями:</p>
             <div class="w3-code">
-                Enter a date before 1980-01-01:<br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="date"</span> name<span class="attributevaluecolor" style="color:mediumblue">="bday"</span> max<span class="attributevaluecolor" style="color:mediumblue">="1979-12-31"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
-                Enter a date after 2000-01-01:<br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="date"</span> name<span class="attributevaluecolor" style="color:mediumblue">="bday"</span> min<span class="attributevaluecolor" style="color:mediumblue">="2000-01-02"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
-                Quantity (between 1 and 5):<br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="number"</span> name<span class="attributevaluecolor" style="color:mediumblue">="quantity"</span> min<span class="attributevaluecolor" style="color:mediumblue">="1"</span> max<span class="attributevaluecolor" style="color:mediumblue">="5"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+               Enter a date before 1980-01-01:<br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="date"</span> name<span class="attributevaluecolor" style="color:mediumblue">="bday"</span> max<span class="attributevaluecolor" style="color:mediumblue">="1979-12-31"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+               Enter a date after 2000-01-01:<br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="date"</span> name<span class="attributevaluecolor" style="color:mediumblue">="bday"</span> min<span class="attributevaluecolor" style="color:mediumblue">="2000-01-02"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+               Quantity (between 1 and 5):<br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="number"</span> name<span class="attributevaluecolor" style="color:mediumblue">="quantity"</span> min<span class="attributevaluecolor" style="color:mediumblue">="1"</span> max<span class="attributevaluecolor" style="color:mediumblue">="5"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
             <a class="w3-btn w3-margin-bottom" target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_max_min">Попробуйте сами »</a>
-        </div>
-        <hr>
-        <h2>Атрибут multiple (несколько значений)</h2>
-        <p>Атрибут <code class="w3-codespan">multiple</code> указывает, что пользователю разрешено вводить более чем одно значение в элемент <code class="w3-codespan">&lt;input&gt;</code>.</p>
-        <p>Атрибут <code class="w3-codespan">multiple</code> работает с такими типами input: email и file.</p>
-        <div class="w3-example">
+         </div>
+         <hr>
+         <h2>Атрибут multiple (несколько значений)</h2>
+         <p>Атрибут <code class="w3-codespan">multiple</code> указывает, что пользователю разрешено вводить более чем одно значение в элемент <code>&lt;input&gt;</code>.</p>
+         <p>Атрибут <code class="w3-codespan">multiple</code> работает с такими типами input: email и file.</p>
+         <div class="w3-example">
             <img style="float:right;" src="../images/compatible_opera2020.gif" title="Opera" alt="Opera" width="20" height="20">
             <img style="float:right;" src="../images/compatible_safari2020.gif" title="Safari" alt="Safari" width="20" height="20">
             <img style="float:right;" src="../images/compatible_chrome2020.gif" title="Chrome" alt="Chrome" width="20" height="20">
@@ -420,16 +415,16 @@ autofocus</span><span class="tagcolor" style="color:mediumblue">&gt;</span></spa
             <h3>Пример:</h3>
             <p>Поле загрузки файла, которое принимает несколько значений:</p>
             <div class="w3-code notranslate htmlHigh">
-                Select images: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="file"</span> name<span class="attributevaluecolor" style="color:mediumblue">="img"</span> multiple</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+               Select images: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="file"</span> name<span class="attributevaluecolor" style="color:mediumblue">="img"</span> multiple</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
             <a class="w3-btn w3-margin-bottom" target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_multiple">Попробуйте сами »</a>
-        </div>
-        <hr>
-        <h2>Атрибут pattern (шаблон)</h2>
-        <p>Атрибут <code class="w3-codespan">pattern</code> определяет регулярное выражение, в котором проверяется значение элемента <code class="w3-codespan">&lt;input&gt;</code>.</p>
-        <p>Атрибут <code class="w3-codespan">pattern</code> работает с такими типами input: text, search, url, tel, email и password.</p>
-        <p><strong>Совет:</strong> Используйте глобальный атрибут <a href="../tags/att_global_title.html">title</a> для описания шаблона, чтобы помочь пользователю.</p>
-        <p><b>Совет:</b> Узнать больше про <a href="../js/js_regexp.html">регулярные выражения</a> можно в учебнике по JavaScript.</p>
-        <div class="w3-example">
+         </div>
+         <hr>
+         <h2>Атрибут pattern (шаблон)</h2>
+         <p>Атрибут <code class="w3-codespan">pattern</code> определяет регулярное выражение, в котором проверяется значение элемента <code>&lt;input&gt;</code>.</p>
+         <p>Атрибут <code class="w3-codespan">pattern</code> работает с такими типами input: text, search, url, tel, email и password.</p>
+         <p><strong>Совет:</strong> Используйте глобальный атрибут <a href="../tags/att_global_title.html">title</a> для описания шаблона, чтобы помочь пользователю.</p>
+         <p><b>Совет:</b> Узнать больше про <a href="../js/js_regexp.html">регулярные выражения</a> можно в учебнике по JavaScript.</p>
+         <div class="w3-example">
             <img style="float:right;" src="../images/compatible_opera2020.gif" title="Opera" alt="Opera" width="20" height="20">
             <img style="float:right;" src="../images/compatible_safari2020.gif" title="Safari" alt="Safari" width="20" height="20">
             <img style="float:right;" src="../images/compatible_chrome2020.gif" title="Chrome" alt="Chrome" width="20" height="20">
@@ -438,15 +433,15 @@ autofocus</span><span class="tagcolor" style="color:mediumblue">&gt;</span></spa
             <h3>Пример:</h3>
             <p>Поле ввода, которое может содержать лишь три буквы (без номеров или специальных символов):</p>
             <div class="w3-code">
-                Country code: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="country_code"</span> pattern<span class="attributevaluecolor" style="color:mediumblue">="[A-Za-z]{3}"</span> title<span class="attributevaluecolor" style="color:mediumblue">="Three letter country code"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+               Country code: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="country_code"</span> pattern<span class="attributevaluecolor" style="color:mediumblue">="[A-Za-z]{3}"</span> title<span class="attributevaluecolor" style="color:mediumblue">="Three letter country code"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
             <a class="w3-btn w3-margin-bottom" target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_pattern">Попробуйте сами »</a>
-        </div>
-        <hr>
-        <h2>Атрибут placeholder (заполнитель)</h2>
-        <p>Атрибут <code class="w3-codespan">placeholder</code> определяет подсказку, которая описывает ожидаемое значение поля ввода (значение выборки или короткое описание формата).</p>
-        <p>Подсказка отображается в поле ввода, прежде чем пользователь введёт значение.</p>
-        <p>Атрибут <code class="w3-codespan">placeholder</code> работает с такими типами input: text, search, url, tel, email и password.</p>
-        <div class="w3-example">
+         </div>
+         <hr>
+         <h2>Атрибут placeholder (заполнитель)</h2>
+         <p>Атрибут <code class="w3-codespan">placeholder</code> определяет подсказку, которая описывает ожидаемое значение поля ввода (значение выборки или короткое описание формата).</p>
+         <p>Подсказка отображается в поле ввода, прежде чем пользователь введёт значение.</p>
+         <p>Атрибут <code class="w3-codespan">placeholder</code> работает с такими типами input: text, search, url, tel, email и password.</p>
+         <div class="w3-example">
             <img style="float:right;" src="../images/compatible_opera2020.gif" title="Opera" alt="Opera" width="20" height="20">
             <img style="float:right;" src="../images/compatible_safari2020.gif" title="Safari" alt="Safari" width="20" height="20">
             <img style="float:right;" src="../images/compatible_chrome2020.gif" title="Chrome" alt="Chrome" width="20" height="20">
@@ -455,14 +450,14 @@ autofocus</span><span class="tagcolor" style="color:mediumblue">&gt;</span></spa
             <h3>Пример:</h3>
             <p>Поле ввода с текстом placeholder:</p>
             <div class="w3-code">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="fname"</span> placeholder<span class="attributevaluecolor" style="color:mediumblue">="First name"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="fname"</span> placeholder<span class="attributevaluecolor" style="color:mediumblue">="First name"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
             <a class="w3-btn w3-margin-bottom" target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_placeholder">Попробуйте сами »</a>
-        </div>
-        <hr>
-        <h2>Атрибут required (требование)</h2>
-        <p>Атрибут <code class="w3-codespan">required</code> указывает, что поле ввода необходимо заполнить перед подачей формы.</p>
-        <p>Атрибут <code class="w3-codespan">required</code> работает с такими типами input: text, search, url, tel, email, password, date pickers, number, checkbox, radio и file.</p>
-        <div class="w3-example">
+         </div>
+         <hr>
+         <h2>Атрибут required (требование)</h2>
+         <p>Атрибут <code class="w3-codespan">required</code> указывает, что поле ввода необходимо заполнить перед подачей формы.</p>
+         <p>Атрибут <code class="w3-codespan">required</code> работает с такими типами input: text, search, url, tel, email, password, date pickers, number, checkbox, radio и file.</p>
+         <div class="w3-example">
             <img style="float:right;" src="../images/compatible_opera2020.gif" title="Opera" alt="Opera" width="20" height="20">
             <img style="float:right;" src="../images/compatible_safari2020.gif" title="Safari" alt="Safari" width="20" height="20">
             <img style="float:right;" src="../images/compatible_chrome2020.gif" title="Chrome" alt="Chrome" width="20" height="20">
@@ -471,18 +466,18 @@ autofocus</span><span class="tagcolor" style="color:mediumblue">&gt;</span></spa
             <h3>Пример:</h3>
             <p>Поле ввода required:</p>
             <div class="w3-code">
-                Username: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="usrname"</span> required</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+               Username: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="usrname"</span> required</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
             <a class="w3-btn w3-margin-bottom" target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_required">Попробуйте сами »</a>
-        </div>
-        <hr>
-        <h2>Атрибут step (шаг)</h2>
-        <p>Атрибут <code class="w3-codespan">step</code> указывает интервалы действительного числа для элемента <code class="w3-codespan">&lt;input&gt;</code>.</p>
-        <p>Пример: если step="3", действительными числами могут быть -3, 0, 3, 6 и т.д.</p>
-        <div class="w3-panel w3-note">
+         </div>
+         <hr>
+         <h2>Атрибут step (шаг)</h2>
+         <p>Атрибут <code class="w3-codespan">step</code> указывает интервалы действительного числа для элемента <code>&lt;input&gt;</code>.</p>
+         <p>Пример: если step="3", действительными числами могут быть -3, 0, 3, 6 и т.д.</p>
+         <div class="w3-panel w3-note">
             <p><b>Совет:</b> Атрибут step можно использовать вместе с атрибутами max и min, чтобы создать диапазон действительных значений.</p>
-        </div>
-        <p>Атрибут <code class="w3-codespan">step</code> работает с такими типами input: number, range, date, datetime-local, month, time и week.</p>
-        <div class="w3-example">
+         </div>
+         <p>Атрибут <code class="w3-codespan">step</code> работает с такими типами input: number, range, date, datetime-local, month, time и week.</p>
+         <div class="w3-example">
             <img style="float:right;" src="../images/compatible_opera2020.gif" title="Opera" alt="Opera" width="20" height="20">
             <img style="float:right;" src="../images/compatible_safari2020.gif" title="Safari" alt="Safari" width="20" height="20">
             <img style="float:right;" src="../images/compatible_chrome2020.gif" title="Chrome" alt="Chrome" width="20" height="20">
@@ -491,72 +486,74 @@ autofocus</span><span class="tagcolor" style="color:mediumblue">&gt;</span></spa
             <h3>Пример:</h3>
             <p>Поле ввода с точно определёнными промежутками интервалов:</p>
             <div class="w3-code">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="number"</span> name<span class="attributevaluecolor" style="color:mediumblue">="points"</span> step<span class="attributevaluecolor" style="color:mediumblue">="3"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="number"</span> name<span class="attributevaluecolor" style="color:mediumblue">="points"</span> step<span class="attributevaluecolor" style="color:mediumblue">="3"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
             <a class="w3-btn w3-margin-bottom" target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_step">Попробуйте сами »</a>
-        </div>
-        <hr>
-        <div class="w3-container w3-dark-grey w3-padding">
-            <h2 style="text-shadow: 1px 1px 1px #000, 1px 1px 1px #000;">Проверьте себя упражнениями</h2>
+         </div>
+         <hr>
+         <div class="w3-container w3-dark-grey w3-padding">
+            <h2 class="heading">Проверьте себя с помощью упражнений</h2>
             <div class="w3-bar w3-margin-bottom">
-                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_form_attributes1" target="_blank" rel="nofollow">Exercise 1 »</a>
-                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_form_attributes2" target="_blank" rel="nofollow">Exercise 2 »</a>
-                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_form_attributes3" target="_blank" rel="nofollow">Exercise 3 »</a>
-                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_form_attributes4" target="_blank" rel="nofollow">Exercise 4 »</a>
+               <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_form_attributes1" target="_blank" rel="nofollow">Упражнение 1 »</a>
+               <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_form_attributes2" target="_blank" rel="nofollow">Упражнение 2 »</a>
+               <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_form_attributes3" target="_blank" rel="nofollow">Упражнение 3 »</a>
+               <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_form_attributes4" target="_blank" rel="nofollow">Упражнение 4 »</a>
             </div>
-        </div>
-        <hr>
-        <h2>HTML формы и элементы ввода</h2>
-        <table class="w3-table-all notranslate">
-            <tbody><tr>
-                <th>Тег</th>
-                <th>Описание</th>
-            </tr>
-            <tr>
-                <td><a href="../tags/tag_form.html">&lt;form&gt;</a></td>
-                <td>Определяет HTML форму для ввода пользователем</td>
-            </tr>
-            <tr>
-                <td><a href="../tags/tag_input.html">&lt;input&gt;</a></td>
-                <td>Определяет элемент управления вводом</td>
-            </tr>
+         </div>
+         <hr>
+         <h2>HTML формы и элементы ввода</h2>
+         <table class="w3-table-all notranslate">
+            <tbody>
+               <tr>
+                  <th>Тег</th>
+                  <th>Описание</th>
+               </tr>
+               <tr>
+                  <td><a href="../tags/tag_form.html"><code>&lt;form&gt;</code></a></td>
+                  <td>Определяет HTML форму для ввода пользователем</td>
+               </tr>
+               <tr>
+                  <td><a href="../tags/tag_input.html"><code>&lt;input&gt;</code></a></td>
+                  <td>Определяет элемент управления вводом</td>
+               </tr>
             </tbody>
-        </table>
-        <div class="w3-panel w3-note">
+         </table>
+         <div class="w3-panel w3-note">
             <p><strong>Примечание:</strong> Для получения полного списка всех доступных <strong>HTML</strong> тегов, посетите <a href="../tags/element_reference.html" target="_blank">Справочник <strong>HTML</strong> тегов</a>.</p>
-        </div>
-        <hr>
-        <!-- buttons prev - next -->
-        <div class="w3-clear nextprev">
-            <a class="w3-left w3-btn" href="html_form_input_types.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
-            <a class="w3-right w3-btn" href="html5_intro.html" title="Наступна сторінка" rel="next">Next ❯</a>
-        </div>
-        <!-- / buttons prev - next -->
-        <hr class="hr-bottom">
-        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
-        <!-- Комментарии от Disqus -->
-        <div id="disqus_thread"></div>
-        <script>
-        var disqus_config = function () {
-        this.page.url = html5beginners.github.io;  // канонический URL страницы
-        this.page.identifier = html5beginners.github.io/html/html_form_attributes.html; // уникальный идентификатор страницы
-        };
-        (function() { // Не редактировать ниже этой линии
-        var d = document, s = d.createElement('script');
-        s.src = 'https://html5beginners.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-        })();
-        </script>
-        <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
-        <!--  / Комментарии от Disqus -->
-    </div>
-    <!-- / CONTENT -->
-    <div class="right-sidebar">
-        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
-    </div>
-</main>
-<footer>
-    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
-</footer>
+         </div>
+         <hr>
+
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html_form_input_types.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html5_intro.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+
+         <iframe class="predisqus" src="../pages/predisqus.html"></iframe>
+         <!-- Комментарии от Disqus -->
+         <div id="disqus_thread"></div>
+         <script>
+            var disqus_config = function() {
+               this.page.url = html5beginner.github.io; // канонический URL страницы
+               this.page.identifier = html5beginner.github.io / html / html_form_attributes.html; // уникальный идентификатор страницы
+            };
+            (function() { // Не редактировать ниже этой линии
+               var d = document,
+                  s = d.createElement('script');
+               s.src = 'https://html5beginner-1.disqus.com/embed.js';
+               s.setAttribute('data-timestamp', +new Date());
+               (d.head || d.body).appendChild(s);
+            })();
+         </script>
+         <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+         <!--  / Комментарии от Disqus -->
+      </div>
+      <!-- / CONTENT -->
+      <div class="right-sidebar">
+         <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+      </div>
+   </main>
+   <footer>
+      <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+   </footer>
 </body>
+
 </html>

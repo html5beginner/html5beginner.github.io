@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <title>HTML Основы. Основные примеры. Курсы W3schools на русском. Уроки для начинающих</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="keywords" content="HTML,CSS,уроки,для начинающих,html5,css3,основные примеры,код,теги,заголовки,параграфы,ссылки,на русском языке">
+   <meta name="description" content="HTML Основы. Основные примеры кода. Как написать HTML-код. Как создавать сайты? Заголовки, параграфы, ссылки. Учебник для начинающих от W3Schools на русском">
+   <link rel="icon" href="/favicon.ico" type="image/x-icon">
+   <link rel="stylesheet" href="../styles/style.css">
+   <link rel="stylesheet" href="../styles/ws.css">
+   <link rel="stylesheet" href="../styles/w3colors.css">
+   <link rel="stylesheet" href="../styles/handheld.css">
+   <script src="../js/topnav.js"></script>
+</head>
+
+<body>
+   <iframe src="../pages/header.html" class="frame-header"></iframe>
+   <main>
+      <div class="left-sidebar">
+         <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+         <h1>HTML Основы. Основные примеры</h1>
+         <p class="brief"><strong>Курс по основам HTML. W3Schools на русском языке. Уроки для начинающих</strong></p>
+         <hr>
+         <!-- buttons prev - next -->
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html_editors.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html_elements.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         <!-- / buttons prev - next -->
+         <hr>
+         <h2>Основные примеры написания HTML-кода объектов веб-страницы</h2>
+         <p>В этой теме приводятся примеры только некоторых основных элементов на веб-странице: <strong>заголовки</strong>, <strong>параграфы</strong>, <strong>ссылки</strong>, <strong>изображения</strong>, <strong>кнопки</strong>, <strong>списки</strong>. Они лишь дают общее представление того, как создаются различные объекты на веб-страницах.</p>
+         <p>Не волнуйтесь, если эти примеры используют теги, которые вы ещё не знаете. Вы узнаете о них в следующих разделах.</p>
+         <h2>HTML документы</h2>
+         <p>Все <strong>HTML</strong> документы должны начинаться с объявления типа документа: <code>&lt;!DOCTYPE html&gt;</code>.</p>
+         <p>Сам <strong>HTML</strong> документ начинается с тега <code>&lt;html&gt;</code> и заканчивается тегом <code>&lt;/html&gt;</code>.</p>
+         <p>Видимая часть <strong>HTML</strong> документа находится между тегами <code>&lt;body&gt;</code> и <code>&lt;/body&gt;</code>.</p>
+         <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:mediumblue">&gt;</span></span>My First Heading<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>My first paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_document" target="_blank" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+         <h3>Заголовки в HTML</h3>
+         <p>Заголовки (heading - заголовок) в <strong>HTML</strong> определяются тегами от <code>&lt;h1&gt;</code> до <code>&lt;h6&gt;</code>.</p>
+         <p>Тег <code>&lt;h1&gt;</code> определяет самый важный заголовок. Тег <code>&lt;h6&gt;</code> определяет наименее важный заголовок:</p>
+         <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:mediumblue">&gt;</span></span>This is heading 1<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br>
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>h2<span style="color:mediumblue">&gt;</span></span>This is heading 2<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h2<span style="color:mediumblue">&gt;</span></span><br>
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>h3<span style="color:mediumblue">&gt;</span></span>This is heading 3<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h3<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_headings" target="_blank" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+         <h3>Параграфы (абзацы) в HTML</h3>
+         <p>Параграфы (<em>paragraph - абзац, параграф</em>) в <strong>HTML</strong> определяются тегом <code>&lt;p&gt;</code>.</p>
+         <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> Слово <em>paragraph</em> обычно переводится на русский язык как <em>абзац</em>, но в среде веб-разработчиков принято использовать слово <em>параграф</em> - так, как оно звучит в оригинале, чтобы не было путаницы.</p>
+         </div>
+         <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>This is a paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br>
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>This is another paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_paragraphs" target="_blank" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+         <h3>Ссылки в HTML</h3>
+         <p>Ссылки в <strong>HTML</strong> определяются тегом <code>&lt;a&gt;</code> (от слова <em>anchor - якорь</em>):</p>
+         <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="https://www.w3schools.com"</span></span><span style="color:mediumblue">&gt;</span></span>This is a link<span style="color:brown"><span style="color:mediumblue">&lt;</span>/a<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_link" target="_blank" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+         <p>Назначение ссылки указывается в атрибуте <code class="w3-codespan">href</code>. Атрибуты используются для предоставления дополнительной информации про элементы <strong>HTML</strong>.</p>
+         <p>Вы узнаете больше об атрибутах в следующей главе учебника.</p>
+         <hr>
+         <h3>Изображения в HTML</h3>
+         <p>Изображения в <strong>HTML</strong> определяются тегом <code>&lt;img&gt;</code> (сокращенно от слова image - изображение).</p>
+         <p>Выходной файл (<code class="w3-codespan">src</code>), альтернативный текст (<code class="w3-codespan">alt</code>), <code class="w3-codespan">width</code> (ширина) и <code class="w3-codespan">height</code> (высота) предоставляются как атрибуты:</p>
+         <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="w3schools.jpg"</span> alt<span style="color:mediumblue">="W3Schools.com"</span> width<span style="color:mediumblue">="104"</span> height<span style="color:mediumblue">="142"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_img" target="_blank" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+         <h3>Кнопки в HTML</h3>
+         <p>Кнопки в <strong>HTML</strong> определяются тегом <code>&lt;button&gt;</code> (с анг. button - кнопка):</p>
+         <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>button<span style="color:mediumblue">&gt;</span></span>Click me<span style="color:brown"><span style="color:mediumblue">&lt;</span>/button<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_button_basic" target="_blank" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+         <h3>Списки в HTML</h3>
+         <p>Списки в <strong>HTML</strong> определяются тегом <code>&lt;ul&gt;</code> (от unordered list - неупорядоченный список / маркер ядро) или <code>&lt;ol&gt;</code> (от ordered list - упорядоченный / нумерованный список), за которыми следуют теги <code>&lt;li&gt;</code> (элементы списка):</p>
+         <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>ul<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Coffee<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Tea<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Milk<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br>
+               <span style="color:brown"><span style="color:mediumblue">&lt;</span>/ul<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_button_basic" target="_blank" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+         <p>Более подробно об этих и других примерах вы узнаете в следующих разделах сайта.</p>
+         <hr>
+         
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html_editors.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html_elements.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         
+         <iframe class="predisqus" src="../pages/predisqus.html"></iframe>
+         <!-- Комментарии от Disqus -->
+         <div id="disqus_thread"></div>
+         <script>
+            var disqus_config = function() {
+               this.page.url = html5beginner.github.io; // канонический URL страницы
+               this.page.identifier = html5beginner.github.io / html / html_basic.html; // уникальный идентификатор страницы
+            };
+            (function() { // Не редактировать ниже этой линии
+               var d = document,
+                  s = d.createElement('script');
+               s.src = 'https://html5beginner-1.disqus.com/embed.js';
+               s.setAttribute('data-timestamp', +new Date());
+               (d.head || d.body).appendChild(s);
+            })();
+         </script>
+         <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+         <!--  / Комментарии от Disqus -->
+      </div>
+      <!-- / CONTENT -->
+      <div class="right-sidebar">
+         <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+      </div>
+   </main>
+   <footer>
+      <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+   </footer>
+</body>
+
+</html>

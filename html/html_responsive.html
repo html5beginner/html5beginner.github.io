@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>HTML Основы. Адаптивный веб-дизайн. Курсы W3schools на русском. Уроки для начинающих</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="HTML,CSS,уроки,для начинающих,html5,css3,адаптивность,адаптивный,веб,дизайн,адаптивная,вёрстка,страница,responsive,w3schools,на русском,языке" />
+    <meta name="description" content="HTML. Адаптивность веб-страниц. Адаптивный веб-дизайн. Как сделать адаптивный веб-сайт? Responsive Web Design. W3Schools на русском языке. Учебник для начинающих" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/ws.css" />
+    <link rel="stylesheet" href="../styles/w3colors.css" />
+    <link rel="stylesheet" href="../styles/handheld.css" />
+    <script src="../js/topnav.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" class="frame-header"></iframe>
+<main>
+    <div class="left-sidebar">
+        <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>HTML. Адаптивный веб-дизайн</h1>
+        <p class="brief"><strong>Курс по основам HTML. W3Schools на русском языке. Уроки для начинающих</strong></p>
+        
+        <hr>
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html_layout.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html_computercode_elements.html" title="Следующая страница" rel="next">Next ❯</a>
+        </div>
+        <hr>
+        
+        <div class="w3-padding w3-padding-16 w3-light-grey">
+            <img src="../img/img_temp_band.jpg" style="width:100%" alt="Responsive Web Design">
+        </div>
+        <h2>Что такое адаптивный веб-дизайн?</h2>
+        <p><strong>Адаптивный веб-дизайн</strong> - это использование <strong>HTML</strong> и <strong>CSS</strong> для возможности автоматического изменения размера, скрытия, уменьшения или увеличения веб-страницы, чтобы она выглядела хорошо (читабельно) на всех устройствах (настольных компьютерах, планшетах и смартфонах):</p>
+        <p><a class="w3-btn w3-margin-top w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_responsive_page" target="_blank" rel="nofollow">Попробуйте сами »</a></p>
+        <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> Веб-страница должна хорошо выглядеть на любом устройстве с любым разрешением экрана!</p>
+        </div>
+        <hr>
+        <h2>Установка окна просмотра - значение viewport</h2>
+        <p>Создавая адаптивные веб-страницы, добавляйте следующий элемент <code>&lt;meta&gt;</code> на все веб-страницы:</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>meta<span style="color:red"> name<span style="color:mediumblue">="viewport"</span> content<span style="color:mediumblue">="width=device-width, initial-scale=1.0"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_responsive_viewport" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <p>Это позволит установить окно просмотра страницы, что укажет инструкциям браузера, как управлять размерами и масштабированием страницы.</p>
+        <p>Ниже приведён пример веб-страницы без метатега viewport и той же веб-страницы с метатегом viewport:</p>
+        <div class="w3-row" style="text-align:center;">
+            <div class="w3-half">
+                <a target="_blank" href="example_withoutviewport.html"><img src="../img/img_viewport1.png" class="w3-hover-shadow viewport" alt="Пример адаптивный веб-дизайн"><br><br><b>Без viewport метатега</b></a>
+                <br>
+            </div>
+            <div class="w3-half">
+                <a target="_blank" href="example_withviewport.html"><img src="../img/img_viewport2.png" class="w3-hover-shadow viewport" alt="Пример адаптивный веб-дизайн"><br><br><b>Из viewport метатегом</b></a>
+                <br>
+            </div>
+        </div>
+        <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> Если вы просматриваете эту страницу с помощью телефона или планшета, можно нажать две ссылки ниже, чтобы увидеть разницу (в другом окне).</p>
+        </div>
+        <hr>
+        <h2>Адаптивные изображения</h2>
+        <p>Адаптивными изображениями являются изображения, которые прекрасно размещаются на веб-странице при любом размере окна веб-браузера.</p>
+        <h3>Использование свойства width</h3>
+        <p>Если CSS свойство <code class="w3-codespan">width</code> (ширина) установлено на 100%, изображение будет реагировать и масштабироваться, уменьшаясь или увеличиваясь, заполняя всю ширину страницы:</p>
+        <img alt="Girl" src="../img/img_girl.jpg" style="width:100%;height:auto;">
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red">
+  src<span style="color:mediumblue">="img_girl.jpg"</span> <strong>style<span style="color:mediumblue">="width:100%;"</span></strong></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_responsive_image" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <p>Обратите внимание, что в приведённом выше примере изображение может быть расширено, чтобы быть больше, чем его начальный размер. Лучшее решение обычно будет - это использовать свойство max-width вместо этого, то есть установка максимальной ширины.</p>
+        <h3>Использование свойства max-width</h3>
+        <p>Если свойство <code class="w3-codespan">max-width</code> установлено на 100%, изображение уменьшится, если необходимо, но никогда не будет больше, чем его начальный размер.</p>
+        <img alt="Girl" src="../img/img_girl.jpg" style="max-width:100%;height:auto;">
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red">
+  src<span style="color:mediumblue">="img_girl.jpg"</span> style<span style="color:mediumblue">="<strong>max-width:100%;</strong>height:auto;"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_responsive_image_maxwidth" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <hr>
+        <h3>Отображение разных изображений в зависимости от ширины окна браузера</h3>
+        <p>HTML элемент <code>&lt;picture&gt;</code> позволяет определять разные изображения для разных размеров окна браузера.</p>
+        <p>Измените размер окна веб-браузера, чтобы увидеть, как изменяется изображение в зависимости от размера окна браузера:</p>
+        <picture>
+            <source srcset="../img/img_smallflower.jpg" media="(max-width: 600px)">
+            <source srcset="../img/img_flowers.jpg" media="(max-width: 1500px)">
+            <source srcset="../img/flowers.jpg">
+            <img src="../img/img_smallflower.jpg" alt="Flowers">
+        </picture>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>picture<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>source<span style="color:red"> srcset<span style="color:mediumblue">="img_smallflower.jpg"</span> media<span style="color:mediumblue">="(max-width: 600px)"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>source<span style="color:red"> srcset<span style="color:mediumblue">="img_flowers.jpg"</span> media<span style="color:mediumblue">="(max-width: 1500px)"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>source<span style="color:red"> srcset<span style="color:mediumblue">="flowers.jpg"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="img_smallflower.jpg"</span> alt<span style="color:mediumblue">="Flowers"</span></span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/picture<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_responsive_picture" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <hr>
+        <h2>Адаптивный размер текста</h2>
+        <p>Размер текста можно установить с помощью модуля "vw", что означает "viewport width" (ширина окна просмотра). Таким образом, размер текста будет соответствовать размеру окна веб-браузера.</p>
+        <div class="w3-light-grey w3-padding w3-round">
+            <h2 style="font-size:8vw;">Hello World</h2>
+            <p style="font-size:2vw;">Измените размер окна браузера, чтобы увидеть размер текста.</p>
+        </div>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>h2<span style="color:red"> style<span style="color:mediumblue">="<strong>font-size:10vw</strong>"</span></span><span style="color:mediumblue">&gt;</span></span>Hello World<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h2<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_responsive_text" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> Viewport - это размер окна браузера. 1vw = 1% от ширины окна просмотра. Если область просмотра составляет 50 см, 1vw - 0,5 см.</p>
+        </div>
+        <hr>
+        <h2>Медиа запросы</h2>
+        <p>Кроме изменения размера текста и изображений, также часто используются медиазапросы на веб-страницах, которые соответствуют требованиям. С помощью медиа-запросов вы можете определить разные стили для разных размеров браузера.</p>
+        <p>Пример: измените размер окна веб-браузера, чтобы увидеть, что три элемента <b>div</b> ниже будут отображаться горизонтально на больших экранах и будут располагаться вертикально на небольших экранах:</p>
+        <style>
+            .menu1 {width:20%;float:left;}
+            .main1 {width:60%;float:left;}
+            .right1 {width:20%;float:left;}
+            @media (max-width:800px){
+                .menu1 {width:100%;}
+                .main1 {width:100%;}
+                .right1 {width:100%;}}
+        </style>
+        <div class="w3-row">
+            <div class="menu1">
+                <div class="w3-blue w3-padding">Left Menu<br><br><br></div>
+            </div>
+            <div class="main1">
+                <div class="w3-light-gray w3-padding">Main Content<br><br><br></div>
+            </div>
+            <div class="right1">
+                <div class="w3-green w3-padding">Right Content<br><br><br></div>
+            </div>
+        </div>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>style<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><br>.left, .right <span style="color:black">{</span><span style="color:red"><br>&nbsp; float<span style="color:mediumblue"><span style="color:black">:</span> left<span style="color:black">;</span></span><br>&nbsp; width<span style="color:mediumblue"><span style="color:black">:</span> 20%<span style="color:black">;</span></span> <span style="color:green">/* Ширина 20% по умолчанию */</span><br></span><span style="color:black">}</span><br><br>.main <span style="color:black">{</span><span style="color:red"><br>&nbsp; float<span style="color:mediumblue"><span style="color:black">:</span> left<span style="color:black">;</span></span><br>&nbsp; width<span style="color:mediumblue"><span style="color:black">:</span> 60%<span style="color:black">;</span></span> <span style="color:green">/* Ширина 60% по умолчанию */</span><br></span><span style="color:black">}</span><br><br><span style="color:green">/* Используйте медиа-запрос, чтобы добавить точку изменения на 800px: */</span><br>@media screen and (max-width: 800px) <span style="color:black">{</span><span style="color:brown"><br>&nbsp; .left, .main, .right <span style="color:black"><span style="color:black">{</span></span><span style="color:red"><br>&nbsp;&nbsp;&nbsp; width<span style="color:mediumblue"><span style="color:black">:</span> 100%<span style="color:black">;</span></span> <span style="color:green">/* Ширина будет 100%, когда область просмотра составляет 800 пикселей или меньше */</span><br>&nbsp; </span><span style="color:black"><span style="color:black">}</span></span><br></span><span style="color:black">}</span><br></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/style<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_responsive_media_query" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> Чтобы узнать больше про медиа запросы и адаптивный веб-дизайн, прочитайте <a href="../css/css_rwd_intro.html" target="_blank">Учебник по RWD (Responsive Web Design/Адаптивный веб-дизайн)</a>.</p>
+        </div>
+        <hr>
+        <h2>Адаптивная веб-страница - полный пример</h2>
+        <p><strong>Адаптивная веб-страница</strong> должна хорошо выглядеть как на больших экранах стационарных компьютеров, так и на небольших мобильных телефонах.</p>
+        <style>
+            * {box-sizing: border-box;}
+            .menu {float:left;width:20%;text-align:center;}
+            .menu a {background-color:#e5e5e5;padding:8px;margin-top:7px;display:block;width:100%;color:black;}
+            .main {float:left;width:60%;padding:0 20px;}
+            .right {background-color:#e5e5e5;float:left;width:20%;padding:15px;margin-top:7px;text-align:center;}
+            @media only screen and (max-width:620px) { /* For mobile phones: */
+                .menu, .main, .right {width:100%;}}
+        </style>
+        <div style="background-color:#e5e5e5;padding:15px;text-align:center;">
+            <h2>Hello World</h2>
+        </div>
+        <div style="overflow:auto">
+            <div class="menu">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+                <a href="#">Link 4</a>
+            </div>
+            <div class="main">
+                <h2>Lorem Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            </div>
+            <div class="right">
+                <h2>About</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            </div>
+        </div>
+        <div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">© copyright w3schools.com</div>
+        <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_responsive_media_query3" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        <hr>
+        <h2>Адаптивный веб-дизайн - фреймворки</h2>
+        <p>Существует много готовых CSS-фреймворков, которые предлагают адаптивный дизайн. Они бесплатны и просты в использовании.</p>
+        <hr>
+        <h2>Использование W3.CSS</h2>
+        <p>Отличный способ создать адаптивный дизайн - это использование соответствующей таблицы стилей, например W3.CSS. Фреймворк W3.CSS позволяет легко разрабатывать сайты, которые хорошо выглядят на любом экране: на десктопе, на ноутбуке, планшете или телефоне:</p>
+        <div class="w3-container w3-green">
+            <h2>W3.CSS Demo</h2>
+            <p>Измените размер окна страницы, чтобы увидеть адаптивность!</p>
+        </div>
+        <div class="w3-row-padding w3-light-grey">
+            <div class="w3-third">
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+                <p>It is the most populous city in the United Kingdom,
+                    with a metropolitan area of over 13 million inhabitants.</p>
+            </div>
+            <div class="w3-third">
+                <h2>Paris</h2>
+                <p>Paris is the capital of France.</p>
+                <p>The Paris area is one of the largest population centers in Europe,
+                    with more than 12 million inhabitants.</p>
+            </div>
+            <div class="w3-third">
+                <h2>Tokyo</h2>
+                <p>Tokyo is the capital of Japan.</p>
+                <p>It is the center of the Greater Tokyo Area,
+                    and the most populous metropolitan area in the world.</p>
+            </div>
+        </div>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>meta<span style="color:red"> name<span style="color:mediumblue">="viewport"</span> content<span style="color:mediumblue">="width=device-width, initial-scale=1"</span></span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>link<span style="color:red"> rel<span style="color:mediumblue">="stylesheet"</span> href<span style="color:mediumblue">="https://www.w3schools.com/w3css/4/w3.css"</span></span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>div<span style="color:red"> class<span style="color:mediumblue">="w3-container w3-green"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:mediumblue">&gt;</span></span>W3Schools Demo<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span> <br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>Измените размер окна страницы, чтобы увидеть адаптивность!<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span> <br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/div<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>div<span style="color:red"> class<span style="color:mediumblue">="w3-row-padding"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>div<span style="color:red"> class<span style="color:mediumblue">="w3-third"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>h2<span style="color:mediumblue">&gt;</span></span>London<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h2<span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>London is the capital city of England.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>It is the most populous city in the United Kingdom,<br>&nbsp;&nbsp;&nbsp; with a metropolitan area of over 13 million inhabitants.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>/div<span style="color:mediumblue">&gt;</span></span><br><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>div<span style="color:red"> class<span style="color:mediumblue">="w3-third"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>h2<span style="color:mediumblue">&gt;</span></span>Paris<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h2<span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>Paris is the capital of France.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span> <br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>The Paris area is one of the largest population centers in Europe,<br>&nbsp;&nbsp;&nbsp; with more than 12 million inhabitants.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>/div<span style="color:mediumblue">&gt;</span></span><br><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>div<span style="color:red"> class<span style="color:mediumblue">="w3-third"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>h2<span style="color:mediumblue">&gt;</span></span>Tokyo<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h2<span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>Tokyo is the capital of Japan.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>It is the center of the Greater Tokyo Area,<br>&nbsp;&nbsp;&nbsp; and the most populous metropolitan area in the world.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>/div<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/div<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br> <span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_responsive_w3css" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> Узнать больше про фреймворк <strong>W3.CSS</strong> можно в <a href="../w3css/w3css_tutorial.html" target="_blank">Учебнике W3.CSS</a>.</p>
+        </div>
+        <hr>
+        <h2>Bootstrap</h2>
+        <p>Другой популярный фреймворк - <strong>Bootstrap</strong>, он использует <strong>HTML</strong>, <strong>CSS</strong> и <strong>jQuery</strong> для создания адаптивных веб-страниц.</p>
+        <div class="w3-example">
+            <p>Пример:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:red"> lang<span style="color:mediumblue">="en"</span></span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>head<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>title<span style="color:mediumblue">&gt;</span></span>Bootstrap Example<span style="color:brown"><span style="color:mediumblue">&lt;</span>/title<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>meta<span style="color:red"> charset<span style="color:mediumblue">="utf-8"</span></span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>meta<span style="color:red"> name<span style="color:mediumblue">="viewport"</span> content<span style="color:mediumblue">="width=device-width, initial-scale=1"</span></span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>link<span style="color:red"> rel<span style="color:mediumblue">="stylesheet"</span> href<span style="color:mediumblue">="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"</span></span><span style="color:mediumblue">&gt;</span></span><br> <span style="color:brown"><span style="color:mediumblue">&lt;</span>script<span style="color:red"> src<span style="color:mediumblue">="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"</span></span><span style="color:mediumblue">&gt;</span></span><span style="color:black"></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/script<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>script<span style="color:red"> src<span style="color:mediumblue">="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"</span></span><span style="color:mediumblue">&gt;</span></span><span style="color:black"></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/script<span style="color:mediumblue">&gt;</span></span><br> <span style="color:brown"><span style="color:mediumblue">&lt;</span>/head<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>div<span style="color:red"> class<span style="color:mediumblue">="container"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>div<span style="color:red"> class<span style="color:mediumblue">="jumbotron"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:mediumblue">&gt;</span></span>My First Bootstrap Page<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br>&nbsp;<span style="color:brown"><span style="color:mediumblue">&lt;</span>/div<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>div<span style="color:red"> class<span style="color:mediumblue">="row"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>div<span style="color:red"> class<span style="color:mediumblue">="col-sm-4"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...<br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>/div<span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>div<span style="color:red"> class<span style="color:mediumblue">="col-sm-4"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>/div<span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>div<span style="color:red"> class<span style="color:mediumblue">="col-sm-4"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; ...<br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>/div<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>/div<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/div<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_responsive_bootstrap" target="_blank" rel="nofollow">Попробуйте сами »</a>
+        </div>
+        <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> Узнать больше про фреймворк <strong>Bootstrap</strong> можно в <a href="../bootstrap4/bootstrap_tutorial.html" target="_blank">Учебнике Bootstrap 4</a> на нашем сайте.</p>
+        </div>
+        <hr>
+        
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html_layout.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html_computercode_elements.html" title="Следующая страница" rel="next">Next ❯</a>
+        </div>
+        
+        <iframe class="predisqus" src="../pages/predisqus.html"></iframe>
+         <!-- Комментарии от Disqus -->
+         <div id="disqus_thread"></div>
+         <script>
+            var disqus_config = function() {
+               this.page.url = html5beginner.github.io; // канонический URL страницы
+               this.page.identifier = html5beginner.github.io / html / html_responsive.html; // уникальный идентификатор страницы
+            };
+            (function() { // Не редактировать ниже этой линии
+               var d = document,
+                  s = d.createElement('script');
+               s.src = 'https://html5beginner-1.disqus.com/embed.js';
+               s.setAttribute('data-timestamp', +new Date());
+               (d.head || d.body).appendChild(s);
+            })();
+         </script>
+         <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+         <!--  / Комментарии от Disqus -->
+    </div>
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>
