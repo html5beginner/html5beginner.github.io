@@ -1,172 +1,169 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <title>HTML. YouTube видео. Добавление видеоплеера на веб-страницу. W3schools на русском. Уроки для начинающих</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="keywords" content="HTML,CSS,уроки,для начинающих,html5,добавление,ютуб,youtube,видео,плеер,добавить,элемент,теги,w3schools,на русском,языке" />
-    <meta name="description" content="Урок 50. HTML5. YouTube видео. Как добавить видео с Youtube на сайт? Способы вставки видео с Ютуба. W3Schools на русском. Учебник для начинающих" />
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="stylesheet" href="../styles/ws.css" />
-    <link rel="stylesheet" href="../styles/handheld.css" />
-    <link rel="canonical" href="https://html5beginner.github.io/" />
-    <meta property="og:title" content="HTML. YouTube видео. Добавление видеоплеера на веб-страницу. W3schools на русском. Уроки для начинающих" />
-    <meta property="og:type" content="веб-сайт" /> <!--описывает тип объекта на странице-->
-    <meta property="og:url" content="https://html5beginner.github.io/" /><!--адрес сайта-->
-    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
-    <meta property="og:description" content="Урок 50. HTML5. YouTube видео. Как добавить видео с Youtube на сайт? Способы вставки видео с Ютуба. W3Schools на русском. Учебник для начинающих" />
-    <meta property="og:locale" content="ru" /> <!--мова сайту-->
-    <meta property="og:site_name" content="HTML5Beginners - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
-    <script src="../js/topnav.js"></script>
+   <title>HTML YouTube видео. Добавление видеоплеера на веб-страницу. W3schools на русском. Уроки для начинающих</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="keywords" content="HTML,CSS,уроки,для начинающих,html5,добавление,ютуб,youtube,видео,плеер,добавить,элемент,теги,w3schools,на русском,языке" />
+   <meta name="description" content="HTML YouTube видео. Как добавить видео с Youtube на сайт? Способы вставки видео с Ютуба. W3Schools на русском. Учебник для начинающих" />
+   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+   <link rel="stylesheet" href="../styles/style.css" />
+   <link rel="stylesheet" href="../styles/ws.css" />
+   <link rel="stylesheet" href="../styles/w3colors.css" />
+   <link rel="stylesheet" href="../styles/handheld.css" />
+   <script src="../js/topnav.js"></script>
 </head>
+
 <body>
-<iframe src="../pages/header.html" class="frame-header"></iframe>
-<main>
-    <div class="left-sidebar">
-        <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
-    </div>
-    <!-- CONTENT -->
-    <div class="content">
-        <h1>HTML5. YouTube видео</h1>
-        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
-        <hr>
-        <!-- buttons prev - next -->
-        <div class="w3-clear nextprev">
-            <a class="w3-left w3-btn" href="html_object.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
-            <a class="w3-right w3-btn" href="html5_geolocation.html" title="Наступна сторінка" rel="next">Next ❯</a>
-        </div>
-        <!-- / buttons prev - next -->
-        <hr>
-        <p class="intro">Самым простым способом воспроизведения видео в HTML является использование сайта <a href="https://www.youtube.com/" target="_blank" rel="nofollow">YouTube</a>.</p>
-        <hr>
-        <h2>Что такое YouTube и для чего он нужен?</h2>
-        <img src="../svg/youtube-logo.svg" alt="YouTube logo" width="90" class="img-left">
-        <p><strong>YouTube</strong> (от англ. you «ты, вы» + tube «труба» = «телик» жарг. «телевизор») - самый большой и самый популярный мировой видеохостинг, который предоставляет услуги размещения видеоматериалов. Основан 14 февраля 2005 тремя работниками PayPal: Чадом Герли, Стивеном Чени и Джаведом Каримом. Является подразделением компании Google. По состоянию на август 2017 YouTube является вторым по посещаемости сайтом в Интернете (по данным компании Alexa Internet).</p>
-        <p>Пользователи могут добавлять, просматривать и комментировать те или иные видеозаписи. Благодаря простоте и удобству использования YouTube стал одним из самых популярных видеохостингов. Служба содержит как профессиональные, так и любительские видеозаписи, включая видеоблоги.</p>
-        <p>Любой человек может бесплатно зарегистрироваться на сайте <a href="https://www.google.com/" target="_blank" rel="nofollow">Google</a> (создать собственный email), а потом перейти на сайт <a href="https://www.youtube.com/" target="_blank" rel="nofollow">YouTube</a> и открыть собственный видео-канал. Затем все видео с YouTube можно встраивать на любые другие веб-страницы, используя обычный html-код.</p>
-        <hr>
-        <h2>Борьба с видеоформатами?</h2>
-        <p>Ранее в этом учебном пособии вы видели, что вам придется конвертировать видео в различные форматы, чтобы сделать их воспроизводимым во всех браузерах.</p>
-        <p>Но конвертирование видеофайлов в различные форматы может быть довольно сложным и занимать много времени.</p>
-        <p>Более простое решение - это встроить видео с YouTube для воспроизведения на вашей веб-странице.</p>
-        <hr>
-        <h2>YouTube видео идентификатор - Id</h2>
-        <p>YouTube будет отображать идентификатор (например, tgbNymZ7vqY) при сохранении (или воспроизведение) видео.</p>
-        <p>Вы можете использовать этот идентификатор и ссылаться на свое видео в HTML-коде.</p>
-        <hr>
-        <h2>Воспроизведение видео с YouTube на HTML-странице</h2>
-        <p>Чтобі воспроизвести видео с YouTube на веб-странице, выполните приведенные ниже действия:</p>
-        <ul>
+   <iframe src="../pages/header.html" class="frame-header"></iframe>
+   <main>
+      <div class="left-sidebar">
+         <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+         <h1>HTML5 YouTube видео</h1>
+         <p class="brief"><strong>Курс по основам HTML. W3Schools на русском языке. Уроки для начинающих</strong></p>
+         <hr>
+
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html_object.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html5_geolocation.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+
+         <hr>
+         <p class="intro">Самым простым способом воспроизведения видео в HTML является использование сайта <a href="https://www.youtube.com/" target="_blank" rel="nofollow">YouTube</a>.</p>
+         <hr>
+         <h2>Что такое YouTube и для чего он нужен?</h2>
+         <img src="../svg/youtube-logo.svg" alt="YouTube logo" width="90" class="img-left">
+         <p><strong>YouTube</strong> (от англ. you «ты, вы» + tube «труба» = «телик» жарг. «телевизор») - самый большой и самый популярный мировой видеохостинг, который предоставляет услуги размещения видеоматериалов. Основан 14 февраля 2005 тремя работниками PayPal: Чадом Герли, Стивеном Чени и Джаведом Каримом. Является подразделением компании Google. По состоянию на август 2019 года YouTube является вторым по посещаемости сайтом в Интернете (по данным компании <a href="https://www.alexa.com/" target="_blank" rel="nofollow">Alexa Internet</a>).</p>
+         <p>Пользователи могут добавлять, просматривать и комментировать те или иные видеозаписи. Благодаря простоте и удобству использования YouTube стал одним из самых популярных видеохостингов. Служба содержит как профессиональные, так и любительские видеозаписи, включая видеоблоги.</p>
+         <p>Любой человек может бесплатно зарегистрироваться на сайте <a href="https://www.google.com/" target="_blank" rel="nofollow">Google</a> (создать собственный email), а потом перейти на сайт <a href="https://www.youtube.com/" target="_blank" rel="nofollow">YouTube</a> и открыть собственный видео-канал. Затем все видео с YouTube можно встраивать на любые другие веб-страницы, используя обычный html-код.</p>
+         <hr>
+         <h2>Борьба с видеоформатами?</h2>
+         <p>Ранее в этом учебном пособии вы видели, что вам придется конвертировать видео в различные форматы, чтобы сделать их воспроизводимым во всех браузерах.</p>
+         <p>Но конвертирование видеофайлов в различные форматы может быть довольно сложным и занимать много времени.</p>
+         <p>Более простое решение - это встроить видео с YouTube для воспроизведения на вашей веб-странице.</p>
+         <hr>
+         <h2>YouTube видео идентификатор - Id</h2>
+         <p>YouTube будет отображать идентификатор (например, tgbNymZ7vqY) при сохранении (или воспроизведение) видео.</p>
+         <p>Вы можете использовать этот идентификатор и ссылаться на свое видео в HTML-коде.</p>
+         <hr>
+         <h2>Воспроизведение видео с YouTube на HTML-странице</h2>
+         <p>Чтобы воспроизвести видео с YouTube на веб-странице, выполните приведенные ниже действия:</p>
+         <ul>
             <li>Загрузите видео на YouTube</li>
             <li>Обратите внимание на идентификатор видео - Id</li>
-            <li>Определите элемент &lt;iframe&gt; на вашей веб-странице</li>
-            <li>Атрибут src указывает URL-адрес видео</li>
-            <li>Используйте атрибуты width (ширина) и height (высота), чтобы определить размеры плеера</li>
+            <li>Определите элемент <code>&lt;iframe&gt;</code> на вашей веб-странице</li>
+            <li>Атрибут <code class="w3-codespan">src</code> указывает URL-адрес видео</li>
+            <li>Используйте атрибуты <code class="w3-codespan">width</code> (ширина) и <code class="w3-codespan">height</code> (высота), чтобы определить размеры плеера</li>
             <li>Добавьте к URL другие необходимые параметры (см. ниже)</li>
-        </ul>
-        <div class="w3-example">
+         </ul>
+         <div class="w3-example">
             <h3>Пример - использование iFrame (рекомендуется)</h3>
             <div class="w3-code notranslate htmlHigh">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>iframe<span class="attributecolor" style="color:red"> width<span class="attributevaluecolor" style="color:mediumblue">="420"</span> height<span class="attributevaluecolor" style="color:mediumblue">="315"</span><br>src<span class="attributevaluecolor" style="color:mediumblue">="https://www.youtube.com/embed/tgbNymZ7vqY"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/iframe<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>iframe<span class="attributecolor" style="color:red"> width<span class="attributevaluecolor" style="color:mediumblue">="420"</span> height<span class="attributevaluecolor" style="color:mediumblue">="315"</span><br>src<span class="attributevaluecolor" style="color:mediumblue">="https://www.youtube.com/embed/tgbNymZ7vqY"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/iframe<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
             </div>
             <a target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_youtubeiframe" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
-        </div>
-        <hr>
-        <h2>YouTube Autoplay - автоматическое воспроизведение</h2>
-        <p>Вы можете сделать автоматическое воспроизведение видео, когда пользователь посещает страницу, добавив простой параметр к URL-адресу YouTube.</p>
-        <div class="w3-panel w3-note">
+         </div>
+         <hr>
+         <h2>YouTube Autoplay - автоматическое воспроизведение</h2>
+         <p>Вы можете сделать автоматическое воспроизведение видео, когда пользователь посещает страницу, добавив простой параметр к URL-адресу YouTube.</p>
+         <div class="w3-panel w3-note">
             <p><strong>Примечание:</strong> Будьте внимательны при принятии решения об автоматическом воспроизведении видео. Автоматический запуск видео может раздражать вашего посетителя и в конечном итоге причинить больше вреда, чем пользы, так как пользователи могут сразу покинуть сайт.</p>
-        </div>
-        <p>Значение 0 (по умолчанию): видео не будет воспроизводиться автоматически во время загрузки плеера.</p>
-        <p>Значение 1: видео будет воспроизводиться автоматически во время загрузки плеера.</p>
-        <div class="w3-example">
+         </div>
+         <p>Значение 0 (по умолчанию): видео не будет воспроизводиться автоматически во время загрузки плеера.</p>
+         <p>Значение 1: видео будет воспроизводиться автоматически во время загрузки плеера.</p>
+         <div class="w3-example">
             <h3>YouTube - Autoplay</h3>
             <div class="w3-code notranslate htmlHigh">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>iframe<span class="attributecolor" style="color:red"> width<span class="attributevaluecolor" style="color:mediumblue">="420"</span> height<span class="attributevaluecolor" style="color:mediumblue">="315"</span><br>src<span class="attributevaluecolor" style="color:mediumblue">="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/iframe<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>iframe<span class="attributecolor" style="color:red"> width<span class="attributevaluecolor" style="color:mediumblue">="420"</span> height<span class="attributevaluecolor" style="color:mediumblue">="315"</span><br>src<span class="attributevaluecolor" style="color:mediumblue">="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/iframe<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
             </div>
             <a target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_youtubeiframe_autoplay" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
-        </div>
-        <hr>
-        <h2>YouTube Playlist - плейлист</h2>
-        <p>Разделённый запятыми список видео для воспроизведения (кроме исходного URL-адреса).</p>
-        <hr>
-        <h2>YouTube Loop - повторение воспроизведения видео</h2>
-        <p>Значение 0 (по умолчанию): видео будет воспроизводиться лишь один раз.</p>
-        <p>Значение 1: воспроизведение видео будет приостановлено после окончания.</p>
-        <div class="w3-example">
+         </div>
+         <hr>
+         <h2>YouTube Playlist - плейлист</h2>
+         <p>Разделённый запятыми список видео для воспроизведения (кроме исходного URL-адреса).</p>
+         <hr>
+         <h2>YouTube Loop - повторение воспроизведения видео</h2>
+         <p>Значение 0 (по умолчанию): видео будет воспроизводиться лишь один раз.</p>
+         <p>Значение 1: воспроизведение видео будет приостановлено после окончания.</p>
+         <div class="w3-example">
             <h3>YouTube - Loop</h3>
             <div class="w3-code notranslate htmlHigh">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>iframe<span class="attributecolor" style="color:red"> width<span class="attributevaluecolor" style="color:mediumblue">="420"</span> height<span class="attributevaluecolor" style="color:mediumblue">="315"</span><br>src<span class="attributevaluecolor" style="color:mediumblue">="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&amp;loop=1"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/iframe<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>iframe<span class="attributecolor" style="color:red"> width<span class="attributevaluecolor" style="color:mediumblue">="420"</span> height<span class="attributevaluecolor" style="color:mediumblue">="315"</span><br>src<span class="attributevaluecolor" style="color:mediumblue">="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&amp;loop=1"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/iframe<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
             </div>
             <a target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_youtubeiframe_loop" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
-        </div>
-        <hr>
-        <h2>YouTube Controls - панель управления</h2>
-        <p>Значение 0: элементы управления плеера не отображаются.</p>
-        <p>Значение 1 (по умолчанию): элементы управления плеера отображаются.</p>
-        <div class="w3-example">
+         </div>
+         <hr>
+         <h2>YouTube Controls - панель управления</h2>
+         <p>Значение 0: элементы управления плеера не отображаются.</p>
+         <p>Значение 1 (по умолчанию): элементы управления плеера отображаются.</p>
+         <div class="w3-example">
             <h3>YouTube - Controls</h3>
             <div class="w3-code notranslate htmlHigh">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>iframe<span class="attributecolor" style="color:red"> width<span class="attributevaluecolor" style="color:mediumblue">="420"</span> height<span class="attributevaluecolor" style="color:mediumblue">="315"</span><br>src<span class="attributevaluecolor" style="color:mediumblue">="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/iframe<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>iframe<span class="attributecolor" style="color:red"> width<span class="attributevaluecolor" style="color:mediumblue">="420"</span> height<span class="attributevaluecolor" style="color:mediumblue">="315"</span><br>src<span class="attributevaluecolor" style="color:mediumblue">="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/iframe<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
             </div>
             <a target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_youtubeiframe_controls" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
-        </div>
-        <hr>
-        <h2>YouTube - использование &lt;object&gt; или &lt;embed&gt;</h2>
-        <p><strong>Примечание:</strong> YouTube <code class="w3-codespan">&lt;object&gt;</code> и <code class="w3-codespan">&lt;embed&gt;</code> считаются устаревшими с января 2015 года. Вы должны изменить способ добавления вашего видео, используя <code class="w3-codespan">&lt;iframe&gt;</code> вместо этого.</p>
-        <div class="w3-example">
+         </div>
+         <hr>
+         <h2>YouTube - использование &lt;object&gt; или &lt;embed&gt;</h2>
+         <p><strong>Примечание:</strong> YouTube <code class="w3-codespan">&lt;object&gt;</code> и <code class="w3-codespan">&lt;embed&gt;</code> считаются устаревшими с января 2015 года. Вы должны изменить способ добавления вашего видео, используя <code class="w3-codespan">&lt;iframe&gt;</code> вместо этого.</p>
+         <div class="w3-example">
             <h3>Пример - использование &lt;object&gt; (устаревшее)</h3>
             <div class="w3-code notranslate htmlHigh" style="border-left-color:red">
-<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>object<span class="attributecolor" style="color:red"> width<span class="attributevaluecolor" style="color:mediumblue">="420"</span> height<span class="attributevaluecolor" style="color:mediumblue">="315"</span><br>
-data<span class="attributevaluecolor" style="color:mediumblue">="https://www.youtube.com/embed/tgbNymZ7vqY"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/object<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>object<span class="attributecolor" style="color:red"> width<span class="attributevaluecolor" style="color:mediumblue">="420"</span> height<span class="attributevaluecolor" style="color:mediumblue">="315"</span><br>
+                     data<span class="attributevaluecolor" style="color:mediumblue">="https://www.youtube.com/embed/tgbNymZ7vqY"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/object<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
             </div>
             <a target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_youtubeobject" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
-        </div>
-        <div class="w3-example">
+         </div>
+         <div class="w3-example">
             <h3>Пример - использование &lt;embed&gt; (устаревшее)</h3>
             <div class="w3-code notranslate htmlHigh" style="border-left-color:red">
-<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>embed<span class="attributecolor" style="color:red"> width<span class="attributevaluecolor" style="color:mediumblue">="420"</span> height<span class="attributevaluecolor" style="color:mediumblue">="315"</span><br>
-src<span class="attributevaluecolor" style="color:mediumblue">="https://www.youtube.com/embed/tgbNymZ7vqY"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>embed<span class="attributecolor" style="color:red"> width<span class="attributevaluecolor" style="color:mediumblue">="420"</span> height<span class="attributevaluecolor" style="color:mediumblue">="315"</span><br>
+                     src<span class="attributevaluecolor" style="color:mediumblue">="https://www.youtube.com/embed/tgbNymZ7vqY"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
             </div>
             <a target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_youtube_embed" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
-        </div>
-        <hr>
-        
-        <div class="w3-clear nextprev">
-            <a class="w3-left w3-btn" href="html_object.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
-            <a class="w3-right w3-btn" href="html5_geolocation.html" title="Наступна сторінка" rel="next">Next ❯</a>
-        </div>
-        
-        <iframe class="predisqus" src="../pages/predisqus.html"></iframe>
-        <!-- Комментарии от Disqus -->
-        <div id="disqus_thread"></div>
-        <script>
-        var disqus_config = function () {
-        this.page.url = html5beginners.github.io;  // канонический URL страницы
-        this.page.identifier = html5beginners.github.io/html/html_youtube.html; // уникальный идентификатор страницы
-        };
-        (function() { // Не редактировать ниже этой линии
-        var d = document, s = d.createElement('script');
-        s.src = 'https://html5beginners.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-        })();
-        </script>
-        <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
-        <!--  / Комментарии от Disqus -->
-    </div>
-    <!-- / CONTENT -->
-    <div class="right-sidebar">
-        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
-    </div>
-</main>
-<footer>
-    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
-</footer>
+         </div>
+         <hr>
+
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html_object.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html5_geolocation.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+
+         <iframe class="predisqus" src="../pages/predisqus.html"></iframe>
+         <!-- Комментарии от Disqus -->
+         <div id="disqus_thread"></div>
+         <script>
+            var disqus_config = function() {
+               this.page.url = html5beginner.github.io; // канонический URL страницы
+               this.page.identifier = html5beginner.github.io / html / html_youtube.html; // уникальный идентификатор страницы
+            };
+            (function() { // Не редактировать ниже этой линии
+               var d = document,
+                  s = d.createElement('script');
+               s.src = 'https://html5beginner-1.disqus.com/embed.js';
+               s.setAttribute('data-timestamp', +new Date());
+               (d.head || d.body).appendChild(s);
+            })();
+         </script>
+         <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+         <!--  / Комментарии от Disqus -->
+      </div>
+      <!-- / CONTENT -->
+      <div class="right-sidebar">
+         <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+      </div>
+   </main>
+   <footer>
+      <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+   </footer>
 </body>
+
 </html>

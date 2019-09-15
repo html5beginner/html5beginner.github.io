@@ -1,24 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>HTML5. Video / Видео. W3schools на русском. Уроки для начинающих</title>
+    <title>HTML5 Video / Видео. W3schools на русском. Уроки для начинающих</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="keywords" content="HTML,CSS,уроки,для начинающих,html5,мультимедиа,на сайте,элементы,теги,видео,video,w3schools,на русском" />
-    <meta name="description" content="Урок 47. HTML5. Видео на сайте. Как добавить видеоплеер на веб-страницу? W3Schools на русском. Учебник для начинающих" />
+    <meta name="keywords" content="HTML,CSS,уроки,для начинающих,html5,мультимедиа,на сайте,элементы,теги,video,плагин,видео,video,плеер,w3schools,на русском" />
+    <meta name="description" content="HTML5 Видео на сайте. Как добавить видеоплеер на веб-страницу? W3Schools на русском. Учебник для начинающих" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="../styles/ws.css" />
+    <link rel="stylesheet" href="../styles/w3colors.css" />
     <link rel="stylesheet" href="../styles/handheld.css" />
     <link rel="stylesheet" type="text/css" href="../styles/browserref.css">
-    <link rel="canonical" href="https://html5beginner.github.io/" />
-    <meta property="og:title" content="HTML5. Video / Видео. W3schools на русском. Уроки для начинающих" />
-    <meta property="og:type" content="веб-сайт" /> <!--описывает тип объекта на странице-->
-    <meta property="og:url" content="https://html5beginner.github.io/" /><!--адрес сайта-->
-    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
-    <meta property="og:description" content="Урок 47. HTML5. Видео на сайте. Как добавить видеоплеер на веб-страницу? W3Schools на русском. Учебник для начинающих" />
-    <meta property="og:locale" content="ru" /> <!--мова сайту-->
-    <meta property="og:site_name" content="HTML5Beginners - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
     <script src="../js/topnav.js"></script>
 </head>
 <body>
@@ -29,15 +22,15 @@
     </div>
     <!-- CONTENT -->
     <div class="content">
-        <h1>HTML5. Видео</h1>
-        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
+        <h1>HTML5 Видео</h1>
+        <p class="brief"><strong>Курс по основам HTML5. W3Schools на русском языке. Уроки для начинающих</strong></p>
         <hr>
-        <!-- buttons prev - next -->
+        
         <div class="w3-clear nextprev">
-            <a class="w3-left w3-btn" href="html_media.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
-            <a class="w3-right w3-btn" href="html5_audio.html" title="Наступна сторінка" rel="next">Next ❯</a>
+            <a class="w3-left w3-btn" href="html_media.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html5_audio.html" title="Следующая страница" rel="next">Next ❯</a>
         </div>
-        <!-- / buttons prev - next -->
+        
         <hr>
         <div class="w3-example">
             <h3>HTML Пример видео.  Взято из <a href="https://www.bigbuckbunny.org/" target="_blank" rel="nofollow">Big Buck Bunny</a>.</h3>
@@ -55,10 +48,10 @@
         <hr>
         <h2>Воспроизведение видео в HTML</h2>
         <p>До появления спецификации HTML5 видео можно было воспроизвести лишь в веб-браузере с плагином (например, flash).</p>
-        <p>HTML5 элемент <code class="w3-codespan">&lt;video&gt;</code> указывает стандартный способ встраивания видео в веб-страницу.</p>
+        <p>HTML5 элемент <code>&lt;video&gt;</code> указывает стандартный способ встраивания видео в веб-страницу.</p>
         <hr>
         <h2>Поддержка браузерами</h2>
-        <p>Цифры в таблице определяют первую версию браузера, которая полностью поддерживает элемент <code class="w3-codespan">&lt;video&gt;</code>.</p>
+        <p>Цифры в таблице определяют первую версию браузера, которая полностью поддерживает элемент <code>&lt;video&gt;</code>.</p>
         <table class="browserref notranslate">
             <tbody><tr>
                 <th style="width:20%;font-size:16px;text-align:left;">Элемент</th>
@@ -81,7 +74,7 @@
         <hr>
 
         <h2>HTML элемент &lt;video&gt;</h2>
-        <p>Чтобы показать видео в HTML, используйте элемент <code class="w3-codespan">&lt;video&gt;</code>:</p>
+        <p>Чтобы показать видео в HTML, используйте элемент <code>&lt;video&gt;</code>:</p>
         <div class="w3-example">
             <h3>Пример:</h3>
             <div class="w3-code notranslate htmlHigh">
@@ -97,8 +90,8 @@
         <h2>Как это работает</h2>
         <p>Атрибут <code class="w3-codespan">controls</code> добавляет элементы управления видео, такие как воспроизведение, приостановка и уровень звука.</p>
         <p>Рекомендуется всегда включать атрибуты <code class="w3-codespan">width</code> и <code class="w3-codespan">height</code>. Если height (высота) и width (ширина) не заданы, страница может мерцать при проигрывании видео.</p>
-        <p>Элемент <code class="w3-codespan">&lt;source&gt;</code> позволяет указывать альтернативные видеофайлы, с которых браузер может выбирать. Браузер будет использовать первый распознанный формат.</p>
-        <p>Текст между тегами <code class="w3-codespan">&lt;video&gt;</code> и <code class="w3-codespan">&lt;/video&gt;</code> будет отображаться лишь в браузерах, которые не поддерживают элемент <code class="w3-codespan">&lt;video&gt;</code>.</p>
+        <p>Элемент <code>&lt;source&gt;</code> позволяет указывать альтернативные видеофайлы, с которых браузер может выбирать. Браузер будет использовать первый распознанный формат.</p>
+        <p>Текст между тегами <code>&lt;video&gt;</code> и <code>&lt;/video&gt;</code> будет отображаться лишь в браузерах, которые не поддерживают элемент <code>&lt;video&gt;</code>.</p>
         <hr>
         <h2>HTML &lt;video&gt; Autoplay</h2>
         <p>Чтобы проигрывание видео начиналось автоматически, используйте атрибут <code class="w3-codespan">autoplay</code>:</p>
@@ -182,7 +175,7 @@
         </table>
         <hr>
         <h2>HTML видео - методы, свойства и события</h2>
-        <p>HTML5 определяет методы, свойства и события DOM для элемента <code class="w3-codespan">&lt;video&gt;</code>.</p>
+        <p>HTML5 определяет методы, свойства и события DOM для элемента <code>&lt;video&gt;</code>.</p>
         <p>Это позволяет загружать, воспроизводить и приостанавливать видео, а также устанавливать продолжительность и громкость.</p>
         <p>Есть также события DOM, которые могут сообщать вам, когда видео начинает воспроизводиться, приостанавливаться и т.д.</p>
         <div class="w3-example">
@@ -233,44 +226,44 @@
                 <th>Описание</th>
             </tr>
             <tr>
-                <td><a href="../tags/tag_video.html">&lt;video&gt;</a></td>
+                <td><a href="../tags/tag_video.html"><code>&lt;video&gt;</code></a></td>
                 <td>Определяет видео или фильм</td>
             </tr>
             <tr>
-                <td><a href="../tags/tag_source.html">&lt;source&gt;</a></td>
-                <td>Определяет множество мультимедийных ресурсов для элементов медиа, например &lt;video&gt; и &lt;audio&gt;</td>
+                <td><a href="../tags/tag_source.html"><code>&lt;source&gt;</code></a></td>
+                <td>Определяет множество мультимедийных ресурсов для элементов медиа, например <code>&lt;video&gt;</code> и <code>&lt;audio&gt;</code></td>
             </tr>
             <tr>
-                <td><a href="../tags/tag_track.html">&lt;track&gt;</a></td>
+                <td><a href="../tags/tag_track.html"><code>&lt;track&gt;</code></a></td>
                 <td>Определяет текстовые дорожки в медиаплеерах</td>
             </tr>
             </tbody>
         </table>
         <hr>
-        <!-- buttons prev - next -->
+        
         <div class="w3-clear nextprev">
-            <a class="w3-left w3-btn" href="html_media.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
-            <a class="w3-right w3-btn" href="html5_audio.html" title="Наступна сторінка" rel="next">Next ❯</a>
+            <a class="w3-left w3-btn" href="html_media.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html5_audio.html" title="Следующая страница" rel="next">Next ❯</a>
         </div>
-        <!-- / buttons prev - next -->
-        <hr class="hr-bottom">
-        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
-        <!-- Комментарии от Disqus -->
-        <div id="disqus_thread"></div>
-        <script>
-        var disqus_config = function () {
-        this.page.url = html5beginners.github.io;  // канонический URL страницы
-        this.page.identifier = html5beginners.github.io/html/html5_video.html; // уникальный идентификатор страницы
-        };
-        (function() { // Не редактировать ниже этой линии
-        var d = document, s = d.createElement('script');
-        s.src = 'https://html5beginners.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-        })();
-        </script>
-        <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
-        <!--  / Комментарии от Disqus -->
+        
+        <iframe class="predisqus" src="../pages/predisqus.html"></iframe>
+         <!-- Комментарии от Disqus -->
+         <div id="disqus_thread"></div>
+         <script>
+            var disqus_config = function() {
+               this.page.url = html5beginner.github.io; // канонический URL страницы
+               this.page.identifier = html5beginner.github.io / html / html5_video.html; // уникальный идентификатор страницы
+            };
+            (function() { // Не редактировать ниже этой линии
+               var d = document,
+                  s = d.createElement('script');
+               s.src = 'https://html5beginner-1.disqus.com/embed.js';
+               s.setAttribute('data-timestamp', +new Date());
+               (d.head || d.body).appendChild(s);
+            })();
+         </script>
+         <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+         <!--  / Комментарии от Disqus -->
     </div>
     <!-- / CONTENT -->
     <div class="right-sidebar">
