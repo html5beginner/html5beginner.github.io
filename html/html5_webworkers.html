@@ -1,251 +1,254 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <title>HTML5. Web Workers. Веб-работники. W3schools на русском. Уроки для начинающих</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="keywords" content="HTML,CSS,уроки,для начинающих,html5,web workers,веб,работники,элемент,теги,javascript,w3schools,на русском,языке" />
-    <meta name="description" content="Урок 54. HTML5. Web Workers. Веб-работники. Что такое web-workers? Для чего нужны веб-работники? W3Schools на русском языке. Учебник для начинающих" />
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="stylesheet" href="../styles/ws.css" />
-    <link rel="stylesheet" href="../styles/handheld.css" />
-    <link rel="stylesheet" type="text/css" href="../styles/browserref.css">
-    <link rel="canonical" href="https://html5beginner.github.io/" />
-    <meta property="og:title" content="HTML5. Web Workers. Веб-работники. W3schools на русском. Уроки для начинающих" />
-    <meta property="og:type" content="веб-сайт" /> <!--описывает тип объекта на странице-->
-    <meta property="og:url" content="https://html5beginner.github.io/" /><!--адрес сайта-->
-    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
-    <meta property="og:description" content="Урок 54. HTML5. Web Workers. Веб-работники. Что такое web-workers? Для чего нужны веб-работники? W3Schools на русском языке. Учебник для начинающих" />
-    <meta property="og:locale" content="ru" /> <!--мова сайту-->
-    <meta property="og:site_name" content="HTML5Beginners - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
-    <script src="../js/topnav.js"></script>
+   <title>HTML5 Web Workers. Веб-работники. W3schools на русском. Уроки для начинающих</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="keywords" content="HTML,CSS,уроки,для начинающих,html5,web workers,веб,работники,элемент,теги,javascript,w3schools,на русском,языке" />
+   <meta name="description" content="HTML5 Web Workers. Веб-работники. Что такое web-workers? Для чего нужны веб-работники? W3Schools на русском языке. Учебник для начинающих" />
+   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+   <link rel="stylesheet" href="../styles/style.css" />
+   <link rel="stylesheet" href="../styles/ws.css" />
+   <link rel="stylesheet" href="../styles/w3colors.css" />
+   <link rel="stylesheet" href="../styles/handheld.css" />
+   <link rel="stylesheet" type="text/css" href="../styles/browserref.css">
+   <script src="../js/topnav.js"></script>
 </head>
+
 <body>
-<iframe src="../pages/header.html" class="frame-header"></iframe>
-<main>
-    <div class="left-sidebar">
-        <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
-    </div>
-    <!-- CONTENT -->
-    <div class="content">
-        <h1>HTML5. Web Workers - Веб-работники</h1>
-        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
-        <hr>
-        <!-- buttons prev - next -->
-        <div class="w3-clear nextprev">
-            <a class="w3-left w3-btn" href="html5_webstorage.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
-            <a class="w3-right w3-btn" href="html5_serversentevents.html" title="Наступна сторінка" rel="next">Next ❯</a>
-        </div>
-        <!-- / buttons prev - next -->
-        <hr>
-        <p class="intro">Веб-работник - это JavaScript, который работает в фоновом режиме, не влияя на продуктивность страницы.</p>
-        <hr>
-        <h2>Что такое веб-работник на веб-странице?</h2>
-        <p>Во время выполнения скриптов на странице HTML страница перестаёт отвечать, пока сценарий (выполнение скрипта) не закончится.</p>
-        <p>Веб-работник - это JavaScript, который работает в фоновом режиме, независимо от других скриптов, не влияя на продуктивность страницы. Вы можете продолжать делать всё, что хотите: нажимать, выбирая вещи и т.д., а веб-работник будет работать в фоновом режиме.</p>
-        <hr>
-        <h2>Поддержка браузерами</h2>
-        <p>Цифры в таблице определяют первую версию браузера, которая полностью пподдерживает Web Workers (веб-работники).</p>
-        <table class="browserref notranslate">
-            <tbody><tr>
-                <th style="width:20%;font-size:16px;text-align:left;">API</th>
-                <th style="width:16%;" class="bsChrome" title="Chrome"></th>
-                <th style="width:16%;" class="bsEdge" title="Internet Explorer / Edge"></th>
-                <th style="width:16%;" class="bsFirefox" title="Firefox"></th>
-                <th style="width:16%;" class="bsSafari" title="Safari"></th>
-                <th style="width:16%;" class="bsOpera" title="Opera"></th>
-            </tr>
-            <tr>
-                <td style="text-align:left;">Web Workers</td>
-                <td>4.0</td>
-                <td>10.0</td>
-                <td>3.5</td>
-                <td>4.0</td>
-                <td>11.5</td>
-            </tr>
+   <iframe src="../pages/header.html" class="frame-header"></iframe>
+   <main>
+      <div class="left-sidebar">
+         <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+         <h1>HTML5 Web Workers - Веб-работники</h1>
+         <p class="brief"><strong>Курс по основам HTML5. W3Schools на русском языке. Уроки для начинающих</strong></p>
+         <hr>
+
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html5_webstorage.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html5_serversentevents.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+
+         <hr>
+         <p class="intro"><strong>Веб-работник</strong> - это JavaScript, который работает в фоновом режиме, не влияя на продуктивность страницы.</p>
+         <hr>
+         <h2>Что такое веб-работник на веб-странице?</h2>
+         <p>Во время выполнения скриптов на странице HTML страница перестаёт отвечать, пока сценарий (выполнение скрипта) не закончится.</p>
+         <p>Веб-работник - это JavaScript, который работает в фоновом режиме, независимо от других скриптов, не влияя на продуктивность страницы. Вы можете продолжать делать всё, что хотите: нажимать, выбирая вещи и т.д., а веб-работник будет работать в фоновом режиме.</p>
+         <hr>
+         <h2>Поддержка браузерами</h2>
+         <p>Цифры в таблице определяют первую версию браузера, которая полностью пподдерживает Web Workers (веб-работники).</p>
+         <table class="browserref notranslate">
+            <tbody>
+               <tr>
+                  <th style="width:20%;font-size:16px;text-align:left;">API</th>
+                  <th style="width:16%;" class="bsChrome" title="Chrome"></th>
+                  <th style="width:16%;" class="bsEdge" title="Internet Explorer / Edge"></th>
+                  <th style="width:16%;" class="bsFirefox" title="Firefox"></th>
+                  <th style="width:16%;" class="bsSafari" title="Safari"></th>
+                  <th style="width:16%;" class="bsOpera" title="Opera"></th>
+               </tr>
+               <tr>
+                  <td style="text-align:left;">Web Workers</td>
+                  <td>4.0</td>
+                  <td>10.0</td>
+                  <td>3.5</td>
+                  <td>4.0</td>
+                  <td>11.5</td>
+               </tr>
             </tbody>
-        </table>
-        <hr>
-        <h2>HTML Веб-работник. Пример</h2>
-        <p>Приведённый ниже пример создаёт простого веб-работника, который подсчитывает числа в фоновом режиме:</p>
-        <div class="w3-example">
+         </table>
+         <hr>
+         <h2>HTML Веб-работник. Пример</h2>
+         <p>Приведённый ниже пример создаёт простого веб-работника, который подсчитывает числа в фоновом режиме:</p>
+         <div class="w3-example">
             <h3>Пример:</h3>
             <div class="w3-padding w3-white notranslate">
-                Count numbers: <output id="result"></output>
-                <p>
-                    <button onclick="startWorker()">Start Worker</button>
-                    <button onclick="stopWorker()">Stop Worker</button>
-                    <script>
-                        var w;
-                        function startWorker()
-                        {
-                            if(typeof(Worker)!=="undefined") {
-                                if(typeof(w)=="undefined") {
-                                    w=new Worker("demo_workers.js");
-                                }
-                                w.onmessage = function (event) {
-                                    document.getElementById("result").innerHTML=event.data;
-                                };
-                            } else {
-                                document.getElementById("result").innerHTML="Извините, ваш браузер не поддерживает Web Workers...";
-                            }
+               Count numbers: <output id="result"></output>
+               <p>
+                  <button onclick="startWorker()">Start Worker</button>
+                  <button onclick="stopWorker()">Stop Worker</button>
+
+                  <script>
+                     var w;
+
+                     function startWorker() {
+                        if (typeof(Worker) !== "undefined") {
+                           if (typeof(w) == "undefined") {
+                              w = new Worker("../js/demo_workers.js");
+                           }
+                           w.onmessage = function(event) {
+                              document.getElementById("result").innerHTML = event.data;
+                           };
+                        } else {
+                           document.getElementById("result").innerHTML = "Извините, ваш браузер не поддерживает веб-работников...";
                         }
-                        function stopWorker()
-                        {
-                            w.terminate();
-                            w = undefined;
-                        }
-                    </script>
-                </p></div>
+                     }
+
+                     function stopWorker() {
+                        w.terminate();
+                        w = undefined;
+                     }
+                  </script>
+               </p>
+            </div>
             <a target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_webworker" class="w3-btn w3-margin-bottom w3-margin-top" rel="nofollow">Попробуйте сами »</a>
-        </div>
-        <hr>
-        <h2>Проверьте поддержку Веб-работника</h2>
-        <p>Перед тем, как создать веб-работника, проверьте, поддерживает ли его браузер пользователя:</p>
-        <div class="w3-code w3-border notranslate jsHigh"><span class="jscolor" style="color:black">
-<span class="jskeywordcolor" style="color:mediumblue">if</span> (<span class="jskeywordcolor" style="color:mediumblue">typeof</span>(Worker) !== <span class="jsstringcolor" style="color:brown">"undefined"</span>) {<br><span class="jsnumbercolor" style="color:red">
-</span>&nbsp;&nbsp;<span class="commentcolor" style="color:green">// Да! Веб-работник поддерживается!<br></span><span class="jsnumbercolor" style="color:red">
-</span>  &nbsp; <span class="commentcolor" style="color:green">// <i>Какой-то код.....</i><br></span><span class="jsnumbercolor" style="color:red">
-</span> }<span class="jsnumbercolor" style="color:red">
-</span> <span class="jskeywordcolor" style="color:mediumblue">else</span> {<br><span class="jsnumbercolor" style="color:red">
-</span>  &nbsp; <span class="commentcolor" style="color:green">// Извините! Веб-работник не поддерживается.<br></span><span class="jsnumbercolor" style="color:red">
-</span> }
-</span></div>
-        <hr>
-        <h2>Создать файл Веб-работника</h2>
-        <p>Теперь давайте создадим нашего веб-работника во внешнем JavaScript файле.</p>
-        <p>Здесь мы создаём скрипт, который считает. Скрипт сохраняется в файле "demo_workers.js":</p>
-        <div class="w3-code w3-border notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
-</span>
-<span class="jskeywordcolor" style="color:mediumblue">var</span> i = <span class="jsnumbercolor" style="color:red">0</span>;<br><span class="jsnumbercolor" style="color:red">
-</span><br>
-<span class="jskeywordcolor" style="color:mediumblue">function</span> timedCount()<span class="jsnumbercolor" style="color:red">
-</span>{<br><span class="jsnumbercolor" style="color:red">
-</span>   &nbsp;
-i = i + <span class="jsnumbercolor" style="color:red">1</span>;<br><span class="jsnumbercolor" style="color:red">
-</span>   &nbsp;
-postMessage(i);<br><span class="jsnumbercolor" style="color:red">
-</span>&nbsp;&nbsp;setTimeout(<span class="jsstringcolor" style="color:brown">"timedCount()"</span>,<span class="jsnumbercolor" style="color:red">500</span>);<br><span class="jsnumbercolor" style="color:red">
-</span>}<br><span class="jsnumbercolor" style="color:red">
-</span><br>
-timedCount();
-</span></div>
-        <p>Важной частью вишеуказанного кода является метод <code class="w3-codespan">postMessage()</code>, который используется для публикации сообщения на HTML-странице.</p>
-        <p><b>Примечание:</b> Обычно веб-работники не используются для таких простых скриптов, а используются для более ресурсоёмких задач.</p>
-        <hr>
-        <h2>Создать объект Веб-работника</h2>
-        <p>Теперь, когда у нас есть файл веб-работника, нам необходимо вызвать его с HTML-страницы.</p>
-        <p>Следующие строки проверяют, существует ли уже работник, если нет - он создаёт новый веб-объект и выполняет код в "demo_workers.js":</p>
-        <div class="w3-code w3-border notranslate jsHigh"><span class="jscolor" style="color:black">
-<span class="jskeywordcolor" style="color:mediumblue">if</span> (<span class="jskeywordcolor" style="color:mediumblue">typeof</span>(w) == <span class="jsstringcolor" style="color:brown">"undefined"</span>) {<br><span class="jsnumbercolor" style="color:red">
-</span>  &nbsp; w = <span class="jskeywordcolor" style="color:mediumblue">new</span> Worker(<span class="jsstringcolor" style="color:brown">"demo_workers.js"</span>);<br><span class="jsnumbercolor" style="color:red">
-</span> }</span></div>
-        <p>Потом мы можем отправлять и получать сообщение от веб-работника.</p>
-        <p>Добавьте к веб-работнику слушателя событий "onmessage".</p>
-        <div class="w3-code w3-border notranslate jsHigh"><span class="jscolor" style="color:black">
-w.<span class="jspropertycolor" style="color:black">onmessage</span> = <span class="jskeywordcolor" style="color:mediumblue">function</span>(<span class="jskeywordcolor" style="color:mediumblue">event</span>){<br><span class="jsnumbercolor" style="color:red">
-</span>&nbsp;&nbsp;document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"result"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> = <span class="jskeywordcolor" style="color:mediumblue">event</span>.<span class="jspropertycolor" style="color:black">data</span>;<br><span class="jsnumbercolor" style="color:red">
-</span> };
-</span></div>
-        <p>Когда веб-работник отправляет сообщение, выполняется код в слушателе события. Данные веб-работника сохраняются в event.data.</p>
-        <hr>
-        <h2>Завершить работу Веб-работника</h2>
-        <p>Когда объект веб-работника создан, он будет продолжать прослушивать сообщение (даже после завершения внешнего скрипта), пока он не будет завершен.</p>
-        <p>Для прекращения работы веб-работника и свободных ресурсов браузера/компьютера используйте метод <code class="w3-codespan">terminate()</code>:</p>
-        <div class="w3-code w3-border notranslate"><div>
-            w.terminate();</div></div>
-        <hr>
-        <h2>Повторное использование Веб-работника</h2>
-        <p>Если для рабочей переменной задано значение undefined, после её завершения вы можете повторно использовать код:</p>
-        <div class="w3-code w3-border notranslate"><div>
-            w = undefined;</div></div>
-        <hr>
-        <h2>Полный пример кода Веб-работника</h2>
-        <p>Мы уже видели код Веб-работника в файле .js. Ниже приведён код для HTML-страницы:</p>
-        <div class="w3-example">
+         </div>
+         <hr>
+         <h2>Проверьте поддержку Веб-работника</h2>
+         <p>Перед тем, как создать веб-работника, проверьте, поддерживает ли его браузер пользователя:</p>
+         <div class="w3-code w3-border notranslate jsHigh"><span class="jscolor" style="color:black">
+               <span class="jskeywordcolor" style="color:mediumblue">if</span> (<span class="jskeywordcolor" style="color:mediumblue">typeof</span>(Worker) !== <span class="jsstringcolor" style="color:brown">"undefined"</span>) {<br><span class="jsnumbercolor" style="color:red">
+               </span>&nbsp;&nbsp;<span class="commentcolor" style="color:green">// Да! Веб-работник поддерживается!<br></span><span class="jsnumbercolor" style="color:red">
+               </span> &nbsp; <span class="commentcolor" style="color:green">// <i>Какой-то код.....</i><br></span><span class="jsnumbercolor" style="color:red">
+               </span> }<span class="jsnumbercolor" style="color:red">
+               </span> <span class="jskeywordcolor" style="color:mediumblue">else</span> {<br><span class="jsnumbercolor" style="color:red">
+               </span> &nbsp; <span class="commentcolor" style="color:green">// Извините! Веб-работник не поддерживается.<br></span><span class="jsnumbercolor" style="color:red">
+               </span> }
+            </span></div>
+         <hr>
+         <h2>Создать файл Веб-работника</h2>
+         <p>Теперь давайте создадим нашего веб-работника во внешнем JavaScript файле.</p>
+         <p>Здесь мы создаём скрипт, который считает. Скрипт сохраняется в файле "demo_workers.js":</p>
+         <div class="w3-code w3-border notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+               </span>
+               <span class="jskeywordcolor" style="color:mediumblue">var</span> i = <span class="jsnumbercolor" style="color:red">0</span>;<br><span class="jsnumbercolor" style="color:red">
+               </span><br>
+               <span class="jskeywordcolor" style="color:mediumblue">function</span> timedCount()<span class="jsnumbercolor" style="color:red">
+               </span>{<br><span class="jsnumbercolor" style="color:red">
+               </span> &nbsp;
+               i = i + <span class="jsnumbercolor" style="color:red">1</span>;<br><span class="jsnumbercolor" style="color:red">
+               </span> &nbsp;
+               postMessage(i);<br><span class="jsnumbercolor" style="color:red">
+               </span>&nbsp;&nbsp;setTimeout(<span class="jsstringcolor" style="color:brown">"timedCount()"</span>,<span class="jsnumbercolor" style="color:red">500</span>);<br><span class="jsnumbercolor" style="color:red">
+               </span>}<br><span class="jsnumbercolor" style="color:red">
+               </span><br>
+               timedCount();
+            </span></div>
+         <p>Важной частью вышеуказанного кода является метод <code class="w3-codespan">postMessage()</code>, который используется для публикации сообщения на HTML-странице.</p>
+         <p><b>Примечание:</b> Обычно веб-работники не используются для таких простых скриптов, а используются для более ресурсоёмких задач.</p>
+         <hr>
+         <h2>Создать объект Веб-работника</h2>
+         <p>Теперь, когда у нас есть файл веб-работника, нам необходимо вызвать его с HTML-страницы.</p>
+         <p>Следующие строки проверяют, существует ли уже работник, если нет - он создаёт новый веб-объект и выполняет код в "demo_workers.js":</p>
+         <div class="w3-code w3-border notranslate jsHigh"><span class="jscolor" style="color:black">
+               <span class="jskeywordcolor" style="color:mediumblue">if</span> (<span class="jskeywordcolor" style="color:mediumblue">typeof</span>(w) == <span class="jsstringcolor" style="color:brown">"undefined"</span>) {<br><span class="jsnumbercolor" style="color:red">
+               </span> &nbsp; w = <span class="jskeywordcolor" style="color:mediumblue">new</span> Worker(<span class="jsstringcolor" style="color:brown">"demo_workers.js"</span>);<br><span class="jsnumbercolor" style="color:red">
+               </span> }</span></div>
+         <p>Потом мы можем отправлять и получать сообщение от веб-работника.</p>
+         <p>Добавьте к веб-работнику слушателя событий "onmessage".</p>
+         <div class="w3-code w3-border notranslate jsHigh"><span class="jscolor" style="color:black">
+               w.<span class="jspropertycolor" style="color:black">onmessage</span> = <span class="jskeywordcolor" style="color:mediumblue">function</span>(<span class="jskeywordcolor" style="color:mediumblue">event</span>){<br><span class="jsnumbercolor" style="color:red">
+               </span>&nbsp;&nbsp;document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"result"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> = <span class="jskeywordcolor" style="color:mediumblue">event</span>.<span class="jspropertycolor" style="color:black">data</span>;<br><span class="jsnumbercolor" style="color:red">
+               </span> };
+            </span></div>
+         <p>Когда веб-работник отправляет сообщение, выполняется код в слушателе события. Данные веб-работника сохраняются в event.data.</p>
+         <hr>
+         <h2>Завершить работу Веб-работника</h2>
+         <p>Когда объект веб-работника создан, он будет продолжать прослушивать сообщение (даже после завершения внешнего скрипта), пока он не будет завершен.</p>
+         <p>Для прекращения работы веб-работника и свободных ресурсов браузера/компьютера используйте метод <code class="w3-codespan">terminate()</code>:</p>
+         <div class="w3-code w3-border notranslate">
+            <div>
+               w.terminate();</div>
+         </div>
+         <hr>
+         <h2>Повторное использование Веб-работника</h2>
+         <p>Если для рабочей переменной задано значение undefined, после её завершения вы можете повторно использовать код:</p>
+         <div class="w3-code w3-border notranslate">
+            <div>
+               w = undefined;</div>
+         </div>
+         <hr>
+         <h2>Полный пример кода Веб-работника</h2>
+         <p>Мы уже видели код Веб-работника в файле .js. Ниже приведён код для HTML-страницы:</p>
+         <div class="w3-example">
             <h3>Пример:</h3>
             <div class="w3-code notranslate htmlHigh">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Count numbers: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>output<span class="attributecolor" style="color:red"> id<span class="attributevaluecolor" style="color:mediumblue">="result"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/output<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>button<span class="attributecolor" style="color:red"> onclick<span class="attributevaluecolor" style="color:mediumblue">="startWorker()"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Start Worker<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/button<span class="tagcolor" style="color:mediumblue">&gt;</span></span> <br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>button<span class="attributecolor" style="color:red"> onclick<span class="attributevaluecolor" style="color:mediumblue">="stopWorker()"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Stop Worker<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/button<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"><br>
-                <span class="jskeywordcolor" style="color:mediumblue">var</span> w;<br><span class="jsnumbercolor" style="color:red"></span><br>
-                <span class="jskeywordcolor" style="color:mediumblue">function</span> startWorker()<span class="jsnumbercolor" style="color:red">
-                </span>{<br><span class="jsnumbercolor" style="color:red">
-                </span>  &nbsp;
-                <span class="jskeywordcolor" style="color:mediumblue">if</span> (<span class="jskeywordcolor" style="color:mediumblue">typeof</span>(Worker) !== <span class="jsstringcolor" style="color:brown">"undefined"</span>)<span class="jsnumbercolor" style="color:red">
-                </span>{<br><span class="jsnumbercolor" style="color:red">
-                </span>&nbsp;&nbsp;&nbsp; <span class="jskeywordcolor" style="color:mediumblue">if</span> (<span class="jskeywordcolor" style="color:mediumblue">typeof</span>(w) == <span class="jsstringcolor" style="color:brown">"undefined"</span>) {<br><span class="jsnumbercolor" style="color:red">
-                </span>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; w = <span class="jskeywordcolor" style="color:mediumblue">new</span> Worker(<span class="jsstringcolor" style="color:brown">"demo_workers.js"</span>);<br><span class="jsnumbercolor" style="color:red">
-                </span>  &nbsp;&nbsp;&nbsp; }<br><span class="jsnumbercolor" style="color:red">
-                </span>&nbsp;&nbsp;&nbsp;&nbsp;w.<span class="jspropertycolor" style="color:black">onmessage</span> = <span class="jskeywordcolor" style="color:mediumblue">function</span>(<span class="jskeywordcolor" style="color:mediumblue">event</span>) {<br><span class="jsnumbercolor" style="color:red">
-                </span>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"result"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> = <span class="jskeywordcolor" style="color:mediumblue">event</span>.<span class="jspropertycolor" style="color:black">data</span>;<br><span class="jsnumbercolor" style="color:red">
-                </span>&nbsp;&nbsp;&nbsp;&nbsp;};<br><span class="jsnumbercolor" style="color:red">
-                </span>&nbsp;&nbsp;}
-                <span class="jskeywordcolor" style="color:mediumblue">else</span><span class="jsnumbercolor" style="color:red">
-                </span>{<br><span class="jsnumbercolor" style="color:red">
-                </span>  &nbsp;&nbsp;&nbsp;
-                document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"result"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> = <span class="jsstringcolor" style="color:brown">"Sorry! No Web Worker support."</span>;<br><span class="jsnumbercolor" style="color:red">
-                </span>  &nbsp;&nbsp;}<br><span class="jsnumbercolor" style="color:red">
-                </span>}<br><span class="jsnumbercolor" style="color:red">
-                </span><br>
-                <span class="jskeywordcolor" style="color:mediumblue">function</span> stopWorker()<span class="jsnumbercolor" style="color:red">
-                </span>{ <br><span class="jsnumbercolor" style="color:red">
-                </span>&nbsp;&nbsp;w.<span class="jspropertycolor" style="color:black">terminate</span>();<br>&nbsp;&nbsp;w = undefined;<br><span class="jsnumbercolor" style="color:red">
-                </span>}<br>
-                </span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Count numbers: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>output<span class="attributecolor" style="color:red"> id<span class="attributevaluecolor" style="color:mediumblue">="result"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/output<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>button<span class="attributecolor" style="color:red"> onclick<span class="attributevaluecolor" style="color:mediumblue">="startWorker()"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Start Worker<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/button<span class="tagcolor" style="color:mediumblue">&gt;</span></span> <br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>button<span class="attributecolor" style="color:red"> onclick<span class="attributevaluecolor" style="color:mediumblue">="stopWorker()"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Stop Worker<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/button<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"><br>
+                  <span class="jskeywordcolor" style="color:mediumblue">var</span> w;<br><span class="jsnumbercolor" style="color:red"></span><br>
+                  <span class="jskeywordcolor" style="color:mediumblue">function</span> startWorker()<span class="jsnumbercolor" style="color:red">
+                  </span>{<br><span class="jsnumbercolor" style="color:red">
+                  </span> &nbsp;
+                  <span class="jskeywordcolor" style="color:mediumblue">if</span> (<span class="jskeywordcolor" style="color:mediumblue">typeof</span>(Worker) !== <span class="jsstringcolor" style="color:brown">"undefined"</span>)<span class="jsnumbercolor" style="color:red">
+                  </span>{<br><span class="jsnumbercolor" style="color:red">
+                  </span>&nbsp;&nbsp;&nbsp; <span class="jskeywordcolor" style="color:mediumblue">if</span> (<span class="jskeywordcolor" style="color:mediumblue">typeof</span>(w) == <span class="jsstringcolor" style="color:brown">"undefined"</span>) {<br><span class="jsnumbercolor" style="color:red">
+                  </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; w = <span class="jskeywordcolor" style="color:mediumblue">new</span> Worker(<span class="jsstringcolor" style="color:brown">"demo_workers.js"</span>);<br><span class="jsnumbercolor" style="color:red">
+                  </span> &nbsp;&nbsp;&nbsp; }<br><span class="jsnumbercolor" style="color:red">
+                  </span>&nbsp;&nbsp;&nbsp;&nbsp;w.<span class="jspropertycolor" style="color:black">onmessage</span> = <span class="jskeywordcolor" style="color:mediumblue">function</span>(<span class="jskeywordcolor" style="color:mediumblue">event</span>) {<br><span class="jsnumbercolor" style="color:red">
+                  </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"result"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> = <span class="jskeywordcolor" style="color:mediumblue">event</span>.<span class="jspropertycolor" style="color:black">data</span>;<br><span class="jsnumbercolor" style="color:red">
+                  </span>&nbsp;&nbsp;&nbsp;&nbsp;};<br><span class="jsnumbercolor" style="color:red">
+                  </span>&nbsp;&nbsp;}
+                  <span class="jskeywordcolor" style="color:mediumblue">else</span><span class="jsnumbercolor" style="color:red">
+                  </span>{<br><span class="jsnumbercolor" style="color:red">
+                  </span> &nbsp;&nbsp;&nbsp;
+                  document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"result"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> = <span class="jsstringcolor" style="color:brown">"Sorry! No Web Worker support."</span>;<br><span class="jsnumbercolor" style="color:red">
+                  </span> &nbsp;&nbsp;}<br><span class="jsnumbercolor" style="color:red">
+                  </span>}<br><span class="jsnumbercolor" style="color:red">
+                  </span><br>
+                  <span class="jskeywordcolor" style="color:mediumblue">function</span> stopWorker()<span class="jsnumbercolor" style="color:red">
+                  </span>{ <br><span class="jsnumbercolor" style="color:red">
+                  </span>&nbsp;&nbsp;w.<span class="jspropertycolor" style="color:black">terminate</span>();<br>&nbsp;&nbsp;w = undefined;<br><span class="jsnumbercolor" style="color:red">
+                  </span>}<br>
+               </span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
             <a target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_webworker" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
-        </div>
-        <hr>
-        <h2>Веб-работники и DOM</h2>
-        <p>Поскольку веб-работники находятся во внешних файлах, они не имеют доступа к таким объектам JavaScript:</p>
-        <ul>
+         </div>
+         <hr>
+         <h2>Веб-работники и DOM</h2>
+         <p>Поскольку веб-работники находятся во внешних файлах, они не имеют доступа к таким объектам JavaScript:</p>
+         <ul>
             <li>Объект окна</li>
             <li>Объект документа</li>
             <li>Родительский объект</li>
-        </ul>
-        <hr>
-        <!-- buttons prev - next -->
-        <div class="w3-clear nextprev">
-            <a class="w3-left w3-btn" href="html5_webstorage.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
-            <a class="w3-right w3-btn" href="html5_serversentevents.html" title="Наступна сторінка" rel="next">Next ❯</a>
-        </div>
-        <!-- / buttons prev - next -->
-        <hr class="hr-bottom">
-        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
-        <!-- Комментарии от Disqus -->
-        <div id="disqus_thread"></div>
-        <script>
-        var disqus_config = function () {
-        this.page.url = html5beginners.github.io;  // канонический URL страницы
-        this.page.identifier = html5beginners.github.io/html/html5_webworkers.html; // уникальный идентификатор страницы
-        };
-        (function() { // Не редактировать ниже этой линии
-        var d = document, s = d.createElement('script');
-        s.src = 'https://html5beginners.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-        })();
-        </script>
-        <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
-        <!--  / Комментарии от Disqus -->
-    </div>
-    <!-- / CONTENT -->
-    <div class="right-sidebar">
-        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
-    </div>
-</main>
-<footer>
-    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
-</footer>
+         </ul>
+         <hr>
+         
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html5_webstorage.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html5_serversentevents.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         
+         <iframe class="predisqus" src="../pages/predisqus.html"></iframe>
+         <!-- Комментарии от Disqus -->
+         <div id="disqus_thread"></div>
+         <script>
+            var disqus_config = function() {
+               this.page.url = html5beginner.github.io; // канонический URL страницы
+               this.page.identifier = html5beginner.github.io / html / html5_webworkers.html; // уникальный идентификатор страницы
+            };
+            (function() { // Не редактировать ниже этой линии
+               var d = document,
+                  s = d.createElement('script');
+               s.src = 'https://html5beginner-1.disqus.com/embed.js';
+               s.setAttribute('data-timestamp', +new Date());
+               (d.head || d.body).appendChild(s);
+            })();
+         </script>
+         <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+         <!--  / Комментарии от Disqus -->
+      </div>
+      <!-- / CONTENT -->
+      <div class="right-sidebar">
+         <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+      </div>
+   </main>
+   <footer>
+      <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+   </footer>
 </body>
+
 </html>
