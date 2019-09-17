@@ -5,19 +5,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="keywords" content="HTML,CSS,уроки,html5,css3,основы,элементы,типы,документов,doctype,справочник,W3Schools,на русском,языке,reference" />
-    <meta name="description" content="Элементы и валидные (действительные) DOCTYPES в HTML. Справочник. Какие существуют типы веб-документов. Курс по основам HTML5 | CSS3. W3Schools на русском. Учебник. Бесплатные уроки для чайников" />
+    <meta name="description" content="Элементы и валидные (действительные) DOCTYPES в HTML. Справочник. Какие существуют типы веб-документов. Курс по основам HTML5. W3Schools на русском. Учебник. Бесплатные уроки" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="../styles/ws.css" />
+    <link rel="stylesheet" href="../styles/w3colors.css" />
     <link rel="stylesheet" href="../styles/handheld.css" />
-    <link rel="canonical" href="https://html5beginner.github.io/" />
-    <meta property="og:title" content="HTML Элементы и валидные DOCTYPES. Справочник. W3Schools на русском. Основы HTML5 для начинающих" />
-    <meta property="og:type" content="Content" /> <!--описывает тип объекта на странице-->
-    <meta property="og:url" content="https://html5beginner.github.io/" /><!--адрес сайта-->
-    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
-    <meta property="og:description" content="Элементы и валидные (действительные) DOCTYPES в HTML. Справочник. Какие существуют типы веб-документов. Курс по основам HTML5 | CSS3. W3Schools на русском. Учебник. Бесплатные уроки для чайников" />
-    <meta property="og:locale" content="ru" /> <!--мова сайту-->
-    <meta property="og:site_name" content="HTML5Beginners - Основы HTML, CSS, JavaScript, PHP. Пособие W3Schools на русском" />
     <script src="../js/topnav.js"></script>
 </head>
 <body>
@@ -30,14 +23,13 @@
     <!-- CONTENT -->
     <div class="content">
         <h1>HTML Элементы и валидные DOCTYPES. Справочник</h1>
-        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools на русском. Уроки для начинающих</strong></p>
+        <p class="brief"><strong>Курс по основам HTML CSS. W3Schools на русском. Уроки для начинающих</strong></p>
         <hr>
-        <!-- buttons prev - next -->
+        
         <div class="w3-clear nextprev">
             <a class="w3-left w3-btn" href="ref_charactersets.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
             <a class="w3-right w3-btn" href="ref_urlencode.html" title="Следующая страница" rel="next">Next ❯</a>
         </div>
-        <!-- buttons prev - next -->
         <hr>
 
         <h2>HTML Элементы - Валидные DOCTYPE</h2>
@@ -964,32 +956,31 @@
             </tr>
             </tbody>
         </table>
-
         <hr>
-        <!-- buttons prev - next -->
+        
         <div class="w3-clear nextprev">
             <a class="w3-left w3-btn" href="ref_charactersets.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
             <a class="w3-right w3-btn" href="ref_urlencode.html" title="Следующая страница" rel="next">Next ❯</a>
         </div>
-        <!-- buttons prev - next -->
-        <hr class="hr-bottom">
-            <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не выкладывайте</b> свой код непосредственно в комментариях, он отображается некорректно. Воспользуйтесь такими сервисами, как <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, сохраните код на любом из этих сервисов и в комментариях дайте на него ссылку. Так будет виден и код, и результат.</p>
-        <!-- Комментарии от Disqus -->
-        <div id="disqus_thread"></div>
-        <script>
-        var disqus_config = function () {
-        this.page.url = html5beginner.github.io;  // канонический URL страницы
-        this.page.identifier = html5beginner.github.io/tags/ref_html_dtd.html; // уникальный идентификатор страницы
-        };
-        (function() { // Не редактировать ниже этой линии
-        var d = document, s = d.createElement('script');
-        s.src = 'https://html5beginners.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-        })();
-        </script>
-        <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
-        <!--  / Комментарии от Disqus -->
+
+        <iframe class="predisqus" src="../pages/predisqus.html"></iframe>
+         <!-- Комментарии от Disqus -->
+         <div id="disqus_thread"></div>
+         <script>
+            var disqus_config = function() {
+               this.page.url = html5beginner.github.io; // канонический URL страницы
+               this.page.identifier = html5beginner.github.io / tags / ref_html_dtd.html; // уникальный идентификатор страницы
+            };
+            (function() { // Не редактировать ниже этой линии
+               var d = document,
+                  s = d.createElement('script');
+               s.src = 'https://html5beginner-1.disqus.com/embed.js';
+               s.setAttribute('data-timestamp', +new Date());
+               (d.head || d.body).appendChild(s);
+            })();
+         </script>
+         <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+         <!--  / Комментарии от Disqus -->
     </div>
     <!-- / CONTENT -->
     <div class="right-sidebar">
