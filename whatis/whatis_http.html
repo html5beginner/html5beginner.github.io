@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <title>HTML Основы. Что такое HTTP? Курсы W3schools на русском. Уроки для начинающих</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="keywords" content="HTML,http,что такое,что означает,протокол,веб-разработка,W3Schools,на русском,основы,язык,программирование,курсы,обучение,бесплатно,учебник для начинающих,уроки">
+   <meta name="description" content="HTML Основы. Что такое прокол http? В чем разница между http и https? Как работают сайты?">
+   <link rel="icon" href="/favicon.ico" type="image/x-icon">
+   <link rel="stylesheet" href="../styles/style.css">
+   <link rel="stylesheet" href="../styles/ws.css">
+   <link rel="stylesheet" href="../styles/w3colors.css">
+   <link rel="stylesheet" href="../styles/handheld.css">
+   <script src="../js/topnav.js"></script>
+   <script src="https://kit.fontawesome.com/26e3ee569a.js"></script>
+</head>
+
+<body>
+   <iframe src="../pages/header.html" class="frame-header"></iframe>
+   <main>
+
+      <div class="left-sidebar">
+         <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+         <h1>Что такое HTTP?</h1>
+         <p class="brief"><strong>Курс по основам HTML/CSS. W3Schools на русском. Уроки для начинающих</strong></p>
+         <hr>
+
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="whatis_roadmap.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="whatis_html.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         <hr>
+
+         <div class="w3-cell-row w3-card-2">
+            <div class="w3-cell w3-white w3-hide-small w3-center" style="padding:16px;width:150px">
+               <img class="w3-img" alt="HTML" src="../img/img_http.jpg" style="width:110px">
+            </div>
+            <div class="w3-cell w3-container w3-light-gray w3-border-left w3-cell-top" style="padding:20px;">
+               <p><b>HTTP</b> расшифровывается как <b>H</b>yper <b>T</b>ext <b>T</b>ransfer <b>P</b>rotocol (Протокол передачи гипертекста)</p>
+               <p><b>WWW</b> это связь между web <b>клиентами</b> и <b>серверами</b></p>
+               <p>Связь между клиентскими компьютерами и веб-серверами осуществляется путем отправки <b>HTTP запросов</b> и получения <b>HTTP ответов</b></p>
+            </div>
+         </div>
+
+         <hr>
+
+         <h2>World Wide Web комуникация</h2>
+         <p>Всемирная паутина (World Wide Web) - это общение между web <strong>клиентами</strong> и web <strong>серверами</strong>.</p>
+         <p><strong>Клиентами</strong> часто являются браузеры (Chrome, Edge, Safari), но также это могут быть программы и устройства любого типа.</p>
+         <p><strong>Серверы</strong> - это чаще всего мощные компьютеры в облаке (компьютерная сеть).</p>
+         <hr>
+
+         <div class="w3-row">
+            <div class="w3-col m4 w3-center">
+               <i class="fa fa-desktop" style="font-size:70px"></i>
+               <i class="fa fa-arrows-h" style="font-size:70px"></i>
+               <br>Веб-клиент
+            </div>
+            <div class="w3-col m4 w3-center">
+               <i class="fab fa-mixcloud" style="font-size:70px"></i>
+               <i class="fa fa-arrows-h" style="font-size:70px"></i>
+               <br>Облако
+            </div>
+            <div class="w3-col m4 w3-center">
+               <i class="fa fa-server" style="font-size:60px"></i>
+               <i class="fa fa-database" style="font-size:70px"></i>
+               <i class="fa fa-database" style="font-size:70px"></i>
+               <br>Веб-сервер
+            </div>
+            <div class="w3-col m2 w3-center">
+
+            </div>
+         </div>
+
+         <hr>
+         <h2>HTTP Запрос / Ответ</h2>
+         <p>Связь между клиентами и серверами осуществляется с помощью <b>запросов</b> и <b>ответов</b>:</p>
+         <ol>
+            <li>Клиент (браузер) отправляет <strong>HTTP запрос</strong> в Интернет</li>
+            <li>Веб-сервер получает запрос</li>
+            <li>Сервер запускает приложение для обработки запроса</li>
+            <li>Сервер возвращает <strong>HTTP ответ</strong> (вывод) в браузер</li>
+            <li>Клиент (браузер) получает ответ</li>
+         </ol>
+
+         <hr>
+         <h2>Круг HTTP-запросов</h2>
+         <p>Типичный круг HTTP-запросов/ответов:</p>
+         <ol>
+            <li>Браузер запрашивает страницу HTML. Сервер возвращает файл HTML.</li>
+            <li>Браузер запрашивает таблицу стилей. Сервер возвращает файл CSS.</li>
+            <li>Браузер запрашивает изображение в формате JPG. Сервер возвращает файл JPG.</li>
+            <li>Браузер запрашивает код JavaScript. Сервер возвращает файл JS</li>
+            <li>Браузер запрашивает данные. Сервер возвращает данные (в формате XML или JSON).</li>
+         </ol>
+
+         <hr>
+         <h2>XHR - XML Http запрос</h2>
+         <p>Все браузеры имеют встроенный <b>XMLHttpRequest объект (XHR)</b>.</p>
+         <p><strong>XHR</strong> - это объект JavaScript, который используется для передачи данных между веб-браузером и веб-сервером.</p>
+         <p><strong>XHR</strong> часто используется для запроса и получения данных с целью изменения веб-страницы.</p>
+         <p>Несмотря на XML и Http в названии, XHR используется с протоколами, отличными от HTTP, и данные могут быть разных типов, таких как <a href="whatis_html.html">HTML</a>, <a href="whatis_css.html">CSS</a>, <a href="whatis_xml.html">XML</a>, <a href="whatis_json.html">JSON</a> и простой текст.</p>
+
+         <p><strong>XHR</strong> объект - это <b>Мечта веб-разработчиков</b>, потому что вы можете:</p>
+         <ul>
+            <li>Обновление веб-страницы без перезагрузки страницы</li>
+            <li>Запрос данных с сервера - после загрузки страницы</li>
+            <li>Получать данные с сервера - после загрузки страницы</li>
+            <li>Отправка данных на сервер - в фоновом режиме</li>
+         </ul>
+
+         <p>Объект <strong>XHR</strong> является базовой концепцией <a href="whatis_ajax.html"><b>AJAX</b></a> и <a href="whatis_json.html"><b>JSON</b></a>:</p>
+         <p><img src="../img/img_ajax.gif" alt="AJAX"></p>
+         <hr>
+
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="whatis_roadmap.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="whatis_html.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+
+         <iframe class="predisqus" src="../pages/predisqus.html"></iframe>
+         <!-- Комментарии от Disqus -->
+         <div id="disqus_thread"></div>
+         <script>
+            var disqus_config = function() {
+               this.page.url = html5beginner.github.io; // канонический URL страницы
+               this.page.identifier = html5beginner.github.io / whatis / whatis_http.html; // уникальный идентификатор страницы
+            };
+            (function() { // Не редактировать ниже этой линии
+               var d = document,
+                  s = d.createElement('script');
+               s.src = 'https://html5beginner-1.disqus.com/embed.js';
+               s.setAttribute('data-timestamp', +new Date());
+               (d.head || d.body).appendChild(s);
+            })();
+         </script>
+         <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+         <!--  / Комментарии от Disqus -->
+      </div>
+      <!-- / CONTENT -->
+      <div class="right-sidebar">
+         <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+      </div>
+   </main>
+   <footer>
+      <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+   </footer>
+</body>
+
+</html>
