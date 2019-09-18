@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <title>HTML Основы. Что такое HTML? Курсы W3schools на русском. Уроки для начинающих</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="keywords" content="HTML,что такое,что означает,веб-разработка,W3Schools,на русском,основы,язык,курсы,обучение,бесплатно,учебник для начинающих,уроки">
+   <meta name="description" content="HTML Основы. Что такое HTML? Как создают сайты? Уроки для начинающих">
+   <link rel="icon" href="/favicon.ico" type="image/x-icon">
+   <link rel="stylesheet" href="../styles/style.css">
+   <link rel="stylesheet" href="../styles/ws.css">
+   <link rel="stylesheet" href="../styles/w3colors.css">
+   <link rel="stylesheet" href="../styles/handheld.css">
+   <script src="../js/topnav.js"></script>
+</head>
+
+<body>
+   <iframe src="../pages/header.html" class="frame-header"></iframe>
+   <main>
+
+      <div class="left-sidebar">
+         <iframe src="../pages/menuwebdev.html" class="frame-left-sidebar"></iframe>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+         <h1>Что такое HTML?</h1>
+         <p class="brief"><strong>Курс по основам веб-разработки. W3Schools на русском. Уроки для начинающих</strong></p>
+         <hr>
+
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="whatis_http.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="whatis_css.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         <hr>
+         <div class="w3-cell-row w3-card-2">
+            <div class="w3-cell w3-white w3-hide-small w3-center" style="padding:16px;width:150px">
+               <img class="w3-img" alt="HTML" src="../images/img_html.jpg" style="width:110px">
+            </div>
+            <div class="w3-cell w3-container w3-light-gray w3-border-left w3-cell-top" style="padding:20px;">
+               <p>HTML расшифровывается как <b>H</b>yper <b>T</b>ext <b>M</b>arkup <b>L</b>anguage (язык гипертекстовой разметки)</p>
+               <p>HTML <b>стандартный язык разметки</b> веб-страниц</p>
+               <p>HTML <strong>элементы</strong> являются строительными блоками HTML страниц</p>
+               <p>HTML элементы представлены <strong>&lt;&gt; тегами</strong></p>
+            </div>
+         </div>
+         <p class="w3-note"><b>Примечание.</b> HTML - НЕ ЯВЛЯЕТСЯ языком программирования!!!</p>
+         <hr>
+         <h2>HTML Элементы</h2>
+         <p><strong>HTML элемент</strong> представляет собой тег <strong>начальный</strong> (открывающий) и тег <strong>конечный</strong> (закрывающий) из содержимым между ними:</p>
+
+         <div class="w3-panel w3-note w3-code w3-xlarge w3-padding-16 htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Это Заголовок<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            <br>
+         </div>
+
+         <table class="w3-table-all notranslate">
+            <tbody>
+               <tr>
+                  <th>Начальный тег</th>
+                  <th>Содержание элемента</th>
+                  <th>Конечный тег</th>
+               </tr>
+               <tr>
+                  <td>&lt;h1&gt;</td>
+                  <td>Это Заголовок</td>
+                  <td>&lt;/h1&gt;</td>
+               </tr>
+               <tr>
+                  <td>&lt;p&gt;</td>
+                  <td>Это параграф.</td>
+                  <td>&lt;/p&gt;</td>
+               </tr>
+            </tbody>
+         </table>
+         <hr>
+
+         <h2>HTML Атрибуты</h2>
+         <ul>
+            <li>HTML элементы могут иметь <b>атрибуты</b></li>
+            <li>Атрибуты предоставляют <b>дополнительную информацию</b> об элементе</li>
+            <li>Атрибуты входят в пары имя/значение, такие как <b>charset="utf-8"</b></li>
+         </ul>
+
+         <hr>
+         <div class="w3-example">
+            <h2>Простой HTML документ</h2>
+            <div class="w3-code htmlHigh notranslate">
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="attributecolor" style="color:red"> lang<span class="attributevaluecolor" style="color:mediumblue">="en"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red"> charset<span class="attributevaluecolor" style="color:mediumblue">="utf-8"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>title<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Название страницы<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/title<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Это заголовок<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp;&nbsp;
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Это параграф.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Это другой параграф.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <p><a href="https://www.w3schools.com/whatis/tryit.asp?filename=trywhatis_html" target="_blank" class="w3-button w3-theme w3-hover-green w3-hover-shadow" rel="nofollow">Попробуйте сами »</a>
+            </p>
+         </div>
+
+         <h3>Объяснение примера</h3>
+         <p>HTML-элементы являются строительными блоками HTML-страниц.</p>
+         <ul>
+            <li>Объявление <code class="w3-codespan">&lt;!DOCTYPE html&gt;</code> определяет этот документ как HTML5</li>
+            <li>Элемент <code class="w3-codespan">&lt;html&gt;</code> является корневым элементом HTML страницы</li>
+            <li>Атрибут <code class="w3-codespan">lang</code> определяет язык документа</li>
+            <li>Элемент <code class="w3-codespan">&lt;meta&gt;</code> содержит метаинформацию о документе</li>
+            <li>Атрибут <code class="w3-codespan">charset</code> определяет набор символов, используемый в документе</li>
+            <li>Элемент <code class="w3-codespan">&lt;title&gt;</code> определяет заголовок документа</li>
+            <li>Элемент <code class="w3-codespan">&lt;body&gt;</code> содержит видимое содержимое страницы</li>
+            <li>Элемент <code class="w3-codespan">&lt;h1&gt;</code> определяет большой заголовок</li>
+            <li>Элемент <code class="w3-codespan">&lt;p&gt;</code> определяет параграф</li>
+         </ul>
+         <hr>
+         <h2>HTML Документы</h2>
+         <p>Все HTML документы должны начинаться с объявления типа документа: <code class="w3-codespan">&lt;!DOCTYPE html&gt;</code>.</p>
+         <p>Сам HTML-документ начинается тегом <code class="w3-codespan">&lt;html&gt;</code> и заканчивается тегом <code class="w3-codespan">&lt;/html&gt;</code>.</p>
+         <p>Видимая часть HTML документа находится между <code class="w3-codespan">&lt;body&gt;</code> и <code class="w3-codespan">&lt;/body&gt;</code>. </p>
+         <hr>
+         <h2>Структура HTML документа</h2>
+         <p>Ниже приведена визуализация HTML-документа (HTML-страницы):</p>
+         <div style="width:99%;border:1px solid grey;padding:3px;margin:0;background-color:#ddd">&lt;html&gt;
+            <div style="width:90%;border:1px solid grey;padding:3px;margin:20px">&lt;head&gt;
+               <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;title&gt;Page title&lt;/title&gt;
+               </div>
+               &lt;/head&gt;
+            </div>
+            <div style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color:#ddd">&lt;body&gt;
+               <div style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color:#fff">
+                  <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;h1&gt;This is a heading&lt;/h1&gt;</div>
+                  <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;p&gt;This is a paragraph.&lt;/p&gt;</div>
+                  <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;p&gt;This is another paragraph.&lt;/p&gt;</div>
+               </div>
+               &lt;/body&gt;
+            </div>
+            &lt;/html&gt;
+         </div>
+         <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> Только содержимое внутри раздела &lt;body&gt; (белая область) отображается в браузере.</p>
+         </div>
+         <hr>
+
+         <h2>HTML Заголовки</h2>
+         <p>HTML-заголовки определяются с помощью тегов от <code class="w3-codespan">&lt;h1&gt;</code> до <code class="w3-codespan">&lt;h6&gt;</code>.</p>
+         <p><code class="w3-codespan">&lt;h1&gt;</code> определяет наиболее важный заголовок. <code class="w3-codespan">&lt;h6&gt;</code> определяет наименее важный заголовок:</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate htmlHigh">
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Это заголовок 1<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Это заголовок 2<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h3<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Это заголовок 3<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h3<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a target="_blank" href="https://www.w3schools.com/whatis/tryit.asp?filename=trywhatis_html_headings" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+
+         <h2>HTML Параграфы</h2>
+         <p>HTML параграфы определяются с помощью тегов <code class="w3-codespan">&lt;p&gt;</code>:</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate htmlHigh">
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a paragraph.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is another paragraph.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a target="_blank" href="https://www.w3schools.com/whatis/tryit.asp?filename=trywhatis_html_paragraphs" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+
+         <h2>HTML Списки</h2>
+         <p>HTML списки определяются с помощью тегов <code class="w3-codespan">&lt;a&gt;</code>:</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate htmlHigh">
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="https://www.w3schools.com"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a link<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a target="_blank" href="https://www.w3schools.com/whatis/tryit.asp?filename=trywhatis_html_link" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <p>Назначение ссылки указывается в атрибуте <code class="w3-codespan">href</code>.</p>
+         <hr>
+
+         <h2>HTML Изображения</h2>
+         <p>HTML изображения определяются с помощью тегов <code class="w3-codespan">&lt;img&gt;</code>.</p>
+         <p>Исходный файл (<code class="w3-codespan">src</code>), альтернативный текст (<code class="w3-codespan">alt</code>), ширина <code class="w3-codespan">width</code> и высота <code class="w3-codespan">height</code> указываются в качестве атрибутов:</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate htmlHigh">
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="img_w3schools.jpg"</span> alt<span class="attributevaluecolor" style="color:mediumblue">="W3Schools"</span> style<span class="attributevaluecolor" style="color:mediumblue">="width:120px;height:150px"</span> </span></span></div>
+            <a target="_blank" href="https://www.w3schools.com/whatis/tryit.asp?filename=trywhatis_html_img" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+
+         <h2>HTML Кнопки</h2>
+         <p>HTML кнопки определяются с помощью тегов <code class="w3-codespan">&lt;button&gt;</code>:</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate htmlHigh">
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>button<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Click me<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/button<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+            <a target="_blank" href="https://www.w3schools.com/whatis/tryit.asp?filename=trywhatis_html_button" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+
+         <h2>HTML Списки</h2>
+         <p>HTML списки определяются с помощью тегов <code class="w3-codespan">&lt;ul&gt;</code> (неупорядоченный/маркерный список) или <code class="w3-codespan">&lt;ol&gt;</code> (упорядоченный/нумерованный список), затем следуют теги <code class="w3-codespan">&lt;li&gt;</code> (элементы списка):</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate htmlHigh">
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>ul<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Coffee<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Tea<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Milk<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/ul<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a target="_blank" href="https://www.w3schools.com/whatis/tryit.asp?filename=trywhatis_html_lists" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+         <h2>HTML Таблицы</h2>
+         <p>HTML таблицы определяются с помощью тега <code class="w3-codespan">&lt;table&gt;</code>.</p>
+         <p>Строки таблицы определяются с помощью тега <code class="w3-codespan">&lt;tr&gt;</code>.</p>
+         <p>Заголовки таблицы определяются с помощью тегов <code class="w3-codespan">&lt;th&gt;</code> (жирные и центрированные по умолчанию).</p>
+         <p>Ячейки таблицы (данные) определяются с помощью тегов <code class="w3-codespan">&lt;td&gt;</code>.</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate htmlHigh">
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>table<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>tr<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>th<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Firstname<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/th<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>th<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Lastname<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/th<span class="tagcolor" style="color:mediumblue">&gt;</span></span> <br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>th<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Age<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/th<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp;
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/tr<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>tr<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>td<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Jill<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>td<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Smith<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor" style="color:mediumblue">&gt;</span></span> <br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>td<span class="tagcolor" style="color:mediumblue">&gt;</span></span>50<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp;
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/tr<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>tr<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>td<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Eve<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>td<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Jackson<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor" style="color:mediumblue">&gt;</span></span> <br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>td<span class="tagcolor" style="color:mediumblue">&gt;</span></span>94<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/tr<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/table<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a target="_blank" href="https://www.w3schools.com/whatis/tryit.asp?filename=trywhatis_html_table" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+            <a target="_blank" href="https://www.w3schools.com/whatis/tryit.asp?filename=trywhatis_html_table_css" class="w3-btn w3-margin-bottom">Из CSS »</a>
+         </div>
+         <hr>
+         <h2>HTML программирование</h2>
+         <p>Каждый HTML элемент может иметь <b>атрибуты</b>.</p>
+         <p>Для веб-разработки и программирования наиболее важными атрибутами являются <b>id</b> и <b>class. </b>Эти атрибуты часто используются для обработки программных веб-страниц.</p>
+         <table class="w3-table-all">
+            <tbody>
+               <tr>
+                  <th>Атрибут</th>
+                  <th>Пример</th>
+               </tr>
+               <tr>
+                  <td>id</td>
+                  <td>&lt;table <strong>id</strong>="table01"</td>
+               </tr>
+               <tr>
+                  <td>class</td>
+                  <td>&lt;p <strong>class</strong>="normal"&gt;</td>
+               </tr>
+               <tr>
+                  <td>style</td>
+                  <td>&lt;p <strong>style</strong>="font-size:16px"&gt;</td>
+               </tr>
+               <tr>
+                  <td>data-</td>
+                  <td>&lt;div <strong>data</strong>-id="500"&gt;</td>
+               </tr>
+               <tr>
+                  <td>onclick</td>
+                  <td>&lt;input <strong>onclick</strong>="myFunction()"&gt;</td>
+               </tr>
+               <tr>
+                  <td>onmouseover</td>
+                  <td>&lt;a <strong>onmouseover</strong>="this.setAttribute('style','color:red')"&gt;</td>
+               </tr>
+            </tbody>
+         </table>
+         <hr>
+         <h2>Полный HTML Учебник</h2>
+         <p>Это было краткое описание HTML.</p>
+         <p>Для полного изучения HTML перейдите на <a href="/html/html_tutorial.html" target="_blank">HTML Учебник</a> на нашем сайте.</p>
+         <p>Для получения полной информации об HTML тегах перейдите на <a href="/tags/element_reference.html" target="_blank">Справочник HTML тегов</a> на нашем сайте.</p>
+         <hr>
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="whatis_http.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="whatis_css.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+
+         <iframe class="predisqus" src="../pages/predisqus.html"></iframe>
+         <!-- Комментарии от Disqus -->
+         <div id="disqus_thread"></div>
+         <script>
+            var disqus_config = function() {
+               this.page.url = html5beginner.github.io; // канонический URL страницы
+               this.page.identifier = html5beginner.github.io / whatis / whatis_html.html; // уникальный идентификатор страницы
+            };
+            (function() { // Не редактировать ниже этой линии
+               var d = document,
+                  s = d.createElement('script');
+               s.src = 'https://html5beginner-1.disqus.com/embed.js';
+               s.setAttribute('data-timestamp', +new Date());
+               (d.head || d.body).appendChild(s);
+            })();
+         </script>
+         <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+         <!--  / Комментарии от Disqus -->
+      </div>
+      <!-- / CONTENT -->
+      <div class="right-sidebar">
+         <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+      </div>
+   </main>
+   <footer>
+      <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+   </footer>
+</body>
+
+</html>
