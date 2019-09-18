@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <title>HTML Основы. Что такое CSS? Курсы W3schools на русском. Уроки для начинающих</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="keywords" content="HTML,что такое,css,что означает,веб-разработка,W3Schools,на русском,основы,язык,курсы,обучение,бесплатно,учебник для начинающих,уроки">
+   <meta name="description" content="HTML Основы. Что такое CSS? Как создают сайты? Уроки для начинающих">
+   <link rel="icon" href="/favicon.ico" type="image/x-icon">
+   <link rel="stylesheet" href="../styles/style.css">
+   <link rel="stylesheet" href="../styles/ws.css">
+   <link rel="stylesheet" href="../styles/w3colors.css">
+   <link rel="stylesheet" href="../styles/handheld.css">
+   <script src="../js/topnav.js"></script>
+</head>
+
+<body>
+   <iframe src="../pages/header.html" class="frame-header"></iframe>
+   <main>
+
+      <div class="left-sidebar">
+         <iframe src="../pages/menuwebdev.html" class="frame-left-sidebar"></iframe>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+         <h1>Что такое CSS?</h1>
+         <p class="brief"><strong>Курс по основам веб-разработки. W3Schools на русском. Уроки для начинающих</strong></p>
+         <hr>
+
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="whatis_html.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="whatis_responsive.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         <hr>
+         <hr>
+         <div class="w3-cell-row w3-card-2">
+            <div class="w3-cell w3-white w3-hide-small w3-center" style="padding:16px;width:150px">
+               <img class="w3-img" alt="HTML" src="../images/img_css.jpg" style="width:110px">
+            </div>
+            <div class="w3-cell w3-container w3-light-gray w3-border-left w3-cell-top" style="padding:20px;">
+               <p><b>CSS</b> расшифровывается как <b>C</b>ascading <b>S</b>tyle <b>S</b>heets (каскадные таблицы стилей)</p>
+               <p>CSS описывает, как <b>HTML</b> элементы должны быть <b>отображены</b>.</p>
+            </div>
+         </div>
+
+         <hr>
+
+         <div class="w3-example">
+            <h3>CSS Пример</h3>
+            <div class="w3-code notranslate htmlHigh">
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor" style="color:brown"><br><br>body
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>lightblue<span class="cssdelimitercolor" style="color:black">;</span></span> text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>center<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br>
+                  h1
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>blue<span class="cssdelimitercolor" style="color:black">;</span></span> font-size<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>40px<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br>p
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">font-family<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>verdana<span class="cssdelimitercolor" style="color:black">;</span></span>
+                     font-size<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>20px<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br><br></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/style<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+            <a target="_blank" href="https://www.w3schools.com/whatis/tryit.asp?filename=trywhatis_css" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <div class="w3-panel w3-note">
+            <p>Кликните на кнопку "Попробуйте сами", чтобы увидеть, как это работает.</p>
+         </div>
+         <hr>
+         <h2>CSS Синтаксис</h2>
+         <p>CSS правило состоит из <b>селектора</b> и блока <b>объявления</b>:</p>
+         <p><img src="../images/selector.gif" alt="CSS selector" class="w3-image"></p>
+         <p>Селектор указывает на HTML элемент, которому создаётся стиль (h1).</p>
+         <p>Блок объявлений (в фигурных скобках) содержит одно или несколько объявлений, разделенных точками с запятой.</p>
+         <p>Каждое объявление включает название CSS свойства и значение, разделённое двоеточием.</p>
+         <p>В следующем примере все элементы <code>&lt;p&gt;</code> будут шириной 32 пикселя, выровнены по центру и выделены красным:</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate htmlHigh">
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor" style="color:brown"><br>p
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">font-size<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>32px<span class="cssdelimitercolor" style="color:black">;</span></span> color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>red<span class="cssdelimitercolor" style="color:black">;</span></span>
+                     text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>center<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/style<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+            <p>Этот же пример можно написать так:</p>
+            <div class="w3-code notranslate htmlHigh">
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor" style="color:brown"><br>p
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                     &nbsp;&nbsp;&nbsp;
+                     font-size<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 32px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> red<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                     &nbsp;&nbsp;&nbsp;
+                     text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> center<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                  </span><span class="cssdelimitercolor" style="color:black">}</span><br></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/style<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+            <a target="_blank" href="https://www.w3schools.com/whatis/tryit.asp?filename=trywhatis_css_1" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+         <h2>Внешняя таблица стилей</h2>
+         <p>Таблица стилей CSS может храниться во <b>внешнем</b> файле с расширением <i>.css</i>:</p>
+         <div class="w3-example">
+            <h3>mystyle.css</h3>
+            <div class="w3-code cssHigh notranslate"><span class="cssselectorcolor" style="color:brown">
+                  body <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> orange<span class="cssdelimitercolor" style="color:black">;</span></span> <span lang="nb">font-family<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>verdana</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br>
+                  h1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> white<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br>p <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">font-size<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 20px<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span>
+               </span></div>
+         </div>
+         <p>Внешние таблицы стилей связаны с HTML-страницами тегом <strong>&lt;link&gt;</strong>:</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code htmlHigh notranslate">
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>link<span class="attributecolor" style="color:red"> rel<span class="attributevaluecolor" style="color:mediumblue">="stylesheet"</span>
+                     href<span class="attributevaluecolor" style="color:mediumblue">="mystyle.css"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>My First CSS Example<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is
+               a paragraph.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <p>
+               <a class="w3-button w3-theme w3-hover-green w3-hover-shadow" href="https://www.w3schools.com/whatis/tryit.asp?filename=trywhatis_css_external" target="_blank" rel="nofollow">Попробуйте сами »</a>
+            </p>
+         </div>
+         <hr>
+         <h2>Встроенный стиль</h2>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code htmlHigh notranslate">
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>link<span class="attributecolor" style="color:red"> rel<span class="attributevaluecolor" style="color:mediumblue">="stylesheet"</span>
+                     href<span class="attributevaluecolor" style="color:mediumblue">="mystyle.css"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>My First CSS Example<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is
+               a paragraph.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="attributecolor" style="color:red"> style<span class="attributevaluecolor" style="color:mediumblue">="font-size:25px"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a paragraph.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="attributecolor" style="color:red"> style<span class="attributevaluecolor" style="color:mediumblue">="font-size:30px"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a paragraph.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <p>
+               <a class="w3-button w3-theme w3-hover-green w3-hover-shadow" href="https://www.w3schools.com/whatis/tryit.asp?filename=trywhatis_css_inline" target="_blank" rel="nofollow">Попробуйте сами »</a>
+            </p>
+         </div>
+
+         <hr>
+         <h2>Порядок каскадных стилей</h2>
+         <p>Если для элементов HTML указаны разные стили, стили будут
+            <strong>переведены</strong> в новые стили со следующим приоритетом:</p>
+         <ul class="w3-ul w3-card w3-light-grey">
+            <li>Приоритет 1: Встроенные стили</li>
+            <li>Приоритет 2: Внешние и внутренние таблицы стилей</li>
+            <li>Приоритет 3: Стили браузера по умолчанию</li>
+            <li>Если разные стили определены на одном и том же уровне приоритета, последний имеет самый высокий приоритет.</li>
+         </ul>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code htmlHigh notranslate">
+               <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>link<span class="attributecolor" style="color:red"> rel<span class="attributevaluecolor" style="color:mediumblue">="stylesheet"</span>
+                     href<span class="attributevaluecolor" style="color:mediumblue">="mystyle.css"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor" style="color:brown"><br>body <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                        lightblue<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               <br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="attributecolor" style="color:red"> style<span class="attributevaluecolor" style="color:mediumblue">="background-color: olivedrab"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Multiple
+               Styles Cascades into One<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Try experimenting by removing styles to see how the cascading stylesheets
+               work.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Try removing the inline first, then the internal, then the
+               external.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            <p>
+               <a class="w3-button w3-theme w3-hover-green w3-hover-shadow" href="https://www.w3schools.com/whatis/tryit.asp?filename=trywhatis_css_cascade" target="_blank" rel="nofollow">Попробуйте сами »</a>
+            </p>
+         </div>
+         <hr>
+
+         <h2>CSS Демо - Одна HTML страница - Множество стилей!</h2>
+         <p>Здесь мы покажем одну HTML-страницу с 4 различными таблицами стилей.</p>
+         <p>Нажмите на кнопки таблицы стилей (1-4), чтобы увидеть страницу, отображаемую в разных стилях..</p>
+
+         <div class="w3-example" style="text-align:center;padding:30px;">
+            <iframe style="width:100%;height:900px;background:#ffffff;border:none;" src="demo_css.html"></iframe>
+         </div>
+
+         <hr>
+         <h2>Полный CSS Учебник</h2>
+         <p>Это было краткое описание CSS.</p>
+         <p>Для полного изучения CSS перейдите на <a href="/css/css_tutorial.html">CSS Учебник</a> на нашем сайте.</p>
+         <p>Для получения полной информации об CSS перейдите на <a href="/cssref/css_reference.html">CSS Справочник</a> на нашем сайте.</p>
+
+         <hr>
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="whatis_html.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="whatis_responsive.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+
+         <iframe class="predisqus" src="../pages/predisqus.html"></iframe>
+         <!-- Комментарии от Disqus -->
+         <div id="disqus_thread"></div>
+         <script>
+            var disqus_config = function() {
+               this.page.url = html5beginner.github.io; // канонический URL страницы
+               this.page.identifier = html5beginner.github.io / whatis / whatis_css.html; // уникальный идентификатор страницы
+            };
+            (function() { // Не редактировать ниже этой линии
+               var d = document,
+                  s = d.createElement('script');
+               s.src = 'https://html5beginner-1.disqus.com/embed.js';
+               s.setAttribute('data-timestamp', +new Date());
+               (d.head || d.body).appendChild(s);
+            })();
+         </script>
+         <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+         <!--  / Комментарии от Disqus -->
+      </div>
+      <!-- / CONTENT -->
+      <div class="right-sidebar">
+         <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+      </div>
+   </main>
+   <footer>
+      <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+   </footer>
+</body>
+
+</html>
