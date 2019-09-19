@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <title>CSS Макет - width и max-width. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="keywords" content="HTML,CSS,макет,width,max-width,ширина,максимальная,уроки,для начинающих,css3,основы,пример" />
+   <meta name="description" content="CSS Учебник. Макет. Ширина и максимальная ширина. Значения width и max-width. Курс по основам CSS3. W3schools на русском языке. Уроки для начинающих бесплатно" />
+   <link rel="icon" href="../images/css3_64x64.png" type="image/x-icon" />
+   <link rel="stylesheet" href="../styles/style.css" />
+   <link rel="stylesheet" href="../styles/ws.css" />
+   <link rel="stylesheet" href="../styles/w3colors.css" />
+   <link rel="stylesheet" href="../styles/handheld.css" />
+   <script src="../js/topnav.js"></script>
+   <style>
+      .w3-theme-border {border-color:#4CAF50 !important}
+   </style>
+</head>
+
+<body>
+   <iframe src="../pages/header.html" class="frame-header"></iframe>
+   <main>
+
+      <div class="left-sidebar">
+         <iframe src="../pages/menucss.html" class="frame-left-sidebar"></iframe>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+         <h1>CSS Макет. Ширина - width и максимальная ширина - max-width</h1>
+         <p class="brief"><strong>Курс по основам CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
+
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="css_display_visibility.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="css_positioning.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         <hr>
+         <h2>Использование width, max-width и margin: auto;</h2>
+         <p>Как упоминалось в предыдущей главе, блочный элемент всегда занимает всю доступную ширину (растягивается влево и вправо, насколько это возможно).</p>
+         <p>Установка ширины <code class="w3-codespan">width</code> блочного элемента предотвратит его вытягивание до краёв контейнера. Затем вы можете установить поля автоматически (<code class="w3-codespan">margin: auto;</code>), чтобы горизонтально центрировать элемент внутри контейнера. Элемент займет указанную ширину, а оставшееся пространство будет разделено поровну между двумя полями:</p>
+
+         <div class="w3-theme-border" style="border-width:3px;border-style:solid;width:500px; margin: auto;">
+            Этот &lt;div&gt; элемент имеет width 500px и margin установлен в auto.</div>
+         <br>
+
+         <p><strong>Примечание:</strong> Проблема с <code>&lt;div&gt;</code> выше возникает, когда окно браузера меньше ширины элемента. Затем браузер добавляет на страницу горизонтальную полосу прокрутки.</p>
+
+         <p>Использование вместо этого <code class="w3-codespan">max-width</code> улучшит работу браузера с небольшими окнами. Это важно при создании сайта, пригодного для использования на небольших устройствах (т.е. для адаптивности):</p>
+
+         <div class="w3-theme-border" style="border-width:3px;border-style:solid; max-width:500px; margin: auto;">
+            Этот &lt;div&gt; элемент имеет max-width 500px и margin установлен в auto.</div>
+         <br>
+         <p><strong>Совет:</strong> Измените размер окна браузера до ширины менее 500 пикселей, чтобы увидеть разницу между двумя div-ами!</p>
+
+         <p>Вот пример двух div-ов выше:</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  div.ex1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 500px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;margin<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                        auto<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 3px solid #73AD21<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br>
+                  <br>div.ex2 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; max-width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 500px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                     margin<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> auto<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 3px solid #73AD21<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_max-width" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+
+         <hr>
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="css_display_visibility.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="css_positioning.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+
+         <br>
+      </div>
+
+      <!-- / CONTENT -->
+      <div class="right-sidebar">
+         <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+      </div>
+   </main>
+   <footer>
+      <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+   </footer>
+</body>
+
+</html>
