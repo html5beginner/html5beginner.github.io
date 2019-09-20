@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <title>CSS Макет - Overflow. Переполнение. Основы CSS3. W3schools на русском. Уроки для начинающих</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="keywords" content="HTML,CSS,макет,свойство,переполнение,overflow,уроки,для начинающих,css3,основы,пример,w3schools,на русском" />
+   <meta name="description" content="CSS Учебник. Макет - Overflow. Переполнение. Значения: visible, hidden, invisible, scroll, auto. Курс по основам CSS3. W3schools на русском языке. Уроки для начинающих бесплатно" />
+   <link rel="icon" href="../images/css3_64x64.png" type="image/x-icon" />
+   <link rel="stylesheet" href="../styles/style.css" />
+   <link rel="stylesheet" href="../styles/ws.css" />
+   <link rel="stylesheet" href="../styles/w3colors.css" />
+   <link rel="stylesheet" href="../styles/handheld.css" />
+   <script src="../js/topnav.js"></script>
+   <style>
+      div.hidden {
+         padding: 4px;
+         background-color: #eee;
+         width: 200px;
+         height: 100px;
+         overflow: hidden;
+         border: 1px dotted red;
+      }
+
+      #overflowTest {
+         background: #4CAF50;
+         color: white;
+         padding: 15px;
+         width: 100%;
+         height: 100px;
+         overflow: scroll;
+         border: 1px solid #ccc;
+      }
+
+      div.visible {
+         padding: 4px;
+         background-color: #eee;
+         width: 200px;
+         height: 120px;
+         overflow: visible;
+         border: 1px dotted red;
+      }
+
+      div.scroll {
+         padding: 4px;
+         background-color: #eee;
+         width: 200px;
+         height: 100px;
+         overflow: scroll;
+         border: 1px dotted red;
+      }
+
+      div.auto {
+         padding: 4px;
+         background-color: #eee;
+         width: 200px;
+         height: 100px;
+         overflow: auto;
+         border: 1px dotted red;
+      }
+
+      div.scrollx {
+         padding: 4px;
+         background-color: #eee;
+         width: 200px;
+         height: 100px;
+         overflow-y: scroll;
+         overflow-x: hidden;
+         border: 1px dotted red;
+      }
+   </style>
+</head>
+
+<body>
+   <iframe src="../pages/header.html" class="frame-header"></iframe>
+   <main>
+
+      <div class="left-sidebar">
+         <iframe src="../pages/menucss.html" class="frame-left-sidebar"></iframe>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+         <h1>CSS Макет - Overflow. Переполнение</h1>
+         <p class="brief"><strong>Курс по основам CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
+
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="css_positioning.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="css_float.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         <hr>
+         <p>CSS свойство <code class="w3-codespan">overflow</code> управляет тем, что происходит с содержимым, которое слишком велико, чтобы поместиться в области.</p>
+         <div id="overflowTest">Этот текст очень длинный и высота контейнера составляет всего 100 пикселей. Таким образом, полоса прокрутки добавляется, чтобы помочь читателю прокручивать содержимое. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</div>
+         <br>
+         <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_overflow_intro" class="w3-btn" rel="nofollow">Попробуйте сами »</a>
+         <hr>
+
+         <h2>CSS Overflow</h2>
+         <p>Свойство <code class="w3-codespan">overflow</code> указывает, следует ли обрезать содержимое или добавлять полосы прокрутки, если содержимое элемента слишком велико, чтобы поместиться в указанной области. Например, если текст не помещается в блочный элемент <code>&lt;div&gt;</code>.</p>
+         <p><strong>Overflow</strong> - (<i>перевод с анг.</i>) - Переполнение.</p>
+
+         <p>Свойство <code class="w3-codespan">overflow</code> имеет следующие значения:</p>
+         <ul>
+            <li><code class="w3-codespan">visible</code> - По умолчанию. Переполнение не обрезается. Контент отображается вне поля элемента</li>
+            <li><code class="w3-codespan">hidden</code> - Переполнение обрезается (скрывается), а остальная часть содержимого будет невидимой</li>
+            <li><code class="w3-codespan">scroll</code> - Переполнение обрезается, и добавляется полоса прокрутки, чтобы увидеть остальную часть содержимого</li>
+            <li><code class="w3-codespan">auto</code> - Аналогичен <code class="w3-codespan">scroll</code>, но добавляет полосы прокрутки только при необходимости</li>
+         </ul>
+         <div class="w3-note w3-panel">
+            <p><strong>Примечание:</strong> Свойство <code class="w3-codespan">overflow</code> работает только для блочных элементов с указанной высотой.</p>
+            <p><strong>Примечание:</strong> В OS X Lion (на Mac) полосы прокрутки по умолчанию скрыты и отображаются только при использовании (даже если установлено "overflow: scroll").</p>
+         </div>
+         <hr>
+
+         <h2>overflow: visible</h2>
+         <p>По умолчанию, переполнение <code class="w3-codespan">visible</code> означает, что оно не обрезается и отображается вне поля элемента:</p>
+         <div class="visible">Вы можете использовать свойство overflow, когда хотите лучше контролировать макет. Свойство overflow указывает, что происходит, если содержимое переполняет поле элемента.</div>
+         <div class="w3-example" style="margin-top:98px;">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 200px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;height<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                        50px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> #eee<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                     overflow<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> visible<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_overflow_visible" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+
+         <h2>overflow: hidden</h2>
+         <p>Со значением <code class="w3-codespan">hidden</code>, переполнение обрезается, а остальное содержимое скрыто:</p>
+         <div class="hidden">Вы можете использовать свойство overflow, когда хотите лучше контролировать макет. Свойство overflow указывает, что происходит, если содержимое переполняет блок элемента.</div>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;overflow<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> hidden<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_overflow_hidden" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+
+         <h2>overflow: scroll</h2>
+         <p>При установке значения <code class="w3-codespan">scroll</code> переполнение обрезается, и для прокрутки внутри поля добавляется полоса прокрутки. Обратите внимание, что это добавит полосу прокрутки как по горизонтали, так и по вертикали (даже если она вам не нужна):</p>
+         <div class="scroll">Вы можете использовать свойство overflow, когда хотите лучше контролировать макет. Свойство overflow указывает, что происходит, если содержимое переполняет поле элемента.</div>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;overflow<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> scroll<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_overflow_scroll" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+
+         <h2>overflow: auto</h2>
+         <p>Значение <code class="w3-codespan">auto</code> аналогично <code class="w3-codespan">scroll</code>, но добавляет полосы прокрутки только при необходимости:</p>
+         <div class="auto">Вы можете использовать свойство overflow, когда хотите лучше контролировать макет. Свойство overflow указывает, что происходит, если содержимое переполняет поле элемента.</div>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;overflow<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> auto<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_overflow_auto" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+
+         <h2>overflow-x и overflow-y</h2>
+         <p>Свойства <code class="w3-codespan">overflow-x</code> и <code class="w3-codespan">overflow-y</code> указывают, следует ли изменять переполнение содержимого только по горизонтали или только по вертикали (или оба):</p>
+         <p><code class="w3-codespan">overflow-x</code> указывает, что делать с левым/правым краем содержимого.<br>
+            <code class="w3-codespan">overflow-y</code> указывает, что делать с верхним/нижним краем содержимого.</p>
+         <div class="scrollx">Вы можете использовать свойство overflow, когда хотите лучше контролировать макет. Свойство overflow указывает, что происходит, если содержимое переполняет блок элемента.</div>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; overflow-x<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> hidden<span class="cssdelimitercolor" style="color:black">;</span></span> <span class="commentcolor" style="color:green">/* Скрывает горизонтальный скроллбар
+                        */</span><br>&nbsp;&nbsp;overflow-y<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> scroll<span class="cssdelimitercolor" style="color:black">;</span></span> <span class="commentcolor" style="color:green">/* Добавляет вертикальный скроллбар */</span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_overflow_xy" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+
+         <div class="w3-container w3-dark-grey w3-padding">
+            <h2 class="heading">Проверьте себя с помощью упражнений!</h2>
+            <div class="w3-bar w3-margin-bottom">
+               <a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_overflow1" target="_blank" rel="nofollow">Упражнение 1 »</a>
+               <a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_overflow2" target="_blank" rel="nofollow">Упражнение 2 »</a>
+               <a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_overflow3" target="_blank" rel="nofollow">Упражнение 3 »</a>
+            </div>
+         </div>
+         <hr>
+
+         <h2>Все CSS Свойства переполнения</h2>
+         <table class="w3-table-all notranslate">
+            <tbody>
+               <tr>
+                  <th style="width:20%">Свойство</th>
+                  <th style="width:55%">Описание</th>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_pos_overflow.html">overflow</a></td>
+                  <td>Определяет, что происходит, если содержимое переполняет поле элемента</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/css3_pr_overflow-x.html">overflow-x</a></td>
+                  <td>Определяет, что делать с левым/правым краями содержимого, если оно выходит за пределы области содержимого элемента</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/css3_pr_overflow-y.html">overflow-y</a></td>
+                  <td>Определяет, что делать с верхним/нижним краями содержимого, если оно выходит за пределы области содержимого элемента</td>
+               </tr>
+            </tbody>
+         </table>
+
+         <hr>
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="css_positioning.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="css_float.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         <br>
+      </div>
+
+      <!-- / CONTENT -->
+      <div class="right-sidebar">
+         <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+      </div>
+   </main>
+   <footer>
+      <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+   </footer>
+</body>
+
+</html>
