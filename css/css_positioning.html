@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <title>CSS Макет - Свойство position. Основы CSS3. Курсы W3schools на русском. Уроки для начинающих</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="keywords" content="HTML,CSS,макет,свойство,position,позиция,расположение,уроки,для начинающих,css3,основы,пример" />
+   <meta name="description" content="CSS Учебник. Макет. Свойство position. Значения static, relative, fixed, absolute, sticky. Курс по основам CSS3. W3schools на русском языке. Уроки для начинающих бесплатно" />
+   <link rel="icon" href="../images/css3_64x64.png" type="image/x-icon" />
+   <link rel="stylesheet" href="../styles/style.css" />
+   <link rel="stylesheet" href="../styles/ws.css" />
+   <link rel="stylesheet" href="../styles/w3colors.css" />
+   <link rel="stylesheet" href="../styles/handheld.css" />
+   <script src="../js/topnav.js"></script>
+   <style>
+      .w3-theme-border {
+         border-color: #4CAF50 !important
+      }
+   </style>
+</head>
+
+<body>
+   <iframe src="../pages/header.html" class="frame-header"></iframe>
+   <main>
+
+      <div class="left-sidebar">
+         <iframe src="../pages/menucss.html" class="frame-left-sidebar"></iframe>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+         <h1>CSS Макет. Свойство position</h1>
+         <p class="brief"><strong>Курс по основам CSS. W3Schools на русском языке. Уроки для начинающих</strong></p>
+
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="css_max-width.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="css_overflow.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         <hr>
+         <p class="intro">Свойство <code class="w3-codespan">position</code> определяет тип метода позиционирования, используемого для элемента (статический, относительный, фиксированный, абсолютный или прикрепленный).</p>
+         <hr>
+
+         <h2>Свойство position</h2>
+         <p>Свойство <code class="w3-codespan">position</code> определяет тип метода позиционирования, используемого для элемента.</p>
+         <p>Есть пять разных значений position (позиции):</p>
+         <ul>
+            <li><code class="w3-codespan">static</code> - статически</li>
+            <li><code class="w3-codespan">relative</code> - относительно</li>
+            <li><code class="w3-codespan">fixed</code> - фиксированно</li>
+            <li><code class="w3-codespan">absolute</code> - абсолютно</li>
+            <li><code class="w3-codespan">sticky</code> - прикрепленно</li>
+         </ul>
+         <p>Затем элементы располагаются с использованием свойств top, bottom, left и right. Однако эти свойства не будут работать, если сначала не установлено свойство <code class="w3-codespan">position</code>. Они также работают по-разному в зависимости от значения position.</p>
+         <hr>
+
+         <h2>position: static;</h2>
+         <p>HTML-элементы по умолчанию расположены статически.</p>
+         <p>На статические элементы не влияют свойства top, bottom, left и right.</p>
+         <p>Элемент со значением <code class="w3-codespan">position: static;</code> не позиционируется каким-либо особым образом; он всегда располагается в соответствии с обычным потоком страницы:</p>
+         <div class="w3-theme-border w3-margin-bottom" style="border-width:3px;border-style:solid;position:static;">
+            Этот &lt;div&gt; элемент имеет position: static;</div>
+         <p>Вот CSS, который используется:</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  div.static <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;position<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> static<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 3px solid #73AD21<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_position_static" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+
+         <h2>position: relative;</h2>
+         <p>Элемент со значением <code class="w3-codespan">position: relative;</code> расположен относительно своего нормального положения.</p>
+         <p>Установка свойств top, right, bottom и left относительно позиционированного элемента приведет к его отклонению от его нормального положения. Другое содержимое не будет откорректировано, чтобы вписаться в любой пробел, оставленный элементом.</p>
+         <div class="w3-theme-border w3-margin-bottom" style="border-width:3px;border-style:solid;position:relative;left:30px;">
+            Этот &lt;div&gt; элемент имеет position: relative;
+         </div>
+         <p>Вот CSS, который используется:</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  div.relative <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; position<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> relative<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                     left<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 30px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 3px solid #73AD21<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_position_relative" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+            <p>В данном примере элемент &lt;div&gt; имеет отступ слева 30px, в результате чего он сдвигается влево на 30 пикселей, при этом справа выходит на другое содержимое страницы.</p>
+         </div>
+         <hr>
+
+         <h2>position: fixed;</h2>
+         <p>Элемент со значением <code class="w3-codespan">position: fixed;</code> расположен относительно окна просмотра, что означает, что он всегда остаётся на том же месте, даже если страница прокручивается. Свойства top, right, bottom и left используются для позиционирования элемента.</p>
+         <p>Фиксированный элемент не оставляет пробела на странице, где он обычно находился бы.</p>
+         <p>Обратите внимание на фиксированный элемент в правом нижнем углу страницы. Вот CSS, который используется:</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  div.fixed <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; position<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> fixed<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                     bottom<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 0<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; right<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 0<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                        300px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 3px solid #73AD21<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_position_fixed" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <div class="w3-theme-border" style="border-width:3px;background-color:#cae8ca;border-style:solid;position:fixed;padding:7px;bottom:0;right:0;max-width:450px;z-index:999">
+            Этот &lt;div&gt; элемент имеет <code class="w3-codespan">position: fixed;</code></div>
+         <hr>
+
+         <h2>position: absolute;</h2>
+         <p>Элемент со значением <code class="w3-codespan">position: absolute;</code> позиционируется относительно ближайшего расположенного предшественника (вместо позиционированного относительно окна просмотра, как фиксированный).</p>
+         <p>Однако, если элемент с абсолютным позиционированием не имеет позиционированных предшественников, он использует тело документа и перемещается вместе с прокруткой страницы.</p>
+         <p><strong>Примечание:</strong> «Позиционируемый» элемент - это тот, чья позиция - где угодно <code class="w3-codespan">static</code>.</p>
+         <p>Вот простой пример:</p>
+
+         <div class="w3-theme-border" style="border-width:3px;border-style:solid;position: relative;width: 400px;height: 200px;">
+            Этот &lt;div&gt; элемент имеет position: relative;
+
+            <div class="w3-theme-border w3-margin-bottom" style="border-width:3px;border-style:solid;position: absolute;top: 80px;right: 0;width: 200px;height: 100px;">
+               Этот &lt;div&gt; элемент имеет position: absolute;
+            </div>
+         </div>
+
+         <p>Вот CSS, который используется:</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  div.relative <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;position<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> relative<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                     width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 400px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; height<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 200px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 3px solid #73AD21<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+                  <br><br>
+                  div.absolute <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;position<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> absolute<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                     top<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 80px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; right<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 0<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 200px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; height<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 100px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 3px solid #73AD21<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+               </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_position_absolute" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+
+         <h2>position: sticky;</h2>
+         <p>Элемент со значением <code class="w3-codespan">position: sticky;</code> позиционируется на основе позиции прокрутки пользователя.</p>
+         <p>Прикреплённый элемент переключается между <code class="w3-codespan">relative</code> и <code class="w3-codespan">fixed</code>, в зависимости от положения прокрутки. Он позиционируется относительно до тех пор, пока в окне просмотра не будет достигнута заданная позиция смещения - тогда он «залипнет» на месте (например position:fixed).</p>
+         <iframe src="trycss_position_sticky_ifr.html" style="width:100%;border:4px solid #e5e5e5" class="w3-padding"></iframe>
+         <div class="w3-note w3-panel">
+            <p><strong>Примечание: </strong>Internet Explorer, Edge 15 и более ранние версии не поддерживают sticky позиционирование. Safari требует префикса -webkit- (см. пример ниже). Также необходимо указать хотя бы одно из значений <code class="w3-codespan">top</code>, <code class="w3-codespan">right</code>, <code class="w3-codespan">bottom</code> или <code class="w3-codespan">left</code> для работы sticky позиционирования.</p>
+         </div>
+         <p>В этом примере <strong>sticky</strong> элемент придерживается верхней части страницы (<code class="w3-codespan">top: 0</code>), когда вы достигнете указанной позиции с помощью прокрутки страницы.</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  div.sticky <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; position<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> -webkit-sticky<span class="cssdelimitercolor" style="color:black">;</span></span> <span class="commentcolor" style="color:green">/* Safari */</span><br>&nbsp; position<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                        sticky<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; top<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 0<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> green<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                     border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 2px solid #4CAF50<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_position_sticky" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <hr>
+
+         <h2>Перекрывающиеся элементы</h2>
+         <p>Когда элементы позиционируются, они могут перекрывать другие элементы.</p>
+         <p>Свойство <code class="w3-codespan">z-index</code> определяет порядок стека элемента (какой элемент должен быть расположен перед или позади других).</p>
+         <p>Элемент может иметь положительный или отрицательный порядок в стеке:</p>
+
+         <div class="w3-example w3-white" style="position:relative;padding:80px;">
+            <h1 style="position:absolute;left:35px;top:15px;z-index:2;">Это заголовок</h1>
+            <img style="position:absolute;left:30px;top:15px;z-index:1;" alt="W3.CSS" src="../images/w3css.gif" width="100" height="140">
+            <p style="position:absolute;left:35px;top:65px;z-index:2;">Поскольку изображение имеет z-index -1, оно будет помещено за текстом.</p>
+         </div>
+
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                  img
+                  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                     &nbsp;
+                     position<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> absolute<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                     &nbsp;&nbsp;left<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 0px<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                     &nbsp;
+                     top<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 0px<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                     &nbsp;
+                     z-index<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> -1<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                  </span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_zindex" class="w3-btn w3-margin-bottom" rel="nofollow">Попробуйте сами »</a>
+         </div>
+         <p>Элемент с более высоким порядком стека всегда находится перед элементом с более низким порядком стека, т.е. находится как бы сверху над предыдущим элементом.</p>
+
+         <div class="w3-panel w3-note">
+            <p><strong>Примечание:</strong> Если два позиционированных элемента перекрываются без указания <code class="w3-codespan">z-index</code>, элемент, расположенный последним в коде HTML, будет показан сверху.</p>
+         </div>
+         <hr>
+
+         <h2>Позиционирование текста в изображении</h2>
+         <p>Как разместить текст поверх изображения:</p>
+         <div class="w3-example">
+            <h3>Пример</h3>
+            <div class="notranslate">
+               <div style="position:relative;text-align:center;">
+                  <img src="../img/img_5terre_wide.jpg" alt="Cinque Terre" style="width:100%;height:auto;opacity:0.3">
+                  <div style="position:absolute;bottom:8px;left:16px;font-size:18px">Bottom Left</div>
+                  <div style="position:absolute;top:8px;left:16px;font-size:18px">Top Left</div>
+                  <div style="position:absolute;top:8px;right:16px;font-size:18px">Top Right</div>
+                  <div style="position:absolute;bottom:8px;right:16px;font-size:18px">Bottom Right</div>
+                  <div style="position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);font-size:18px">Centered</div>
+               </div>
+            </div>
+
+            <p style="font-size:17px;">Попробуйте сами:</p>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_image_text_top_left" class="w3-btn w3-margin-bottom" rel="nofollow">Top Left »</a>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_image_text_top_right" class="w3-btn w3-margin-bottom" rel="nofollow">Top Right »</a>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_image_text_bottom_left" class="w3-btn w3-margin-bottom" rel="nofollow">Bottom Left »</a>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_image_text_bottom_right" class="w3-btn w3-margin-bottom" rel="nofollow">Bottom Right »</a>
+            <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_image_text_center" class="w3-btn w3-margin-bottom" rel="nofollow">Centered »</a>
+         </div>
+         <hr>
+
+         <h2>Больше примеров</h2>
+
+         <p><a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_clip">Установка формы элемента</a><br>В этом примере демонстрируется, как установить форму элемента. Элемент обрезается до этой формы и отображается.</p>
+         <div class="jsfiddle-code">Примеры
+            <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result" data-user="olexa-petrw" data-slug-hash="ExYOLQv" data-pen-title="css_positioning_trycss_clip"></p>
+            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+         </div>
+         <hr>
+
+         <div class="w3-container w3-dark-grey w3-padding">
+            <h2 class="heading">Проверьте себя с помощью упражнений!</h2>
+            <div class="w3-bar w3-margin-bottom">
+               <a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_positioning1" target="_blank" rel="nofollow">Упражнение 1 »</a>
+               <a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_positioning2" target="_blank" rel="nofollow">Упражнение 2 »</a>
+               <a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_positioning3" target="_blank" rel="nofollow">Упражнение 3 »</a>
+               <a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_positioning4" target="_blank" rel="nofollow">Упражнение 4 »</a>
+               <a class="w3-bar-item w3-btn w3-hover-light-grey" href="https://www.w3schools.com/css/exercise.asp?filename=exercise_positioning5" target="_blank" rel="nofollow">Упражнение 5 »</a>
+            </div>
+         </div>
+         <hr>
+
+         <h2>Все CSS свойства позиционирования</h2>
+         <table class="w3-table-all notranslate">
+            <tbody>
+               <tr>
+                  <th style="width:20%">Свойство</th>
+                  <th style="width:55%">Описание</th>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_pos_bottom.html">bottom</a></td>
+                  <td>Устанавливает нижний край поля для позиционированного блока (отступ снизу)</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_pos_clip.html">clip</a></td>
+                  <td>Закрепляет абсолютно позиционированный элемент</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_pos_left.html">left</a></td>
+                  <td>Устанавливает край левого поля для позиционированного блока (отступ слева)</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_class_position.html">position</a></td>
+                  <td>Определяет тип позиционирования для элемента</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_pos_right.html">right</a></td>
+                  <td>Устанавливает правый край поля для позиционированного блока (отступ справа)</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_pos_top.html">top</a></td>
+                  <td>Устанавливает верхний край поля для позиционированного блока (отступ сверху)</td>
+               </tr>
+               <tr>
+                  <td><a href="/cssref/pr_pos_z-index.html">z-index</a></td>
+                  <td>Устанавливает порядок стека элемента</td>
+               </tr>
+            </tbody>
+         </table>
+
+         <hr>
+         <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="css_max-width.html" title="Предыдущая страница" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="css_overflow.html" title="Следующая страница" rel="next">Next ❯</a>
+         </div>
+         <br>
+      </div>
+
+      <!-- / CONTENT -->
+      <div class="right-sidebar">
+         <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+      </div>
+   </main>
+   <footer>
+      <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+   </footer>
+</body>
+
+</html>
