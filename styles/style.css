@@ -101,7 +101,7 @@ main {
 .note-warning {text-align: justify; color: #bbb; font-size:.8em;}
 
 .keys {font-size:1pt;padding:0;text-align: center;color: #eee;}
-.heading {text-shadow: 1px 1px 1px #000, 1px 1px 1px #000;}
+.heading {color:yellow; text-shadow: 1px 1px 1px #000, 1px 1px 1px #000;}
 .predisqus {border:none; width:100%;}
 
 /* футер
@@ -131,6 +131,7 @@ code {font-family: Consolas,"courier new"; color: brown; background-color: #f1f1
 .notsupported,.notsupported:hover,.notsupported:active,.notsupported:visited,.notsupported:link {color:rgb(197,128,128)}
 .w3-btn, .w3-btn:link, .w3-btn:visited {color: #FFFFFF; background-color: #4CAF50;}
 .w3-btn a:hover {background-color: #ccc; color: #000;}
+.w3-bar-block {background: #eee;}
 .w3-example{background-color:#f1f1f1;padding:0.01em 16px;margin:20px 0;box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important}
 .w3-info {background-color: #ddffdd;border-left: 6px solid #4CAF50;}
 .w3-note {background-color: #ffffcc;border-left: 6px solid #ffeb3b; padding: 10px; box-shadow: 0 0 1px #ff4500, 0 0 1em #c0c0c0;}
@@ -144,3 +145,4 @@ code {font-family: Consolas,"courier new"; color: brown; background-color: #f1f1
 #w3-exerciseform .exerciseprecontainer {background-color:#f1f1f1;padding:16px;font-size:120%;font-family:Consolas,"Courier New", Courier, monospace;}
 #w3-exerciseform .exerciseprecontainer pre {display: block;}
 #w3-exerciseform .exerciseprecontainer input {padding:1px;border: 1px solid transparent;height:1.3em;}
+
