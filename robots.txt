@@ -1,7 +1,15 @@
 # Rule 1
 User-agent: *
-Allow: /
+Disallow: /html
+Disallow: /css
+Disallow: /php
+Disallow: /about
+Disallow: /bootstrap4
+Disallow: /whatis
+
 
 host: html5beginner.github.io
+host: https://html5beginner.github.io
+
 Sitemap: http://html5beginner.github.io/sitemap.xml
 Sitemap: https://html5beginner.github.io/sitemap.xml
